@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="обогреватель" identifier="pj_test_emmiter_heat" category="Alien" description="Дает тепло в радиусе действия" Tags="" scale="0.25" isshootable="false" spritecolor="175,200,100,175" hiddeningame="false">
+        <sprite texture="Mods/Project Baro Other items/Emitters/texture.png" sourcerect="1291,1689,144,333" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+        <LightComponent canbeselected="false" IsOn="true" lightcolor="25,25,25,0" castshadows="false" allowingameediting="false" range="1" powerconsumption="5">
+            <sprite texture="Mods/Project Baro Other items/Emitters/texture.png" sourcerect="1441,1689,144,333" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+            <StatusEffect type="OnActive" target="This,NearbyCharacters" disabledeltatime="true" stackable="false" delay="1.0" range="800.0">
+                    <Affliction identifier="heat" amount="100"/>
+            </StatusEffect>
+        </LightComponent>
+        <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+            <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+            <RequiredItem items="screwdriver" type="Equipped" />
+            <input name="power" displayname="connection.power" />
+            <input name="set_state" displayname="connection.setstate" />
+            <input name="activate" displayname="connection.activate">
+                <StatusEffect type="OnUse" target="This,NearbyCharacters" disabledeltatime="true" stackable="false" delay="1.0" range="800.0">
+                    <Affliction identifier="heat" amount="100"/>
+            </StatusEffect>
+            </input>
+        </ConnectionPanel>
+    </Item>
+    <Item name="Генератор холода" identifier="pj_test_emmiter_cold" category="Alien" description="Дает холод в радиусе действия" Tags="" scale="0.25" isshootable="false" spritecolor="175,200,100,175" hiddeningame="false">
+        <sprite texture="Mods/Project Baro Other items/Emitters/texture.png" sourcerect="1291,1689,144,333" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+        <LightComponent canbeselected="false" IsOn="true" lightcolor="25,25,25,0" castshadows="false" allowingameediting="false" range="1">
+            <sprite texture="Mods/Project Baro Other items/Emitters/texture.png" sourcerect="1441,1689,144,333" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+            <StatusEffect type="OnActive" target="This" disabledeltatime="true" stackable="false" delay="0.5">
+                <Explosion range="5000.0" structuredamage="0" itemdamage="0" force="0.005" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" playtinnitus="false" applyfireeffects="false">
+                    <Affliction identifier="cold" amount="0.5" />
+                </Explosion>
+            </StatusEffect>
+        </LightComponent>
+        <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+            <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+            <RequiredItem items="screwdriver" type="Equipped" />
+            <input name="toggle" displayname="connection.togglestate" />
+            <input name="set_state" displayname="connection.setstate" />
+            <input name="activate" displayname="connection.activate">
+                <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+                    <Explosion range="5000.0" structuredamage="0" itemdamage="0" force="0.005" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" playtinnitus="false" applyfireeffects="false">
+                        <Affliction identifier="cold" amount="10" />
+                    </Explosion>
+                </StatusEffect>
+            </input>
+        </ConnectionPanel>
+    </Item>
+</Items>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Морозная форма вэк" identifier="pj_frozen_uniform" aliases="captainsuniform" category="Equipment" cargocontaineridentifier="metalcrate" description="Форма устойчивая для мороза поверхности европы." tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Морозная форма вэк" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="138,655,136,105" origin="0.5,0.5" />
+    <Sprite name="frozen_uniform" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="249,805,207,79" depth="0.6" origin="0.48533672,0.4793691" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Uniform Torso" texture="frozen_uniform.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="174,4,84,156" origin="0.5,0.5" />
+      <sprite name="Uniform Right Hand" texture="frozen_uniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="285,161,35,40" origin="0.5,0.5" />
+      <sprite name="Uniform Left Hand" texture="frozen_uniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="347,161,37,41" origin="0.5,0.5" />
+      <sprite name="Uniform Right Lower Arm" texture="frozen_uniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="285,91,32,72" origin="0.5,0.5" />
+      <sprite name="Uniform Left Lower Arm" texture="frozen_uniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="349,91,33,71" origin="0.5,0.5" />
+      <sprite name="Uniform Right Upper Arm" texture="frozen_uniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="274,2,57,87" origin="0.5,0.5" />
+      <sprite name="Uniform Left Upper Arm" texture="frozen_uniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="339,3,56,87" origin="0.5,0.5" />
+      <sprite name="Uniform Waist" texture="frozen_uniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="180,194,71,58" origin="0.5,0.5" />
+      <sprite name="Uniform Right Thigh" texture="frozen_uniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="9,0,66,123" origin="0.5,0.5" />
+      <sprite name="Uniform Left Thigh" texture="frozen_uniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="91,0,61,122" origin="0.5,0.5" />
+      <sprite name="Uniform Right Leg" texture="frozen_uniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="11,129,64,131" origin="0.5,0.5" />
+      <sprite name="Uniform Left Leg" texture="frozen_uniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="93,130,58,129" origin="0.5,0.5" />
+      <sprite name="Uniform Left Shoe" texture="frozen_uniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="333,208,65,46" origin="0.5,0.5" />
+      <sprite name="Uniform Right Shoe" texture="frozen_uniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="267,209,65,46" origin="0.5,0.5" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
+      <SkillModifier skillidentifier="weapons" skillvalue="25" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="700.0" setvalue="true" disabledeltatime="true">
+        <Affliction identifier="heat" strength="6" setvalue="true" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="Морозная броня вэк" identifier="pj_frozen_armor" category="Equipment" tags="smallitem" fireproof="true" cargocontaineridentifier="metalcrate" description="Теплая и комфортная броня для тяжелых условий европы." scale="0.35" impactsoundtag="impact_soft">
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+      <Price locationtype="military" multiplier="0.7" sold="false" />
+      <Price locationtype="mine" multiplier="1.2" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="211,491,116,166" origin="0.5,0.5" />
+    <Sprite texture="frozen_armor.png" sourcerect="60,37,113,172" depth="0.6" origin="0.5,0.5" />
+    <Body radius="45" height="60" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="frozen armor" texture="Mods/Project Baro Armor and weapons/Armor/Frozen/frozen_armor.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="59,36,114,173" origin="0.53,0.6" scale="0.38" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.35" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.88" setvalue="true" disabledeltatime="true" >
+        <Affliction identifier="heat" strength="6" setvalue="true" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="4" slotsperrow="2" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbox,uniform,mobilecontainer,rucksack,backpack,waistbelt" />
+    </ItemContainer>
+  </Item>
+  <Item name="Морозный шлем вэк" identifier="pj_frozen_helmet" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="Шлем с утеплителем под листами брони." scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="200" soldeverywhere="false" minleveldifficulty="25">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" minavailable="1" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="103,1,110,96" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/Frozen/helmets.png" sourcerect="46,91,99,91" depth="0.6" origin="0.510778,0.5174304" />
+    <Body radius="20" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite texture="Mods/Project Baro Armor and weapons/Armor/Frozen/helmets.png" limb="Head" inherittexturescale="false" sourcerect="46,91,99,91" origin="0.5134911,0.51463425" scale="0.37" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" >
+        <Affliction identifier="heat" strength="6" setvalue="true" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="25,360" style="ItemUI" />
+        <TickBox text="Фонарь" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <sprite name="ssb_hemlet_mask" texture="Mods/Project Baro Armor and weapons/Armor/Officer/helmets.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="50,24,96,50" origin="0.6183839,0.38158828">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
+      <Containable identifiers="oxygentank,oxygeniteshard,oxygenitetank" />
+    </ItemContainer>
+  </Item>
+</Items>

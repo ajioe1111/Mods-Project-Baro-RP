@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Самодельный пистолет" identifier="makeshiftpistol" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,trash" Scale="0.13" impactsoundtag="impact_metal_light" description="Самодельный пистолет, сделан на вид хорошо, и по идеи... должен работать... наверное...">
+    <PreferredContainer primary="weaponholder" spawnprobability="0.01" />
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.01" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+    </Deconstruct>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="12" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,263,180,152" origin="0.49008498,0.51502144" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,-34,304,244" depth="0.55" origin="0.43092105,0.5696721" />
+    <Body width="72" height="40" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-11,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="14,6" spread="16" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftshot.ogg" type="OnUse" range="4000" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="true" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <RequiredItems identifier="bullettag1" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="13" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable identifier="bullettag1" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Самодельный патрон" identifier="ironballbullet" category="Equipment" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.3" tags="smallitem,revolverammo,bullettag1" impactsoundtag="impact_metal_light" description="Патрон сделанный из всякого хлама. После попадания распадается на мелкую шрапнель, нанося доп. урон кровотечением.">
+    <PreferredContainer primary="makeshiftpistol" minamount="0" maxamount="1" spawnprobability="1" />
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="6" spawnprobability="0.01" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="6" spawnprobability="0.05" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="6" spawnprobability="0.05" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="6" />
+      <RequiredItem identifier="iron" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="phosphorus" mincondition="0.25" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="180,318,108,84" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="273,314,165,129" depth="0.55" origin="0.43030304,0.58914727" />
+    <Body width="29" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <Attack structuredamage="5" targetforce="0.5" itemdamage="10" severlimbsprobability="0.1">
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="gunshotwound" strength="42" />
+        <Affliction identifier="stun" strength="0.1" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="EMP round" identifier="empround" category="Equipment" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,4,5" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMPgunhit.ogg" range="1000.0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Character">
+        <Conditional speciesgroup="robot" />
+        <Affliction identifier="organdamage" amount="250" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact">
+        <Explosion range="50" force="0.1" smoke="false" sparks="true" empstrength="40" applyfireeffects="false">
+          <Affliction identifier="burn" strength="5" />
+        </Explosion>
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Магазин ЭМИ-винтовки" identifier="empmagazine" scale="0.20" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,empammo" impactsoundtag="impact_metal_heavy" maxstacksize="2">
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="370,0,83,125" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" depth="0.54" sourcerect="370,0,83,125" origin="0.5,0.5" />
+    <Body width="20" height="20" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="empround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="empround" />
+      <StatusEffect type="OnUse" target="This" condition="-50" disabledeltatime="true">
+        <SpawnItem identifiers="empround" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Экспериментальная ЭМИ-винтовка" identifier="empgun" category="Equipment" description="Экспериментальный образец ЭМИ-винтовки. Заряда хватит на 4 выстрела." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun, loadable" Scale="0.30" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" depth="0.55" />
+    <Body width="72" height="20" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="40,1" handle1="-6,-5" handle2="102,-5" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="1.0" barrelpos="40,2" spread="4" unskilledspread="7" combatPriority="0" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <sound file="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMPgunshot.ogg" type="OnUse" target="This" range="1500.0" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-25.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="empmagazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="empammo" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.20" />
+  </Item>
+
+  <Item name="Самодельная двустволка" identifier="Hm_double_shotgun" aliases="double barrel shotgun, double_barrel_shotgun, shorty, ek_double_shotgun" description="Кустарный дробовик, сделанный из обрезков трубы, простейшего ударного механизма и прочего хлама. Открыв патронник, вы увидели 2 ржавых 'Ствола' рассточеных до предела... кажется туда можно запихнуть любые патроны." category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_shotgunshell,shotgun" Scale="0.35" impactsoundtag="impact_metal_light">
+    <Price baseprice="350" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+
+    <Deconstruct time="17">
+      <Item identifier="iron" />
+      <Item identifier="steel" />
+    </Deconstruct>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="128,256,64,64" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="448,352,272,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.83" />
+    <Body width="160" height="32" density="40" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="30,-10" handle1="-2,-9" handle2="80,-8" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="56,16" spread="0" unskilledspread="8" reload="0.6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/DBshotgun.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <RequiredItems identifier="ek_shotgun_shells,shotgunshell,shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+
+    <ItemContainer autofill="False" capacity="2" maxstacksize="1" hideitems="true" itempos="-60,-16">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" />
+      <Containable identifier="ek_shotgun_shells,shotgunshell,shotgunammo" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem identifiers="ek_shotgun_shells" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+
+  <Item name="Самодельный патрон 12 калибра" identifier="Hm_shotgun_shell" aliases="12gauge_shell, shotgun shell, shotgun_shell" scale="0.35" category="Equipment" cargocontaineridentifier="metalcrate" description="Самый обычный кустарный патрон 12 калибра: дешёвый пластик, хлипкий сплав, вместо нормального содержимого просто кучка металлического лома... Просто, но что ещё нужно чтобы завалить неприятеля?" tags="smallitem, ek_shotgun_shells, round, shell,shotgunshell,shotgunammo,ammo,smallarmsammo" impactsoundtag="impact_metal_light" maxstacksize="8">
+    <PreferredContainer primary="ek_ammotag_shotgunshell" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.33" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="3" spawnprobability="0.33" />
+
+    <Deconstruct time="7">
+      <Item identifier="lead" outcondition="0.25" />
+      <Item identifier="plastic" outcondition="0.25" />
+    </Deconstruct>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="12" amount="4">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="lead" mincondition="0.35" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.45" usecondition="true" />
+      <RequiredItem identifier="aluminium" mincondition="0.45" usecondition="true" />
+    </Fabricate>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="3">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="aluminium" mincondition="0.15" usecondition="true" />
+    </Fabricate>
+
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" depth="0.56" sourcerect="274,482,44,28" origin="0.5,0.5" />
+    <BrokenSprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="48,48,32,32" depth="0.50" maxcondition="95" />
+    <Body width="40" height="16" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="-90" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="12">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.4" itemdamage="15" stun="0.1" targetforce="4" severlimbsprobability="0.25">
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="gunshotwound" strength="5" />
+        <Affliction identifier="stun" strength="0.04" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+
+  <Item name="Заточка" identifier="Hm_knife" category="Equipment" Tags="smallitem,weapon" cargocontaineridentifier="metalcrate" description="Кусок ржавого, заточенного алюминия, из тряпок была сделана рукоятка... лучший предмет, которым можно пырнуть своего сокамерника" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="3" spawnprobability="1" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.5" />
+    <Deconstruct time="10">
+      <Item identifier="aluminium" outcondition="0.25" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="aluminium" mincondition="0.50" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIconAtlas.png" sourcerect="835,385,64,64" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/weapons_new.png" sourcerect="183,203,66,16" depth="0.55" origin="0.5,0.5" />
+    <Body width="65" height="15" density="50" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-5,-5" holdangle="30" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="12">
+        <Affliction identifier="lacerations" strength="13" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Самодельный револьвер" identifier="HMrevolver" aliases="ek revolver" description="Сделанный из различного хлама револьвер системы 'Нагана'. Вмещает 6 патронов в хлипком, но рабочем барабане. Осматривая револьвер, вам стало интересно... кто такой этот 'Наган'?" category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="smallitem,weapon,gun,ek_ammotag_357,ironballbullet" Scale="0.34" impactsoundtag="impact_metal_light">
+
+    <Deconstruct time="15">
+      <Item identifier="steel" />
+      <Item identifier="iron" />
+    </Deconstruct>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="0,1248,128,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
+    <Body width="128" height="64" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-13,-11" msg="ItemMsgPickUpSelect" />
+
+    <RangedWeapon barrelpos="30,5" spread="1" unskilledspread="12" reload="0.5" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMrevolver.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+      </StatusEffect>
+      <RequiredItems identifier="ek_revolverammo,ek_ammotag357,revolverammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+      <StatusEffect type="Always" target="Contained" targetidentifiers="ek_revolverloader" disabledeltatime="true" delay="0.02" stackable="false">
+        <RequiredItem identifier="ek_revolverloader" type="Contained" />
+        <Use />
+      </StatusEffect>
+
+    </RangedWeapon>
+
+    <ItemContainer autofill="False" capacity="6" maxstacksize="1" hideitems="true" allowuioverlap="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" />
+      <Containable identifiers="ek_revolverammo,ek_revolverloader,ek_ammotag357,revolverammo" />
+    </ItemContainer>
+  </Item>
+
+  <Item name="Самодельная Винтовка" identifier="HMrifle" category="Equipment" description="Винтовка с продольно-скользящим затвором сделанная по типу оной из гражданской линейки Концерна EK." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.40" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="weaponholder" spawnprobability="0.05" />
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="iron" />
+    </Deconstruct>
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" depth="0.55" origin="0.5,0.5" />
+    <Body width="330" height="45" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="60,0" handle1="-65,5" handle2="40,15" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="60,0" spread="3" unskilledspread="12" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMrifle.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <RequiredItems items="762mosinammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="5" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="762mosinammo" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Самодельный патрон калибра 7.62x54R" identifier="762spbt" category="Equipment" description="Сделланный из муляжа патрона, вставлен капюль, засыпан порох... он полностью готов к выстрелу. Заряжается в самодельную винтовку" maxstacksize="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,762mosinammo" impactsoundtag="impact_metal_light" scale="0.05">
+    <PreferredContainer primary="mn_mosin,mn_mosinb" minamount="5" maxamount="5" spawnprobability="1" />
+    <PreferredContainer primary="secarmcab" minamount="5" maxamount="10" spawnprobability="0.25" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="10" spawnprobability="0.33" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="10" spawnprobability="0.4" />
+    <Deconstruct time="7">
+      <Item identifier="lead" outcondition="0.25" />
+      <Item identifier="plastic" outcondition="0.25" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="3">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="aluminium" mincondition="0.15" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" depth="0.55" origin="0.5,0.5" />
+    <Body width="24" height="12" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="20" targetforce="5" itemdamage="50" severlimbsprobability="0.2">
+        <Affliction identifier="bleeding" strength="20" />
+        <Affliction identifier="lacerations" strength="13" />
+        <Affliction identifier="gunshotwound" strength="60" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Самодельная Граната" identifier="HM_pipebomb" category="Equipment" maxstacksize="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.5" description="Граната сделанная из обрезка трубы, 2 заглушек, кухонного таймера, батарейки-кроны и простейшей взрывной смеси. Лучшее, за неимением нормальной 'Лимонки'" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <Deconstruct time="10">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="batterycell" />
+      <RequiredItem identifier="phosphorus" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="640,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="864,320,32,64" depth="0.55" origin="0.6,0.5" />
+    <Body radius="20" height="10" density="10" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="Always" target="This" Condition="-45">
+        <Conditional DisplaySideBySideWhenLinked="eq true" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <Explosion range="570.0" structuredamage="10" ballastfloradamage="120" itemdamage="150" levelwalldamage="150" force="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="bleeding" strength="70" />
+          <Affliction identifier="explosiondamage" strength="160" />
+          <Affliction identifier="stun" strength="4.5" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent LightColor="255,25,25,255" range="20" IsOn="false" blinkfrequency="4" />
+    <RepairTool>
+      <StatusEffect type="OnUse" target="This" stackable="false" delay="0.1">
+        <Conditional DisplaySideBySideWhenLinked="ne true" />
+        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMpipebomb.ogg" type="OnUse" range="300" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" DisplaySideBySideWhenLinked="true" />
+      <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="true" disabledeltatime="true" />
+    </RepairTool>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="6.0" msg="ItemMsgPickUpSelect"></Throwable>
+  </Item>
+</Items>

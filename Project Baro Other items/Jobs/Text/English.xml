@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+  <!-- Jobs -->
+<jobname.Android>Android</jobname.Android>
+<jobdescription.Android>Эксперементальный Андроид производства ВЭК.</jobdescription.Android>
+<jobname.ЧВК>ЧВК</jobname.ЧВК>
+<jobdescription.ЧВК>Боец ЧВК.</jobdescription.ЧВК>
+<jobname.Антей>Антей</jobname.Антей>
+<jobdescription.Антей>Медик Антей.</jobdescription.Антей>
+<jobname.СпН>СпН</jobname.СпН>
+<jobdescription.СпН>Сотрудник СпН.</jobdescription.СпН>
+</infotexts>
