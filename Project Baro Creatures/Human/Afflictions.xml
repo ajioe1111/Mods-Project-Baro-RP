@@ -120,4 +120,13 @@
     </Effect>
     <icon texture="Mods/Project Baro Creatures/Human/ThirstIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
+  <Affliction name="Слепота" identifier="blinded" description="Глаза слезятся, становится трудно видеть" type="resistance" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" maxstrength="30">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1.0" minradialdistort="0.0" maxradialdistort="10.0" minscreendistort="0.0" maxscreendistort="1.0" minscreenblur="0" maxscreenblur="10.0">
+      <StatusEffect target="Character" ObstructVision="true" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+    </Effect>
+    <Effect minstrength="5" maxstrength="30" strengthchange="-1.0" minradialdistort="10.0" maxradialdistort="30.0" minscreendistort="1.0" maxscreendistort="3.0" minscreenblur="10.0" maxscreenblur="50.0">
+      <StatusEffect target="Character" ObstructVision="true" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
+    </Effect>
+    <icon name="blinded" texture="Mods/Project Baro Creatures/Human/BlindedIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>  
 </Afflictions>
