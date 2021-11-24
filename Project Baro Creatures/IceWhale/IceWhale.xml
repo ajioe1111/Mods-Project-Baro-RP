@@ -1,0 +1,41 @@
+﻿<Character speciesname="IceWhale" humanoid="False" group="IceWhale" husk="False" needsair="False" canspeak="False" noise="200" blooddecal="blood" displayname="" hasinfo="False" usehuskappendage="False" needswater="False" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" eatingspeed="50" pathfinderpriority="1" hideinsonar="False" sonardisruption="1" speciestranslationoverride="">
+  <ragdolls folder="Mods/Project Baro Creatures/IceWhale/Ragdolls/" />
+  <animations folder="Mods/Project Baro Creatures/IceWhale/Animations/" />
+  <bloodemitter particle="blood" particleamount="5" anglemin="0" anglemax="0" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="10" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="heavygib" particleamount="5" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health vitality="2700" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0.5" burnreduction="0" constanthealthregeneration="0.1" healthregenerationwheneating="0.5" />
+  <ai combatstrength="1500" sight="10" hearing="10" aggressionhurt="100" aggressiongreed="100" fleehealththreshold="20" attackonlywhenprovoked="True" avoidgunfire="False" aggressiveboarding="False" attackwhenprovoked="True" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False">
+    <target tag="stronger" state="Idle" priority="50" reactdistance="0" attackdistance="0" />
+    <target tag="human" state="Idle" priority="50" reactdistance="0" attackdistance="0" />
+    <target tag="weaker" state="Idle" priority="50" reactdistance="0" attackdistance="0" />
+    <target tag="room" state="Idle" priority="10" reactdistance="0" attackdistance="0" />
+    <SwarmBehavior mindistfromclosest="100" maxdistfromcenter="1000" cohesion="1" />
+    <target tag="leucocyte" state="Avoid" priority="50" reactdistance="0" attackdistance="0" />
+    <target tag="dead" state="Idle" priority="20" reactdistance="1000" attackdistance="0" />
+    <target tag="wall" state="Idle" priority="40" reactdistance="0" attackdistance="0" />
+    <target tag="sonar" state="Idle" priority="20" reactdistance="2000" attackdistance="0" />
+    <target tag="flarelight" state="Aggressive" priority="100" reactdistance="0" attackdistance="0" />
+    <target tag="light" state="Idle" priority="10" reactdistance="0" attackdistance="0" />
+    <target tag="provocative" state="Attack" priority="300" reactdistance="0" attackdistance="0" />
+  </ai>
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_attack1.ogg" state="Attack" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_attack2.ogg" state="Attack" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_attack3.ogg" state="Attack" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_attack4.ogg" state="Attack" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_damage1.ogg" state="Damage" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_damage2.ogg" state="Damage" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_damage3.ogg" state="Damage" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_damage4.ogg" state="Damage" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_idle1.ogg" state="Idle" range="8000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_idle2.ogg" state="Idle" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_idle3.ogg" state="Idle" range="8000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_idle4.ogg" state="Idle" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_death1.ogg" state="Die" range="5000" volume="1" gender="None" />
+  <sound file="Mods/Project Baro Creatures/IceWhale/IceWhale_death2.ogg" state="Die" range="5000" volume="1" gender="None" />
+  <inventory slots="Any, Any" accessiblewhenalive="False" commonness="1">
+    <item identifier="alienblood" />
+    <item identifier="swimbladder" />
+  </inventory>
+</Character>
