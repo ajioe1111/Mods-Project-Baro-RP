@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Форма капитана вэк" identifier="pj_captain_uniform" aliases="captainsuniform" category="Equipment" cargocontaineridentifier="metalcrate" description="Комфортная форма для капитана ВЭК (1500 глубины)." tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Форма капитана вэк" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="0,653,143,106" origin="0.5,0.5" />
+    <Sprite name="Форма капитана вэк" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="458,807,207,79" depth="0.6" origin="0.48533672,0.4793691" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Uniform Torso" texture="captain.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="175,21,79,139" origin="0.5,0.5" />
+      <sprite name="Uniform Right Hand" texture="captain.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="286,161,33,40" origin="0.5,0.5" />
+      <sprite name="Uniform Left Hand" texture="captain.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="351,161,32,40" origin="0.5,0.5" />
+      <sprite name="Uniform Right Lower Arm" texture="captain.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="288,95,28,65" origin="0.5,0.5" />
+      <sprite name="Uniform Left Lower Arm" texture="captain.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="353,94,26,66" origin="0.5,0.5" />
+      <sprite name="Uniform Right Upper Arm" texture="captain.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="285,8,39,81" origin="0.5,0.5" />
+      <sprite name="Uniform Left Upper Arm" texture="captain.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="348,9,42,79" origin="0.5,0.5" />
+      <sprite name="Uniform Waist" texture="captain.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="181,195,67,54" origin="0.5,0.5" />
+      <sprite name="Uniform Right Thigh" texture="captain.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Uniform Left Thigh" texture="captain.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Uniform Right Leg" texture="captain.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Uniform Left Leg" texture="captain.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Uniform Left Shoe" texture="captain.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.5,0.5" />
+      <sprite name="Uniform Right Shoe" texture="captain.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,512,256" origin="0.50114036,0.5022227" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="weapons" skillvalue="25" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="1500.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="Броня капитана ВЭК" identifier="pj_captain_armor" category="Equipment" tags="smallitem" fireproof="true" cargocontaineridentifier="metalcrate" description="Броня с хорошей защитой для капитана ВЭК." scale="0.35" impactsoundtag="impact_soft">
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+      <Price locationtype="military" multiplier="0.7" sold="false" />
+      <Price locationtype="mine" multiplier="1.2" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="327,492,116,165" origin="0.5,0.5" />
+    <Sprite texture="armor_captain.png" sourcerect="8,32,112,192" depth="0.6" origin="0.5,0.5" />
+    <Body radius="45" height="60" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="captain ARMOR" texture="Mods/Project Baro Armor and weapons/Armor/Captain/armor_captain.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.53,0.6" scale="0.38" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.10" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.70" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+    <ItemContainer capacity="4" slotsperrow="2" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbox,uniform,mobilecontainer,rucksack,backpack,waistbelt" />
+    </ItemContainer>
+  </Item>
+  <Item name="Шлем капитана ВЭК" identifier="pj_captain_helmet" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="Удобный шлем капитана ВЭК. Имеет усиленный приемник радио-сигнала." scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="200" soldeverywhere="false" minleveldifficulty="25">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" minavailable="1" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="209,1,110,96" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/Captain/helmets.png" sourcerect="47,94,98,88" depth="0.6" origin="0.5,0.5" />
+    <Body radius="20" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite texture="Mods/Project Baro Armor and weapons/Armor/Captain/helmets.png" limb="Head" inherittexturescale="false" sourcerect="47,94,98,88" origin="0.55,0.5" scale="0.37" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.2" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="25,360" style="ItemUI" />
+        <TickBox text="Фонарь" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <sprite name="captain_hemlet_mask" texture="Mods/Project Baro Armor and weapons/Armor/Captain/helmets.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="50,24,96,50" origin="0.6183839,0.38158828">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
+      <Containable identifiers="oxygentank,oxygeniteshard,oxygenitetank" />
+    </ItemContainer>
+    <WifiComponent range="7000.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0" />
+  </Item>
+</Items>
