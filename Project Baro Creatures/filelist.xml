@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Creatures" path="Mods/Project Baro Creatures/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637253759" installtime="1637793865">
+<contentpackage name="Project Baro Creatures" path="Mods/Project Baro Creatures/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637253759" installtime="1638477057">
   <Character file="Mods/Project Baro Creatures/Human/Human.xml" />
   <Afflictions file="Mods/Project Baro Creatures/Human/Afflictions.xml" />
   <Character file="Mods/Project Baro Creatures/IceWhale/IceWhale.xml" />
   <Character file="Mods/Project Baro Creatures/X/X.xml" />
+  <Character file="Mods/Project Baro Creatures/Alien_guard/alien guard.xml" />
 </contentpackage>

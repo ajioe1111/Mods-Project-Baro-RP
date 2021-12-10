@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637257422" installtime="1637256093">
+<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637257422" installtime="1639151104">
   <UIStyle file="Mods/Project Baro Other items/Content/UI/pj_style.xml" />
   <Sounds file="Mods/Project Baro Other items/Content/pjsounds.xml" />
   <LocationTypes file="Mods/Project Baro Other items/Content/pjlocationTypes.xml" />
@@ -22,10 +22,9 @@
   <None file="Mods/Project Baro Other items/Food/Items/pantry.png" />
   <None file="Mods/Project Baro Other items/Food/Items/refrigerator.png" />
   <None file="Mods/Project Baro Other items/Lua/Autorun/run.lua" />
-  <Item file="Mods/Project Baro Other items/Item/longradio/longradio.xml" />
   <Item file="Mods/Project Baro Other items/Emitters/Affliction_Emitters.xml" />
   <Item file="Mods/Project Baro Other items/Artifact/items.xml" />
   <Afflictions file="Mods/Project Baro Other items/Afflictions/Afflictions.xml" />
-  <Item file="Mods/Project Baro Other items/Item/portable_heater/portable_heater.xml" />
-  <Item file="Mods/Project Baro Other items/Music/projectbaro-music.xml" />
+  <Item file="Mods/Project Baro Other items/Music/project-baro-music.xml" />
+  <Item file="Mods/Project Baro Other items/Item/items.xml" />
 </contentpackage>

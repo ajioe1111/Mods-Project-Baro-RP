@@ -59,7 +59,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.35" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.88" setvalue="true" disabledeltatime="true" >
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.88" setvalue="true" disabledeltatime="true">
         <Affliction identifier="heat" strength="6" setvalue="true" />
       </StatusEffect>
     </Wearable>
@@ -91,7 +91,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" >
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
         <Affliction identifier="heat" strength="6" setvalue="true" />
       </StatusEffect>
       <SkillModifier skillidentifier="weapons" skillvalue="10" />

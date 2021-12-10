@@ -198,57 +198,78 @@
       </Sprite>
     </TitleText>
 
-  <projectbaro-music_cover_nazare color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_nazare" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_nazare>
-  <projectbaro-music_cover_deadmansbones color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_deadmansbones" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_deadmansbones>
-  <projectbaro-music_cover_bi2 color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_bi2" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_bi2>
-  <projectbaro-music_cover_skovan color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_skovan" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_skovan>
-  <projectbaro-music_cover_kino_gruppakrovi color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kino_gruppakrovi" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kino_gruppakrovi>
-  <projectbaro-music_cover_kino_zvezda color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kino_zvezda" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1640,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kino_zvezda>
-  <projectbaro-music_cover_kish_kukla color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kish_kukla" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1968,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kish_kukla>
-  <projectbaro-music_cover_kish_prignu color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kish_prignu" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2296,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kish_prignu>
-  <projectbaro-music_cover_kino_peremen color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kino_peremen" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2624,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kino_peremen>
-  <projectbaro-music_cover_kino_noch color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_kino_noch" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2952,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_kino_noch>
-  <projectbaro-music_cover_pavel_noch_pered_boem color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_pavel_noch_pered_boem" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3280,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_pavel_noch_pered_boem>
-  <projectbaro-music_cover_the_door_strange color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_the_door_strange" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3608,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_the_door_strange>
-  <projectbaro-music_cover_mgmt_little_dark_age color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_mgmt_little_dark_age" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3936,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_mgmt_little_dark_age>
-  <projectbaro-music_cover_pain_sym color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_pain_sym" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4264,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_pain_sym>
-  <projectbaro-music_cover_mrkitty_after_dark color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_mrkitty_after_dark" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4592,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_mrkitty_after_dark>
-  <projectbaro-music_cover_mrkitty_resurrection color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_mrkitty_resurrection" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4920,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_mrkitty_resurrection>
-  <projectbaro-music_cover_mrkitty_destroy_me color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="projectbaro-music_cover_mrkitty_destroy_me" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,5248,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-  </projectbaro-music_cover_mrkitty_destroy_me>
+  <project-baro-music_cover_nazare color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_nazare" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_nazare>
+  <project-baro-music_cover_deadmansbones color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_deadmansbones" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_deadmansbones>
+  <project-baro-music_cover_skovan color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_skovan" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_skovan>
+  <project-baro-music_cover_kino_gruppakrovi color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_gruppakrovi" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_gruppakrovi>
+  <project-baro-music_cover_kino_zvezda color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_zvezda" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_zvezda>
+  <project-baro-music_cover_kish_kukla color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kish_kukla" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1640,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kish_kukla>
+  <project-baro-music_cover_kish_prignu color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kish_prignu" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1968,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kish_prignu>
+  <project-baro-music_cover_kino_peremen color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_peremen" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2296,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_peremen>
+  <project-baro-music_cover_kino_noch color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_noch" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2624,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_noch>
+  <project-baro-music_cover_the_door_strange color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_the_door_strange" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,2952,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_the_door_strange>
+  <project-baro-music_cover_mgmt_little_dark_age color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_mgmt_little_dark_age" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3280,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_mgmt_little_dark_age>
+  <project-baro-music_cover_mrkitty_after_dark color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_mrkitty_after_dark" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3608,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_mrkitty_after_dark>
+  <project-baro-music_cover_mrkitty_resurrection color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_mrkitty_resurrection" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,3936,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_mrkitty_resurrection>
+  <project-baro-music_cover_mrkitty_destroy_me color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_mrkitty_destroy_me" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4264,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_mrkitty_destroy_me>
+  <project-baro-music_cover_original_1 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_original_1" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4592,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_original_1>
+  <project-baro-music_cover_original_2 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_original_2" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,4920,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_original_2>
+  <project-baro-music_cover_original_3 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_original_3" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,5248,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_original_3>
+  <project-baro-music_cover_kino_poslednii_geroi color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_poslednii_geroi" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,5576,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_poslednii_geroi>
+  <project-baro-music_cover_korpiklaani_vodka color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_korpiklaani_vodka" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,5904,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_korpiklaani_vodka>
+  <project-baro-music_cover_korpiklaani_beer color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_korpiklaani_beer" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,6232,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_korpiklaani_beer>
+  <project-baro-music_cover_nitw_possum_springs color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_nitw_possum_springs" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,6560,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_nitw_possum_springs>
+  <project-baro-music_cover_nitw_dusk_stars color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_nitw_dusk_stars" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,6888,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_nitw_dusk_stars>
+  <project-baro-music_cover_nitw_batter_up color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_nitw_batter_up" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,7216,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_nitw_batter_up>
+  <project-baro-music_cover_nitw_longest_night color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_nitw_longest_night" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,7544,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_nitw_longest_night>
     <InnerGlow color="255,255,255,204" hovercolor="255,255,255,204" selectedcolor="255,255,255,204">
       <Sprite texture="Content/UI/InnerGlow.png" sourcerect="0,0,512,384" slice="128,128,384,256" />
     </InnerGlow>

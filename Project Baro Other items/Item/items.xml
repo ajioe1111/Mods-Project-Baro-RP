@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Инопланетный ключ" identifier="pj_alien_key" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" description="Непонятно какую дверь он должен открывать..." Scale="0.35" impactsoundtag="impact_metal_light">
+    <Deconstruct time="120"></Deconstruct>
+    <InventoryIcon texture="alien_key\alien_key.png" sourcerect="512,0,64,64" />
+    <Sprite texture="alien_key\alien_key.png" depth="0.55" sourcerect="512,64,48,128" origin="0.5,0.63" />
+    <Body width="40" height="100" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Рация дальней связи" identifier="longrangeradio" scale="0.5" category="Equipment" tags="mediumitem,headset,mobilecontainer" description="Соеденяется с сетью ретранстяторов и позволяет передавать сообщения на большие дистанции" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="280" minleveldifficulty="25">
+      <Price locationtype="outpost" multiplier="1" minavailable="3" />
+      <Price locationtype="city" multiplier="0.9" minavailable="10" />
+      <Price locationtype="research" multiplier="1" minavailable="4" />
+      <Price locationtype="military" multiplier="1" minavailable="6" />
+      <Price locationtype="mine" multiplier="1" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="longradio\radio.png" sourcerect="320,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="longradio\radio.png" depth="0.6" sourcerect="448,0,128,112" origin="0.5,0.5" />
+    <Body width="112" height="100" density="12" />
+    <Deconstruct time="10">
+      <Item identifier="headset" />
+      <Item identifier="aluminium" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="batterycell" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="headset" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="batterycell" />
+    </Fabricate>
+    <WifiComponent range="999999.9" channel="0" LinkToChat="true" MinChatMessageInterval="0.0"></WifiComponent>
+    <ItemContainer capacity="6">
+      <Containable items="smallitem,explosive,tool,ore" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Head" slots="Any,Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Headset Wearable" texture="longradio\radio.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inherittexturescale="true" hideotherwearables="false" sourcerect="512,112,64,80" origin="0.5,0.6" />
+      <sprite name="Backpack Wearable" texture="longradio\radio.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="true" hideotherwearables="false" sourcerect="575,0,88,258" origin="1.0000002,0.7156861" />
+    </Wearable>
+  </Item>
+  <Item name="Карманный обогреватель" identifier="pj_portable_heater" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" description="Небольшой обогреватель. При ношении обогревает носителя." Scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab,supplycab" />
+    <Deconstruct time="15">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <InventoryIcon texture="portable_heater\portable_heater.png" sourcerect="512,0,64,64" />
+    <Sprite texture="portable_heater\portable_heater.png" depth="0.55" sourcerect="512,64,48,128" origin="0.5,0.63" />
+    <Body width="40" height="100" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <AiTarget soundrange="5000" sonarlabel="entityname.sonarbeacon" />
+    <LightComponent LightColor="0.4,1.0,0.3,0.7" range="20" powerconsumption="10" Flicker="0.35" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.20">
+        <RequiredItem items="batterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.25">
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.10">
+        <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1.5">
+        <Explosion range="25.0" structuredamage="0" itemdamage="0" force="0.005" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" playtinnitus="false" applyfireeffects="false">
+          <Affliction identifier="heat" amount="10" />
+        </Explosion>
+      </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.12,0.08" anchor="BottomRight" absoluteoffset="25,360" style="ItemUI" />
+      <TickBox text="Включить обогреватель" IsOn="true">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="Кредит'ы" identifier="credits" category="Material" Tags="smallitem,money" maxstacksize="32" canbepicked="true" description="Стандартная валюта ВЭК" cargocontaineridentifier="metalcrate" scale="0.1" impactsoundtag="impact_soft">
+    <Price baseprice="1">
+      <Price locationtype="outpost" minavailable="200" />
+      <Price locationtype="city" minavailable="200" />
+      <Price locationtype="research" minavailable="200" />
+      <Price locationtype="military" minavailable="200" />
+      <Price locationtype="mine" minavailable="200" />
+    </Price>
+    <PreferredContainer primary="crewcab" minamount="520" maxamount="1725" spawnprobability="0.5" />
+    <PreferredContainer primary="engcab" minamount="0" maxamount="6" spawnprobability="0.5" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.25" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="3" spawnprobability="0.5" />
+    <PreferredContainer primary="outposttrashcan" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <PreferredContainer primary="reactorcab" minamount="0" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer primary="divingcab" minamount="0" maxamount="5" spawnprobability="0.25" />
+    <PreferredContainer primary="supplycab" minamount="0" maxamount="1" spawnprobability="0.5" />
+    <Sprite texture="money\money.png" depth="0.3" sourcerect="0,0,396,172" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="0" attachable="false" reattachable="false" />
+    <Throwable characterusable="true" slots="Any,RightHand,LeftHand" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Override>
+    <Item name="" identifier="doctorsuniform1" aliases="doctorsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.01" />
+      <Price baseprice="1000">
+        <Price locationtype="outpost" multiplier="1" minavailable="1" />
+        <Price locationtype="city" multiplier="0.9" minavailable="1" />
+        <Price locationtype="research" multiplier="1" minavailable="1" />
+        <Price locationtype="military" multiplier="1" minavailable="1" />
+        <Price locationtype="mine" multiplier="1" minavailable="1" />
+      </Price>
+      <Deconstruct time="10" />
+      <Fabricate suitablefabricators="vending1" requiredtime="1"></Fabricate>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="electrical" level="20" />
+        <RequiredSkill identifier="medical" level="100" />
+        <RequiredItem identifier="titaniumaluminiumalloy" />
+        <RequiredItem identifier="rubber" />
+      </Fabricate>
+      <InventoryIcon name="doctfatigvet Icon" texture="OutfitIconsAV.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
+      <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="18,614,197,84" depth="0.6" origin="0.5,0.5" />
+      <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="Medic Uniform 1 Torso" texture="medics\medic_1_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Hand" texture="medics\medic_1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Hand" texture="medics\medic_1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Lower Arm" texture="medics\medic_1_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Lower Arm" texture="medics\medic_1_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Upper Arm" texture="medics\medic_1_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Upper Arm" texture="medics\medic_1_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Waist" texture="medics\medic_1_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Thigh" texture="medics\medic_1_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Thigh" texture="medics\medic_1_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Leg" texture="medics\medic_1_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Leg" texture="medics\medic_1_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Shoe" texture="medics\medic_1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Shoe" texture="medics\medic_1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.65" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.65" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0" />
+      </Wearable>
+      <ItemContainer capacity="6">
+        <Containable items="chem,medical" excludeditems="toolbox,toolbelt" />
+      </ItemContainer>
+    </Item>
+  </Override>
+  <Override>
+    <Item name="" identifier="healthscanner" scale="0.5" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab" minamount="1" maxamount="1" spawnprobability="0.5" />
+      <Price baseprice="150" soldeverywhere="false">
+        <Price locationtype="outpost" multiplier="1.3" sold="false" />
+        <Price locationtype="city" multiplier="1.2" minavailable="1" />
+        <Price locationtype="research" multiplier="1" minavailable="8" />
+        <Price locationtype="military" multiplier="1.25" minavailable="1" />
+        <Price locationtype="mine" multiplier="1" sold="false" />
+      </Price>
+      <Deconstruct time="20">
+        <Item identifier="fpgacircuit" />
+        <Item identifier="plastic" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="mechanical" level="30" />
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <InventoryIcon texture="medics\headgears.png" sourcerect="48,142,78,60" origin="0.5,0.5" />
+      <Sprite name="Health Scanner" texture="medics\headgears.png" sourcerect="47,152,79,44" depth="0.6" origin="0.49808788,0.5862722" />
+      <Body width="70" height="24" density="30" />
+      <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+        <sprite name="Health Scanner Wearable" texture="medics\headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="49,154,76,40" origin="0.47885594,0.6267625" />
+      </Wearable>
+      <StatusHUD drawhudwhenequipped="true" />
+    </Item>
+  </Override>
+</Items>
