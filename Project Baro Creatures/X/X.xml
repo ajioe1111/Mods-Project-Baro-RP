@@ -62,8 +62,4 @@
     <Item identifier="plasmacutter" />
     <Item identifier="oxygentank" showpreview="false" />
   </inventory>
-  <StatusEffect type="InWater" target="This">
-    <Conditional PressureProtection="gte 100.0" targetself="true" />
-    <Affliction identifier="suitrusting" strength="1" probability="1" />
-  </StatusEffect>
 </Character>
