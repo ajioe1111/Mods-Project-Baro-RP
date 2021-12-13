@@ -31,4 +31,6 @@
   <Afflictions file="Mods/Project Baro Other items/Item/chess/cs_Afflictions.xml" />
   <None file="Mods/Project Baro Other items/Item/chess/chessset_atlas.png" />
   <ItemAssembly file="Mods/Project Baro Other items/Item/chess/ChessSet.xml" />
+  <Item file="Mods/Project Baro Other items/Item/cards/cards.xml" />
+  <None file="Mods/Project Baro Other items/Item/cards/cards.png" />
 </contentpackage>
