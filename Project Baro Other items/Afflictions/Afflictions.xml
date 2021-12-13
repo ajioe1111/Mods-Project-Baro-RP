@@ -8,7 +8,6 @@
     <Effect minstrength="80" maxstrength="100" strengthchange="-13" resistancefor="cold" minresistance="15" maxresistance="100.0" />
     <icon texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
-
   <Affliction name="Холод" identifier="cold" description="Вам холодно." type="poison" targets="human,crawler" limbspecific="false" indicatorlimb="Torso" maxstrength="100" transferbuffs="true" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
     <Effect minstrength="20" maxstrength="35" strengthchange="10" minscreendistort="0.0" maxscreendistort="0.2" dialogflag="Холодно" minvitalitydecrease="0" maxvitalitydecrease="5" minscreenblur="0.0" maxscreenblur="0.2">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"></StatusEffect>
@@ -32,5 +31,13 @@
       </StatusEffect>
     </Effect>
     <icon texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="142,893,135,131" color="10,193,114,255" origin="0,0.001241642" />
+  </Affliction>
+  <Affliction name="Протез" identifier="protez" description="Вместо руки у вас протез." type="resistance" isbuff="true" limbspecific="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-80" minspeedmultiplier="1.0" maxspeedmultiplier="1.15" minfacetint="255,0,0,0" maxfacetint="255,0,0,150">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.35" />
+      <StatValue stattype="SwimmingSpeed" minvalue="0" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="0" maxstrength="100" strengthchange="-80" resistancefor="burn" minresistance="1" maxresistance="3" />
+    <icon texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="284,892,133,132" color="10,193,114,255" origin="0,0" />
   </Affliction>
 </Afflictions>
