@@ -181,4 +181,39 @@
       <StatusHUD drawhudwhenequipped="true" />
     </Item>
   </Override>
+  <Item name="Складной стул" identifier="foldingchair" tags="chair,mediumitem" allowattachitems="false" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+    <sprite texture="chair\foldingchair.png" sourcerect="7,7,125,198" depth="0.51" premultiplyalpha="false" origin="0.5,0.5" canspriteflipx="false" />
+    <Body width="118" height="192" density="60" />
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="mechanical" level="15" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+   
+    <Deconstruct time="25">
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+   
+    <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" msg="ItemMsgSitDownSelect">
+      <StatusEffect type="Always" target="This" setvalue="true" direction="Left" canspriteflipx="false"></StatusEffect>
+      <limbposition limb="Head" position="60,75" />
+      <limbposition limb="Torso" position="60,0" />
+      <limbposition limb="Waist" position="60,-70" />
+      <limbposition limb="RightFoot" position="130,-150" />
+      <limbposition limb="LeftFoot" position="130,-150" />
+      <limbposition limb="RightHand" position="70,-100" allowusinglimb="true" />
+      <limbposition limb="LeftHand" position="70,-100" allowusinglimb="true" />
+    </Controller>
+   
+    <MeleeWeapon pickkey="Action" slots="RightHand+LeftHand" aimpos="40,5" handle1="-12,-5" handle2="-12,-5" holdangle="60" reload="1.5" range="50" combatpriority="5" msg="ItemMsgPickUpAction">
+      <Attack structuredamage="2" itemdamage="2" stun="0.2" targetimpulse="5">
+        <Affliction identifier="blunttrauma" strength="6" />
+        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+ 
+  </Item>  
 </Items>

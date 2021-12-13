@@ -27,4 +27,8 @@
   <Afflictions file="Mods/Project Baro Other items/Afflictions/Afflictions.xml" />
   <Item file="Mods/Project Baro Other items/Music/project-baro-music.xml" />
   <Item file="Mods/Project Baro Other items/Item/items.xml" />
+  <Item file="Mods/Project Baro Other items/Item/chess/chess.xml" />
+  <Afflictions file="Mods/Project Baro Other items/Item/chess/cs_Afflictions.xml" />
+  <None file="Mods/Project Baro Other items/Item/chess/chessset_atlas.png" />
+  <ItemAssembly file="Mods/Project Baro Other items/Item/chess/ChessSet.xml" />
 </contentpackage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <Affliction
+    name="Chess Set Kit"
+    identifier="cs_a_chesssetkit"
+    description="Gives you a chessboard and chess pieces when used."
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    showicontoothersthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    maxstrength="100" >
+    <Effect minstrength="0" maxstrength="100" strengthchange="-100" >
+			<StatusEffect type="OnActive" target="Character" >
+				<SpawnItem identifiers="chessboard" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackpawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackrook" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackrook" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackknight" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackknight" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackbishop" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackbishop" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackking" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="blackqueen" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitepawn" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whiterook" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whiterook" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whiteknight" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whiteknight" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitebishop" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitebishop" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whiteking" spawnposition="ThisInventory" />
+				<SpawnItem identifiers="whitequeen" spawnposition="ThisInventory" />
+			</StatusEffect>
+		</Effect>
+  </Affliction>
+</Afflictions>

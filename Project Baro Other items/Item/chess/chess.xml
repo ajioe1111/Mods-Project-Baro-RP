@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Набор для шахмат" identifier="chesssetkit" tags="smallitem,chessboard" 
+				description="Набор для шахмат. Состоит из игральной доски и фигур."
+				pickdistance="150" waterproof="true" scale="0.5" >
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="100" >
+      <RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+			<Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+
+    <Sprite texture="chessset_atlas.png" depth="0.84" sourcerect="1,88,164,68" origin="0.5,0.5" />
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="1,88,164,68" origin="0.5,0.5" />
+    <Body width="165" height="80" density="40" />
+
+    <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="50,-20" handle1="-20,0" msg="ItemMsgPickUpSelect" >
+			<StatusEffect type="OnUse" target="This" >
+				<RemoveItem />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Character" >
+				<Affliction identifier="cs_a_chesssetkit" strength="1" />
+			</StatusEffect>
+		</Holdable>
+  </Item>
+  <Item name="Шахматная доска" identifier="chessboard" tags="smallitem,chessboard" linkable="false" pickdistance="150" waterproof="true" scale="0.5" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" >
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+
+    <Sprite texture="chessset_atlas.png" depth="0.84" sourcerect="1,88,164,68" origin="0.5,0.5" />
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="3,60,164,24" origin="0.5,0.5" />
+    <Body width="165" height="80" density="40" />
+
+		<Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetach" PickingTime="5.0" aimpos="85,-10" handle1="0,0" attachable="true" aimable="true" />
+    <ItemContainer capacity="64" slotsperrow="8" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect" >
+      <GuiFrame relativesize="0.35,0.7" anchor="Center" style="ItemUI" />
+      <Containable items="chesspiece" />
+    </ItemContainer>
+  </Item>
+
+  <Item name="Чёрная Пешка" identifier="blackpawn" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" maxstacksize="8" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="8" >
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="0.125" />
+    </Deconstruct>
+		<!-- Sprite Info -->
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="4,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="4,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+		<!-- Details -->
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  
+  <Item name="Чёрная Ладья" identifier="blackrook" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2" >
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="30,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="30,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  
+  <Item name="Черный Конь" identifier="blackknight" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2" >
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="54,8,25,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="54,8,25,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+ 
+  <Item name="Черный Слон" identifier="blackbishop" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2" >
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5" >
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="87,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="87,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+ 
+  <Item name="Черный Король" identifier="blackking" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="1">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="116,2,20,48" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="116,2,20,48" origin="0.5,0.5" />
+    <Body width="20" height="48" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+ 
+  <Item name="Черный Ферзь" identifier="blackqueen" tags="smallitem,chesspiece" spritecolor="50,50,50,255" InventoryIconColor="50,50,50,255" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="1">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+
+		<InventoryIcon texture="chessset_atlas.png" sourcerect="142,2,20,48" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="142,2,20,48" origin="0.5,0.5" />
+    <Body width="20" height="48" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+
+  <Item name="Белая Пешка" identifier="whitepawn" tags="smallitem,chesspiece" maxstacksize="8" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="8">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.125" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="4,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="4,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  
+  <Item name="Белая Ладья" identifier="whiterook" tags="smallitem,chesspiece" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="30,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="30,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+ 
+  <Item name="Белый Конь" identifier="whiteknight" tags="smallitem,chesspiece" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+		<Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="54,8,25,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="54,8,25,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  
+  <Item name="Белый Слон" identifier="whitebishop" tags="smallitem,chesspiece" maxstacksize="2" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.5" />
+    </Deconstruct>
+
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="87,8,20,42" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="87,8,20,42" origin="0.5,0.5" />
+    <Body width="20" height="42" />
+
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  
+  <Item name="Белый Король" identifier="whiteking" tags="smallitem,chesspiece" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="1">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+		<!-- Sprite Info -->
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="116,2,20,48" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="116,2,20,48" origin="0.5,0.5" />
+    <Body width="20" height="48" />
+		<!-- Details -->
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Белый Ферзь" identifier="whitequeen" tags="smallitem,chesspiece" pickdistance="150" waterproof="true" scale="0.5" impactsoundtag="impact_soft">
+		<!-- Fabricating & Deconstructing -->
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="1">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+    </Deconstruct>
+		<!-- Sprite Info -->
+    <InventoryIcon texture="chessset_atlas.png" sourcerect="142,2,20,48" origin="0.5,0.5" />
+    <Sprite texture="chessset_atlas.png" depth="0.83" sourcerect="142,2,20,48" origin="0.5,0.5" />
+    <Body width="20" height="48" />
+		<!-- Details -->
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
+		<Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
+  </Item>
+</Items>
