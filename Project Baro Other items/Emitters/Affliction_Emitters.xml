@@ -25,7 +25,7 @@
         <LightComponent canbeselected="false" IsOn="true" lightcolor="25,25,25,0" castshadows="false" allowingameediting="false" range="1">
             <sprite texture="Mods/Project Baro Other items/Emitters/texture.png" sourcerect="1441,1689,144,333" depth="0.1" origin="0.5,0.5" alpha="1.0" />
             <StatusEffect type="OnActive" target="This,NearbyCharacters" disabledeltatime="true" stackable="false" delay="1.0" range="5000.0">
-                <Affliction identifier="cold" amount="2"/>
+                <Affliction identifier="cold" amount="0.3"/>
         </StatusEffect>
         </LightComponent>
         <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
