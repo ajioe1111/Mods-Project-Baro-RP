@@ -40,4 +40,27 @@
     <Effect minstrength="0" maxstrength="100" strengthchange="-80" resistancefor="burn" minresistance="1" maxresistance="3" />
     <icon texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="284,892,133,132" color="10,193,114,255" origin="0,0" />
   </Affliction>
+  <Affliction name="Телепортация" identifier="empteleport" description="Происходит телепортация. ЭМИ при этом может разрушить электронные приборы вблизи, но и лучше не лезть при этом в воду." type="poison" causeofdeathdescription="Killed by explosive genetic disorder." selfcauseofdeathdescription="Your explosive genetic disorder has killed you." limbspecific="false" maxstrength="1" damageoverlayalpha="1" iconcolors="255,0,140,255;255,0,140,255">
+    <PeriodicEffect mininterval="8" maxinterval="15">
+      <StatusEffect target="Character" stackable="false" disabledeltatime="false">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="1000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/Emp.ogg" range="1000" />
+        <ParticleEmitter particle="zap" particleamount="2" scalemin="1" scalemax="2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" colormultiplier="200,255,255,190" />
+        <Explosion range="400" force="2" smoke="false" sparks="false" empstrength="100" flames="false" applyfireeffects="false" screencolor="200,255,255,220" screencolorrange="400" screencolorduration="2.0"></Explosion>
+      </StatusEffect>
+      <StatusEffect target="Character" stackable="false">
+        <Conditional InWater="eq true" />
+        <Explosion range="600" force="0.1" smoke="false" sparks="false" empstrength="100" flames="false" applyfireeffects="false">
+          <Affliction identifier="burn" amount="4" />
+        </Explosion>
+      </StatusEffect>
+    </PeriodicEffect>
+    <Effect minstrength="0" maxstrength="100">
+      <StatusEffect target="Character" stackable="false" duration="1.0" disabledeltatime="false">
+        <ParticleEmitter particle="zap" copyentityangle="false" anglemin="0" anglemax="360" particleamount="1" particlespersecond="2" velocitymin="40" velocitymax="75" scalemin="0.2" scalemax="0.5" colormultiplier="200,255,255,100" />
+        <sound file="Mods/Project Baro Other items/Afflictions/WeldSpark.ogg" range="700" loop="true" />
+      </StatusEffect>
+    </Effect>
+    <icon name="empteleport" texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="431,894,128,128" color="60,107,195,255" origin="0,0" />
+  </Affliction>
 </Afflictions>

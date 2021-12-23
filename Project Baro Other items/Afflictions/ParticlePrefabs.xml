@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <zap startsizemin="0.6,0.6" startsizemax="1.3,1.3" startrotationmin="0" startrotationmax="360" startcolor="255,255,255,200" endcolor="255,255,255,200" lifetime="0.1" growtime="0" velocitychange="0,0" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="30" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" sizechangemin="0,0" sizechangemax="0,0" drawtarget="Both" blendstate="Additive" animduration="1.5" loopanim="False" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
+    <sprite texture="Mods/Thalassophobia/Particles/geneparticles.png" sourcerect="185,143,381,394" origin="0.5,0.5" />
+  </zap>
+</prefabs>
