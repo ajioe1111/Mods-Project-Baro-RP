@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Armor and weapons" path="Mods/Project Baro Armor and weapons/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637257658" installtime="1639401310">
+<contentpackage name="Project Baro Armor and weapons" path="Mods/Project Baro Armor and weapons/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2637257658" installtime="1639397711">
   <Item file="Mods/Project Baro Armor and weapons/Weapon/gun.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/Officer/officer.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/Frozen/frozen.xml" />
@@ -7,4 +7,5 @@
   <Item file="Mods/Project Baro Armor and weapons/Armor/Special_Commander/specaarmor.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/Special_Solder/specSarmor.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Uniform/Deimos_Dark/Deimos.xml" />
+  <Item file="Mods/Project Baro Armor and weapons/Armor/Black_gate/blackgate.xml" />
 </contentpackage>
