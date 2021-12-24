@@ -261,19 +261,19 @@
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
     <Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="Пиковая Дама" identifier="pk" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
+  <Item name="Пиковый король" identifier="pk" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
     <Sprite texture="cards.png" depth="0.83" sourcerect="2009,730,169,244" origin="0.5,0.5" />
     <Body width="20" height="32" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
     <Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="Пиковый Валет" identifier="pq" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
+  <Item name="Пиковая Дама" identifier="pq" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
     <Sprite texture="cards.png" depth="0.83" sourcerect="1842,730,169,244" origin="0.5,0.5" />
     <Body width="20" height="32" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
     <Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="Пиковая Десятка" identifier="pv" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
+  <Item name="Пиковый Валет" identifier="pv" tags="smallitem,card" maxstacksize="1" pickdistance="150" waterproof="true" scale="0.05" impactsoundtag="impact_soft">
     <Sprite texture="cards.png" depth="0.83" sourcerect="1674,730,169,244" origin="0.5,0.5" />
     <Body width="20" height="32" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
