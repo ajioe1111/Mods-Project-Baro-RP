@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="Одежда Деймоса Дарка" identifier="pj_Deimos_uniformclothes" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Удобная одежда с вырезом для протеза" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Деймос Дарк (Одежда: Инженер)" identifier="pj_Deimos_uniformclothesenj" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Удобная одежда с вырезом для протеза" scale="0.5" impactsoundtag="impact_soft">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="202,2,185,69" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="123,144,121,62" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
       <sprite name="Deimos_uniform Torso" texture="Deimos_uniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -19,6 +19,54 @@
       <sprite name="Deimos_uniform Left Leg" texture="Deimos_uniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Deimos_uniform Left Shoe" texture="Deimos_uniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Deimos_uniform Right Shoe" texture="Deimos_uniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
+        <Affliction identifier="protez" strength="100" setvalue="true" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="Деймос Дарк (Одежда: Врач)" identifier="pj_Deimos_uniformclothesmed" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Удобная одежда с вырезом для протеза" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="504,84,123,60" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+      <sprite name="Deimos_uniform Torso" texture="Deimos_medic.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Hand" texture="Deimos_medic.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Hand" texture="Deimos_medic.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Lower Arm" texture="Deimos_medic.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Lower Arm" texture="Deimos_medic.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Upper Arm" texture="Deimos_medic.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Upper Arm" texture="Deimos_medic.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Waist" texture="Deimos_medic.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Thigh" texture="Deimos_medic.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Thigh" texture="Deimos_medic.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Leg" texture="Deimos_medic.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Leg" texture="Deimos_medic.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Shoe" texture="Deimos_medic.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Shoe" texture="Deimos_medic.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
+        <Affliction identifier="protez" strength="100" setvalue="true" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="Деймос Дарк (Одежда: СБ)" identifier="pj_Deimos_uniformclothesssb" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Удобная одежда с вырезом для протеза" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="0,653,143,106" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="458,807,207,79" depth="0.6" origin="0.48533672,0.4793691" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+      <sprite name="Deimos_uniform Torso" texture="Deimos_ssb.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Hand" texture="Deimos_ssb.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Hand" texture="Deimos_ssb.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Lower Arm" texture="Deimos_ssb.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Lower Arm" texture="Deimos_ssb.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Upper Arm" texture="Deimos_ssb.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Upper Arm" texture="Deimos_ssb.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Waist" texture="Deimos_ssb.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Thigh" texture="Deimos_ssb.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Thigh" texture="Deimos_ssb.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Leg" texture="Deimos_ssb.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Leg" texture="Deimos_ssb.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Left Shoe" texture="Deimos_ssb.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Deimos_uniform Right Shoe" texture="Deimos_ssb.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
         <Affliction identifier="protez" strength="100" setvalue="true" />
       </StatusEffect>
