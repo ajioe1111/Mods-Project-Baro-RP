@@ -794,6 +794,9 @@
     <SetupVisibilityButton color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
       <Sprite name="SetupVisibilityButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="936,146,40,37" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
     </SetupVisibilityButton>
+    <EditorLayerButton color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
+      <Sprite name="EditorLayerButton" texture="Content/UI/InventoryUIAtlas.png" sourcerect="890,191,40,37" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
+    </EditorLayerButton>
     <CategoryButton.All color="169,212,187,255" hovercolor="220,220,220,255" selectedcolor="255,255,255,255" pressedcolor="100,100,100,255" disabledcolor="125,125,125,125">
       <Sprite name="CategoryButton.All" texture="Content/UI/InventoryUIAtlas.png" sourcerect="437,269,64,64" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
     </CategoryButton.All>
