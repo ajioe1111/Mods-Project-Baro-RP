@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+<Affliction name="Ассимиляция Preso Latex" identifier="presolatexinfection" description="Пациент медленно покрывается субстанцией Preso Latex, его жизненные показатели быстро снижаются по мере разжижения внутренних органов."
+ damageoverlayalpha="1"
+ causeofdeathdescription="Поддался воздействию Preso Latex"
+ selfcauseofdeathdescription="Вы превратились в безжизненную статую вашего прежнего себя"
+ limbspecific="false"
+ indicatorlimb="Torso"
+ karmachangeonapplied="-100"
+ maxstrength="200">
+     <Effect minstrength="0" maxstrength="20"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="1"
+      minscreendistort="0.0"
+      maxscreendistort="1.0"
+      minscreenblur="0.0"
+      maxscreenblur="0.0"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="0.4"
+      minfacetint="0,0,0,0"
+      maxfacetint="0,0,0,100">
+      <StatusEffect target="Character">
+        <Affliction identifier="oxygenlow" amount="3" setvalue="true" />
+        <Affliction identifier="nausea" amount="2" setvalue="true" />
+        <Affliction identifier="organdamage" amount="1" setvalue="true" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="20" maxstrength="100"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="2"
+      minscreendistort="0.0"
+      maxscreendistort="1.0"
+      minscreenblur="0.0"
+      maxscreenblur="0.8"
+      minchromaticaberration="0.4"
+      maxchromaticaberration="1.6"
+      minfacetint="0,0,0,100"
+      maxfacetint="0,0,0,200"
+      minbodytint="0,0,0,100"
+      maxbodytint="0,0,0,200">
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true"/>
+      <StatusEffect target="Character">
+        <Affliction identifier="organdamage" amount="4" setvalue="true" />
+        <Affliction identifier="nausea" amount="4" setvalue="true" />
+        <Affliction identifier="oxygenlow" amount="7" setvalue="true" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="150"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="2"
+      minscreendistort="0.0"
+      maxscreendistort="1.5"
+      minscreenblur="0.8"
+      maxscreenblur="1.25"
+      minchromaticaberration="1.6"
+      maxchromaticaberration="2.5"
+      minfacetint="0,0,0,200"
+      maxfacetint="0,0,0,255"
+      minbodytint="0,0,0,200"
+      maxbodytint="0,0,0,255">
+      <StatusEffect target="Character" SpeedMultiplier="0.2" setvalue="true"/>
+      <StatusEffect target="Character">
+      <Affliction identifier="organdamage" amount="6" setvalue="true" />
+      <Affliction identifier="nausea" amount="10" setvalue="true" />
+    <Affliction identifier="oxygenlow" amount="10" setvalue="true"/>
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="150" maxstrength="200"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="3"
+      minscreendistort="0.0"
+      maxscreendistort="1.5"
+      minscreenblur="2"
+      maxscreenblur="3"
+      minchromaticaberration="1.6"
+      maxchromaticaberration="2.5"
+      minfacetint="0,0,0,255"
+      maxfacetint="0,0,0,255"
+      minbodytint="0,0,0,255"
+      maxbodytint="0,0,0,255">
+      <StatusEffect target="Character" SpeedMultiplier="0.2" setvalue="true"/>
+      <StatusEffect target="Character">
+      <Affliction identifier="organdamage" amount="20" setvalue="true" />
+      <Affliction identifier="nausea" amount="10" setvalue="true" />
+    <Affliction identifier="oxygenlow" amount="20" setvalue="true"/>
+      </StatusEffect>
+    </Effect>
+    <icon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/Afflictions/presolatex.png" sourcerect="0,0,128,128" color="106,106,106,255" origin="0,0"/>
+  </Affliction>
+ </Afflictions>
