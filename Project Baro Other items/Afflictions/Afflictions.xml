@@ -61,6 +61,18 @@
         <sound file="Mods/Project Baro Other items/Afflictions/WeldSpark.ogg" range="700" loop="true" />
       </StatusEffect>
     </Effect>
-    <icon name="empteleport" texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="431,894,128,128" color="60,107,195,255" origin="0,0" />
+    <icon name="empteleport" texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="429,894,130,130" color="60,107,195,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Spaghettified" identifier="pj_blackholedeath" description="The patient has been exposed to tear gas." type="resistance" causeofdeathdescription="Spaghettified in Black Hole" selfcauseofdeathdescription="You have been spaghettified by a black hole." limbspecific="false" indicatorlimb="Head" showiconthreshold="20" maxstrength="20">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-2.0" minvitalitydecrease="500" maxvitalitydecrease="501">
+      <StatusEffect target="Character">
+        <RemoveCharacter />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Mods/Project Baro Other items/Afflictions/MainIconsAtlas.png" sourcerect="560,894,128,128" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Второй шанс" identifier="pj_chance" description="Extra borrowed time granted by your phoenix injector. It won't last forever: find medicine ASAP!" type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
+    <Effect minstrength="0" maxstrength="400" strengthchange="-4" resistancefor="damage" minresistance="0" maxresistance="0.8" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
 </Afflictions>

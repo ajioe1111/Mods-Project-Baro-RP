@@ -46,7 +46,7 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="440,491,99,162" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="460,490,114,169" origin="0.5,0.5" />
     <Sprite texture="armor_blackgate.png" sourcerect="0,32,128,192" depth="0.6" origin="0.451929,0.49907818" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
