@@ -126,7 +126,7 @@
         <RequiredItem identifier="rubber" />
       </Fabricate>
       <InventoryIcon name="doctfatigvet Icon" texture="OutfitIconsAV.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
-      <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="18,614,197,84" depth="0.6" origin="0.5,0.5" />
+      <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="504,84,123,60" depth="0.6" origin="0.5,0.5" />
       <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
       <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Medic Uniform 1 Torso" texture="medics\medic_1_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.16.6.1" steamworkshopid="2637257422" installtime="1645787282">
+<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257422" installtime="1647444408">
   <UIStyle file="Mods/Project Baro Other items/Content/UI/pj_style.xml" />
   <Sounds file="Mods/Project Baro Other items/Content/pjsounds.xml" />
   <LocationTypes file="Mods/Project Baro Other items/Content/pjlocationTypes.xml" />
@@ -21,25 +21,18 @@
   <None file="Mods/Project Baro Other items/Food/Items/kitchen.png" />
   <None file="Mods/Project Baro Other items/Food/Items/pantry.png" />
   <None file="Mods/Project Baro Other items/Food/Items/refrigerator.png" />
-  <None file="Mods/Project Baro Other items/Lua/Autorun/run.lua" />
-  <None file="Mods/Project Baro Other items/Lua/config.lua" />
-  <None file="Mods/Project Baro Other items/Lua/Autorun/init.lua" />
-  <None file="Mods/Project Baro Other items/Lua/ForcedAutorun/init.lua" />
-  <None file="Mods/Project Baro Other items/Lua/performancefix.lua" />
   <Item file="Mods/Project Baro Other items/Emitters/Affliction_Emitters.xml" />
   <Item file="Mods/Project Baro Other items/Artifact/items.xml" />
   <Afflictions file="Mods/Project Baro Other items/Afflictions/Afflictions.xml" />
-  <Item file="Mods/Project Baro Other items/Music/project-baro-music.xml" />
   <Item file="Mods/Project Baro Other items/Item/items.xml" />
   <Item file="Mods/Project Baro Other items/Item/chess/chess.xml" />
   <Afflictions file="Mods/Project Baro Other items/Item/chess/cs_Afflictions.xml" />
   <None file="Mods/Project Baro Other items/Item/chess/chessset_atlas.png" />
   <ItemAssembly file="Mods/Project Baro Other items/Item/chess/ChessSet.xml" />
-  <Item file="Mods/Project Baro Other items/Item/cards/cards.xml" />
-  <None file="Mods/Project Baro Other items/Item/cards/cards.png" />
   <Particles file="Mods/Project Baro Other items/Afflictions/ParticlePrefabs.xml" />
   <Item file="Mods/Project Baro Other items/Item/handcuffs/handcuffs.xml" />
   <Item file="Mods/Project Baro Other items/Item/singularity/singularity.xml" />
   <Particles file="Mods/Project Baro Other items/Particles/ParticlePrefabs.xml" />
   <Item file="Mods/Project Baro Other items/Item/phoenix_injector/phoenix_injector.xml"/>
+  <Item file="Mods/Project Baro Other items/Music/project-baro-music.xml" />
 </contentpackage>

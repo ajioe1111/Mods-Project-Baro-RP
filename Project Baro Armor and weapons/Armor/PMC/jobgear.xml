@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+  <!-- HELMETS -->
+
+  <!-- MK I -->
+
+  <Item name="Солдат (Боевой шлем)" identifier="pjsolderhelmet" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+    <Upgrade gameversion="0.9.6.0" scale="0.4" />
+    <PreferredContainer primary="armcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="1" />
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="2" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="ballistichelmet" />
+      <RequiredItem identifier="ballisticfiber" />
+    </Fabricate>
+    <Deconstruct time="40">
+      <Item identifier="ballistichelmet" />
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Sprite name="solder Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" sourcerect="235,112,103,92" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="solder Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.63" hidewearablesoftype="hair" sourcerect="235,112,103,92" origin="0.5,0.6" />
+    </Wearable>
+  </Item>
+
+  <Item name="ЧВК (Боевой шлем) Salvaged" identifier="pjPMChelmet1" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.1" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="plastic" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="392,414,120,98" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="392,414,120,98" origin="0.5,0.51" />
+      <SkillModifier skillidentifier="weapons" skillvalue="2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.21" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.18" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+    </Wearable>
+  </Item>
+
+  <Item name="ЧВК (Боевой шлем)" identifier="pjPMChelmet2" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="plastic" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,0,120,98" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,0,120,98" origin="0.5,0.51" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+    </Wearable>
+  </Item>
+
+  <Item name="Спецназ (Боевой шлем)" identifier="pjsphelmet" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Изначально этот шлем должен был поступить для спецназа ВЭК, но было решено пустить его в свободное производство для простого экипажа." scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="steel" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Sprite name="sp Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,106,115,104" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+        <sprite name="sp Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,106,115,104" origin="0.5,0.51" >
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.10" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </ItemContainer>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+  </Item>
+
+
+  <Item name="ЧВК (Боевой шлем) 2" identifier="pjPMChelmet3" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="steel" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,98,120,92" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,98,120,92" origin="0.5,0.51">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+        <Containable items="oxygensource,weldingtoolfuel" />
+      </ItemContainer>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="true" overlaycolor="133,209,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+  </Item>
+
+  <!-- CLOTHING -->
+
+  <!-- MK I -->
+
+  <Item name="Солдат (Боевая форма)" identifier="pjsolderarmour" aliases="PMCarmour" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="1" />
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="securityuniform" />
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon name="solder Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="376,3,126,88" origin="0.5,0.5" />
+    <Sprite name="solder Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,187,119,58" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <sprite name="solder Armour Torso" texture="solder.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Hand" texture="solder.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Hand" texture="solder.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Lower Arm" texture="solder.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Lower Arm" texture="solder.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Upper Arm" texture="solder.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Upper Arm" texture="solder.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Waist" texture="solder.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Thigh" texture="solder.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Thigh" texture="solder.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Leg" texture="solder.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Leg" texture="solder.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Left Shoe" texture="solder.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="solder Armour Right Shoe" texture="solder.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" />
+    </Wearable>
+  </Item>
+
+  <Item name="ЧВК (Боевая броня) Salvaged" identifier="pjPMCarmour1" aliases="pjPMCarmour" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.1" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="248,0,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,62,119,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <sprite name="PMC Armour Torso" texture="PMC1.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Hand" texture="PMC1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Hand" texture="PMC1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Lower Arm" texture="PMC1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Lower Arm" texture="PMC1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Upper Arm" texture="PMC1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Upper Arm" texture="PMC1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Waist" texture="PMC1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Thigh" texture="PMC1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Thigh" texture="PMC1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Leg" texture="PMC1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Leg" texture="PMC1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Shoe" texture="PMC1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Shoe" texture="PMC1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.40" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.40" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.40" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.45" damagesound="LimbArmor" />
+    </Wearable>
+  </Item>
+
+  <Item name="ЧВК (Боевая броня)" identifier="pjPMCarmour2" aliases="pjPMCarmour" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_metal_heavy">
+    >
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="120,0,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="7" />
+      <sprite name="PMC Armour Torso" texture="PMC2.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Hand" texture="PMC2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Hand" texture="PMC2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Lower Arm" texture="PMC2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Lower Arm" texture="PMC2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Upper Arm" texture="PMC2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Upper Arm" texture="PMC2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Waist" texture="PMC2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Thigh" texture="PMC2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Thigh" texture="PMC2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Leg" texture="PMC2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Leg" texture="PMC2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Shoe" texture="PMC2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Shoe" texture="PMC2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.3S" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="3000.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+  </Item>
+
+  <Item name="Спецназ (Броня)" identifier="sparmour" aliases="PMCarmour" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_metal_heavy">
+    >
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <InventoryIcon name="sp Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="248,92,128,91" origin="0.5,0.5" />
+    <Sprite name="sp Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,124,119,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="7" />
+      <sprite name="sp Armour Torso" texture="sp.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true" />
+      <sprite name="sp Armour Right Hand" texture="sp.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true" />
+      <sprite name="sp Armour Left Hand" texture="sp.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Right Lower Arm" texture="sp.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Left Lower Arm" texture="sp.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Right Upper Arm" texture="sp.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Left Upper Arm" texture="sp.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Waist" texture="sp.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Right Thigh" texture="sp.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Left Thigh" texture="sp.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Right Leg" texture="sp.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Left Leg" texture="sp.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Left Shoe" texture="sp.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <sprite name="sp Armour Right Shoe" texture="sp.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" hideotherwearables="true"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.4S" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="430.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="4" depth="0.5">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+
+  <!-- MK II -->
+
+  <Item name="ЧВК (Боевая броня) Усилинная" identifier="pjPMCarmour3" aliases="pjPMCarmour" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_metal_heavy">
+    >
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="carbon" />
+      <Item identifier="carbon" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="120,91,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="7" />
+      <sprite name="PMC Armour Torso" texture="PMC2.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Hand" texture="PMC2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Hand" texture="PMC2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Lower Arm" texture="PMC2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Lower Arm" texture="PMC2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Upper Arm" texture="PMC2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Upper Arm" texture="PMC2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Waist" texture="PMC2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Thigh" texture="PMC2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Thigh" texture="PMC2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Leg" texture="PMC2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Leg" texture="PMC2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Left Shoe" texture="PMC2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="PMC Armour Right Shoe" texture="PMC2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.1S" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="6000.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+  </Item>
+
+  <!-- ARMOUR -->
+
+  <Item name="Солдат (Боевая броня)" identifier="pjsolderbodyarmour" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.35" />
+    <PreferredContainer primary="armcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="1" />
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="2" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="bodyarmor" />
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" origin="0.5,0.5" />
+    <Sprite name="solder Vest Item" texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" depth="0.6" />
+    <Body radius="45" height="50" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <sprite name="solder Vest Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" sourcerect="7,32,113,193" />
+    </Wearable>
+  </Item>
+  <Item name="ЧВК (Особый боевой шлем с системой звукового усиления) 2" identifier="PMChelmet4" aliases="PMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="40">
+      <Item identifier="PMCarmour2" />
+      <Item identifier="plastic" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,397,120,115" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,397,120,115" origin="0.5,0.55" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+    </Wearable>
+  </Item>
+
+  <!-- MK II -->
+
+  <Item name="ЧВК (Боевой шлем) Солдат" identifier="pjPMChelmet5" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,0,115,105" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,0,115,105" origin="0.5,0.51">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="true" overlaycolor="133,209,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+  </Item>
+
+  <Item name="ЧВК (Боевой шлем) Специалист" identifier="pjPMChelmet6" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="235,0,123,102" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="235,0,123,102" origin="0.5,0.51">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="true" overlaycolor="133,209,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+  </Item>
+
+  <Item name="ЧВК (Боевой шлем) Ева" identifier="pjPMChelmet7" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="359,0,128,115" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="359,0,128,115" origin="0.5,0.51">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="true" overlaycolor="133,209,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+  </Item>
+
+  <Item name="ЧВК (Особый боевой шлем с системой звукового усиления)" identifier="pjPMChelmet8" aliases="pjPMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+      <Item identifier="carbon" />
+    </Deconstruct>
+    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,402,120,110" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,402,120,110" origin="0.5,0.55">
+        <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" Oxygen="-20.0" Condition="-0.5" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1500.0" Condition="-0.1" comparison="And" targetslot="0">
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.9" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+        <TickBox text="Headlight" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <ItemComponent>
+        <IsActive HullOxygenPercentage="lt 50" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="true" overlaycolor="133,209,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+  </Item>
+</Items>
