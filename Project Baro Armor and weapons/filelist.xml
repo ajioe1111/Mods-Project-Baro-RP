@@ -11,4 +11,5 @@
   <Item file="Mods/Project Baro Armor and weapons/Weapon/Preso/items.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/PMC/jobgear.xml" />
   <Afflictions file="Mods/Project Baro Armor and weapons/Weapon/Preso/Afflictions/afflictions.xml" />
+  <Item file="Mods/Project Baro Armor and weapons/Weapon/Thalassophobia/explosives.xml"/>
 </contentpackage>

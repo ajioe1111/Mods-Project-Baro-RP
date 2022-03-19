@@ -22,8 +22,8 @@
       <Sprite texture="Content/Items/Jobgear/Security/SecurityVest.png" sourcerect="129,2,54,42" depth="0.6" />
       <Body width="50" height="34" density="40" />
       <Wearable slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
-        <sprite texture="Content/Items/Jobgear/Security/SecurityVest.png" limb="RightHand" sourcerect="185,1,25,16" origin="0.5,-0.7" depth="0.01" inherittexturescale="true" />
-        <sprite texture="Content/Items/Jobgear/Security/SecurityVest.png" limb="LeftHand" sourcerect="210,1,25,17" origin="0.5,-0.7" depth="0.01" inherittexturescale="true" />
+        <sprite texture="Content/Items/Jobgear/Security/SecurityVest.png" limb="RightHand" sourcerect="185,1,25,16" origin="0.5,-0.11" depth="0.01" inherittexturescale="true" />
+        <sprite texture="Content/Items/Jobgear/Security/SecurityVest.png" limb="LeftHand" sourcerect="210,1,25,17" origin="0.5,-0.11" depth="0.01" inherittexturescale="true" />
         <StatusEffect type="OnWearing" target="Character" lockhands="true" setvalue="true" />
         <StatusEffect type="OnWearing" target="Character,This" setvalue="true" SpeedMultiplier="0.0">
           <Conditional isshootable="eq true" />
@@ -35,7 +35,7 @@
           <GuiFrame relativesize="0.3,0.1" anchor="BottomCenter" absoluteoffset="0,0" style="ItemUI" />
           <Tickbox text="Struggle (Disables Movement)">
             <StatusEffect type="OnUse" target="This" condition="-0.015" IsOn="true">
-              <Sound file="Mods/Project Baro Other items/Item/handcuffs/cuffsbreakout.ogg" range="800" loop="true" />
+              <Sound file="Mods/Project Baro Other items/Item/Thalassophobia/handcuffs/cuffsbreakout.ogg" range="800" loop="true" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="true" isshootable="true" />
             <StatusEffect type="OnSecondaryUse" target="This" condition="100" setvalue="true" IsOn="false" isshootable="false" />
@@ -43,7 +43,7 @@
         </CustomInterface>
         <StatusEffect type="OnBroken" target="This">
           <SpawnItem identifier="handcuffs" spawnposition="This" />
-          <Sound file="Mods/Project Baro Other items/Item/handcuffs/cuffbreak.ogg" range="1200" />
+          <Sound file="Mods/Project Baro Other items/Item/Thalassophobia/handcuffs/cuffbreak.ogg" range="1200" />
           <Remove />
         </StatusEffect>
       </Wearable>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="Singularity" identifier="pj_singularity" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.3" health="100" hideinmenus="false" noninteractable="true" isshootable="true">
-    <Sprite name="singularity" texture="Mods/Project Baro Other items/Item/singularity/singularity.png" sourcerect="0,0,400,400" origin="0.5,0.5" depth="0.02" />
-    <DecorativeSprite texture="Mods/Project Baro Other items/Item/singularity/singularity.png" sourcerect="0,0,400,400" depth="0.01" rotationspeed="360"></DecorativeSprite>
+    <Sprite name="singularity" texture="Mods/Project Baro Other items/Item/Thalassophobia/singularity/singularity.png" sourcerect="0,0,400,400" origin="0.5,0.5" depth="0.02" />
+    <DecorativeSprite texture="Mods/Project Baro Other items/Item/Thalassophobia/singularity/singularity.png" sourcerect="0,0,400,400" depth="0.01" rotationspeed="360"></DecorativeSprite>
     <Body width="40" radius="30" density="15" bodytype="Kinematic" />
     <LightComponent lightcolor="255,255,255,255" range="1" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="true">
-      <Sprite name="singularity" texture="Mods/Project Baro Other items/Item/singularity/singularity.png" sourcerect="400,0,400,400" origin="0.5,0.5" depth="0.6" />
+      <Sprite name="singularity" texture="Mods/Project Baro Other items/Item/Thalassophobia/singularity/singularity.png" sourcerect="400,0,400,400" origin="0.5,0.5" depth="0.6" />
       <!--shrink and noise-->
-      <sound file="Mods/Project Baro Other items/Item/singularity/GiygasBG.ogg" range="3500.0" loop="true" selectionmode="all" type="OnActive" />
+      <sound file="Mods/Project Baro Other items/Item/Thalassophobia/singularity/GiygasBG.ogg" range="3500.0" loop="true" selectionmode="all" type="OnActive" />
       <StatusEffect type="Always" target="This" scale="-0.06" condition="-1">
-        <sound file="Mods/Project Baro Other items/Item/singularity/Giygas.ogg" range="3000.0" loop="true" Selectionmode="all" />
+        <sound file="Mods/Project Baro Other items/Item/Thalassophobia/singularity/Giygas.ogg" range="3000.0" loop="true" Selectionmode="all" />
         <ParticleEmitter particle="pj_dust" burstamount="3" particlespersecond="5" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" scalemin="5.0" scalemax="5.0" colormultiplier="0,0,0,255" />
       </StatusEffect>
       <!-- remove on too small, too big -->
       <StatusEffect delay="2.0" stackable="false" type="Always" target="This">
         <Conditional scale="lt 0.1" />
         <Conditional scale="gt 6.8" />
-        <Sound file="Mods/Project Baro Other items/Item/singularity/SingularityCollapse.ogg" range="3000" />
+        <Sound file="Mods/Project Baro Other items/Item/Thalassophobia/singularity/SingularityCollapse.ogg" range="3000" />
         <Remove />
       </StatusEffect>
       <StatusEffect delay="1.0" stackable="false" type="Always" target="This" setvalue="true" condition="0">
@@ -79,7 +79,7 @@
   </Item>
   <!-- used for breaking doors by singularity -->
   <Item name="doorbreaker" identifier="pj_smalldoorbreaker" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" hideinmenus="true" pickdistance="0" noninteractable="true">
-    <sprite name="sporeem" texture="Mods/Project Baro Other items/Item/singularity/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.4,0.3" />
+    <sprite name="sporeem" texture="Mods/Project Baro Other items/Item/Thalassophobia/singularity/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.4,0.3" />
     <Body width="40" radius="30" density="15" bodytype="Kinematic" />
     <LightComponent lightcolor="255,255,150,0" range="0" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="false">
       <StatusEffect type="Always" condition="-3000.0" range="500" target="NearbyItems" delay="0" stackable="false" targetidentifiers="door,hatch,windoweddoor,doorwbuttons,hatchwbuttons,windoweddoorwbuttons,alienhatch,aliendoor,doorwrecked,hatchwrecked,windoweddoorwrecked,doorwbuttonswrecked,hatchwbuttonswrecked,windoweddoorwbuttonswrecked"></StatusEffect>
@@ -89,7 +89,7 @@
     </LightComponent>
   </Item>
   <Item name="doorbreakerbig" identifier="pj_largedoorbreaker" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" hideinmenus="true" pickdistance="0" noninteractable="true">
-    <sprite name="sporeem" texture="Mods/Project Baro Other items/Item/singularity/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.4,0.3" />
+    <sprite name="sporeem" texture="Mods/Project Baro Other items/Item/Thalassophobia/singularity/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="0,0,1,1" origin="0.4,0.3" />
     <Body width="40" radius="30" density="15" bodytype="Kinematic" />
     <LightComponent lightcolor="255,255,150,0" range="0" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="false">
       <StatusEffect type="Always" condition="-3000.0" range="1400" target="NearbyItems" delay="0" stackable="false" targetidentifiers="door,hatch,windoweddoor,doorwbuttons,hatchwbuttons,windoweddoorwbuttons,alienhatch,aliendoor,doorwrecked,hatchwrecked,windoweddoorwrecked,doorwbuttonswrecked,hatchwbuttonswrecked,windoweddoorwbuttonswrecked"></StatusEffect>

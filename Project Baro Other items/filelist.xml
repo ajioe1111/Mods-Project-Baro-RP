@@ -30,10 +30,10 @@
   <None file="Mods/Project Baro Other items/Item/chess/chessset_atlas.png" />
   <ItemAssembly file="Mods/Project Baro Other items/Item/chess/ChessSet.xml" />
   <Particles file="Mods/Project Baro Other items/Afflictions/ParticlePrefabs.xml" />
-  <Item file="Mods/Project Baro Other items/Item/handcuffs/handcuffs.xml" />
-  <Item file="Mods/Project Baro Other items/Item/singularity/singularity.xml" />
+  <Item file="Mods/Project Baro Other items/Item/Thalassophobia/handcuffs/handcuffs.xml" />
+  <Item file="Mods/Project Baro Other items/Item/Thalassophobia/singularity/singularity.xml" />
   <Particles file="Mods/Project Baro Other items/Particles/ParticlePrefabs.xml" />
-  <Item file="Mods/Project Baro Other items/Item/phoenix_injector/phoenix_injector.xml"/>
   <Item file="Mods/Project Baro Other items/Music/project-baro-music.xml" />
+  <Item file="Mods/Project Baro Other items/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml"/>
   <Item file="Mods/Project Baro Other items/Item/alarms/alarms.xml" />
 </contentpackage>
