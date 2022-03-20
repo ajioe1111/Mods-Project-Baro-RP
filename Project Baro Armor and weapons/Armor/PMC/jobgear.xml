@@ -479,7 +479,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.4S" damagesound="LimbArmor" />
-      <StatusEffect type="OnWearing" target="Character" PressureProtection="430.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="4000" setvalue="true" disabledeltatime="true"></StatusEffect>
     </Wearable>
     <ItemContainer capacity="4" depth="0.5">
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
