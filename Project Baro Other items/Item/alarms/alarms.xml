@@ -495,39 +495,6 @@
     </ConnectionPanel>
   </Item>
 
-  <Item name="LeviathanAlert" identifier="LeviathanAlert" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
-    <PreferredContainer primary="reactorcab,storagecab"/>
-    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06"/>
-    <Price locationtype="Research" buyprice="2" />
-    <Price locationtype="City" buyprice="2" />
-    <Price locationtype="Outpost" buyprice="2" />
-    <Price locationtype="Military" buyprice="2" />
-    <Deconstruct time="10">
-      <Item identifier="fpgacircuit" />
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="steel" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
-    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
-    <Body radius="20" height="20" density="30" />
-    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
-      <RequiredItem items="wrench" type="Equipped" />
-    </Holdable>
-    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="5.0" range="20">
-      <Sprite texture="Mods/Project Baro Other items/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0"/>
-      <sound file="Mods/Project Baro Other items/Item/alarms/Sounds/LeviathanAlert.ogg" type="OnActive" range="2000.0" loop="true" volume="0.5" />
-    </LightComponent>
-    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
-      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
-      <RequiredItem items="screwdriver" type="Equipped" />
-      <input name="toggle" displayname="connection.togglestate" />
-      <input name="set_state" displayname="connection.setstate" />
-    </ConnectionPanel>
-  </Item>
-  
   <Item name="BuzzerMarkII" identifier="BuzzerMarkII" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
     <PreferredContainer primary="reactorcab,storagecab"/>
     <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06"/>

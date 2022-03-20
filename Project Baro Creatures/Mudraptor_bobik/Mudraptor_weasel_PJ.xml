@@ -1,0 +1,8 @@
+<Charactervariant inherit="Mudraptor_weasel_PJ" speciesname="Mudraptor_weasel_PJ" speciestranslationoverride="Mudraptor" texture="Mods/Project Baro Creatures/Mudraptor_bobik/Mudraptorhatchling.png" eatingspeed="6">
+  <health vitality="210" usehealthwindow="False"/>
+  <ragdoll scalemultiplier="0.5"/>
+  <attack damagemultiplier="0.09" rangemultiplier="0.5" impactmultiplier="0.25" />
+  <animations />
+  <ai combatstrength="150"/>
+  <inventory/>
+</Charactervariant>
