@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Armor and weapons" path="Mods/Project Baro Armor and weapons/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257658" installtime="1646213739">
+<contentpackage name="Project Baro Armor and weapons" path="Mods/Project Baro Armor and weapons/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257658" installtime="1647782862">
   <Item file="Mods/Project Baro Armor and weapons/Weapon/gun.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/Officer/officer.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/Frozen/frozen.xml" />
@@ -11,5 +11,7 @@
   <Item file="Mods/Project Baro Armor and weapons/Weapon/Preso/items.xml" />
   <Item file="Mods/Project Baro Armor and weapons/Armor/PMC/jobgear.xml" />
   <Afflictions file="Mods/Project Baro Armor and weapons/Weapon/Preso/Afflictions/afflictions.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Weapon/Thalassophobia/explosives.xml"/>
+  <Item file="Mods/Project Baro Armor and weapons/Weapon/Thalassophobia/explosives.xml" />
+  <Item file="Mods/Project Baro Armor and weapons/Armor/Metis_group/metis.xml" />
+  <Sounds file="Mods/Project Baro Armor and weapons/Armor/Metis_group/Sounds/sounds.xml" />
 </contentpackage>
