@@ -60,8 +60,8 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
     <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
     <Price baseprice="300" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1"/>
-      <Price locationtype="city" multiplier="0.7" minavailable="1"/>
+      <Price locationtype="outpost" multiplier="1" sold="false"/>
+      <Price locationtype="city" multiplier="0.7" sold="false"/>
       <Price locationtype="research" multiplier="1.1" sold="false"/>
       <Price locationtype="military" multiplier="1.1" sold="false"/>
       <Price locationtype="mine" multiplier="1.1" sold="false"/>
@@ -116,7 +116,7 @@
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
-      <Price locationtype="research" multiplier="1.0" minavailable="1"/>
+      <Price locationtype="research" multiplier="1.0" sold="false"/>
       <Price locationtype="military" multiplier="1.1" sold="false"/>
       <Price locationtype="mine" multiplier="1.1" sold="false"/>
     </Price>
@@ -172,7 +172,7 @@
       <Price locationtype="city" multiplier="0.7" sold="false"/>
       <Price locationtype="research" multiplier="1.1" sold="false"/>
       <Price locationtype="military" multiplier="1.1" sold="false"/>
-      <Price locationtype="mine" multiplier="1.0" minavailable="1"/>
+      <Price locationtype="mine" multiplier="1.0" sold="false"/>
     </Price>
     <Deconstruct time="20">
     </Deconstruct>
@@ -225,7 +225,7 @@
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
       <Price locationtype="research" multiplier="1.1" sold="false"/>
-      <Price locationtype="military" multiplier="1.0" minavailable="1"/>
+      <Price locationtype="military" multiplier="1.0" sold="false"/>
       <Price locationtype="mine" multiplier="1.1" sold="false"/>
     </Price>
     <Deconstruct time="20">
@@ -277,13 +277,12 @@
   
   <Item name="Кассета: Menace Ruine - Dark Mother" identifier="project-baro-music-cassette-dm" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
     <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -329,13 +328,12 @@
   
   <Item name="Кассета: Dead Man's Bones - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
     <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -383,11 +381,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="500" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -435,14 +433,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,41,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,21,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,0,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,0,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -487,14 +485,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,41,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,21,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,41,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -539,14 +537,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,41,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,21,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,41,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -591,14 +589,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,82,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,42,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,41,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -643,14 +641,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,82,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,42,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,41,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -695,14 +693,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,82,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,42,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,82,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,42,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -747,14 +745,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,123,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,63,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,82,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,42,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -799,14 +797,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,123,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,63,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,82,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,42,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -851,14 +849,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,123,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,63,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,82,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,42,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -903,14 +901,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,164,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,123,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,63,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -955,14 +953,14 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
     </Price>
-    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,164,64,41" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,123,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,63,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -989,6 +987,266 @@
         <Conditional hastag="walkman" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
         <SpawnItem identifiers="project-baro-music-song-walkman-animatsiya" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Unknown - Like The Wind" identifier="project-baro-music-cassette-mysterioussong" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,123,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,63,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Other items/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_mysterioussong" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-mysterioussong" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-mysterioussong" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Sinking Ships - Strangers" identifier="project-baro-music-cassette-sinkingships" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,123,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,63,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Other items/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_sinkingships" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-sinkingships" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-sinkingships" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Eyedress - Jealous" identifier="project-baro-music-cassette-eyedress" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Other items/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_eyedress" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-eyedress" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-eyedress" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Clownman Redial" identifier="project-baro-music-cassette-clown" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Other items/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_clown" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-clown" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-clown" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Space Station 13 - Endless Space" identifier="project-baro-music-cassette-space" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="Mods/Project Baro Other items/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_space" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-space" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-space" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained">
         <Use />
@@ -1509,29 +1767,202 @@
   </Item>
 
   
+  <Item name="Song: Unknown - Like The Wind" identifier="project-baro-music-song-mysterioussong" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/mysterioussong.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Unknown - Like The Wind" identifier="project-baro-music-song-walkman-mysterioussong" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/mysterioussong-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Sinking Ships - Strangers" identifier="project-baro-music-song-sinkingships" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/sinkingships.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Sinking Ships - Strangers" identifier="project-baro-music-song-walkman-sinkingships" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/sinkingships-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Eyedress - Jealous" identifier="project-baro-music-song-eyedress" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/eyedress.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Eyedress - Jealous" identifier="project-baro-music-song-walkman-eyedress" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/eyedress-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Clownman Redial" identifier="project-baro-music-song-clown" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/clown.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Clownman Redial" identifier="project-baro-music-song-walkman-clown" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/clown-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Space Station 13 - Endless Space" identifier="project-baro-music-song-space" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/space.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Space Station 13 - Endless Space" identifier="project-baro-music-song-walkman-space" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="Mods/Project Baro Other items/Music/music/space-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
 
 
   <!-- tape box -->
 
   <Item name="Коробка для кассет" identifier="project-baro-music-cassette-tape-box" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer secondary="wreckstoragecab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="75" >
-      <Price locationtype="outpost" multiplier="1"/>
-      <Price locationtype="city" multiplier="0.9"/>
-      <Price locationtype="research" multiplier="1.25"/>
-      <Price locationtype="military" multiplier="1.25"/>
-      <Price locationtype="mine" multiplier="1.25"/>
-    </Price>
+    <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.06"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.2"/>
     <Deconstruct time="10">
-      <Item identifier="plastic" />
+      <Item identifier="steel" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="25" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="plastic" />
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" />
     </Fabricate>
+    <Price baseprice="75" >
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.25" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6" />
     <Sprite texture="Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" />
     <Body width="90" height="60" density="20" />
