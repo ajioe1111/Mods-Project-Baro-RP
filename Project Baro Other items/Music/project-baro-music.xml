@@ -278,11 +278,11 @@
   <Item name="Кассета: Menace Ruine - Dark Mother" identifier="project-baro-music-cassette-dm" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
     <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -329,11 +329,11 @@
   <Item name="Кассета: Dead Man's Bones - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
     <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -381,11 +381,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="500" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -433,11 +433,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,0,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,0,33,21" depth="0.6" origin="0.5,0.5" />
@@ -485,11 +485,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,41,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,21,33,21" depth="0.6" origin="0.5,0.5" />
@@ -537,11 +537,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,41,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,21,33,21" depth="0.6" origin="0.5,0.5" />
@@ -589,11 +589,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,41,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,21,33,21" depth="0.6" origin="0.5,0.5" />
@@ -641,11 +641,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,41,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,21,33,21" depth="0.6" origin="0.5,0.5" />
@@ -693,11 +693,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,82,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,42,33,21" depth="0.6" origin="0.5,0.5" />
@@ -745,11 +745,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,82,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,42,33,21" depth="0.6" origin="0.5,0.5" />
@@ -797,11 +797,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,82,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,42,33,21" depth="0.6" origin="0.5,0.5" />
@@ -849,11 +849,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,82,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,42,33,21" depth="0.6" origin="0.5,0.5" />
@@ -901,11 +901,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,123,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,63,33,21" depth="0.6" origin="0.5,0.5" />
@@ -953,11 +953,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,123,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,63,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1005,11 +1005,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,123,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,63,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1057,11 +1057,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="192,123,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="99,63,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1109,11 +1109,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="0,164,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="0,84,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1161,11 +1161,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="64,164,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="33,84,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1213,11 +1213,11 @@
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="city" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="research" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="False" sold="false" />
-      <Price locationtype="mine" multiplier="1" sold="False" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="False"/>
+      <Price locationtype="city" multiplier="1" sold="False"/>
+      <Price locationtype="research" multiplier="1" sold="False"/>
+      <Price locationtype="military" multiplier="1" sold="False"/>
+      <Price locationtype="mine" multiplier="1" sold="False"/>
     </Price>
     <InventoryIcon texture="Mods/Project Baro Other items/Music/icons.png" sourcerect="128,164,64,41" origin="0.5,0.5" />
     <Sprite texture="Mods/Project Baro Other items/Music/sprites.png" sourcerect="66,84,33,21" depth="0.6" origin="0.5,0.5" />
@@ -1957,7 +1957,7 @@
       <Item identifier="steel" />
     </Fabricate>
     <Price baseprice="75" >
-      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.9" sold="false" />
       <Price locationtype="research" multiplier="1.25" sold="false" />
       <Price locationtype="military" multiplier="1.25" sold="false" />
