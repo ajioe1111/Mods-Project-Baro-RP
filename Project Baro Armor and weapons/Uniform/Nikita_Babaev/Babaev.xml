@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Бабаев: Шлем Фригг" identifier="pj_babaev_hemlet" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="Раритетный шлем первого бойца отряда Фригг. На внутренний части шлема выцарапано 'Собственность Гоги Арманидзе'. Имеются царапины, явно боевые. Говорят что этот шлем вселял ужас в любого кто стоял на пути... Шлем был улучшен камерой для записи в реальном времени." scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="200" soldeverywhere="false" minleveldifficulty="25">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" minavailable="1" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="546,7,110,96" origin="0.5,0.5" />
+    <Sprite texture="helmets.png" sourcerect="47,78,98,104" depth="0.6" origin="0.5,0.5" />
+    <Body radius="20" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite texture="helmets.png" limb="Head" inherittexturescale="false" sourcerect="47,78,98,105" origin="0.55,0.5" scale="0.37" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="concussion" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="70" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="25,360" style="ItemUI" />
+        <TickBox text="Фонарь" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <sprite name="pj_babaev_hemlet" texture="helmets.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="Hair" sourcerect="50,24,96,50" origin="0.6183839,0.38158828">
+        <LightComponent range="320.0" lightcolor="220,20,60,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Affliction identifier="frigg" strength="100" setvalue="true" />
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <StatusHUD drawhudwhenequipped="true" />
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
+      <Containable identifiers="oxygentank,oxygeniteshard,oxygenitetank" />
+    </ItemContainer>
+  </Item>
+</Items>
