@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Костюм ликвидатора ВЭК" identifier="pj_liquidator_uniform" aliases="captainsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10" />
+    <InventoryIcon name="Костюм ликвидатора ВЭК" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="431,654,130,101" origin="0.5,0.5" />
+    <Sprite name="Костюм ликвидатора ВЭК" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="451,667,215,100" depth="0.6" origin="0.48533672,0.4793691" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Uniform Torso" texture="liquidator_clothing.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="174,15,83,141" origin="0.5,0.5" />
+      <sprite name="Uniform Right Hand" texture="liquidator_clothing.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="287,157,32,46" origin="0.5,0.5" />
+      <sprite name="Uniform Left Hand" texture="liquidator_clothing.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="345,156,33,47" origin="0.5,0.5" />
+      <sprite name="Uniform Right Lower Arm" texture="liquidator_clothing.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="285,94,36,63" origin="0.5,0.5" />
+      <sprite name="Uniform Left Lower Arm" texture="liquidator_clothing.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="344,94,35,62" origin="0.5,0.5" />
+      <sprite name="Uniform Right Upper Arm" texture="liquidator_clothing.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="284,6,35,74" origin="0.5,0.5" />
+      <sprite name="Uniform Left Upper Arm" texture="liquidator_clothing.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="341,5,40,77" origin="0.5,0.5" />
+      <sprite name="Uniform Waist" texture="liquidator_clothing.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="184,191,58,61" origin="0.5,0.5" />
+      <sprite name="Uniform Right Thigh" texture="liquidator_clothing.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="9,4,59,112" origin="0.5,0.5" />
+      <sprite name="Uniform Left Thigh" texture="liquidator_clothing.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="90,4,58,112" origin="0.5,0.5" />
+      <sprite name="Uniform Right Leg" texture="liquidator_clothing.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="18,133,47,101" origin="0.5,0.5" />
+      <sprite name="Uniform Left Leg" texture="liquidator_clothing.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="94,131,52,102" origin="0.5,0.5" />
+      <sprite name="Uniform Left Shoe" texture="liquidator_clothing.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="338,208,60,46" origin="0.5,0.5" />
+      <sprite name="Uniform Right Shoe" texture="liquidator_clothing.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="273,208,62,46" origin="0.5,0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.78" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.05" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="25" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="4000.0" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="Броня ликвидатора ВЭК" identifier="pj_liquidator_armor" category="Equipment" tags="smallitem" fireproof="true" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_soft">
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+      <Price locationtype="military" multiplier="0.7" sold="false" />
+      <Price locationtype="mine" multiplier="1.2" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="144,328,114,162" origin="0.5,0.5" />
+    <Sprite texture="armor_liquidator.png" sourcerect="0,32,110,161" depth="0.6" origin="0.451929,0.49907818" />
+    <Body radius="45" height="60" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="liquidator Armor" texture="Mods/Project Baro Armor and weapons/Armor/liquidator/armor_liquidator.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,110,161" origin="0.6025018,0.50579226" scale="0.38" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.16" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.14" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.09" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.1" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.7" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.88" setvalue="true" disabledeltatime="true" />
+      <sprite name="armor_liquidatorwearable" texture="armor_liquidatorwearable.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    </Wearable>
+    <ItemContainer capacity="6" slotsperrow="2" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbox,uniform,mobilecontainer,rucksack,backpack,waistbelt" />
+    </ItemContainer>
+  </Item>
+  <Item name="Шлем Ликвидатора ВЭК" identifier="pj_liquidator_helmet" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="0,97,102,95" origin="0.50010884,0.4995133" />
+    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/liquidator/liquidator_helmet.png" sourcerect="47,94,108,98" depth="0.6" origin="0.44169724,0.5883361" hidewearablesoftype="Hair" />
+    <Body radius="20" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <sprite texture="Mods/Project Baro Armor and weapons/Armor/liquidator/liquidator_helmet.png" limb="Head" inherittexturescale="false" sourcerect="47,94,108,98" origin="0.4441788,0.5853188" scale="0.37" hidewearablesoftype="Hair" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.21" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.18" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" probabilitymultiplier="0.3" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.9" damagesound="LimbArmor" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+        <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="25,360" style="ItemUI" />
+        <TickBox text="Фонарь" IsOn="true">
+          <StatusEffect type="OnUse" target="This" IsOn="true" />
+          <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+        </TickBox>
+      </CustomInterface>
+      <sprite name="liquidator_hemlet" texture="Mods/Project Baro Armor and weapons/Armor/liquidator/liquidator_helmet.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" sourcerect="45,8,83,46" origin="0.44914186,0.58230144" hidewearablesoftype="Hair">
+        <LightComponent range="320.0" lightcolor="181,187,255,255" powerconsumption="10" IsOn="true">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.04, 0.5" size="1.0,1.0" />
+        </LightComponent>
+      </sprite>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem identifier="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
+      <Containable identifiers="oxygentank,oxygeniteshard,oxygenitetank" />
+    </ItemContainer>
+    <StatusHUD range="500">
+      <StatusEffect type="Always" target="This,Character" drawhudwhenequipped="true" setvalue="true" comparison="And">
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This,Character" drawhudwhenequipped="false" setvalue="true" comparison="And">
+        <Conditional Voltage="lt 0.5" />
+      </StatusEffect>
+    </StatusHUD>
+  </Item>
+</Items>
