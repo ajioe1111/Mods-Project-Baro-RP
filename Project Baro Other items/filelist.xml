@@ -37,4 +37,5 @@
   <Item file="Mods/Project Baro Other items/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml" />
   <Item file="Mods/Project Baro Other items/Item/alarms/alarms.xml" />
   <None file="Mods/Project Baro Other items/Lua/Autorun/run.lua" />
+  <Item file="Mods/Project Baro Other items/Sound Overhaul/Overhaul.xml" />
 </contentpackage>
