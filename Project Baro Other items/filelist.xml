@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257422" installtime="1648596385">
+<contentpackage name="Project Baro Other items" path="Mods/Project Baro Other items/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257422" installtime="1649338696">
   <UIStyle file="Mods/Project Baro Other items/Content/UI/pj_style.xml" />
   <Sounds file="Mods/Project Baro Other items/Content/pjsounds.xml" />
   <LocationTypes file="Mods/Project Baro Other items/Content/pjlocationTypes.xml" />

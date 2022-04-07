@@ -75,4 +75,11 @@
     <Effect minstrength="0" maxstrength="400" strengthchange="-4" resistancefor="damage" minresistance="0" maxresistance="0.8" />
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+  <Affliction name="Фригг" identifier="frigg" description="Вы сильны как не когда!" type="resistance" isbuff="true" limbspecific="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" resistancefor="huskinfection" minresistance="0" maxresistance="0.75" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" resistancefor="psychosis" minresistance="0" maxresistance="0.75" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-5" resistancefor="paralysis" minresistance="1" maxresistance="3" />
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
+  </Affliction>
+
 </Afflictions>
