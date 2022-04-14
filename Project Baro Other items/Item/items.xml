@@ -231,7 +231,7 @@
       </WifiComponent>
     </Terminal>
   </Item>
-  <Item name="Сигарета" aliases="Cig,Ciggy" identifier="Malborasek" category="Misc" Tags="smallitem" description="Сигарета марки 'Мальборасек Курна'" cargocontaineridentifier="cigpack">
+  <Item name="Сигарета" aliases="Cig,Ciggy" identifier="malborasek" category="Misc" Tags="smallitem" description="Сигарета марки 'Мальборасек Курна'" cargocontaineridentifier="cigpack">
 	<Price baseprice="17" >
       <Price locationtype="outpost" multiplier="1" minavailable="12" />
       <Price locationtype="city" multiplier="1" minavailable="12" />
@@ -285,4 +285,65 @@
       <Containable items="Cigarette"/>
     </ItemContainer>
 </Item>
+<override>
+  <Item name="" identifier="captainspipe" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true" requireaimtouse="true">
+    <PreferredContainer primary="crewcab" spawnprobability="0.01"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer secondary="locker"/>
+    <Price baseprice="50" >
+      <Price locationtype="outpost" multiplier="1" />
+      <Price locationtype="city" multiplier="1" />
+      <Price locationtype="research" multiplier="1" />
+      <Price locationtype="military" multiplier="1" />
+      <Price locationtype="mine" multiplier="1" />
+    </Price>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
+    <Sprite texture="Misc.png" sourcerect="105,73,50,30" depth="0.55" origin="0.5,0.5" />
+    <Body width="58" height="20" />
+    <Holdable slots="Any,RightHand" aimable="false" aimpos="28,10" handle1="10,-5" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="swirlysmoke" particlespersecond="1" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10"/>
+        <RequiredItem items="pipetobacco" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-4.0" disabledeltatime="false">
+        <RequiredItem items="pipetobacco" type="Contained" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character">
+        <Affliction identifier="psychosisresistance" amount="10" />
+		<Affliction identifier="nicotineaddiction" amount="10" />
+        <RequiredItem items="pipetobacco" type="Contained" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer hideitems="true" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="74,-281" iteminterval="0,0" itemrotation="0" canbeselected="false" containedspritedepth="0.79">
+      <Containable items="pipetobacco" />
+    </ItemContainer>
+  </Item>
+ <Item name="" identifier="cigar" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="true">
+    <PreferredContainer primary="crewcab"/>
+    <PreferredContainer secondary="locker" />
+    <Price baseprice="150" soldeverywhere="false" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+      <RequiredItem identifier="pipetobacco" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="174,234,42,50" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,60,50,12" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="10" />
+    <Holdable slots="Any,RightHand" aimable="false" aimpos="30,14" handle1="0,-10" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-4.0">
+        <ParticleEmitter particle="swirlysmoke" particlespersecond="2" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character">
+        <Affliction identifier="psychosisresistance" amount="10" />
+		<Affliction identifier="nicotineaddiction" amount="10" />
+        <ReduceAffliction identifier="psychosis" amount="1.5" />
+        <ReduceAffliction identifier="reaperstax" amount="1" />
+        <ReduceAffliction identifier="hallucinating" amount="5" />
+        <ReduceAffliction identifier="watchersgaze" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</override>
 </Items>

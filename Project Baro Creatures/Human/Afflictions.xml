@@ -180,7 +180,7 @@
       </StatusEffect>
     </Effect>
 
-    <icon texture="Mods/Project Baro Creatures/Human/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon texture="Mods/Project Baro Other items\Item\malborasek\Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
   <Affliction
     name="Никтотиновая ломка"
@@ -218,6 +218,6 @@
       minfacetint="255,255,255,50"
       maxfacetint="255,255,255,100">
     </Effect>
-	    <icon texture="Mods/Project Baro Creatures/Human/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+	    <icon texture="Mods/Project Baro Other items\Item\malborasek\Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
 </Afflictions>
