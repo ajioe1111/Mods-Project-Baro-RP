@@ -1,5 +1,5 @@
-local ownerni_id={"Джетстрим Сэм","Никита Бабаев"}
-local ownernim_id={"Деймос Дарк"}
+local ownerni_id={"76561198396183529","76561198264892315"}
+local ownernim_id={"76561198131945341"}
 local itemprefabname={"Адриан: Очки","Бабаев: Шлем Фригг"}
 local itemprefabnamem={"Деймос Дарк (Одежда: СБ)","Деймос Дарк (Одежда: Врач)","Деймос Дарк (Одежда: Инженер)"}
 --[[
@@ -13,12 +13,12 @@ function wait(seconds)
     repeat until os.time() > start + seconds
 end
 Hook.Add("roundStart","Nominalitems",function()
-    wait(2)
+    wait(5)
     local PlayerCharacter = Client.ClientList
     print(#PlayerCharacter)
 for j=1,#PlayerCharacter do
 for i=1,#ownerni_id do
-    if PlayerCharacter[j].Character.Name == ownerni_id[i] then
+    if tostring(PlayerCharacter[j].SteamID) == ownerni_id[i] then
         local prefab = ItemPrefab.GetItemPrefab(itemprefabname[i])
         local firstPlayerCharacter = Client.ClientList[j].Character
             Entity.Spawner.AddToSpawnQueue(prefab, firstPlayerCharacter.Inventory, nil, nil, function(item)
@@ -30,7 +30,7 @@ end
 
 for j=1,#PlayerCharacter do
     for i=1,#ownernim_id do
-        if PlayerCharacter[j].Character.Name == ownernim_id[i] then
+        if tostring(PlayerCharacter[j].SteamID) == ownernim_id[i] then
             if PlayerCharacter[j].PreferredJob == "captain" or PlayerCharacter[j].PreferredJob == "securityofficer"  then
                 local prefab = ItemPrefab.GetItemPrefab(itemprefabnamem[1])
                 local firstPlayerCharacter = Client.ClientList[j].Character
