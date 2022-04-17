@@ -8,7 +8,7 @@ local itemprefabnamem={"Деймос Дарк (Одежда: СБ)","Деймо�
     itemprefabname - это название предметов именных для поисках их.
     itemprefabnamem - названия для мультикласса
 --]]
-Hook.Add("roundStart","Nominalitems",function(Client)
+Hook.Add("roundStart","Nominalitems",function()
   local PlayerCharacter = Client.ClientList
   print(#PlayerCharacter)
 for j=1,#PlayerCharacter do
