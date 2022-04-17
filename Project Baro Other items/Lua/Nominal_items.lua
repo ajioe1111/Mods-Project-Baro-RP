@@ -8,9 +8,14 @@ local itemprefabnamem={"Деймос Дарк (Одежда: СБ)","Деймо�
     itemprefabname - это название предметов именных для поисках их.
     itemprefabnamem - названия для мультикласса
 --]]
+function wait(seconds)
+    local start = os.time()
+    repeat until os.time() > start + seconds
+end
 Hook.Add("roundStart","Nominalitems",function()
-  local PlayerCharacter = Client.ClientList
-  print(#PlayerCharacter)
+    wait(2)
+    local PlayerCharacter = Client.ClientList
+    print(#PlayerCharacter)
 for j=1,#PlayerCharacter do
 for i=1,#ownerni_id do
     if PlayerCharacter[j].Character.Name == ownerni_id[i] then
