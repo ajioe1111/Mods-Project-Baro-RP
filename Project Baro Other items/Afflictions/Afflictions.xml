@@ -81,5 +81,77 @@
     <Effect minstrength="0" maxstrength="100" strengthchange="-5" resistancefor="paralysis" minresistance="1" maxresistance="3" />
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
   </Affliction>
+	<Affliction
+    name="Никотиновая зависимость"
+    identifier="nicotineaddiction"
+    description="Потребность в курении табачных изделий."
+    type="poison"
+    limbspecific="false"
+    indicatorlimb="Head"
+    showiconthreshold="20"
+    maxstrength="100"
+    karmachangeonapplied="-0.1"
+    healcostmultiplier="2.85">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-0.05"/>
 
+    <Effect minstrength="20" maxstrength="40" strengthchange="-0.05">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="0.2"/>
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="40" maxstrength="80" strengthchange="-0.1">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="0.5"/>
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="80" maxstrength="100" strengthchange="-0.1"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="20">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="1"/>
+      </StatusEffect>
+    </Effect>
+
+    <icon texture="Mods/Project Baro Other items/Item/malborasek/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <Affliction
+    name="Никотиновая ломка"
+    identifier="nicotinewithdrawal"
+    description="Волнение и тремор."
+    type="poison"
+    causeofdeathdescription="Смерть от никотиновой ломки"
+    selfcauseofdeathdescription="Вы умерли от никотиновой ломки."
+    limbspecific="false"
+    indicatorlimb="Head"
+    showiconthreshold="20"
+    maxstrength="100"
+    healcostmultiplier="1.75">
+    <!-- Slow down the character and slightly decrease vitality -->
+    <Effect minstrength="20" maxstrength="40"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="20"
+      strengthchange="-0.05"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="1.0"
+      dialogflag="nicotinewithdrawalLow"
+      minfacetint="255,255,255,0"
+      maxfacetint="255,255,255,50">
+    </Effect>
+
+    <!-- Decrease vitality more. The strength of the affliction drops faster, meaning that 
+    the character needs a stronger opiate addiction for the withdrawal symptoms to stay at this level -->
+    <Effect minstrength="40" maxstrength="100"
+      minvitalitydecrease="20"
+      maxvitalitydecrease="50"
+      strengthchange="-0.1"
+      minchromaticaberration="1.0"
+      maxchromaticaberration="5.0"
+      dialogflag="nicotinewithdrawalMedium"
+      minfacetint="255,255,255,50"
+      maxfacetint="255,255,255,100">
+    </Effect>
+	    <icon texture="Mods/Project Baro Other items/Item/malborasek/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>
 </Afflictions>

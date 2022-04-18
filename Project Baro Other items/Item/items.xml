@@ -231,31 +231,28 @@
       </WifiComponent>
     </Terminal>
   </Item>
-  <Item name="Сигарета" aliases="Cig,Ciggy" identifier="malborasek" category="Misc" Tags="smallitem" description="Сигарета марки 'Мальборасек Курна'" cargocontaineridentifier="cigpack">
-	<Price baseprice="17" >
-      <Price locationtype="outpost" multiplier="1" minavailable="12" />
-      <Price locationtype="city" multiplier="1" minavailable="12" />
-      <Price locationtype="research" multiplier="1" minavailable="12" />
-      <Price locationtype="military" multiplier="1" minavailable="12" />
-      <Price locationtype="mine" multiplier="1" minavailable="12" />
-    </Price>
+  <Item name="Сигарета" aliases="Cig,Ciggy" identifier="cigarette" category="Misc" Tags="smallitem" description="Сигарета марки 'Мальборасек Курна'" cargocontaineridentifier="cigpack">
     <Deconstruct time="10">
       <Item identifier="aluminium" outcondition="0.1" />
     </Deconstruct>
-    <Sprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="1,1,17,2" depth="0.55" />
-    <BrokenSprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="1,4,17,2" depth="0.55" maxcondition="99" />
-    <BrokenSprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="1,7,17,2" depth="0.55" maxcondition="40" />
-    <BrokenSprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="1,10,17,2" depth="0.55" maxcondition="0" />
-    <InventoryIcon texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="1,1,17,2" depth="0.55" />
+    <Sprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="1,1,17,2" depth="0.55" />
+    <BrokenSprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="1,4,17,2" depth="0.55" maxcondition="99" />
+    <BrokenSprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="1,7,17,2" depth="0.55" maxcondition="40" />
+    <BrokenSprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="1,10,17,2" depth="0.55" maxcondition="0" />
+    <InventoryIcon texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="1,1,17,2" depth="0.55" />
     <Body width="14" height="1" density="9.9" />
     <RepairTool>
       <ParticleEmitter particle="cigsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
       <LightComponent LightColor="1.0,0.5,0.5,0.2" Flicker="0.4" range="50" IsOn="false">
-        <StatusEffect type="OnUse" target="This" IsOn="true" />
-        <StatusEffect type="OnActive" target="This,Hull" Condition="-2.0">
-		    <Affliction identifier="nicotineaddiction" amount="10" />
-          <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
-        </StatusEffect>
+    <StatusEffect type="OnUse" target="This" Condition="-4.0">
+      <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+    </StatusEffect>
+    <StatusEffect tags="medical" type="OnUse" target="Character">
+     <Affliction identifier="psychosisresistance" amount="10" />
+     <Affliction identifier="nicotineaddiction" amount="10" />
+	 <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
+     <ReduceAffliction identifier="psychosis" amount="1.5" />
+    </StatusEffect>
         <StatusEffect type="InWater" target="This" IsOn="false" />
         <StatusEffect type="OnFire" target="This" Condition="-20" IsOn="true" />
         <StatusEffect type="OnFire" target="This">
@@ -272,8 +269,8 @@
     category="Misc"
     Tags="cntnr,smallitem"
     description="">
-    <Sprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="39,1,10,20" depth="0.55"/>
-	<BrokenSprite texture="Mods\Project Baro Other items\Item\malborasek\Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true"/>
+    <Sprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="39,1,10,20" depth="0.55"/>
+	<BrokenSprite texture="Mods/Project Baro Other items/Item/malborasek/Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true"/>
     <Body width="6" height="16" density="9.8"/>
 	<Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="2" aimpos="35,-10">
 	  <StatusEffect type="OnFire" target="This" Condition="-10"/>
@@ -281,8 +278,8 @@
 		<Remove/>
 	  </StatusEffect>
 	</Throwable>
-	<ItemContainer capacity="12" canbeselected="true" hideitems="false" keepopenwhenequipped="true">
-      <Containable items="Cigarette"/>
+	<ItemContainer capacity="12" canbeselected="true" hideitems="true" keepopenwhenequipped="true">
+      <Containable items="cigarette"/>
     </ItemContainer>
 </Item>
 <override>
@@ -298,7 +295,7 @@
       <Price locationtype="mine" multiplier="1" />
     </Price>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
-    <Sprite texture="Misc.png" sourcerect="105,73,50,30" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
     <Body width="58" height="20" />
     <Holdable slots="Any,RightHand" aimable="false" aimpos="28,10" handle1="10,-5" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This">
@@ -310,7 +307,8 @@
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character">
         <Affliction identifier="psychosisresistance" amount="10" />
-		<Affliction identifier="nicotineaddiction" amount="10" />
+	    <Affliction identifier="nicotineaddiction" amount="10" />
+	    <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
         <RequiredItem items="pipetobacco" type="Contained" />
       </StatusEffect>
     </Holdable>
@@ -318,6 +316,8 @@
       <Containable items="pipetobacco" />
     </ItemContainer>
   </Item>
+</override>
+<override>
  <Item name="" identifier="cigar" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="true">
     <PreferredContainer primary="crewcab"/>
     <PreferredContainer secondary="locker" />
@@ -334,7 +334,8 @@
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character">
         <Affliction identifier="psychosisresistance" amount="10" />
-		<Affliction identifier="nicotineaddiction" amount="10" />
+	    <Affliction identifier="nicotineaddiction" amount="10" />
+	    <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
         <ReduceAffliction identifier="psychosis" amount="1.5" />
         <ReduceAffliction identifier="reaperstax" amount="1" />
         <ReduceAffliction identifier="hallucinating" amount="5" />
