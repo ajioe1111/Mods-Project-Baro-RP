@@ -9,7 +9,7 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Форма Группы Метис" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="136,655,143,106" origin="0.5,0.5" />
+    <InventoryIcon name="Форма Группы Метис" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="143,654,131,105" origin="0.5,0.5" />
     <Sprite name="Форма Группы Метис" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="691,665,220,96" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">

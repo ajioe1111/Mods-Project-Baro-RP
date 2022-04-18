@@ -9,7 +9,7 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Костюм Медика Антей" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="139,651,139,114" origin="0.5,0.5" />
+    <InventoryIcon name="Костюм Медика Антей" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="139,655,134,102" origin="0.5,0.5" />
     <Sprite name="Костюм Медика Антей" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="248,800,212,86" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -46,7 +46,7 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="4,327,104,163" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="4,327,100,162" origin="0.5,0.5" />
     <Sprite texture="armor_antey.png" sourcerect="0,32,128,192" depth="0.6" origin="0.451929,0.49907818" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
