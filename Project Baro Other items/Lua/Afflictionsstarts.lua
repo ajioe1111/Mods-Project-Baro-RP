@@ -16,8 +16,7 @@ Hook.Add("roundStart","Startafflictions",function()
     local PlayerCharacter = Client.ClientList
     for j=1,#PlayerCharacter do
         for i=1,#afflictioname do
-            print(math.random(0,100))
-            if math.random(0,100) <= afflictionchance[i] then
+            if (math.random(0,100) <= afflictionchance[i]) then
                 local char = PlayerCharacter[j].Character
                 local burnPrefab = AfflictionPrefab.Prefabs[afflictioname[i]]
                 local limb = char.AnimController.MainLimb
