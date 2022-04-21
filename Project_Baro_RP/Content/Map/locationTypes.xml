@@ -36,13 +36,13 @@
     
   <None
     identifier="None"
-    namefile="Content/Map/locationNames.txt"    
+    namefile="%ModDir%/Content/Map/locationNames.txt"    
     commonnessperzone="1: 1.5, 2: 3.0, 3: 4.0, 4: 5.0, 5: 5.0, 6: 0"
     hasoutpost="false"
     beaconstationchance="0.5">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="640,640,128,128" color="128,206,175,255" />
-    <Portrait texture="Content/Map/LocationPortraits/NaturalFormations.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="640,640,128,128" color="128,206,175,255" />
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/NaturalFormations.png" premultiplyalpha="false"/>
     
     <ChangeTo type="Outpost" disallowedadjacentlocations="Lair" messagetag="locationchange.none.changeto.outpost">
       <!-- May be settled if within 3 steps of a colony, with an increasing chance should it be within 2 or less steps -->
@@ -57,13 +57,13 @@
   <City
     identifier="City"
     replaceinradiation="Abandoned"
-    namefile="Content/Map/cityNames.txt"
+    namefile="%ModDir%/Content/Map/cityNames.txt"
     commonnessperzone="1: 0, 2: 0.5"
     mincountperzone="1: 1">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="384,512,128,128" color="128,206,175,255"/>
-    <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/Colony.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="384,512,128,128" color="128,206,175,255"/>
+    <RadiationSymbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/Colony.png" premultiplyalpha="false"/>
 
     <Hireable identifier="assistant" commonness="10"/>
     <Hireable identifier="engineer" commonness="3"/>
@@ -90,11 +90,11 @@
   <Outpost
     identifier="Outpost"
     replaceinradiation="Abandoned"
-    namefile="Content/Map/cityNames.txt"
+    namefile="%ModDir%/Content/Map/cityNames.txt"
     commonnessperzone="1: 1.5, 2: 2.5, 3: 1.0, 4: 0.75">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,512,128,128" color="128,206,175,255"/>
-    <Portrait texture="Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="256,512,128,128" color="128,206,175,255"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
     
     <Hireable identifier="assistant" commonness="10"/>
     <Hireable identifier="engineer" commonness="3"/>
@@ -138,26 +138,26 @@
 
   <Abandoned
     identifier="Abandoned"
-    namefile="Content/Map/cityNames.txt"
+    namefile="%ModDir%/Content/Map/cityNames.txt"
     commonnessperzone="1: 0, 2: 0.8, 3: 0.8, 4: 0.5, 5: 0.5, 6: 0"
     missiontags="abandonedoutpost"
     hideentitysubcategories="abandonedhuman,abandonedmonster"
     outpostteam="None">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/HabitationOutpost.png" premultiplyalpha="false"/>
   </Abandoned>
   
   <Military
     identifier="Military"
     replaceinradiation="Abandoned"
-    namefile="Content/Map/locationNames.txt"
+    namefile="%ModDir%/Content/Map/locationNames.txt"
     commonnessperzone="1: 0.6, 2: 1.75, 3: 1.0, 4: 0.75"
     useinmainmenu="true">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="640,512,128,128" color="128,206,175,255"/>
-    <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampMilitary.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="640,512,128,128" color="128,206,175,255"/>
+    <RadiationSymbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampMilitary.png" premultiplyalpha="false"/>
     
     <Hireable identifier="securityofficer" commonness="10"/>
     <Hireable identifier="captain" commonness="3"/>
@@ -194,14 +194,14 @@
   <Research
     identifier="Research"
     replaceinradiation="Abandoned"
-    namefile="Content/Map/locationNames.txt"
+    namefile="%ModDir%/Content/Map/locationNames.txt"
     commonnessperzone="1: 0.0, 2: 1.75, 3: 1.0, 4: 0.75">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="512,512,128,128" color="128,206,175,255"/>
-    <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampResearchFacility1.png" premultiplyalpha="false"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampResearchFacility2.png" premultiplyalpha="false"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampResearchFacility3.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="512,512,128,128" color="128,206,175,255"/>
+    <RadiationSymbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampResearchFacility1.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampResearchFacility2.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampResearchFacility3.png" premultiplyalpha="false"/>
 
     <Hireable identifier="engineer" commonness="5"/>
     <Hireable identifier="mechanic" commonness="5"/>
@@ -238,15 +238,15 @@
   <Mine
     identifier="Mine"
     replaceinradiation="Abandoned"
-    namefile="Content/Map/locationNames.txt"
+    namefile="%ModDir%/Content/Map/locationNames.txt"
     commonnessperzone="1: 0.6, 2: 1.75, 3: 1.0, 4: 0.75">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="128,206,175,255"/>
-    <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampMining3.png" premultiplyalpha="false"/>
-    <Portrait texture="Content/Map/LocationPortraits/WorkCampMining4.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="128,206,175,255"/>
+    <RadiationSymbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampMining1.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampMining2.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampMining3.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/WorkCampMining4.png" premultiplyalpha="false"/>
     
     <Hireable identifier="engineer" commonness="5"/>
     <Hireable identifier="mechanic" commonness="5"/>
@@ -279,23 +279,23 @@
 
   <EndLocation
     identifier="EndLocation"
-    namefile="Content/Map/alienNames.txt"
+    namefile="%ModDir%/Content/Map/alienNames.txt"
     commonnessperzone="1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 1"
     hasoutpost="false">
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="521,648,110,110" color="245,105,105"/>
-    <Portrait texture="Content/Map/LocationPortraits/NaturalFormations.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="521,648,110,110" color="245,105,105"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/NaturalFormations.png" premultiplyalpha="false"/>
   </EndLocation>
   
   <!-- 
   <Ruins
     identifier="Ruins"
-    namefile="Content/Map/alienNames.txt"
+    namefile="%ModDir%/Content/Map/alienNames.txt"
     commonnessperzone="3: 1.25, 4: 2.5, 5: 3.5, 6: 5.0, 7: 5.0, 8: 5.0, 9: 5.0"
     halo="1,0,0,0.2"
     useinmainmenu="true">
 
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,128,128,128" color="250,59,59,255"/>
-    <Portrait texture="Content/Map/LocationPortraits/AlienRuins.png" premultiplyalpha="false"/>
+    <Symbol texture="%ModDir%/Content/Map/MapAtlas.png" sourcerect="256,128,128,128" color="250,59,59,255"/>
+    <Portrait texture="%ModDir%/Content/Map/LocationPortraits/AlienRuins.png" premultiplyalpha="false"/>
 
     <ChangeTo type="Outpost" probability="0.05" requiredduration="3" disallowedadjacentlocations="Lair"/>
     <ChangeTo type="Military" probability="0.05" requiredduration="3" disallowedadjacentlocations="Lair"/>

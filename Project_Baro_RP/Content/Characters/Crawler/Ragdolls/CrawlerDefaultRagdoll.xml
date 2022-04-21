@@ -1,11 +1,11 @@
-﻿<Ragdoll type="crawler" colliderheightfromfloor="40" impacttolerance="10" draggable="True" limbscale="0.65" jointscale="0.65" canentersubmarine="True" canwalk="True" texturescale="1" spritesheetorientation="90" mainlimb="Torso" texture="Content/Characters/Crawler/crawler.png" color="255,255,255,255">
+﻿<Ragdoll type="crawler" colliderheightfromfloor="40" impacttolerance="10" draggable="True" limbscale="0.65" jointscale="0.65" canentersubmarine="True" canwalk="True" texturescale="1" spritesheetorientation="90" mainlimb="Torso" texture="%ModDir%/Content/Characters/Crawler/crawler.png" color="255,255,255,255">
   <collider height="120" radius="50" name="Main Collider" width="0" />
   <!-- Head -->
   <limb id="0" radius="40" type="Head" flip="True" steerforce="10" healthindex="1" attackpriority="1" stepoffset="0,0" bodytype="Dynamic" height="0" width="0" mass="0" friction="0.3" restitution="0.05" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" name="Head" notes="" spriteorientation="90" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0.8,-1" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="8" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear" canbeseveredalive="True">
     <deformablesprite sourcerect="153,2,102,82" depth="0.1" origin="0.52333707,0.4824578" subdivisions="3,3" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False"></deformablesprite>
     <lightsource color="255,255,255,0" range="0" offset="0,6" castshadows="false" scale="1" rotation="0" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
-      <deformablesprite texture="Content/Characters/Watcher/gazerage.png" sourcerect="0,0,102,82" origin="0.5,0.5" size="1,1" alpha="0.6" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Watcher/gazerage.png" sourcerect="0,0,102,82" origin="0.5,0.5" size="1,1" alpha="0.6" />
       <conditional watchersgaze="gt 0" />
     </lightsource>
   </limb>

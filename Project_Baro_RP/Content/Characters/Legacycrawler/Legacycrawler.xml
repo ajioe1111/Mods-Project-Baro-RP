@@ -13,11 +13,11 @@
     vitality="70"
     doesbleed="true"/>
 
-  <sound file="Content/Characters/Legacycrawler/attack1.ogg" state="Attack" range="500"/>
-  <sound file="Content/Characters/Legacycrawler/attack2.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacycrawler/attack1.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacycrawler/attack2.ogg" state="Attack" range="500"/>
 
-  <sound file="Content/Characters/Legacycrawler/idle1.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacycrawler/idle2.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacycrawler/idle1.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacycrawler/idle2.ogg" state="Idle" range="500"/>
 
   <Inventory slots="Any, Any" accessiblewhenalive="false">
     <Item identifier="swimbladder"/>
@@ -67,4 +67,3 @@
   </ai>
   
 </Character>
-

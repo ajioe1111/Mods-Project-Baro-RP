@@ -23,19 +23,19 @@
       <VitalityMultiplier type="damage" multiplier="0.5" />
     </Limb>
   </health>
-  <sound file="Content/Characters/Husk/HUSK_attack1.ogg" state="Attack" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_attack2.ogg" state="Attack" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_attack3.ogg" state="Attack" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_attack4.ogg" state="Attack" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_idle1.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_idle2.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_idle3.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_idle4.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_damage1.ogg" state="Damage" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_damage2.ogg" state="Damage" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_damage3.ogg" state="Damage" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_death1.ogg" state="Die" range="1000" volume="1" />
-  <sound file="Content/Characters/Husk/HUSK_death2.ogg" state="Die" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_attack1.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_attack2.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_attack3.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_attack4.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_idle1.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_idle2.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_idle3.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_idle4.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_damage1.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_damage2.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_damage3.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_death1.ogg" state="Die" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Husk/HUSK_death2.ogg" state="Die" range="1000" volume="1" />
   <ai combatstrength="90" sight="0.5" hearing="1" aggressiveboarding="True" attackwhenprovoked="True" aggressiongreed="5" aggressionhurt="150" canopendoors="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="False" avoidabyss="True" stayinabyss="True" startaggression="0" maxaggression="100" aggressioncumulation="0">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
     <target tag="provocative" state="Attack" priority="100" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />

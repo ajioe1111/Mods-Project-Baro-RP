@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Swarmfeeder" humanoid="False" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="" speciestranslationoverride="" displayname="" group="ancientalien" hasinfo="False" usehuskappendage="False" needswater="False" usebosshealthbar="False" visibility="100" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" bleedparticlemultiplier="1" eatingspeed="10" usepathfinding="false" pathfinderpriority="0.25" hideinsonar="True" sonardisruption="0" distantsonarrange="0" disabledistance="10000" soundinterval="10" caninteract="False" caneat="False" hideinthermalgoggles="False">
-  <ragdolls folder="Content/Characters/Swarmfeeder/Ragdolls/" />
-  <animations folder="Content/Characters/Swarmfeeder/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Swarmfeeder/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Swarmfeeder/Animations/" />
   <health vitality="10" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" stunimmunity="False">
     <Limb>
       <VitalityMultiplier type="burn" multiplier="10"/>
@@ -25,13 +25,13 @@
   </ai>
   <StatusEffect type="OnActive" target="this">
     <Conditional IsLatched="False"/>
-    <Sound file="Content/Characters/Swarmfeeder/SWARMENEMY_idle1Loop.ogg" loop="true" range="1000" volume="0.75" selectionmode="Random"/>
-    <Sound file="Content/Characters/Swarmfeeder/SWARMENEMY_idle2Loop.ogg" loop="true" range="1000" volume="0.75" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_idle1Loop.ogg" loop="true" range="1000" volume="0.75" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_idle2Loop.ogg" loop="true" range="1000" volume="0.75" selectionmode="Random"/>
   </StatusEffect>
   <StatusEffect type="OnActive" target="this">
     <Conditional IsLatched="True"/>
-    <Sound file="Content/Characters/Swarmfeeder/SWARMENEMY_Hit1Loop.ogg" loop="true" range="1000" selectionmode="Random"/>
-    <Sound file="Content/Characters/Swarmfeeder/SWARMENEMY_Hit2Loop.ogg" loop="true" range="1000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_Hit1Loop.ogg" loop="true" range="1000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_Hit2Loop.ogg" loop="true" range="1000" selectionmode="Random"/>
   </StatusEffect>
   <StatusEffect type="OnDeath" target="This">
     <ParticleEmitter particle="blood" particleamount="2" scalemin="0.5" scalemax="0.5" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
@@ -39,10 +39,10 @@
     <ParticleEmitter particle="waterblood" drawontop="true" particleamount="2" scalemin="0.5" scalemax="0.5" velocitymin="0" velocitymax="0"/>
     <ParticleEmitter particle="bubbles" particleamount="10" scalemin="0.5" scalemax="1" velocitymin="25" velocitymax="50" anglemin="0" anglemax="360" />
     <ParticleEmitter particle="gib" particleamount="50" scalemin="0.3" scalemax="1" velocitymin="100" velocitymax="300"/>  
-    <sound file="Content/Characters/Swarmfeeder/SWARMENEMY_death1.ogg" range="3000" volume="1" selectionmode="Random" />
-    <sound file="Content/Characters/Swarmfeeder/SWARMENEMY_death2.ogg" range="3000" volume="1" selectionmode="Random" />
-    <sound file="Content/Characters/Swarmfeeder/SWARMENEMY_death3.ogg" range="3000" volume="1" selectionmode="Random" />
-    <sound file="Content/Characters/Swarmfeeder/SWARMENEMY_death4.ogg" range="3000" volume="1" selectionmode="Random" />
+    <sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_death1.ogg" range="3000" volume="1" selectionmode="Random" />
+    <sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_death2.ogg" range="3000" volume="1" selectionmode="Random" />
+    <sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_death3.ogg" range="3000" volume="1" selectionmode="Random" />
+    <sound file="%ModDir%/Content/Characters/Swarmfeeder/SWARMENEMY_death4.ogg" range="3000" volume="1" selectionmode="Random" />
   </StatusEffect>
   <StatusEffect type="OnDeath" target="This" delay="0.2">
     <RemoveCharacter />

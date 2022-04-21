@@ -11,20 +11,20 @@
       <Price storeidentifier="merchantmilitary" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,256,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,256,64,64" origin="0.5,0.5" />
     <Sprite texture="Misc.png" sourcerect="0,0,97,254" depth="0.6" origin="0.5,0.5" />
     <Body radius="40" height="160" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="30,-20" handle1="-2,-40" handle2="5,50" swingamount="10,20" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="!equals clown" />
-        <sound file="Content/Items/Misc/Guitar1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar2.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar3.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+        <sound file="%ModDir%/Content/Items/Misc/Guitar1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+        <sound file="%ModDir%/Content/Items/Misc/Guitar2.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+        <sound file="%ModDir%/Content/Items/Misc/Guitar3.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="clown" />
-        <sound file="Content/Items/Misc/GuitarClown.ogg" type="OnUse" range="600" loop="true" />
+        <sound file="%ModDir%/Content/Items/Misc/GuitarClown.ogg" type="OnUse" range="600" loop="true" />
       </StatusEffect>
     </Holdable>
   </Item>
@@ -40,13 +40,13 @@
       <Price storeidentifier="merchantmine" sold="false" />
     </Price>
     <Upgrade gameversion="0.9.2.0" scale="0.5"/>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,256,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,256,64,64" origin="0.5,0.5" />
     <Sprite texture="Misc.png" sourcerect="102,16,58,21" depth="0.6" origin="0.5,0.5" />
     <Body width="58" height="20" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="25,15" handle1="-10,0" handle2="0,0" swingamount="20,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Misc/Harmonica1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-      <sound file="Content/Items/Misc/Harmonica2.ogg" type="OnUse" range="600" loop="true" />
+      <sound file="%ModDir%/Content/Items/Misc/Harmonica1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+      <sound file="%ModDir%/Content/Items/Misc/Harmonica2.ogg" type="OnUse" range="600" loop="true" />
       <StatusEffect tags="playingharmonica" type="OnUse" target="Character" duration="0.1" stackable="false" />
     </Holdable>
   </Item>
@@ -63,11 +63,11 @@
     </Price>
     <RangedWeapon reload="1" />
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,956,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,956,64,64" origin="0.5,0.5" />
     <Sprite texture="Misc.png" sourcerect="164,5,92,110" depth="0.55" origin="0.5,0.5" />
     <Body width="92" height="110" density="12" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="50,-20" handle1="-20,0" handle2="-10,0" swingamount="50,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Misc/AccordionLoop.ogg" type="OnUse" range="600" loop="true" />
+      <sound file="%ModDir%/Content/Items/Misc/AccordionLoop.ogg" type="OnUse" range="600" loop="true" />
     </Holdable>
   </Item>
   
@@ -82,7 +82,7 @@
       <Price storeidentifier="merchantmilitary"/>
       <Price storeidentifier="merchantmine"/>
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
     <Sprite texture="Misc.png" sourcerect="105,73,50,30" depth="0.55" origin="0.5,0.5" />
     <Body width="58" height="20" density="12" />
     <Holdable slots="Any,RightHand" aimable="false" aimpos="28,10" handle1="10,-5" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
@@ -127,8 +127,8 @@
     <Deconstruct time="20">
       <Item identifier="tobaccobud" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="192,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" sourcerect="848,774,44,58" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="192,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" sourcerect="848,774,44,58" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="50" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="OnBroken" target="This">
@@ -146,19 +146,19 @@
       <Price storeidentifier="merchantmilitary" sold="false" />
       <Price storeidentifier="merchantmine" sold="false" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="769,385,64,64" depth="0.55" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Misc/Misc.png" sourcerect="101,45,53,22" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="769,385,64,64" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Misc/Misc.png" sourcerect="101,45,53,22" depth="0.55" />
     <Body width="50" height="20" density="15" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="2">
-      <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/honk.ogg" type="OnUse" />
     </RangedWeapon>
     <aitarget soundrange="1000" fadeouttime="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   
   <Item name="" identifier="bunk" width="173" height="129" category="Decorative">
-    <sprite texture="Content/Map/MiscStructures.png" sourcerect="1416,1163,173,129" depth="0.85" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/MiscStructures.png" sourcerect="1416,1163,173,129" depth="0.85" origin="0.5,0.5" />
     <Controller UserPos="0,-150" direction="Right" hidehud="false" canbeselected="true" drawuserbehind="true">
       <limbposition limb="Head" position="-13,-85" />
       <limbposition limb="Torso" position="42,-70" />

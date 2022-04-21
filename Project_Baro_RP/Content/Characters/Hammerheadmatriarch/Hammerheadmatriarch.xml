@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Hammerheadmatriarch" humanoid="False" group="hammerhead" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blood" displayname="" eatingspeed="10" caneat="False">
-  <ragdolls folder="Content/Characters/Hammerheadmatriarch/Ragdolls/" />
-  <animations folder="Content/Characters/Hammerheadmatriarch/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Hammerheadmatriarch/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Hammerheadmatriarch/Animations/" />
   <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="waterblood" particleamount="4" anglemin="0" anglemax="0" scalemin="3" scalemax="5" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
@@ -25,15 +25,15 @@
     <Item identifier="alienblood" />
     <Item identifier="swimbladder" />
   </Inventory>
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion1.ogg" state="Die" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion2.ogg" state="Die" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion3.ogg" state="Die" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion4.ogg" state="Die" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_damage1.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_damage2.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle1.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle2.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle3.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion1.ogg" state="Die" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion2.ogg" state="Die" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion3.ogg" state="Die" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_explosion4.ogg" state="Die" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_damage1.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_damage2.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle1.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle2.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle3.ogg" state="Idle" range="10000" volume="1" />
   <StatusEffect type="Always" target="This" lifetime="5" targetlimb="Head">
     <Conditional isdead="True" />
     <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="2" scalemax="4" velocitymin="0" velocitymax="50" anglemin="0" anglemax="360" />

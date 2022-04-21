@@ -10,19 +10,19 @@
     <!--<aitarget sightrange="500" soundrange="7500"/>
     <Reactor canbeselected="true" firedelay="20" meltdowndelay="120" maxpoweroutput="10000" fuelconsumptionrate="0.2" vulnerabletoemp="false" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.65,0.38" minsize="900,400" maxsize="2688,1166" anchor="Center" style="ItemUI"/>
-      <GraphLine texture="Content/Items/Reactor/graphLine.png"/>
-      <FissionRateMeter texture="Content/Items/MachineInterface.png" sourcerect="0,335,252,177" origin="0.5,0.65"/>
-      <TurbineOutputMeter texture="Content/Items/MachineInterface.png" sourcerect="252,335,252,177" origin="0.5,0.65"/>
-      <MeterPointer texture="Content/Items/MachineInterface.png" sourcerect="367,22,14,118" origin="0.5,0.93"/>
-      <SectorSprite texture="Content/Items/MachineInterface.png" sourcerect="329,160,90,172" origin="0.98,0.5"/>
-      <TempMeterFrame texture="Content/Items/MachineInterface.png" sourcerect="188,212,27,95" origin="0.0,0.0"/>
-      <TempMeterBar texture="Content/Items/MachineInterface.png" sourcerect="191,194,21,8" origin="0.5,0.0"/>
-      <TempRangeIndicator texture="Content/Items/MachineInterface.png" sourcerect="176,308,51,10" origin="0.5,0.5"/>
+      <GraphLine texture="%ModDir%/Content/Items/Reactor/graphLine.png"/>
+      <FissionRateMeter texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="0,335,252,177" origin="0.5,0.65"/>
+      <TurbineOutputMeter texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="252,335,252,177" origin="0.5,0.65"/>
+      <MeterPointer texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="367,22,14,118" origin="0.5,0.93"/>
+      <SectorSprite texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="329,160,90,172" origin="0.98,0.5"/>
+      <TempMeterFrame texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="188,212,27,95" origin="0.0,0.0"/>
+      <TempMeterBar texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="191,194,21,8" origin="0.5,0.0"/>
+      <TempRangeIndicator texture="%ModDir%/Content/Items/MachineInterface.png" sourcerect="176,308,51,10" origin="0.5,0.5"/>
       <RequiredSkill identifier="electrical" level="50"/>
-      <sound file="Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true"/>
+      <sound file="%ModDir%/Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true"/>
       <StatusEffect type="OnBroken" target="This" FissionRate="0.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
         <Explosion range="800" structuredamage="200" force="5.0" camerashake="200" 
                    flashrange="10000" flashduration="5.0" 
                    screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
@@ -36,18 +36,18 @@
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false">
       <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
       <IsActive targetitemcomponent="Reactor" temperature="gt 2" />
-      <sprite texture="Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,0,186,192" origin="0.45,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,0,186,192" origin="0.45,0.5" alpha="1.0" />
     </LightComponent>
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false" blinkfrequency="1">
       <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
       <IsActive targetitemcomponent="Reactor" temperaturecritical="eq true" />
-      <sprite texture="Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,192,186,192" origin="0.45,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,192,186,192" origin="0.45,0.5" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected = "true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
       <RequiredSkill identifier="electrical" level="80" />
       <StatusEffect type="OnFailure" target="Character">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -59,7 +59,7 @@
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="smoke" particlespersecond="8" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="200"/>
           <ParticleEmitter particle="swirlysmoke" particlespersecond="3" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10"/>
-          <sound file="Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
+          <sound file="%ModDir%/Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
         </StatusEffect>
       </output>
     </ConnectionPanel>
@@ -89,21 +89,21 @@
     <StaticBody width="80" radius="80" />
     <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="126, 89" rotationlimits="180,360" powerconsumption="20000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="100" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
       <StatusEffect type="OnUse" target="This">
-        <sound file="Content/Items/Weapons/Railgun1.ogg" range="10000" type="OnUse" />
-        <sound file="Content/Items/Weapons/Railgun2.ogg" range="10000" type="OnUse" />
-        <sound file="Content/Items/Weapons/Railgun3.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Content/Items/Weapons/Railgun1.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Content/Items/Weapons/Railgun2.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Content/Items/Weapons/Railgun3.ogg" range="10000" type="OnUse" />
         <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
       </StatusEffect>
-      <RailSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.52, 0.59" sourcerect="512,256,164,256" depth="0.011" />
-      <BarrelSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.5, 0.85" sourcerect="768,0,125,336" depth="0.012" />
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
-      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
-      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
-      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RailSprite texture="%ModDir%/Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.52, 0.59" sourcerect="512,256,164,256" depth="0.011" />
+      <BarrelSprite texture="%ModDir%/Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.5, 0.85" sourcerect="768,0,125,336" depth="0.012" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="%ModDir%/Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStop.ogg" />
       <RequiredSkill identifier="weapons" level="50" />
       <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2048" IsOn="true" drawbehindsubs="true">
-        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <LightTexture texture="%ModDir%/Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
       </LightComponent>
       <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
     </Turret>
@@ -164,22 +164,22 @@
     <Sprite texture="TurretsWrecked.png" depth="0.01" sourcerect="0,0,256,256" canflipy="false" />
     <StaticBody width="80" radius="80" />
     <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="128,88" rotationlimits="180,360" powerconsumption="1000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.25" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
-      <sound file="Content/Items/Weapons/Coilgun1.ogg" range="10000" type="OnUse" />
-      <sound file="Content/Items/Weapons/Coilgun2.ogg" range="10000" type="OnUse" />
-      <sound file="Content/Items/Weapons/Coilgun3.ogg" range="10000" type="OnUse" />
-      <sound file="Content/Items/Weapons/Coilgun4.ogg" range="10000" type="OnUse" />
-      <sound file="Content/Items/Weapons/Coilgun5.ogg" range="10000" type="OnUse" />
-      <sound file="Content/Items/Weapons/Coilgun6.ogg" range="10000" type="OnUse" />
-      <RailSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.011" sourcerect="381,0,120,287" origin="0.64, 0.7" />
-      <BarrelSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.012" sourcerect="256,0,125,333" origin="0.6, 0.8" />
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
-      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
-      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
-      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun1.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun2.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun3.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun4.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun5.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Content/Items/Weapons/Coilgun6.ogg" range="10000" type="OnUse" />
+      <RailSprite texture="%ModDir%/Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.011" sourcerect="381,0,120,287" origin="0.64, 0.7" />
+      <BarrelSprite texture="%ModDir%/Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.012" sourcerect="256,0,125,333" origin="0.6, 0.8" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="%ModDir%/Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStop.ogg" />
       <RequiredSkill identifier="weapons" level="50" />
       <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true">
-        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <LightTexture texture="%ModDir%/Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
       </LightComponent>
       <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100" />
       <StatusEffect type="OnUse" target="This">
@@ -217,13 +217,13 @@
   <Item name="" identifier="oxygeneratorwrecked" nameidentifier="oxygenerator" tags="oxygengenerator" category="Wrecked" linkable="true" allowedlinks="vent" noninteractable="True">
     <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="0,0,205,193" origin="0.5,0.5" />
     <!--<OxygenGenerator powerconsumption="1000.0" minvoltage="0.5" canbeselected="true" msg="ItemMsgInteractSelect">
-      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="1500" loop="false" />
-      <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>    
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight2.ogg" range="1500" loop="false" />
+      <sound file="%ModDir%/Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>    
       <StatusEffect type="OnFire" target="This" Condition="-0.5"/>
       <StatusEffect type="OnActive" targettype="Contained" targets="oxygentank" Condition="2.0"/>
       <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
         <Explosion range="50" stun="0" force="3.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false"/>
       </StatusEffect>
     </OxygenGenerator>
@@ -252,13 +252,13 @@
   <Item name="" identifier="shuttleoxygeneratorwrecked" nameidentifier="shuttleoxygenerator" tags="oxygengenerator" category="Wrecked" linkable="true" allowedlinks="vent" noninteractable="True">
     <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="205,1,179,122" origin="0.5,0.5" />
     <!--<OxygenGenerator powerconsumption="1000.0" minvoltage="0.5" canbeselected = "true" msg="ItemMsgInteractSelect">
-      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="1000" loop="false" />
-      <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight1.ogg" range="1000" loop="false" />
+      <sound file="%ModDir%/Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>
       <StatusEffect type="OnFire" target="This" Condition="-0.5"/>
       <StatusEffect type="OnActive" targettype="Contained" targets="oxygentank" Condition="2.0"/>
       <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
         <Explosion range="50" stun="0" force="3.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false"/>
       </StatusEffect>
     </OxygenGenerator>
@@ -273,7 +273,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
       <RequiredSkill identifier="electrical" level="80" />
       <StatusEffect type="OnFailure" target="Character">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -292,14 +292,14 @@
   <Item name="" identifier="ventwrecked" nameidentifier="vent" tags="vent" category="Wrecked" interactdistance="0" linkable="true" allowedlinks="oxygenerator" scale="0.8">
     <Sprite texture="WreckedItems.png" depth="0.91" sourcerect="226,124,64,64" origin="0.5,0.5" />
     <!--<Vent>
-      <sound file="Content/Items/OxygenGenerator/Ventilation.ogg" type="OnActive" range="400.0" volumeproperty="OxygenFlow" volume="0.0005f" loop="true"/>
+      <sound file="%ModDir%/Content/Items/OxygenGenerator/Ventilation.ogg" type="OnActive" range="400.0" volumeproperty="OxygenFlow" volume="0.0005f" loop="true"/>
     </Vent>-->
   </Item>
   <Item name="" identifier="ladderwrecked" nameidentifier="ladder" category="Wrecked" tags="ladder" resizevertical="true">
     <Upgrade gameversion="0.9.700.0" spritedepth="0.51" rectwidth="11" />
     <Sprite texture="WreckedItems.png" depth="0.51" sourcerect="986,523,11,120" origin="0.5,0.5" />
     <Ladder canbeselected="true" msg="ItemMsgClimbSelect">
-      <BackgroundSprite texture="Content/Items/Shipwrecks/WreckedItems.png" depth="0.05" sourcerect="973,523,13,120" origin="1,0" />
+      <BackgroundSprite texture="%ModDir%/Content/Items/Shipwrecks/WreckedItems.png" depth="0.05" sourcerect="973,523,13,120" origin="1,0" />
     </Ladder>
     <trigger x="-40" y="20" width="90" />
   </Item>
@@ -308,8 +308,8 @@
     <!--<Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center"/>
       <AlternativeLayout absoluteoffset="15,0"/>
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
     </Fabricator>
 
     <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
@@ -333,8 +333,8 @@
     <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="2,196,140,168" origin="0.5,0.5" />
     <!--<Fabricator canbeselected = "true" powerconsumption="100.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center" />
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="600" loop="false" />         
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight2.ogg" range="600" loop="false" />         
     </Fabricator>
 
     <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
@@ -359,8 +359,8 @@
     <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="494,1,243,335" origin="0.5,0.5" />
     <!--<Deconstructor canbeselected = "true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.25,0.45" maxsize="460,600" style="ItemUI" anchor="Center"/>
-      <sound file="Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
+      <sound file="%ModDir%/Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
     </Deconstructor>
 
     <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
@@ -388,8 +388,8 @@
     <Engine minvoltage="0.5" powerconsumption="2000.0" maxforce="2000" canbeselected="true" propellerpos="-160,-15" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
       <StatusEffect type="InWater" target="This" condition="-1.0" />
-      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
-      <poweronsound file="Content/Items/PowerOnHeavy1.ogg" range="1000" loop="false" />
+      <sound file="%ModDir%/Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
+      <poweronsound file="%ModDir%/Content/Items/PowerOnHeavy1.ogg" range="1000" loop="false" />
       <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
         <Affliction identifier="internaldamage" strength="50" />
         <Affliction identifier="bleeding" strength="100" />
@@ -399,7 +399,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="80" />
       <StatusEffect type="OnFailure" target="Character">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -422,8 +422,8 @@
     <Engine minvoltage="0.5" powerconsumption="4000.0" maxforce="4000" canbeselected="true" propellerpos="-380,20" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
       <StatusEffect type="InWater" target="This" condition="-1.0" />
-      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="5000.0" volumeproperty="CurrentVolume" loop="true" />
-      <poweronsound file="Content/Items/PowerOnHeavy1.ogg" range="3000" loop="false" />
+      <sound file="%ModDir%/Content/Items/Engine/Engine.ogg" type="OnActive" range="5000.0" volumeproperty="CurrentVolume" loop="true" />
+      <poweronsound file="%ModDir%/Content/Items/PowerOnHeavy1.ogg" range="3000" loop="false" />
       <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
         <Affliction identifier="internaldamage" strength="50" />
         <Affliction identifier="bleeding" strength="100" />
@@ -433,7 +433,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="80" />
       <StatusEffect type="OnFailure" target="Character">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -455,7 +455,7 @@
     <aitarget sightrange="500" soundrange="10000"/>
     <Engine minvoltage="0.5" powerconsumption="500.0" maxforce="300" canbeselected="true" propellerpos="-80,0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
-      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
+      <sound file="%ModDir%/Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
       <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
         <Affliction identifier="internaldamage" strength="25" />
         <Affliction identifier="bleeding" strength="50" />
@@ -465,7 +465,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="80" />
       <StatusEffect type="OnFailure" target="Character">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -487,15 +487,15 @@
       <Sprite name="doorwrecked.door" texture="WreckedItems2.png" sourcerect="912,1,42,416" depth="0.05" origin="0.5,0" />
       <WeldedSprite name="doorwrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="doorwrecked.broken" texture="WreckedItems2.png" sourcerect="902,421,121,416" depth="0.051" origin="0.5,0" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <AiTarget sightrange="3000.0" static="True" />
     <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
@@ -519,15 +519,15 @@
       <Sprite name="windoweddoorwrecked.door" texture="WreckedItems2.png" sourcerect="861,1,50,416" depth="0.05" origin="0.5,0" />
       <WeldedSprite name="windoweddoorwrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="windoweddoorwrecked.broken" texture="WreckedItems2.png" sourcerect="903,421,120,416" depth="0.051" origin="0.5,0" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <AiTarget sightrange="3000.0" static="True" />
     <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
@@ -550,15 +550,15 @@
       <Sprite name="hatchwrecked.door" texture="WreckedItems2.png" sourcerect="751,859,256,38" depth="0.05" origin="0,0.5" />
       <WeldedSprite name="hatchwrecked.welded" texture="WreckedItems2.png" sourcerect="209,893,227,75" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="hatchwrecked.broken" texture="WreckedItems2.png" sourcerect="751,903,256,114" depth="0.051" origin="0,0.5" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <AiTarget sightrange="1500.0" static="True" />
     <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
@@ -583,15 +583,15 @@
       <Sprite name="doorwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="912,1,42,416" depth="0.05" origin="0.5,0" />
       <WeldedSprite name="doorwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="doorwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="902,421,121,416" depth="0.051" origin="0.5,0" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <trigger x="-60" y="-140" width="170" height="85" />
     <AiTarget sightrange="3000.0" static="True" />
@@ -617,15 +617,15 @@
       <Sprite name="windoweddoorwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="861,1,50,416" depth="0.05" origin="0.5,0" />
       <WeldedSprite name="windoweddoorwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="windoweddoorwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="903,421,120,416" depth="0.051" origin="0.5,0" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <trigger x="-60" y="-140" width="170" height="85" />
     <AiTarget sightrange="3000.0" static="True" />
@@ -652,15 +652,15 @@
       <Sprite name="hatchwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="751,859,256,38" depth="0.05" origin="0,0.5" />
       <WeldedSprite name="hatchwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="209,893,227,75" depth="0.0" origin="0.5,0.5" />
       <BrokenSprite name="hatchwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="751,903,256,114" depth="0.051" origin="0,0.5" scale="true" />
-      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
-      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
-      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
-      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
-      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
-      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="%ModDir%/Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="%ModDir%/Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="%ModDir%/Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
     </Door>
     <trigger x="170" y="51" width="70" height="200" />
     <AiTarget sightrange="1500.0" static="True" />
@@ -743,7 +743,7 @@
     </ItemContainer>
   </Item>
   <Item name="" identifier="railgunshellrackwrecked" nameidentifier="railgunshellrack" tags="container,railgunammocontainer" pickdistance="120" scale="0.6" category="Wrecked">
-    <Sprite texture="Content/Items/Shipwrecks/WreckedItems.png" depth="0.84" sourcerect="5,847,182,176" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Shipwrecks/WreckedItems.png" depth="0.84" sourcerect="5,847,182,176" origin="0.5,0.5" />
     <ItemContainer hideitems="false" drawinventory="true" capacity="3" slotsperrow="3" itempos="40,-65" iteminterval="50,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
       <Containable items="railgunshell,nuclearshell,railgunammo" />
@@ -778,7 +778,7 @@
     </ItemContainer>
   </Item>
   <Item name="" identifier="oxygentankshelf2wrecked" nameidentifier="oxygentankshelf" tags="container,oxygentankcontainer" pickdistance="50" scale="0.5" category="Wrecked">
-    <Sprite name="Diving Suit Locker Small" texture="Content/Items/Shipwrecks/WreckedItems2.png" sourcerect="0,941,99,83" depth="0.84" origin="0.5,0.5" />
+    <Sprite name="Diving Suit Locker Small" texture="%ModDir%/Content/Items/Shipwrecks/WreckedItems2.png" sourcerect="0,941,99,83" depth="0.84" origin="0.5,0.5" />
     <ItemContainer hideitems="false" drawinventory="true" capacity="3" maxstacksize="1" slotsperrow="3" itempos="27,-42" iteminterval="22.5,0" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.2,0.3" anchor="Center" style="ItemUI" />
       <Containable items="oxygensource,weldingfuel" />
@@ -844,8 +844,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentm01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="146,378,85,124" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,528,80,112" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="480,528,80,112" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -858,8 +858,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentm02wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="234,377,74,126" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="560,528,80,112" alpha="1.0" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="560,528,80,112" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -872,8 +872,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentm03wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="311,377,68,124" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="640,528,64,112" alpha="1.0" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="640,528,64,112" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -886,8 +886,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentm04wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="383,376,85,126" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="704,528,80,112" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="704,528,80,112" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -900,8 +900,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentl01wrecked" category="Wrecked" Tags="largeitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="204,687,346,90" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,816,240,64" alpha="1.0" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="480,816,240,64" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -914,8 +914,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightfluorescentl02wrecked" category="Wrecked" Tags="largeitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="145,626,367,59" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/light_fluorescent_L2.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,896,288,48" alpha="1.0" />
+      <LightTexture texture="%ModDir%/Content/Lights/light_fluorescent_L2.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="480,896,288,48" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -928,8 +928,8 @@
   <Item name="" nameidentifier="lamp" identifier="lighthalogenmm01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="147,504,76,124" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,672,80,128" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="480,672,80,128" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -942,8 +942,8 @@
   <Item name="" nameidentifier="lamp" identifier="lighthalogenmm02wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="224,523,124,77" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="560,672,128,80" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="560,672,128,80" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -956,8 +956,8 @@
   <Item name="" nameidentifier="lamp" identifier="lighthalogenmm03wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="346,502,103,123" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="688,672,112,128" alpha="1.0" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="688,672,112,128" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -970,8 +970,8 @@
   <Item name="" nameidentifier="lamp" identifier="lighthalogenm04wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="449,510,124,101" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="800,672,128,96" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="800,672,128,96" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -984,8 +984,8 @@
   <Item name="" nameidentifier="lamp" identifier="lightleds01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
     <Sprite texture="WreckedItems2.png" sourcerect="468,378,99,99" depth="0.8" origin="0.5,0.5" />
     <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="842,794,59,59" alpha="1.0" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="842,794,59,59" alpha="1.0" origin="0.5,0.5" />
     </LightComponent>
       <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -996,7 +996,7 @@
     </ConnectionPanel>
   </Item>
   <Item name="" identifier="bunkwrecked" nameidentifier="bunk" width="173" height="129" category="Wrecked">
-    <sprite texture="Content/Items/Shipwrecks/BackgroundStructuresWrecked.png" sourcerect="497,692,173,129" depth="0.88" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Items/Shipwrecks/BackgroundStructuresWrecked.png" sourcerect="497,692,173,129" depth="0.88" origin="0.5,0.5" />
     <Controller UserPos="0,-150" direction="Right" hidehud="false" canbeselected="true" drawuserbehind="true">
       <limbposition limb="Head" position="-13,-85" />
       <limbposition limb="Torso" position="42,-70" />

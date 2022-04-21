@@ -1,4 +1,4 @@
-﻿<Ragdoll type="" Texture="Content/Characters/Latcher/Latcher.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="1" JointScale="1" TextureScale="1" ColliderHeightFromFloor="45" ImpactTolerance="200" CanEnterSubmarine="False" CanWalk="False" Draggable="True" MainLimb="Torso">
+﻿<Ragdoll type="" Texture="%ModDir%/Content/Characters/Latcher/Latcher.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="1" JointScale="1" TextureScale="1" ColliderHeightFromFloor="45" ImpactTolerance="200" CanEnterSubmarine="False" CanWalk="False" Draggable="True" MainLimb="Torso">
   <collider Name="Main Collider" Radius="600" Height="0" Width="0" />
   <limb Name="Head" ID="0" Type="Head" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="300" Height="0" Width="600" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,1" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="19,264,1497,887" Origin="0.49550107,0.5040135" Depth="0.2" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0"></deformablesprite>
@@ -17,10 +17,10 @@
       <Conditional isdead="False" />
       <particleemitter particle="blackwaterblood" drawontop="True" particleamount="1" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="7" scalemax="15" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
       <particleemitter particle="blackgib" drawontop="True" particleamount="10" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="2" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-      <sound file="Content/Characters/Latcher/ABYSSM_damage.ogg" range="30000" volume="1" selectionmode="random" />
-      <sound file="Content/Characters/Latcher/ABYSSM_damage_1.ogg" range="30000" volume="1" selectionmode="random" />
-      <sound file="Content/Characters/Latcher/ABYSSM_damage_2.ogg" range="30000" volume="1" selectionmode="random" />
-      <sound file="Content/Characters/Latcher/ABYSSM_damage_3.ogg" range="30000" volume="1" selectionmode="random" />
+      <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage.ogg" range="30000" volume="1" selectionmode="random" />
+      <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_1.ogg" range="30000" volume="1" selectionmode="random" />
+      <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_2.ogg" range="30000" volume="1" selectionmode="random" />
+      <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_3.ogg" range="30000" volume="1" selectionmode="random" />
     </StatusEffect>
   </limb>
   <limb Name="Right Leg 1A" ID="2" Type="Tail" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" SineFrequencyMultiplier="-2" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05">
@@ -77,7 +77,7 @@
       <conditional targetself="true" healthpercentage="lt 75" />
       <StatusEffect type="OnFailure" target="This">
         <SpawnItem identifier="toothspike" spawnposition="This" count="3" aimspread="15" rotationtype="Collider" rotation="0" />
-        <sound file="Content/Characters/Latcher/ABYSSM_teeth.ogg" range="20000" volume="1" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_teeth.ogg" range="20000" volume="1" dontmuffle="true" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.1">
         <SpawnItem identifier="toothspike" spawnposition="This" count="2" aimspread="10" rotationtype="Collider" rotation="0" />
@@ -101,7 +101,7 @@
     <attack StructureSoundType="StructureBlunt" Context="Water" TargetType="Structure" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="ReverseUntilCanAttack" AfterAttackDelay="0.1" Reverse="False" Retreat="False" Range="2000" DamageRange="2000" MinRange="0" Duration="1" CoolDown="15" SecondaryCoolDown="7" CoolDownRandomFactor="0" FullSpeedAfterAttack="True" StructureDamage="0" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="30" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="0, 1" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="1" Blink="False">
       <StatusEffect type="OnFailure" target="This">
         <particleemitter drawontop="false" copyentityangle="true" particle="damagebubbles" particleamount="50" scalemin="1" scalemax="5" velocitymin="500" velocitymax="1000" anglemin="-40" anglemax="40" />
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove.ogg" range="20000" volume="1" dontmuffle="false" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_tongueMove.ogg" range="20000" volume="1" dontmuffle="false" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.2">
         <SpawnItem identifier="tonguetendon" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
@@ -147,31 +147,31 @@
   <limb Name="Eye 1" ID="28" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="10" BlinkDurationIn="5" BlinkDurationOut="5" BlinkHoldTime="0" BlinkRotationIn="45" BlinkRotationOut="-45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseIn" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 2" ID="29" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="5" BlinkDurationIn="0.5" BlinkDurationOut="0.5" BlinkHoldTime="2" BlinkRotationIn="40" BlinkRotationOut="-20" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 3" ID="30" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="2" BlinkDurationIn="0.2" BlinkDurationOut="0.2" BlinkHoldTime="1" BlinkRotationIn="-20" BlinkRotationOut="20" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 4" ID="31" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="3" BlinkDurationIn="0.5" BlinkDurationOut="0.5" BlinkHoldTime="2" BlinkRotationIn="0" BlinkRotationOut="-90" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseIn" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 5" ID="32" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="3" BlinkDurationIn="0.5" BlinkDurationOut="0.5" BlinkHoldTime="1" BlinkRotationIn="-45" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Smoother" BlinkTransitionOut="Smoother" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Hair 1" ID="33" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="200" Width="120" Density="0.1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05">
@@ -286,7 +286,7 @@
     <deformablesprite SourceRect="0,0,244,224" Origin="0.48108757,0.445993" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <attack StructureSoundType="StructureBlunt" Context="Water" TargetType="Character" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="Pursue" AfterAttackDelay="0" Reverse="False" Retreat="False" Range="2000" DamageRange="2000" MinRange="500" Duration="1" CoolDown="6" SecondaryCoolDown="2" CoolDownRandomFactor="0.1" FullSpeedAfterAttack="False" StructureDamage="0" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="15" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="2" Blink="False">
       <StatusEffect type="OnFailure" target="This">
-        <sound file="Content/Characters/Latcher/ABYSSM_tongueMove.ogg" range="20000" volume="1" dontmuffle="false" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_tongueMove.ogg" range="20000" volume="1" dontmuffle="false" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This" delay="0.2">
         <SpawnItem identifier="tonguetendoncharacter" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
@@ -300,8 +300,8 @@
       <Affliction Strength="100" Identifier="bleeding" Probability="1" />
       <Affliction Strength="2" Identifier="stun" Probability="1" />
       <StatusEffect type="OnUse" target="This">
-        <sound file="Content/Characters/Latcher/ABYSSM_swallow.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="false" />
-        <sound file="Content/Characters/Latcher/ABYSSM_swallow_1.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="false" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_swallow.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="false" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_swallow_1.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="false" />
       </StatusEffect>
     </attack>
   </limb>
@@ -313,8 +313,8 @@
         <Explosion ignorecover="true" onlyinside="true" range="550" force="1" flames="false" smoke="false" shockwave="false" sparks="false" flash="false" underwaterbubble="false" camerashake="0" playtinnitus="false" structuredamage="350" applyFireEffects="false">
           <Affliction identifier="stun" strength="3" probability="1" />
         </Explosion>
-        <sound file="Content/Characters/Latcher/ABYSSM_bite.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Latcher/ABYSSM_bite_1.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_bite.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_bite_1.ogg" range="20000" volume="1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
   </limb>
@@ -322,61 +322,61 @@
   <limb Name="Eye 6" ID="48" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="6" BlinkDurationIn="0.5" BlinkDurationOut="0.1" BlinkHoldTime="1" BlinkRotationIn="-20" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 7" ID="49" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="2" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="1" BlinkRotationIn="45" BlinkRotationOut="10" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 8" ID="50" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="5" BlinkDurationIn="0.5" BlinkDurationOut="4" BlinkHoldTime="3" BlinkRotationIn="-45" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseIn" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 9" ID="51" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="3" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="1" BlinkRotationIn="-60" BlinkRotationOut="-20" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 10" ID="52" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="2" BlinkDurationIn="2" BlinkDurationOut="2" BlinkHoldTime="0" BlinkRotationIn="-60" BlinkRotationOut="60" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Smoother" BlinkTransitionOut="Smoother" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 11" ID="53" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="5" BlinkDurationIn="1" BlinkDurationOut="1" BlinkHoldTime="4" BlinkRotationIn="-45" BlinkRotationOut="10" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 12" ID="54" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="4" BlinkDurationIn="3" BlinkDurationOut="3" BlinkHoldTime="0.5" BlinkRotationIn="-45" BlinkRotationOut="20" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 13" ID="55" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="10" BlinkDurationIn="1" BlinkDurationOut="0.5" BlinkHoldTime="4" BlinkRotationIn="-30" BlinkRotationOut="20" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 14" ID="56" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="3" BlinkDurationIn="0.2" BlinkDurationOut="0.2" BlinkHoldTime="0.5" BlinkRotationIn="-60" BlinkRotationOut="0" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseIn" BlinkTransitionOut="EaseOut" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <limb Name="Eye 15" ID="57" Type="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="30" Height="0" Width="0" Density="1" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="3" BlinkDurationIn="0.1" BlinkDurationOut="1" BlinkHoldTime="1" BlinkRotationIn="-45" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="EaseOut" BlinkTransitionOut="EaseIn" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <deformablesprite SourceRect="1798,0,253,256" Origin="0.5,0.5" Depth="0.8" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
     <lightsource castshadows="false" Color="25,100,85,0" Range="0" Scale="1" Offset="0,0" Rotation="0" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
-      <deformablesprite texture="Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Latcher/Latcher.png" sourcerect="1798,258,253,256" alpha="0.75" />
     </lightsource>
   </limb>
   <joint Name="Joint 0 - 1" Limb1="0" Limb2="1" Limb1Anchor="0,-225.4056" Limb2Anchor="0,205.06482" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False" />

@@ -13,16 +13,16 @@
     vitality="1000"
     doesbleed="true"/>
 
-  <sound file="Content/Characters/Legacywatcher/attack1.ogg" state="Attack" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/attack2.ogg" state="Attack" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/attack3.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/attack1.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/attack2.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/attack3.ogg" state="Attack" range="500"/>
   
-  <sound file="Content/Characters/Legacywatcher/watch1.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/watch2.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/watch3.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/watch4.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/watch5.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Legacywatcher/watch6.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch1.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch2.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch3.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch4.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch5.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Legacywatcher/watch6.ogg" state="Idle" range="500"/>
 
   <ai
     combatstrength="1000"

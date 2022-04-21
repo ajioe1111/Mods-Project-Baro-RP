@@ -4,7 +4,7 @@
   jointscale="1.5"
   canentersubmarine="false"
   canwalk="False"
-  texture="Content/Characters/Legacycharybdis/charybdis.png">
+  texture="%ModDir%/Content/Characters/Legacycharybdis/charybdis.png">
 
   <collider radius="80" height="440"/>
 

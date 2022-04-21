@@ -4,7 +4,7 @@
   minscale="0.8" maxscale="1.2"
   canentersubmarine="false"
   canwalk="False"
-  texture="Content/Characters/Legacytigerthresher/Legacytigerthresher.png">
+  texture="%ModDir%/Content/Characters/Legacytigerthresher/Legacytigerthresher.png">
 
   <collider radius="50" height="185"/>
 
@@ -16,7 +16,7 @@
       <spritedeformation type="noise" resolution="15,15" frequency="10" amplitude="0.05" changespeed="10" blendmode="add"/>
     </deformablesprite>    
     -->
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="371,15,66,136" origin ="0.5,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="371,15,66,136" origin ="0.5,0.5"/>
   </limb>
 
   <!-- lower yaw -->
@@ -24,7 +24,7 @@
     <deformablesprite sourcerect="391,169,28,110" depth="0.025" origin="0.5,0.5" subdivisions="15,15">
       <spritedeformation type="noise" resolution="15,15" frequency="10" amplitude="0.05" changespeed="10" blendmode="add"/>
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="391,169,28,110" origin="0.5,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="391,169,28,110" origin="0.5,0.5"/>
     <attack range="300" damagerange="150" duration="0.5" structuredamage="20" structuresoundtype="StructureSlash"
             force="80" torque="80" targetforce="-50" severlimbsprobability="0.8">
       <Affliction identifier="bitewounds" strength="15"/>
@@ -37,7 +37,7 @@
     <deformablesprite sourcerect="251,0,113,285" depth="0.016" origin="0.6,0.5" subdivisions="5,15">
       <spritedeformation type="bendjoint" resolution="5,15" multiplier="1.0" axis="y" start="true" control="false" end="true" />
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="251,0,113,285" origin="0.6,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="251,0,113,285" origin="0.6,0.5"/>
   </limb>
 
   <!-- body rear -->
@@ -45,7 +45,7 @@
     <deformablesprite sourcerect="0,180,125,261" depth="0.015" origin="0.6,0.5" subdivisions="10,10">
       <spritedeformation type="bendjoint" resolution="10,10" multiplier="1.0" axis="y" start="true" control="false" end="true" />
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="0,180,125,261" origin="0.6,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="0,180,125,261" origin="0.6,0.5"/>
   </limb>
 
   <!-- tail -->
@@ -53,7 +53,7 @@
     <deformablesprite sourcerect="0,0,87,172" depth="0.02" origin="0.35,0.5" subdivisions="5,10">
       <spritedeformation type="bendjoint" resolution="5,10" multiplier="1.0" axis="y" start="false" control="false" end="true" />
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="0,0,87,172" origin="0.35,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="0,0,87,172" origin="0.35,0.5"/>
   </limb>
 
   <!-- tail tip -->
@@ -61,7 +61,7 @@
     <deformablesprite sourcerect="150,222,48,211" depth="0.021" origin="0.35,0.5" subdivisions="5,10">
       <spritedeformation type="bendjoint" resolution="5,10" multiplier="1.0" axis="y" start="false" end="true" control="false"/>
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="150,222,48,211" origin="0.35,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="150,222,48,211" origin="0.35,0.5"/>
   </limb>
 
   <!-- front fins -->
@@ -69,7 +69,7 @@
     <deformablesprite sourcerect="120,5,90,205" depth="0.008" origin="0.7,0.5" subdivisions="15,15">
       <spritedeformation type="noise" resolution="15,15" frequency="10" amplitude="0.05" changespeed="10" blendmode="add"/>
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="120,5,90,205" origin="0.7,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="120,5,90,205" origin="0.7,0.5"/>
   </limb>
 
   <!-- back fins -->
@@ -77,7 +77,7 @@
     <deformablesprite sourcerect="387,304,38,128" depth="0.01" origin="0.7,0.5" subdivisions="15,15">
       <spritedeformation type="noise" resolution="15,15" frequency="10" amplitude="0.05" changespeed="10" blendmode="add"/>
     </deformablesprite>-
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="387,304,38,128" origin="0.7,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="387,304,38,128" origin="0.7,0.5"/>
   </limb>
 
   <!-- long "fins" -->
@@ -85,7 +85,7 @@
     <deformablesprite sourcerect="217,10,26,275" depth="0.01" origin="0.5,0.5" subdivisions="15,15">
       <spritedeformation type="noise" resolution="15,15" frequency="10" amplitude="0.05" changespeed="10" blendmode="add"/>
     </deformablesprite>
-    <damagedsprite texture="Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="217,10,26,275" origin="0.5,0.5"/>
+    <damagedsprite texture="%ModDir%/Content/Characters/Legacytigerthresher/damagedtigerthresher.png" sourcerect="217,10,26,275" origin="0.5,0.5"/>
   </limb>
 
   <!-- body to head -->

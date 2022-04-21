@@ -24,18 +24,18 @@
       <VitalityMultiplier type="damage,burn" multiplier="0.75" />
     </Limb>
   </health>
-  <sound file="Content/Characters/Crawler/CRAWLER_attack1.ogg" state="Attack" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_attack2.ogg" state="Attack" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_attack3.ogg" state="Attack" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_attack4.ogg" state="Attack" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_idle1.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_idle2.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_idle3.ogg" state="Idle" range="1000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_death1.ogg" state="Die" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_death2.ogg" state="Die" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_damage1.ogg" state="Damage" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_damage2.ogg" state="Damage" range="2000" volume="1" />
-  <sound file="Content/Characters/Crawler/CRAWLER_damage3.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_attack1.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_attack2.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_attack3.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_attack4.ogg" state="Attack" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_idle1.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_idle2.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_idle3.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_death1.ogg" state="Die" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_death2.ogg" state="Die" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_damage1.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_damage2.ogg" state="Damage" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_damage3.ogg" state="Damage" range="2000" volume="1" />
   <Inventory slots="Any, Any" accessiblewhenalive="False" commonness="1">
     <Item identifier="crawlermask" />
     <Item identifier="alienblood" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Ragdoll type="legacywatcher" impacttolerance="15" canentersubmarine="false" canwalk="False" texture="Content/Characters/Legacywatcher/watcher.png">
+<Ragdoll type="legacywatcher" impacttolerance="15" canentersubmarine="false" canwalk="False" texture="%ModDir%/Content/Characters/Legacywatcher/watcher.png">
 
   <collider radius="160"/>
     
@@ -17,7 +17,7 @@
   <limb id = "1" radius="50" height="120" flip="true">
     <sprite sourcerect="395,0,117,239" depth="0.025" origin="0.5,0.5"/>
     <lightsource range="200.0" color="0.8,0.8,1.0,1.0" castshadows="false">
-      <sprite texture="Content/Characters/Legacywatcher/watcher.png" sourcerect="391,282,121,230" depth="0.025" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/Characters/Legacywatcher/watcher.png" sourcerect="391,282,121,230" depth="0.025" origin="0.5,0.5"/>
     </lightsource>
   </limb>
 

@@ -2,7 +2,7 @@
 <Talents>
 
   <Talent identifier="tinkerer">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.tinker.tutorial"/>
     <Description linebreak="true"/>
     <Description tag="talentdescription.tinker.pump">
@@ -41,7 +41,7 @@
   </Talent>
 
   <Talent identifier="quickfix">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.repairpack" color="gui.orange"/>
     </Description>
@@ -75,7 +75,7 @@
   </Talent>
   
   <Talent identifier="massproduction">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.tinker.fabricatoranddeconstructor">
       <Replace tag="[speedincrease]" value="250" color="gui.green"/>
     </Description>
@@ -95,7 +95,7 @@
   </Talent>
 
   <Talent identifier="hullsealer">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.fixfoamgrenade" color="gui.orange"/>
     </Description>
@@ -112,7 +112,7 @@
   </Talent>
 
   <Talent identifier="overclocking">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.tinker.overclocking">
       <Replace tag="[tinkerincrease]" value="50" color="gui.green"/>
     </Description>
@@ -129,7 +129,7 @@
   </Talent>
 
   <Talent identifier="letitdrain">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.portablepump" color="gui.orange"/>
     </Description>
@@ -147,7 +147,7 @@
   </Talent>
   
   <Talent identifier="scrounger">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.findadditionalscrap">
       <Replace tag="[probability]" value="40" color="gui.green"/>
     </Description>
@@ -197,7 +197,7 @@
   </Talent>
 
   <Talent identifier="crisismanagement">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.crisismanagement">
       <Replace tag="[statamount1]" value="75" color="gui.green"/>
       <Replace tag="[statamount2]" value="75" color="gui.green"/>
@@ -211,7 +211,7 @@
   </Talent>
 
   <Talent identifier="hullfixer">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.handheldstatusmonitor" color="gui.orange"/>
     </Description>
@@ -232,7 +232,7 @@
   </Talent>
 
   <Talent identifier="miner">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.miner">
       <Replace tag="[probability]" value="50" color="gui.green"/>
     </Description>
@@ -260,7 +260,7 @@
   </Talent>
 
   <Talent identifier="demolitionsexpert">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.skillbonus">
       <Replace tag="[amount]" value="25" color="gui.green"/>
       <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>
@@ -277,7 +277,7 @@
   </Talent>
 
   <Talent identifier="cannedheat">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.crafthighqualitytanks">
       <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
     </Description>
@@ -326,7 +326,7 @@
   </Talent>
 
   <Talent identifier="elbowgrease">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.elbowgrease">
       <Replace tag="[statamount]" value="40" color="gui.green"/>
       <Replace tag="[skillamount]" value="3" color="gui.green"/>
@@ -352,7 +352,7 @@
   </Talent>
 
   <Talent identifier="scrapsavant">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.scrapsavant">
       <Replace tag="[scrapamount]" value="3" color="gui.green"/>
       <Replace tag="[experienceamount]" value="150" color="gui.green"/>
@@ -398,7 +398,7 @@
   </Talent>
 
   <Talent identifier="safetyfirst">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.safetyharness" color="gui.orange"/>
     </Description>
@@ -432,7 +432,7 @@
   </Talent>
 
   <Talent identifier="aggressiveengineering">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.aggressiveengineering">
       <Replace tag="[probability]" value="30" color="gui.green"/>
       <Replace tag="[powerincrease]" value="200" color="gui.green"/>
@@ -461,7 +461,7 @@
   </Talent>
   
   <Talent identifier="pyromaniac">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,2" sheetelementsize="128,128"/>
     <Description tag="talentdescription.pyromaniac">
       <Replace tag="[physicaldamagereduction]" value="40" color="gui.green"/>
       <Replace tag="[seconds]" value="5" color="gui.green"/>
@@ -490,7 +490,7 @@
   </Talent>
 
   <Talent identifier="artisansmith">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.wrenchdementonite,entityname.crowbardementonite,entityname.screwdriverdementonite,entityname.divingknifedementonite" color="gui.orange"/>
     </Description>

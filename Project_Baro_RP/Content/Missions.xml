@@ -21,7 +21,7 @@
     requireruin="true">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
     <LocationType from="City" to="Lair"/>
@@ -59,7 +59,7 @@
     requireruin="true">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,0,256,256" color="49,93,233"/>
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
     <LocationType from="City" to="Lair"/>
@@ -95,7 +95,7 @@
     requireruin="true">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
     <LocationType from="City" to="Lair"/>
@@ -146,7 +146,7 @@
       <StatusEffect target="This" showmessage="Receiving encrypted transmission: [PASS_7]4 5 1 4 13 5 14"/>
     </chooserandom>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,512,256,256" color="49,93,233"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,512,256,256" color="49,93,233"/>
 
     <LocationType from="City" to="None"/>
     <LocationType from="City" to="City"/>
@@ -191,7 +191,7 @@
     <monster character="Hammerheadgold_m" min="0" max="1"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
     <message header="Target terminated" text="The Hammerhead is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
 
@@ -209,7 +209,7 @@
     <monster character="Hammerheadgold_m" min="1" max="1"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -223,7 +223,7 @@
     monsterfile="Moloch_m">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -238,7 +238,7 @@
     monsterfile="Molochblack_m">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,512,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -254,7 +254,7 @@
     <monster character="crawler" min="4" max="6"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -271,7 +271,7 @@
     <monster character="crawler" min="8" max="10"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -287,7 +287,7 @@
     <monster character="hammerheadgold" min="1" max="2"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -303,7 +303,7 @@
     <monster character="hammerheadgold" min="1" max="2"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -319,7 +319,7 @@
     <monster character="spineling" min="2" max="3"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -336,7 +336,7 @@
     <monster character="spineling" min="8" max="10"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
   
   <MonsterMission
@@ -351,7 +351,7 @@
     <monster character="bonethresher" min="2" max="3"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,256,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -367,7 +367,7 @@
     <monster character="bonethresher" min="1" max="2"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,256,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -381,7 +381,7 @@
     <monster character="swarmcrawler" min="5" max="8"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -396,7 +396,7 @@
     <monster character="crawlerbroodmother" min="0" max="1"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -411,7 +411,7 @@
     <monster character="crawlerhusk" min="10" max="12"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,768,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -428,7 +428,7 @@
     <monster character="mudraptor_veteran" min="1" max="1"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -446,7 +446,7 @@
     <monster character="mudraptor_veteran" min="1" max="2"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,512,256,256" color="214,50,48"/>
   </MonsterMission>
 
   <MonsterMission
@@ -468,7 +468,7 @@
     <Reputation identifier="location" amount="5" />
     <Reputation identifier="coalition" amount="10" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
@@ -492,7 +492,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
@@ -516,7 +516,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,768,256,256" color="214,50,48"/>
 
     <message header="Target terminated" text="The monster is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
@@ -543,7 +543,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="separatists" amount="10" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -574,7 +574,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,256,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -600,7 +600,7 @@
     <Reputation identifier="location" amount="5" />
     <Reputation identifier="huskcult" amount="10" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,256,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -626,7 +626,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -655,7 +655,7 @@
     <Reputation identifier="clowns" amount="15" />
     <Reputation identifier="coalition" amount="-5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="768,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="768,256,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -685,7 +685,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
     
     <LocationType from="AnyOutpost" to="AnyOutpost" />
 
@@ -718,7 +718,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
     
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     
@@ -750,7 +750,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,0,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     
@@ -776,7 +776,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,0,256,256" color="243,146,55"/>
 
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </CargoMission>
@@ -806,7 +806,7 @@
       <monster character="Bonethresher" min="0" max="1"/>
     </monsters>
     
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
 
     <Reputation identifier="coalition" amount="5" />
 
@@ -839,7 +839,7 @@
       <monster character="Bonethresher" min="0" max="1"/>
     </monsters>
     
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55"/>
 
     <Reputation identifier="coalition" amount="5" />
 
@@ -861,7 +861,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
 
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -893,7 +893,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
 
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -929,7 +929,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
 
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -970,7 +970,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
 
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -1009,7 +1009,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
 
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
@@ -1065,7 +1065,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
 
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
@@ -1112,7 +1112,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
 
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
@@ -1166,7 +1166,7 @@
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48"/>
 
     <LocationType from="City" to="Research"/>
     <LocationType from="City" to="None"/>
@@ -1202,7 +1202,7 @@
       <Item identifier="amblygonite" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1246,7 +1246,7 @@
       <Item identifier="quartz" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1289,7 +1289,7 @@
       <Item identifier="pyromorphite" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1330,7 +1330,7 @@
       <Item identifier="uraniumore" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1369,7 +1369,7 @@
       <Item identifier="thorianite" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1408,7 +1408,7 @@
       <Item identifier="titanite" />
     </Items>
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
 
     <LocationType from="Outpost" to="City"/>
     <LocationType from="Outpost" to="Outpost"/>
@@ -1449,7 +1449,7 @@
     successmessage="The [loser] vessel has been defeated by the [winner] crew!"
     failuremessage="Both crews have perished.">
 
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,768,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="0,768,256,256" color="243,146,55"/>
   </CombatMission>
 
   <EscortMission name="Personnel Transport"
@@ -1469,7 +1469,7 @@
       <Item from="escortnpcs1" identifier="commoner" />
     </Characters>
     <Reputation identifier="location" amount="20" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </EscortMission>
 
@@ -1490,7 +1490,7 @@
       <Item from="escortnpcs1" identifier="securitynpc"/>
     </Characters>
     <Reputation identifier="location" amount="30" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </EscortMission>
 
@@ -1511,7 +1511,7 @@
       <Item from="escortnpcs1" identifier="prisoner" color="255,165,0"/>
     </Characters>
     <Reputation identifier="location" amount="30" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="512,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </EscortMission>
 
@@ -1549,7 +1549,7 @@
       </Item>
     </TerroristItems>
     <Reputation identifier="location" amount="20" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </EscortMission>
 
@@ -1568,9 +1568,9 @@
     <message header="Pirates eliminated" text="" />
     <Reputation identifier="location" amount="30" />
     <SubmarineTypes>
-      <Submarine path="Content/Map/EnemySubmarines/DugongPirate.sub" preferreddifficulty="10" alternatereward="3200"/>
-      <Submarine path="Content/Map/EnemySubmarines/HumpbackPirate.sub" preferreddifficulty="40" alternatereward="4400"/>
-      <Submarine path="Content/Map/EnemySubmarines/Typhon2Pirate.sub" preferreddifficulty="70" alternatereward="5600"/>
+      <Submarine path="%ModDir%/Content/Map/EnemySubmarines/DugongPirate.sub" preferreddifficulty="10" alternatereward="3200"/>
+      <Submarine path="%ModDir%/Content/Map/EnemySubmarines/HumpbackPirate.sub" preferreddifficulty="40" alternatereward="4400"/>
+      <Submarine path="%ModDir%/Content/Map/EnemySubmarines/Typhon2Pirate.sub" preferreddifficulty="70" alternatereward="5600"/>
     </SubmarineTypes>
     <Characters>
       <Character typeidentifier="piratecaptain" minamount="1" maxamount="1"/>
@@ -1598,7 +1598,7 @@
         <Character identifier="pirateengineerveteran" from="piratenpcs1" preferreddifficulty="70"/>
       </CharacterType>
     </CharacterTypes>
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
 
   </PirateMission>
 
@@ -1616,7 +1616,7 @@
       <Item from="customnpcs1" identifier="stowaway" />
     </Characters>
     <Reputation identifier="location" amount="20" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="City" />
   </EscortMission>
 
@@ -1634,7 +1634,7 @@
       <Item from="customnpcs1" identifier="jacovsubra" />
     </Characters>
     <Reputation identifier="location" amount="20" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="City" />
   </EscortMission>
 
@@ -1652,7 +1652,7 @@
       <Item from="customnpcs1" identifier="raptorowner" />
     </Characters>
     <Reputation identifier="location" amount="20" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="768,512,256,256" color="243,146,55" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     <TriggerEvent state="0" delay="5" eventidentifier="manandhisraptor2" campaignonly="true"/>
   </EscortMission>
@@ -1666,7 +1666,7 @@
     commonness="0"
     reward="1000"
     successmessage="You've arrived at the place!">
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,0,256,256" color="49,93,233"/>
     <TriggerEvent state="1" delay="5" eventidentifier="assassinationofjacovsubra4" campaignonly="true"/>
     <LocationType identifier="Abandoned" />
   </GotoMission>
@@ -1681,7 +1681,7 @@
     monsterfile="Hammerhead_mNamed" count ="1">
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons2.png" sourcerect="512,768,256,256" color="214,50,48"/>
     <TriggerEvent state="0" delay="5" eventidentifier="hognose2" campaignonly="true"/>
   </MonsterMission>
 
@@ -1699,8 +1699,8 @@
     displaytargethudicons="true"
     hudiconmaxdistance="1500"    
     requireruin="true">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,768,256,256" color="243,146,55"/>
-    <HudIcon texture="Content/UI/InventoryUIAtlas.png" sourcerect="565,269,64,64"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="512,768,256,256" color="243,146,55"/>
+    <HudIcon texture="%ModDir%/Content/UI/InventoryUIAtlas.png" sourcerect="565,269,64,64"/>
     <Items>
       <Item identifier="metalcrate">
         <Item identifier="ruinscanner" amount="3"/>
@@ -1739,7 +1739,7 @@
     targetenemies="fractalguardian,fractalguardian2"
     minenemycount="2"
     requireruin="true">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,768,256,256" color="214,50,48"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="256,768,256,256" color="214,50,48"/>
     <Reputation identifier="location" amount="10" />
     <Reputation identifier="coalition" amount="5" />
 

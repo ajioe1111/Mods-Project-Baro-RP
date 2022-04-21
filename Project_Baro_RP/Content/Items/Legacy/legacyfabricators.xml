@@ -14,8 +14,8 @@
     <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
       <AlternativeLayout absoluteoffset="15,0"/>
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
     </Fabricator>
 		
 		<ConnectionPanel selectkey="Action" canbeselected = "true">
@@ -32,7 +32,7 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -55,8 +55,8 @@
 
     <Fabricator canbeselected = "true" powerconsumption="100.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="600" loop="false" />
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight2.ogg" range="600" loop="false" />
     </Fabricator>
 
     <ConnectionPanel selectkey="Action" canbeselected = "true">
@@ -73,7 +73,7 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -97,8 +97,8 @@
 
     <Deconstructor canbeselected = "true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.25,0.25" style="ItemUI" anchor="Center"/>
-      <sound file="Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" loop="true"/>
-      <poweronsound file="Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
+      <sound file="%ModDir%/Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
     </Deconstructor>
 
     <ConnectionPanel selectkey="Action" canbeselected = "true">
@@ -115,7 +115,7 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>

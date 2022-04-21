@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Spineling" humanoid="False" husk="False" needsair="False" needswater="True" canspeak="False" noise="100" visibility="100" blooddecal="blackblood" group="spineling" eatingspeed="20" displayname="" hasinfo="False" usehuskappendage="False" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0" caneat="False">
-  <ragdolls folder="Content/Characters/Spineling/Ragdolls/" />
-  <animations folder="Content/Characters/Spineling/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Spineling/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Spineling/Animations/" />
   <health vitality="50" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" />
   <ai combatstrength="120" sight="2" hearing="2" aggressionhurt="200" aggressiongreed="0" fleehealththreshold="0" attackwhenprovoked="False" aggressiveboarding="False" targetouterwalls="True" avoidgunfire="True" enforceaggressivebehaviorformissions="True" randomattack="False" avoidtime="3" minfleetime="20">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" attackpattern="Sweep" sweepdistance="1000" sweepstrength="10" sweepspeed="0.5" ignoreifnotinsamesub="True"/>
@@ -18,20 +18,20 @@
     <target tag="spineling_giant" state="Follow" priority="1" ignoreinside="true" reactdistance="2000"/>
     <SwarmBehavior mindistfromclosest="300" maxdistfromcenter="1000" cohesion="0.5" />
   </ai>
-  <sound file="Content/Characters/Spineling/SPINELING_idle1.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_idle2.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_idle3.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_idle4.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage1.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage2.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage3.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage4.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage5.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_damage6.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_dead1.ogg" state="Die" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_dead2.ogg" state="Die" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_dead3.ogg" state="Die" range="3000" volume="1" />
-  <sound file="Content/Characters/Spineling/SPINELING_dead4.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle1.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle2.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle3.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle4.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage1.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage2.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage3.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage4.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage5.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_damage6.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_dead1.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_dead2.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_dead3.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_dead4.ogg" state="Die" range="3000" volume="1" />
   <Inventory slots="Any, Any" accessiblewhenalive="False">
     <Item identifier="alienblood" />
   </Inventory>

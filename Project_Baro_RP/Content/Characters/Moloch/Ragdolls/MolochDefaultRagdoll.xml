@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Moloch" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="100" canentersubmarine="False" canwalk="False" draggable="True" spritesheetorientation="0" texture="Content/Characters/Moloch/Moloch.png" mainlimb="Torso">
+﻿<Ragdoll type="Moloch" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="100" canentersubmarine="False" canwalk="False" draggable="True" spritesheetorientation="0" texture="%ModDir%/Content/Characters/Moloch/Moloch.png" mainlimb="Torso">
   <collider radius="360" width="0" name="Main Collider" height="0" />
   <limb id="0" name="Core" type="Torso" radius="300" width="0" flip="True" healthindex="0" attackpriority="10" steerforce="0" stepoffset="0,0" height="0" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" notes="">
     <deformablesprite sourcerect="0,1216,864,832" depth="0.19" origin="0.48274615,0.40562853" subdivisions="15,15" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0">
@@ -14,7 +14,7 @@
     <damagemodifier armorsector="0,360" afflictiontypes="bleeding,damage,burn" damagemultiplier="1.5" deflectprojectiles="False" damagesound="" afflictionidentifiers="" probabilitymultiplier="1" />
     <attack cooldown="12" range="700" damagerange="600" duration="0.25" submarineimpactmultiplier="3" force="50" targetforce="0" structuresoundtype="StructureBlunt" context="Any" targettype="Structure" hitdetectiontype="Distance" afterattack="FollowThrough" secondarycooldown="5" structuredamage="80" itemdamage="100" stun="0" onlyhumans="False" applyforceonlimbs="" torque="0" applyforcesonlyonce="False" targetimpulse="500" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" cooldownrandomfactor="0.1" targetlimbtype="None" reverse="False" retreat="False" targetdistance="0" afterattackdelay="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
       <StatusEffect type="OnUse" target="this" disabledeltatime="true">
-        <sound file="Content/Characters/Moloch/Moloch_bumpAttack.ogg" range="5000" volume="1" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Moloch/Moloch_bumpAttack.ogg" range="5000" volume="1" dontmuffle="true" />
         <Explosion ignorecover="true" onlyinside="true" range="800" force="1" flames="false" shockwave="true" sparks="false" flash="false" underwaterbubble="false" camerashake="0" playtinnitus="false" structuredamage="200" applyFireEffects="false" smoke="false">
           <Affliction identifier="stun" strength="5" probability="1" />
         </Explosion>
@@ -24,9 +24,9 @@
       <requiredaffliction type="damage" minstrength="10"/>
       <requiredaffliction type="burn" minstrength="10"/>
       <Conditional isdead="False" />
-      <sound file="Content/Characters/Moloch/MOLOCH_damage1.ogg" range="5000" dontmuffle="true" selectionmode="Random"/>
-      <sound file="Content/Characters/Moloch/MOLOCH_damage2.ogg" range="5000" dontmuffle="true"/>
-      <sound file="Content/Characters/Moloch/MOLOCH_damage3.ogg" range="5000" dontmuffle="true"/>
+      <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage1.ogg" range="5000" dontmuffle="true" selectionmode="Random"/>
+      <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage2.ogg" range="5000" dontmuffle="true"/>
+      <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage3.ogg" range="5000" dontmuffle="true"/>
       <particleemitter particle="blackwaterblood" drawontop="True" particleamount="3" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="3" scalemax="5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
       <particleemitter particle="blackgib" drawontop="True" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
     </StatusEffect>

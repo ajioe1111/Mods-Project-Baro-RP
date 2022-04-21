@@ -2,7 +2,7 @@
 <Talents>
 
   <Talent identifier="militaryapplications">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="7,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.depletedfuel,entityname.coilgunammoboxdepletedfuel" color="gui.orange"/>
     </Description>
@@ -20,7 +20,7 @@
   </Talent>
 
   <Talent identifier="strengthenedalloys">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.wrenchhardened,entityname.screwdriverhardened,entityname.crowbarhardened,entityname.divingknifehardened" color="gui.orange"/>
     </Description>
@@ -40,7 +40,7 @@
   </Talent>
 
   <Talent identifier="castledoctrine">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.dirtybomb" color="gui.orange"/>
     </Description>
@@ -59,7 +59,7 @@
   </Talent>
   
   <Talent identifier="armsdealer">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.smgmagazinedepletedfuel,entityname.revolverrounddepletedfuel" color="gui.orange"/>
     </Description>
@@ -88,7 +88,7 @@
   </Talent>
 
   <Talent identifier="nuclearoption">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="3,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.nucleargun" color="gui.orange"/>
     </Description>
@@ -122,7 +122,7 @@
   </Talent>
 
   <Talent identifier="minorinmechanics">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.handheldelectricalmonitor" color="gui.orange"/>
     </Description>
@@ -156,7 +156,7 @@
   </Talent>
 
   <Talent identifier="intheflow">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.intheflow">
       <Replace tag="[repairspeed]" value="70" color="gui.green"/>
       <Replace tag="[seconds]" value="7" color="gui.green"/>
@@ -180,7 +180,7 @@
   </Talent>
 
   <Talent identifier="coauthor">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.coauthor">
       <Replace tag="[seconds]" value="10" color="gui.green"/>
       <Replace tag="[itemname]" value="entityname.skillbookhandyseaman" color="gui.orange"/>
@@ -219,7 +219,7 @@
   </Talent>
 
   <Talent identifier="polymath">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.polymath">
       <Replace tag="[skillincrease]" value="20" color="gui.green"/>
       <Replace tag="[experiencegain]" value="65" color="gui.green"/>
@@ -239,7 +239,7 @@
   </Talent>
 
   <Talent identifier="phdinnuclearphysics">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.pucs" color="gui.orange"/>
     </Description>
@@ -270,7 +270,7 @@
   </Talent>
 
   <Talent identifier="justascratch">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.lowhealth.regenerate">
       <Replace tag="[health]" value="50" color="gui.green"/>
     </Description>
@@ -292,7 +292,7 @@
   </Talent>
   
   <Talent identifier="melodicrespite">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.melodicrespite">
       <Replace tag="[seconds]" value="480" color="gui.green"/>
     </Description>
@@ -325,7 +325,7 @@
   </Talent>
 
   <Talent identifier="optimizedpowerflow">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.optimizedpowerflow">
       <Replace tag="[statamount]" value="50" color="gui.green"/>
       <Replace tag="[skillamount]" value="1" color="gui.green"/>
@@ -348,7 +348,7 @@
   </Talent>
 
   <Talent identifier="allseeingeye">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.thermalgoggles" color="gui.orange"/>
     </Description>
@@ -362,7 +362,7 @@
   </Talent>
 
   <Talent identifier="electrochemist">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.crafthighqualitybatteries">
       <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
     </Description>
@@ -394,7 +394,7 @@
             <StatusEffect type="OnAbility" target="Character">
               <Affliction identifier="stun" amount="4.0"/>
               <ParticleEmitter particle="ElectricShock" distancemin="0" distancemax="50" particleamount="5" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.2" />
-              <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" />
+              <sound file="%ModDir%/Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" />
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffectsToAttacker>
@@ -419,7 +419,7 @@
   </Talent>
   
   <Talent identifier="remotemonitor">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.reactorpda" color="gui.orange"/>
     </Description>
@@ -440,7 +440,7 @@
   </Talent>
   
   <Talent identifier="expandedresearch">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,7" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="2,7" sheetelementsize="128,128"/>
     <Description tag="talentdescription.depletedfueldeconstructedbyally">
       <Replace tag="[amount]" value="200" color="gui.green"/>
     </Description>
@@ -471,7 +471,7 @@
   </Talent>
 
   <Talent identifier="collegeathletics">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.cargoscooter" color="gui.orange"/>
     </Description>
@@ -498,7 +498,7 @@
   </Talent>
 
   <Talent identifier="hazardousmaterials">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.fulguriumfuelrodvolatile" color="gui.orange"/>
     </Description>

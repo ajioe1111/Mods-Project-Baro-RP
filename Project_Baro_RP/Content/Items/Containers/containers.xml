@@ -95,7 +95,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="20" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="3" />
         <Affliction identifier="burn" strength="5" />
@@ -125,7 +125,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="20" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="3" />
         <Affliction identifier="burn" strength="5" />
@@ -142,7 +142,7 @@
   </Item>
   
   <Item name="" identifier="oxygentankshelf2" nameidentifier="oxygentankshelf" category="Diving" tags="container,oxygentankcontainer,oxygentankrefiller" pickdistance="50" scale="0.5">
-    <Sprite name="Diving Suit Locker Small" texture="Content/Items/Containers/containers.png" sourcerect="714,259,99,82" depth="0.84" origin="0.5,0.5" />
+    <Sprite name="Diving Suit Locker Small" texture="%ModDir%/Content/Items/Containers/containers.png" sourcerect="714,259,99,82" depth="0.84" origin="0.5,0.5" />
     <!--TODO: add light textures for powered-on state?-->
     <Powered powerconsumption="30" currpowerconsumption="30" isactive="true">
       <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
@@ -151,7 +151,7 @@
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="20" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="3" />
         <Affliction identifier="burn" strength="5" />
@@ -175,7 +175,7 @@
     <Deconstruct time="20">
       <Item identifier="steel" />
     </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="407,376,152,89" origin="0.5,0.5" />
     <Body width="150" height="80" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -187,7 +187,7 @@
     <Deconstruct time="20">
       <Item identifier="steel" />
     </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="561,377,151,86" origin="0.5,0.5" />
     <Body width="150" height="80" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -200,7 +200,7 @@
     <Deconstruct time="20">
       <Item identifier="steel" />
     </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="410,466,150,88" origin="0.5,0.5" />
     <Body width="150" height="80" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-20,14" handle2="20,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -212,7 +212,7 @@
     <Deconstruct time="20">
       <Item identifier="steel" />
     </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="562,467,148,87" origin="0.5,0.5" />
     <Body width="145" height="85" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-20,14" handle2="20,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -299,8 +299,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="0.8" />
       <Price storeidentifier="merchantmine" multiplier="0.8" />
     </Price>
-    <InventoryIcon texture="Content/Items/Alien/AlienRuins_Items.png" sourcerect="806,2,124,100" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" sourcerect="806,2,124,100" depth="0.6" />
+    <InventoryIcon texture="%ModDir%/Content/Items/Alien/AlienRuins_Items.png" sourcerect="806,2,124,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienRuins_Items.png" sourcerect="806,2,124,100" depth="0.6" />
     <Body width="124" height="95" density="20" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-70" handle1="0,45" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" allowswappingwhenpicked="false" />
     <ItemContainer capacity="1" hideitems="true">
@@ -312,7 +312,7 @@
   <Item name="" identifier="sealedsupplycrate" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.02"/>
     <Price baseprice="1250" sold="false" canbespecial="false" />
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="562,563,147,86" origin="0.5,0.5" />
     <Body width="150" height="80" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -330,7 +330,7 @@
     <Deconstruct time="20">
       <Item identifier="steel" />
     </Deconstruct>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
     <Sprite texture="containers.png" depth="0.54" sourcerect="407,376,152,89" origin="0.5,0.5" />
     <Body width="150" height="80" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />

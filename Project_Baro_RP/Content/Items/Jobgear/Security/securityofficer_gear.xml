@@ -13,8 +13,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="383,151,129,105" origin="0.5,0.5" />
-    <Sprite name="Security Officer's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="509,151,121,66" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="383,151,129,105" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 1" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="509,151,121,66" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Security Officer's Uniform 1 Torso" texture="SecurityOfficer1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -46,8 +46,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
-    <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 2" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Security Officer's Uniform 2 Torso" texture="SecurityOfficer2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -79,8 +79,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Security Officer's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,402,128,110" origin="0.5,0.5" />
-    <Sprite name="Security Officer's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="767,149,124,69" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Security Officer's Uniform 3 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,402,128,110" origin="0.5,0.5" />
+    <Sprite name="Security Officer's Uniform 3" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="767,149,124,69" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Security Officer's Uniform 3 Torso" texture="SecurityOfficer3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -122,15 +122,15 @@
       <RequiredItem identifier="ballisticfiber" />
       <RequiredItem identifier="ballisticfiber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,256,64,64" origin="0.5,0.5" />
-    <Sprite name="Security Vest Item" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" sourcerect="14,45,103,180" depth="0.6" origin="0.5,0.35" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,256,64,64" origin="0.5,0.5" />
+    <Sprite name="Security Vest Item" texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" sourcerect="14,45,103,180" depth="0.6" origin="0.5,0.35" />
     <Body width="85" height="90" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
-      <sprite name="Security Vest Wearable" texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="14,45,103,180" />
+      <sprite name="Security Vest Wearable" texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="14,45,103,180" />
     </Wearable>
   </Item>
   <!-- HEADGEAR START -->
@@ -153,14 +153,14 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="ballisticfiber" />
     </Fabricate>
-    <Sprite name="Ballistic Helmet 1" texture="Content/Items/Jobgear/headgears.png" sourcerect="7,215,85,68" depth="0.6" origin="0.5,0.5" />
+    <Sprite name="Ballistic Helmet 1" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="7,215,85,68" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-      <sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="7,215,85,68" origin="0.5,0.7" />
+      <sprite name="Ballistic Helmet 1 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="Hair" sourcerect="7,215,85,68" origin="0.5,0.7" />
     </Wearable>
   </Item>
   <Item name="" identifier="ballistichelmet2" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
@@ -181,7 +181,7 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="ballisticfiber" />
     </Fabricate>
-    <Sprite name="Ballistic Helmet 2" texture="Content/Items/Jobgear/headgears.png" sourcerect="112,213,82,94" depth="0.6" origin="0.5,0.5" />
+    <Sprite name="Ballistic Helmet 2" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="112,213,82,94" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -189,7 +189,7 @@
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <SkillModifier skillidentifier="weapons" skillvalue="10" />
-      <sprite name="Ballistic Helmet 2 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="112,213,82,94" origin="0.625,0.5" />
+      <sprite name="Ballistic Helmet 2 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="112,213,82,94" origin="0.625,0.5" />
     </Wearable>
   </Item>
   <Item name="" identifier="ballistichelmet3" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.325">
@@ -210,14 +210,14 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="ballisticfiber" />
     </Fabricate>
-    <Sprite name="Ballistic Helmet 3" texture="Content/Items/Jobgear/headgears.png" sourcerect="207,201,104,101" depth="0.6" origin="0.5,0.5" />
+    <Sprite name="Ballistic Helmet 3" texture="%ModDir%/Content/Items/Jobgear/headgears.png" sourcerect="207,201,104,101" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-      <sprite name="Ballistic Helmet 3 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="207,201,104,101" origin="0.575,0.55" />
+      <sprite name="Ballistic Helmet 3 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="207,201,104,101" origin="0.575,0.55" />
     </Wearable>
   </Item>
   <!-- HEADGEAR END -->
@@ -240,12 +240,12 @@
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Jobgear/Mechanic/safetyharness.png" sourcerect="405,0,56,49" depth="0.6" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" sourcerect="405,0,56,49" depth="0.6" />
     <Body width="50" height="34" density="40" />
     <Wearable slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
-      <sprite texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="RightHand" sourcerect="462,1,25,16" origin="0.5,0.8" depth="0.09" inheritlimbdepth="false" inherittexturescale="true" />
-      <sprite texture="Content/Items/Jobgear/Mechanic/safetyharness.png" limb="LeftHand" sourcerect="487,1,25,16" origin="0.5,0.8" depth="0.09" inheritlimbdepth="false" inherittexturescale="true" />
+      <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="RightHand" sourcerect="462,1,25,16" origin="0.5,0.8" depth="0.09" inheritlimbdepth="false" inherittexturescale="true" />
+      <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/safetyharness.png" limb="LeftHand" sourcerect="487,1,25,16" origin="0.5,0.8" depth="0.09" inheritlimbdepth="false" inherittexturescale="true" />
       <StatusEffect type="OnWearing" target="Character" lockhands="true" setvalue="true" />
     </Wearable>
   </Item>
@@ -261,7 +261,7 @@
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,320,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,320,64,64" />
     <Sprite texture="riotgear.png" sourcerect="31,54,27,147" origin="0.5,0.5" depth="0.55" />
     <Body width="40" height="145" density="30" />
     <Holdable slots="RightHand+LeftHand" aimpos="60,-30" holdpos="45,-30" handle1="-10,0" handle2="10,0" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">

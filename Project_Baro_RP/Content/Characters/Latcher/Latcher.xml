@@ -14,21 +14,21 @@
     <Limb name="LeftLeg" />
     <Limb name="RightLeg" />
   </health>
-  <sound file="Content/Characters/Latcher/ABYSSM_idle.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_idle_1.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_idle_2.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_idle_3.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_attack.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_attack_1.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_attack_2.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_attack_3.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_attack_4.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_damage.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_damage_1.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_damage_2.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_damage_3.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_escape.ogg" state="Die" range="30000" volume="1" />
-  <sound file="Content/Characters/Latcher/ABYSSM_escape_1.ogg" state="Die" range="30000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_idle.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_idle_1.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_idle_2.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_idle_3.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_attack.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_attack_1.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_attack_2.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_attack_3.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_attack_4.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_1.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_2.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_damage_3.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_escape.ogg" state="Die" range="30000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_escape_1.ogg" state="Die" range="30000" volume="1" />
   <ai CombatStrength="7000" Sight="3" Hearing="10" AggressionHurt="100" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="True" DamageThreshold="80" AvoidTime="10" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="True" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="10" WallTargetingMethod="Target">
     <target Tag="decoy" State="Attack" Priority="500" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="provocative" State="Attack" Priority="200" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
@@ -42,6 +42,6 @@
     <target Tag="leucocyte" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="2" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
   <StatusEffect type="OnActive" target="this">
-    <Sound file="Content/Characters/Latcher/ABYSSM_movingLoop.ogg" loop="true" range="20000" dontmuffle="true" />
+    <Sound file="%ModDir%/Content/Characters/Latcher/ABYSSM_movingLoop.ogg" loop="true" range="20000" dontmuffle="true" />
   </StatusEffect>
 </Character>

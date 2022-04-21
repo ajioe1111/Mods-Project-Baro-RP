@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Spineling" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="45" impacttolerance="20" draggable="True" mainlimb="Torso" texture="Content/Characters/Spineling/Spineling.png">
+﻿<Ragdoll type="Spineling" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="45" impacttolerance="20" draggable="True" mainlimb="Torso" texture="%ModDir%/Content/Characters/Spineling/Spineling.png">
   <collider radius="45" width="0" name="Main Collider" height="100" />
   <limb id="0" name="Head" type="Head" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="2" steerforce="10" stepoffset="0,0" radius="45" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" healthindex="0" friction="0.3" restitution="0.05" angulardamping="7" mouthpos="1.2,-0.5" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="10" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear">
     <sprite sourcerect="138,0,91,121" origin="0.36367497,0.49676934" depth="0.01" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
@@ -28,14 +28,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="7" width="15" height="160" name="Spike2" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="10" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -46,14 +46,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="8" width="15" height="160" name="Spike3" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="20" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -64,14 +64,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="9" width="15" height="160" name="Spike4" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="30" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -82,14 +82,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="10" width="15" height="160" name="Spike5" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="40" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -100,14 +100,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="11" width="15" height="160" name="Spike6" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="50" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -118,14 +118,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="12" width="15" height="160" name="Spike7" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-180" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -136,14 +136,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="13" width="15" height="160" name="Spike8" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-190" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -154,14 +154,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="14" width="15" height="160" name="Spike9" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-200" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -172,14 +172,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="15" width="15" height="160" name="Spike10" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-210" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -190,14 +190,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="16" width="15" height="160" name="Spike11" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-220" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -208,14 +208,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <limb id="17" width="15" height="160" name="Spike12" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-230" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -226,14 +226,14 @@
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <HideLimb duration="5" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
-        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
       </StatusEffect>
     </attack>
     <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <Sprite texture="Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Content/Characters/Spineling/Spineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
     </lightsource>
   </limb>
   <joint limb1="1" limb2="0" limb1anchor="53.459984,0.13700119" limb2anchor="-12.687627,1.0334542" name="Joint 1 - 0" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />

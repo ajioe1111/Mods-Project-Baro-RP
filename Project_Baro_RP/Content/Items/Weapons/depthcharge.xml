@@ -35,7 +35,7 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="aluminium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,128,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,128,64,64" origin="0.5,0.5" />
     <Sprite texture="TurretsAndDepthCharges.png" sourcerect="0,0,130,89" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="11" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -72,7 +72,7 @@
       <RequiredItem identifier="uranium" />
       <RequiredItem identifier="ic4block" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,128,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,128,64,64" origin="0.5,0.5" />
     <Sprite texture="TurretsAndDepthCharges.png" sourcerect="130,1,129,88" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="12" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -80,8 +80,8 @@
       <Attack structuredamage="2" damagetype="Blunt">
         <Affliction identifier="blunttrauma" strength="10" />
       </Attack>
-      <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="50000" />
-      <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="50000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="50000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="50000" />
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <Explosion range="1000.0" structuredamage="2000" ballastfloradamage="1000" force="50.0" severlimbsprobability="1.5" decal="explosion" decalsize="1.0"
                    camerashake="500" camerashakerange="50000"
@@ -126,7 +126,7 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="sonarbeacon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
     <Sprite texture="TurretsAndDepthCharges.png" sourcerect="138,380,129,88" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="11" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -136,7 +136,7 @@
         <Affliction identifier="blunttrauma" strength="10" />
       </Attack>
       <StatusEffect type="OnActive" target="This" duration="30" stackable="false">
-        <sound file="Content/Items/Weapons/SonarDecoy.ogg" type="OnActive" range="50000" loop="true" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Items/Weapons/SonarDecoy.ogg" type="OnActive" range="50000" loop="true" dontmuffle="true" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="Contained">
         <Use />
@@ -168,20 +168,20 @@
       <RequiredItem identifier="ic4block" />
       <RequiredItem identifier="sonarbeacon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
     <Sprite texture="TurretsAndDepthCharges.png" sourcerect="138,380,129,88" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="12" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
     <AiTarget soundrange="10000" fadeouttime="50" />
     <Projectile characterusable="false" launchimpulse="5.0">
       <StatusEffect type="OnActive" target="This" duration="30" stackable="false">
-        <sound file="Content/Items/Weapons/SonarDecoy.ogg" type="OnActive" range="50000" loop="true" />
+        <sound file="%ModDir%/Content/Items/Weapons/SonarDecoy.ogg" type="OnActive" range="50000" loop="true" />
       </StatusEffect>
       <Attack structuredamage="2" damagetype="Blunt">
         <Affliction identifier="blunttrauma" strength="10" />
       </Attack>
-      <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="20000" />
-      <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="20000" />
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <Explosion range="1000.0" structuredamage="2000" ballastfloradamage="1000" force="50.0" severlimbsprobability="1.5" decal="explosion" decalsize="1.0"
                    camerashake="500" camerashakerange="50000"

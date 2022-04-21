@@ -2,7 +2,7 @@
 <Talents>
 
   <Talent identifier="multitasker">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,3" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.multitasker"/>
     <Description tag="talentdescription.additionalstattypeself">
       <Replace tag="[amount]" value="20" color="gui.green"/>
@@ -21,7 +21,7 @@
   </Talent>
 
   <Talent identifier="apprenticeship">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.apprenticeship">
       <Replace tag="[probability]" value="20" color="gui.green"/>
     </Description>
@@ -45,7 +45,7 @@
   </Talent>
 
   <Talent identifier="standanddeliver">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.standanddeliver">
       <Replace tag="[skillamount]" value="4" color="gui.green"/>
     </Description>
@@ -75,7 +75,7 @@
   </Talent>
 
   <Talent identifier="richinknowledge">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.richinknowledge">
       <Replace tag="[experienceamount]" value="20" color="gui.green"/>
       <Replace tag="[alliedexperienceamount]" value="10" color="gui.green"/>
@@ -113,7 +113,7 @@
   </Talent>
 
   <Talent identifier="aceofalltrades">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainbonustoallskills">
       <Replace tag="[amount]" value="15" color="gui.green"/>
     </Description>
@@ -137,7 +137,7 @@
   </Talent>
 
   <Talent identifier="olympian">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainskillspastmax"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
@@ -147,7 +147,7 @@
   </Talent>
 
   <Talent identifier="skedaddle">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.skedaddle">
       <Replace tag="[value]" value="10" color="gui.green"/>
       <Replace tag="[attackedvalue]" value="30" color="gui.green"/>
@@ -177,7 +177,7 @@
   </Talent>
 
   <Talent identifier="insurancepolicy">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.insurancepolicy">
       <Replace tag="[amount]" value="700" color="gui.green"/>
     </Description>
@@ -197,7 +197,7 @@
   </Talent>
 
   <Talent identifier="stillkicking">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.stillkickingheal"/>
     <Description tag="talentdescription.maxtriggeruntildeath"/>
     <AbilityGroupInterval maxtriggercount="1" effectdelay="1" >
@@ -217,7 +217,7 @@
   </Talent>
 
   <Talent identifier="survivalpackage">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.feigndeath">
       <Replace tag="[seconds]" value="4" color="gui.green"/>
     </Description>
@@ -251,7 +251,7 @@
   </Talent>
 
   <Talent identifier="crewlayabout">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.reductiontostattypeself">
       <Replace tag="[stattype]" value="stattypenames.repairspeed" color="gui.orange"/>
       <Replace tag="[amount]" value="40" color="gui.green"/>
@@ -287,7 +287,7 @@
   </Talent>
 
   <Talent identifier="graduationceremony">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.graduationceremony"/>
     <Description tag="talentdescription.maximumhealthperlevel">
       <Replace tag="[maximumhealth]" value="10" color="gui.green"/>
@@ -305,7 +305,7 @@
   </Talent>
 
   <Talent identifier="playingcatchup">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.playingcatchup">
       <Replace tag="[levelvalue]" value="2" color="gui.green"/>
       <Replace tag="[experiencevalue]" value="100" color="gui.green"/>
@@ -321,7 +321,7 @@
   </Talent>
 
   <Talent identifier="enrollintoclowncollege">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="4,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.enrollintoclowncollege">
       <Replace tag="[afflictionname]" value="afflictionname.clownpower" color="gui.orange"/>
     </Description>
@@ -372,7 +372,7 @@
   </Talent>
 
   <Talent identifier="waterprankster">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.clowndivingmask" color="gui.orange"/>
     </Description>
@@ -393,7 +393,7 @@
   </Talent>
 
   <Talent identifier="psychoclown">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.psychoclown">
       <Replace tag="[afflictionname]" value="afflictionname.clownpower" color="gui.orange"/>
       <Replace tag="[maxattackspeed]" value="150" color="gui.green"/>
@@ -418,7 +418,7 @@
   </Talent>
 
   <Talent identifier="inspiringtunes">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.inspiringtunes">
       <Replace tag="[afflictionname]" value="afflictionname.clownpower" color="gui.orange"/>
       <Replace tag="[skillamount]" value="15" color="gui.green"/>
@@ -448,7 +448,7 @@
   </Talent>
 
   <Talent identifier="slapstickexpert">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="0,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.slapstickexpert">
       <Replace tag="[afflictionname]" value="afflictionname.clownpower"/>
       <Replace tag="[powerreduction]" value="50" color="gui.green"/>
@@ -498,7 +498,7 @@
   </Talent>
 
   <Talent identifier="truepotential">
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="1,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.honkinghealscharacters"/>
     <Description tag="talentdescription.truepotential">
       <Replace tag="[probability]" value="0.75" color="gui.green"/>

@@ -2,7 +2,7 @@
 <Credits scrollspeed="50.0" spacing="10">
   <spacing relativesize="1.0,1.0"/>
 
-  <Image texture="Content/UI/titleText.png" sourcerect="0,520,1024,328" relativesize="1.0,0.1"/>
+  <Image texture="%ModDir%/Content/UI/titleText.png" sourcerect="0,520,1024,328" relativesize="1.0,0.1"/>
   
   <spacing relativesize="1.0,0.1"/>
   

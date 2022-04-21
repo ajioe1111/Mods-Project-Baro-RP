@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Tigerthresher" humanoid="False" husk="False" needsair="False" needswater="True" canspeak="False" noise="100" visibility="200" blooddecal="blood" group="thresher" eatingspeed="20" displayname="" hasinfo="False" usehuskappendage="False" bleedparticleair="blooddrop" bleedparticlewater="waterblood" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0">
-  <ragdolls folder="Content/Characters/Tigerthresher/Ragdolls/" />
-  <animations folder="Content/Characters/Tigerthresher/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Tigerthresher/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Tigerthresher/Animations/" />
   <health vitality="150" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="1" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="3" />
   <ai combatstrength="200" sight="1" hearing="1" aggressionhurt="200" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="True" aggressiveboarding="True" targetouterwalls="False" avoidgunfire="True" enforceaggressivebehaviorformissions="True" randomattack="False" avoidtime="3" minfleetime="20">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreifnotinsamesub="True"/>
@@ -25,14 +25,14 @@
     <target tag="terminalcell" state="Idle" priority="0" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.5" />
   </ai>
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle1.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle2.ogg" state="Idle" range="3000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_damage1.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_damage2.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_attack1.ogg" state="Attack" range="4000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_attack2.ogg" state="Attack" range="4000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_death1.ogg" state="Die" range="3000" volume="1" />
-  <sound file="Content/Characters/Tigerthresher/TIGERTRESHER_death2.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_idle1.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_idle2.ogg" state="Idle" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_damage1.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_damage2.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_attack1.ogg" state="Attack" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_attack2.ogg" state="Attack" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_death1.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_death2.ogg" state="Die" range="3000" volume="1" />
   <Inventory slots="Any, Any" accessiblewhenalive="False">
     <Item identifier="alienblood" />
   </Inventory>

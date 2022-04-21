@@ -1,11 +1,11 @@
-﻿<Ragdoll type="Mudraptor" limbscale="0.4" jointscale="0.4" texturescale="1" colliderheightfromfloor="170" impacttolerance="30" canentersubmarine="True" canwalk="True" draggable="True" spritesheetorientation="90" texture="Content/Characters/Mudraptor/Mudraptor.png" mainlimb="Torso" color="255,255,255,255">
+﻿<Ragdoll type="Mudraptor" limbscale="0.4" jointscale="0.4" texturescale="1" colliderheightfromfloor="170" impacttolerance="30" canentersubmarine="True" canwalk="True" draggable="True" spritesheetorientation="90" texture="%ModDir%/Content/Characters/Mudraptor/Mudraptor.png" mainlimb="Torso" color="255,255,255,255">
   <collider radius="80" height="300" name="Main Collider" width="0" />
   <limb id="0" name="Head" type="Head" width="80" height="0" notes="" flip="True" healthindex="1" attackpriority="2" steerforce="20" stepoffset="0,0" radius="30" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0.5,-0.5" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="16" severedfadeouttime="10" applytailangle="False" applysinemovement="True" inheritlimbdepth="None" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
     <deformablesprite sourcerect="196,384,184,96" origin="0.44556922,0.47328246" depth="0.1" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
     <damagemodifier damagesound="LimbSlash" damagemultiplier="1.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="" afflictiontypes="damage,bleeding,burn" probabilitymultiplier="1" damageparticle="" />
     <lightsource color="255,255,255,0" range="0" offset="-18,28" castshadows="false" scale="1" rotation="0" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
-      <deformablesprite texture="Content/Characters/Watcher/gazerage.png" sourcerect="124,0,100,54" origin="0.5,0.5" size="1,1" alpha="1"/>
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Watcher/gazerage.png" sourcerect="124,0,100,54" origin="0.5,0.5" size="1,1" alpha="1"/>
       <conditional watchersgaze="gt 0" />
     </lightsource>
   </limb>

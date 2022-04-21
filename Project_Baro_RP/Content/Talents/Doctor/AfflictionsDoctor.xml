@@ -35,7 +35,7 @@
         <ReduceAffliction identifier="chemwithdrawal" strength="2.0"/>
       </StatusEffect>
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -56,7 +56,7 @@
         <ReduceAffliction identifier="oxygenlow" strength="0.5"/>
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -76,7 +76,7 @@
       maxresistance="0.2">
       <StatValue stattype="SkillGainSpeed" value="0.25" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -98,7 +98,7 @@
       <StatValue stattype="MechanicalSkillBonus" value="15" />
       <StatValue stattype="WeaponsSkillBonus" value="15" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
 </Afflictions>

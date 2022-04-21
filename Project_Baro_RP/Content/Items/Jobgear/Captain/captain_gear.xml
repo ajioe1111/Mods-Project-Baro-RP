@@ -12,10 +12,10 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <Sprite name="Captain's Cap 1" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="12,130,89,50" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 1" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="12,130,89,50" origin="0.5,0.5" />
     <Body width="59" height="40" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="12,130,89,50" origin="0.5,1.0" />
+      <sprite name="Captain's Cap 1 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="12,130,89,50" origin="0.5,1.0" />
       <SkillModifier skillidentifier="helm" skillvalue="10" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -31,10 +31,10 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <Sprite name="Captain's Cap 2" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="114,129,83,48" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 2" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="114,129,83,48" origin="0.5,0.5" />
     <Body width="75" height="40" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 2 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="114,129,83,48" origin="0.55,1.1" />
+      <sprite name="Captain's Cap 2 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="114,129,83,48" origin="0.55,1.1" />
       <SkillModifier skillidentifier="helm" skillvalue="10" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -50,10 +50,10 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <Sprite name="Captain's Cap 3" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="212,119,90,53" origin="0.5,0.5" />
+    <Sprite name="Captain's Cap 3" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="212,119,90,53" origin="0.5,0.5" />
     <Body width="70" height="45" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Cap 3 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="212,119,90,53" origin="0.55,1.1" />
+      <sprite name="Captain's Cap 3 Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="212,119,90,53" origin="0.55,1.1" />
       <SkillModifier skillidentifier="helm" skillvalue="10" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
@@ -71,8 +71,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Captain's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
-    <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 1 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 1" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Captain's Uniform 1 Torso" texture="captain_1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -103,8 +103,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Captain's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
-    <Sprite name="Captain's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 2 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 2" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="375,225,124,61" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Captain's Uniform 2 Torso" texture="captain_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -135,8 +135,8 @@
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Captain's Uniform 3 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="255,27,128,101" origin="0.5,0.5" />
-    <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Captain's Uniform 3 Icon" texture="%ModDir%/Content/Items/Jobgear/OutfitIcons.png" sourcerect="255,27,128,101" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 3" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Captain's Uniform 3 Torso" texture="captain_3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

@@ -2,17 +2,17 @@
 <Orders>
   <Order name="Dismissed" identifier="dismissed"
          mustmanuallyassign="true">
-    <Sprite name="Command_Dismiss" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,512,128,128"/>
+    <Sprite name="Command_Dismiss" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="640,512,128,128"/>
   </Order>
 
   <Order name="Ignore This" identifier="ignorethis"
          mustsettarget="true" targetallcharacters="true">
-    <Sprite name="Command_Ignore" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,640,128,128"/>
+    <Sprite name="Command_Ignore" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,640,128,128"/>
   </Order>
 
   <Order name="Unignore This" identifier="unignorethis"
          mustsettarget="true" targetallcharacters="true">
-    <Sprite name="Command_Unignore" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,640,128,128"/>
+    <Sprite name="Command_Unignore" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,640,128,128"/>
   </Order>
   
   <Order name="Follow" identifier="follow"
@@ -21,7 +21,7 @@
       mustmanuallyassign="true"
       coloredwhencontrollinggiver="true"
       displaygiverintooltip="true">
-    <Sprite name="Command_Follow" texture="Content/UI/CommandUIAtlas.png" sourcerect="128,256,128,128"/>
+    <Sprite name="Command_Follow" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="128,256,128,128"/>
   </Order>
 
   <Order name="Wait" identifier="wait"
@@ -29,14 +29,14 @@
          category="movement"
          mustmanuallyassign="true"
          canbegeneralized="false">
-    <Sprite name="Command_Wait" texture="Content/UI/CommandUIAtlas.png" sourcerect="128,128,128,128"/>
+    <Sprite name="Command_Wait" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="128,128,128,128"/>
   </Order>
 
   <Order name="Return" identifier="return"
 		 assignmentpriority="90"
          category="movement"
          mustmanuallyassign="true">
-    <Sprite name="Command_Return" texture="Content/UI/CommandUIBackground.png" sourcerect="0,896,128,128"/>
+    <Sprite name="Command_Return" texture="%ModDir%/Content/UI/CommandUIBackground.png" sourcerect="0,896,128,128"/>
   </Order>
 
   <Order name="Prepare for expedition" identifier="prepareforexpedition"
@@ -46,7 +46,7 @@
          targetitems="oxygensource,oxygensource,oxygensource,oxygensource,oxygensource,scooter"
          autodismiss="false"
          mustmanuallyassign="true">
-    <Sprite name="Command_Prepare2" texture="Content/UI/CommandUIBackground.png" sourcerect="384,896,128,128"/>
+    <Sprite name="Command_Prepare2" texture="%ModDir%/Content/UI/CommandUIBackground.png" sourcerect="384,896,128,128"/>
   </Order>
 
   <Order name="Find weapon" identifier="findweapon"
@@ -54,7 +54,7 @@
          category="emergency"  
          targetitems="weapon,tool,!stunner"
          mustmanuallyassign="true">
-    <Sprite name="Command_Prepare1" texture="Content/UI/CommandUIBackground.png" sourcerect="256,896,128,128"/>
+    <Sprite name="Command_Prepare1" texture="%ModDir%/Content/UI/CommandUIBackground.png" sourcerect="256,896,128,128"/>
   </Order>
 
   <Order name="Operate Reactor" identifier="operatereactor"
@@ -66,10 +66,10 @@
          appropriateskill="electrical"
          category="operate"
          ignoreatoutpost="true">
-    <Sprite name="Command_Reactor" texture="Content/UI/CommandUIAtlas.png" sourcerect="256,128,128,128"/>
+    <Sprite name="Command_Reactor" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="256,128,128,128"/>
     <OptionSprites>
-      <Sprite name="Command_Reactor_PowerUp" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,384,128,128"/>
-      <Sprite name="Command_Reactor_ShutDown" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,384,128,128"/>
+      <Sprite name="Command_Reactor_PowerUp" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,384,128,128"/>
+      <Sprite name="Command_Reactor_ShutDown" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,384,128,128"/>
     </OptionSprites>
   </Order>
 
@@ -82,7 +82,7 @@
          appropriateskill="weapons"
          category="operate"
          ignoreatoutpost="true">
-    <Sprite name="Command_Weapons" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,256,128,128"/>
+    <Sprite name="Command_Weapons" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,256,128,128"/>
   </Order>
 
   <Order name="Steer" identifier="steer"
@@ -95,11 +95,11 @@
          appropriateskill="helm"
          category="operate"
          ignoreatoutpost="true">
-    <Sprite name="Command_Steer" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,128,128,128"/>
+    <Sprite name="Command_Steer" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,128,128,128"/>
     <OptionSprites>
-      <Sprite name="Command_Steer_MaintainPosition" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,128,128,128"/>
-      <Sprite name="Command_Steer_NavigateBack" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,768,128,128"/>
-      <Sprite name="Command_Steer_NavigateDestination" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,128,128,128"/>
+      <Sprite name="Command_Steer_MaintainPosition" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,128,128,128"/>
+      <Sprite name="Command_Steer_NavigateBack" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="640,768,128,128"/>
+      <Sprite name="Command_Steer_NavigateDestination" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="640,128,128,128"/>
     </OptionSprites>
   </Order>
 
@@ -108,13 +108,13 @@
          preferredjobs="mechanic,engineer,assistant"
          appropriateskill="mechanical"
          category="maintenance">
-    <Sprite name="CommandIcon_FixLeaks" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,256,128,128"/>
+    <Sprite name="CommandIcon_FixLeaks" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,256,128,128"/>
   </Order>
 
   <Order name="Extinguish Fires" identifier="extinguishfires"
 		 assignmentpriority="90"
          category="emergency">
-    <Sprite name="Command_ExtinguishFires" texture="Content/UI/CommandUIAtlas.png" sourcerect="0,384,128,128"/>
+    <Sprite name="Command_ExtinguishFires" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="0,384,128,128"/>
   </Order>
 
   <Order name="Fight Intruders" identifier="fightintruders"
@@ -122,7 +122,7 @@
          appropriatejobs="securityofficer"
          appropriateskill="weapons"
          category="emergency">
-    <Sprite name="Command_FightIntruders" texture="Content/UI/TalentsIcons3.png" sourcerect="128,128,128,128"/>
+    <Sprite name="Command_FightIntruders" texture="%ModDir%/Content/UI/TalentsIcons3.png" sourcerect="128,128,128,128"/>
   </Order>
 
   <Order name="Assault Enemy" identifier="assaultenemy"
@@ -130,7 +130,7 @@
         appropriatejobs="securityofficer"
         appropriateskill="weapons"
         category="emergency">
-    <Sprite name="Command_AttackEnemies" texture="Content/UI/CommandUIAtlas.png" sourcerect="0,256,128,128"/>
+    <Sprite name="Command_AttackEnemies" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="0,256,128,128"/>
   </Order>
 
   <Order name="Charge Batteries" identifier="chargebatteries"
@@ -138,10 +138,10 @@
          options="charge,stopcharging" optionnames="Charge, Stop charging"
          appropriatejobs="engineer,assistant"
          ignoreatoutpost="true">
-    <Sprite name="Command_Batteries" texture="Content/UI/CommandUIAtlas.png" sourcerect="256,256,128,128"/>
+    <Sprite name="Command_Batteries" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="256,256,128,128"/>
     <OptionSprites>
-      <Sprite name="Command_Batteries_Charge" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,128,128,128"/>
-      <Sprite name="Command_Batteries_StopCharging" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,256,128,128"/>
+      <Sprite name="Command_Batteries_Charge" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,128,128,128"/>
+      <Sprite name="Command_Batteries_StopCharging" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,256,128,128"/>
     </OptionSprites>
   </Order>
 
@@ -151,11 +151,11 @@
          options="pumpout,pumpin,stoppumping" optionnames="Pump out, Pump in, Stop pumping"
          appropriatejobs="mechanic,assistant"
          ignoreatoutpost="true">
-    <Sprite name="Command_PumpWater" texture="Content/UI/CommandUIAtlas.png" sourcerect="128,384,128,128"/>
+    <Sprite name="Command_PumpWater" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="128,384,128,128"/>
     <OptionSprites>
-      <Sprite name="Command_PumpWater_PumpOut" texture="Content/UI/CommandUIBackground.png" sheetindex="0,6" sheetelementsize="128,128"/>
-      <Sprite name="Command_PumpWater_PumpIn" texture="Content/UI/CommandUIBackground.png" sheetindex="1,6" sheetelementsize="128,128"/>
-      <Sprite name="Command_PumpWater_StopPumping" texture="Content/UI/CommandUIBackground.png" sheetindex="2,6" sheetelementsize="128,128"/>
+      <Sprite name="Command_PumpWater_PumpOut" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="0,6" sheetelementsize="128,128"/>
+      <Sprite name="Command_PumpWater_PumpIn" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="1,6" sheetelementsize="128,128"/>
+      <Sprite name="Command_PumpWater_StopPumping" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="2,6" sheetelementsize="128,128"/>
     </OptionSprites>
   </Order>
 
@@ -164,14 +164,14 @@
          appropriatejobs="medicaldoctor"
          appropriateskill="medical"
          category="emergency">
-    <Sprite name="Command_Rescue" texture="Content/UI/CommandUIAtlas.png" sourcerect="0,128,128,128"/>
+    <Sprite name="Command_Rescue" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="0,128,128,128"/>
   </Order>
 
   <Order name="Repair Damaged Systems" identifier="repairsystems"
 		 assignmentpriority="90"
          appropriatejobs="mechanic,engineer,assistant"
          category="maintenance">
-    <Sprite name="Command_RepairSystems" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,0,128,128"/>
+    <Sprite name="Command_RepairSystems" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,0,128,128"/>
   </Order>
 
   <Order name="Repair Mechanical Systems" identifier="repairmechanical"
@@ -179,7 +179,7 @@
          appropriatejobs="mechanic"
          appropriateskill="mechanical"
          category="maintenance">
-    <Sprite name="Command_RepairMechanical" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,128,128,128"/>
+    <Sprite name="Command_RepairMechanical" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,128,128,128"/>
   </Order>
 
   <Order name="Repair Electrical Systems" identifier="repairelectrical"
@@ -187,7 +187,7 @@
          appropriatejobs="engineer"
          appropriateskill="electrical"
          category="maintenance">
-    <Sprite name="Command_RepairElectrical" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,512,128,128"/>
+    <Sprite name="Command_RepairElectrical" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,512,128,128"/>
   </Order>
 
   <Order name="Load Items" identifier="loaditems"
@@ -195,11 +195,11 @@
          options="batterycells,oxygentanks,turretammo" optionnames="Battery cells, Oxygen tanks, Turret ammo"
          targetitems="batterycellrecharger;oxygentankrefiller;turretammosource,depthchargeammosource"
          category="maintenance">
-    <Sprite name="Command_LoadItems" texture="Content/UI/CommandUIBackground.png" sheetindex="4,7" sheetelementsize="128,128"/>
+    <Sprite name="Command_LoadItems" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="4,7" sheetelementsize="128,128"/>
     <OptionSprites>
-      <Sprite name="Command_LoadItems_BatteryCells" texture="Content/UI/CommandUIBackground.png" sheetindex="6,7" sheetelementsize="128,128" />
-      <Sprite name="Command_LoadItems_OxygenTanks" texture="Content/UI/CommandUIBackground.png" sheetindex="7,7" sheetelementsize="128,128" />
-      <Sprite name="Command_LoadItems_TurretAmmo" texture="Content/UI/CommandUIBackground.png" sheetindex="5,7" sheetelementsize="128,128"/>
+      <Sprite name="Command_LoadItems_BatteryCells" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="6,7" sheetelementsize="128,128" />
+      <Sprite name="Command_LoadItems_OxygenTanks" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="7,7" sheetelementsize="128,128" />
+      <Sprite name="Command_LoadItems_TurretAmmo" texture="%ModDir%/Content/UI/CommandUIBackground.png" sheetindex="5,7" sheetelementsize="128,128"/>
     </OptionSprites>
   </Order>
 	
@@ -207,7 +207,7 @@
 		 assignmentpriority="90"
 		 category="maintenance"
 		 appropriatejobs="assistant">
-    <Sprite name="Command_PumpWater" texture="Content/UI/CommandUIAtlas.png" sourcerect="896,512,128,128"/>
+    <Sprite name="Command_PumpWater" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,512,128,128"/>
   </Order>
 
   <!--
@@ -226,47 +226,47 @@
   -->
 
   <Order name="Report Fire" identifier="reportfire" color="255,120,0,200" targetallcharacters="true" fadeouttime="20">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,512,128,128"/>
   </Order>
 
   <Order name="Report Breach" identifier="reportbreach" color="136,169,195,200" targetallcharacters="true" fadeouttime="20">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,512,128,128"/>
   </Order>
 
   <Order name="Report Intruders" identifier="reportintruders" color="190,136,195,200" targetallcharacters="true" fadeouttime="20">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,512,128,128"/>
   </Order>
 
   <Order name="Report Ballast Flora" identifier="reportballastflora" color="190,136,195,200" targetallcharacters="true" fadeouttime="20" hidden="true">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,512,128,128"/>
   </Order>
 
   <Order name="Report Broken Devices" identifier="reportbrokendevices" color="151,169,130,200" targetallcharacters="true" 
          appropriatejobs="engineer,mechanic" fadeouttime="20">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,512,128,128"/>
   </Order>
   
   <Order name="Request First Aid" identifier="requestfirstaid" color="252,110,110,200" targetallcharacters="true"
          appropriatejobs="medicaldoctor" fadeouttime="20">
-    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="128,512,128,128"/>
+    <Sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,512,128,128"/>
   </Order>
   
   <Order name="Escape Handcuffs (AI)" identifier="escapehandcuffs"/>
 
 
   <OrderCategory category="emergency" color="235,115,68,250">
-    <Sprite name="Command_Category_Emergency" texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128"/>
+    <Sprite name="Command_Category_Emergency" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128"/>
   </OrderCategory>
   <OrderCategory category="movement" color="156,125,236,250">
-    <Sprite name="Command_Category_Movement" texture="Content/UI/CommandUIAtlas.png" sourcerect="128,0,128,128"/>
+    <Sprite name="Command_Category_Movement" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="128,0,128,128"/>
   </OrderCategory>
   <OrderCategory category="power" color="246,151,74,250">
-    <Sprite name="Command_Category_Power" texture="Content/UI/CommandUIAtlas.png" sourcerect="256,0,128,128"/>
+    <Sprite name="Command_Category_Power" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="256,0,128,128"/>
   </OrderCategory>
   <OrderCategory category="maintenance" color="125,164,236,250">
-    <Sprite name="Command_Category_Maintenance" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,512,128,128"/>
+    <Sprite name="Command_Category_Maintenance" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,512,128,128"/>
   </OrderCategory>
   <OrderCategory category="operate" color="125,236,167,250">
-    <Sprite name="Command_Category_Operate" texture="Content/UI/CommandUIAtlas.png" sourcerect="512,0,128,128"/>
+    <Sprite name="Command_Category_Operate" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,0,128,128"/>
   </OrderCategory>
 </Orders>

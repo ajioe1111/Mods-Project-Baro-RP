@@ -15,7 +15,7 @@
       <Item identifier="copper" outcondition="0.2" />
       <Item identifier="rubber" outcondition="0.2" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -40,7 +40,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -65,7 +65,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -90,7 +90,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -115,7 +115,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -140,7 +140,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -165,7 +165,7 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="169,224,84,32" origin="0.5,0.5" />
     <Body radius="14" width="60" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -191,7 +191,7 @@
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="copper" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
     <Body width="36" height="36" density="30" />
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
@@ -216,7 +216,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="65,391,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,32,32" origin="0.5,0.5" />
     <AndComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -252,7 +252,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="833,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="833,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,0,32,32" origin="0.5,0.5" />
     <EqualsComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -288,7 +288,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="769,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="769,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,0,32,32" origin="0.5,0.5" />
     <GreaterComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -324,7 +324,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="575,837,65,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="575,837,65,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="96,0,32,32" origin="0.5,0.5" />
     <AdderComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -359,7 +359,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="447,900,65,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="447,900,65,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,0,32,32" origin="0.5,0.5" />
     <ColorComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -396,7 +396,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="641,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="641,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="160,0,32,32" origin="0.5,0.5" />
     <SubtractComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -431,7 +431,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="641,837,64,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="641,837,64,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,32,32,32" origin="0.5,0.5" />
     <MultiplyComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -466,7 +466,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="705,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="705,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,32,32,32" origin="0.5,0.5" />
     <DivideComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -501,7 +501,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,71,64,51" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="384,71,64,51" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,32,32,32" origin="0.5,0.5" />
     <ExponentiationComponent canbeselected="true" />
     <Body width="31" height="26" density="30" />
@@ -536,7 +536,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="129,390,64,53" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="129,390,64,53" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="96,32,32,32" origin="0.5,0.5" />
     <OrComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -572,7 +572,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,32,32,32" origin="0.5,0.5" />
     <XorComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -608,7 +608,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,390,64,53" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="192,390,64,53" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="160,32,32,32" origin="0.5,0.5" />
     <NotComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -642,7 +642,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="64,389,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="64,389,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,64,32,32" origin="0.5,0.5" />
     <ConcatComponent canbeselected="true" />
     <Body width="32" height="27" density="30" />
@@ -677,7 +677,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="386,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="386,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,64,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Sin" />
     <Body width="31" height="25" density="30" />
@@ -711,7 +711,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="320,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="320,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,64,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Cos" />
     <Body width="31" height="25" density="30" />
@@ -745,7 +745,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="257,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="257,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="96,64,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Tan" />
     <Body width="31" height="25" density="30" />
@@ -779,7 +779,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="128,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="128,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,64,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Asin" />
     <Body width="31" height="25" density="30" />
@@ -813,7 +813,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="65,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="65,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="160,64,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Acos" />
     <Body width="31" height="25" density="30" />
@@ -847,7 +847,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="193,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="193,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,96,32,32" origin="0.5,0.5" />
     <TrigonometricFunctionComponent canbeselected="true" function="Atan" />
     <Body width="31" height="25" density="30" />
@@ -883,7 +883,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="1,71,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="1,71,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,96,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="Round" />
     <Body width="31" height="25" density="30" />
@@ -917,7 +917,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="449,7,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="449,7,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,96,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="Ceil" />
     <Body width="31" height="25" density="30" />
@@ -951,7 +951,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="65,71,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="65,71,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="96,96,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="Floor" />
     <Body width="31" height="25" density="30" />
@@ -985,7 +985,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="129,71,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="129,71,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,96,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="Factorial" />
     <Body width="31" height="25" density="30" />
@@ -1019,7 +1019,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,71,64,51" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="448,71,64,51" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="160,96,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="AbsoluteValue" />
     <Body width="32" height="26" density="30" />
@@ -1053,7 +1053,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="320,71,64,51" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="320,71,64,51" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,128,32,32" origin="0.5,0.5" />
     <FunctionComponent canbeselected="true" function="SquareRoot" />
     <Body width="32" height="26" density="30" />
@@ -1087,7 +1087,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="193,72,63,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="193,72,63,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,128,32,32" origin="0.5,0.5" />
     <ModuloComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -1122,7 +1122,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,388,63,57" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,128,32,32" origin="0.5,0.5" />
     <RelayComponent canbeselected="true" vulnerabletoemp="false" canbeoverloaded="false">
       <GuiFrame relativesize="0.2,0.14" minsize="450,160" anchor="Center" style="ItemUI" />
@@ -1167,7 +1167,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,388,63,57" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,388,63,57" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="96,128,32,32" origin="0.5,0.5" />
     <DelayComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -1202,7 +1202,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,900,63,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,900,63,54" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,128,32,32" origin="0.5,0.5" />
     <MemoryComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -1236,11 +1236,11 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,388,59,57" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,388,59,57" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="195,4,28,24" origin="0.5,0.5" />
     <LightComponent canbeselected="true" color="1.0,0.0,0.0,0.5" castshadows="false">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
     </LightComponent>
     <Body width="28" height="23" density="30" />
     <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
@@ -1273,11 +1273,11 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,384,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,384,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="195,33,27,31" origin="0.5,0.5" />
     <LightComponent canbeselected="true" color="1.0,0.0,0.0,0.5" castshadows="false">
-      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
-      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
+      <LightTexture texture="%ModDir%/Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
     </LightComponent>
     <Body width="28" height="23" density="30" />
     <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
@@ -1311,7 +1311,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="silicon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,256,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,256,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="48,240,48,32" origin="0.5,0.5" />
     <OxygenDetector canbeselected="true" />
     <Body width="44" height="30" density="30" />
@@ -1346,7 +1346,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="silicon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,256,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,256,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,240,48,32" origin="0.5,0.5" />
     <WaterDetector canbeselected="true" />
     <Body width="40" height="37" density="30" />
@@ -1382,7 +1382,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="silicon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,320,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,320,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="48,288,48,32" origin="0.5,0.5" />
     <SmokeDetector FireSizeThreshold="50" canbeselected="true" />
     <Body width="44" height="30" density="30" />
@@ -1416,7 +1416,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="silicon" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,256,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,256,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,288,48,48" origin="0.5,0.5" />
     <MotionSensor range="100" canbeselected="true" />
     <Body width="42" height="36" density="30" />
@@ -1449,7 +1449,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,388,63,57" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,388,63,57" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="160,128,32,32" origin="0.5,0.5" />
     <SignalCheckComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -1485,7 +1485,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,390,64,52" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,390,64,52" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,160,32,32" origin="0.5,0.5" />
     <RegExFindComponent canbeselected="true" />
     <Body width="31" height="25" density="30" />
@@ -1520,7 +1520,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="325,388,59,55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="325,388,59,55" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="32,160,32,32" origin="0.5,0.5" />
     <OscillatorComponent canbeselected="true" outputtype="Pulse" frequency="1" />
     <Body width="28" height="26" density="30" />
@@ -1555,7 +1555,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,388,64,57" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,388,64,57" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="64,160,32,32" origin="0.5,0.5" />
     <WifiComponent canbeselected="true" MinChatMessageInterval="1.0" DiscardDuplicateChatMessages="true" />
     <Body width="28" height="26" density="30" />
@@ -1590,15 +1590,15 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
     <Body radius="20" height="20" density="30" />
     <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
       <RequiredItem items="wrench" type="Equipped" />
     </Holdable>
     <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
-      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
-      <sound file="Content/Items/WarningSiren.ogg" type="OnActive" range="2000.0" loop="true" volume="0.5" />
+      <Sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Content/Items/WarningSiren.ogg" type="OnActive" range="2000.0" loop="true" volume="0.5" />
       <StatusEffect type="OnContained" target="This" IsActive="false">
         <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
       </StatusEffect>
@@ -1630,15 +1630,15 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="tin" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,127,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="128,127,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="221,138,42,57" origin="0.5,0.5" />
     <Body radius="20" density="20" />
     <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
       <RequiredItem items="wrench" type="Equipped" />
     </Holdable>
     <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="2.6" range="20">
-      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="301,963,42,57" origin="0.5,0.5" alpha="1.0" />
-      <sound file="Content/Items/WarningBeep.ogg" type="OnActive" range="1000.0" loop="true" volume="0.5" />
+      <Sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="301,963,42,57" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Content/Items/WarningBeep.ogg" type="OnActive" range="1000.0" loop="true" volume="0.5" />
       <StatusEffect type="OnContained" target="This" IsActive="false">
         <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
       </StatusEffect>
@@ -1652,7 +1652,7 @@
   </Item>
   <Item name="" identifier="camera" category="Electrical" Tags="smallitem,camera" focusonselected="true" offsetonselected="500" cargocontaineridentifier="metalcrate" description="" Scale="0.5">
     <Upgrade gameversion="0.9.5.0" scale="0.5" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,320,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,320,64,64" origin="0.5,0.5" />
     <Sprite texture="signalcomp.png" depth="0.8" sourcerect="128,304,64,48" origin="0.5,0.5" />
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -1670,7 +1670,7 @@
   </Item>
   <Item name="" identifier="terminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
     <Upgrade gameversion="0.10.0" scale="*0.5" />
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,368,144,128" origin="0.5,0.3" />
+    <Sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,368,144,128" origin="0.5,0.3" />
     <Price baseprice="200">
       <Price storeidentifier="merchantoutpost" />
       <Price storeidentifier="merchantcity" multiplier="0.9" />
@@ -1709,8 +1709,8 @@
   <Item name="" identifier="handheldterminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
     <Upgrade gameversion="0.9.9000.0" scale="0.25" />
     <Price baseprice="100" sold="false" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="323,193,60,61" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="149,371,69,93" depth="0.8" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="323,193,60,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Electricity/signalcomp.png" sourcerect="149,371,69,93" depth="0.8" origin="0.5,0.5" />
     <Body width="60" height="90" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
     <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" drawhudwhenequipped="true">

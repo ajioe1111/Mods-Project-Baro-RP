@@ -12,8 +12,8 @@
     <Deconstruct time="20">
       <Item identifier="carbon" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="123,368,38,56" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="107,74,32,38" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="123,368,38,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="107,74,32,38" depth="0.6" origin="0.5,0.5" />
     <Body width="28" height="36" density="20" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
@@ -32,7 +32,7 @@
   <Item name="" identifier="clowndivingmask" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clownmask,diving,lightdiving" description="" scale="0.5">
     <PreferredContainer primary="divingcab,supplycab"/>
     <Price baseprice="150" sold="false" canbespecial="false" />
-    <Sprite name="Clown Mask" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
+    <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="328,304,51,51" origin="0.5,0.5" scale="0.5" />
     <Body width="5" radius="25" density="15" />
     <Deconstruct time="10">
       <Item identifier="clownmask" />
@@ -43,7 +43,7 @@
       <RequiredItem identifier="divingmask" />
     </Fabricate>
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Clown Diving Mask Wearable" texture="Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="378,301,80,70" origin="0.45,0.4" />
+      <sprite name="Clown Diving Mask Wearable" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="378,301,80,70" origin="0.45,0.4" />
       <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
       <!-- copied from divingmask -->
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">

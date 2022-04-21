@@ -62,24 +62,24 @@
     islandcount="0">
     <!--
     <Background
-      texture="Content/Map/iceBackgroundFade.png" />
+      texture="%ModDir%/Content/Map/iceBackgroundFade.png" />
     <BackgroundTop
-      texture="Content/Map/iceBackground.png"
+      texture="%ModDir%/Content/Map/iceBackground.png"
       premultiplyalpha="false" />
       -->
     <WaterParticles
-      texture="Content/Map/Biomes/HydrothermalWastes/BackgroundParticles.png" />
+      texture="%ModDir%/Content/Map/Biomes/HydrothermalWastes/BackgroundParticles.png" />
     <Wall
-      texture="Content/Map/Biomes/HydrothermalWastes/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/HydrothermalWastes/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/HydrothermalWastes/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/HydrothermalWastes/LevelWallEdge.png" />
     <DestructibleWall
-      texture="Content/Map/Biomes/DestructibleWall.png" />
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png" />
     <DestructibleWallEdge
-      texture="Content/Map/Biomes/DestructibleWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestroyedWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestroyedWall.png"
       premultiplyalpha="false" />
   </WastesBasic>
 </LevelGenerationParameters>

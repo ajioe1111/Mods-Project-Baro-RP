@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Ragdoll type="legacyfractalguardian" canentersubmarine="false" canwalk="False" limbscale="0.5" jointscale="0.5" texture="Content/Characters/Legacyfractalguardian/fractalguardian.png">
+<Ragdoll type="legacyfractalguardian" canentersubmarine="false" canwalk="False" limbscale="0.5" jointscale="0.5" texture="%ModDir%/Content/Characters/Legacyfractalguardian/fractalguardian.png">
 
   <collider radius="50"/>
   <!-- head -->
@@ -56,4 +56,3 @@
   
   <joint limb1="0" limb1anchor="-30,10" limb2="5" limb2anchor="0,-110" lowerlimit="90" upperlimit="180" canbesevered="true"/>
 </Ragdoll>
-

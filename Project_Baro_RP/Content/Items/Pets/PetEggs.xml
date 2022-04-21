@@ -1,7 +1,7 @@
 <Items>
   <Item name="" identifier="peanutegg" nameidentifier="petegg" Tags="smallitem" hideinmenus="true" health="200" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.04" />
-    <Sprite texture="Content/Characters/Pets/pets.png" depth="0.7" sourcerect="265,5,43,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Characters/Pets/pets.png" depth="0.7" sourcerect="265,5,43,55" origin="0.5,0.5" />
     <Price baseprice="500" minavailable="1">
       <Price storeidentifier="merchantoutpost" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2"  />
@@ -20,7 +20,7 @@
       <StatusEffect type="OnBroken" target="This">
         <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/Gore6.ogg" range="800" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
@@ -37,7 +37,7 @@
   </Item>
   <Item name="" identifier="psilotoadegg" nameidentifier="petegg" Tags="smallitem" hideinmenus="true" health="200" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.04" />
-    <Sprite texture="Content/Characters/Pets/pets.png" depth="0.7" sourcerect="265,133,43,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Characters/Pets/pets.png" depth="0.7" sourcerect="265,133,43,55" origin="0.5,0.5" />
     <Price baseprice="500" minavailable="1">
       <Price storeidentifier="merchantoutpost" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2"  />
@@ -56,7 +56,7 @@
       <StatusEffect type="OnBroken" target="This">
         <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/Gore6.ogg" range="800" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
@@ -73,7 +73,7 @@
   </Item>
   <Item name="" identifier="orangeboyegg" nameidentifier="petegg" Tags="smallitem" hideinmenus="true" health="200" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.04" />
-    <Sprite texture="Content/Characters/Pets/pets.png" depth="0.7" sourcerect="266,259,44,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Characters/Pets/pets.png" depth="0.7" sourcerect="266,259,44,56" origin="0.5,0.5" />
     <Price baseprice="500" minavailable="1">
       <Price storeidentifier="merchantoutpost" sold="false" />
       <Price storeidentifier="merchantcity" multiplier="1.2"  />
@@ -92,7 +92,7 @@
       <StatusEffect type="OnBroken" target="This">
         <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/Gore6.ogg" range="800" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
@@ -109,7 +109,7 @@
   </Item>
   <Item name="" identifier="balloonegg" nameidentifier="petegg" Tags="smallitem" hideinmenus="true" health="200" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.04" />
-    <Sprite texture="Content/Characters/Pets/pets.png" depth="0.7" sourcerect="11,389,43,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Characters/Pets/pets.png" depth="0.7" sourcerect="11,389,43,55" origin="0.5,0.5" />
     <Price baseprice="500" sold="false">
       <Price storeidentifier="merchantoutpost" />
       <Price storeidentifier="merchantcity" multiplier="1.2"  />
@@ -128,7 +128,7 @@
       <StatusEffect type="OnBroken" target="This">
         <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
         <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
-        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/Gore6.ogg" range="800" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnFire" target="This" Condition="-5.0"/>

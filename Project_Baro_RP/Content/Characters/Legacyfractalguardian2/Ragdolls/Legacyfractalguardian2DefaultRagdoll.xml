@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Ragdoll type="legacyfractalguardian2" canentersubmarine="false" canwalk="False" limbscale="0.5" jointscale="0.5" texture="Content/Characters/Legacyfractalguardian/fractalguardian.png">
+<Ragdoll type="legacyfractalguardian2" canentersubmarine="false" canwalk="False" limbscale="0.5" jointscale="0.5" texture="%ModDir%/Content/Characters/Legacyfractalguardian/fractalguardian.png">
 
   <collider radius="80" height="30"/>
     

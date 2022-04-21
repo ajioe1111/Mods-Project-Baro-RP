@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Bonethresher" humanoid="False" husk="False" needsair="False" canspeak="False" noise="100" blooddecal="blood" group="thresher" displayname="" hasinfo="False" usehuskappendage="False" needswater="False" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0">
-  <ragdolls folder="Content/Characters/Bonethresher/Ragdolls/" />
-  <animations folder="Content/Characters/Bonethresher/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Bonethresher/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Bonethresher/Animations/" />
   <health vitality="300" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="2" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="2" stunimmunity="true"/>
   <ai combatstrength="500" sight="1" hearing="1" aggressionhurt="100" aggressiongreed="100" fleehealththreshold="0" attackwhenprovoked="True" aggressiveboarding="True" avoidgunfire="False" enforceaggressivebehaviorformissions="True" targetinnerwalls="False" randomattack="False" avoidtime="3" minfleetime="20" targetouterwalls="True">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreifnotinsamesub="True"/>
@@ -21,14 +21,14 @@
     <target tag="watcher" state="Protect" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.25" />
   </ai>
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_idle1.ogg" state="Idle" range="4000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_idle2.ogg" state="Idle" range="4000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" state="Damage" range="4000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" state="Damage" range="4000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" state="Attack" range="5000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" state="Attack" range="5000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_death1.ogg" state="Die" range="4000" volume="1" />
-  <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_death2.ogg" state="Die" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_idle1.ogg" state="Idle" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_idle2.ogg" state="Idle" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" state="Damage" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_damage1.ogg" state="Damage" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" state="Attack" range="5000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" state="Attack" range="5000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_death1.ogg" state="Die" range="4000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Bonethresher/TIGERTRESHERb_death2.ogg" state="Die" range="4000" volume="1" />
   <Inventory slots="Any, Any" accessiblewhenalive="False">
     <Item identifier="alienblood" />
     <Item identifier="alienblood" />

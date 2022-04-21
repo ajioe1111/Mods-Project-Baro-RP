@@ -11,13 +11,13 @@
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="crewcab" />
     <PreferredContainer secondary="locker" />
-    <Sprite name="Clown Mask" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,318,89,71" origin="0.5,0.5" scale="0.5" />
+    <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,318,89,71" origin="0.5,0.5" scale="0.5" />
     <Body width="40" radius="30" density="15" />
     <Deconstruct time="10">
       <Item identifier="bikehorn" />
     </Deconstruct>
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Clown Mask Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" sourcerect="414,318,89,71" origin="0.5,0.6" />
+      <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" sourcerect="414,318,89,71" origin="0.5,0.6" />
       <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
     </Wearable>
   </Item>
@@ -32,8 +32,8 @@
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="crewcab" />
     <PreferredContainer secondary="locker" />
-    <InventoryIcon name="Clown Costume Icon" texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-    <Sprite name="Clown Costume" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,14,117,55" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Clown Costume Icon" texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+    <Sprite name="Clown Costume" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,14,117,55" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Deconstruct time="40">
       <Item identifier="bikehorn" />
@@ -65,14 +65,14 @@
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.01" />
     <PreferredContainer primary="crewcab" />
     <PreferredContainer secondary="locker" />
-    <Sprite name="Clown Mask" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,417,89,71" origin="0.5,0.5" scale="0.5" />
+    <Sprite name="Clown Mask" texture="%ModDir%/Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="414,417,89,71" origin="0.5,0.5" scale="0.5" />
     <Body width="40" radius="30" density="15" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,384,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="384,384,64,64" />
     <Deconstruct time="10">
       <Item identifier="bikehorn" />
     </Deconstruct>
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Clown Mask Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="414,417,89,71" origin="0.5,0.6" />
+      <sprite name="Clown Mask Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="414,417,89,71" origin="0.5,0.6" />
       <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
     </Wearable>
   </Item>
@@ -81,8 +81,8 @@
     <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.01" />
     <PreferredContainer primary="crewcab" />
     <PreferredContainer secondary="locker" />
-    <InventoryIcon name="Clown Costume Icon" texture="Content/Items/InventoryIconAtlas2.png" sourcerect="320,384,64,64" origin="0.5,0.5" />
-    <Sprite name="Clown Costume" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="769,74,118,72" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="Clown Costume Icon" texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="320,384,64,64" origin="0.5,0.5" />
+    <Sprite name="Clown Costume" texture="%ModDir%/Content/Items/Jobgear/MiscJobGear.png" sourcerect="769,74,118,72" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Deconstruct time="40">
       <Item identifier="bikehorn" />

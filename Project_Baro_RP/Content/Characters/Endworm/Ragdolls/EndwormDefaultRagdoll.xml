@@ -1,4 +1,4 @@
-﻿<Ragdoll type="endworm" jointscale="1" limbscale="1" canentersubmarine="False" canwalk="False" texture="Content/Characters/Endworm/endworm.png" spritesheetorientation="0" texturescale="1" colliderheightfromfloor="45" impacttolerance="300" draggable="True" mainlimb="Head">
+﻿<Ragdoll type="endworm" jointscale="1" limbscale="1" canentersubmarine="False" canwalk="False" texture="%ModDir%/Content/Characters/Endworm/endworm.png" spritesheetorientation="0" texturescale="1" colliderheightfromfloor="45" impacttolerance="300" draggable="True" mainlimb="Head">
   <collider radius="500" height="0" name="Main Collider" width="0" />
   <!-- Head -->
   <limb id="0" radius="400" type="Head" steerforce="5" name="Head" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" height="0" width="0" density="50" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,1" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
@@ -10,7 +10,7 @@
     <StatusEffect type="OnSevered" target="Character" disabledeltatime="true" targetlimbs="Head">
       <Affliction identifier="internaldamage" strength="6000" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="8000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="2" radius="220" type="Tail" name="Tail2" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -18,7 +18,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="4000" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="6000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="3" radius="220" type="Tail" name="Tail3" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -26,7 +26,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="2000" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="5000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="4" radius="220" type="Tail" name="Tail4" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -34,7 +34,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="1000" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="4000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="5" radius="220" type="Tail" name="Tail5" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -42,7 +42,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="800" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="3750" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="6" radius="220" type="Tail" name="Tail6" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -50,7 +50,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="600" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="3500" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="7" radius="220" type="Tail" name="Tail7" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -58,7 +58,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleedingnonstop" strength="3250" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="8" radius="220" type="Tail" name="Tail8" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -66,7 +66,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="3000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="9" radius="220" type="Tail" name="Tail9" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -74,7 +74,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="2800" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="10" radius="220" type="Tail" name="Tail10" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -82,7 +82,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="2600" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="11" radius="220" type="Tail" name="Tail11" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -90,7 +90,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="2400" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="12" radius="220" type="Tail" name="Tail12" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -98,7 +98,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="2200" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="13" radius="220" type="Tail" name="Tail13" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -106,7 +106,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="2000" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="14" radius="220" type="Tail" name="Tail14" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -114,7 +114,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="1800" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="15" radius="220" type="Tail" name="Tail15" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" height="0" width="250" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="200" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -122,7 +122,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="1600" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <limb id="16" width="0" height="0" name="TailEnd" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="350" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="10" severedfadeouttime="1" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05">
@@ -136,7 +136,7 @@
     <StatusEffect type="OnSevered" target="LastLimb" disabledeltatime="true" targetlimb="Tail">
       <Affliction identifier="internaldamage" strength="500" probability="1" />
       <Affliction identifier="bleeding" strength="500" probability="1" />
-      <sound file="Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
+      <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_tailCut.ogg" range="30000" volume="1" dontmuffle="true" />
     </StatusEffect>
   </limb>
   <!--Armor Head-->
@@ -1037,8 +1037,8 @@
       <Affliction identifier="bleeding" strength="1000" probability="1" />
       <Affliction identifier="stun" strength="3" probability="1" />
       <StatusEffect type="OnUse" target="This">
-        <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random"/>
-        <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
+        <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random"/>
+        <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
       </StatusEffect>
     </attack>
   </limb>
@@ -1049,8 +1049,8 @@
         <Explosion ignorecover="true" onlyinside="true" range="900" force="1" flames="false" smoke="false" shockwave="false" sparks="false" flash="false" underwaterbubble="false" camerashake="0" playtinnitus="false" structuredamage="600" itemdamage="0" applyFireEffects="false">
           <Affliction identifier="stun" strength="5" probability="1" />
         </Explosion>
-        <sound file="Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random"/>
-        <sound file="Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
+        <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_attack2.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random"/>
+        <sound file="%ModDir%/Content/Characters/Endworm/ENDWORM_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
       </StatusEffect>
     </attack>
   </limb>

@@ -2,7 +2,7 @@
 <Talents>
 
   <Talent identifier="researchersintuition">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.researchersintuition">
       <Replace tag="[probability]" value="50" color="gui.green"/>
       <Replace tag="[swimmingspeed]" value="50" color="gui.green"/>
@@ -26,7 +26,7 @@
   </Talent>
 
   <Talent identifier="fieldmedic">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="2,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainmedicalskillformissionrun">
       <Replace tag="[skillincrease]" value="3" color="gui.green"/>
     </Description>
@@ -57,7 +57,7 @@
   </Talent>
 
   <Talent identifier="curiosity">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="7,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainexperiencefromartifacts">
       <Replace tag="[experiencegain]" value="150" color="gui.green"/>
       <Replace tag="[smallexperiencegain]" value="50" color="gui.green"/>
@@ -107,7 +107,7 @@
   </Talent>
 
   <Talent identifier="reverseengineer">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainoutputandskillfromartifacts">
       <Replace tag="[probability]" value="50" color="gui.green"/>
       <Replace tag="[largeartifactskill]" value="8" color="gui.green"/>
@@ -148,7 +148,7 @@
   </Talent>
 
   <Talent identifier="atmosmachine">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.atmosmachine">
       <Replace tag="[probability]" value="20" color="gui.green"/>
       <Replace tag="[experienceamount]" value="10" color="gui.green"/>
@@ -197,7 +197,7 @@
   </Talent>
 
   <Talent identifier="alienhoarder">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.alienhoarder">
       <Replace tag="[powerincrease]" value="8" color="gui.green"/>
       <Replace tag="[maxpowerincrease]" value="40" color="gui.green"/>
@@ -222,7 +222,7 @@
   </Talent>
 
   <Talent identifier="doubleduty" >
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.doubleduty">
       <Replace tag="[physicaldamagedecrease]" value="25" color="gui.green"/>
       <Replace tag="[skillincrease]" value="20" color="gui.green"/>
@@ -246,7 +246,7 @@
   </Talent>
 
   <Talent identifier="mechanicscourse" >
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="3,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.autoinjectorheadset" color="gui.orange"/>
     </Description>
@@ -263,7 +263,7 @@
   </Talent>
 
   <Talent identifier="firemanscarry" >
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.firemanscarry"/>
     <Description tag="talentdescription.additionalresistanceself">
       <Replace tag="[amount]" value="50" color="gui.green"/>
@@ -278,7 +278,7 @@
   </Talent>
 
   <Talent identifier="combatmedic">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.combatstimulantsyringe" color="gui.orange"/>
     </Description>
@@ -296,7 +296,7 @@
   </Talent>
 
   <Talent identifier="bedsidemanner">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.bedsidemanner">
       <Replace tag="[physicaldamageresistance]" value="20" color="gui.green"/>
       <Replace tag="[skillgainincrease]" value="25" color="gui.green"/>
@@ -312,7 +312,7 @@
   </Talent>
 
   <Talent identifier="dontdieonme">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,5" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,5" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.endocrinebooster" color="gui.orange"/>
     </Description>
@@ -326,7 +326,7 @@
   </Talent>
 
   <Talent identifier="genetherapist">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.geneticmaterialrefineflatbonus">
       <Replace tag="[amount]" value="10" color="gui.green"/>
     </Description>
@@ -342,7 +342,7 @@
   </Talent>
 
   <Talent identifier="drsubmarine">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.drsubmarine">
       <Replace tag="[selfinflictpercentage]" value="50" color="gui.orange"/>
     </Description>
@@ -366,7 +366,7 @@
   </Talent>
 
   <Talent identifier="researchgrant">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="2,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.pressurestabilizer" color="gui.orange"/>
     </Description>
@@ -382,7 +382,7 @@
   </Talent>
 
   <Talent identifier="researchanddevelopment">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.gainmissionxpanditem">
       <Replace tag="[amount]" value="45" color="gui.green"/>
       <Replace tag="[item]" value="entityname.skillbookeuropanmedicine" color="gui.green"/>
@@ -407,7 +407,7 @@
   </Talent>
 
   <Talent identifier="geneticstability">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.geneticmaterialtaintedprobabilityreductiononcombine">
       <Replace tag="[amount]" value="50" color="gui.green"/>
     </Description>
@@ -427,7 +427,7 @@
   </Talent>
 
   <Talent identifier="geneharvester">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="3,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.geneharvester">
       <Replace tag="[probability]" value="35" color="gui.green"/>
     </Description>
@@ -461,7 +461,7 @@
   </Talent>
 
   <Talent identifier="advancedsplicing" >
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,6" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,6" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.advancedgenesplicer" color="gui.orange"/>
     </Description>

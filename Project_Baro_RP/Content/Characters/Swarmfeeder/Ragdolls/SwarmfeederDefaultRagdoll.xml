@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Swarmfeeder" canentersubmarine="True" canwalk="True" spritesheetorientation="0" limbscale="0.3" jointscale="0.3" texturescale="1" colliderheightfromfloor="30" impacttolerance="5" draggable="True" texture="Content/Characters/Swarmfeeder/Swarmfeeder.png" mainlimb="Torso" color="255,255,255,255">
+﻿<Ragdoll type="Swarmfeeder" canentersubmarine="True" canwalk="True" spritesheetorientation="0" limbscale="0.3" jointscale="0.3" texturescale="1" colliderheightfromfloor="30" impacttolerance="5" draggable="True" texture="%ModDir%/Content/Characters/Swarmfeeder/Swarmfeeder.png" mainlimb="Torso" color="255,255,255,255">
   <collider radius="35" width="1" name="Main Collider" height="0" />
   <limb id="0" name="Limb 0" type="Torso" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="30" height="0" width="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05" ignoreblinkwhilewalking="False" onlyblinkinwater="False">
     <sprite sourcerect="19,6,85,65" origin="0.5,0.5" depth="0" texture="" color="230,0,0,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
@@ -11,8 +11,8 @@
       </StatusEffect>
     </attack>
     <lightsource color="255,255,255,50" range="50" scale="1" castshadows="false" offset="0,3" rotation="0" flicker="0" flickerspeed="0" pulsefrequency="0.8" pulseamount="0.5" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <sprite texture="Content/Characters/Swarmfeeder/Swarmfeeder.png" sourcerect="19,6,85,65" origin="0.5,0.5" size="1,1" alpha="0.8" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <sprite texture="%ModDir%/Content/Characters/Swarmfeeder/Swarmfeeder.png" sourcerect="19,6,85,65" origin="0.5,0.5" size="1,1" alpha="0.8" />
     </lightsource>
   </limb>
   <limb id="1" width="50" height="20" name="Limb 1" type="LeftFoot" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="270" steerforce="0" radius="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="-22.327833,0.31462684" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="1" blinkdurationin="0.5" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="20" blinkrotationout="100" blinkforce="300" blinktransitionin="EaseOut" blinktransitionout="EaseOut" healthindex="0" friction="0.3" restitution="0.05" ignoreblinkwhilewalking="True" onlyblinkinwater="True">

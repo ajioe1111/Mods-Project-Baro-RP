@@ -7,10 +7,10 @@
        pricemultiplier="1.3"
        idlebehavior="StayInHull">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="helm" level="40,50" primary="true"/>
@@ -36,8 +36,8 @@
       </Item>
       <Item identifier="captainspipe" equip="false"/>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -57,8 +57,8 @@
       </Item>
       <Item identifier="steroids"/>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -73,12 +73,12 @@
       </Item>
       <Item identifier="harmonica" equip="false"/>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Captain" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="2,0"/>
+      <sprite name="Portrait Clothing Captain" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="2,0"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="fightintruders" prioritymodifier="1"/>
@@ -99,10 +99,10 @@
        pricemultiplier="1"
        idlebehavior="Active">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="electrical" level="40,50" primary="true"/>
@@ -123,8 +123,8 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -144,12 +144,12 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Engineer/engineer_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Engineer" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,0"/>
+      <sprite name="Portrait Clothing Engineer" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,0"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="extinguishfires" prioritymodifier ="1"/>
@@ -175,10 +175,10 @@
        pricemultiplier="1"
        idlebehavior="Active">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="mechanical" level="40,50" primary="true"/>
@@ -205,8 +205,8 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -228,12 +228,12 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Mechanic/mechanic_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Mechanic" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="1,0"/>
+      <sprite name="Portrait Clothing Mechanic" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="1,0"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="fixleaks" prioritymodifier="1"/>
@@ -259,10 +259,10 @@
        pricemultiplier="1.15"
        idlebehavior="Patrol">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="weapons" level="40,50" primary="true"/>
@@ -291,8 +291,8 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -323,8 +323,8 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -351,12 +351,12 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Security Officer" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="1,1"/>
+      <sprite name="Portrait Clothing Security Officer" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="1,1"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="fightintruders" prioritymodifier="1"/>
@@ -377,10 +377,10 @@
        pricemultiplier="1.15"
        idlebehavior="Active">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="medical" level="40,50" primary="true"/>
@@ -403,8 +403,8 @@
       <Item identifier="antibiotics"/>
       <Item identifier="antidama1"/>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <ItemSet>
@@ -423,12 +423,12 @@
       <Item identifier="antidama1"/>
       <Item identifier="tonicliquid"/>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Medic" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,1"/>
+      <sprite name="Portrait Clothing Medic" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,1"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="rescue" prioritymodifier="1"/>
@@ -447,10 +447,10 @@
        pricemultiplier="0.8"
        idlebehavior="Active">
     <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
     </JobiconSmall>
     <Skills>
       <Skill identifier="weapons" level="20,30"/>
@@ -468,12 +468,12 @@
         <Item identifier="batterycell" showpreview="false"/>
       </Item>
       <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="%ModDir%/Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
       </PreviewSprites>
     </ItemSet>
     <PortraitClothing>
-      <sprite name="Portrait Clothing Assistant" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,2"/>
+      <sprite name="Portrait Clothing Assistant" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,2"/>
     </PortraitClothing>
     <AutonomousObjectives>
       <Order identifier="extinguishfires" prioritymodifier ="1"/>
@@ -540,7 +540,7 @@
   </Job>
   <NoJob>
     <PortraitClothing>
-      <sprite name="Portrait Clothing None" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="2,2"/>
+      <sprite name="Portrait Clothing None" texture="%ModDir%/Content/Items/Jobgear/PortraitClothing.png" sheetindex="2,2"/>
     </PortraitClothing>
   </NoJob>
 

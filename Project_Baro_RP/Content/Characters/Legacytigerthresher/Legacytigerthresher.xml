@@ -13,9 +13,9 @@
     vitality="150"
     doesbleed="true"/>
 
-  <sound file="Content/Characters/Legacytigerthresher/thresherattack1.ogg" state="Attack" />
-  <sound file="Content/Characters/Legacytigerthresher/thresheridle1.ogg" state="Idle" />
-  <sound file="Content/Characters/Legacytigerthresher/thresheridle2.ogg" state="Idle" />
+  <sound file="%ModDir%/Content/Characters/Legacytigerthresher/thresherattack1.ogg" state="Attack" />
+  <sound file="%ModDir%/Content/Characters/Legacytigerthresher/thresheridle1.ogg" state="Idle" />
+  <sound file="%ModDir%/Content/Characters/Legacytigerthresher/thresheridle2.ogg" state="Idle" />
 
   <ai
     combatstrength="400"

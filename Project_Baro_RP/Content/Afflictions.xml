@@ -55,7 +55,7 @@
     -->
   </CPRSettings>
 
-  <DamageOverlay texture="Content/UI/damageOverlay.png"/>
+  <DamageOverlay texture="%ModDir%/Content/UI/damageOverlay.png"/>
 
   <!--Split internal damage to internal damage, lacerations, blunt trauma and rending wounds. Old internal damage is repurposed for a default damage effect, e.g from meds or miscellaneous sources.-->
   <!--Moved gunshot wounds here to unify the system.-->
@@ -73,7 +73,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,768,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,768,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <!--Blunt force trauma is received from crowbars, wrenches, etc.-->
@@ -90,7 +90,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <!--Lacerations are received from sharp damage sources-->
@@ -107,7 +107,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,896,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,896,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <!--Bite wounds are monster specific-->
@@ -124,7 +124,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <InternalDamage
@@ -142,7 +142,7 @@
       minvitalitydecrease="0"
       maxvitalitydecrease="2"
       dialogflag="GunshotWound"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0"/>
   </InternalDamage>
 
   <!--Mainly for medical side effects-->
@@ -160,7 +160,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,384,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,384,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <!--For damage inflicted by explosions' blast waves and other sources that aren't quite blunt force trauma-->
@@ -177,7 +177,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0"/>
   </InternalDamage>
 
   <Bleeding
@@ -196,7 +196,7 @@
       minvitalitydecrease="0"
       maxvitalitydecrease="10"
       strengthchange="-0.1"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0"/>
   </Bleeding>
 
   <Bleeding
@@ -215,7 +215,7 @@
       minvitalitydecrease="0"
       maxvitalitydecrease="10"
       strengthchange="0"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0"/>
   </Bleeding>
 
   <Burn
@@ -232,7 +232,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
   </Burn>
 
   <!-- Currently only caused by Watcher's acid emitters, but maybe we could use this elsewhere. The important part is this: Watcher is immune to this affliction. -->
@@ -247,7 +247,7 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0"/>
   </AcidBurn>
 
   <OxygenLow
@@ -268,7 +268,7 @@
       maxvitalitydecrease="2"
       minfacetint="217,170,217,100"
       maxfacetint="217,170,217,150"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" color="68,157,198,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" color="68,157,198,255" origin="0,0"/>
   </OxygenLow>
 
   <Bloodloss
@@ -300,7 +300,7 @@
       maxchromaticaberration="2.0"
       minbodytint="255,0,0,0"
       maxbodytint="255,0,0,150"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,768,128,128" color="139,60,42,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,768,128,128" color="139,60,42,255" origin="0,0"/>
   </Bloodloss>
 
   <Stun
@@ -317,7 +317,7 @@
       minvitalitydecrease="0"
       maxvitalitydecrease="0"
       strengthchange="-1.0"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0"/>
   </Stun>
 
   <Pressure
@@ -336,7 +336,7 @@
       maxvitalitydecrease="10"
       minbodytint="120,0,0,0"
       maxbodytint="120,0,0,255"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
   </Pressure>
 
   <Affliction
@@ -361,16 +361,16 @@
       <StatusEffect target="Character" comparison="and">
         <Conditional ishuman="true" />
         <Conditional hasspecifiertag="male"/>
-        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale2.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale3.ogg" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional ishuman="true" />
         <Conditional hasspecifiertag="female"/>
-        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale2.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale3.ogg" />
       </StatusEffect>
       <StatusEffect target="Character">
         <Affliction identifier="stun" strength="0.1"/>
@@ -381,7 +381,7 @@
         <Conditional HideFace="eq False" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0"/>
   </Affliction>
 
   <AfflictionHusk
@@ -420,7 +420,7 @@
       minbodytint="195,195,195,150"
       maxbodytint="195,195,195,200"
       tag="huskinfected"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0"/>
   </AfflictionHusk>
 
   <AfflictionSpaceHerpes
@@ -450,7 +450,7 @@
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true"/>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,384,128,128" color="193,162,122,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,384,128,128" color="193,162,122,255" origin="0,0"/>
   </AfflictionSpaceHerpes>
 
   <Affliction
@@ -492,47 +492,47 @@
     <Effect minstrength="0" maxstrength="100"
       maxvitalitydecrease="0"
       strengthchange="-0.1"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" color="150,26,26,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" color="150,26,26,255" origin="0,0"/>
     <PeriodicEffect mininterval="30" maxinterval="120">
       <StatusEffect target="Character" onlyoutside="true">
         <Conditional IsLocalPlayer="True"/>
-        <Sound file="Content/Characters/Spineling/SPINELING_idle2.ogg" selectionmode="Random"/>
-        <Sound file="Content/Characters/Spineling/SPINELING_idle4.ogg" />
-        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle1.ogg" />
-        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle2.ogg" />
-        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_attack1.ogg" />
-        <Sound file="Content/Characters/Moloch/MOLOCH_attack1.ogg" />
-        <Sound file="Content/Characters/Moloch/MOLOCH_attack2.ogg" />
-        <Sound file="Content/Characters/Husk/HUSK_idle1.ogg" />
-        <Sound file="Content/Characters/Husk/HUSK_idle4.ogg" />
-        <Sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle3.ogg" />
-        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_idle4.ogg" />
-        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_attack2.ogg" />
-        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_attack3.ogg" />
-        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle1.ogg" />
-        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle3.ogg" />
-        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle2.ogg" selectionmode="Random"/>
+        <Sound file="%ModDir%/Content/Characters/Spineling/SPINELING_idle4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_idle1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_idle2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Tigerthresher/TIGERTRESHER_attack1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Husk/HUSK_idle1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Husk/HUSK_idle4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle3.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Hammerhead/HAMMERHEAD_idle4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Hammerhead/HAMMERHEAD_attack2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Hammerhead/HAMMERHEAD_attack3.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle3.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack2.ogg" />
       </StatusEffect>
       <StatusEffect target="Character" onlyinside="true">
         <Conditional IsLocalPlayer="True"/>
-        <Sound file="Content/Items/Weapons/honk.ogg" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" />
-        <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" />
-        <Sound file="Content/Characters/Moloch/MOLOCH_attack1.ogg" />
-        <Sound file="Content/Characters/Moloch/MOLOCH_attack2.ogg" />
-        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" />
-        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" />
-        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" />
-        <Sound file="Content/Characters/Husk/HUSK_idle1.ogg" />
-        <Sound file="Content/Characters/Husk/HUSK_idle4.ogg" />
-        <Sound file="Content/Characters/Husk/HUSK_attack4.ogg" />
-        <Sound file="Content/Characters/Crawler/CRAWLER_idle3.ogg" />
+        <Sound file="%ModDir%/Content/Items/Weapons/honk.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot1.ogg" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Husk/HUSK_idle1.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Husk/HUSK_idle4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Husk/HUSK_attack4.ogg" />
+        <Sound file="%ModDir%/Content/Characters/Crawler/CRAWLER_idle3.ogg" />
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="100" maxinterval="200">
       <StatusEffect target="Character" duration="30" onlyinside="true">
         <Conditional IsLocalPlayer="True"/>
-        <Sound file="Content/Items/WarningSiren.ogg" />
+        <Sound file="%ModDir%/Content/Items/WarningSiren.ogg" />
       </StatusEffect>
     </PeriodicEffect>
   </AfflictionPsychosis>
@@ -599,7 +599,7 @@
       </StatusEffect>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -665,7 +665,7 @@
       </StatusEffect>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -703,7 +703,7 @@
       <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true"/>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0"/>
   </Affliction>
 
   <!-- Gradually applies the "opiate withdrawal" affliction to the character -->
@@ -742,7 +742,7 @@
       </StatusEffect>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -835,7 +835,7 @@
       </StatusEffect>
     </Effect>
 
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,768,128,128" color="195,136,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="896,768,128,128" color="195,136,60,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -906,7 +906,7 @@
         <Affliction identifier="oxygenlow" amount="15" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -975,7 +975,7 @@
       minfacetint="0,255,0,20"
       maxfacetint="0,255,0,80">
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1000,7 +1000,7 @@
         <Affliction identifier="psychosis" amount="1" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1084,7 +1084,7 @@
       maxfacetint="0,255,0,80">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.1"/>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1148,7 +1148,7 @@
       maxscreenblur="1.0">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0"/>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1215,7 +1215,7 @@
         <Affliction identifier="nausea" amount="3" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1280,7 +1280,7 @@
         <Affliction identifier="incrementalstun" amount="100" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1308,16 +1308,16 @@
       <StatusEffect target="Character" comparison="and">
         <Conditional ishuman="true" />
         <Conditional hasspecifiertag="male"/>
-        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale2.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeMale3.ogg" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional ishuman="true" />
         <Conditional hasspecifiertag="female"/>
-        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale2.ogg" />
+        <Sound file="%ModDir%/Content/Sounds/HUMAN_chokeFemale3.ogg" />
       </StatusEffect>
       <StatusEffect target="Character">
         <Affliction identifier="stun" strength="0.1"/>
@@ -1330,7 +1330,7 @@
       </StatusEffect>
     </PeriodicEffect>
 
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1421,7 +1421,7 @@
         <ParticleEmitter particle="gazerage" particlespersecond="20" scalemin="0.6" scalemax="1" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" copyentityangle="false"/>
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1446,7 +1446,7 @@
       maxchromaticaberration="15"
       strengthchange="-1.0">
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" color="150,26,26,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" color="150,26,26,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1472,7 +1472,7 @@
       maxskillmultiplier="0.5">
       <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"/>
     </Effect>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1485,7 +1485,7 @@
     <Effect minstrength="0" maxstrength="1" strengthchange="-0.6">
       <StatusEffect target="Character"  SpeedMultiplier="0.3" setvalue="true"/>
     </Effect>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0"/>
   </Affliction>
 
   <!-- Basic buffs. -->
@@ -1502,7 +1502,7 @@
       strengthchange="-1"
       minbuffmultiplier="1"
       maxbuffmultiplier="2.0"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0"/>
   </BuffDurationIncrease>
 
   <Affliction
@@ -1523,7 +1523,7 @@
       <StatValue stattype="SwimmingSpeed" minvalue="0" maxvalue="0.3" />
     </Effect>
     <!-- Greater than 1.48 and the ragdolls start snapping when turning and characters take damage from colliding with doors & walls -->
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="128,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1539,7 +1539,7 @@
       resistancefor="huskinfection"
       minresistance="0"
       maxresistance="0.75"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1556,7 +1556,7 @@
       resistancefor="psychosis"
       minresistance="0"
       maxresistance="0.75"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1572,7 +1572,7 @@
       resistancefor="pressure"
       minresistance="0"
       maxresistance="0.75"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1590,7 +1590,7 @@
       maxresistance="0.5">
       <StatValue stattype="MeleeAttackMultiplier" minvalue="0" maxvalue="0.35" />
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1607,7 +1607,7 @@
       resistancefor="paralysis"
       minresistance="1"
       maxresistance="3"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -1621,7 +1621,7 @@
     showinhealthscannerthreshold="1000"
     maxstrength="100">
     <Effect minstrength="100" maxstrength="100"/>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,768,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,768,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
  <Affliction
@@ -1656,7 +1656,7 @@
         <Affliction identifier="chemwithdrawal" strength="0.8"/>
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -1709,7 +1709,7 @@
         <Affliction identifier="nausea" strength="30" probability="0.05" />
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0"/>
   </Affliction>
 
   <!-- The icon is hidden because there's no text for the affliction name and the description. TODO: Add the texts and make the icon visible? -->
@@ -1722,7 +1722,7 @@
     showiconthreshold="1000"
     maxstrength="1">
     <Effect minstrength="0" maxstrength="1" strengthchange="-0.6" resistancefor="damage,bleeding,burn" minresistance="1" maxresistance="1"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <!-- Makes the creature indetectable so that the monsters won't react to it.-->
@@ -1736,7 +1736,7 @@
     <Effect minstrength="0" maxstrength="1" strengthchange="-0.6">
       <StatusEffect target="Character" indetectable="true" />
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
   
 </Afflictions>

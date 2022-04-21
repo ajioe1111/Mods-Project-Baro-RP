@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BallastFloraBehavior name="Ballast Flora" 
                       identifier="ballastflora" 
-                      branchatlas="Content/Items/Gardening/ballastflorabranches.png"
-                      decayatlas="Content/Items/Gardening/ballastflorabranches_burned.png" 
+                      branchatlas="%ModDir%/Content/Items/Gardening/ballastflorabranches.png"
+                      decayatlas="%ModDir%/Content/Items/Gardening/ballastflorabranches_burned.png" 
                       baseleafscale="0.5" 
                       basebranchscale="0.5" 
                       baseflowerscale="0.5" 
@@ -26,19 +26,19 @@
   <DamageParticle particle="mudrapeggbrownchunks" particlespersecond="5" velocitymin="0" velocitymax="100" distancemax="20" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
   <DeathParticle particle="whitegoosplash" particleamount="3" minrotation="0" maxrotation="360" minvelocity="0" maxvelocity="100"/>
   <DeathParticle particle="mudrapeggbrownchunks" particleamount="10" velocitymin="0" velocitymax="500" distancemax="50" anglemin="0" anglemax="360" scalemin="0.3" scalemax="0.5" />
-  <LeafSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="0,0,256,256"/>
-  <LeafSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="256,0,256,256"/>
-  <DamagedLeafSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="512,0,256,256"/>
-  <DamagedLeafSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="768,0,256,256"/>  
-  <FlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="768,384,128,128"/>
-  <FlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="384,256,128,128"/>
-  <FlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="512,256,128,128"/>  
-  <DamagedFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="640,256,128,128"/>
-  <DamagedFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="763,256,128,128"/>
-  <DamagedFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="896,256,128,128"/>
-  <HiddenFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="384,384,128,128"/>
-  <HiddenFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="512,384,128,128"/>
-  <HiddenFlowerSprite texture="Content/Items/Gardening/ballastflora.png" sourcerect="640,384,128,128"/>
+  <LeafSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="0,0,256,256"/>
+  <LeafSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="256,0,256,256"/>
+  <DamagedLeafSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="512,0,256,256"/>
+  <DamagedLeafSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="768,0,256,256"/>  
+  <FlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="768,384,128,128"/>
+  <FlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="384,256,128,128"/>
+  <FlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="512,256,128,128"/>  
+  <DamagedFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="640,256,128,128"/>
+  <DamagedFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="763,256,128,128"/>
+  <DamagedFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="896,256,128,128"/>
+  <HiddenFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="384,384,128,128"/>
+  <HiddenFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="512,384,128,128"/>
+  <HiddenFlowerSprite texture="%ModDir%/Content/Items/Gardening/ballastflora.png" sourcerect="640,384,128,128"/>
   <BranchSprite type="Stem" sourcerect="0,0,1,1"/>
   <BranchSprite type="CrossJunction" sourcerect="256,64,64,64"/>
   <BranchSprite type="VerticalLane" sourcerect="256,0,64,64"/>

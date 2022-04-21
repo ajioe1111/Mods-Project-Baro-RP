@@ -21,12 +21,12 @@
       <RequiredSkill identifier="weapons" level="20" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
     <Body width="160" height="10" density="20" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Rope sourcepullforce="300" targetpullforce="100" projectilepullforce="5" maxlength="1500" snaponcollision="false" spritewidth="3" tile="true" origin="0.05,0.5" targetminmass="30" lerpforces="true" snapanimduration="0.5">
-      <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
       <!-- Snap after 1 seconds if not stuck to anything -->
       <StatusEffect type="OnUse" target="This" Snapped="true" delay="1" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
@@ -64,12 +64,12 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="physicorium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="449,968,55,55" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,398,170,14" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="449,968,55,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="85,398,170,14" depth="0.55" origin="0.5,0.5" />
     <Body width="160" height="10" density="20" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Rope sourcepullforce="300" targetpullforce="100" projectilepullforce="5" maxlength="1500" snaponcollision="false" spritewidth="3" tile="true" origin="0.05,0.5" targetminmass="30" lerpforces="true" snapanimduration="0.5">
-      <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
       <!-- Snap after 1 seconds if not stuck to anything -->
       <StatusEffect type="OnUse" target="This" Snapped="true" delay="1" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
@@ -111,8 +111,8 @@
       <RequiredItem identifier="spear" />
       <RequiredItem identifier="c4block" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="385,968,55,55" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,381,168,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="385,968,55,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="85,381,168,15" depth="0.55" origin="0.5,0.5" />
     <Body width="160" height="10" density="20" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" severlimbsprobability="0.1">
@@ -120,8 +120,8 @@
         <Affliction identifier="lacerations" strength="20" />
         <Affliction identifier="stun" strength="0.4" />
       </Attack>
-      <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" type="OnUse" range="2000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" type="OnUse" range="2000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium2.ogg" type="OnUse" range="2000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris2.ogg" type="OnUse" range="2000" />
       <StatusEffect type="OnUse" Condition="-100.0" stun="10.0" disabledeltatime="true">
         <Explosion range="200.0" structuredamage="10" itemdamage="250" stun="2" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="bleeding" strength="50" />
@@ -163,15 +163,15 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,203,181,39" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,203,181,39" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="30" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -208,8 +208,8 @@
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="copper" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -297,16 +297,16 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,418,76,41" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,418,76,41" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="29,11" spread="0" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/Revolver2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/Revolver3.ogg" type="OnUse" range="3000" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/Revolver2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/Revolver3.ogg" type="OnUse" range="3000" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
@@ -325,8 +325,8 @@
   </Item>  
   
   <Item name="" identifier="smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -378,8 +378,8 @@
       <Item identifier="lead" copycondition="true"/>
       <Item identifier="steel" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,33,44" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,33,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="smground" />
@@ -411,20 +411,20 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,830,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,121,144,80" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,830,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,121,144,80" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.175" holdtrigger="true" barrelpos="64,9" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -470,14 +470,14 @@
       <RequiredItem identifier="phosphorus" />
       <RequiredItem identifier="flashpowder" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="130,312,27,54" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="130,312,27,54" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="50" density="30" />
     <ItemComponent characterusable="false">
       <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/StunGrenade.ogg" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunGrenade.ogg" />
         <Explosion range="500" force="0.1" smoke="false">
           <Affliction identifier="explosiondamage" strength="5" />
           <Affliction identifier="stun" strength="25"/>
@@ -518,15 +518,15 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="uex" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="450,450,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="159,311,27,54" depth="0.55" origin="0.5,0.5185185" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="450,450,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="159,311,27,54" depth="0.55" origin="0.5,0.5185185" />
     <Body width="26" height="50" density="30" />
     <ItemComponent characterusable="false">
       <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This"> 
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="1000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/Emp.ogg" range="1000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="1000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/Emp.ogg" range="1000" />
         <Explosion range="500" force="0.1" smoke="false" sparks="true" empstrength="10" applyfireeffects="false">
           <Affliction identifier="explosiondamage" strength="5" />
           <Affliction identifier="stun" strength="1" />
@@ -566,15 +566,15 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="uex" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="580,770,54,63" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="217,305,40,61" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="580,770,54,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="217,305,40,61" depth="0.55" origin="0.5,0.5" />
     <Body radius="20" height="10" density="30" />
     <ItemComponent characterusable="false">
       <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
         <Explosion range="600.0" structuredamage="20" ballastfloradamage="120" itemdamage="500" force="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="bleeding" strength="80" />
           <Affliction identifier="explosiondamage" strength="180" />
@@ -615,14 +615,14 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="68,320,56,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="188,312,26,54" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="68,320,56,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="188,312,26,54" depth="0.55" origin="0.5,0.5" />
     <Body width="24" height="52" density="30" />
     <ItemComponent characterusable="false">
       <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/IncendiumGrenade.ogg" />
+        <sound file="%ModDir%/Content/Items/Weapons/IncendiumGrenade.ogg" />
         <Explosion range="500" ballastfloradamage="50" itemdamage="200" force="0.1" smoke="false">
           <Affliction identifier="explosiondamage" strength="5" />
           <Affliction identifier="burn" strength="100" />
@@ -664,12 +664,12 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="770,0,58,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,191,63" depth="0.55" origin="0.4954025,0.7936202" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="770,0,58,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,0,191,63" depth="0.55" origin="0.4954025,0.7936202" />
     <Body width="170" height="30" density="30" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-30,15" holdangle="20" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
       <Attack targetimpulse="5" itemdamage="1">
-        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/Smack1.ogg" range="800" />
         <Affliction identifier="blunttrauma" strength="4" />
         <Affliction identifier="stun" strength="0.2"/>
       </Attack>
@@ -678,10 +678,10 @@
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
         <Affliction identifier="stun" strength="0.3"/>
         <Affliction identifier="incrementalstun" strength="40"/>
-        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton4.ogg" range="500" />
         <RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
         <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
         <Conditional mass="lt 60"/>
@@ -691,10 +691,10 @@
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
         <Affliction identifier="stun" strength="0.3"/>
         <Affliction identifier="incrementalstun" strength="55"/>
-        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
-        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunBaton4.ogg" range="500" />
         <RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
         <Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
         <Conditional mass="lt 150"/>
@@ -737,8 +737,8 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="iron" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="835,385,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="183,203,66,16" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="835,385,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="183,203,66,16" depth="0.55" origin="0.5,0.5" />
     <Body width="65" height="15" density="50" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="10" structuredamage="10" structuresoundtype="StructureSlash">
@@ -746,12 +746,12 @@
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="stun" strength="0.2" />
         <StatusEffect type="OnUse" target="Character">
-          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
         </StatusEffect>
       </Attack>
     </MeleeWeapon>
@@ -779,21 +779,21 @@
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,831,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,244,186,65" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,831,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,244,186,65" depth="0.55" origin="0.5,0.5" />
     <Body width="170" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="45,-10" handle1="-33,-15" handle2="26,5" holdangle="-25" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Grenade Launcher Worn" texture="Content/Items/Weapons/weapons_new.png" canbehiddenbyotherwearables="false" sourcerect="0,244,186,65" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.8" />
+      <sprite name="Grenade Launcher Worn" texture="%ModDir%/Content/Items/Weapons/weapons_new.png" canbehiddenbyotherwearables="false" sourcerect="0,244,186,65" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.8" />
     </Wearable>    
     <RangedWeapon barrelpos="80,11" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
       <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
-      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random"/>
-      <Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random"/>
+      <Sound file="%ModDir%/Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
       </StatusEffect>
@@ -834,8 +834,8 @@
       <RequiredItem identifier="iron"/>
       <RequiredItem identifier="uex"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="215,286,41,17" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="215,286,41,17" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
@@ -843,8 +843,8 @@
         <Affliction identifier="blunttrauma" strength="5" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
-      <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
-      <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+      <sound file="%ModDir%/Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+      <sound file="%ModDir%/Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
       <!--Grenade launcher ammo explodes on impact-->
       <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
         <Explosion range="250.0" ballastfloradamage="110" structuredamage="20" levelwalldamage="500" itemdamage="500" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
@@ -852,7 +852,7 @@
           <Affliction identifier="explosiondamage" strength="80" />
           <Affliction identifier="stun" strength="5" />
         </Explosion>
-        <sound file="Content/Items/Weapons/StunGrenade.ogg" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunGrenade.ogg" />
       </StatusEffect>
       <!--Destroy this after exploding-->
       <StatusEffect type="OnUse" target="This" disabledeltatime="true" >
@@ -889,8 +889,8 @@
       <RequiredItem identifier="phosphorus"/>
       <RequiredItem identifier="flashpowder"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="214,266,42,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="214,266,42,18" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
@@ -898,11 +898,11 @@
         <Affliction identifier="blunttrauma" strength="5" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
-      <sound file="Content/Items/Weapons/StunGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
-      <sound file="Content/Items/Weapons/StunGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+      <sound file="%ModDir%/Content/Items/Weapons/StunGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+      <sound file="%ModDir%/Content/Items/Weapons/StunGrenade40mmShot2.ogg" type="OnImpact" range="500" />
       <!--Grenade launcher ammo explodes on impact-->
       <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/StunGrenade.ogg" />
+        <sound file="%ModDir%/Content/Items/Weapons/StunGrenade.ogg" />
         <Explosion range="300" force="0.1" smoke="false">
           <Affliction identifier="explosiondamage" strength="5" />
           <Affliction identifier="stun" strength="15" />
@@ -936,26 +936,26 @@
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,830,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,65,185,54" depth="0.55" origin="0.5,0.25" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,830,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,65,185,54" depth="0.55" origin="0.5,0.25" />
     <Body width="180" height="30" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="55,5" handle1="-25,-16" handle2="26,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon barrelpos="80,5" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!-- Cocking sound, delayed by 1.0 seconds. -->
       <StatusEffect type="OnUse" delay="1.0">
-        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random"   />
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random"   />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
@@ -992,8 +992,8 @@
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <!--When fired, spawns 8 projectiles simultaneously.-->
@@ -1038,15 +1038,15 @@
       <RequiredItem identifier="steel"/>
       <RequiredItem identifier="plastic"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,830,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,368,83,47" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,830,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,368,83,47" depth="0.55" origin="0.5,0.5" />
     <Body width="80" height="40" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,10" handle1="-5,-7" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon barrelpos="14,6" spread="0" unskilledspread="2" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/TaserShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/TaserShot2.ogg" type="OnUse" range="3000" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/TaserShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/TaserShot2.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="Contained">
         <Explosion range="100.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
       </StatusEffect>
@@ -1085,8 +1085,8 @@
       <Item identifier="steel" />
       <Item tag="wire" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="766,576,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="183,221,72,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="766,576,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="183,221,72,18" depth="0.55" origin="0.5,0.5" />
     <Body width="70" height="15" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
     <!--Non-lethal projectile sticks to characters and stuns them for 5 seconds.-->
@@ -1097,8 +1097,8 @@
         <Affliction identifier="progressivestun" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="This">
-        <Sound file="Content/Items/Weapons/TaserHit1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/TaserHit2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/TaserHit1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Items/Weapons/TaserHit2.ogg" type="OnUse" range="3000" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1129,24 +1129,24 @@
       <RequiredItem identifier="bikehorn"/>
       <RequiredItem identifier="plastic"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="641,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,311,121,55" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="641,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,311,121,55" depth="0.55" origin="0.5,0.5" />
     <Body width="120" height="48" density="50" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" aimpos="45,10" handle1="-20,0" handle2="-10,5" holdangle="60" reload="1" range="100" combatpriority="5" msg="ItemMsgPickUpSelect">
       <Attack stun="0.3" targetimpulse="2">
-        <Sound file="Content/Items/Weapons/ToyHammerHit1.ogg" range="800" selectionmode="Random"/>
-        <Sound file="Content/Items/Weapons/ToyHammerHit2.ogg" range="800" />
-        <Sound file="Content/Items/Weapons/ToyHammerHit3.ogg" range="800" />
-        <Sound file="Content/Items/Weapons/ToyHammerHit4.ogg" range="800" />
-        <Sound file="Content/Items/Weapons/ToyHammerHit5.ogg" range="800" />
-        <Sound file="Content/Items/Weapons/ToyHammerHit6.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit1.ogg" range="800" selectionmode="Random"/>
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit2.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit3.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit4.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit5.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ToyHammerHit6.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
     <aitarget sightrange="500" soundrange="1000" fadeouttime="3" />
   </Item>
   <Item name="nuclearaftereffectemitter" identifier="nuclearaftereffectemitter" Scale="0.5" tags="" sonarsize="20" hideinmenus="true">
     <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True"/>
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <ItemComponent>
       <!-- reduce condition to remove the emitter after 10 seconds -->
       <StatusEffect type="Always" target="This" condition="-10">
@@ -1172,26 +1172,26 @@
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="320,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,70,184,51" depth="0.55" origin="0.5,0.25" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="320,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="262,70,184,51" depth="0.55" origin="0.5,0.25" />
     <Body width="180" height="30" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="55,5" handle1="-20,-11" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon barrelpos="85,10" spread="1" unskilledspread="10" combatPriority="80" reload="0.1" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!-- Cocking sound, delayed by 1.0 seconds. -->
       <StatusEffect type="OnUse" delay="1.0">
-        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random"   />
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random"   />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
       <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
@@ -1217,12 +1217,12 @@
       <Item identifier="steel" />
       <Item identifier="iron" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,363,172,14" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="262,363,172,14" depth="0.55" origin="0.5,0.5" />
     <Body width="160" height="10" density="20" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Rope sourcepullforce="300" targetpullforce="100" projectilepullforce="5" maxlength="1500" snaponcollision="false" spritewidth="3" tile="true" origin="0.05,0.5" targetminmass="30" lerpforces="true" snapanimduration="0.5">
-      <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
       <!-- Snap after 1 seconds if not stuck to anything -->
       <StatusEffect type="OnUse" target="This" Snapped="true" delay="1" checkconditionalalways="true">
         <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
@@ -1253,8 +1253,8 @@
       <Item identifier="iron" />
       <Item identifier="morbusine" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="186,183,63,16" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="448,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="186,183,63,16" depth="0.55" origin="0.5,0.5" />
     <Body width="65" height="15" density="50" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="10">
@@ -1263,12 +1263,12 @@
         <Affliction identifier="stun" strength="0.2" />
         <Affliction identifier="morbusinepoisoning" strength="1" />
         <StatusEffect type="OnUse" target="Character">
-          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
         </StatusEffect>
       </Attack>
     </MeleeWeapon>
@@ -1290,20 +1290,20 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="263,135,145,56" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="384,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="263,135,145,56" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-15" aimpos="45,-10" handle1="-30,-8" handle2="18,5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="58,19" spread="2" unskilledspread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>

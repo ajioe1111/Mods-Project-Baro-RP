@@ -1,12 +1,12 @@
 ﻿<Character speciesname="Watcher" humanoid="False" speciestranslationoverride="" displayname="" group="" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="True" canspeak="False" noise="50" visibility="50" blooddecal="blood" bleedparticleair="blooddrop" bleedparticlewater="waterblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" sonardisruption="0" disabledistance="30000" caneat="False">
-  <ragdolls folder="Content/Characters/Watcher/Ragdolls/" />
-  <animations folder="Content/Characters/Watcher/Animations/" />
-  <sound file="Content/Characters/Watcher/WATCHER_takeDamage1.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Watcher/WATCHER_takeDamage2.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Watcher/WATCHER_takeDamage3.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Watcher/WATCHER_takeDamage4.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Watcher/WATCHER_death1.ogg" state="Die" range="10000" volume="1" dontmuffle="true" />
-  <sound file="Content/Characters/Watcher/WATCHER_death2.ogg" state="Die" range="10000" volume="1" dontmuffle="true" /> 
+  <ragdolls folder="%ModDir%/Content/Characters/Watcher/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Watcher/Animations/" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_takeDamage1.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_takeDamage2.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_takeDamage3.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_takeDamage4.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_death1.ogg" state="Die" range="10000" volume="1" dontmuffle="true" />
+  <sound file="%ModDir%/Content/Characters/Watcher/WATCHER_death2.ogg" state="Die" range="10000" volume="1" dontmuffle="true" /> 
   <damageemitter particle="gib" particleamount="10" velocitymin="200" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.4" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="blood" particleamount="10" scalemin="1" scalemax="2" anglemin="0" anglemax="0" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="waterblood" particleamount="3" scalemin="1" scalemax="3" anglemin="0" anglemax="0" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
@@ -56,7 +56,7 @@
   </ai>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="5000">
     <Affliction identifier="watchersgaze" strength="5" />
-    <Sound file="Content/Characters/Watcher/WATCHER_idleLoop.ogg" loop="true" range="5000" dontmuffle="true"/>
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_idleLoop.ogg" loop="true" range="5000" dontmuffle="true"/>
   </StatusEffect>
   <StatusEffect type="OnActive" target="NearbyCharacters" range="1500" onlyoutside="true">
     <Affliction identifier="watchersgaze" strength="20" />
@@ -65,52 +65,52 @@
     <RequiredAffliction type="damage,burn" minstrength="1"/>
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="3" spread="500" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
-    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
   </StatusEffect>
   <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.6" stackable="false" >
     <RequiredAffliction type="damage,burn" minstrength="1"/>
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="2" spread="300" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
-    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
   </StatusEffect>
   <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.8" stackable="false" >
     <RequiredAffliction type="damage,burn" minstrength="1"/>
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="3" spread="400" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
-    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
   </StatusEffect>
   <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="1.0" stackable="false" >
     <RequiredAffliction type="damage,burn" minstrength="1"/>
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="1" spread="200" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
-    <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst5.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst6.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
   </StatusEffect>
 </Character>

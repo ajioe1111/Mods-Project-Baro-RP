@@ -8,25 +8,25 @@
     vitality="80"
     doesbleed="false"/>
 
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle2.ogg" state="Idle" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_idle2.ogg" state="Idle" range="3000" />
   
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack1.ogg" state="Attack" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack2.ogg" state="Attack" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack3.ogg" state="Attack" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack4.ogg" state="Attack" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack5.ogg" state="Attack" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack1.ogg" state="Attack" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack2.ogg" state="Attack" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack3.ogg" state="Attack" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack4.ogg" state="Attack" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_attack5.ogg" state="Attack" range="3000" />
 
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage1.ogg" state="Damage" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage2.ogg" state="Damage" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage3.ogg" state="Damage" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage4.ogg" state="Damage" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage5.ogg" state="Damage" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage1.ogg" state="Damage" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage2.ogg" state="Damage" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage3.ogg" state="Damage" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage4.ogg" state="Damage" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_damage5.ogg" state="Damage" range="3000" />
   
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death1.ogg" state="Die" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death2.ogg" state="Die" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death3.ogg" state="Die" range="3000" />
-  <sound file="Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death4.ogg" state="Die" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death1.ogg" state="Die" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death2.ogg" state="Die" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death3.ogg" state="Die" range="3000" />
+  <sound file="%ModDir%/Content/Characters/Legacyfractalguardian/FRACTALGUARDIAN1_death4.ogg" state="Die" range="3000" />
 
   <ai
     combatstrength="500"
@@ -38,4 +38,3 @@
   </ai>
   
 </Character>
-

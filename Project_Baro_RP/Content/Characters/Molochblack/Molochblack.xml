@@ -14,22 +14,22 @@
     <Limb name="LeftLeg"/>
     <Limb name="RightLeg"/>
   </health>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack1.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack2.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack3.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack4.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack5.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_attack6.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
-  <sound file="Content/Characters/Moloch/MOLOCH_damage1.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_damage2.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_damage3.ogg" state="Damage" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_idle1.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_idle2.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_idle3.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_idle4.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_idle5.ogg" state="Idle" range="10000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_death1.ogg" state="Die" range="20000" volume="1" />
-  <sound file="Content/Characters/Moloch/MOLOCH_death2.ogg" state="Die" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack1.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack2.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack3.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack4.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack5.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_attack6.ogg" state="Attack" range="20000" volume="1" dontmuffle="true"/>
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage1.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage2.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_damage3.ogg" state="Damage" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_idle1.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_idle2.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_idle3.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_idle4.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_idle5.ogg" state="Idle" range="10000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_death1.ogg" state="Die" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_death2.ogg" state="Die" range="20000" volume="1" />
   <Inventory slots="Any, Any, Any" accessiblewhenalive="False" commonness="2">
     <Item identifier="hydroxyapatite" />
     <Item identifier="hydroxyapatite" />
@@ -54,6 +54,6 @@
     <target tag="molochbaby" state="Protect" priority="10" reactdistance="1000" attackdistance="0" />
   </ai>
   <StatusEffect type="OnActive">
-    <Sound file="Content/Characters/Moloch/MOLOCH_moving.ogg" loop="true" range="5000" />
+    <Sound file="%ModDir%/Content/Characters/Moloch/MOLOCH_moving.ogg" loop="true" range="5000" />
   </StatusEffect>
 </Character>

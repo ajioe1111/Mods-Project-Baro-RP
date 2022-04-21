@@ -18,12 +18,12 @@
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
     <!-- TODO: sprite and inventory icon -->
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="897,896,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="897,896,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="2,478,47,32" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="10000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="10000" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
       <StatusEffect type="OnBroken" target="This">
         <Explosion range="800.0" ballastfloradamage="110" structuredamage="300" levelwalldamage="500" itemdamage="1000" stun="5" force="20.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
@@ -56,12 +56,12 @@
       <RequiredItem identifier="uex" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="51,478,48,33" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="10000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="10000" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>      
       <StatusEffect type="OnBroken" target="This">
         <Explosion range="500.0" ballastfloradamage="110" structuredamage="500" levelwalldamage="500" itemdamage="1000" stun="5" force="20.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
@@ -95,12 +95,12 @@
       <RequiredItem identifier="potassium" />
       <RequiredItem identifier="sulphuricacid" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="101,476,49,34" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" canbecombined="true" removeoncombined="true" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" type="OnBroken" range="10000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" type="OnBroken" range="10000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium2.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris2.ogg" type="OnBroken" range="10000" />
       <StatusEffect type="OnFire" target="This" Condition="-50.0" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -133,12 +133,12 @@
       <RequiredItem identifier="compoundn" />
       <RequiredItem identifier="flashpowder" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,64,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="152,477,50,34" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" type="OnBroken" range="10000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" type="OnBroken" range="10000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium3.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" type="OnBroken" range="10000" />
       <StatusEffect type="Always" target="This" Condition="-0.35" />
       <StatusEffect type="OnFire" target="This" Condition="-50.0" />
       <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true"/>
@@ -168,7 +168,7 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="1" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,69,64,56" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,69,64,56" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="204,476,50,34" origin="0.5,0.5" />
     <Body width="50" height="30" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
@@ -177,8 +177,8 @@
       <RequiredItem identifier="incendium" />
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" type="OnBroken" range="10000" selectionmode="All" />
-      <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" type="OnBroken" range="10000" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium3.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris4.ogg" type="OnBroken" range="10000" />
       <StatusEffect type="OnFire" target="This" Condition="-50.0" />
       <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -209,7 +209,7 @@
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
       <Price storeidentifier="merchantengineering" multiplier="1.2" minavailable="1" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,64,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,64,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" depth="0.8" sourcerect="215,242,41,21" origin="0.5,0.5" />
     <Body width="40" height="22" density="20" />
     <Holdable selectkey="Action" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
@@ -241,15 +241,15 @@
       <Price storeidentifier="merchantmine" sold="false" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,768,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,768,64,64" origin="0.5,0.5" />
     <Sprite texture="weapons_new.png" sourcerect="110,414,31,62" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="60" density="20" />
     <Throwable characterusable="true" canbecombined="true" removeoncombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
       <StatusEffect type="OnFire" target="This" Condition="-50.0" />
       <StatusEffect type="OnBroken" target="This" Condition="-100.0">
-        <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" selectionmode="All" range="8000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" selectionmode="All" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium2.ogg" selectionmode="All" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" selectionmode="All" range="8000" />
         <Explosion range="600.0" ballastfloradamage="60" structuredamage="200" itemdamage="1000" force="20.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.5">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="explosiondamage" strength="50" />

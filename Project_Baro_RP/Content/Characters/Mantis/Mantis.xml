@@ -11,12 +11,12 @@
   <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360"/>
   <gibemitter particle="heavygib" particleamount="10" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360"/>
   
-  <sound file="Content/Characters/Mantis/attack1.ogg" state="Attack" range="500"/>
-  <sound file="Content/Characters/Mantis/attack2.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Mantis/attack1.ogg" state="Attack" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Mantis/attack2.ogg" state="Attack" range="500"/>
 
-  <sound file="Content/Characters/Mantis/idle1.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Mantis/idle2.ogg" state="Idle" range="500"/>
-  <sound file="Content/Characters/Mantis/idle3.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Mantis/idle1.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Mantis/idle2.ogg" state="Idle" range="500"/>
+  <sound file="%ModDir%/Content/Characters/Mantis/idle3.ogg" state="Idle" range="500"/>
 
   <Inventory slots="Any, Any" accessiblewhenalive="false">
     <Item identifier="swimbladder"/>
@@ -44,4 +44,3 @@
   </ai>
   
 </Character>
-

@@ -23,20 +23,20 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="steel" />
     </Deconstruct>
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="308,1,152,61" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="308,1,152,61" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="40" density="100" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="48,-5" handle1="-12,-15" handle2="20,5" holdangle="-20" msg="ItemMsgPickUpSelect" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="Content/Items/JobGear/TalentGear.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="308,1,152,61" limb="Torso" ignorelimbscale="true" scale="0.62" origin="0.5,0.9" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="308,1,152,61" limb="Torso" ignorelimbscale="true" scale="0.62" origin="0.5,0.9" />
     </Wearable>
     <RangedWeapon barrelpos="68,10" spread="0.5" unskilledspread="5" combatPriority="80" reload="0.45" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun.ogg" type="OnUse" range="3000" volume="2" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_1.ogg" type="OnUse" range="3000" volume="2" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_2.ogg" type="OnUse" range="3000" volume="2" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_3.ogg" type="OnUse" range="3000" volume="2" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_autoShotgun.ogg" type="OnUse" range="3000" volume="2" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_autoShotgun_1.ogg" type="OnUse" range="3000" volume="2" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_autoShotgun_2.ogg" type="OnUse" range="3000" volume="2" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_autoShotgun_3.ogg" type="OnUse" range="3000" volume="2" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -72,22 +72,22 @@
       <Item identifier="dementonite" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" depth="0.55" origin="0.5,0.5" />
     <Body width="220" height="50" density="70" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="57,-5" handle1="-35,-10" handle2="26,10" holdangle="-30" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Assault Rifle Worn" texture="Content/Items/JobGear/TalentGear.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="276,63,233,62" limb="Torso" scale="0.5" origin="0.5,0.8" />
+      <sprite name="Assault Rifle Worn" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="276,63,233,62" limb="Torso" scale="0.5" origin="0.5,0.8" />
     </Wearable>
     <RangedWeapon reload="0.24" holdtrigger="true" barrelpos="100,20" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -127,8 +127,8 @@
     </Deconstruct>
     <PreferredContainer primary="assaultrifle" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="0" spawnprobability="0.0"/>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
     <Body width="28" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="assaultrifleround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="assaultrifleround" />
@@ -139,8 +139,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item name="assaultrifleround" identifier="assaultrifleround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -177,8 +177,8 @@
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="576,192,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="449,211,24,12" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="576,192,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="449,211,24,12" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="1">
@@ -218,11 +218,11 @@
       <RequiredItem identifier="ballisticfiber" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="202,304,48,61" origin="0.45,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="216,210,78,95" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="202,304,48,61" origin="0.45,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="216,210,78,95" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" height="30" density="40" />
     <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Security Vest" texture="Content/Items/JobGear/TalentGear.png" limb="Torso" hidelimb="false" sourcerect="215,209,79,97" inherittexturescale="true" origin="0.45,0.6" />
+      <sprite name="Security Vest" texture="%ModDir%/Content/Items/JobGear/TalentGear.png" limb="Torso" hidelimb="false" sourcerect="215,209,79,97" inherittexturescale="true" origin="0.45,0.6" />
       <SkillModifier skillidentifier="weapons" skillvalue="15" />
       <StatValue stattype="RangedAttackSpeed" value="0.25" />
       <StatValue stattype="TurretAttackSpeed" value="0.25" />
@@ -251,8 +251,8 @@
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="165,366,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="1,425,164,53" depth="0.55" origin="0.5,0.2" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="165,366,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="1,425,164,53" depth="0.55" origin="0.5,0.2" />
     <Body width="161" height="20" density="60" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,2" handle2="-32,5" holdangle="30" reload="1.2" range="175" combatPriority="40" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="50" structuredamage="10">
@@ -260,12 +260,12 @@
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="stun" strength="0.5" />
         <StatusEffect type="OnUse" target="Character">
-          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
-          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
         </StatusEffect>
       </Attack>
     </MeleeWeapon>
@@ -287,8 +287,8 @@
     <Deconstruct time="20">
       <Item identifier="carbon" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="83,368,39,56" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="71,74,34,39" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="83,368,39,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="71,74,34,39" depth="0.6" origin="0.5,0.5" />
     <Body width="28" height="36" density="20" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
@@ -312,19 +312,19 @@
       <RequiredItem identifier="combatdivingsuit" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="640,0,128,128" origin="0.5,0.5" />
-    <Sprite name="Slipsuit Item" texture="Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="7,8,157,121" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="Slipsuit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="171,0,77,192" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="Slipsuit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Jobgear/Security/slipsuit.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
-    <ContainedSprite name="Slipsuit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="640,0,128,128" origin="0.5,0.5" />
+    <Sprite name="Slipsuit Item" texture="%ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="7,8,157,121" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="Slipsuit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="171,0,77,192" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="Slipsuit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Content/Items/Jobgear/Security/slipsuit.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Slipsuit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Content/Items/Jobgear/Security/Slipsuit_Items.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="15" />
     <Wearable>
-      <sprite name="Slipsuit Helmet Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="true" hideotherwearables="true" sourcerect="0,520,105,124" origin="0.5,0.4">
+      <sprite name="Slipsuit Helmet Wearable" texture="%ModDir%/Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="true" hideotherwearables="true" sourcerect="0,520,105,124" origin="0.5,0.4">
         <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
           </StatusEffect>
-          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="%ModDir%/Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite name="SlipSuit Torso" texture="slipsuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
@@ -363,8 +363,8 @@
       <Item identifier="fulgurium" />
       <Item tag="wire" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="215,67,61,61" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="200,189,72,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="215,67,61,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/JobGear/TalentGear.png" sourcerect="200,189,72,18" depth="0.55" origin="0.5,0.5" />
     <Body width="70" height="15" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true">
@@ -373,8 +373,8 @@
         <Affliction identifier="stun" strength="6" />
       </Attack>
       <StatusEffect type="OnImpact" target="This">
-        <Sound file="Content/Items/Weapons/TaserHit1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/TaserHit2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Content/Items/Weapons/TaserHit1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Content/Items/Weapons/TaserHit2.ogg" type="OnUse" range="3000" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">

@@ -12,7 +12,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="5,55,46,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -34,7 +34,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="5,92,46,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="25" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -57,7 +57,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="150,92,47,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -80,7 +80,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="768,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="101,92,47,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="25" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -103,7 +103,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="153,6,23,44" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="42" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -125,7 +125,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="53,92,48,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -148,7 +148,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="102,55,46,37" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -171,15 +171,15 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="29,7,23,44" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="42" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
         <Explosion range="150.0" structuredamage="14" force="5.0" applyfireeffects="false">
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="stun" strength="3" />
@@ -200,7 +200,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,128,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,128,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="196,54,46,38" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -223,7 +223,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="256,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="129,6,23,44" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="42" density="15" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -245,7 +245,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="448,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="53,53,47,39" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -268,7 +268,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="898,192,61,63" origin="0.5,0.5" />
     <Sprite texture="CraftingElements1.png" sourcerect="4,130,49,41" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="32" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -291,15 +291,15 @@
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
     </Price>
     <!-- TODO: sprite -->
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="128,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="77,6,23,44" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="42" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
         <Explosion range="150.0" structuredamage="14" force="5.0" applyfireeffects="false">
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="stun" strength="3" />
@@ -320,7 +320,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="150,55,46,37" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -343,7 +343,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="4"/>
       <Price storeidentifier="merchantmine" multiplier="0.8" minavailable="6"/>
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="102,6,23,44" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="42" density="15" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect"/>
@@ -360,15 +360,15 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="3,7,24,44" depth="0.55" origin="0.5,0.5" />
     <Body width="27" height="47" density="15" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true"/>
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
         <Explosion range="150.0" structuredamage="14" force="5.0" applyfireeffects="false">
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="stun" strength="3" />
@@ -389,7 +389,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="20" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,256,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,256,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="55,7,22,44" depth="0.6" origin="0.5,0.5" />
     <Body width="22" height="42" density="20" />
     <Throwable characterusable="true" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10">
@@ -411,7 +411,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,192,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,192,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="54,131,46,39" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -443,7 +443,7 @@
       <Item identifier="carbon" copycondition="true"/>
       <Item identifier="iron" copycondition="true"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,128,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,128,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="4,171,54,27" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -475,7 +475,7 @@
       <Item identifier="aluminium" copycondition="true"/>
       <Item identifier="titanium" copycondition="true"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,768,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="192,768,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="62,203,55,27" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -507,7 +507,7 @@
       <Item identifier="silicon" copycondition="true"/>
       <Item identifier="carbon" copycondition="true"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,128,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,128,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="202,100,43,30" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="27" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -538,7 +538,7 @@
       <Item identifier="plastic" copycondition="true"/>
       <Item identifier="titanium" copycondition="true"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="706,770,62,61" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="706,770,62,61" origin="0.5,0.5" />
     <Sprite texture="CraftingElements1.png" sourcerect="221,0,35,53" depth="0.55" origin="0.5,0.5" />
     <Body width="35" height="55" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -560,7 +560,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
       <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,768,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,768,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="178,8,42,45" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="45" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" />
@@ -576,7 +576,7 @@
       <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="8" />
       <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="6" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,770,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,770,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="133,221,35,32" depth="0.55" origin="0.5,0.5" />
     <Body width="5" radius="15" density="8" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -606,7 +606,7 @@
       <Item identifier="magnesium" copycondition="true"/>
       <Item identifier="potassium" copycondition="true"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
     <Sprite texture="CraftingElements1.png" depth="0.55" sourcerect="127,134,23,42" origin="0.5,0.5" />
     <Body width="23" height="43" density="20" />
     <Throwable characterusable="false" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
@@ -615,8 +615,8 @@
       <StatusEffect type="OnUse" target="This" Condition="0.0" setvalue="true" />
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris2.ogg" selectionmode="All" range="5000" />
         <Explosion range="500" force="0.1">
           <Affliction identifier="burn" strength="5" />
           <Affliction identifier="stun" strength="3" />
@@ -645,13 +645,13 @@
       <RequiredItem identifier="scrap" />
       <RequiredItem identifier="scrap" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="260,835,53,61" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="105,439,52,61" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="260,835,53,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" sourcerect="105,439,52,61" depth="0.55" origin="0.5,0.5" />
     <Body radius="20" height="10" density="60" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" characterusable="false" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
       <StatusEffect type="OnUse" target="This" Condition="0.0" setvalue="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
         <Explosion range="500.0" structuredamage="4" force="20.0">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="stun" strength="3" />
@@ -660,7 +660,7 @@
         <Fire size="100.0" />
       </StatusEffect>
     </Holdable>
-    <ContainedSprite texture="Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="33,182,193,76" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="33,182,193,76" origin="0.5,0.5" />
     <LevelResource deattachduration="4" randomoffsetfromwall="20">
       <Commonness commonness="0.02" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
@@ -686,8 +686,8 @@
       <RequiredItem identifier="scrap" />
       <RequiredItem identifier="scrap" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="328,833,51,63" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="186,351,59,67" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="328,833,51,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" sourcerect="186,351,59,67" depth="0.55" origin="0.5,0.5" />
     <Body radius="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
       <!-- Remove the item when fully used -->
@@ -695,7 +695,7 @@
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ContainedSprite texture="Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="27,84,200,88" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="27,84,200,88" origin="0.5,0.5" />
     <LevelResource deattachduration="4" randomoffsetfromwall="20">
       <Commonness commonness="0.02" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
@@ -720,8 +720,8 @@
       <RequiredItem identifier="scrap" />
       <RequiredItem identifier="scrap" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="70,835,52,59" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="97,349,58,71" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="70,835,52,59" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" sourcerect="97,349,58,71" depth="0.55" origin="0.5,0.5" />
     <Body radius="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
       <!-- Remove the item when fully used -->
@@ -729,7 +729,7 @@
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ContainedSprite texture="Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="283,0,197,87" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="283,0,197,87" origin="0.5,0.5" />
     <LevelResource deattachduration="4" randomoffsetfromwall="20">
       <Commonness commonness="0.02" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
@@ -755,8 +755,8 @@
       <RequiredItem identifier="scrap" />
       <RequiredItem identifier="scrap" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,830,64,64" />
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="15,356,60,54" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,830,64,64" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" sourcerect="15,356,60,54" depth="0.55" origin="0.5,0.5" />
     <Body radius="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
       <!-- Remove the item when fully used -->
@@ -764,7 +764,7 @@
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ContainedSprite texture="Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="15,0,222,85" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="15,0,222,85" origin="0.5,0.5" />
     <LevelResource deattachduration="4" randomoffsetfromwall="20">
       <Commonness commonness="0.02" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
@@ -782,8 +782,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.1" />
       <Price storeidentifier="merchantmine" sold="true" multiplier="0.9" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,832,64,64" origin="0.5,0.5"/>
-    <Sprite texture="Content/Items/Alien/AlienMaterials.png" sourcerect="266,430,45,76" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,832,64,64" origin="0.5,0.5"/>
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" sourcerect="266,430,45,76" depth="0.55" />
     <Body radius="25" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
       <!-- Remove the item when fully used -->
@@ -791,7 +791,7 @@
         <Remove />
       </StatusEffect>
     </Holdable>
-    <ContainedSprite texture="Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="274,270,205,86" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/Content/Items/Alien/AlienMaterials.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="274,270,205,86" origin="0.5,0.5" />
     <LevelResource deattachduration="4" randomoffsetfromwall="20">
       <Commonness commonness="0.02" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
@@ -816,7 +816,7 @@
       <Item identifier="carbon" copycondition="true" commonness="0.6"/>
       <Item identifier="lead" copycondition="true" commonness="0.7"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,384,64,64" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="448,384,64,64" />
     <Sprite texture="CraftingElements1.png" sourcerect="175,220,50,33" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="20" density="25" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">

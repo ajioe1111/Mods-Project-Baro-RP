@@ -7,7 +7,7 @@
   <!--Objective 3: Keep the mudraptor alive for 2 min.-->
 
   <TraitorMission identifier="easterbunny">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="flood_1_traitormissionstartinfotext"/>
 
     <Objective>
@@ -45,7 +45,7 @@
   <!--Objective 2: Inject everyone with husk eggs-->
 
   <TraitorMission identifier="oneofus">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="512,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="mvptraitormissionstartinfotext" />
 
     <Objective>
@@ -74,7 +74,7 @@
   <!--Objective 3: Escape-->
 
   <TraitorMission identifier="taintedwelding">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="flood_2_traitormissionstartinfotext"/>
 
     <Objective>
@@ -113,7 +113,7 @@
   <!--Objective 3: Cause a nuclear meltdown-->
 
   <TraitorMission identifier="acidparty">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="acidparty_traitormissionStartInfoText"/>
 
     <Objective>
@@ -140,7 +140,7 @@
   <!--Objective 2: Flood 50% of the sub-->
 
   <TraitorMission identifier="flood2">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="flood_2_traitormissionStartInfoText"/>
 
     <Objective>
@@ -178,7 +178,7 @@
   <!--Objective 2: Kill mechanic-->
   
   <TraitorMission identifier="enginetrap">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="traitormissionstartmessage_trap"/>
 
     <Objective>
@@ -206,7 +206,7 @@
   <!--Objective 2: Kill captain-->
 
   <!--<TraitorMission identifier="mutiny">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
+    <Icon texture="%ModDir%/Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="200,0,0,255"/>
     <StartInfoText id="traitormissionstartmessage"/>
 
     <Objective>

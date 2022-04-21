@@ -1,11 +1,11 @@
-﻿<Ragdoll type="Fractalguardian" texture="Content/Characters/Fractalguardian/fractalguardian.png" canentersubmarine="True" canwalk="False" spritesheetorientation="0" limbscale="0.4515" jointscale="0.4515" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" draggable="True" mainlimb="Torso" color="255,255,255,255">
+﻿<Ragdoll type="Fractalguardian" texture="%ModDir%/Content/Characters/Fractalguardian/fractalguardian.png" canentersubmarine="True" canwalk="False" spritesheetorientation="0" limbscale="0.4515" jointscale="0.4515" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" draggable="True" mainlimb="Torso" color="255,255,255,255">
   <collider radius="120" width="0" name="Main Collider" height="0" />
   <limb id="0" name="MainBody" type="Torso" height="90" width="0" notes="" scale="1" flip="False" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="100" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="0.25" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
     <sprite texture="" sourcerect="194,0,240,344" origin="0.5,0.5" depth="0.5" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
     <damagemodifier armorsector="-55,55" afflictiontypes="damage" damagemultiplier="1.25" damagesound="GlassImpact" deflectprojectiles="False" damageparticle="" probabilitymultiplier="1" afflictionidentifiers="" />
     <conditionalsprite exclusive="True">
       <conditional isDead="True" />
-      <sprite sourcerect="194,650,240,344" origin="0.5,0.5" texture="Content/Characters/Fractalguardian/fractalguardian.png" />
+      <sprite sourcerect="194,650,240,344" origin="0.5,0.5" texture="%ModDir%/Content/Characters/Fractalguardian/fractalguardian.png" />
     </conditionalsprite>
     <damagedsprite sourcerect="0,467,200,266" origin="0.5,0.5" />
     <StatusEffect type="OnDamaged" requiredafflictions="gunshotwound,explosiondamage">
@@ -13,7 +13,7 @@
       <ParticleEmitter particle="plasmaspark" drawontop="true" particleamount="10" scalemin="0.3" scalemax="0.5" velocitymin="300" velocitymax="600" anglemin="0" anglemax="360" />
     </StatusEffect>
     <lightsource color="255,255,255,200" range="300" scale="1" castshadows="true" offset="0,0" rotation="-90" flicker="0.3" flickerspeed="100" pulsefrequency="0.2" pulseamount="0.8" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/Guardianlight.png" origin="0.15,0.5" size="1,1" />
+      <lighttexture texture="%ModDir%/Content/Lights/Guardianlight.png" origin="0.15,0.5" size="1,1" />
       <Conditional AIState="! FleeTo" />
       <Conditional HealthPercentage="gt 30" />
     </lightsource>
@@ -22,8 +22,8 @@
     <sprite texture="" sourcerect="207,355,149,149" origin="0.5,0.5" depth="0.6" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
     <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="1.25" damagesound="GlassImpact" deflectprojectiles="False" damageparticle="" probabilitymultiplier="1" afflictionidentifiers="" />
     <lightsource color="255,255,255,0" range="0" scale="1" castshadows="false" offset="0,0" rotation="0" flicker="0.3" flickerspeed="100" pulsefrequency="0.2" pulseamount="0.8" blinkfrequency="0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <sprite texture="Content/Characters/Fractalguardian/fractalguardian.png" sourcerect="356,355,149,149" origin="0.5,0.5" size="1,1" alpha="1.0" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <sprite texture="%ModDir%/Content/Characters/Fractalguardian/fractalguardian.png" sourcerect="356,355,149,149" origin="0.5,0.5" size="1,1" alpha="1.0" />
       <Conditional HealthPercentage="gt 30" />
     </lightsource>
   </limb>
@@ -87,8 +87,8 @@
   <limb id="13" width="0" height="0" name="Emergency" type="None" notes="" scale="1" flip="False" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="70" density="10" ignorecollisions="True" angulardamping="7" attackpriority="0" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="3" blinkdurationin="0.75" blinkdurationout="0.5" blinkholdtime="0.5" blinkrotationin="0" blinkrotationout="90" blinkforce="50" blinktransitionin="EaseIn" blinktransitionout="EaseIn" healthindex="1" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
     <sprite texture="" sourcerect="513,0,149,149" origin="0.5,0.5" depth="0.6" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
     <lightsource color="255,0,0,255" range="300" scale="1" castshadows="false" offset="0,0" rotation="0" flicker="0.5" flickerspeed="10" pulsefrequency="0" pulseamount="0" blinkfrequency="5">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <sprite texture="Content/Characters/Fractalguardian/fractalguardian.png" sourcerect="356,355,149,149" origin="0.5,0.5" size="1,1" alpha="1.0" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <sprite texture="%ModDir%/Content/Characters/Fractalguardian/fractalguardian.png" sourcerect="356,355,149,149" origin="0.5,0.5" size="1,1" alpha="1.0" />
       <Conditional HealthPercentage="lte 30" />
     </lightsource>
   </limb>

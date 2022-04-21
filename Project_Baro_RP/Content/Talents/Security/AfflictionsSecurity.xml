@@ -11,7 +11,7 @@
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
     <Effect minstrength="0" maxstrength="1"
       strengthchange="-2"/>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>/>
   </Affliction>
   
   <!-- temporary affliction used to fix beat cop without breaking the game, not shown to player -->
@@ -26,7 +26,7 @@
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">  
     <Effect minstrength="0" maxstrength="2"
       strengthchange="-1"/>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -44,7 +44,7 @@
         <ReduceAffliction identifier="bloodloss" strength="0.0625" />
       </StatusEffect>
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="0,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="0,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -60,7 +60,7 @@
       resistancefor="damage,stun"
       minresistance="0.3"
       maxresistance="0.3"/>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -76,7 +76,7 @@
       <StatValue stattype="AttackMultiplier" value="0.25" />
       <AbilityFlag flagtype="AlwaysStayConscious" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="0,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="0,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -91,7 +91,7 @@
       strengthchange="-1">
       <StatValue stattype="AttackMultiplier" value="0.25" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="2,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="2,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
   <Affliction
@@ -106,7 +106,7 @@
       strengthchange="-1">
       <StatValue stattype="MeleeAttackMultiplier" minvalue="0" maxvalue="1" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -120,7 +120,7 @@
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
     <Effect minstrength="0" maxstrength="1"
       strengthchange="-1"/>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons3.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
   
 </Afflictions>

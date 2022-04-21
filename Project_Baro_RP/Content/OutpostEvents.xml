@@ -3,54 +3,54 @@
   
   <!-- Define flavor sprites that appear top left of the message box here, identifier is required -->
   <EventSprites>
-    <Sprite identifier="gambler" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="559,6,165,240" origin="0.5,0.5"/>
-    <Sprite identifier="cultist" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="37,507,182,249" origin="0.5,0.5"/>
-    <Sprite identifier="mediator" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="267,5,225,242" origin="0.5,0.5"/>
-    <Sprite identifier="huskinvite" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="555,775,182,248" origin="0.5,0.5"/>
-    <Sprite identifier="map" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="259,521,249,240" origin="0.5,0.5"/>
-    <Sprite identifier="vent" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="507,0,249,252" origin="0.5,0.5"/>
-    <Sprite identifier="brokenterminal" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="768,0,244,251" origin="0.5,0.5"/>
-    <Sprite identifier="ambush" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="261,542,248,174" origin="0.5,0.5"/>
-    <Sprite identifier="trashcan" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="771,15,244,241" origin="0.5,0.5"/>
-    <Sprite identifier="clown" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="544,259,182,249" origin="0.5,0.5"/>
-    <Sprite identifier="unconscious" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="770,321,241,152" origin="0.5,0.5"/>
-    <Sprite identifier="noticeboard" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="263,523,243,231" origin="0.5,0.5"/>
-    <Sprite identifier="ventinside" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="510,520,248,242" origin="0.5,0.5"/>
-    <Sprite identifier="redbluebottles" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="549,516,182,248" origin="0.5,0.5"/>
-    <Sprite identifier="redyellowbottles" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="764,520,243,232" origin="0.5,0.5"/>
-    <Sprite identifier="dorm" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="267,269,231,237" origin="0.5,0.5"/>
-    <Sprite identifier="cleaner" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="34,1,182,242" origin="0.5,0.5"/>
-    <Sprite identifier="note" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="808,768,182,247" origin="0.5,0.5"/>
-    <Sprite identifier="noteopened" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="812,514,182,247" origin="0.5,0.5"/>
-    <Sprite identifier="group" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="37,772,182,247" origin="0.5,0.5"/>
-    <Sprite identifier="engineer" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="553,775,182,248" origin="0.5,0.5"/>
-    <Sprite identifier="crowd" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="1,293,248,174" origin="0.5,0.5"/>
-    <Sprite identifier="clownambush" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="519,280,241,219" origin="0.5,0.5"/>
-    <Sprite identifier="office" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="34,256,182,248" origin="0.5,0.5"/>
-    <Sprite identifier="mines" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="760,772,246,245" origin="0.5,0.5"/>
-    <Sprite identifier="security" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="294,775,182,248" origin="0.5,0.5"/>
-    <Sprite identifier="captain" texture="Content/Map/Outposts/Art/Event_pic1.png" sourcerect="34,0,182,251" origin="0.5,0.5"/>
-    <Sprite identifier="officeinside" texture="Content/Map/Outposts/Art/Event_pic2.png" sourcerect="766,264,245,230" origin="0.5,0.5"/>
-    <Sprite identifier="JacovSubra1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="JacovSubra2" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="JacovSubra3" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="JacovSubra4" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Infiltration1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,256,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Infiltration2" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,256,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Terrorism1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,256,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Terrorism2" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,256,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Stuckinthemiddle1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,512,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Censorship1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,512,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="BadVibration1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,512,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="BadVibration2" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,512,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="BombScare1" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,768,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="BombScare2" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,768,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Stowaway1A" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,768,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Stowaway1B" texture="Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,768,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="Stowaway2" texture="Content/Map/Outposts/Art/Event_pic4.png" sourcerect="0,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="ShockJock" texture="Content/Map/Outposts/Art/Event_pic4.png" sourcerect="256,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="HeartOfGold" texture="Content/Map/Outposts/Art/Event_pic4.png" sourcerect="512,0,256,256" origin="0.5,0.5"/>
-    <Sprite identifier="ManAndHisRaptor" texture="Content/Map/Outposts/Art/Event_pic4.png" sourcerect="768,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="gambler" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="559,6,165,240" origin="0.5,0.5"/>
+    <Sprite identifier="cultist" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="37,507,182,249" origin="0.5,0.5"/>
+    <Sprite identifier="mediator" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="267,5,225,242" origin="0.5,0.5"/>
+    <Sprite identifier="huskinvite" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="555,775,182,248" origin="0.5,0.5"/>
+    <Sprite identifier="map" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="259,521,249,240" origin="0.5,0.5"/>
+    <Sprite identifier="vent" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="507,0,249,252" origin="0.5,0.5"/>
+    <Sprite identifier="brokenterminal" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="768,0,244,251" origin="0.5,0.5"/>
+    <Sprite identifier="ambush" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="261,542,248,174" origin="0.5,0.5"/>
+    <Sprite identifier="trashcan" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="771,15,244,241" origin="0.5,0.5"/>
+    <Sprite identifier="clown" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="544,259,182,249" origin="0.5,0.5"/>
+    <Sprite identifier="unconscious" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="770,321,241,152" origin="0.5,0.5"/>
+    <Sprite identifier="noticeboard" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="263,523,243,231" origin="0.5,0.5"/>
+    <Sprite identifier="ventinside" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="510,520,248,242" origin="0.5,0.5"/>
+    <Sprite identifier="redbluebottles" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="549,516,182,248" origin="0.5,0.5"/>
+    <Sprite identifier="redyellowbottles" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="764,520,243,232" origin="0.5,0.5"/>
+    <Sprite identifier="dorm" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="267,269,231,237" origin="0.5,0.5"/>
+    <Sprite identifier="cleaner" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="34,1,182,242" origin="0.5,0.5"/>
+    <Sprite identifier="note" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="808,768,182,247" origin="0.5,0.5"/>
+    <Sprite identifier="noteopened" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="812,514,182,247" origin="0.5,0.5"/>
+    <Sprite identifier="group" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="37,772,182,247" origin="0.5,0.5"/>
+    <Sprite identifier="engineer" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="553,775,182,248" origin="0.5,0.5"/>
+    <Sprite identifier="crowd" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="1,293,248,174" origin="0.5,0.5"/>
+    <Sprite identifier="clownambush" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="519,280,241,219" origin="0.5,0.5"/>
+    <Sprite identifier="office" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="34,256,182,248" origin="0.5,0.5"/>
+    <Sprite identifier="mines" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="760,772,246,245" origin="0.5,0.5"/>
+    <Sprite identifier="security" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="294,775,182,248" origin="0.5,0.5"/>
+    <Sprite identifier="captain" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic1.png" sourcerect="34,0,182,251" origin="0.5,0.5"/>
+    <Sprite identifier="officeinside" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic2.png" sourcerect="766,264,245,230" origin="0.5,0.5"/>
+    <Sprite identifier="JacovSubra1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="JacovSubra2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="JacovSubra3" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="JacovSubra4" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Infiltration1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,256,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Infiltration2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,256,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Terrorism1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,256,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Terrorism2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,256,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Stuckinthemiddle1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,512,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Censorship1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,512,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="BadVibration1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,512,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="BadVibration2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,512,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="BombScare1" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="0,768,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="BombScare2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="256,768,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Stowaway1A" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="512,768,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Stowaway1B" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic3.png" sourcerect="768,768,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="Stowaway2" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic4.png" sourcerect="0,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="ShockJock" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic4.png" sourcerect="256,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="HeartOfGold" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic4.png" sourcerect="512,0,256,256" origin="0.5,0.5"/>
+    <Sprite identifier="ManAndHisRaptor" texture="%ModDir%/Content/Map/Outposts/Art/Event_pic4.png" sourcerect="768,0,256,256" origin="0.5,0.5"/>
 
   </EventSprites>
   
@@ -141,7 +141,7 @@
       <TriggerAction target1tag="mudraptorspawnvent" target2tag="player" applytotarget1="selectedmudraptorspawnvent" applytotarget2="triggerer_player" radius="50"/>
       <StatusEffectAction targettag="selectedmudraptorspawnvent">
         <StatusEffect>
-          <Sound file="Content/Sounds/Damage/Creak1.ogg" range="500" />
+          <Sound file="%ModDir%/Content/Sounds/Damage/Creak1.ogg" range="500" />
         </StatusEffect>
       </StatusEffectAction>
       <ConversationAction targettag="triggerer_player" text="EventText.soundinthevent.c1" eventsprite="vent">
@@ -157,7 +157,7 @@
               <StatusEffectAction targettag="selectedmudraptorspawnvent">
                 <StatusEffect>
                   <Explosion range="200.0" stun="0.2" force="5.0" flames="false" flash="false" shockwave="false" sparks="false" underwaterbubble="false" />
-                  <Sound file="Content/Sounds/Damage/StructureCrunch2.ogg" range="500" />
+                  <Sound file="%ModDir%/Content/Sounds/Damage/StructureCrunch2.ogg" range="500" />
                 </StatusEffect>
               </StatusEffectAction>
               <ConversationAction targettag="triggerer_player" text="EventText.soundinthevent.o1.c2" />
@@ -173,7 +173,7 @@
               <StatusEffectAction targettag="selectedmudraptorspawnvent">
                 <StatusEffect>
                   <Explosion range="200.0" stun="0.5" force="5.0" flash="false" flames="false" shockwave="false" sparks="false" underwaterbubble="false" />
-                  <Sound file="Content/Items/Door/DoorBreak1.ogg" range="500" />
+                  <Sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" range="500" />
                 </StatusEffect>
               </StatusEffectAction>
             </Success>
@@ -182,7 +182,7 @@
               <StatusEffectAction targettag="selectedmudraptorspawnvent">
                 <StatusEffect>
                   <Explosion range="200.0" stun="0.5" force="5.0" flash="false" flames="false" shockwave="false" sparks="false" underwaterbubble="false" />
-                  <Sound file="Content/Items/Door/DoorBreak1.ogg" range="500" />
+                  <Sound file="%ModDir%/Content/Items/Door/DoorBreak1.ogg" range="500" />
                 </StatusEffect>
               </StatusEffectAction>
               <WaitAction time="1.5" />
@@ -282,7 +282,7 @@
                       <AfflictionAction targettag="triggerer_player" affliction="burn" strength="15" limbtype="lefthand" />
                       <StatusEffectAction targettag="triggerer_player">
                         <StatusEffect>
-                          <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+                          <Sound file="%ModDir%/Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
                           <Explosion range="100.0" stun="0.5" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
                         </StatusEffect>
                       </StatusEffectAction>
@@ -324,7 +324,7 @@
               <ReputationAction targettype="Faction" identifier="coalition" increase="-20" />
               <StatusEffectAction targettag="triggerer_player">
                 <StatusEffect>
-                  <Sound file="Content/Items/Weapons/honk.ogg" range="300" />
+                  <Sound file="%ModDir%/Content/Items/Weapons/honk.ogg" range="300" />
                 </StatusEffect>
               </StatusEffectAction>
               <ConversationAction targettag="triggerer_player" text="EventText.clownrelations1.o1.o2.c1" />
@@ -2463,7 +2463,7 @@
               <StatusEffectAction targettag="triggerer_player">
                 <StatusEffect>
                   <Explosion range="200.0" stun="1.0" force="15.0" flames="true" flash="true" shockwave="true" sparks="true" underwaterbubble="true" />
-                  <Sound file="Content/Sounds/Damage/StructureCrunch2.ogg" range="500" />
+                  <Sound file="%ModDir%/Content/Sounds/Damage/StructureCrunch2.ogg" range="500" />
                 </StatusEffect>
               </StatusEffectAction>
               <ConversationAction text="EventText.explosivemishap.o1.o1.o1.c1" targettag="triggerer_player">

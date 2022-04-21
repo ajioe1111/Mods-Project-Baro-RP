@@ -19,11 +19,11 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="8" />
       <Price storeidentifier="merchantengineering" minavailable="4" multiplier="0.9"/>
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,576,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="256,102,112,54" depth="0.6" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,576,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="256,102,112,54" depth="0.6" />
     <Body width="100" height="45" density="20" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="ToolBelt" texture="Content/Items/Tools/tools.png" sourcerect="256,102,112,54" limb="Torso" inherittexturescale="true" origin="0.5,-0.2" />
+      <sprite name="ToolBelt" texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="256,102,112,54" limb="Torso" inherittexturescale="true" origin="0.5,-0.2" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
     <ItemContainer capacity="6" depth="0.5" >
@@ -51,15 +51,15 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1" />
       <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="8" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" depth="0.6" />
-    <!--<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,0,68,39"/>-->
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" depth="0.6" />
+    <!--<Sprite texture="%ModDir%/Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,0,68,39"/>-->
     <Body width="90" height="60" density="20" />
     <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
         <Affliction identifier="blunttrauma" strength="2" />
         <Affliction identifier="stun" strength="0.6" />
-        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/Smack2.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
@@ -84,8 +84,8 @@
       <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="10" />
       <Price storeidentifier="merchantengineering" minavailable="5" multiplier="0.9"/>
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,3,152,88" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="0,3,152,88" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -110,7 +110,7 @@
       <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
       <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
-      <sound file="Content/Items/Tools/WeldingLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/WeldingLoop.ogg" type="OnUse" range="500.0" loop="true" />
       <!-- when using, the contained welding fuel tank will detoriate (= lose fuel) -->
       <StatusEffect type="OnUse" targettype="Contained" targets="weldingfueltank" Condition="-1.0" />
       <StatusEffect type="OnUse" targettype="Contained" targets="incendiumfueltank" Condition="-0.6" />
@@ -122,16 +122,16 @@
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="UseTarget" Condition="-3.0" />
       <StatusEffect type="OnUse" targettype="Contained" targets="oxygentank" delay="1.0" stackable="false" Condition="-100.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="50" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="stun" strength="4" />
         </Explosion>
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="oxygenitetank" delay="1.0" stackable="false" Condition="-100.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="110" force="6.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="75" />
           <Affliction identifier="stun" strength="4" />
@@ -145,7 +145,7 @@
       <StatusEffect type="OnFailure" targettype="Contained" targets="weldingfueltank" Condition="-3.0" />
       <StatusEffect type="OnFailure" targettype="Contained" targets="incendiumfueltank" Condition="-1.5" />
       <LightComponent LightColor="1.0,0.9,0.7,1.0" Flicker="0.5">
-        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
     </RepairTool>
     <!-- one welding fuel or oxygen tank can be contained inside the welding tool -->
@@ -190,8 +190,8 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,166,159,87" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="0,166,159,87" depth="0.55" origin="0.5,0.5" />
     <Body radius="40" width="60" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="60,0" handle1="-60,-21" handle2="-21,-20" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="10.0" structurefixamount="-0.125" range="150" barrelpos="55,10" combatpriority="30" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="10">
@@ -204,16 +204,16 @@
         <Affliction identifier="burn" amount="1.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="weldingfueltank" delay="1.0" stackable="false" Condition="-100.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="50" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="stun" strength="4" />
         </Explosion>
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="incendiumfueltank" delay="1.0" stackable="false" Condition="-100.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="110" force="6.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="75" />
           <Affliction identifier="stun" strength="4" />
@@ -226,13 +226,13 @@
       <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
-      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="500.0" loop="true" />
       <Fixable identifier="structure" />
       <RequiredSkill identifier="mechanical" level="30" />
       <StatusEffect type="OnFailure" targettype="Contained" targets="oxygentank" Condition="-3.0" />
       <StatusEffect type="OnFailure" targettype="Contained" targets="oxygenitetank" Condition="-1.5" />
       <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
-        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>      
     </RepairTool>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="0,-39" containedspritedepth="0.56" containedstateindicatorstyle="tank">
@@ -279,15 +279,15 @@
       <RequiredItem identifier="ethanol" />
     </Fabricate>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="190" fabricationlimitmin="0" fabricationlimitmax="4" quality="0"/>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="436,71,22,66" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="436,71,22,66" depth="0.55" />
     <Body width="20" height="65" density="9.7" />
     <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
       <StatusEffect type="OnBroken" target="This" delay="1" stackable="false">
         <Conditional HasStatusTag="onfire" />
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="30" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="25" />
           <Affliction identifier="stun" strength="4" />
@@ -324,15 +324,15 @@
       <RequiredItem identifier="incendiumfueltank" mincondition="0.0" usecondition="false"/>
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,901,62,60" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="460,71,24,66" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="256,901,62,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="460,71,24,66" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="65" density="5" />
     <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
       <StatusEffect type="OnBroken" target="This" delay="1" stackable="false">
         <Conditional HasStatusTag="onfire" />
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="30" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="stun" strength="4" />
@@ -363,14 +363,14 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="sodium" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="161,105,64,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" depth="0.55" sourcerect="161,105,64,128" origin="0.5,0.5" />
     <Body width="30" height="100" density="5" />
     <Holdable slots="RightHand+LeftHand" controlpose="false" aimpos="40,-20" handle1="-6,10" handle2="-10,40" msg="ItemMsgPickUpSelect" />
     <RepairTool extinguishamount="60.0" range="500" barrelpos="21,25" repairthroughholes="true" hititems="false">
       <ParticleEmitter particle="extinguisher" velocitymin="1000.0" velocitymax="1650.0" particlespersecond="100" />
       <StatusEffect type="OnUse" targettype="This" Condition="-2.0" />
-      <sound file="Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true" />
     </RepairTool>
     <Propulsion force="-80" usablein="water" particles="bubbles" />
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="1" />
@@ -391,8 +391,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="2" />
       <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="10" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="128,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="373,165,124,73" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="128,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="373,165,124,73" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 25 seconds to break down in a deconstructor and turns into steel and plastic -->
     <Deconstruct time="25">
       <Item identifier="steel" />
@@ -410,11 +410,11 @@
     <!-- the character will hold the item 50 pixels in front of him, with his hands at the handle1 and handle2 positions -->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,-10" handle1="-39,-20" handle2="-10,-10" msg="ItemMsgPickUpSelect" />
     <Sprayer barrelpos="34,8" spread="0" unskilledspread="0" drawhudwhenequipped="true" crosshairscale="0.1" spraystrength="6.0" range="300">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="spray" velocitymin="500.0" velocitymax="650.0" particlespersecond="100" />
       <RequiredItems items="ethanol, paint" type="Contained" msg="ItemMsgPaintOrCleaningAgentRequired" />
-      <sound file="Content/Items/Tools/Sprayer.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/Sprayer.ogg" type="OnUse" range="500.0" loop="true" />
       <!--When containing paint, reduce its condition by 1.5 when used-->
       <StatusEffect type="OnUse" target="Contained" Condition="-1.5">
         <RequiredItem items="paint" type="Contained" />
@@ -460,20 +460,20 @@
       <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="iron" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,189,64,14" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="227,189,64,14" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="12" density="50" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-10,0" holdangle="60" reload="1.0" range="50" combatpriority="7" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="4" itemdamage="2" targetimpulse="2">
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="bleeding" strength="2" />
         <Affliction identifier="stun" strength="0.2" />
-        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
       </Attack>
     </MeleeWeapon>
     <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
@@ -504,14 +504,14 @@
       <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="iron" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="450,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="161,235,64,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="450,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="161,235,64,20" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="15" density="50" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-8,0" holdangle="60" reload="1.0" range="50" combatpriority="8" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="4" itemdamage="2" targetimpulse="5">
         <Affliction identifier="blunttrauma" strength="4" />
         <Affliction identifier="stun" strength="0.2" />
-        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/Smack1.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
     <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
@@ -540,14 +540,14 @@
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="iron" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,225,130,30" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="227,225,130,30" depth="0.55" origin="0.5,0.5" />
     <Body width="120" height="20" density="50" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" aimpos="45,10" handle1="-10,0" handle2="0,5" holdangle="60" reload="1" range="100" combatpriority="20" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="10" itemdamage="5" targetimpulse="10">
         <Affliction identifier="blunttrauma" strength="10" />
         <Affliction identifier="stun" strength="0.5" />
-        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+        <Sound file="%ModDir%/Content/Items/Weapons/Smack2.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
     <aitarget sightrange="1000" soundrange="500" fadeouttime="1" />
@@ -578,8 +578,8 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,163,48,24" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="227,163,48,24" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="22" density="40" />
     <AiTarget sight="500" staticsight="true"/>
     <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-25,0" msg="ItemMsgPickUpSelect" />
@@ -593,24 +593,24 @@
       <StatusEffect type="OnUse" targettype="Contained" Condition="-1.0" disabledeltatime="true">
         <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
       </StatusEffect>
-      <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
+      <sound file="%ModDir%/Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
       <GuiFrame relativesize="0.4,0.4" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
-      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
-      <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
-      <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
-      <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
-      <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
-      <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
-      <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
-      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
-      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
-      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
-      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
-      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
-      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
-      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
-      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+      <PingCircle texture="%ModDir%/Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="%ModDir%/Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="%ModDir%/Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <DirectionalPingBackground texture="%ModDir%/Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+      <DirectionalPingButton index="0" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="1" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="2" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+      <Blip texture="%ModDir%/Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+      <LineSprite texture="%ModDir%/Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+      <icon identifier="outpost" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="mineral" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+      <icon identifier="" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
     </Sonar>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
       <Containable items="mobilebattery">
@@ -641,8 +641,8 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="473,1,29,65" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="832,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="473,1,29,65" depth="0.55" origin="0.5,0.5" />
     <Body width="27" height="60" density="12" />
     <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="0,-15" msg="ItemMsgPickUpSelect" />
     <AiTarget soundrange="50000" sonarlabel="entityname.sonarbeacon" sight="500" staticsight="true"/>
@@ -658,7 +658,7 @@
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
         <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
-        <sound file="Content/Items/Weapons/SonarDecoy.ogg" range="500.0" loop="true" volume="0.25" dontmuffle="true" />
+        <sound file="%ModDir%/Content/Items/Weapons/SonarDecoy.ogg" range="500.0" loop="true" volume="0.25" dontmuffle="true" />
       </StatusEffect>
     </LightComponent>
     <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
@@ -698,8 +698,8 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="lightcomponent" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="293,185,49,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="293,185,49,18" depth="0.55" origin="0.5,0.5" />
     <Body width="48" height="15" density="15" />
     <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,0" handle1="-20,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" targettype="Contained" Condition="-0.2">
@@ -713,7 +713,7 @@
       </StatusEffect>
       <!-- the child LightComponent is only active when the Holdable is active, i.e. when the item is being held -->
       <LightComponent LightColor="0.5,0.5,0.5,1.0" Flicker="0.02" range="1000" powerconsumption="10" IsOn="true">
-        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <LightTexture texture="%ModDir%/Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
       </LightComponent>
     </Holdable>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
@@ -747,14 +747,14 @@
       <RequiredItem identifier="flashpowder" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,205,54,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="227,205,54,18" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="15" density="12" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <LightComponent LightColor="255,0.0,0.0,255" Flicker="0.5" range="600" IsOn="false">
       <StatusEffect type="OnUse" targettype="This" IsOn="true">
         <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        <sound file="%ModDir%/Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" Condition="-0.25" />
       <StatusEffect type="OnActive" targettype="This">
@@ -763,7 +763,7 @@
         <ParticleEmitter particle="FlareBubbles"  particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
-      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
     </LightComponent>
     <AiTarget sightrange="4000"/>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -783,21 +783,21 @@
       <Item identifier="flashpowder" mincondition="0.9" />
       <Item identifier="plastic" mincondition="0.9" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="68,966,54,54" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="283,205,54,18" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="68,966,54,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="283,205,54,18" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="15" density="12" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <LightComponent LightColor="0,162,232,255" Flicker="0.5" range="1000" IsOn="false">
       <StatusEffect type="OnUse" targettype="This" IsOn="true">
         <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        <sound file="%ModDir%/Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" Condition="-0.125">
         <ParticleEmitter particle="flare" particlespersecond="30" />
         <ParticleEmitter particle="bubbles" particlespersecond="30" />
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
-      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
     </LightComponent>
     <AiTarget sightrange="5000"/>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -817,9 +817,9 @@
       <Price storeidentifier="merchantmine" />
       <Price storeidentifier="merchantarmory" multiplier="1.25" minavailable="1" />
     </Price>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,64,64,64" />-->
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,64,64,64" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="154,22,158,77" depth="0.55" origin="0.5,0.5" />
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,64,64,64" />-->
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,64,64,64" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="154,22,158,77" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -835,7 +835,7 @@
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <ParticleEmitter particle="flamethrower" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="1000" velocitymax="1500" highqualitycollisiondetection="true"/>
       <ParticleEmitter particle="flamethrowersmoke" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="500" velocitymax="1000"/>
-      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="500.0" loop="true" />
       <!-- bubbles when usage fails (e.g. in water) -->
       <StatusEffect type="OnFailure" target="UseTarget">
         <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true"/>
@@ -867,7 +867,7 @@
       <!-- if the skill requirement isn't met the welding fuel will be used 50% faster -->
       <StatusEffect type="OnFailure" targettype="Contained" targets="weldingfueltank,incendiumfueltank" Condition="-9.0" />
       <LightComponent LightColor="255,174,121,255" Flicker="0.5" Range="500">
-        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
     </RepairTool>
     <!-- one welding fuel or oxygen tank can be contained inside the welding tool -->
@@ -899,15 +899,15 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,93,149,71" depth="0.7" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="0,93,149,71" depth="0.7" origin="0.5,0.5" />
     <Body width="90" radius="40" density="50" />
     <Holdable slots="RightHand+LeftHand,Any" controlpose="true" aimpos="30,-20" handle1="0,-7" handle2="55, 20" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="71,30" spread="0" unskilledspread="10" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Items/Weapons/SyringeGun1.ogg" type="OnUse" />
-      <Sound file="Content/Items/Weapons/SyringeGun2.ogg" type="OnUse" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SyringeGun1.ogg" type="OnUse" />
+      <Sound file="%ModDir%/Content/Items/Weapons/SyringeGun2.ogg" type="OnUse" />
       <RequiredItems items="syringe" type="Contained" msg="ItemMsgSyringeRequired" />
       <RequiredSkill identifier="weapons" level="15" />
       <RequiredSkill identifier="medical" level="30" />
@@ -944,15 +944,15 @@
       <RequiredItem identifier="aluminium" />
     </Fabricate>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="120" fabricationlimitmin="0" fabricationlimitmax="4" quality="0"/>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="410,71,24,66" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="410,71,24,66" depth="0.55" origin="0.5,0.5" />
     <Body width="22" height="64" density="9.7" />
     <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
       <StatusEffect type="OnBroken" target="This" delay="1" stackable="false">
         <Conditional HasStatusTag="onfire" />
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" range="5000" />
         <Explosion range="250.0" structuredamage="20" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="5" />
           <Affliction identifier="stun" strength="4" />
@@ -986,15 +986,15 @@
       <RequiredItem identifier="liquidoxygenite" />
       <RequiredItem identifier="liquidoxygenite" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="319,901,61,61" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="486,71,24,64" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="319,901,61,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="486,71,24,64" depth="0.55" />
     <Body width="22" height="64" density="9.9" />
     <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
       <StatusEffect type="OnBroken" target="This" delay="1" stackable="false">
         <Conditional HasStatusTag="onfire" />
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall2.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris2.ogg" range="5000" />
         <Explosion range="280.0" structuredamage="40" stun="8" force="3.0" ignorefireeffectsfortags="oxygensource,weldingtoolfuel">
           <Affliction identifier="burn" strength="10" />
         </Explosion>
@@ -1034,8 +1034,8 @@
       <RequiredItem identifier="uranium" />
       <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="false"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="410,1,19,68" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" depth="0.55" sourcerect="410,1,19,68" />
     <Body radius="6" height="55" density="20" />
     <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
       <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
@@ -1082,8 +1082,8 @@
       <RequiredItem identifier="fulgurium" />
       <RequiredItem identifier="fulguriumfuelrod" mincondition="0.0" usecondition="false"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="431,1,19,68" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" depth="0.55" sourcerect="431,1,19,68" />
     <Body radius="6" height="55" density="20" />
     <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" itemrotation="90" drawinventory="false" canbeselected="false" SpawnWithId="nucleargunbolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
@@ -1125,8 +1125,8 @@
       <RequiredItem identifier="thorium" />
       <RequiredItem identifier="thoriumfuelrod" mincondition="0.0" usecondition="false"/>
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="452,1,19,68" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" depth="0.55" sourcerect="452,1,19,68" />
     <Body radius="6" width="21" height="71" density="20" />
     <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect">
       <!--Status effect to cause radiation whenever handling fuel rods. Disabled for now because effect doesn't stop when no longer in contact with fuel rods.-->
@@ -1157,8 +1157,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.2" />
       <Price storeidentifier="merchantmine" multiplier="1.2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="mechanical" level="20" />
@@ -1196,8 +1196,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.2" />
       <Price storeidentifier="merchantmine" multiplier="1.2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="mechanical" level="20" />
@@ -1235,8 +1235,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.2" />
       <Price storeidentifier="merchantmine" multiplier="1.2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="mechanical" level="20" />
@@ -1274,8 +1274,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.2" />
       <Price storeidentifier="merchantmine" multiplier="1.2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="mechanical" level="20" />
@@ -1313,8 +1313,8 @@
       <Price storeidentifier="merchantmilitary" multiplier="1.2" />
       <Price storeidentifier="merchantmine" multiplier="1.2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="379,78,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="mechanical" level="20" />
@@ -1346,8 +1346,8 @@
     <PreferredContainer secondary="wreckarmcab" spawnprobability="0.01"/>
     <PreferredContainer secondary="locker"/>
     <Price baseprice="755" sold="false" canbespecial="false" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,256,62,64" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="263,193,150,87" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="384,256,62,64" />
+    <Sprite texture="%ModDir%/Content/Items/Weapons/weapons_new.png" sourcerect="263,193,150,87" depth="0.55" origin="0.5,0.5" />
     <Deconstruct time="10">
       <Item identifier="steel" />
       <Item identifier="plastic" />
@@ -1360,7 +1360,7 @@
       <ParticleEmitter particle="steamspray" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="1500" velocitymax="2000" highqualitycollisiondetection="true"/>
       <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true"/>
       <!--<ParticleEmitter particle="flamethrowersmoke" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="200" velocitymax="500"/>-->
-      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <sound file="%ModDir%/Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="500.0" loop="true" />
       <!-- bubbles when usage fails (e.g. in water) -->
       <StatusEffect type="OnFailure" target="UseTarget">
         <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true"/>
@@ -1420,15 +1420,15 @@
       <RequiredItem identifier="phosphorus" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="128,384,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="278,157,50,9" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="128,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="278,157,50,9" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="9" density="10" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <LightComponent LightColor="50,255,50,255" Flicker="0.0" range="400" IsOn="false">
-      <sprite texture="Content/Items/Tools/tools.png" sourcerect="275,167,57,18" alpha="1.0" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Items/Tools/tools.png" sourcerect="275,167,57,18" alpha="1.0" origin="0.5,0.5" />
       <StatusEffect type="OnUse" targettype="This" IsOn="true">
         <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        <sound file="%ModDir%/Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
       </StatusEffect>
       <StatusEffect type="OnActive" targettype="This" Condition="-0.0625" />
       <StatusEffect type="OnActive" targettype="This">
@@ -1443,7 +1443,7 @@
   <Item name="" identifier="ruinscanner" description="" category="Equipment" Tags="smallitem,scanner" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true">
     <PreferredContainer primary="divingcab"/>
     <PreferredContainer secondary="locker"/>
-    <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" depth="0.8" sourcerect="966,353,52,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Alien/AlienRuins_Items.png" depth="0.8" sourcerect="966,353,52,62" origin="0.5,0.5" />
     <Body width="48" height="62" density="20" />
     <Holdable selectkey="Action" pickkey="Select" slots="Any,RightHand,LeftHand" msg="itemmsgpickupselect" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
       <!--<RequiredItem items="wrench" type="Equipped" />-->
@@ -1466,24 +1466,24 @@
       <!--<StatusEffect type="OnUse" targettype="Contained" Condition="-1.0" disabledeltatime="true">
         <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
       </StatusEffect>-->
-      <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
+      <sound file="%ModDir%/Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
       <GuiFrame relativesize="0.4,0.4" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
-      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
-      <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
-      <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
-      <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
-      <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
-      <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
-      <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
-      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
-      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
-      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
-      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
-      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
-      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
-      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
-      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+      <PingCircle texture="%ModDir%/Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="%ModDir%/Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="%ModDir%/Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <DirectionalPingBackground texture="%ModDir%/Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+      <DirectionalPingButton index="0" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="1" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="2" texture="%ModDir%/Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+      <Blip texture="%ModDir%/Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+      <LineSprite texture="%ModDir%/Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+      <icon identifier="outpost" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="mineral" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+      <icon identifier="" texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
     </Sonar>
     
   </Item>

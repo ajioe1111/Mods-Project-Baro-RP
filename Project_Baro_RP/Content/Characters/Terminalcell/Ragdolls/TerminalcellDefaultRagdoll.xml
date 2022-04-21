@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Terminalcell" texture="Content/Map/Thalamus/thalamus.png" canentersubmarine="True" canwalk="False" spritesheetorientation="0" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="45" impacttolerance="5" draggable="True" mainlimb="Torso">
+﻿<Ragdoll type="Terminalcell" texture="%ModDir%/Content/Map/Thalamus/thalamus.png" canentersubmarine="True" canwalk="False" spritesheetorientation="0" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="45" impacttolerance="5" draggable="True" mainlimb="Torso">
   <collider radius="35" width="1" name="Main Collider" height="0" />
   <limb id="0" name="Limb 0" type="Torso" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="35" density="10" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" healthindex="0" friction="0.3" restitution="0.05">
     <deformablesprite texture="" sourcerect="288,928,96,96" origin="0.5,0.5" depth="0.1" color="255,255,255,255" deadcolor="150,150,150,200" deadcolortime="0.5">
@@ -7,8 +7,8 @@
       <SpriteDeformation type="inflate" resolution="5,5" frequency="0.5" scale="0.25" blendmode="Add" usemovementsine="True" sineoffset="0" sync="3" typename="inflate" strength="1" maxrotation="90" stopwhenhostisdead="True" onlyinwater="False" />
     </deformablesprite>
     <lightsource color="255,255,255,150" range="10">
-      <lighttexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
-      <deformablesprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="96,928,96,96" origin="0.5,0.5" size="1,1" />
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="%ModDir%/Content/Map/Thalamus/thalamus.png" sourcerect="96,928,96,96" origin="0.5,0.5" size="1,1" />
     </lightsource>
     <attack structuresoundtype="StructureBlunt" context="Water" targettype="Structure" targetlimbtype="None" hitdetectiontype="Distance" afterattack="Pursue" afterattackdelay="0" reverse="False" retreat="False" range="150" damagerange="75" duration="0.3" cooldown="1" secondarycooldown="0" cooldownrandomfactor="0.5" structuredamage="10" itemdamage="5" stun="0" onlyhumans="False" applyforceonlimbs="" force="10" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="1" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="1">
       <StatusEffect type="OnFailure" target="This" disabledeltatime="true">

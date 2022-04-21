@@ -13,18 +13,18 @@
   <bloodemitter particle="blood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
   <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" state="Attack" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" state="Attack" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack3.ogg" state="Attack" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage1.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage2.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage3.ogg" state="Damage" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle1.ogg" state="Idle" range="2000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle2.ogg" state="Idle" range="2000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle3.ogg" state="Idle" range="2000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" state="Idle" range="2000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_death1.ogg" state="Die" range="3000" volume="1" />
-  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_death2.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" state="Attack" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" state="Attack" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_attack3.ogg" state="Attack" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_damage1.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_damage2.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_damage3.ogg" state="Damage" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_idle1.ogg" state="Idle" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_idle2.ogg" state="Idle" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_idle3.ogg" state="Idle" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" state="Idle" range="2000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_death1.ogg" state="Die" range="3000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Mudraptor/MUDRAPTOR_death2.ogg" state="Die" range="3000" volume="1" />
   <Inventory slots="Any" accessiblewhenalive="False" commonness="15">
     <Item identifier="hydroxyapatite" />
   </Inventory>

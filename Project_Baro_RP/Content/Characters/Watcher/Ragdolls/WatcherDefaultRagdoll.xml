@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Watcher" texture="Content/Characters/Watcher/Watcher.png" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" draggable="True" mainlimb="Torso">
+﻿<Ragdoll type="Watcher" texture="%ModDir%/Content/Characters/Watcher/Watcher.png" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" draggable="True" mainlimb="Torso">
   <collider radius="400" width="1" name="Main Collider" height="0" />
   <limb id="0" name="LowerBody" type="Torso" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="350" density="10" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" healthindex="1" friction="0.3" restitution="0.05" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" blinkholdtime="0">
     <deformablesprite texture="" sourcerect="875,1,890,778" origin="0.48085704,0.45932937" depth="0.5" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
@@ -9,8 +9,8 @@
     </deformablesprite>
     <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,burn" damagesound="gore" probabilitymultiplier="1" afflictiontypes="" damageparticle="waterblood" />
     <lightsource color="255,255,255,0" range="0" castshadows="false" scale="1" offset="-155,0">
-      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
-      <deformablesprite texture="Content/Characters/Watcher/Watcher.png" sourcerect="772,644,124,192" alpha="1"/>
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Watcher/Watcher.png" sourcerect="772,644,124,192" alpha="1"/>
     </lightsource>
     <StatusEffect type="OnSevered" target="This">
       <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />

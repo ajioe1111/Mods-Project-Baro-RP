@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Ragdoll type="coelanth" canentersubmarine="false" canwalk="False" texture="Content/Characters/Coelanth/coelanth.png">
+<Ragdoll type="coelanth" canentersubmarine="false" canwalk="False" texture="%ModDir%/Content/Characters/Coelanth/coelanth.png">
 
   <collider radius="50" height="250"/>
     

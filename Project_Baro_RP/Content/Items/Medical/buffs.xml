@@ -32,7 +32,7 @@
       <Item identifier="potassium" copycondition="true" mincondition="0.1" />
       <Item identifier="zinc" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="383,5,33,87" depth="0.6" origin="0.5,0.5" />
     <Body width="30" height="80" density="9" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -80,7 +80,7 @@
       <Item identifier="carbon" copycondition="true" mincondition="0.1" />
       <Item identifier="chlorine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="75,0,37,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -95,7 +95,7 @@
         <ReduceAffliction identifier="chemwithdrawal" amount="3" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="haste" amount="420" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30.0">
@@ -106,7 +106,7 @@
         <ReduceAffliction identifier="chemwithdrawal" amount="3" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="haste" amount="300" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -116,13 +116,13 @@
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" disabledeltatime="true">
         <Affliction identifier="haste" amount="300" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="organdamage" amount="1" />
         <ReduceAffliction identifier="oxygenlow" amount="1.5" />
         <ReduceAffliction identifier="stun" amount="0.75" />
@@ -156,7 +156,7 @@
       <Item identifier="antidama2" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <!-- TODO: sprite -->
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="112,0,38,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -164,7 +164,7 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="35" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="oxygenlow" amount="0.2" />
         <Affliction identifier="chemaddiction" amount="0.25" />
         <ReduceAffliction identifier="chemwithdrawal" amount="1.5" />
@@ -173,7 +173,7 @@
         <Affliction identifier="strengthen" amount="420" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="oxygenlow" amount="0.2" />
         <Affliction identifier="chemaddiction" amount="0.5" />
         <ReduceAffliction identifier="chemwithdrawal" amount="1.5" />
@@ -188,7 +188,7 @@
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" duration="60.0">
         <ReduceAffliction identifier="oxygenlow" amount="0.2" />
@@ -224,7 +224,7 @@
       <Item identifier="meth" copycondition="true" mincondition="0.1" />
       <Item identifier="steroids" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="640,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="149,0,37,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -232,7 +232,7 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="internaldamage" amount="0.2" />
         <ReduceAffliction identifier="oxygenlow" amount="0.25" />
         <ReduceAffliction identifier="stun" amount="0.9" />
@@ -244,7 +244,7 @@
         <Affliction identifier="strengthen" amount="400" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <!-- TODO: should this be any affliction of type damage?-->
         <ReduceAffliction identifier="internaldamage" amount="0.1" />
         <ReduceAffliction identifier="oxygenlow" amount="0.1" />
@@ -264,10 +264,10 @@
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <!-- TODO: should this be any affliction of type damag?-->
         <ReduceAffliction identifier="internaldamage" amount="0.1" />
         <ReduceAffliction identifier="oxygenlow" amount="0.1" />
@@ -300,8 +300,8 @@
       <Price storeidentifier="merchantmine" multiplier="1.1" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="80" fabricationlimitmin="5" fabricationlimitmax="10"/>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,768,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="435,452,30,57" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="256,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Medical/Medicines.png" sourcerect="435,452,30,57" depth="0.6" origin="0.5,0.5" />
     <Body width="30" height="55" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />

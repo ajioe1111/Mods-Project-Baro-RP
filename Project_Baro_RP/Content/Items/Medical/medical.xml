@@ -31,7 +31,7 @@
     </Deconstruct>
     <SuitableTreatment type="bleeding" suitability="30" />
     <SuitableTreatment type="burn" suitability="30" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="310,33,26,42" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -39,14 +39,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="6.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
         <ReduceAffliction type="bleeding" amount="5" />
         <ReduceAffliction type="burn" amount="5" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Limb, This" duration="6.0">
-        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
-        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
         <ReduceAffliction type="bleeding" amount="3.75" />
         <ReduceAffliction type="burn" amount="3.75" />
       </StatusEffect>
@@ -77,7 +77,7 @@
       <Item identifier="organicfiber" mincondition="0.1" outcondition="0.25" />
       <Item identifier="elastin" mincondition="0.1" outcondition="0.5" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="340,33,26,42" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="20" />
     <SuitableTreatment type="bleeding" suitability="50" />
@@ -87,14 +87,14 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="5.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction type="bleeding" amount="10" />
         <ReduceAffliction type="burn" amount="10" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="5.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage2.ogg" range="500" />
         <ReduceAffliction type="bleeding" amount="7.5" />
         <ReduceAffliction type="burn" amount="7.5" />
       </StatusEffect>
@@ -128,7 +128,7 @@
       <Item identifier="antibiotics" copycondition="true" mincondition="0.1" />
       <Item identifier="elastin" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="0,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="312,8,63,22" depth="0.6" origin="0.5,0.5" />
     <Body width="60" height="20" density="20" />
     <SuitableTreatment type="bleeding" suitability="100" />
@@ -139,17 +139,17 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="55" />
       <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="1.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" range="500" />
         <ReduceAffliction type="bleeding" amount="100" />
         <ReduceAffliction type="burn" amount="100" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="1.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" range="500" />
         <ReduceAffliction type="bleeding" amount="75" />
         <ReduceAffliction type="burn" amount="75" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="5.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Bandage1.ogg" range="500" />
         <Affliction identifier="organdamage" amount="1.25" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -193,7 +193,7 @@
       <Item identifier="opium" copycondition="true" mincondition="0.1" />
       <Item identifier="opium" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="0,0,37,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -201,7 +201,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="30" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="10">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="5" />
         <ReduceAffliction type="burn" amount="0.1" />
         <Affliction identifier="oxygenlow" amount="2" />
@@ -210,7 +210,7 @@
         <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="10">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="2.5" />
         <ReduceAffliction type="burn" amount="0.05" />
         <Affliction identifier="oxygenlow" amount="3" />
@@ -257,7 +257,7 @@
       <Item identifier="adrenaline" copycondition="true" mincondition="0.1" />
       <Item identifier="ethanol" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="37,0,38,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -265,7 +265,7 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="72" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="5">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="15" />
         <ReduceAffliction type="burn" amount="1" />
         <Affliction identifier="oxygenlow" amount="6" />
@@ -274,7 +274,7 @@
         <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="5">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="10" />
         <ReduceAffliction type="burn" amount="0.75" />
         <Affliction identifier="oxygenlow" amount="8" />
@@ -321,7 +321,7 @@
       <Item identifier="creepingorange" copycondition="true" mincondition="0.1" />
       <Item identifier="creepingorange" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="228,380,64,64" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -332,7 +332,7 @@
         <Affliction identifier="oxygenlow" amount="25" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="25">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="0.25" />
         <ReduceAffliction type="burn" amount="0.25" />
       </StatusEffect>
@@ -340,7 +340,7 @@
         <Affliction identifier="oxygenlow" amount="25" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="25">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="0.125" />
         <ReduceAffliction type="burn" amount="0.125" />
       </StatusEffect>
@@ -379,7 +379,7 @@
       <Item identifier="chlorine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment type="bloodloss" suitability="30" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,640,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,640,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="0,261,83,46" depth="0.6" origin="0.5,0.5" />
     <Body width="80" height="45" density="11" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -387,11 +387,11 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="10" />
       <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="20">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="bloodloss" amount="2.5" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="20">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="bloodloss" amount="1.75" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -427,7 +427,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment type="bloodloss" suitability="120" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,640,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="896,640,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="1,217,82,44" depth="0.6" origin="0.5,0.5" />
     <Body width="80" height="42" density="11" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -435,11 +435,11 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="bloodloss" amount="8" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character, This" duration="15">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="bloodloss" amount="4" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -473,7 +473,7 @@
       <Item identifier="antidama2" copycondition="true" mincondition="0.1" />
       <Item identifier="liquidoxygenite" copycondition="true" mincondition="0.1" />
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="226,306,38,72" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <SuitableTreatment type="damage" suitability="90" />
@@ -485,14 +485,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="72" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="20">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="burn" amount="0.2" />
         <ReduceAffliction type="damage" amount="3" />
         <ReduceAffliction identifier="oxygenlow" amount="3" />
         <ReduceAffliction identifier="bloodloss" amount="2" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="20">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="burn" amount="0.6" />
         <ReduceAffliction type="damage" amount="2" />
         <ReduceAffliction identifier="oxygenlow" amount="1.5" />
@@ -524,7 +524,7 @@
     <PreferredContainer secondary="locker"/>
     <SuitableTreatment identifier="organdamage" suitability="-30" />
     <SuitableTreatment identifier="oxygenlow" suitability="99" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,640,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,640,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="187,138,38,71" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -532,18 +532,18 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="72" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="organdamage" amount="0.5" />
         <ReduceAffliction identifier="oxygenlow" amount="1.65" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="organdamage" amount="1.5" />
         <ReduceAffliction identifier="oxygenlow" amount="1.65" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="5000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall2.ogg" range="5000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris2.ogg" range="5000" />
         <Explosion range="300.0" structuredamage="100" force="10.0">
           <Affliction identifier="burn" amount="30" />
           <Affliction identifier="stun" amount="2" />
@@ -584,15 +584,15 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="huskinfection" suitability="40" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="897,449,63,63" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="897,449,63,63" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="223,69,38,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <RequiredSkill identifier="medical" level="38" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1">
@@ -648,7 +648,7 @@
       <Item identifier="chlorine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="psychosis" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,640,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,640,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="37,138,38,71" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -656,12 +656,12 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="37" />
       <StatusEffect tags="medical" type="OnUse" target="Limb, This" duration="1">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="psychosis" amount="100" />
         <ReduceAffliction identifier="hallucinating" amount="100" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Limb, This" duration="1">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="psychosis" amount="25" />
         <ReduceAffliction identifier="hallucinating" amount="25" />
       </StatusEffect>
@@ -696,7 +696,7 @@
     <SuitableTreatment identifier="opiateaddiction" suitability="60" />
     <SuitableTreatment identifier="opiatewithdrawal" suitability="60" />
     <SuitableTreatment identifier="opiateoverdose" suitability="60" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,448,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="704,448,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="186,0,38,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -704,13 +704,13 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="39" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="opiatewithdrawal" amount="2.0" />
         <ReduceAffliction identifier="opiateaddiction" amount="2.0" />
         <ReduceAffliction identifier="opiateoverdose" amount="2.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="opiatewithdrawal" amount="1.0" />
         <ReduceAffliction identifier="opiateaddiction" amount="1.0" />
         <ReduceAffliction identifier="opiateoverdose" amount="1.0" />
@@ -750,7 +750,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="morbusinepoisoning" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="64,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="190,378,37,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -758,11 +758,11 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="5"/>
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="morbusinepoisoning" amount="100.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="morbusinepoisoning" amount="1.0" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -799,7 +799,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="cyanidepoisoning" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="192,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="153,306,36,71" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -807,11 +807,11 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="5" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="cyanidepoisoning" amount="100.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="cyanidepoisoning" amount="1.0" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -848,7 +848,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="sufforinpoisoning" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="75,68,38,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -856,11 +856,11 @@
       <RequiredSkill identifier="medical" level="5" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="sufforinpoisoning" amount="100.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="sufforinpoisoning" amount="1.0" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -897,7 +897,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="deliriuminepoisoning" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,703,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,703,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="225,210,37,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -906,7 +906,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <!--Heal deliriumine poisoning instantly, slowly lower psychosis-->
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="deliriuminepoisoning" amount="100.0" />
         <ReduceAffliction identifier="psychosis" amount="13.2" />
       </StatusEffect>
@@ -914,7 +914,7 @@
         <ReduceAffliction identifier="psychosis" amount="0.33" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="deliriuminepoisoning" amount="25.0" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -951,7 +951,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="radiationsickness" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="128,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="149,142,37,67" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -959,11 +959,11 @@
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="5" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="radiationsickness" amount="100.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="radiationsickness" amount="25.0" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -998,7 +998,7 @@
       <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
     </Deconstruct>
     <SuitableTreatment identifier="paralysis" suitability="100" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="960,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="150,210,39,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
@@ -1006,12 +1006,12 @@
       <RequiredSkill identifier="medical" level="64" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="1.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="paralysisresistance" amount="800" />
         <Affliction identifier="psychosis" amount="5" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="paralysisresistance" amount="6.5" />
         <Affliction identifier="psychosis" amount="0.75" />
       </StatusEffect>
@@ -1041,8 +1041,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="8" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="772,771,52,59" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="465,452,47,60" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="772,771,52,59" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Medical/Medicines.png" sourcerect="465,452,47,60" depth="0.6" origin="0.5,0.5" />
     <Body width="45" height="60" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
@@ -1074,15 +1074,15 @@
     <SuitableTreatment identifier="opiateoverdose" suitability="-8.75" />
     <SuitableTreatment identifier="oxygenlow" suitability="-17.5" />
     <SuitableTreatment identifier="opiatewithdrawal" suitability="15" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,768,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="406,452,29,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="512,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Medical/Medicines.png" sourcerect="406,452,29,58" depth="0.6" origin="0.5,0.5" />
     <Body width="30" height="58" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <RequiredSkill identifier="medical" level="15" />
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="5">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="damage" amount="4" />
         <ReduceAffliction type="burn" amount="1" />
         <Affliction identifier="opiateaddiction" amount="1" />
@@ -1091,7 +1091,7 @@
         <ReduceAffliction identifier="opiatewithdrawal" amount="3" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="5">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="opiatewithdrawal" amount="3" />
         <Affliction identifier="oxygenlow" amount="6" />
         <Affliction identifier="opiateoverdose" amount="3" />
@@ -1123,7 +1123,7 @@
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" />
     </Price>
     <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="60" fabricationlimitmin="5" fabricationlimitmax="10"/>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,704,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="576,704,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="263,142,36,68" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <SuitableTreatment type="damage" suitability="-33" />
@@ -1133,7 +1133,7 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Conditional huskinfection="lt 100.0" />
         <ReduceAffliction identifier="huskinfection" amount="0.5" />
       </StatusEffect>
@@ -1141,7 +1141,7 @@
         <Affliction identifier="organdamage" amount="0.55" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="huskinfectionresistance" amount="600" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
@@ -1152,7 +1152,7 @@
         <Affliction identifier="organdamage" amount="1.0" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <Affliction identifier="huskinfectionresistance" amount="300" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -1177,7 +1177,7 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="15" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,640,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,640,64,64" origin="0.5,0.5" />
     <Sprite texture="Medicines.png" sourcerect="112,139,37,70" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="70" density="20" />
     <SuitableTreatment type="poison" suitability="10" />
@@ -1186,11 +1186,11 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="30">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction type="poison" amount="1" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="30">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
         <ReduceAffliction identifier="poison" amount="0.5" />
       </StatusEffect>
       <!-- Remove the item when fully used -->
@@ -1216,12 +1216,12 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,768,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="379,452,27,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="384,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Medical/Medicines.png" sourcerect="379,452,27,58" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="55" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect tags="medical" type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <!-- TODO: some effect for adrenaline -->
       <!-- Remove the item when fully used -->
@@ -1246,12 +1246,12 @@
       <Price storeidentifier="merchantmine" multiplier="1.1" sold="false"/>
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
     </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,768,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="346,452,33,60" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Medical/Medicines.png" sourcerect="346,452,33,60" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="60" density="15" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Sound file="%ModDir%/Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="poison,acid" type="OnUse" target="Character" duration="5.0">
         <Affliction identifier="burn" amount="3" />

@@ -17,7 +17,7 @@
       <Replace tag="[skilltotal]" value="100" color="gui.orange"/>
       <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
     <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
       <Conditions>
         <AbilityConditionSkill skillidentifier="weapons"/>
@@ -49,7 +49,7 @@
       <Replace tag="[damage]" value="40" color="gui.green"/>
       <Replace tag="[duration]" value="2.5" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="2,0" sheetelementsize="128,128"/>
     <AbilityGroupInterval effectdelay="0.75">
       <Conditions>
         <AbilityConditionRagdolled/>
@@ -80,7 +80,7 @@
       <Replace tag="[seconds]" value="8" color="gui.green"/>
       <Replace tag="[damage]" value="40" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
     <AbilityGroupInterval>
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
@@ -122,7 +122,7 @@
       <Replace tag="[amount]" value="50" color="gui.green"/>
       <Replace tag="[affliction]" value="afflictionname.chemaddiction" color="gui.orange"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,1" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="20"/>
@@ -138,7 +138,7 @@
       <Replace tag="[stunresistance]" value="50" color="gui.green"/>
       <Replace tag="[skillgainprobability]" value="4" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
     <AbilityGroupInterval>
       <Conditions>
         <AbilityConditionHasAffliction afflictionidentifier="drunk"/>
@@ -172,7 +172,7 @@
     <Description tag="talentdescription.bountyhunter">
       <Replace tag="[percentage]" value="25" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,0" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
       <Conditions>
         <AbilityConditionCharacter targettypes="Monster"/>
@@ -192,7 +192,7 @@
     <Description tag="talentdescription.specialsaleitemincrease">
       <Replace tag="[itemcount]" value="4" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="7,0" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
       <Conditions>
         <AbilityConditionLocation hasoutpost="true"/>
@@ -216,7 +216,7 @@
     <Description tag="talentdescription.payextra.monsterandnest">
       <Replace tag="[extra]" value="15" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="AfterSubmarineAttacked">
       <Conditions>
         <AbilityConditionEvasiveManeuvers/>
@@ -256,7 +256,7 @@
       <Replace tag="[skillboost]" value="25" color="gui.green"/>
       <Replace tag="[duration]" value="60" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,1" sheetelementsize="128,128"/>
     <AbilityGroupInterval interval="1">
       <Conditions>
         <AbilityConditionShipFlooded floodpercentage="0.5"/>
@@ -277,7 +277,7 @@
     <Description tag="talentdescription.trustedcaptain">
       <Replace tag="[selfxpgain]" value="275" color="gui.green"/>      
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
       <Abilities>
         <CharacterAbilityPutItem itemidentifier="coalitioncommendation"/>
@@ -304,7 +304,7 @@
     <Description tag="talentdescription.payextra.cargoandescort">
       <Replace tag="[extra]" value="25" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="0,4" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
       <Abilities>
         <CharacterAbilityPutItem itemidentifier="coalitioncommendation"/>
@@ -332,7 +332,7 @@
     <Description tag="talentdescription.esteemedcaptain">
       <Replace tag="[selfxpgain]" value="750" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="2,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.extramission"/>
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
       <Abilities>
@@ -365,7 +365,7 @@
       <Replace tag="[physicalresistance]" value="25" color="gui.green"/>
       <Replace tag="[skillincrease]" value="10" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128"/>
     <Description tag="talentdescription.commanderreminder"/>
     <AbilityGroupInterval>
       <Abilities>
@@ -394,7 +394,7 @@
       <Replace tag="[amount]" value="35" color="gui.green"/>
       <Replace tag="[stattype]" value="stattypenames.skillgainspeed" color="gui.orange"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="3,2" sheetelementsize="128,128"/>
     <AbilityGroupInterval>
       <Abilities>
         <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
@@ -426,7 +426,7 @@
       <Replace tag="[amount]" value="20" color="gui.green"/>
       <Replace tag="[stattype]" value="stattypenames.turretattackspeed" color="gui.orange"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,2" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="2,2" sheetelementsize="128,128"/>
     <AbilityGroupInterval>
       <Abilities>
         <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
@@ -448,7 +448,7 @@
     </Description>
     <Description tag="talentdescription.bonuslostondeath"/>
     <Description tag="talentdescription.assistantsdontcount"/>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="4,1" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
       <Abilities>
         <CharacterAbilityGivePermanentStat statidentifier="trustbuilding" stattype="MaximumHealthMultiplier" value="0.025" maxvalue="0.25" targetallies="true" removeondeath="true"/>
@@ -470,7 +470,7 @@
       <Replace tag="[extramoney]" value="20" color="gui.green"/>
     </Description>
     <Description tag="talentdescription.assistantsdontcount"/>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,1" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="5,1" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnAllyGainMissionExperience">
       <Conditions>
         <AbilityConditionHasDifferentJobs amount="5"/>
@@ -494,7 +494,7 @@
   <Talent identifier="allhandsondeck">
     <Description tag="talentdescription.allhandsondeck"/>
     <Description tag="talentdescription.extramission"/>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,4" sheetelementsize="128,128"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="1,4" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ExtraMissionCount" value="1"/>

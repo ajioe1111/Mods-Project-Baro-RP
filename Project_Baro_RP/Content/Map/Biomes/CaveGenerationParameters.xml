@@ -12,12 +12,12 @@
     levelobjectamount="200"
     destructiblewallratio="0.1">
     <WallEdge
-      texture="Content/Map/Biomes/IceCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/IceCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <Wall
-      texture="Content/Map/Biomes/IceCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/IceCave/LevelWall.png"
       premultiplyalpha="false" />
   </Cave>
   <Cave
@@ -32,12 +32,12 @@
     levelobjectamount="200"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/IceCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/IceCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/IceCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/IceCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
      leveltype="coldcavernsbasic"
@@ -70,12 +70,12 @@
     levelobjectamount="200"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/CrystalCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/CrystalCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/CrystalCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/CrystalCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
       leveltype="coldcavernsbasic"
@@ -111,12 +111,12 @@
     levelobjectamount="200"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/RockCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/RockCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/RockCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/RockCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
       leveltype="coldcavernsbasic"
@@ -149,12 +149,12 @@
     levelobjectamount="400"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/MushroomCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/MushroomCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/MushroomCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/MushroomCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
       leveltype="coldcavernsbasic"
@@ -190,12 +190,12 @@
     levelobjectamount="400"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/ForestCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/ForestCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/ForestCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/ForestCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
       leveltype="coldcavernsbasic"
@@ -231,12 +231,12 @@
     levelobjectamount="800"
     destructiblewallratio="0.1">
     <Wall
-      texture="Content/Map/Biomes/BioluminescentCave/LevelWall.png"
+      texture="%ModDir%/Content/Map/Biomes/BioluminescentCave/LevelWall.png"
       premultiplyalpha="false" />
     <WallEdge
-      texture="Content/Map/Biomes/BioluminescentCave/LevelWallEdge.png" />
+      texture="%ModDir%/Content/Map/Biomes/BioluminescentCave/LevelWallEdge.png" />
     <WallDestroyed
-      texture="Content/Map/Biomes/DestructibleWall.png"
+      texture="%ModDir%/Content/Map/Biomes/DestructibleWall.png"
       premultiplyalpha="false" />
     <overridecommonness
       leveltype="coldcavernsbasic"

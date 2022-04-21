@@ -21,15 +21,15 @@
     <Limb />
     <Limb />
   </health>
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_idle1.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_idle2.ogg" state="Idle" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_attack1.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_attack2.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_attack3.ogg" state="Attack" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_damage1.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_damage2.ogg" state="Damage" range="20000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_death1.ogg" state="Die" range="30000" volume="1" />
-  <sound file="Content/Characters/Charybdis/CHARYBDIS_death2.ogg" state="Die" range="30000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_idle1.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_idle2.ogg" state="Idle" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_attack1.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_attack2.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_attack3.ogg" state="Attack" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_damage1.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_damage2.ogg" state="Damage" range="20000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_death1.ogg" state="Die" range="30000" volume="1" />
+  <sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_death2.ogg" state="Die" range="30000" volume="1" />
   <ai combatstrength="8000" sight="3" hearing="7" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="False" avoidgunfire="False" avoidtime="3" minfleetime="20" aggressiveboarding="False" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False" avoidabyss="False" stayinabyss="True" aggressioncumulation="25" startaggression="0" maxaggression="100" WallTargetingMethod="Heading,Steering">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" ignoreifnotinsamesub="True" />
     <target tag="provocative" state="Attack" priority="200" ignoreifnotinsamesub="True"/>
@@ -42,10 +42,10 @@
     <target tag="leucocyte" state="Idle" priority="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
   </ai>
   <StatusEffect type="OnActive" target="this">
-    <Sound file="Content/Sounds/MONSTER_farLayer.ogg" loop="true" range="25000" dontmuffle="true" volume="0.5" />
+    <Sound file="%ModDir%/Content/Sounds/MONSTER_farLayer.ogg" loop="true" range="25000" dontmuffle="true" volume="0.5" />
   </StatusEffect>
   <!-- Requires a separate status effect, because there can only be one sound channel per status effect -->
   <StatusEffect type="OnActive" target="this">
-    <Sound file="Content/Characters/Charybdis/CHARYBDIS_IdleLoop.ogg" loop="true" range="20000" dontmuffle="true" />
+    <Sound file="%ModDir%/Content/Characters/Charybdis/CHARYBDIS_IdleLoop.ogg" loop="true" range="20000" dontmuffle="true" />
   </StatusEffect>
 </Character>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="" identifier="creepingorange" category="Material" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5.5" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,649,43,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,649,43,55" origin="0.5,0.5" />
     <Body radius="30" density="5" />
     <Price baseprice="20" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -33,7 +33,7 @@
   </Item>
   
   <Item name="" identifier="tobaccobud" category="Material" maxstacksize="8" Tags="smallitem,plantitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="8" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="904,646,56,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="904,646,56,61" origin="0.5,0.5" />
     <Body radius="30" density="5" />
     <Price baseprice="40" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -62,7 +62,7 @@
   </Item>
   
   <Item name="" identifier="badraptorbane" descriptionidentifier="raptorbane" category="Material" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="1" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="907,838,44,50" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="907,838,44,50" origin="0.5,0.5" />
     <Body radius="30" density="7" />
     <Deconstruct time="35">
       <Item identifier="carbon" copycondition="true" mincondition="0.1" />
@@ -84,7 +84,7 @@
   </Item>
   
   <Item name="" identifier="saltbulb" category="Material" maxstacksize="8" Tags="smallitem,plantitem,explodesinwater" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="968,712,49,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="968,712,49,55" origin="0.5,0.5" />
     <Body radius="30" density="5" />
     <Price baseprice="65" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -100,8 +100,8 @@
     <Holdable canBeCombined="false" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Throwable characterusable="true" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="InWater" target="This" Condition="0.0" setvalue="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
         <Explosion range="250.0" structuredamage="10" force="5.0">
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="stun" strength="3" />
@@ -121,7 +121,7 @@
   </Item>
 
   <Item name="" identifier="raptorbane" category="Material" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,777,44,50" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,777,44,50" origin="0.5,0.5" />
     <Body radius="30" density="5" />
     <Price baseprice="40" sold="false">
       <Price storeidentifier="merchantoutpost" />
@@ -151,7 +151,7 @@
   </Item>
   
   <Item name="" identifier="badcreepingorange" descriptionidentifier="creepingorange" category="Material" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="1" allowasextracargo="true">
-    <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,835,43,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Items/Gardening/GrowablePlants_Temp.png" depth="0.2" sourcerect="971,835,43,55" origin="0.5,0.5" />
     <Body radius="30" density="7" />
     <Deconstruct time="35">
       <Item identifier="carbon" copycondition="true" mincondition="0.1" />
@@ -160,8 +160,8 @@
     <Holdable canBeCombined="false" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Throwable characterusable="true" canBeCombined="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
-        <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" selectionmode="All" range="8000" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" selectionmode="All" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium2.ogg" selectionmode="All" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" selectionmode="All" range="8000" />
         <Explosion range="50.0" structuredamage="100" itemdamage="50" force="10.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.5">
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="lacerations" strength="10" />

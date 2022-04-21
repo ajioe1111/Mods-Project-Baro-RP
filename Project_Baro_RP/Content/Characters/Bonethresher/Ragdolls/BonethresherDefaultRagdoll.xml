@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Bonethresher" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="75" draggable="True" mainlimb="Head" texture="Content/Characters/Tigerthresher/Tigerthresher.png">
+﻿<Ragdoll type="Bonethresher" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="75" draggable="True" mainlimb="Head" texture="%ModDir%/Content/Characters/Tigerthresher/Tigerthresher.png">
   <collider radius="60" width="0" name="Main Collider" height="0" />
   <limb id="0" name="Head" type="Head" height="0" width="70" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="50" stepoffset="0,0" radius="30" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" healthindex="0" friction="0.3" restitution="0.05" angulardamping="7" mouthpos="0.5,-0.5" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="10" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear">
     <deformablesprite sourcerect="762,236,146,95" origin="0.5451591,0.4649931" depth="0" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
@@ -12,8 +12,8 @@
     <damagemodifier damagemultiplier="1.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations" afflictiontypes="burn" damagesound="LimbSlash" probabilitymultiplier="1" damageparticle="" />
     <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bitewounds" afflictiontypes="" damagesound="LimbSlash" probabilitymultiplier="1" damageparticle="" />
     <lightsource color="255,255,255,0" range="0" scale="1" offset="6,14" castshadows="false">
-      <lighttexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
-      <deformablesprite texture="Content/Characters/Watcher/gazerage.png" sourcerect="0,154,146,56" alpha="0.6"/>
+      <lighttexture texture="%ModDir%/Content/Lights/pointlight_bright.png" origin="0.5,0.5" size="1,1" />
+      <deformablesprite texture="%ModDir%/Content/Characters/Watcher/gazerage.png" sourcerect="0,154,146,56" alpha="0.6"/>
       <conditional watchersgaze="gt 0" />
     </lightsource>
   </limb>

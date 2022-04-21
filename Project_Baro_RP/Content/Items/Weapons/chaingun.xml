@@ -5,33 +5,33 @@
         description=""
         identifier="chaingun" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
     <Sprite texture="Loaders.png" depth="0.01" sourcerect="0,0,256,256" canflipy="false" />
-    <MinimapIcon name="Command_Weapons_Chaingun" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,896,128,128" />
+    <MinimapIcon name="Command_Weapons_Chaingun" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,896,128,128" />
     <SwappableItem price="7500" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
-      <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="512,0,256,389" />
+      <SchematicSprite texture="%ModDir%/Content/UI/WeaponUI.png" sourcerect="512,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="chaingunloader" />
     </SwappableItem>
-    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="387,810,106,65" origin="0.5,0.5" />
+    <UpgradePreviewSprite scale="3.0" texture="%ModDir%/Content/UI/WeaponUI.png" sourcerect="387,810,106,65" origin="0.5,0.5" />
     <StaticBody width="80" radius="80" />
     <Turret spinningbarreldistance="45.0" firingrotationspeedmodifier="0.6" usefiringoffsetformuzzleflash="true" maxchargetime="1.0" canbeselected="false" firingoffset="-10,-370" characterusable="false" linkable="true" barrelpos="128,88" rotationlimits="180,360" powerconsumption="400.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.1" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="1">
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot1.ogg" type="OnUse" range="10000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot2.ogg" type="OnUse" range="10000" />
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot3.ogg" type="OnUse" range="10000" />
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot4.ogg" type="OnUse" range="10000" />
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot5.ogg" type="OnUse" range="10000" />
-      <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot6.ogg" type="OnUse" range="10000" />
-      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="575,914,66,32" origin="0.227, 0.531" />
-      <RailSprite texture="Content/Items/Weapons/Loaders.png" depth="0.011" sourcerect="256,0,212,512" origin="0.425, 0.875" />
-      <SpinningBarrelSprite spriteamount="5" texture="Content/Items/Weapons/Loaders.png" depth="0.013" sourcerect="468,0,46,296" origin="0.1, 1.4" />
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
-      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
-      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
-      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
-      <ChargeSound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="10000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot1.ogg" type="OnUse" range="10000" selectionmode="Random" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot2.ogg" type="OnUse" range="10000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot3.ogg" type="OnUse" range="10000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot4.ogg" type="OnUse" range="10000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot5.ogg" type="OnUse" range="10000" />
+      <Sound file="%ModDir%/Content/Items/Weapons/WEAPONS_chainGunShot6.ogg" type="OnUse" range="10000" />
+      <WeaponIndicator texture="%ModDir%/Content/UI/WeaponUI.png" sourcerect="575,914,66,32" origin="0.227, 0.531" />
+      <RailSprite texture="%ModDir%/Content/Items/Weapons/Loaders.png" depth="0.011" sourcerect="256,0,212,512" origin="0.425, 0.875" />
+      <SpinningBarrelSprite spriteamount="5" texture="%ModDir%/Content/Items/Weapons/Loaders.png" depth="0.013" sourcerect="468,0,46,296" origin="0.1, 1.4" />
+      <Crosshair texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="%ModDir%/Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="%ModDir%/Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="%ModDir%/Content/Items/Weapons/RailgunStop.ogg" />
+      <ChargeSound file="%ModDir%/Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="10000" />
       <RequiredSkill identifier="weapons" level="50" />
       <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
-        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+        <LightTexture texture="%ModDir%/Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
       </LightComponent>
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" distancemin="-50" distancemax="-50" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemin="2" scalemax="3"/>
@@ -65,7 +65,7 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
@@ -170,8 +170,8 @@
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="chaingunammobox" mincondition="0.0" maxcondition="0.0" usecondition="false"/>
     </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="669,681,117,89" origin="0.5,0.5" />
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="%ModDir%/Content/Items/Containers/containers.png" depth="0.54" sourcerect="669,681,117,89" origin="0.5,0.5" />
     <Body width="115" height="88" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -212,8 +212,8 @@
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="chaingunammoboxphysicorium" mincondition="0.0" maxcondition="0.0" usecondition="false"/>
     </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="788,681,117,89" origin="0.5,0.5" />
+    <!--<InventoryIcon texture="%ModDir%/Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="%ModDir%/Content/Items/Containers/containers.png" depth="0.54" sourcerect="788,681,117,89" origin="0.5,0.5" />
     <Body width="115" height="88" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">

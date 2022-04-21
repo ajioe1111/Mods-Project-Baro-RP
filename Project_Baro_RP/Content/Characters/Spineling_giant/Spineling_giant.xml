@@ -1,6 +1,6 @@
 ﻿<Character speciesname="Spineling_giant" humanoid="False" husk="False" needsair="False" needswater="True" canspeak="False" noise="100" visibility="100" blooddecal="blackblood" group="spineling" eatingspeed="20" displayname="" hasinfo="False" usehuskappendage="False" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0" caneat="False" caninteract="False" usebosshealthbar="False" bleedparticlemultiplier="1" usepathfinding="True" hideinthermalgoggles="False" distantsonarrange="0" disabledistance="25000" soundinterval="10">
-  <ragdolls folder="Content/Characters/Spineling_giant/Ragdolls/" />
-  <animations folder="Content/Characters/Spineling_giant/Animations/" />
+  <ragdolls folder="%ModDir%/Content/Characters/Spineling_giant/Ragdolls/" />
+  <animations folder="%ModDir%/Content/Characters/Spineling_giant/Animations/" />
   <health vitality="500" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" stunimmunity="True" applyafflictioncolors="False" />
   <ai combatstrength="600" sight="2" hearing="2" aggressionhurt="200" aggressiongreed="0" fleehealththreshold="0" attackwhenprovoked="False" aggressiveboarding="False" targetouterwalls="True" avoidgunfire="True" enforceaggressivebehaviorformissions="True" randomattack="False" avoidtime="5" minfleetime="20" canopendoors="False" keepdoorsclosed="False" avoidabyss="True" stayinabyss="False" patrolflooded="False" patroldry="False" startaggression="0" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Target" damagethreshold="80">
     <target tag="decoy" state="Attack" priority="500" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" attackpattern="Sweep" sweepdistance="1500" sweepstrength="10" sweepspeed="0.5" ignoreifnotinsamesub="True" ignoreinside="False" ignoreoutside="False" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
@@ -17,20 +17,20 @@
     <target tag="sonar" state="Attack" priority="5" attackpattern="Sweep" sweepdistance="1500" sweepstrength="5"/>
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.25" />
   </ai>
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle1.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle2.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle3.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle4.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage1.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage2.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage3.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage4.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage5.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage6.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead1.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead2.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead3.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead4.ogg" state="Die" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_idle1.ogg" state="Idle" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_idle2.ogg" state="Idle" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_idle3.ogg" state="Idle" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_idle4.ogg" state="Idle" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage1.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage2.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage3.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage4.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage5.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_damage6.ogg" state="Damage" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_dead1.ogg" state="Die" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_dead2.ogg" state="Die" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_dead3.ogg" state="Die" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Content/Characters/Spineling_giant/SPINELINGGIANT_dead4.ogg" state="Die" range="6000" volume="1" gender="None" />
   <Inventory slots="Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
     <Item identifier="alienblood" />
     <Item identifier="alienblood" />

@@ -2,64 +2,64 @@
 <Items>
   <!--Misc Signs and Decorations-->
   <Item name="" identifier="windowframecorner" nameidentifier="shop_decoration" width="229" height="232" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MiningMachine.png" sourcerect="709,728,229,232" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MiningMachine.png" sourcerect="709,728,229,232" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_weaponstoresign" nameidentifier="sign" width="137" height="159" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="297,502,137,159" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="297,502,137,159" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_medicalstoresign" nameidentifier="sign" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="172,735,242,63" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="172,735,242,63" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_electricalstoresign" nameidentifier="sign" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="172,815,166,188" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="172,815,166,188" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10" lightcolor="213,213,185,255  " flicker="0.3" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="842,809,166,188" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="842,809,166,188" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_storesign1.png" nameidentifier="opdeco_adposter" width="326" height="165" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,2,326,165" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,2,326,165" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="70" lightcolor="213,213,185,120" flicker="0.3" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false"/>
   </Item>
   <Item name="" identifier="op_shipyardsign2.png" nameidentifier="opdeco_adposter" width="310" height="139" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,171,310,139" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,171,310,139" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="70" lightcolor="213,213,185,120" flicker="0.3" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false"/>
   </Item>
   <Item name="" identifier="op_shipyardsign1.png" nameidentifier="opdeco_adposter" width="185" height="191" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="316,173,185,191" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="316,173,185,191" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10" lightcolor="213,213,185,255  " flicker="0.3" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="332,2,163,167" depth="0.97" premultiplyalpha="false" origin="0.5,0.52" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="332,2,163,167" depth="0.97" premultiplyalpha="false" origin="0.5,0.52" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_jobgraffiti.png" nameidentifier="graffiti1" width="196" height="126" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,314,196,126" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,314,196,126" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_storesign2.png" nameidentifier="sign" width="156" height="87" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="202,368,156,87" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="202,368,156,87" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_directionsign.png" nameidentifier="sign" width="142" height="122" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="362,368,142,122" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="362,368,142,122" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_hiringsign.png" nameidentifier="sign" width="155" height="193" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,444,155,193" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,444,155,193" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="70" lightcolor="213,213,185,120" flicker="0.3" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false"/>
   </Item>
   <!-->Item name="" identifier="op_lamppost.png" width="149" height="347" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,641,149,347" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="2,641,149,347" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="70" lightcolor="213,213,185,120" flicker="0.3" powerconsumption="0" IsOn="true" offset="-100,0" castshadows="false" allowingameediting="false"/>
   </Item>
   </!-->
   <Item name="" identifier="op_circusposter.png" width="127" height="174" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="161,459,127,174" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="161,459,127,174" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_plaque.png" width="120" height="85" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/SignAssets.png" sourcerect="161,637,120,85" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/SignAssets.png" sourcerect="161,637,120,85" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="streetlight" nameidentifier="streetlight" width="56" height="55" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="757,1,56,55" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="757,1,56,55" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="250.0" lightcolor="255,255,255,111" IsOn="true" castshadows="true" allowingameediting="false" powerconsumption="5">
-      <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="815,1,56,55" depth="0.97" premultiplyalpha="false" origin="0.5,0.52" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="815,1,56,55" depth="0.97" premultiplyalpha="false" origin="0.5,0.52" />
     </LightComponent>
-    <DecorativeSprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" depth="0.961" sourcerect="775,56,22,344" offset="0,-172"/>
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" depth="0.961" sourcerect="775,56,22,344" offset="0,-172"/>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
       <RequiredItem items="screwdriver" type="Equipped" />
@@ -70,322 +70,322 @@
     </ConnectionPanel>
   </Item>
   <Item name="" identifier="shop_decoration01" nameidentifier="shop_decoration" width="60" height="82" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="743,262,60,82" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="743,262,60,82" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration02" nameidentifier="shop_decoration" width="71" height="108" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="651,302,71,108" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="651,302,71,108" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration03" nameidentifier="shop_decoration" width="84" height="52" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="729,360,84,52" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="729,360,84,52" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration04" nameidentifier="shop_decoration" width="50" height="90" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="659,417,50,90" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="659,417,50,90" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration05" nameidentifier="shop_decoration" width="88" height="86" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="729,417,88,86" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="729,417,88,86" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration06" nameidentifier="shop_decoration" width="37" height="133" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="833,374,37,133" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="833,374,37,133" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration07" nameidentifier="shop_decoration" width="42" height="84" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="877,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="877,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration08" nameidentifier="shop_decoration" width="42" height="84" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="928,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="928,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration09" nameidentifier="shop_decoration" width="42" height="84" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="978,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="978,369,42,84" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration10" nameidentifier="shop_decoration" width="43" height="44" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="977,463,43,44" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ArmoryColonyModule.png" sourcerect="977,463,43,44" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration11" nameidentifier="shop_decoration" width="96" height="48" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="926,1,96,48" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="926,1,96,48" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration12" nameidentifier="shop_decoration" width="126" height="88" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="827,83,126,88" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="827,83,126,88" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration13" nameidentifier="shop_decoration" width="61" height="94" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="963,59,61,94" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="963,59,61,94" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration14" nameidentifier="shop_decoration" width="63" height="112" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="872,182,63,112" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="872,182,63,112" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration15" nameidentifier="shop_decoration" width="70" height="76" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="952,182,70,76" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="952,182,70,76" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration16" nameidentifier="shop_decoration" width="31" height="43" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="984,272,31,43" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="984,272,31,43" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration17" nameidentifier="shop_decoration" width="133" height="79" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="823,304,133,79" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="823,304,133,79" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration18" nameidentifier="shop_decoration" width="52" height="45" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="970,315,52,45" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="970,315,52,45" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration19" nameidentifier="shop_decoration" width="78" height="113" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="760,843,78,113" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="760,843,78,113" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration20" nameidentifier="shop_decoration" width="54" height="111" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="858,843,54,111" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="858,843,54,111" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration21" nameidentifier="shop_decoration" width="75" height="60" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="941,839,75,60" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="941,839,75,60" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration22" nameidentifier="shop_decoration" width="82" height="53" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="844,965,82,53" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="844,965,82,53" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_decoration23" nameidentifier="shop_decoration" width="91" height="101" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="931,920,91,101" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/EngineerColonyModule.png" sourcerect="931,920,91,101" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="shop_shelf4" nameidentifier="shelf" width="301" height="377" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/GenericWalls2.png" sourcerect="1719,450,301,377" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/GenericWalls2.png" sourcerect="1719,836,301,377" depth="0.95" origin="0.5,0.5"/>
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericWalls2.png" sourcerect="1719,450,301,377" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/GenericWalls2.png" sourcerect="1719,836,301,377" depth="0.95" origin="0.5,0.5"/>
   </Item>
   <!--Cafeteria and Garden Assets-->
   <Item name="" identifier="op_cafeteriawindow" width="600" height="217" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,2,600,217" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,2,600,217" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_gardendistiller" width="370" height="355" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="606,2,370,355" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="606,2,370,355" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_cafeteriabench" width="332" height="209" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,223,332,209" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,223,332,209" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_cafeteriatable" width="252" height="172" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="338,223,252,172" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="338,223,252,172" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_gardenbags1" nameidentifier="op_gardenbags" width="323" height="195" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="594,361,323,195" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="594,361,323,195" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_cafeteriacart" width="191" height="329" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,647,191,329" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,647,191,329" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_gardenbags2" nameidentifier="op_gardenbags" width="282" height="77" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,560,282,77" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,560,282,77" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_gardenplanter" nameidentifier="smallplanter" width="107" height="106" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,436,107,106" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="2,436,107,106" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_gardenproducebox" width="266" height="250" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="288,524,266,250" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="288,524,266,250" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_cafeteriachair" width="152" height="240" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="197,778,152,240" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" sourcerect="197,778,152,240" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
 
   <Item name="" identifier="op_gardenplanter2" nameidentifier="smallplanter" width="107" height="106" scale="0.5" noninteractable="true" category="Decorative">
-    <Sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.45" sourcerect="593,696,202,64" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.49" sourcerect="480,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="1" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.52" sourcerect="619,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="2" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.48" sourcerect="766,775,121,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="3" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.51" sourcerect="480,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="2" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.47" sourcerect="619,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="3" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.50" sourcerect="766,775,121,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="1" />
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.45" sourcerect="593,696,202,64" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.49" sourcerect="480,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.52" sourcerect="619,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.48" sourcerect="766,775,121,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.51" sourcerect="480,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.47" sourcerect="619,789,138,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.50" sourcerect="766,775,121,104" offset="0,60" randomrotation="-60,60" randomscale="0.8,1" randomoffset="80,10" origin="0.5,0.5" randomgroupid="1" />
   </Item>
   <Item name="" identifier="op_gardenplanter3" nameidentifier="smallplanter" width="107" height="106" scale="0.5" noninteractable="true" category="Decorative">
-    <Sprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.45" sourcerect="919,946,83,59" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.49" sourcerect="497,910,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="1" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.48" sourcerect="612,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="2" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.51" sourcerect="724,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="3" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.47" sourcerect="497,910,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="2" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.50" sourcerect="612,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="3" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.46" sourcerect="724,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="1" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.52" sourcerect="919,864,83,82" origin="0.5,0.5" offset="0,70"/>
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.45" sourcerect="919,946,83,59" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.49" sourcerect="497,910,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.48" sourcerect="612,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.51" sourcerect="724,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.47" sourcerect="497,910,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.50" sourcerect="612,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.46" sourcerect="724,912,96,100" offset="0,50" randomrotation="-20,20" randomscale="0.5,1" randomoffset="20,20" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/CafeteriaGardenAssets.png" depth="0.52" sourcerect="919,864,83,82" origin="0.5,0.5" offset="0,70"/>
   </Item>
 
   <!--Adminstration and Residential Assets-->
   <Item name="" identifier="op_freezer" width="273" height="394" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,0,273,394" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,0,273,394" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_clothesrack" width="286" height="357" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="273,0,286,357" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="273,0,286,357" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_washingmachine" width="199" height="262" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="273,357,199,262" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="848,627,99,99" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" rotationspeed="-715" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="273,357,199,262" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="848,627,99,99" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" rotationspeed="-715" />
   </Item>
   <Item name="" identifier="op_smallcouch" width="254" height="173" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,394,254,173" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,394,254,173" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_metalchair" width="269" height="162" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="472,357,269,162" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="472,357,269,162" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_boxcart" width="177" height="199" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,567,177,199" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="0,567,177,199" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_janitorcart" width="140" height="242" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="472,519,140,242" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="472,519,140,242" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_inkpainting" width="234" height="125" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="559,222,234,125" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="559,222,234,125" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_towellocker" width="107" height="236" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="177,619,107,236" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="177,619,107,236" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_banner" width="119" height="211" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="284,619,119,211" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="284,619,119,211" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_painting2" nameidentifier="op_painting1" width="137" height="176" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="612,519,137,176" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="612,519,137,176" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_raptorhead" width="160" height="131" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="612,695,160,131" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="612,695,160,131" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_statue" width="124" height="163" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="741,347,124,163" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="741,347,124,163" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_painting1" width="150" height="117" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="749,510,150,117" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="749,510,150,117" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_shower" width="76" height="159" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="772,627,76,159" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="772,627,76,159" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_trophy2" nameidentifier="opdeco_officedisplay1" width="62" height="99" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="767,0,62,99" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="767,0,62,99" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_sworddisplay" width="183" height="60" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="403,761,183,60" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="403,761,183,60" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_trophy3" nameidentifier="opdeco_officedisplay1" width="60" height="106" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="403,619,60,106" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="403,619,60,106" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_trophy1" nameidentifier="opdeco_officedisplay1" width="59" height="100" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="848,726,59,100" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="848,726,59,100" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="op_wetsign" width="50" height="116" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="739,103,50,116" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/AdminResidentAssets.png" sourcerect="739,103,50,116" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
 
   <!--Flickering hologram displays-->
   <Item name="" identifier="op_hologramdisplay1" width="157" height="95" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="2,657,157,95" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="2,657,157,95" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,255,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="2,657,157,95" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="2,657,157,95" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_hologramdisplay2" nameidentifier="op_hologramdisplay1" width="128" height="78" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="160,656,128,78" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="160,656,128,78" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,255,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="160,656,128,78" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="160,656,128,78" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_hologramdisplay3" nameidentifier="op_hologramdisplay1" width="128" height="80" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="0,752,128,80" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="0,752,128,80" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,255,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="0,752,128,80" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="0,752,128,80" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_hologramdisplay4" nameidentifier="op_hologramdisplay1" width="129" height="81" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="159,735,129,81" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="159,735,129,81" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,255,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="159,735,129,81" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="159,735,129,81" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_screen01" nameidentifier="opdeco_screen" width="96" height="64" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,352,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,352,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,255,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,352,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,352,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_screen02" nameidentifier="opdeco_screen" width="96" height="64" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,416,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,416,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="60,110,66,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,416,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,416,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_screen03" nameidentifier="opdeco_screen" width="96" height="64" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,480,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,480,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="200,180,60,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,480,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="752,480,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_screen04" nameidentifier="opdeco_screen" width="96" height="64" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="304,672,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="304,672,96,64" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="220,95,60,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="304,672,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="304,672,96,64" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <!--Shop containers-->
   <Item name="" identifier="opdeco_container" width="160" height="336" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="0,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="0,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,175,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="400,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="400,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_shopsuit1" width="160" height="336" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="160,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="160,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,175,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="560,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="560,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_shopsuit2" nameidentifier="opdeco_shopsuit1" width="160" height="336" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="320,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="320,0,160,336" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="111,199,175,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="720,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="720,672,160,336" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <!--Research tanks and monitoring tables-->
   <Item name="" identifier="op_researchcontainmenttank1" width="414" height="297" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="0,6,414,297" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="0,6,414,297" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="0,6,414,297" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="0,6,414,297" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_researchtable" width="732" height="248" texturescale="1.0,1.0" scale="0.5" category="Decorative" requirecampaigninteract="true">
-    <sprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="3,311,732,248" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="3,311,732,248" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="3,311,732,248" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="3,311,732,248" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_researchcontainmenttank2" nameidentifier="op_researchcontainmenttank1" width="201" height="281" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="3,567,201,281" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="3,567,201,281" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="3,567,201,281" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="3,567,201,281" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_researchcontainmenttank3" nameidentifier="op_researchcontainmenttank1" width="221" height="364" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="209,562,221,364" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-	<DecorativeSprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="432,564,222,357" depth="0.98" origin="0.5,0.5"/>
-	<DecorativeSprite texture="Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="742,662,63,91" depth="0.975" origin="0.5,0.5" offset="80,80" offsetanim="Noise" rotationanim="Noise" rotation="80" rotationspeed="0.5" offsetanimspeed="0.05" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="209,562,221,364" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+	<DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="432,564,222,357" depth="0.98" origin="0.5,0.5"/>
+	<DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearch.png" sourcerect="742,662,63,91" depth="0.975" origin="0.5,0.5" offset="80,80" offsetanim="Noise" rotationanim="Noise" rotation="80" rotationspeed="0.5" offsetanimspeed="0.05" />
 	  <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="209,562,221,364" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalItemResearchLights.png" sourcerect="209,562,221,364" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_vendingmachine1" tags="vendingmachine" width="238" height="396" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="1,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <Fabricator canbeselected="true" powerconsumption="0.0" msg="ItemMsgInteractSelect" createbuttontext="campaignstoretab.buy">
       <GuiFrame relativesize="0.4,0.5" style="ItemUI" anchor="Center" />
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true"/>
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true"/>
     </Fabricator>
     <ItemContainer capacity="0" canbeselected="false" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
     <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="241,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_vendingmachine2" nameidentifier="op_vendingmachine1" tags="vendingmachine" width="238" height="396" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="481,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="481,497,238,396" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <Fabricator canbeselected="true" powerconsumption="0.0" msg="ItemMsgInteractSelect" createbuttontext="campaignstoretab.buy">
       <GuiFrame relativesize="0.4,0.5" style="ItemUI" anchor="Center" />
-      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true"/>
+      <sound file="%ModDir%/Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="200.0" loop="true"/>
     </Fabricator>
     <ItemContainer capacity="0" canbeselected="false" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
     <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
     <LightComponent range="0.0" lightcolor="255,255,255,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="721,497,238,396" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="op_workbenchlamp" width="127" height="119" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="96,481,127,119" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="96,481,127,119" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,117,0,111" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/Shop.png" sourcerect="96,597,127,134" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Shop.png" sourcerect="96,597,127,134" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <!--Dorm-->
   <Item name="" identifier="opdeco_bunkbeds" width="356" height="264" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255">
     <Upgrade gameversion="0.12.0.0" noninteractable="false" />
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1600,1760,384,264" depth="0.85" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1600,1760,384,264" depth="0.85" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="0,-300" direction="Right" hidehud="false" canbeselected="true" drawuserbehind="true">
       <limbposition limb="Head" position="-26,-170" />
       <limbposition limb="Torso" position="84,-140" />
@@ -406,9 +406,9 @@
     </Controller>
   </Item>
   <Item name="" identifier="opdeco_bunks1" nameidentifier="opdeco_bunks1" allowattachitems="false" width="463" height="398" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1296,1289,463,387" depth="0.85" premultiplyalpha="false" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1390,1126,320,160" depth="0.86" origin="0.5,0.5" offset="40,-95" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1390,1126,320,160" depth="0.86" origin="0.5,0.5" offset="40,105" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1296,1289,463,387" depth="0.85" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1390,1126,320,160" depth="0.86" origin="0.5,0.5" offset="40,-95" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1390,1126,320,160" depth="0.86" origin="0.5,0.5" offset="40,105" />
     <Controller UserPos="0,-300" direction="Right" hidehud="false" canbeselected="true" drawuserbehind="true">
       <limbposition limb="Head" position="14,-300" />
       <limbposition limb="Torso" position="124,-270" />
@@ -430,7 +430,7 @@
   </Item>
   <Item name="" identifier="opdeco_hospitalbed" width="416" height="192" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Decorative">
     <Upgrade gameversion="0.12.0.0" noninteractable="false" />
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,304,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,304,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="0,-300" direction="Right" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="-6,-10" />
       <limbposition limb="Torso" position="104,0" />
@@ -451,7 +451,7 @@
     </Controller>
   </Item>
   <Item name="" identifier="opdeco_prisonbed" allowattachitems="true" width="384" height="96" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="864,1888,384,96" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="864,1888,384,96" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="0,-300" direction="Right" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="-6,-10" />
       <limbposition limb="Torso" position="104,20" />
@@ -473,9 +473,9 @@
   </Item>
 
   <Item name="" identifier="opdeco_heater" width="144" height="336" texturescale="1.0,1.0" scale="0.5" category="Decorative" spritecolor="255,255,255,255" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1291,1689,144,333" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1291,1689,144,333" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="246,92,59,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.0">
-      <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1441,1689,144,333" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1441,1689,144,333" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
@@ -486,93 +486,93 @@
   </Item>
   <!--Tunnel wall with flickering lights-->
   <Item name="" identifier="opbg_tunnel3" allowattachitems="true" width="831" height="416" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="0,416,831,416" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="0,416,831,416" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,56,56,111" IsOn="true" castshadows="false" allowingameediting="false" flicker="0.1" flickerspeed="0.1" blinkfrequency="1">
-      <sprite texture="Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="0,1248,832,416" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="0,1248,832,416" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <!--Tunnel Light Tower-->
   <Item name="" identifier="op_lighttower" width="176" height="352" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="849,1697,176,352" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="849,1697,176,352" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="160.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="671,1697,176,352" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/TunnelWalls.png" sourcerect="671,1697,176,352" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <!--Wall Decorations-->
   <Item name="" identifier="op_lightbox1" width="163" height="209" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1337,590,163,209" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1337,590,163,209" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="60.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false"></LightComponent>
   </Item>
   <Item name="" identifier="op_lightbox2" nameidentifier="op_lightbox1" width="159" height="206" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1526,586,159,206" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1526,586,159,206" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="60.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false"></LightComponent>
   </Item>
   <Item name="" identifier="op_lightbox3" nameidentifier="op_lightbox1" width="289" height="194" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1760,394,289,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1760,394,289,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="60.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false"></LightComponent>
   </Item>
   <Item name="" identifier="op_lightbox4" nameidentifier="op_lightbox1" width="145" height="194" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1759,1607,145,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1759,1607,145,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="60.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false"></LightComponent>
   </Item>
   <Item name="" identifier="op_lightbox5" nameidentifier="op_lightbox1" width="145" height="194" texturescale="1.0,1.0" scale="0.5" category="Decorative" noninteractable="true">
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1903,1607,144,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1903,1607,144,194" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="60.0" lightcolor="255,234,181,200" IsOn="true" castshadows="false" allowingameediting="false"></LightComponent>
   </Item>
   <!-- Medical -->
   <Item name="" identifier="opdeco_mountedmonitor1" nameidentifier="medicalmonitor" width="96" height="128" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="0,0,96,128" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="0,0,96,128" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,0,96,128" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,0,96,128" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_medcompartment1" nameidentifier="medicalcompartment" tags="container,suppliescontainer" linkable="true" width="80" height="80" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="192,0,80,80" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="192,0,80,80" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
     <ItemContainer capacity="3" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.18,0.25" anchor="Center" style="ItemUI" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="opdeco_medcompartment2" nameidentifier="medicalcompartment" tags="container,suppliescontainer" linkable="true" width="48" height="80" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="272,0,48,80" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="272,0,48,80" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
     <ItemContainer capacity="1" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.18,0.25" anchor="Center" style="ItemUI" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="opdeco_medcompartment3" nameidentifier="medicalcompartment" tags="container,suppliescontainer" linkable="true" width="80" height="128" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="400,0,80,128" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="400,0,80,128" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
     <ItemContainer capacity="6" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.18,0.25" anchor="Center" style="ItemUI" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="opdeco_surgicallights" width="272" height="128" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="752,0,272,128" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="752,0,272,128" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="0.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="480,0,272,128" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="480,0,272,128" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_xrayscreen" width="208" height="144" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="304,160,208,144" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="304,160,208,144" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,160,208,144" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,160,208,144" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_xrayscreen2" nameidentifier="opdeco_xrayscreen" width="369" height="133" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,0,369,133" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,0,369,133" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,133,369,133" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,133,369,133" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_xrayscreen3" nameidentifier="opdeco_xrayscreen" width="192" height="208" texturescale="1.0,1.0" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="199,266,192,208" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="199,266,192,208" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,255" IsOn="true" castshadows="false" allowingameediting="false" flicker="1.0">
-      <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,267,192,208" depth="0.1" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="0,267,192,208" depth="0.1" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
   </Item>
   <Item name="" identifier="opdeco_wheelchair2" nameidentifier="opdeco_wheelchair1" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
-    <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="452,781,249,225" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="452,781,249,225" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="70,45" />
       <limbposition limb="Torso" position="90,-30" />
@@ -587,46 +587,46 @@
   <!--Outpost Machines-->
   <Item name="" nameidentifier="reactor1" identifier="outpostreactor" tags="reactor" type="Reactor" linkable="true" category="Machine" damagedbyexplosions="true" scale="0.5" explosiondamagemultiplier="0.2">
     <trigger />
-    <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="38,336,575,849" depth="0.8" origin="0.5,0.5" />
-    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="0,960,64,64" origin="0.5,0.45" />
-    <BrokenSprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="473,1197,502,655" depth="0.79" maxcondition="50" offset="0,0" fadein="true" />
-    <BrokenSprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="975,1197,502,690" depth="0.79" maxcondition="10" offset="0,0" fadein="true" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="38,336,575,849" depth="0.8" origin="0.5,0.5" />
+    <UpgradePreviewSprite scale="3.0" texture="%ModDir%/Content/UI/WeaponUI.png" sourcerect="0,960,64,64" origin="0.5,0.45" />
+    <BrokenSprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="473,1197,502,655" depth="0.79" maxcondition="50" offset="0,0" fadein="true" />
+    <BrokenSprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="975,1197,502,690" depth="0.79" maxcondition="10" offset="0,0" fadein="true" />
     <aitarget sightrange="500" soundrange="7500" />
     <Reactor canbeselected="true" firedelay="20" meltdowndelay="120" maxpoweroutput="20000" fuelconsumptionrate="0.2" vulnerabletoemp="false" msg="ItemMsgInteractSelect">
       <StatusEffect type="InWater" target="This" condition="-0.5">
         <Conditional condition="gt 10" />
       </StatusEffect>
       <GuiFrame relativesize="0.5,0.45" minsize="700,350" maxsize="2688,1166" anchor="Center" relativeoffset="0.1,0" style="ItemUI" />
-      <GraphLine texture="Content/Items/Reactor/graphLine.png">
-        <Sprite name="ReactorGraphLine" texture="Content/Items/Reactor/graphLine.png" sourcerect="0,0,32,32" />
+      <GraphLine texture="%ModDir%/Content/Items/Reactor/graphLine.png">
+        <Sprite name="ReactorGraphLine" texture="%ModDir%/Content/Items/Reactor/graphLine.png" sourcerect="0,0,32,32" />
       </GraphLine>
       <FissionRateMeter>
-        <Sprite name="FissionRateMeter" texture="Content/Items/Reactor/reactor.png" sourcerect="603,817,441,240" origin="0.5,1" />
+        <Sprite name="FissionRateMeter" texture="%ModDir%/Content/Items/Reactor/reactor.png" sourcerect="603,817,441,240" origin="0.5,1" />
       </FissionRateMeter>
       <TurbineOutputMeter>
-        <Sprite name="TurbineOutputMeter" texture="Content/Items/Reactor/reactor.png" sourcerect="603,817,441,240" origin="0.5,1" />
+        <Sprite name="TurbineOutputMeter" texture="%ModDir%/Content/Items/Reactor/reactor.png" sourcerect="603,817,441,240" origin="0.5,1" />
       </TurbineOutputMeter>
       <MeterPointer>
-        <Sprite name="MeterPointer" texture="Content/UI/UIAtlasDevices.png" sourcerect="938,846,31,167 " origin="0.5,0.9" />
+        <Sprite name="MeterPointer" texture="%ModDir%/Content/UI/UIAtlasDevices.png" sourcerect="938,846,31,167 " origin="0.5,0.9" />
       </MeterPointer>
       <SectorSprite>
-        <Sprite name="SectorSprite" texture="Content/UI/UIAtlasDevices.png" sourcerect="769,326,238,455" origin="0.95,0.5" />
+        <Sprite name="SectorSprite" texture="%ModDir%/Content/UI/UIAtlasDevices.png" sourcerect="769,326,238,455" origin="0.95,0.5" />
       </SectorSprite>
       <TempMeterFrame>
-        <Sprite name="TempMeterFrame" texture="Content/UI/UIAtlasDevices.png" sourcerect="92,517,59,265" origin="0,0" size="0.5,1" />
+        <Sprite name="TempMeterFrame" texture="%ModDir%/Content/UI/UIAtlasDevices.png" sourcerect="92,517,59,265" origin="0,0" size="0.5,1" />
       </TempMeterFrame>
       <TempMeterBar>
-        <Sprite name="TempMeterBar" texture="Content/UI/UIAtlasDevices.png" sourcerect="270,414,106,47" origin="0.5,0" />
+        <Sprite name="TempMeterBar" texture="%ModDir%/Content/UI/UIAtlasDevices.png" sourcerect="270,414,106,47" origin="0.5,0" />
       </TempMeterBar>
       <TempRangeIndicator>
-        <Sprite name="TempRangeIndicator" texture="Content/UI/UIAtlasDevices.png" sourcerect="31,614,52,25" origin="0.5,0.5" size="0.6,0.6" />
+        <Sprite name="TempRangeIndicator" texture="%ModDir%/Content/UI/UIAtlasDevices.png" sourcerect="31,614,52,25" origin="0.5,0.5" size="0.6,0.6" />
       </TempRangeIndicator>
       <RequiredSkill identifier="electrical" level="50" />
       <RequiredItem items="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
-      <sound file="Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true" />
+      <sound file="%ModDir%/Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true" />
       <StatusEffect type="OnBroken" target="This" FissionRate="0.0" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
         <Explosion range="2000" structuredamage="200" force="5.0" camerashake="200" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
           <Affliction identifier="burn" strength="200" />
           <Affliction identifier="explosiondamage" strength="80" />
@@ -638,7 +638,7 @@
     </Reactor>
     <LightComponent range="300.0" lightcolor="255,186,152,119" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false">
       <IsActive targetitemcomponent="Reactor" temperature="gt 2" />
-      <sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" depth="0.025" sourcerect="649,336,575,849" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" depth="0.025" sourcerect="649,336,575,849" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <LightComponent range="400" lightcolor="255,0,0,250" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false" blinkfrequency="1">
       <IsActive targetitemcomponent="Reactor" temperaturecritical="eq true" />
@@ -647,7 +647,7 @@
       <GuiFrame relativesize="0.3,0.35" minsize="400,350" maxsize="480,460" anchor="Center" style="ConnectionPanel" />
       <RequiredSkill identifier="electrical" level="70" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
         <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <Affliction identifier="stun" strength="5" />
         <Affliction identifier="burn" strength="5" />
@@ -662,7 +662,7 @@
         <StatusEffect type="OnUse" target="This">
           <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
           <ParticleEmitter particle="swirlysmoke" particlespersecond="3" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
-          <sound file="Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
+          <sound file="%ModDir%/Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
         </StatusEffect>
       </output>
       <output name="power_value_out" displayname="connection.powervalueout" />
@@ -694,25 +694,25 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="5" />
         <Affliction identifier="stun" strength="5" />
       </StatusEffect>
     </Repairable>
   </Item>
   <Item name="" nameidentifier="oxygenerator" identifier="outpostoxygenerator" tags="oxygengenerator" category="Machine" linkable="true" allowedlinks="vent" damagedbyexplosions="true" scale="0.5" explosiondamagemultiplier="0.2">
-    <Sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" depth="0.8" sourcerect="52,1197,360,410" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="2,1607,240,302" depth="0.79" origin="0.5,0.5" offset="100,0" maxcondition="80" fadein="true" />
-    <BrokenSprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="243,1629,213,286" depth="0.79" origin="0.5,0.5" offset="100,0" maxcondition="10" fadein="true" />
-    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="384,960,64,64" origin="0.5,0.45" />
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" depth="0.8" sourcerect="52,1197,360,410" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="2,1607,240,302" depth="0.79" origin="0.5,0.5" offset="100,0" maxcondition="80" fadein="true" />
+    <BrokenSprite texture="%ModDir%/Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="243,1629,213,286" depth="0.79" origin="0.5,0.5" offset="100,0" maxcondition="10" fadein="true" />
+    <UpgradePreviewSprite scale="2.5" texture="%ModDir%/Content/UI/WeaponUI.png" sourcerect="384,960,64,64" origin="0.5,0.45" />
     <OxygenGenerator powerconsumption="1000.0" minvoltage="0.5" generatedamount="5000" canbeselected="true" msg="ItemMsgInteractSelect">
-      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="1500" loop="false" />
-      <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001" loop="true" />
+      <poweronsound file="%ModDir%/Content/Items/PowerOnLight2.ogg" range="1500" loop="false" />
+      <sound file="%ModDir%/Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001" loop="true" />
       <StatusEffect type="OnFire" target="This" Condition="-0.5" />
       <StatusEffect type="OnActive" targettype="Contained" targets="oxygentank" Condition="2.0" />
       <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
-        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All" />
-        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All" />
+        <sound file="%ModDir%/Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
         <Explosion range="50" stun="0" force="3.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
       </StatusEffect>
     </OxygenGenerator>
@@ -735,19 +735,19 @@
       <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
       <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
       <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
-        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Sound file="%ModDir%/Content/Items/MechanicalRepairFail.ogg" range="1000" />
         <Affliction identifier="lacerations" strength="15" />
       </StatusEffect>
     </Repairable>
   </Item>
   <Item name="" identifier="outpostterminal" category="Machine" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <Sprite texture="Content/Map/Outposts/Art/Storage.png" depth="0.8" sourcerect="1544,506,142,149" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" depth="0.8" sourcerect="1544,506,142,149" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
-      <sprite texture="Content/Map/Outposts/Art/Storage.png" depth="0.025" sourcerect="1709,506,142,149" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" depth="0.025" sourcerect="1709,506,142,149" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false" blinkfrequency="1">
-      <sprite texture="Content/Map/Outposts/Art/Storage.png" depth="0.025" sourcerect="1869,506,142,149" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" depth="0.025" sourcerect="1869,506,142,149" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <OutpostTerminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" />
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
@@ -758,7 +758,7 @@
     </ConnectionPanel>
   </Item>
   <Item name="" identifier="opdeco_officechair" tags="chair" allowattachitems="false" texturescale="1.0,1.0" scale="0.45" category="Decorative" canflipy="false">
-    <sprite texture="Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="570,341,180,267" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/ManagerOfficeAssets.png" sourcerect="570,341,180,267" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="90,15" />
       <limbposition limb="Torso" position="85,-60" />
@@ -770,7 +770,7 @@
     </Controller>
   </Item>
   <Item name="" identifier="opdeco_chair1" nameidentifier="opdeco_officechair" tags="chair" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1233,31,144,240" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1233,31,144,240" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="-10,30" direction="Left" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="82,18" />
       <limbposition limb="Torso" position="80,-52" />
@@ -782,7 +782,7 @@
     </Controller>
   </Item>
   <Item name="" identifier="opdeco_chair2" nameidentifier="opdeco_officechair" tags="chair" allowattachitems="true" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
-    <sprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="744,784,144,240" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="744,784,144,240" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
     <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true">
       <limbposition limb="Head" position="40,15" />
       <limbposition limb="Torso" position="55,-60" />
@@ -795,38 +795,38 @@
   </Item>
   <Item name="" identifier="opdeco_cabinetsdorm" allowattachitems="false" width="110" height="398" texturescale="1.0,1.0" scale="0.5" category="Decorative">
     <Upgrade gameversion="0.16.2.0" refreshrect="true" PositionY="-88" />
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1760,1360,117,309" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1760,1360,117,309" depth="0.84" premultiplyalpha="false" origin="0.5,0.5" />
     <ItemContainer capacity="6" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.18,0.25" anchor="Center" style="ItemUI" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="opdeco_trashcan" width="122" height="201" texturescale="1.0,1.0" scale="0.5" category="Decorative" >
-    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1662,914,125,205" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/Storage.png" sourcerect="1662,914,125,205" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
     <ItemContainer capacity="3" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.18,0.25" anchor="Center" style="ItemUI" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
   <Item name="" identifier="opdeco_hrflyers" requirecampaigninteract="true" allowattachitems="true" width="416" height="224" texturescale="1.0,1.0" scale="0.5" category="Decorative">
-    <sprite texture="Content/Map/Outposts/Art/HumanResourcesAssets.png" sourcerect="0,672,416,224" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Content/Map/Outposts/Art/HumanResourcesAssets.png" sourcerect="0,672,416,224" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
   </Item>
   <Item name="" identifier="opdeco_medcurtain" aliases="opdeco_medcurtainclosed,opdeco_medcurtainopen" category="Decorative" width="416" height="32" scale="0.5">
-    <Sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,128,416,32" depth="0.49" premultiplyalpha="false" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="512,128,384,368" depth="0.48" premultiplyalpha="false" origin="0.5,0.05">
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,128,416,32" depth="0.49" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="512,128,384,368" depth="0.48" premultiplyalpha="false" origin="0.5,0.05">
       <Conditional targetitemcomponent="Controller" State="eq true" />
     </DecorativeSprite>
-    <DecorativeSprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="896,128,128,368" depth="0.48" premultiplyalpha="false" origin="1.5,0.05">
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="896,128,128,368" depth="0.48" premultiplyalpha="false" origin="1.5,0.05">
       <Conditional targetitemcomponent="Controller" State="ne true" />
     </DecorativeSprite>
     <Controller direction="None" canbepicked="true" istoggle="true" msg="ItemMsgPressSelect" />
   </Item>
   <Item name="" identifier="opdeco_medcurtain2" aliases="opdeco_medcurtainclosed,opdeco_medcurtainopen" nameidentifier="opdeco_medcurtain" category="Decorative" width="416" height="32" scale="0.5">
-    <Sprite texture="Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,128,416,32" depth="0.49" premultiplyalpha="false" origin="0.5,0.5" />
-    <DecorativeSprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="391,0,373,364" depth="0.48" premultiplyalpha="false" origin="0.5,0.05">
+    <Sprite texture="%ModDir%/Content/Map/Outposts/Art/MedBayAssets.png" sourcerect="96,128,416,32" depth="0.49" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="391,0,373,364" depth="0.48" premultiplyalpha="false" origin="0.5,0.05">
       <Conditional targetitemcomponent="Controller" State="eq true" />
     </DecorativeSprite>
-    <DecorativeSprite texture="Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="764,0,104,364" depth="0.48" premultiplyalpha="false" origin="1.5,0.05">
+    <DecorativeSprite texture="%ModDir%/Content/Map/Outposts/Art/MedicalColonyAssets.png" sourcerect="764,0,104,364" depth="0.48" premultiplyalpha="false" origin="1.5,0.05">
       <Conditional targetitemcomponent="Controller" State="ne true" />
     </DecorativeSprite>
     <Controller direction="None" canbepicked="true" istoggle="true" msg="ItemMsgPressSelect" />

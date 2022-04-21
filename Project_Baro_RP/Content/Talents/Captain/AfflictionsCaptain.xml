@@ -13,7 +13,7 @@
       strengthchange="-1">
       <StatValue stattype="HelmSkillBonus" value="75" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -26,7 +26,7 @@
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
     <Effect minstrength="0" maxstrength="2.5"
       strengthchange="-1"/>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -40,7 +40,7 @@
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
     <Effect minstrength="0" maxstrength="8"
       strengthchange="0"/>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons1.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -57,7 +57,7 @@
       <StatValue stattype="ElectricalSkillBonus" value="25" />
       <StatValue stattype="SwimmingSpeed" value="0.5" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -79,7 +79,7 @@
       <StatValue stattype="MedicalSkillBonus" value="10" />
       <StatValue stattype="WeaponsSkillBonus" value="10" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -96,7 +96,7 @@
       <StatValue stattype="RepairToolStructureRepairMultiplier" minvalue="0" maxvalue="0.2" />
       <StatValue stattype="SkillGainSpeed" minvalue="0" maxvalue="0.35" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
@@ -116,7 +116,7 @@
       <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
       <StatValue stattype="TurretAttackSpeed" minvalue="0" maxvalue="0.2" />
     </Effect>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+    <Icon texture="%ModDir%/Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
   </Affliction>
 
 </Afflictions>

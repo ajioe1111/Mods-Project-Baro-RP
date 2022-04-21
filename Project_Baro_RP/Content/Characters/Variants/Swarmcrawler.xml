@@ -1,5 +1,5 @@
 <!--Almost everything in the character definition can be changed using the same names for the blocks.-->
-<Charactervariant inherit="Crawler" speciesname="Swarmcrawler" speciestranslationoverride="Crawler"> <!--can override the entire texture like so: texture="Content/Characters/Variants/Customcrawler.png"-->
+<Charactervariant inherit="Crawler" speciesname="Swarmcrawler" speciestranslationoverride="Crawler"> <!--can override the entire texture like so: texture="%ModDir%/Content/Characters/Variants/Customcrawler.png"-->
   <health vitality="85"/>
   <ai fleehealththreshold="0">
     <!--Overriding targets can be done like this:
