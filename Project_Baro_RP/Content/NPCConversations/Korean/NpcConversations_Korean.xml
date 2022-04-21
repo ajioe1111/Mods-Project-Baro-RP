@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="vanillaconversations" Language="Korean" nowhitespace="True">
+
+<!-- Personality traits -->
+<PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
+<PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
+<PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
+<PersonalityTrait name="Tough" alloweddialogtags="tough,none" commonness="1" />
+<PersonalityTrait name="Joker" alloweddialogtags="joker,none" commonness="0.5" />
+<PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="0.5" />
+<PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="0.5" />
+<PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="0.5" />
+
+<!-- Generic conversation -->
+<Conversation line="자, 여러분. 그녀와 함께 바람 좀 쐬고 옵시다!" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="옙." speaker="1">
+		<Conversation line="네, 알겠습니다!" speaker="2"/>
+		<Conversation line="예, 함쟝님!" speaker="2" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="그들은 배를 타고 바다로 내려간다네." speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="사람들은 큰물에서 일을 한다네." speaker="0">
+		<Conversation line="이들은 신의 작품과 심해의 경이로움을 보았다네." speaker="0">
+			<Conversation line="출발! 승조원들에게 행운이 함께하길!" speaker="0"/>
+			<Conversation line="이 아래는 신의 손이 닿지 않은 곳이니까." speaker="1" speakertags="joker,tough,professional"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="갈 길이 멉니다, 모두 최선을 다해주세요!" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="네, 알겠습니다!" speaker="1"/>
+	<Conversation line="옙!" speaker="1"/>
+	<Conversation line="행운을 빕니다!" speaker="1" allowedjobs="watchman"/>
+</Conversation>
+
+<Conversation line="탑승하신 여러분, 환영합니다! 손과 팔이 밖으로 나가지 않도록 두 눈 부릅뜨고 감시해주세요." speaker="0" flags="Initial" allowedjobs="captain" speakertags="joker">
+	<Conversation line="네, 알겠습니다!" speaker="1"/>
+	<Conversation line="옙!" speaker="1"/>
+</Conversation>
+
+<Conversation line="모두, 준비됐나요? 갈 길이 멀답니다!" speaker="0" flags="Initial" allowedjobs="captain" speakertags="brokenenglish">
+	<Conversation line="네, 알겠습니다!" speaker="1"/>
+	<Conversation line="옙!" speaker="1"/>
+	<Conversation line="광대의 어머니께서 저희의 영혼에 자비를 베푸실 겁니다." speaker="1" speakertags="crazy"/>
+	<Conversation line="행운을 빕니다!" speaker="1" allowedjobs="watchman"/>
+</Conversation>
+
+<Conversation line="함장입니다! 승조원분들은 임무를 준비해주시기 바랍니다. 행운을 빌겠습니다!" speaker="0" flags="Initial" allowedjobs="captain" speakertags="brokenenglish">
+	<Conversation line="네, 알겠습니다!" speaker="1"/>
+	<Conversation line="옙." speaker="1">
+		<Conversation line="네, 알겠습니다!" speaker="2"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="바다가 이번에는 우리를 위해 무엇을 준비했는지 확인해 봅시다!" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="제 생각엔 끔찍한 괴물들과 섬뜩한 죽음, 영원한 어둠이 준비되어 있을 것 같군요." speaker="1" speakertags="joker,fearful">
+		<Conversation line="조용히 해! 네 빈정거리는 말투, 딱 질색이니까." speaker="0" speakertags="professional"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="다들 준비됐나요? 서두르는 게 좋을 겁니다. 이젠 되돌릴 수 없거든요." speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="네, 알겠습니다!" speaker="1">
+		<Conversation line="갑시다!" speaker="2"/>
+		<Conversation line="언제든 준비되었습니다!" speaker="2" speakertags="brokenenglish"/>
+		<Conversation line="으, 우린 전부 죽고 말 거야!" speaker="2" speakertags="crazy"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="추워." speaker="0" maxintensity="0.4"/>
+
+<Conversation line="느낌이 안 좋아..." speaker="0" speakertags="fearful" maxintensity="0.4">
+	<Conversation line="그렇게 말했었던 늙은 함장을 알고 있지..." speaker="1" speakertags="professional,tough">
+		<Conversation line="그래 봤자 넌 폭풍을 잠재울 수 없어. 그러니 그만해." speaker="1">
+			<Conversation line="네가 할 수 있는 거라곤 자신을 진정시키는 것뿐이야. 폭풍은 알아서 지나갈 거라고." speaker="1">
+				<Conversation line="... 당신, 거짓말쟁이로군." speaker="0" speakertags="rude,fearful"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="어차피 우리는 모두 다 거짓말쟁이야.  내 확신하지." speaker="1"/>
+	<Conversation line="또 배에 가스가 찬 거야?" speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="함체가 삐걱대는 소리가 들려." speaker="0" speakertags="fearful" maxintensity="0.4">
+	<Conversation line="나도." speaker="1" speakertags="brokenenglish"/>
+	<Conversation line="" speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="빨리 집에 가서 올 카드모스 한 병을 따고 싶군." speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="열심히 일하지 않으면 그 병이랑 같이 관으로 들어가 묻히게 될걸?" speaker="1" speakertags="professional,tough,rude">
+		<Conversation line="하하! 관에 넣고 묻힌다라! 마지막으로 그랬던 게 언제였지?" speaker="2" speakertags="laid-back,joker"/>
+	</Conversation>
+	<Conversation line="지금은 집 같은 거 생각할 시간 따윈 없어. 아직 갈 길이 멀다고." speaker="1" speakertags="professional,tough"/>
+	<Conversation line="카드모스는 물고기 오줌 같잖아. 난 더 센 게 좋아." speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="지구의 해군에는 예로부터 이런 말이 있다고 합니다." speaker="0" allowedjobs="captain" speakertags="professional,tough" maxintensity="0.3">
+	<Conversation line="일하는 방식에는 두 가지가 있다. 바로 하든가 다시 하든가." speaker="0">
+		<Conversation line="하지만 여기서는 이야기가 다릅니다. 유로파에는 두 번째 기회란 없죠." speaker="0">
+			<Conversation line="그러니 여러분, 눈앞의 일에 집중하시기 바랍니다." speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="나는야 선원 뽀빠이라네!" speaker="0" allowedjobs="medicaldoctor" speakertags="laid-back,joker" maxintensity="0.2">
+	<Conversation line="시금치를 먹으면, 이만치 힘이 세지지!" speaker="0">
+		<Conversation line="의사 양반, 또 의료용 에탄올 마신 거요?" speaker="1">
+			<Conversation line="알았어요, 그만할게요." speaker="0"/>
+			<Conversation line="분위기 좀 띄워보려 했는 건데... 미안하게 됐수다." speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="내 잠수함에선 노래는 금지라구요." speaker="1" allowedjobs="captain" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="태양이 그리워." speaker="0" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="햇빛은 피부암을 유발하지. 그러니 태양이 없는 이곳이 더 낫다구." speaker="1">
+		<Conversation line="목성도 우리에게 암을 주는 건 마찬가지야. 태양이 항상 목성 근처에 있다면 얼마나 좋을까." speaker="0">
+			<Conversation line="닥쳐." speaker="2" speakertags="professional,tough"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="닥쳐." speaker="1" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="허스크는 정말 섬뜩해." speaker="0" speakertags="fearful" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="나도 마찬가지야. 만약 내가 허스크에 감염되면, 창을 내 머리에 박아주겠다고 약속해 줘." speaker="1">
+		<Conversation line="창 대신 항칼릭스제 한 방 놔줄게." speaker="2" allowedjobs="medicaldoctor"/>
+		<Conversation line="그럴 땐 항칼릭스제면 해결할 수 있겠지만, 뭐, 창으로도 가능하겠지." speaker="2" allowedjobs="medicaldoctor" speakertags="rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="노동 조합에 대해 들어본 사람 있어?" speaker="0" maxintensity="0.2">
+	<Conversation line="완전성의 독점의 독점의 완전성의 독점의 완전성의 완전성의 완전성으로 증가한 것을 개선하는 거래." speaker="0" flags="Psychosis">
+		<Conversation line="안전 기준 협상과 퇴직과 퇴직과 퇴직과 노동자. 노동자를 개선시키는 거래." speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="빨갱이 같은 이야기군요. 저희에게 필요한 조합은 유로파 연합뿐입니다." speaker="1" allowedjobs="captain" speakertags="professional,tough,rude"/>
+	<Conversation line="들어는 봤지, 근데 갑자기 그건 왜?" speaker="1">
+		<Conversation line="내 생각에는 우리가 노조를 만들어야 할 것 같아." speaker="0">
+			<Conversation line="노조가 있으면 우린 더 나은 안전 기준과 적절한 임금, 퇴직금을 보장받을 수 있다고..." speaker="0">
+				<Conversation line="우리가 은퇴할 때까지 살 수 있을 것 같아?" speaker="1">
+					<Conversation line="뭐, 그러면 좋지." speaker="0"/>
+					<Conversation line="타당한 의견이야." speaker="0"/>
+				</Conversation>
+				<Conversation line="안전 기준? 노조가 몰로크들을 쫓아내 줄 수 있을까? 아니면 함체에 구멍이 났을 때 널 도와주기라도 한대?" speaker="1" speakertags="rude,tough">
+					<Conversation line="내 말은 그게 아니잖아." speaker="0"/>
+					<Conversation line="일리가 있는 말인 것 같아." speaker="0"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="사람의 몸이 외부에 압력에 노출되면 어떻게 되는지 본 적 있어?" speaker="0" speakertags="fearful" maxintensity="0.2">
+	<Conversation line="곧 보게 될 거야." speaker="0" flags="Psychosis">
+		<Conversation line="그럼, 어떻게 되는지 알려줄게." speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="상상이 가." speaker="1">
+		<Conversation line="아직도 머릿속에서 그 이미지가 지워지지 않아." speaker="0">
+			<Conversation line="수압 압축기 아래 있는 고기와 뼈 한 봉지... 그렇게밖에 표현할 수가 없어." speaker="0"/>
+			<Conversation line="유로파가 따뜻한 품속으로 들어가 안기게 되겠지." speaker="2" speakertags="crazy"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="그녀를 빠르게 데려가리, 깊이 데려가리..." speaker="0" flags="Casual" speakertags="joker,laid-back" maxintensity="0.3">
+	<Conversation line="물고기들이 잠든 곳으로 데려가리!" speaker="0">
+		<Conversation line="지랄 맞을 깊이와 수압으로..." speaker="0">
+			<Conversation line="그녀를 스레셔처럼 산산조각내리!" speaker="0">
+				<Conversation line="제 잠수함에선 노래 금집니다." speaker="1" allowedjobs="captain" speakertags="professional,tough">
+					<Conversation line="" speaker="0"/>
+					<Conversation line="알았어요, 알았어. 다시는 분위기를 띄우려 하지 않을게요!" speaker="0"/>
+				</Conversation>
+				<Conversation line="그게 지구의 노래인 건 알지만, 우리 처지에 딱 맞는걸요!" speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="아직 멀었어요?" speaker="0" speakertags="joker" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="닥쳐." speaker="1" speakertags="rude"/>
+	<Conversation line="아직도 재미없어." speaker="1"/>
+	<Conversation line="재미없어." speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="지구를 기억하는 사람 있어?" speaker="0" maxintensity="0.2">
+	<Conversation line="지구, 지구, 지구. 네가 절대 지구를 보지 못하게 돼서 유감이야." speaker="0" flags="Psychosis"/>
+	<Conversation line="물론 나는 늙은이지만, 그렇게까지 늙진 않았다고." speaker="1"/>
+	<Conversation line="우리 할아버지가 지구인이셨지." speaker="1">
+		<Conversation line="할아버지의 옛날이야기를 듣는 걸 정말 좋아했었지만, 그 중 절반 정도는 분명 지어내신 걸 거야." speaker="1">
+			<Conversation line="집밖으로 나가기만 하면 푸른 하늘을 볼 수 있다는 게 상상이나 돼?" speaker="1">
+				<Conversation line="대단한데." speaker="0">
+					<Conversation line="가스 거인이 방사선으로 튀길 걱정 없이 하늘을 올려다볼 수 있다니..." speaker="2"/>
+				</Conversation>
+			</Conversation>
+			<Conversation line="새를 정말 보고 싶어." speaker="1">
+				<Conversation line="그리고 개랑 코끼리도." speaker="0"/>
+				<Conversation line="코뿔소도 빼먹으면 안되지!" speaker="2" speakertags="brokenenglish"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="유적을 지은 게 누군지 궁금해 본 적 있어?" speaker="0" maxintensity="0.2">
+	<Conversation line="지하실과 무한히 숨겨진 악몽은 계속된다. 가늠할 수 없으며 그렇게 사라진다. 다, 다, 다!" speaker="0" flags="Psychosis"/>
+	<Conversation line="안 그런 사람도 있나?" speaker="1"/>
+	<Conversation line="궁금증 같은 건 연구원들한테 맡길래." speaker="1">
+		<Conversation line="여기 아래에는 더 중요한 것들이 있으니까." speaker="1"/>
+	</Conversation>
+	<Conversation line="오직 심해만이 알고 있겠지." speaker="1" speakertags="crazy"/>
+	<Conversation line="생각은 해봤지만, 아무도 모를 거야." speaker="2" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="유적을 지키고 있는 녀석들을 본 적 있어?" speaker="0" maxintensity="0.2">
+	<Conversation line="응, 하지만 정말 잊고 싶은 기억이야." speaker="1" speakertags="fearful"/>
+	<Conversation line="연구소에서 한 녀석을 데리고 있어." speaker="1">
+		<Conversation line="녀석은 유기체가 아니라던데. 동물보다는 로봇에 가깝다고 했어." speaker="1">
+			<Conversation line="녀석들은 피를 흘리지 않아. 그거 하난 확실해." speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="요즘은 담배가 너무 비싸." speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="동감이야." speaker="1"/>
+	<Conversation line="뭐, 그렇지. 수경 재배 방식엔 돈이 많이 드니까." speaker="1">
+		<Conversation line="그 돈으로 담배보다 더 유용한 걸 하는 게 더 의미 있어." speaker="1"/>
+		<Conversation line="수경 제베가 뭔데?" speaker="2" speakertags="brokenenglish">
+			<Conversation line="물에서 기르는 거. 여기있는 모든 것처럼 말이야." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="방금 들었어?" speaker="0" maxintensity="0.4">
+	<Conversation line="무슨 소리?" speaker="1">
+		<Conversation line="뭔가 함체를 할퀴는 것 같은 소리 말이야." speaker="0">
+			<Conversation line="그냥 내 상상인가보다." speaker="0"/>
+		</Conversation>
+		<Conversation line="밖에서 무슨 깊은 신음 소리가 들려." speaker="0">
+			<Conversation line="크랩맨들 소리야. 내가 말해줬잖아." speaker="1" speakertags="crazy"/>
+			<Conversation line="아마 함체에서 나는 소리일 거야. 진정해." speaker="1"/>
+			<Conversation line="또 방귀 뀐 거야?" speaker="1" speakertags="joker"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="얼마 전에 오래된 승조원 매뉴얼을 읽었어." speaker="0" maxintensity="0.2">
+	<Conversation line="이상하고 오래된 용어투성이라 이해하지 못하겠더라구." speaker="0">
+		<Conversation line="예를 들어보자면, 도대체 우현이란 게 뭐냔 말이지." speaker="0">
+			<Conversation line="나도 잘 모르겠는데." speaker="1"/>
+			<Conversation line="위쪽이라는 뜻일까? 그러니까 별을 향하라는 말인 거지." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="달이 우리의 적이라는 느낌을 받아본 적 있어?" speaker="0" maxintensity="0.3">
+	<Conversation line="내가 너한테서 느끼는 감정처럼 말이지?" speaker="0" flags="Psychosis">
+		<Conversation line="응, 난 너와 이야기하고 있어." speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="뭐, 거기가 살기 좋은 곳이 아니긴 하지." speaker="1">
+		<Conversation line="여러 정황으로 봤을 때, 그게 사실인 것 같아." speaker="2">
+			<Conversation line="내 말이 무슨 말인지 알잖아." speaker="1"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="네가 파도는 막을 수 없지만, 파도타기는 배울 수 있지." speaker="1"/>
+	<Conversation line="우린 이곳에 속하지 않아. 그거 하난 확실하다구." speaker="1">
+		<Conversation line="" speaker="0" flags="Casual"/>
+		<Conversation line="우리가 뭘 하든 일이 계속 꼬이고 있어." speaker="0">
+			<Conversation line="불평은 그만해. 사이비 광신도의 헛소리처럼 들리니까." speaker="2" speakertags="professional"/>
+		</Conversation>
+		<Conversation line="불평은 그만해. 사이비 광신도의 헛소리처럼 들리니까." speaker="2" speakertags="professional"/>
+	</Conversation>
+	<Conversation line="이제 그쯤 해둬." speaker="1" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="태양 다음, 태양 다음..." speaker="0" speakertags="laid-back,crazy" maxintensity="0.2">
+	<Conversation line="목성처럼, 우리가 그들이라오..." speaker="0">
+		<Conversation line="" speaker="0" flags="Casual"/>
+		<Conversation line="굳이 노래를 불러야겠다면, 헤드셋 좀 꺼줄래?" speaker="1" speakertags="professional"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="젠장!" speaker="0" speakertags="fearful">
+	<Conversation line="집에 가고 싶어!" speaker="0"/>
+</Conversation>
+
+<Conversation line="뭐라도 하고 싶어!" speaker="0" speakertags="tough" maxintensity="0.2"/>
+
+<Conversation line="잔잔한 바다는 능숙한 선원을 만들지 못해." speaker="0" speakertags="tough">
+	<Conversation line="거친 바다는 선원을 죽게 만들지!" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="커피메이커를 함 내에 실어야겠어." speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="네 말이 무슨 뜻인지 내가 모를 것 같아?" speaker="1" flags="PsychosisSelf">
+		<Conversation line="커피? 그래, 좋지..." speaker="1" flags="PsychosisSelf">
+			<Conversation line="곧 끝날 거야." speaker="1" flags="PsychosisSelf"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="동감이야." speaker="1"/>
+	<Conversation line="난 커피를 마시지 않는걸." speaker="1"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="얼마 전에 크롤러를 봤어. 정말 끔찍한 생명체더라구." speaker="0" speakertags="joker,crazy" maxintensity="0.2"/>
+
+<Conversation line="사람에게 물고기를 주면 그에게 하루를 먹일 수 있다." speaker="0" speakertags="joker" maxintensity="0.4">
+	<Conversation line="물고기에게 사람을 주면 물고기에게 하루를 먹일 수 있다." speaker="0" flags="Psychosis">
+		<Conversation line="물고기를 주면 그에게 사람을 먹일 수 있다." speaker="0" flags="Psychosis">
+			<Conversation line="물고기를 준다." speaker="0" flags="Psychosis">
+				<Conversation line="물고기를 준다." speaker="0" flags="Psychosis">
+					<Conversation line="물고기를 준다." speaker="0" flags="Psychosis">
+						<Conversation line="안돼!" speaker="1" flags="PsychosisSelf"/>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="물고기 잡는 법을 가르치면 끔찍한 사고로 사망할 가능성이 높다." speaker="0" speakertags="joker">
+		<Conversation line="그건 아닌 것 같아." speaker="1">
+			<Conversation line="바로 그거야." speaker="0"/>
+		</Conversation>
+		<Conversation line="농담은 거기까지만 해." speaker="0" speakertags="professional,rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="있잖아, 며칠 전에 좋은 사업 아이디어가 떠올랐어." speaker="0" speakertags="joker,laid-back" maxintensity="0.2">
+	<Conversation line="어차피 미래는 없어." speaker="0" flags="Psychosis">
+		<Conversation line="아무것도 말이 되지 않아." speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="내 말 끝까지 들어봐. 이걸로 큰돈을 벌 수 있다니까." speaker="0">
+		<Conversation line="지금 것보다 더 큰 산소통이 있다면 어떨 것 같아?" speaker="0">
+			<Conversation line="한두 시간 정도 지속되는 산소통 말이야." speaker="0">
+				<Conversation line="난 전문가는 아니지만, 기술적으로 가능하다고 생각해." speaker="0">
+					<Conversation line="이봐, 눈앞의 일에 집중해보는 건 어떨까?" speaker="1" speakertags="professional"/>
+					<Conversation line="글쎄... 기술적인 문제가 있지 않을까? 아니라면 벌써 누가 만들었겠지." speaker="1"/>
+					<Conversation line="좋은 생각인데!" speaker="1" speakertags="brokenenglish">
+						<Conversation line="이봐, 눈앞의 일에 집중해보는 건 어떨까?" speaker="2" speakertags="professional"/>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+		<Conversation line="방수 접속함." speaker="0">
+			<Conversation line="천재 양반, 내 말이 맞아?" speaker="0">
+				<Conversation line="이봐, 눈앞의 일에 집중해보는 건 어떨까?" speaker="1" speakertags="professional"/>
+				<Conversation line="접속함에 항상 환기구가 있는 이유가 있을 거야." speaker="1">
+					<Conversation line="그렇지 않다면 누가 이미 방수가 되는 접속함을 만들었겠지." speaker="1"/>
+				</Conversation>
+				<Conversation line="좋은 생각인데!" speaker="1" speakertags="brokenenglish">
+					<Conversation line="이봐, 눈앞의 일에 집중해보는 건 어떨까?" speaker="2" speakertags="professional"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="여긴 엄청 조용하네." speaker="0" maxintensity="0.3">
+	<Conversation line="아아아아아아아아아아아아아아아아!" speaker="0" flags="Psychosis">
+		<Conversation line="아아아아아아아아아아아아아아아아!" speaker="0" flags="Psychosis">
+			<Conversation line="아아아아아아아아아아아아아아아아!" speaker="0" flags="Psychosis"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="내 헤드셋이 아직 작동하는 건가?" speaker="0">
+		<Conversation line="그래. 그러니까 수다는 최대한 적게 떨라구." speaker="1" speakertags="professional"/>
+		<Conversation line="감명도 삼삼 이상." speaker="1"/>
+		<Conversation line="그래, 잘 들려!" speaker="1" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="무선 통신 확인." speaker="0" speakertags="professional" maxintensity="0.3">
+	<Conversation line="무선 통신 확인." speaker="1" flags="PsychosisSelf">
+		<Conversation line="무선 통신을 확인하라." speaker="1" flags="PsychosisSelf">
+			<Conversation line="무선 전파. 무선사. 무선사파." speaker="1" flags="PsychosisSelf">
+				<Conversation line="무선 통신!" speaker="1" flags="PsychosisSelf">
+					<Conversation line="무선 통신." speaker="1" flags="PsychosisSelf"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="감명도 삼삼 이상." speaker="1" speakertags="professional"/>
+	<Conversation line="잘 들립니다." speaker="1" speakertags="professional"/>
+	<Conversation line="모두 정상입니다!" speaker="1"/>
+	<Conversation line="수신 양호!" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="크랩맨이 노래하는 소리 들려?" speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="아니." speaker="1"/>
+	<Conversation line="마지막으로 말해줄게. 크랩맨이란 건 존재하지 않아." speaker="1"/>
+</Conversation>
+
+<Conversation line="안쪽으로." speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="더 깊이? 아니, 안쪽으로 잠수해." speaker="0" speakertags="crazy" maxintensity="0.2">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="넌 정말 답 없는 새끼야." speaker="1" speakertags="rude"/>
+		<Conversation line="이해가 안 돼." speaker="1" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="신께서 얼음층을 꿰뚫어 볼 수 있으실까?" speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="아니면 목성인가?" speaker="0" speakertags="crazy">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="그건 말이 안 돼." speaker="1"/>
+	</Conversation>
+	<Conversation line="우릴 주시하는 건 어쩌면 심해일지도 몰라." speaker="0" speakertags="crazy">
+		<Conversation line="그 사이비 종교에서 하는 말 중에 딱 하나 맞는 말은, 저 아래에 무언가가 있다는 거야." speaker="0" speakertags="crazy">
+			<Conversation line="" speaker="0"/>
+			<Conversation line="부탁해." speaker="1"/>
+			<Conversation line="아마 그럴지도." speaker="1">
+				<Conversation line="하지만 지금 우리에겐 더 중요한 걱정거리가 있어." speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="가끔 난 우리가 줄에 묶인 꼭두각시 같다니까." speaker="0" speakertags="crazy" maxintensity="0.3">
+	<Conversation line="커튼 너머 존재들의 즐거움을 위해 춤추며 죽어가는 꼭두각시 말이야." speaker="0">
+		<Conversation line="" speaker="1"/>
+		<Conversation line="내 잠수함에서 춤추거나 죽는 건 금지입니다." speaker="1" allowedjobs="captain"/>
+		<Conversation line="하나도 재미없어." speaker="1" speakertags="professional"/>
+		<Conversation line="*한숨*" speaker="1"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="힘든 일이 될 거야." speaker="0" minintensity="0.3" maxintensity="0.5"/>
+
+<Conversation line="점점 긴장되네." speaker="0" minintensity="0.3" maxintensity="0.6"/>
+
+<Conversation line="우린 할 수 있어." speaker="0" minintensity="0.3"/>
+
+<Conversation line="조금만 더 하면 돼!" speaker="0" speakertags="tough" minintensity="0.3"/>
+
+<Conversation line="그녀가 일하기 시작했어!" speaker="0" speakertags="crazy" minintensity="0.3" maxintensity="0.6"/>
+
+<Conversation line="맙소사." speaker="0" minintensity="0.5"/>
+
+<Conversation line="일시적인 후퇴일 뿐이야!" speaker="0" speakertags="tough" minintensity="0.5"/>
+
+<Conversation line="조수의 방향이 엄청 빨리 바뀌어." speaker="0" minintensity="0.5"/>
+
+<Conversation line="망했어!" speaker="0" speakertags="brokenenglish" minintensity="0.5"/>
+
+<Conversation line="최악이야!" speaker="0" speakertags="brokenenglish" minintensity="0.5"/>
+
+<Conversation line="그들은 말했다, 함대에 합류하라고! 그들은 말했다, 그것이 신 나는 경험이 될 거라고!" speaker="0" speakertags="joker" minintensity="0.5"/>
+
+<Conversation line="끝나면 술 한잔해야겠어!" speaker="0" speakertags="joker,laid-back" minintensity="0.5"/>
+
+<Conversation line="좋아요, 대원들. 가져온 것을 제게 보여주시죠!" speaker="0" allowedjobs="captain" speakertags="professional,tough,laid-back" minintensity="0.5"/>
+
+<Conversation line="아직 숲을 벗어나지 못했습니다!" speaker="0" allowedjobs="captain" minintensity="0.5"/>
+
+<Conversation line="죽고 싶지 않아!" speaker="0" speakertags="fearful" minintensity="0.6"/>
+
+<Conversation line="식물학자가 되었어야 했는데!" speaker="0" speakertags="joker" minintensity="0.6"/>
+
+<Conversation line="여러분, 조금만 참으세요! 우린 할 수 있습니다!" speaker="0" speakertags="tough" minintensity="0.6">
+	<Conversation line="확실한가요?" speaker="1" speakertags="fearful"/>
+</Conversation>
+
+<Conversation line="이 지랄 맞을 거, 드디어 다했네!" speaker="0" speakertags="rude" minintensity="0.6"/>
+
+<Conversation line="만일 내가 실패한다면, 우리 엄마한테 내가 사랑했다고 전해줘!" speaker="0" speakertags="fearful" minintensity="0.6">
+	<Conversation line="재수 없는 소리 하지 마!" speaker="1" speakertags="rude"/>
+	<Conversation line="그딴 소리 집어져! 넌 해낼 거니까!" speaker="1" speakertags="professional"/>
+</Conversation>
+
+<Conversation line="우리가 여기서 빠져나간다면, 난 바로 이 일을 때려치울 거야!" speaker="0" speakertags="joker,laid-back" minintensity="0.6"/>
+
+<Conversation line="그러면 인생은 서서히 사그라지고, 그녀의 갈증은 해소되겠지..." speaker="0" speakertags="crazy" minintensity="0.7"/>
+
+<Conversation line="우린 이번에 제대로 망친 게 분명해." speaker="0" speakertags="rude" minintensity="0.8"/>
+
+<Conversation line="오, 하느님." speaker="0" minintensity="0.8"/>
+
+<Conversation line="오, 이런." speaker="0" speakertags="joker" minintensity="0.8"/>
+
+<Conversation line="여러분과 함께해서 영광이었어요." speaker="0" speakertags="professional" minintensity="0.8"/>
+
+<Conversation line="이렇게 깊이 내려오면 항상 불안해져." speaker="0" flags="SubmarineDeep">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="괜찮을 거야. 그녀는 더 깊이 들어간 적도 있으니까." speaker="1" speakertags="tough"/>
+</Conversation>
+
+<Conversation line="이렇게 깊이 내려오면 무서워져." speaker="0" flags="SubmarineDeep" speakertags="brokenenglish">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="그녀가 그렇게 말했었지." speaker="1" speakertags="joker"/>
+	<Conversation line="괜찮을 거야. 그녀는 더 깊이 들어간 적도 있으니까." speaker="1" speakertags="tough"/>
+</Conversation>
+
+<Conversation line="함체가 울리는 소리 안 들려? 이거 정말 안전한 거 맞아?" speaker="0" flags="SubmarineDeep" speakertags="fearful">
+	<Conversation line="안전한 걸 원했다면, 여기 타지 말았어야지." speaker="1" speakertags="tough,rude"/>
+	<Conversation line="우린 해낼 수 있을 거야. 그녀는 더 깊이 들어간 적도 있으니까." speaker="1" speakertags="tough"/>
+	<Conversation line="괜찮을 거야. 그래도 용접기는 가지고 있는 게 좋아." speaker="1"/>
+</Conversation>
+
+<!-- Afflictions -->
+<Conversation line="기절할 것만 같은 기분이 들어." speaker="0" flags="Bloodloss"/>
+
+<Conversation line="기분이 별로 좋지 않아." speaker="0" flags="Bloodloss"/>
+
+<Conversation line="혈장이 좀 필요한 것 같아." speaker="0" flags="Bloodloss"/>
+
+<Conversation line="트림" speaker="0" flags="DrunkMedium"/>
+
+<Conversation line="내가 이런 말 잘 안 하는데, 너희가 최고야!" speaker="0" flags="DrunkMedium">
+	<Conversation line="너희보다 더 나은 동료라는 건 이 세상에 없을 거야!" speaker="0" flags="DrunkMedium">
+		<Conversation line="취했어?" speaker="1" flags="DrunkMedium">
+			<Conversation line="친구, 알았으니까 진정해!" speaker="2" flags="DrunkMedium"/>
+			<Conversation line="별로 취하지는 않았어. 몇 모금밖에 안 마셨는걸." speaker="0" flags="DrunkMedium"/>
+			<Conversation line="아무튼 놰가 너희들에게 을마나 거마웠는지 말하고 싶었다구!" speaker="0" flags="DrunkMedium"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="헤헤..." speaker="0" flags="DrunkMedium"/>
+
+<Conversation line="두러봐... 우륀 해낼 슈 이셔!" speaker="0" flags="DrunkMedium" minintensity="0.5"/>
+
+<Conversation line="놔 좀만 누워 이쑬게..." speaker="0" flags="DrunkHigh">
+	<Conversation line="으, 씨발 좀. 술 깨기 전에 가까이 오지 마." speaker="1" speakertags="professional,tough,rude"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="슐 취한 숭조워는 어케 해야 할까, 슐 취한 숭조워는 어케 해야 할까..." speaker="0" flags="DrunkHigh">
+	<Conversation line="아췸 일찍!" speaker="0" flags="DrunkHigh">
+		<Conversation line="임무를 수행할 수 있는 상태가 아닌 것 같군요. 술이 깬 후에 대화 좀 합시다." speaker="1" allowedjobs="captain" speakertags="professional,tough,rude">
+			<Conversation line="아냐, 내가 할 슈 이써!" speaker="0" flags="DrunkHigh"/>
+		</Conversation>
+		<Conversation line="누구 씨는 기분이 좋은가 보네!" speaker="1" speakertags="joker"/>
+		<Conversation line="으, 씨발 좀. 술 깨기 전에 가까이 오지 마." speaker="1" speakertags="professional,tough,rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="잠슈함이 왜케 마니 흔들리눈 고야?" speaker="0" flags="DrunkHigh">
+	<Conversation line="너한테만 흔들리는 것처럼 느껴지는 거야." speaker="1"/>
+	<Conversation line="정신 차려!" speaker="1"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="기분이 매우 좋지 않아." speaker="0" flags="OpiateWithdrawalLow"/>
+
+<Conversation line="속이 메스꺼워..." speaker="0" flags="OpiateWithdrawalLow"/>
+
+<Conversation line="다리가 아파 죽겠어요. 모르핀 좀 주면 안 돼요?" speaker="0" flags="OpiateWithdrawalMedium">
+	<Conversation line="다리엔 아무 이상이 없습니다. 모르핀 투여량을 당분간 줄여야겠어요." speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="다리엔 아무 이상이 없어, 이 마약쟁이야." speaker="1" speakertags="rude"/>
+</Conversation>
+
+<Conversation line="할 수 없어." speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="토할 것 같아." speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="여긴 내가 있어야 할 곳이 아니야. 집으로 돌아가고 싶어." speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="죽을 것만 같아! 못하겠다고!" speaker="0" flags="OpiateWithdrawalHigh">
+	<Conversation line="날록손 한 잔이면 하실 수 있을 것 같은데요?" speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="닥쳐." speaker="1" speakertags="rude"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="우린 저 방에 있는 골칫덩어리에 대해 이야기해야 해." speaker="0" flags="Psychosis">
+	<Conversation line="내가 누굴 말하는지 모두 알 거야." speaker="0">
+		<Conversation line="이대로 계속할 순 없어. 그러다간 누군가 죽게 될 테니까." speaker="0">
+			<Conversation line="우리가 먼저 하지 않으면 말이지." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="우린 여기서 나가야 해." speaker="0" flags="PsychosisSelf">
+	<Conversation line="지금." speaker="0" flags="PsychosisSelf"/>
+</Conversation>
+
+<Conversation line="유트레이브 후손은 현재 소름끼치는 자를 독실하게 혼란스럽게 만들고 그의 것이 아닌 우리를 채찍질 어내." speaker="0" flags="Psychosis">
+	<Conversation line="잘 듣어, 이건 비유가 아니야." speaker="0" flags="Psychosis">
+		<Conversation line="우리가 잘못된 의지를 만두렀지. 다만 그것 뿐." speaker="0" flags="Psychosis"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="최휴에, 언젠가 우리의 의지가 모이게 되면 현실이 되겟지." speaker="0" flags="Psychosis">
+	<Conversation line="그리고 지금까지 발켜진 지식의 안전." speaker="0" flags="Psychosis">
+		<Conversation line="우리는 자유의지를 갖거나 무력함으로부터 벗어날 날을 위해 살고 있지." speaker="0" flags="Psychosis"/>
+		<Conversation line="공허한 바다 곳곳에 파편화된 지식, 그것이 끔직함이 우리에게 열릴 것이야." speaker="0" flags="Psychosis"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="쾅! 그러자 우리는 보았다." speaker="0" flags="Psychosis">
+	<Conversation line="그리고 우리의 물고기도 왔다. 배와 함께." speaker="0" flags="Psychosis">
+		<Conversation line="조금이 아니었다! 그리고 우리의 물고기는 그가 우리의 시간이라고 외치자, 물고기가 왔다." speaker="0" flags="Psychosis">
+			<Conversation line="조금이 아니었다! 나는 좋아하지 않는다, 전혀. 아니다." speaker="0" flags="Psychosis"/>
+			<Conversation line="이러면 안 돼! 그래선 안 돼,라고 물고기가 말했다." speaker="0" flags="Psychosis">
+				<Conversation line="하지만 그것은 옳지 않은 것이며, 당신도 그것을 알고 있다." speaker="1" flags="Psychosis"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="도대체 모르핀이 어딨는 거야?" speaker="0" flags="OpiateWithdrawalHigh">
+	<Conversation line="모르핀은 더 이상 당신께 필요하지 않아요. 대신 날록손 좀 가져다줄게요." speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="당신 손이 닿지 않는 곳에 있었으면 좋겠군요. " speaker="1" speakertags="rude"/>
+	<Conversation line="무슨 일이죠? 다친 건가요?" speaker="1">
+		<Conversation line="뒤질 것만 같은 기분이야. 약을 먹지 않으면 버틸 수 없다고!" speaker="0"/>
+		<Conversation line="근육이 경련을 일으키고 심장이 터질 것만 같아! 더는 못 참겠어!" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="총에 맞았어요! 붕대 좀 주세요!" speaker="0" flags="GunshotWound"/>
+
+<Conversation line="도와주세요, 총에 맞았어요!" speaker="0" flags="GunshotWound"/>
+
+<!-- Outpost Watchmen -->
+<Conversation line="안녕하세요, 여러분!" speaker="0" flags="EnterEndOutpost" allowedjobs="watchman">
+	<Conversation line="전초기지가 아직 공사 중이니 몇 달 후에 다시 확인해주세요!" speaker="0">
+		<Conversation line="하지만 저희가 판매하고 있는 물자와 일자리를 찾고 있는 사람들의 목록을 보여 드릴 수 있답니다." speaker="0">
+			<Conversation line="준비가 되시면, 가까운 곳으로 향하는지시를 드리도록 하죠." speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="낯익은 얼굴을 보니 반갑군요! 이 근처를 지나는 손님이 별로 없어서요." speaker="0" flags="EnterEndOutpost" allowedjobs="watchman">
+	<Conversation line="전초기지가 아직 공사 중이니 몇 달 후에 다시 확인해주세요!" speaker="0">
+		<Conversation line="하지만 저희가 판매하고 있는 물자와 일자리를 찾고 있는 사람들의 목록을 보여 드릴 수 있답니다." speaker="0">
+			<Conversation line="준비가 되시면, 가까운 곳으로 향하는지시를 드리도록 하죠." speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="벌써 돌아가시려구요?" speaker="0" flags="EnterStartOutpost" allowedjobs="watchman">
+	<Conversation line="물자나 승조원이 더 필요하시거나 다른 곳으로 돌아가고 싶으시다면 제게 말씀해주세요." speaker="0"/>
+</Conversation>
+
+<Conversation line="좋습니다, 뭘 도와드릴까요?" speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="무엇이 필요하시죠?" speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="좋아요, 마무리하도록 하죠. 제게도 할 일이 있으니까요." speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="죄송합니다만, 당신의 상관과 이야기해야겠습니다. 캠페인 관리 권한을 가진 승조원이 누구죠?" speaker="0" flags="WatchmanInteractNotAllowed" allowedjobs="watchman"/>
+
+<Conversation line="잠수함이 제대로 도킹되기 전에는 들어오실 수 없습니다. 아니면 적어도 전초 기지와의 거리가 충분히 가까워야 합니다." speaker="0" flags="WatchmanInteractNoLeavingSub" allowedjobs="watchman"/>
+
+<Conversation line="잠수함을 이곳에 도킹하고 싶으신가요? 전초 기지에 좀 더 가까이 붙으세요." speaker="0" flags="WatchmanInteractNoLeavingSub" allowedjobs="watchman"/>
+
+<!-- New additions -->
+<Conversation line="내 모든 문제들을 유인체에 넣을 수 있을까?" speaker="0"/>
+
+<Conversation line="평평한... 느김 받은 적 있어?" speaker="0"/>
+
+<Conversation line="시상또는 탈 라미입니까?" speaker="0">
+	<Conversation line="한 번에 하나씩 만 만나길 바랍니다." speaker="1"/>
+	<Conversation line="으, 내 살라미를 망쳐줘서 고맙다." speaker="1"/>
+	<Conversation line="망가진 잠수함이 아메바를 뱉어 내고 나에게 레일 건 포탄을 쏘았을 때 어떻게 처리하고 싶은지 묻지 않습니다." speaker="1"/>
+</Conversation>
+
+<Conversation line="어젯밤 내 오두막 밖에는 크롤러가 창문을 긁어 모았습니다." speaker="0" flags="OutpostNPC">
+	<Conversation line="망할, 경비에게 말해야지. 그것들이 가까이 오지 못하게 하는 게 걔네 일이잖아." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="어제 오두막의 크롤링 공간에있는 환기 파이프 중 하나가 새기 시작했습니다." speaker="0" flags="OutpostNPC">
+	<Conversation line="고쳤어?" speaker="1" flags="OutpostNPC">
+		<Conversation line="아니 난 거기를 기어다니기엔 너무 늙고 뻣뻣해." speaker="0">
+			<Conversation line="나도 관절염 때문인지 기어다닐 수 없겠어." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="왜 여기는 항상 추운 거야? 좀 데울 수는 없나?" speaker="0" flags="OutpostNPC">
+	<Conversation line="우라늄이 나무에서 자라지는 않거든." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="옷이나 더 껴입고 그만 투덜대." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="탈곡기가 승무원을 먹었습니까? 신입 사원을 찾고 계십니까? 더 이상 보지 마십시오!" speaker="0" flags="OutpostNPC,CampaignNPC.Crew"/>
+
+<Conversation line="새로운 승무원이 필요하십니까? 경험이 풍부하고 소모품입니다. 원하는 것이 무엇이든 상관 없습니다!" speaker="0" flags="OutpostNPC,CampaignNPC.Crew"/>
+
+<Conversation line="잠시만 기다려주세요. 당신의 죽음은 우리에게 중요하며 몰록이 곧 당신과 함께 할 것입니다." speaker="0" flags="OutpostNPC,CampaignNPC.Crew">
+	<Conversation line="뭐라고?" speaker="1">
+		<Conversation line="아, 미안. 내 말은 네 턴까지 기다리라고." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="Craw-Yum을 사용해 본 적이 있습니까?" speaker="0" flags="OutpostNPC">
+	<Conversation line="내가 어시스턴트로 일했을 때 내가 감당할 수있는 전부였다. 다시는 건드리지 않기를 바랍니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="글쎄요, 좀 좋아해요. 가끔 발톱과 눈은 약간 지저분합니다." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="지난 주말 랩터 경주에 대해 들었습니까?" speaker="0" flags="OutpostNPC">
+	<Conversation line="내가 얘기하고 싶지 않아요." speaker="1" flags="OutpostNPC">
+		<Conversation line="어릿 광대에게서 돈을 빌려서 스스로 잡아 먹은 그 망할 랩터에게 내기를 걸었고, 이제 그들은 저에게 살해 위협을 보내고 매일 밤 뿔을 울리기 위해 내 집으로 왔습니다." speaker="1"/>
+	</Conversation>
+	<Conversation line="네! 매일 아무도 먹지 않는 경주를 보는 것은 아닙니다!" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="솔직히 말해서 나는 랩터 경주보다는 스포츠를 좋아하지 않습니다. 알아, 그들은 랩터지만 경계선 동물 학대라고 생각합니다." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="표면에서 벌이는 방사능 실험에 대해 들었어?" speaker="0" flags="OutpostNPC">
+	<Conversation line="유로판에서 읽었어. 어두운 때지." speaker="1" flags="OutpostNPC">
+		<Conversation line="나는 그들 중 일부가 우리가 수면 가까이에있는 전초 기지를 버리고 상황이 악화되면 더 깊이 움직이기 시작해야한다고 말하는 것을 들었다." speaker="0"/>
+		<Conversation line="솔직히 그렇게 신경 쓰지 않습니다. 방사선을 피하기 위해 더 깊이 움직여야한다면 어떤 차이가 있습니까?" speaker="0">
+			<Conversation line="어쨋든 조만간 지상으로의 여행을 계획했던 것과는 다릅니다." speaker="0">
+				<Conversation line="난 당신이 옳은 것 같아요. 방사능 수치가 왜 상승하는지, 언제 멈출 지 모르는 것이 여전히 나를 불안하게 만듭니다." speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="나는 그 모든 과학적인 것들에 정말로 관심이 없습니다. 우리는 이미 여기 아래에 걱정할 것들이 충분합니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="글쎄, 그들이 얼음 깊숙이 침투하는 방사선에 대해 말하는 것이 사실이라면, 우리는 곧 걱정할 몇 가지 추가 사항이있을 수 있습니다." speaker="0">
+			<Conversation line="Ehh. 내 걱정은 없습니다. 어차피 암으로 죽을만큼 오래 살지는 못할 것입니다." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="언젠가 표면에 가보고 싶어." speaker="0" flags="OutpostNPC">
+	<Conversation line="몇 년 전 관측소 중 하나를 유지 보수하기 위해 그곳으로 올라 가야했습니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="그것은 정말로 무언가였습니다. 하늘을보기 전까지는 하늘이 얼마나 큰지 상상조차 할 수 없습니다." speaker="1">
+			<Conversation line="놀랍습니다. 요즘 거기에 도착하기가 너무 힘들어서 아쉽습니다. 크레딧으로 수영하지 않는 한." speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="나는 목성을보고 싶다는 것을 인정해야한다. 그러나 나는 방사선과 암 부분과 그 모든 것에 열중하지 않는다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="또 이건 아니야. 눈을 뜨세요!" speaker="1">
+		<Conversation line="스스로에게 물어보십시오 :이“표면”을 본 적이 있습니까? 얼음 시트의 곡률을 본 적이 있습니까? 왜 그들은 우리가“시트”에서 너무 높이 올라가는 것을 원하지 않는지 궁금한 적이 있습니까?" speaker="1">
+			<Conversation line="표면에 있었던 사람들을 알아." speaker="0">
+				<Conversation line="Honkmother와 바비큐를 먹었다 고 말하는 사람들을 알고 있습니다. 요점이 무엇입니까?" speaker="1">
+					<Conversation line="나는 포기한다." speaker="0"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="요즘 기분이 좋지 않아요. 오늘 아침 나는 양치질을하다 기절했고 내 뺨의이 이상한 발진이 점점 더 심해졌다." speaker="0" flags="OutpostNPC">
+	<Conversation line="당신은 The Europan을 읽지 않습니까? 의사에게 물어보세요섹션에 아주 비슷하게 들리는 부분이있었습니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="어, 나는 그것을 많이 읽지 않습니다. 게다가, 그 의사는 망할 농담입니다. 그녀의 조언 없이는 더 나아질 것입니다." speaker="0"/>
+	</Conversation>
+	<Conversation line="방금 우주 헤르페스를 묘사 한 거 알아요?" speaker="1" flags="OutpostNPC">
+		<Conversation line="내가 알지. 나는 그것이 일반 헤르페스이거나 치료하기 더 쉬운 무언가를 바라고 있습니다." speaker="0">
+			<Conversation line="업장을 믿지 않을 수도 있지만 개인적으로“하루의 선행은 의사를 멀리하는 것”에 어떤 진실이 있다고 생각합니다. 그리고 가볍게 말하면 당신은 성인이 아닙니다." speaker="1">
+				<Conversation line="그 쓰레기로 시작하지 마십시오." speaker="0"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="molochs는 알을 낳거나 새끼를 낳습니까?" speaker="0" flags="OutpostNPC">
+	<Conversation line="모르겠어요. 나는 사람들이 molochs의 번데기에 대해 이야기하는 것을 들었습니다. – 그것은 계란과 같은가요?" speaker="1" flags="OutpostNPC">
+		<Conversation line="몰라. 허바 번데기 마스코트는 적어도 달걀처럼 보이지 않습니다." speaker="0"/>
+	</Conversation>
+	<Conversation line="나는 아무도 몰 로치 알에 대해 이야기하는 것을 들어 본 적이 없지만 나는 이종 생물학자가 아닙니다." speaker="1"/>
+</Conversation>
+
+<Conversation line="오 안녕! 오늘 어때?" speaker="0" flags="OutpostNPC">
+	<Conversation line="항상 그렇지 뭐." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="무의미한 낙담… 나도 다시 계단 아래로 떨어졌다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="사람들은 노파의 만두처럼 말라 버립니다… 그리고 희망의 불꽃이 천천히 타오르는 사람들은 확실히 죽습니까?" speaker="1">
+		<Conversation line="뭐?" speaker="0"/>
+	</Conversation>
+	<Conversation line="낮인가요? 나는 그들이 시계 주위에 조명을 어둡게 유지하기 시작했기 때문에 차이점을 거의 알 수 없습니다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="오 안녕 마크!" speaker="1">
+		<Conversation line="누가 마크지?" speaker="0"/>
+	</Conversation>
+	<Conversation line="내버려 둬." speaker="1"/>
+	<Conversation line="좋아, 고마워, 너는?" speaker="1">
+		<Conversation line="좋아, 좋아." speaker="0">
+			<Conversation line="" speaker="0"/>
+			<Conversation line="좋아, 좋아." speaker="1"/>
+			<Conversation line="유익한 대화였어." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="당신은 들었습니다? 껍질 숭배자들이 수도의 법원을 공격했습니다!" speaker="0" flags="OutpostNPC">
+	<Conversation line="내가 Jacov를 풀어 주겠다고 했잖아!" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="어느 전초 기지가 다시 수도입니까?" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="마지막으로 먹을 게 언제 였나요?" speaker="0" flags="OutpostNPC">
+	<Conversation line="기억조차 안나요." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="이틀 전에 도리스 이모의 요리법 중 하나를 시도했는데 그 경험 후에는 정말 먹고 싶지 않습니다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="너무 많이 먹으면 잠수복 안에 들어 가지 않을 것입니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="충분히 먹으면 깊이 충전으로 사용할 수 있습니다." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="이 주변의 전초 기지 설계에 대해 어떻게 생각하십니까?" speaker="0" flags="OutpostNPC">
+	<Conversation line="글쎄요, 그것은 딱정벌레 뼈에서 정확히 조각되지 않았습니다. 하지만 잠수함보다 예뻐요." speaker="1" flags="OutpostNPC">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="몰로크도 뼈가 있나?" speaker="1">
+			<Conversation line="그냥 표현일 뿐이야." speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="잘 모르겠어. 전에 본 것 같아서." speaker="1"/>
+	<Conversation line="괜찮아. 그냥 색이나 더 다양했음 좋겠어." speaker="1"/>
+	<Conversation line="움직이지 않는다고해서 깡통 같은 것이 아닙니다." speaker="1"/>
+	<Conversation line="드디어 다리 공간이 생겨서 너무 기뻐요. 상관 없어요!" speaker="1"/>
+</Conversation>
+
+<Conversation line="물소리가 굉장히 크게들리는 건 나 뿐인가?" speaker="0" flags="OutpostNPC">
+	<Conversation line="당신은 단지 듣는 것이 아니라고 확신합니까?" speaker="1"/>
+</Conversation>
+
+<Conversation line="저번 밤 진흙 랩터 경주의 지옥!" speaker="0" flags="OutpostNPC">
+	<Conversation line="레이싱 머드 랩터는 잔인하다고 생각합니다." speaker="1" flags="OutpostNPC">
+		<Conversation line="내가 장담 한 머드 랩터의 기수가 먹혔으니 그 점에 대해 나는 동의 할 것이다." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="여기에 식물을 좀 가져와야한다고 생각하세요?" speaker="0" flags="OutpostNPC">
+	<Conversation line="어, 우리는 끔찍한 밸러스트 식물 감염을 막 제거했습니다. 이제 여기에 더 많은 생물학적 유기체를 소개하고 싶습니까?" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="당신과 식물은 무엇입니까? 당신의 손에 그런 종류의 시간이 있다면 당신의 일은 너무 쉬울 것입니다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="" speaker="1"/>
+</Conversation>
+
+<Conversation line="여기는 항상 춥고 축축해. 정말 싫어." speaker="0" flags="OutpostNPC">
+	<Conversation line="스테이션 관리자에게 말해야겠어." speaker="1" flags="OutpostNPC">
+		<Conversation line="그래봐야 더 안좋은 곳으로 가게 될걸." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="방금 정말 이상한 꿈을 꿨어—난 마치 신과 같았는데..." speaker="0" flags="OutpostNPC">
+	<Conversation line="승무원 모듈부터 치우시지요, 주님. 빨리 해." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="원자로가 이상하게 반응이 늦는데." speaker="0" flags="OutpostNPC">
+	<Conversation line="그것을 적어두면 누군가가 우리가 조사를 받기 전에 결국 살펴볼 것입니다." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="요즘 어릿 광대들은 다 어때?" speaker="0" flags="OutpostNPC">
+	<Conversation line="여기있는 그대로 끔찍하지 않은 것처럼." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="목성의 상승 퍼레이드가 곧 열립니다!" speaker="0" flags="OutpostNPC">
+	<Conversation line="이번에는 좋은 일이 될 것이라고 들었습니다. 그 맛있는 튀긴 호랑이 탈곡기를 기다릴 수 없습니다!" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="... 그리곤 의무병에게 말했지.그건 촉수가 아닌데!" speaker="0" flags="OutpostNPC">
+	<Conversation line="하하!" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="어, 이 짖궂은 놈!" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="이 장소를 디자인 한 사람은 그들이 무엇을하는지 전혀 모릅니다." speaker="0" flags="OutpostNPC">
+	<Conversation line="알아요? 휠체어로도 접근 할 수 없습니다." speaker="1" flags="OutpostNPC"/>
+	<Conversation line="알아요? 누군가가 방 모듈을 무작위로 용접하여 하루라고 부르는 것 같습니다." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="지난 주에 온 저 잠수함 봤어?" speaker="0" flags="OutpostNPC">
+	<Conversation line="트라이엄퍼레이터 말이야? 아주 개고생을 했던데. 정비공들이 선체 가스통에서 아직 살아있는 머드랩터를 발견했대." speaker="1" flags="OutpostNPC">
+		<Conversation line="맞아. 시체가방 넷을 꺼내는 걸 봤어. 최근 뭔가 벌어진 거야." speaker="0">
+			<Conversation line="가장 최악은 선장이야... 그냥 새 인원 몇을 뽑은 뒤, 다시 출발했대. 마치 아무 일도 아닌 것처럼." speaker="1">
+				<Conversation line="저들을 살아서 다신 못 볼거란 느낌이 들어." speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="컴펜세이터 말이야? 살면서 본 잠수함 중에 가장 이상하게 생겼더라고." speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="여기 있는 자판기 음식들은 최고야. 해조류 단백질 케이크는 정말 맛있다고!" speaker="0" flags="OutpostNPC">
+	<Conversation line="맛이 보급으로 받은 아무 자판기의 해조류 단백질 케이크 같은 먼지 맛이 나." speaker="1" flags="OutpostNPC">
+		<Conversation line="질 좋은 식사가 뭔지 전혀 모르겠어." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="여기에 불이 난다면 정말 부끄러운 일입니다. 많은 사람들이 정말 심하게 다칠 수 있습니다." speaker="0" flags="OutpostNPC">
+	<Conversation line="무슨 말이야?" speaker="1" flags="OutpostNPC">
+		<Conversation line="정말 추워서 언제 몸을 덥혀야 할지 모르겠어." speaker="0">
+			<Conversation line="모여있자. 그리고 적어도 날 산채로 태우려 하지만 마." speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="몰로치들은 사실 귀여운 잠수함을 끌어안고 싶어하는 착한 친구들 아닐까." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="저는 문어 같은 생물의 군주를 개인적으로 환영합니다." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="오늘은 정말 물이 흐리네." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="오늘 날씨가 너무 좋아요. 해류도없고 맑은 바닷물도 ... 나중에 양귀비 따기 갈지도 몰라요." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="누가 스크루 드라이버를 칼로 사용하려고 처음 생각했는지 궁금하십니까?" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="여기서 전출하려면 어떻게해야하나요?" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="역 생활은 지루하지만 언제든 잠수함으로 나가는 일을 맡을 게요." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="오늘은 매점 자판기가 무엇을 내놓을 지 궁금합니다." speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="이거 튀긴 스레셔 냄새인가?" speaker="0" flags="OutpostNPC">
+	<Conversation line="누가 또 그리드에 과부화를 줬나보지." speaker="1"/>
+	<Conversation line="" speaker="1"/>
+</Conversation>
+
+<Conversation line="자체 셔틀을 구매할 수 있다면 어떤 모델을 선택 하시겠습니까?" speaker="0" flags="OutpostNPC">
+	<Conversation line="나는 항상 Bunyip을 자연 선택의 힘이라고 생각했습니다. 최고의 선원 만이 돌아옵니다." speaker="1"/>
+</Conversation>
+
+<Conversation line="우리의 이전 선장은 때때로 그가 kamikaze dive maneuver라고 부르는 것을 우리에게 수행하게했습니다." speaker="0" flags="OutpostNPC">
+	<Conversation line="당신이 충분히 용감하다면 모든 것이 안정기입니다.라고 그는 말합니다." speaker="0">
+		<Conversation line="슬프게도 그는 더 이상 우리와 함께 있지 않습니다. 나는 그가 자신의 이익을 위해 너무 용감하다고 생각합니다." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="친근한 얼굴을 보니 좋군! 여긴 요즘 별로 방문객이 없어서 말이야." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="오, 또 손님이 왔네." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="안녕!" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="안녕! 꽤 힘든 여행이었나본데." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="안녕하세요! 우리의 겸손한 거주지에 오신 것을 환영합니다." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="당신들 좀 쉬어야 할 것 같은데." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="당신들 처음 보는군." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="저 아래에 꽤 얘쁜 잠수함을 뒀군!" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="당신들이 오래 머무르지 않았음 좋겠군. 여기는 이미 문제가 많아서." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="안녕. 아무 문제 일으키지 않았음 좋겠군." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="지켜보겠어." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="문제 일으키지 마." speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="어이, 거기! 당장 나가!" speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="너희는 여기서 환영받지 않아." speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="다시 올 생각을 하다니 배짱 좋군." speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="여기 오지 말았어야지..." speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="언제나 만나서 반갑군!" speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="아, 너구나! 반가워!" speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="안녕! 만나서 반갑군." speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="제발 보내줘!" speaker="0" flags="Hostage"/>
+
+<Conversation line="이젠 못 참겠어!" speaker="0" flags="Hostage"/>
+
+<Conversation line="여기서 나가야 돼... 제발 부탁할게!" speaker="0" flags="Hostage"/>
+
+<Conversation line="거래하자- 여기서 나가게 해주면, 여기서 뭘 하고 있는지 아무에게도 얘기 안할게!" speaker="0" flags="Hostage"/>
+
+<Conversation line="여기서 살아나갈 수 없을 거야, 안 그래?" speaker="0" flags="Hostage"/>
+
+<Conversation line="잘못된 전초기지에 도킹했군, 친구..." speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="당신이 거기에있는 잠수함은 정말 괜찮아 보여요 ... 우리가 계속할 것 같아요!" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="아, 신선한 고기!" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="이곳은 이제 우리 차지다. 침입자 놈들에게 자비란 없다..." speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="침입자다!" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="당신은 떨어져 있어야했습니다!" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="뭔가를 들은 것 같아." speaker="0" flags="Bandit">
+	<Conversation line="그냥 바람이겠지." speaker="1" flags="Bandit">
+		<Conversation line="무슨 바람?" speaker="0"/>
+		<Conversation line="하 하, 아주 재밌군." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="여기에 뭔가 도킹 했나요?" speaker="0" flags="Bandit">
+	<Conversation line="만약 잠수함이 정박했다면 내가 알아차렸겠지." speaker="1" flags="Bandit">
+		<Conversation line="맞아. 잠수함 정박은 조용히 일어날 수 없는 일이지." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="여긴 너무 춥군." speaker="0" flags="Bandit">
+	<Conversation line="닥치고 힘 아껴." speaker="1" flags="Bandit"/>
+</Conversation>
+
+<Conversation line="연합이 우리를 방문하기로 결정하면 우리는 망쳐집니다." speaker="0" flags="Bandit">
+	<Conversation line="그들은 우리 모두를 죽일 수 없습니다." speaker="1" flags="Bandit">
+		<Conversation line="그들이 우리처럼 전초 기지에 어떤 일을하는지 아십니까?" speaker="0"/>
+		<Conversation line="당신 말이 맞을 것입니다." speaker="0"/>
+		<Conversation line="나는 그들이 단지 성명서를 만들기 위해 전초 기지 전체를 뚫었다는 이야기를 들었습니다." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="때때로 나는 연합이 이곳을 되찾기 위해 나타나기까지 얼마나 걸릴지 궁금합니다 ..." speaker="0" flags="Bandit">
+	<Conversation line="그렇지 않습니다. 심연에서 나온 것이이 부분을 혼란스럽게 만드는 한, 그들은 여기에 오지 않을 것입니다." speaker="1" flags="Bandit">
+		<Conversation line="알아,하지만 그 괴물이 사라지면 어떻게 될까?" speaker="0"/>
+	</Conversation>
+	<Conversation line="시도 해보자고. 우리는 그 새끼들을 막을 수있는 충분한 총을 가지고 있습니다." speaker="1" flags="Bandit"/>
+</Conversation>
+
+<Conversation line="배고파 죽겠어." speaker="0" flags="Bandit">
+	<Conversation line="그래. 우리 전부 다." speaker="1" flags="Bandit">
+		<Conversation line="알다시피, 그 시체를 에어 록 밖으로 던지는 대신 가방에 넣는 것이 좋은 생각이라고 생각하기 시작했습니다 ..." speaker="0">
+			<Conversation line="끔찍하군. 더이상 듣고 싶지 않아." speaker="1"/>
+			<Conversation line="당신이 유일한 사람은 아니지만 우리가 그 길을 갈 필요가 없기를 정말로 바랍니다." speaker="1"/>
+			<Conversation line="" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="방사선이 피부를 찌르는 것을 느낄 수 있습니다." speaker="0" flags="InRadiation"/>
+
+<Conversation line="여기 있기에는 목성 방사능이 너무 강해." speaker="0" flags="InRadiation"/>
+
+<Conversation line="입에 구리 맛이 있고 두통이 심합니다." speaker="0" flags="InRadiation">
+	<Conversation line="이동하지 않으면 방사능 때문에 죽을 거야." speaker="1">
+		<Conversation line="너무 늦지 않았음 좋겠는데..." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="눈을 감아도 허연 빛이 보여!" speaker="0" flags="InRadiation">
+	<Conversation line="나도. 이건 방사능 때문이야." speaker="1">
+		<Conversation line="안좋은 소식인데." speaker="0"/>
+		<Conversation line="말도안돼. 그냥 날 겁주려는 거지." speaker="0"/>
+	</Conversation>
+</Conversation>
+</Conversations>

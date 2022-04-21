@@ -1,0 +1,5 @@
+<Charactervariant inherit="Hammerheadgold" speciesname="Hammerheadgold_m" speciestranslationoverride="Hammerheadgold" usebosshealthbar="true">
+  <health vitality="450"/>
+  <ragdoll scalemultiplier="1.15"/>
+  <attack damagemultiplier="1.15" rangemultiplier="1.15" impactmultiplier="1.15"/>
+</Charactervariant>

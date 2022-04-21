@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<levelobjects>
+  <!-- a series of background chunks that spawn along walls -->
+  <BackgroundChunks identifier="aphoticplateaubackgroundchunks1" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="0" minsize="0.5" maxsize="0.8" randomrotation="-180,180" commonness="0" depthrange="500,2500" alignment="TopLeft, BottomRight" clusteringamount="5" clusteringgroup="0.5" alignwithsurface="False" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="100000000" randomoffset="100,100">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/BackgroundChunks.png" sourcerect="48,96,1232,1872" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/BackgroundChunks.png" sourcerect="1432,385,1259,1428" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/BackgroundChunks.png" sourcerect="2700,161,1396,1630" origin="0.5,0.5" />
+  </BackgroundChunks>
+  <!--Wall Edge Chunk-->
+  <EdgeChunks identifier="aphoticplateauedgechunks1" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="0,0,768,512" origin="0.5,0.8" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks2" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0.3,0.3" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="768,0,768,512" origin="0.5,0.8" />
+    <LightSource range="400" color="55,124,141,250" drawbehindsubs="true" pulseamount="0.3" pulsefrequency="0.1" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks3" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="1536,0,512,512" origin="0.5,0.8" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks4" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="0,512,768,512" origin="0.5,0.8" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks5" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />    
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="768,512,768,512" origin="0.5,0.8" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks6" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0.3,0.3" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="1536,512,512,512" origin="0.5,0.8" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks7" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0.3,0.3" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="0,1024,768,512" origin="0.5,0.8" />
+    <LightSource range="1800" color="4,25,77,250" drawbehindsubs="true" pulseamount="0.3" pulsefrequency="0.1"/>
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks8" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,-0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0.3,0.3" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="768,1024,768,512" origin="0.5,0.8" />
+    <LightSource range="2000" color="0,42,90,250" drawbehindsubs="true" pulseamount="0.3" pulsefrequency="0.1"/>
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <EdgeChunks identifier="aphoticplateauedgechunks9" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/WallEdgeChunks.png" sourcerect="1536,1024,512,512" origin="0.5,0.8"/>  
+    <ChildObject names="spikybush1" mincount="1" maxcount="2" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </EdgeChunks>
+  <!-- Plants -->
+  <exampleplants identifier="aphoticplateauplants" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="5,10" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0.1,0.2" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="0,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="512,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1024,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="0,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="512,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1024,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="0,1024,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="512,1024,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1024,1024,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,1024,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="0,1536,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="512,1536,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1024,1536,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,1536,512,512" origin="0.5,1.0" />
+    <ChildObject names="spikybush1" mincount="1" maxcount="1" />
+    <ChildObject names="spikybush2" mincount="1" maxcount="1" />
+  </exampleplants>
+  <spikybush1 identifier="spikybush1 " spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="11,15" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="7.1999993" swingfrequency="0.20000002" scaleoscillation="0.2,0.1" scaleoscillationfrequency="0.10000002" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,512,512,512" origin="0.5,1.0" />
+  </spikybush1>
+  <spikybush2 identifier="spikybush2" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="11,15" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="3.5999997" swingfrequency="0.1" scaleoscillation="0.1,0.2" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="plateaubasic" commonness="0" />
+    <Sprite texture="Content/Map/Biomes/AphoticPlateau/LevelObjects.png" sourcerect="1536,0,512,512" origin="0.5,1.0" />
+  </spikybush2>
+</levelobjects>

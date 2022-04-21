@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Corpses>
+  
+  <Corpse identifier="corpse1" spawnposition="wreck" job="any" commonness="0.1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+  </Corpse>
+  
+  <Corpse identifier="captaincorpse1" spawnposition="wreck" job="captain" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="captainscap1" equip="true" />
+      <Item identifier="captainsuniform1" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround"/>
+      </Item>
+      <Item identifier="captainspipe" equip="false"/>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="captainscap2" equip="true"/>
+      <Item identifier="captainsuniform2" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround"/>
+      </Item>
+      <Item identifier="steroids"/>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround"/>
+      </Item>
+      <Item identifier="huskeggs"/>
+    </ItemSet>
+  </Corpse>
+  
+  <Corpse identifier="engineercorpse1" spawnposition="wreck" job="engineer" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="toolbelt">
+        <Item identifier="wrench"/>
+        <Item identifier="fuelrod"/>
+      </Item>
+      <Item identifier="orangejumpsuit1" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="toolbelt">
+        <Item identifier="screwdriver"/>
+        <Item identifier="orangewire"/>
+        <Item identifier="button"/>
+        <Item identifier="fpgacircuit"/>
+        <Item identifier="relaycomponent"/>
+      </Item>
+      <Item identifier="orangejumpsuit2" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="detonator"/>
+      <Item identifier="c4block"/>
+    </ItemSet>
+  </Corpse>
+  
+  <Corpse identifier="mechaniccorpse1" spawnposition="wreck" job="mechanic" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="toolbelt">
+        <Item identifier="wrench"/>
+        <Item identifier="weldingtool"/>
+        <Item identifier="plasmacutter">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="screwdriver"/>
+      </Item>
+      <Item identifier="baseballcap" equip="true" />
+      <Item identifier="bluejumpsuit1" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="toolbelt">
+        <Item identifier="weldingfueltank"/>
+        <Item identifier="aluminium"/>
+      </Item>
+      <Item identifier="crowbar"/>
+      <Item identifier="baseballcap" equip="true" />
+      <Item identifier="bluejumpsuit2" equip="true" />
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="bikehorn"/>
+    </ItemSet>
+  </Corpse>
+  
+  <Corpse identifier="officercorpse1" spawnposition="wreck" job="securityofficer" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="securityuniform1" equip="true" />
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="smg"/>
+      <Item identifier="divingknife" equip="false"/>
+      <Item identifier="ballistichelmet1" equip="true"/>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="securityuniform2" equip="true" />
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="stungun"/>
+      <Item identifier="stungundart"/>
+      <Item identifier="handcuffs"/>
+      <Item identifier="antibleeding1"/>
+      <Item identifier="bodyarmor" equip="true"/>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="securityuniform3" equip="true" />
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="wrench"/>
+      <Item identifier="antibleeding1"/>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="alientrinket1"/>
+    </ItemSet>
+  </Corpse>
+
+  <Corpse identifier="mediccorpse1" spawnposition="wreck" job="medicaldoctor" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="doctorsuniform1" equip="true" >
+        <Item identifier="antibloodloss2"/>
+      </Item>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="antibiotics"/>
+      <Item identifier="antidama1"/>
+    </ItemSet>
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="doctorsuniform2" equip="true" >
+        <Item identifier="antibloodloss2"/>
+      </Item>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="antibleeding1"/>
+      <Item identifier="antidama1"/>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="alientrinket2"/>
+    </ItemSet>
+  </Corpse>
+
+  <Corpse identifier="assistantcorpse1" spawnposition="wreck" job="assistant" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="assistantclothes" equip="true" />
+      <Item identifier="wrench"/>
+      <Item identifier="screwdriver"/>
+      <Item identifier="headset" equip="true" >
+        <Item identifier="batterycell" />
+      </Item>
+    </ItemSet>
+    <ItemSet commonness="0.3">
+      <Item identifier="idcardwreck" equip="true"/>
+      <Item identifier="clownmask" equip="true"/>
+      <Item identifier="clowncostume" equip="true"/>
+      <Item identifier="headset" equip="true">
+        <Item identifier="batterycell" />
+      </Item>
+      <Item identifier="alientrinket3"/>
+    </ItemSet>
+  </Corpse>
+
+  <!--No watchman corpses on subs for now-->
+  <!--<Corpse identifier="watchmancorpse1" spawnposition="wreck" job="watchman" commonness="1">
+    <ItemSet commonness="1">
+      <Item identifier="watchmanclothes" equip="true"/>
+      <Item identifier="idcardwreck" equip="true" />
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+        <Item identifier="revolverround"/>
+      </Item>
+    </ItemSet>
+  </Corpse>-->
+
+</Corpses>

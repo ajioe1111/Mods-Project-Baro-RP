@@ -1,0 +1,66 @@
+﻿<Character speciesname="Crawlerhusk" speciestranslationoverride="crawler" husk="True" humanoid="False" hasinfo="False" usehuskappendage="False" needsair="False" canspeak="False" blooddecal="blackblood" bleedparticlewater="blackwaterblood" bleedparticleair="blackblooddrop" group="husk" displayname="" noise="200" visibility="150" eatingspeed="10" pathfinderpriority="1" hideinthermalgoggles="True">
+  <huskappendage affliction="huskinfection" path="Content/Characters/Crawlerhusk/Huskappendage.xml" />
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter particle="blackgib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blackblood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blackwaterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="blackgib" particleamount="20" velocitymin="200" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.75" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health vitality="100" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="10" burnreduction="0" constanthealthregeneration="1" healthregenerationwheneating="15">
+    <Limb name="Torso">
+      <VitalityMultiplier type="damage,burn" multiplier="1.0" />
+    </Limb>
+    <Limb name="Head">
+      <VitalityMultiplier type="damage,burn" multiplier="1.5" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <VitalityMultiplier type="damage,burn" multiplier="0.75" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier type="damage,burn" multiplier="0.75" />
+    </Limb>
+    <Limb>
+      <!--Tail-->
+      <VitalityMultiplier type="damage,burn" multiplier="0.75" />
+    </Limb>
+  </health>
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle1.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle2.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle3.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle4.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack1.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack2.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack3.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack4.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_damage1.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_damage2.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_damage3.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_damage4.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_dead1.ogg" state="Die" range="1000" volume="1" />
+  <Inventory slots="Any, Any" accessiblewhenalive="False" commonness="8">
+  </Inventory>
+  <Inventory slots="Any, Any" accessiblewhenalive="False" commonness="2">
+    <Item identifier="alienblood" />
+    <Item identifier="huskeggs"/>
+  </Inventory>
+  <Inventory slots="Any, Any, Any" accessiblewhenalive="False" commonness="1">
+    <Item identifier="alienblood" />
+    <Item identifier="huskeggs"/>
+    <Item identifier="huskstinger"/>
+  </Inventory>
+  <ai combatstrength="150" sight="0.5" hearing="1" fleehealththreshold="0" aggressiveboarding="True" aggressiongreed="20" aggressionhurt="50" attackwhenprovoked="True" avoidgunfire="False">
+    <target tag="decoy" state="Attack" priority="500" reactdistance="0" ignoreifnotinsamesub="True"/>
+    <target tag="provocative" state="Attack" priority="100" reactdistance="0" ignoreifnotinsamesub="True"/>
+    <target tag="weapon" state="Attack" priority="100" reactdistance="0" ignoreifnotinsamesub="True"/>
+    <target tag="crawler" state="Attack" priority="100" reactdistance="0" />
+    <target tag="human" state="Attack" priority="80" reactdistance="0" />
+    <target tag="nasonov" state="Attack" priority="70" reactdistance="0" />
+    <target tag="room" state="Attack" priority="30" reactdistance="0" />
+    <target tag="wall" state="Attack" priority="5" reactdistance="0" />
+    <target tag="door" state="Attack" priority="5" reactdistance="0" />
+    <target tag="sonar" state="Attack" priority="5" reactdistance="0" ignoreinside="true"/>
+    <target tag="turret" state="Attack" priority="1" ignoreinside="true"/>
+    <target tag="swarmfeeder" state="Idle" priority="0" ignoreinside="True" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="True"/>
+    <target tag="huskinfected" state="Idle" priority="0" ignoreinside="True" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="True" threshold="1" />  
+  </ai>
+</Character>

@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  
+<!-- When adding new text, do it so at the bottom under the 'New values' & 'Modified values' sections. If it's a new tag entirely, put it under the new additions one; If it's an update to an existing value, put it under the changed values one. -->
+<!-- DO NOT EDIT EXISTING TAGS FOR ALREADY TRANSLATED LINES -> if you need a new tag for something, add it under the 'New values' header and comment if there's some other tag that should be replaced -->
+
+
+
+<!-- Modified values after April 4 (Urban Expanses update) -->
+
+
+
+
+
+<!-- New values after April 4 (Urban Expanses update) -->
+
+
+
+
+
+
+<!-- Modified values after February 1 (Rising Tide update) -->
+
+<campaignstore.instock>Stock: [amount]</campaignstore.instock>
+
+<servertag.friendlyfire.true>On</servertag.friendlyfire.true>
+<servertag.friendlyfire.false>Off</servertag.friendlyfire.false>
+<servertag.voip.true>Enabled</servertag.voip.true>
+<servertag.voip.false>Disabled</servertag.voip.false>
+<servertag.karma.true>Enabled</servertag.karma.true>
+<servertag.karma.false>Disabled</servertag.karma.false>
+<servertag.traitors.true>Enabled</servertag.traitors.true>
+<servertag.traitors.false>Disabled</servertag.traitors.false>
+
+<!-- It's worth noting that we already have the localization for these, the only changes made are to the tags -->
+<traitorendmessagesuccess>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname]. The task was successful.</traitorendmessagesuccess>
+<traitorendmessagesuccesstraitordead>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname]. The task was successful, but the traitor did not make it out alive either.</traitorendmessagesuccesstraitordead>
+<traitorendmessagesuccesstraitordetained>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname]. The task was successful, but the traitor was successfully detained.</traitorendmessagesuccesstraitordetained>
+<traitorendmessagefailure>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname]. The task was unsuccessful.</traitorendmessagefailure>
+<traitorendmessagefailuretraitordead>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname], but [PronounLowercase] got [PronounReflexiveLowercase] killed before completing it.</traitorendmessagefailuretraitordead>
+<traitorendmessagefailuretraitordetained>[traitorname] was a traitor! [PronounPossessiveUppercase] task was to assassinate [targetname]. The task failed—[PronounLowercase] was successfully detained.</traitorendmessagefailuretraitordetained>
+
+<missionname.killhammerhead>Killing Hammerheads</missionname.killhammerhead>
+<missiondescription.killhammerhead>Particularly aggressive Hammerheads have been terrorizing vessels traveling between [location1] and [location2]. A reward of [reward] marks has been promised to whoever kills the creatures.</missiondescription.killhammerhead>
+<missionsonarlabel.killhammerhead>Hammerheads</missionsonarlabel.killhammerhead>
+<missionsuccess.killhammerhead>The Hammerheads have been killed.</missionsuccess.killhammerhead>
+<missionheader0.killhammerhead>Targets terminated</missionheader0.killhammerhead>
+<missionmessage0.killhammerhead>The Hammerheads are dead. Navigate the submarine out of the cavern to claim the reward.</missionmessage0.killhammerhead>
+
+<!-- New values after February 1 (Rising Tide update) -->
+
+<charactereditor.crouch>Crouch</charactereditor.crouch>
+<talentdescription.gaindoubleskillatskill>As long as your [skillname1] skill is [skilltotal] or higher, they gain twice as much [skillname2] skill.</talentdescription.gaindoubleskillatskill>
+
+<connection.loadvalueout>load_value_out</connection.loadvalueout>
+<connection.powervalueout>power_value_out</connection.powervalueout>
+
+<subcategory.exteriorsubwalls>Exterior submarine walls</subcategory.exteriorsubwalls>
+<subcategory.exteriorshuttle>Exterior shuttle pieces</subcategory.exteriorshuttle>
+<subcategory.labels>Labels</subcategory.labels>
+<subcategory.backgroundwall>Background wall</subcategory.backgroundwall>
+
+<afflictionname.disguised>Disguised</afflictionname.disguised>
+<afflictiondescription.disguised>As long as you keep covering your face, others might not be able to tell who you are...</afflictiondescription.disguised>
+<afflictiondescription.hallucinating>There's something strange going on with your sense.</afflictiondescription.hallucinating>
+
+<afflictiontype.damage>Damage</afflictiontype.damage>
+<connection.low_oxygen>low_oxygen</connection.low_oxygen>
+
+<campaignstore.ownedinventory>Inventory: [amount]</campaignstore.ownedinventory>
+<campaignstore.ownedsub>Submarine: [amount]</campaignstore.ownedsub>
+<campaignstore.ownedspecific>Owned: [nonempty] ([total])</campaignstore.ownedspecific>
+<campaignstore.ownednonempty>Non-empty owned: [amount]</campaignstore.ownednonempty>
+<campaignstore.ownedtotal>Total owned: [amount]</campaignstore.ownedtotal>
+
+<campaigndifficultydisabled>Difficulty cannot be adjusted in the campaign mode. The campaign follows a pre-defined difficulty curve.</campaigndifficultydisabled>
+
+<reputationgainnotification>[value] [reputationname] Reputation</reputationgainnotification>
+
+<subeditor.loadconfirmbody>Are you sure you want to load the [submarine]? All unsaved changes will be lost.</subeditor.loadconfirmbody>
+
+<sp.concatcomponent.separator.name>Separator</sp.concatcomponent.separator.name>
+<sp.concatcomponent.separator.description>Symbol(s) to place between the input strings.</sp.concatcomponent.separator.description>
+
+<dialoghuskdormant>My throat feels a bit sore.</dialoghuskdormant>
+<dialoghuskdormant>I think I might have a fever.</dialoghuskdormant>
+<dialoghuskdormant>I feel really weak. Every muscle hurts.</dialoghuskdormant>  
+<dialoghuskcantspeak>There's something in my mouth... *coughing*</dialoghuskcantspeak>
+
+<!-- feature/modding-refactor -->
+<!-- Audio & voice chat tab -->
+<settingstab.audioandvc>Audio &amp; voice chat</settingstab.audioandvc>
+<audiooutputdevice>Output device</audiooutputdevice>
+<audioinputdevice>Input device</audioinputdevice>
+<vcinputmode>Input mode</vcinputmode>
+<!-- Mods tab -->
+<settingstab.mods>Mods</settingstab.mods>
+<workshopmenutab.installedmods>Installed mods</workshopmenutab.installedmods>
+<workshopmenutab.popularmods>Popular mods</workshopmenutab.popularmods>
+<workshopmenutab.publish>Publish</workshopmenutab.publish>
+
+<enabledcore>Current core package</enabledcore>
+<enabledregular>Enabled regular packages</enabledregular>
+<disabledregular>Disabled regular packages</disabledregular>
+
+<LocalCopyRequired>You do not have a local copy of this item. This is required to publish updates to it.\n\nWould you like to create one?</LocalCopyRequired>
+<ItemInstallRequired>You do not have this item installed. This is required to publish updates to it.\n\nWould you like to install it?</ItemInstallRequired>
+
+<WorkshopItemVersion>Mod version</WorkshopItemVersion>
+
+<PublishedModsHeader>Published</PublishedModsHeader>
+<UnpublishedModsHeader>Not published</UnpublishedModsHeader>
+<LastLocalEditTime>Last modified locally on [datetime]</LastLocalEditTime>
+<LatestPublishTime>Latest update published on [datetime]</LatestPublishTime>
+
+<FreeWeekendCantPublish>You're currently playing Barotrauma through a free weekend.\n\nOnly players who have purchased the game can publish items to the Steam Workshop.</FreeWeekendCantPublish>
+<FamilySharedCantPublish>You're currently playing Barotrauma via Family Sharing.\n\nOnly players who have purchased the game can publish items to the Steam Workshop.</FamilySharedCantPublish>
+
+<WorkshopItemVisibility.Unlisted>Unlisted</WorkshopItemVisibility.Unlisted>
+
+<ModDownloadTitle>Mods required</ModDownloadTitle>
+<ModDownloadHeader>The following mods are missing or mismatched and are required to play on this server:</ModDownloadHeader>
+<ModDownloadFooter>Would you like to download them?</ModDownloadFooter>
+<ModDownloadFooterFail>This server does not allow users to download its mods directly. You may need to visit the Steam Workshop to download them, or contact the server host.</ModDownloadFooterFail>
+
+<SubscribeToAllOnWorkshop>Subscribe to all on Steam Workshop</SubscribeToAllOnWorkshop>
+
+<ModNameAndHashFormat>[name] ([hash])</ModNameAndHashFormat>
+  
+<ModDirInfo>[filecount] files, [size] total</ModDirInfo>
+
+<PublishPopupDownload>Downloading [percentage]%</PublishPopupDownload>
+<PublishPopupInstall>Installing...</PublishPopupInstall>
+<PublishPopupCreateLocal>Creating local copy...</PublishPopupCreateLocal>
+<PublishPopupStaging>Copying item to staging folder...</PublishPopupStaging>
+<PublishPopupSubmit>Submitting item to the Workshop...</PublishPopupSubmit>
+
+<OpenLocalModInExplorer>Local mod\nClick to open in Explorer</OpenLocalModInExplorer>
+<ViewWorkshopModDetails>View details</ViewWorkshopModDetails>
+<EnableWorkshopMod>Enable</EnableWorkshopMod>
+<DisableWorkshopMod>Disable</DisableWorkshopMod>
+<EnableSelectedWorkshopMods>Enable all selected</EnableSelectedWorkshopMods>
+<DisableSelectedWorkshopMods>Disable all selected</DisableSelectedWorkshopMods>
+<DownloadedWorkshopMod>Workshop mod</DownloadedWorkshopMod>
+<PublishedWorkshopMod>Published mod</PublishedWorkshopMod>
+<ViewModDetailsUpdateAvailable>An update to this item is available!\nClick to view details</ViewModDetailsUpdateAvailable>
+
+<ModUpdatesAvailable>Updates available! Click here to install</ModUpdatesAvailable>
+<RefreshModLists>Refresh</RefreshModLists>
+
+<WorkshopItemUpdate>Update</WorkshopItemUpdate>
+
+<ServerExecutable>Server executable</ServerExecutable>
+<ModServerExesAtYourOwnRisk>Modded server executables could be unsafe or malicious.\n\nYOU RUN MODDED SERVER EXECUTABLES AT YOUR OWN RISK.\n\nDo you still want to switch to [exename]?</ModServerExesAtYourOwnRisk>
+
+<CannotChangeMods>You may only enable/disable mods in the main menu.</CannotChangeMods>
+
+<WorkshopItemSubscriptions>[subscriptioncount] subscriptions</WorkshopItemSubscriptions>
+
+<Ugc.TransferTitle>Transfer mods</Ugc.TransferTitle>
+<Ugc.TransferDesc>It looks like you've created some mods in an old version of Barotrauma.\n\nPlease select which of these mods you would like to transfer to the new local mods directory.\n\nAny non-transferred mods will remain inaccessible to this version of the game, but may still be found in their original locations among the game's files should you choose to transfer them yourself manually.</Ugc.TransferDesc>
+<Ugc.TransferButton>Transfer</Ugc.TransferButton>
+<Ugc.Transferring>Transferring mods...</Ugc.Transferring>
+<Ugc.TransferComplete>Mod transfer complete.</Ugc.TransferComplete>
+
+<ItemAssemblies>Item assemblies</ItemAssemblies>
+
+<DeterminingRequiredModUpdates>Determining which mods require updates...</DeterminingRequiredModUpdates>
+<PreparingWorkshopDownloads>Preparing Steam Workshop downloads...</PreparingWorkshopDownloads>
+
+<PlayerIsDownloadingFiles>This player is downloading files from the server.</PlayerIsDownloadingFiles>
+
+<entitydescription.piratebodyarmor>A set of body armor, partially fashioned out of improvised materials by the pirates. It's heavier than it looks.</entitydescription.piratebodyarmor>
+  
+<lightcomponent.lightcolor>Color</lightcomponent.lightcolor>
+
+<sp.memorycomponent.value.description>The currently stored signal the item outputs.</sp.memorycomponent.value.description>
+<sp.motionsensor.target.name>Target</sp.motionsensor.target.name>
+<sp.motionsensor.target.description>Which kind of targets can trigger the sensor?</sp.motionsensor.target.description>
+<sp.wificomponent.channel.description>WiFi components can only communicate with components that use the same channel.</sp.wificomponent.channel.description>
+<sp.arithmeticcomponent.clampmin.name>Clamp min</sp.arithmeticcomponent.clampmin.name>
+<sp.arithmeticcomponent.clampmin.description>The output of the item is restricted above this value.</sp.arithmeticcomponent.clampmin.description>
+<sp.arithmeticcomponent.clampmax.name>Clamp max</sp.arithmeticcomponent.clampmax.name>
+<sp.arithmeticcomponent.clampmax.description>The output of the item is restricted below this value.</sp.arithmeticcomponent.clampmax.description>
+<falseoutput>False output</falseoutput>
+<timeframe>Timeframe</timeframe>
+<timeframe.description>The item must have received signals to both inputs within this timeframe to output the result. If set to 0, the inputs must be received at the same time</timeframe.description>
+<sp.equalscomponent.output.description>The signal sent when the received inputs are equal (if empty, no signal is sent).</sp.equalscomponent.output.description>
+<sp.equalscomponent.falseoutput.description>The signal sent when the received inputs are not equal (if empty, no signal is sent).</sp.equalscomponent.falseoutput.description>
+<sp.exponentiationcomponent.exponent.name>Exponent</sp.exponentiationcomponent.exponent.name>
+<sp.exponentiationcomponent.exponent.description>The exponent of the operation.</sp.exponentiationcomponent.exponent.description>
+<sp.modulocomponent.modulus.name>Modulus</sp.modulocomponent.modulus.name>
+<sp.modulocomponent.modulus.description>The modulus of the operation. Must be non-zero.</sp.modulocomponent.modulus.description>
+<sp.regexfindcomponent.modulus.name>Modulus</sp.regexfindcomponent.modulus.name>
+<sp.regexfindcomponent.falseoutput.description>The signal this item outputs when the received signal does not match the regular expression.</sp.regexfindcomponent.falseoutput.description>
+<continuousoutput.description>Should the component keep sending the output even after it stops receiving a signal, or only send an output when it receives a signal.</continuousoutput.description>
+<sp.regexfindcomponent.expression.description>The regular expression used to check the incoming signals.</sp.regexfindcomponent.expression.description>
+<sp.smokedetector.output.description>The signal the item outputs when it has detected a fire.</sp.smokedetector.output.description>
+<sp.smokedetector.falseoutput.description>The signal the item outputs when it has not detected a fire.</sp.smokedetector.falseoutput.description>
+<sp.trigonometricfunctioncomponent.useradians.name>Use radians</sp.trigonometricfunctioncomponent.useradians.name>
+<sp.trigonometricfunctioncomponent.useradians.description>If set to true, the trigonometric function uses radians instead of degrees.</sp.trigonometricfunctioncomponent.useradians.description>
+
+<entityname.streetlight>Street Light</entityname.streetlight>
+<entityname.neonlighta>Neon Light A</entityname.neonlighta>
+<entityname.neonlightb>Neon Light B</entityname.neonlightb>
+<entityname.neonlightc>Neon Light C</entityname.neonlightc>
+<entityname.neonlightd>Neon Light D</entityname.neonlightd>
+<entityname.neonlighte>Neon Light E</entityname.neonlighte>
+<entityname.neonlightf>Neon Light F</entityname.neonlightf>
+<entityname.neonlightg>Neon Light G</entityname.neonlightg>
+<entityname.neonlighth>Neon Light H</entityname.neonlighth>
+<entityname.neonlighti>Neon Light I</entityname.neonlighti>
+<entityname.neonlightj>Neon Light J</entityname.neonlightj>
+<entityname.neonlightk>Neon Light K</entityname.neonlightk>
+<entityname.neonlightl>Neon Light L</entityname.neonlightl>
+<entityname.neonlightm>Neon Light M</entityname.neonlightm>
+<entityname.neonlightn>Neon Light N</entityname.neonlightn>
+<entityname.neonlighto>Neon Light O</entityname.neonlighto>
+<entityname.neonlightp>Neon Light P</entityname.neonlightp>
+<entityname.neonlightq>Neon Light Q</entityname.neonlightq>
+<entityname.neonlightr>Neon Light R</entityname.neonlightr>
+<entityname.neonlights>Neon Light S</entityname.neonlights>
+<entityname.neonlightt>Neon Light T</entityname.neonlightt>
+<entityname.neonlightu>Neon Light U</entityname.neonlightu>  
+<entityname.neonlightv>Neon Light V</entityname.neonlightv>
+<entityname.neonlightw>Neon Light W</entityname.neonlightw>
+<entityname.neonlightx>Neon Light X</entityname.neonlightx>
+<entityname.neonlighty>Neon Light Y</entityname.neonlighty>
+<entityname.neonlightz>Neon Light Z</entityname.neonlightz>
+<entityname.neonlight0>Neon Light 0</entityname.neonlight0>
+<entityname.neonlight1>Neon Light 1</entityname.neonlight1>
+<entityname.neonlight2>Neon Light 2</entityname.neonlight2>
+<entityname.neonlight3>Neon Light 3</entityname.neonlight3>
+<entityname.neonlight4>Neon Light 4</entityname.neonlight4>
+<entityname.neonlight5>Neon Light 5</entityname.neonlight5>
+<entityname.neonlight6>Neon Light 6</entityname.neonlight6>
+<entityname.neonlight7>Neon Light 7</entityname.neonlight7>
+<entityname.neonlight8>Neon Light 8</entityname.neonlight8>
+<entityname.neonlight9>Neon Light 9</entityname.neonlight9>
+<entityname.neonlightplanet>Neon Light Planet</entityname.neonlightplanet>
+<entityname.neonlightkiss>Neon Light Kiss</entityname.neonlightkiss>
+<entityname.neonlightarrow>Neon Light Arrow</entityname.neonlightarrow>
+<entityname.neonlightgarden>Neon Light Garden</entityname.neonlightgarden>
+<entityname.neonlightgear>Neon Light Gear</entityname.neonlightgear>
+<entityname.neonlightsubmarine>Neon Light Submarine</entityname.neonlightsubmarine>
+<entityname.neonlightfood>Neon Light Food</entityname.neonlightfood>
+<entityname.neonlightframe>Neon Light Frame</entityname.neonlightframe>
+<entityname.neonlightwire1>Neon Light Wire 1</entityname.neonlightwire1>
+<entityname.neonlightwire2>Neon Light Wire 2</entityname.neonlightwire2>
+<entityname.neonlightwire3>Neon Light Wire 3</entityname.neonlightwire3>
+<entityname.neonlightwire4>Neon Light Wire 4</entityname.neonlightwire4>
+
+<!--New event texts-->
+<EventText.captivesouls.c1>A passing scientist grabs hold of you. “It lives! Who would've thought it would ever live?” Their eyes are wide open and sporting impressive bags under them.</EventText.captivesouls.c1>
+<EventText.captivesouls.o1>”What are you talking about?”</EventText.captivesouls.o1>
+<EventText.captivesouls.o1.c1>“I was too preoccupied with asking 'Can I?' instead of 'Should I?'” They pace back and forth, directing each word to a different passerby. When it becomes clear to them nobody's paying any attention besides you, they turn their attention back towards you.</EventText.captivesouls.o1.c1>
+<EventText.captivesouls.o1.o1.c1>“Are you not listening to me?”, the hysterical researcher bellows, sending drops of spittle across your face. “A human-crawler hybrid! Oh, it's beautiful! No! Hideous!” They sit down, cross-legged on the floor. “How will the scientific community remember me? As a creator? A destroyer?”, they pose to no one in particular. “Dare I say... a god?” </EventText.captivesouls.o1.o1.c1>
+<EventText.captivesouls.o1.o1.o1.c1>Looking at the scientist - now writhing on the floor, gibbering and laughing to themselves - you are somewhat grateful that the end comes in your line of work quickly and violently, instead of a slow spiral to madness.</EventText.captivesouls.o1.o1.o1.c1>
+<EventText.captivesouls.o1.o1.o1.o1.c1>Their claims of having successfully bred a human-crawler hybrid are obviously fantastical. Although... There is a small part of you that wants to believe. Maybe you could check the lab, just in case?</EventText.captivesouls.o1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.c1>A crawler is sitting motionless in a tank.</EventText.captivesouls.c1.c1>
+<EventText.captivesouls.c1.o1>Approach.</EventText.captivesouls.c1.o1>
+<EventText.captivesouls.c1.o1.c1>It seems to have been heavily sedated. This is not unordinary. Researchers are known to catch live specimens for research. Numerous scientific breakthroughs have been made using data received from crawlers: medical, gastronomical, psychologica-- Wait. Did it just... blink?</EventText.captivesouls.c1.o1.c1>
+<EventText.captivesouls.c1.o1.o1>Knock on the glass.</EventText.captivesouls.c1.o1.o1>
+<EventText.captivesouls.c1.o1.o1.c1>You tap on the glass three times and the creature opens its eyes. They are remarkably blue and fixated on you. It blinks once, twice… You can't help but feel like the creature is trying to communicate.</EventText.captivesouls.c1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1>What is it saying?</EventText.captivesouls.c1.o1.o1.o1>
+<EventText.captivesouls.c1.o1.o1.o1.c1>“Free me.” (You shouldn't.)</EventText.captivesouls.c1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1>True, I shouldn't. Although...</EventText.captivesouls.c1.o1.o1.o1.o1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.c1>It is a living creature, after all. Why shouldn't it be granted clemency?</EventText.captivesouls.c1.o1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1>Smash the glass.</EventText.captivesouls.c1.o1.o1.o1.o1.o1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.c1>It takes a few swings to make a crack appear. The water crashes out along with the creature, who turns its head towards you and nods, before slithering into a vent and disappearing from view. Weird. Did it acknowledge your help, or was it simply a jerky movement on its part?</EventText.captivesouls.c1.o1.o1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.c1>A glint catches your eye in the now empty, broken tank.</EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o1>Check it out.</EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o1.c1>Among the debris, there is a small trinket with alien etchings. You take it. It's time to go before someone starts asking questions.</EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o2>No time.</EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o2>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o2.c1>It's time to go before someone starts asking questions.</EventText.captivesouls.c1.o1.o1.o1.o1.o1.o1.o2.c1>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o2>Don't. Final warning.</EventText.captivesouls.c1.o1.o1.o1.o1.o2>
+<EventText.captivesouls.c1.o1.o1.o1.o1.o2.c1>You decide to leave the creature in its tank.</EventText.captivesouls.c1.o1.o1.o1.o1.o2.c1>
+<EventText.captivesouls.c1.o1.o2>Leave.</EventText.captivesouls.c1.o1.o2>
+<EventText.captivesouls.c1.o2>Don't approach.</EventText.captivesouls.c1.o2>
+<EventText.explosivemishap.c1>You hear voices from behind a closed door. “...so I just hold down this button?”</EventText.explosivemishap.c1>
+<EventText.explosivemishap.o1>Listen at the door.</EventText.explosivemishap.o1>
+<EventText.explosivemishap.o1.c1>A low humming voice can be heard in the background, like an old-timey vacuum cleaner. “Basically. Though you should be careful not to overheat it.”</EventText.explosivemishap.o1.c1>
+<EventText.explosivemishap.o1.o1.c1>“Overheat?” The humming noise grows louder and louder, increasing in pitch.</EventText.explosivemishap.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1>Keep your ear to the door.</EventText.explosivemishap.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.c1>The door is blown off its hinges, knocking you down.</EventText.explosivemishap.o1.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1.o1>Look inside.</EventText.explosivemishap.o1.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.o1.c1>It looks as if a bomb had gone off inside the laboratory. Expensive instruments are strewn broken on the floor and the once-white walls are decorated with streaks of dark red and pieces of brain matter. Two smoking corpses lie on the floor, along with an alien device of some kind. Someone nearby is yelling for a security guard.</EventText.explosivemishap.o1.o1.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1>Examine the device before security gets here.</EventText.explosivemishap.o1.o1.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.c1>The device is made of black metallic material and is heavy to hold. There is a handle that your hand fits into, and a button that lies directly under your index finger.</EventText.explosivemishap.o1.o1.o1.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1>Pull the trigger.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.c1>Nothing happens. It seems if this item indeed is the cause of the mess here, it has run dry of its destructive power.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1>Look for anything else useful in the lab.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.c1>You find a shiny capsule that fits into a slot on the underside of the device. You hear footsteps approaching. If you want to keep the device for yourself, it's time to bounce.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o1>Hightail it.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o2>Surrender the weapon to the authorities.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o2>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o2.c1>Security is happy to take the dangerous device off your hands. They promise to put in a good word for you in the office.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.o2.c1>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.c2>You find nothing. You decide to hold on to the device and leave before security gets here.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o1.c2>
+<EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o2>Hightail it.</EventText.explosivemishap.o1.o1.o1.o1.o1.o1.o2>
+<EventText.explosivemishap.o1.o1.o1.o1.o2>Leave.</EventText.explosivemishap.o1.o1.o1.o1.o2>
+<EventText.occupationalhazards.c1>A man with a hard hat is nursing a drink.</EventText.occupationalhazards.c1>
+<EventText.occupationalhazards.o1>Join him.</EventText.occupationalhazards.o1>
+<EventText.occupationalhazards.o1.c1>You pull a seat next to him and he acknowledges you with a nod. “Here to work?”</EventText.occupationalhazards.o1.c1>
+<EventText.occupationalhazards.o1.o1>“Something like that.”</EventText.occupationalhazards.o1.o1>
+<EventText.occupationalhazards.o1.o1.c1>He chuckles. “Had you pegged as the type. Well, if you're thinking of heading into the mines, don't”, he says and finishes his drink in one gulp.</EventText.occupationalhazards.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1>“What's in the mines?”</EventText.occupationalhazards.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.c1>“Well”, the worker starts, is interrupted by a hiccup, and continues: “Not any miners with two brain cells to rub together, that's for sure. Not during breeding season.”</EventText.occupationalhazards.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1>“Breeding season?”</EventText.occupationalhazards.o1.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.c1>The worker grunts an affirmation. “But when the boss says 'drill' you drill, or you go without food. So I went deeper until I hit something.”</EventText.occupationalhazards.o1.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1>“What did you hit?”</EventText.occupationalhazards.o1.o1.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.c1>“Eggs.”</EventText.occupationalhazards.o1.o1.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1>“Eggs?”</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.c1>“Mudraptor eggs. Now the whole shaft is overrun with angry raptor mamas and papas.”</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1>“So, is there a reward for clearing them out?”</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.c1>The man bursts into laughter. “No. What are you, some kind of a monster hunter? Rudy might've had some cash on him but he's down there.” He yelps at the bartender and motions for another beer. “Or a part of him at least.”</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1>Stand up and leave.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1>You excuse yourself and leave the man in peace. You wonder if you could find this Rudy's body in the mineshaft.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.c1>You find a badly mauled body clad in miner's overalls. The name tag says 'Rudy'.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o1>Search his pockets.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o1.c1>You find some cash.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o1.c1>
+<EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o2>Leave the body.</EventText.occupationalhazards.o1.o1.o1.o1.o1.o1.o1.o1.c1.o2>
+<EventText.hognose.c1>You see a man with an eyepatch and a white beard sitting at a table. Some passersby are casting nervous side-eye glances at him. “That's Hognose Huber, sea captain extraordinaire”, someone whispers.</EventText.hognose.c1>
+<EventText.hognose.o1>Approach.</EventText.hognose.o1>
+<EventText.hognose.o1.c1>The man growls as you approach.</EventText.hognose.o1.c1>
+<EventText.hognose.o1.o1>”Not too friendly, are we?”</EventText.hognose.o1.o1>
+<EventText.hognose.o1.o1.c1>He hacks up something from his throat and spits it out. “Had a bit of a blockage. Help you?” Huber squints at you.</EventText.hognose.o1.o1.c1>
+<EventText.hognose.o1.o1.o1>”I was wondering how one gets a nickname like Hognose.”</EventText.hognose.o1.o1.o1>
+<EventText.hognose.o1.o1.o1.c1>“Hognose was the name of my ship. Used to run the Hettol-Ihesas-Urghstead circuit.” He sits up, beaming with pride. “Must've had a hundred successful transports. Meds, military ordnance, submarine parts, you name it, I hauled it.”</EventText.hognose.o1.o1.o1.c1>
+<EventText.hognose.o1.o1.o1.o1>”Then what happened?”</EventText.hognose.o1.o1.o1.o1>
+<EventText.hognose.o1.o1.o1.o1.c1>“What happened? It got sunk! By Moping Jack!” Hognose pounds the table with his fist, sending empty glasses flying. “Caught me totally by surprise. One hit, the engine was down. Second, the hull was breached.” He stares through you, into the distance. </EventText.hognose.o1.o1.o1.o1.c1>
+<EventText.hognose.o1.o1.o1.o1.o1>”How did you survive?”</EventText.hognose.o1.o1.o1.o1.o1>
+<EventText.hognose.o1.o1.o1.o1.o1.c1>“I swam”, Hognose states matter-of-factly. “Grabbed all the O2 I could and hopped on a scooter. Had to even leave Ringo, my pet toad, behind.” A single tear rolls down from Hognose's remaining eye. “At that moment I swore revenge against the beast.” He slams down a radio on the table. Noticing your puzzled look, he explains. “It ate my radio mast. I've been all over Europa, trying to get a signal. If I ever find him, it's-” The radio lets out a series of beeps.</EventText.hognose.o1.o1.o1.o1.o1.c1>
+<EventText.hognose.o1.o1.o1.o1.o1.o1.c1>“It's here! You have a ship, don't you? Up for a hunt, young one?” Hognose is shaking with excitement. “Well compensated of course.”</EventText.hognose.o1.o1.o1.o1.o1.o1.c1>
+<EventText.hognose.o1.o1.o1.o1.o1.o1.o1>”Of course!”</EventText.hognose.o1.o1.o1.o1.o1.o1.o1>
+<EventText.hognose.o1.o1.o1.o1.o1.o1.o1.c1>“I knew there was a fight in your generation after all! I'll see you on board.”</EventText.hognose.o1.o1.o1.o1.o1.o1.o1.c1>
+<EventText.hognose.o1.o1.o1.o1.o1.o1.o2>Not interested.</EventText.hognose.o1.o1.o1.o1.o1.o1.o2>
+<EventText.hognose.o1.o1.o2>”Nevermind.”</EventText.hognose.o1.o1.o2>
+<EventText.hognose.o1.o2>Run away.</EventText.hognose.o1.o2>
+<EventText.hognose.o2>Steer clear.</EventText.hognose.o2>
+<EventText.nothingtoseehere.c1>An elderly woman waves at you. “Could you be a dear and throw this out for me?”, she asks, shoving a handful of trash in your hand.</EventText.nothingtoseehere.c1>
+<EventText.nothingtoseehere.o1>Do as she asks.</EventText.nothingtoseehere.o1>
+<EventText.nothingtoseehere.o1.c1>You're glad to be rid of the old hag's garbage. While unloading your smelly cargo you catch a glimpse of a human finger amid the refuse.</EventText.nothingtoseehere.o1.c1>
+<EventText.nothingtoseehere.o1.o1>Investigate further.</EventText.nothingtoseehere.o1.o1>
+<EventText.nothingtoseehere.o1.o1.c1>Being up to your elbows in the trash can draws some weird looks from onlookers but they shrug it off. The economy is bad after all. Under all the burger wrappers you can see a lanyard identifying the corpse as a reporter for The Europan, a newspaper of questionable quality. Curiously, their name is scratched out.</EventText.nothingtoseehere.o1.o1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1>You try not to gag at the smell of the garbage and the dead body and rip the tag off. Maybe somebody in security would be interested in this?</EventText.nothingtoseehere.o1.o1.o1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.c1>“Can I help you with something?”</EventText.nothingtoseehere.o1.o1.o1.c1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1>”I'd like to report a dead body.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.c1>You show the name tag to the security officer and explain your findings. They scratch their head and sigh. “Look, I've been working security for fifteen years. If a line cook at Irma Burger is found dead, it's probably a crime of passion, an argument gone wrong”, they explain. “The killer may be found, justice dispensed.” They take a look around. Nobody seems to be listening, but the guard continues in whisper: “A reporter is found in the trash, their ID scratched out? You turn a blind eye. There's nothing good to be found in that rabbit hole.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o1>”Understood.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o1.c1>The guard raises their voice again. “Thank you for your tip, citizen. Five hunded marks have been deposited to your account.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2>Prod for more information.</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.c1>To the guard's dismay, you ask them to elaborate. “Do I need to spell this out for you? Reporters investigate-” Somebody walks by you, and the guard stops mid-sentence, waits for them to pass, then continues: “and more importantly, they report. Somebody clearly didn't want to be reported on.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.o1>”Somebody from the Coalition?”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.o1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.o1.c1>The guard rolls their eyes. “You finally get it. There's a nice reward for reporting a dead body. I suggest you take that, buy yourself some opium, or whatever it is you submarine types like and forget about what you saw. I'll take care of the body.”</EventText.nothingtoseehere.o1.o1.o1.c1.o1.o2.o1.c1>
+<EventText.nothingtoseehere.o1.o1.o1.c1.o2>Chicken out.</EventText.nothingtoseehere.o1.o1.o1.c1.o2>
+  
+<!-- NOTE: The first "dialogtargetresuscitated" entry is already included as one of the "dialogtargethealed" entries in EnglishVanilla but should be removed (or modified) -->
+<dialogtargetresuscitated>[targetname] has been resuscitated!</dialogtargetresuscitated>
+<dialogtargetresuscitated>[targetname] is back on their feet again!</dialogtargetresuscitated>
+
+
+<!--New event missions-->
+<missionname.killmopingjack>Kill Moping Jack</missionname.killmopingjack>
+<missiondescription.killmopingjack>Captain Hognose has recruited you to help him kill his old nemesis, Moping Jack the Hammerhead.</missiondescription.killmopingjack>
+<missionsonarlabel.killmopingjack>Moping Jack</missionsonarlabel.killmopingjack>
+<missionsuccess.killmopingjack>Moping Jack has been killed.</missionsuccess.killmopingjack>
+<missionheader0.killmopingjack>Target terminated</missionheader0.killmopingjack>
+<missionmessage0.killmopingjack>Moping Jack is dead. All that remains is to claim the reward.</missionmessage0.killmopingjack>
+
+<character.Hammerhead_mNamed>Moping Jack</character.Hammerhead_mNamed>
+<character.Latcher>Latcher</character.Latcher>
+
+<!-- feature/childserverrelay-robustness -->
+<serverprocessclosed>The server process has closed unexpectedly.</serverprocessclosed>
+<serverprocesscrashed>The server process has crashed. A crash report ([reportfilepath]) has been generated in the game's root directory.</serverprocesscrashed>
+
+<crewwallet.wallet>Wallet</crewwallet.wallet>
+<crewwallet.bank>Bank</crewwallet.bank>
+<crewwallet.transfer>Transfer</crewwallet.transfer>
+<crewwallet.balance.toomuchtoshow>Lots!</crewwallet.balance.toomuchtoshow>
+<crewwallet.transfer.tooltip>Transfer money into or out of this wallet.</crewwallet.transfer.tooltip>  <!-- grammar? -->
+<crewwallet.salary>Salary</crewwallet.salary>
+<crewwallet.salary.tooltip>Salary determines the distribution of mission rewards</crewwallet.salary.tooltip> <!-- more descriptive tooltip? -->
+<crewwallet.salary.over100toolitp>The sum of reward distribution is over 100% (‖color:gui.orange‖[sum]%‖end‖). The salary will be adjusted to ‖color:gui.orange‖[newvalue]%‖end‖.</crewwallet.salary.over100toolitp>
+<bankbalanceformat>Bank: [money] mk</bankbalanceformat>
+<crewwallet.missionreward.get>You receive: ‖color:gui.orange‖[money] mk‖end‖ ([share]%)</crewwallet.missionreward.get>
+<percentageformat>[value]%</percentageformat>
+<crewwallet.requestmoney>Request</crewwallet.requestmoney>
+<crewwallet.requestbanktoselfvote>[requester] wants to transfer [amount] mk from the bank to their personal wallet.</crewwallet.requestbanktoselfvote>
+<crewwallet.requestselftobankvote>[requester] wants to transfer [amount] mk from their personal wallet to the bank.</crewwallet.requestselftobankvote>
+<crewwallet.requesttransfervote>[requester] wants to transfer [amount] mk from [player1] to [player2].</crewwallet.requesttransfervote>  
+<crewwallet.banktoplayer.votepassed>The crew agreed to transfer [amount] marks from the bank to [playername], with [yesvotecount] votes for and [novotecount] against.</crewwallet.banktoplayer.votepassed>
+<crewwallet.banktoplayer.votefailed>The vote to transfer [amount] marks from the bank to [playername] failed, with [yesvotecount] votes for and [novotecount] against.</crewwallet.banktoplayer.votefailed>
+<moneygainformat>+ [money]</moneygainformat>
+<moneyloseformat>- [money]</moneyloseformat>
+<serverlog.money>Money transfer</serverlog.money>
+
+<storename.merchantarmory>Armory</storename.merchantarmory>
+<storename.merchantmedical>Medical Supplies</storename.merchantmedical>
+<storename.merchantengineering>Engineering Supplies</storename.merchantengineering>
+
+<label.researchfacility>Research facility</label.researchfacility>
+<label.admin>Administrative office</label.admin>
+<label.hr>Human resources</label.hr>
+<label.store>General store</label.store>
+
+<entityname.toothspike>Latcher's tooth</entityname.toothspike>
+<entityname.tonguetendon>Latcher's tongue</entityname.tonguetendon>
+
+<vendingmachine.outofstock>Out of stock</vendingmachine.outofstock>
+
+<clientpermission.managecampaign.description>Allowed to manage all aspects of the campaign (saving, loading, map, buying and selling, money, hires).</clientpermission.managecampaign.description>
+<clientpermission.karmaimmunity>Karma immunity</clientpermission.karmaimmunity>
+<clientpermission.karmaimmunity.description>Immune to the effects of the karma system.</clientpermission.karmaimmunity.description>  
+<clientpermission.sellinventoryitems>Sell inventory items</clientpermission.sellinventoryitems>
+<clientpermission.sellinventoryitems.description>Sell items from your own inventory in the campaign stores.</clientpermission.sellinventoryitems.description>  
+<clientpermission.sellsubitems>Sell submarine items</clientpermission.sellsubitems>
+<clientpermission.sellsubitems.description>Sell items from the submarine in the campaign stores.</clientpermission.sellsubitems.description>
+<clientpermission.managemap>Manage map</clientpermission.managemap>
+<clientpermission.managemap.description>Choose the destination and missions in the campaign mode.</clientpermission.managemap.description>
+<clientpermission.managemoney>Manage money</clientpermission.managemoney>
+<clientpermission.managemap.description>Access the crew's shared funds in the bank and distribute mission rewards to the crew in the campaign mode.</clientpermission.managemap.description>  
+<clientpermission.managehires>Manage hires</clientpermission.managehires>
+<clientpermission.managehires.description>Hire new crewmembers or fire members of the current crew.</clientpermission.managehires.description>
+
+<moderationmenu.manageplayer>Manage</moderationmenu.manageplayer>
+
+<entityname.energydrink>Energy Drink</entityname.energydrink>
+<entitydescription.energydrink>Mantis Energy keeps you skittering from dawn till dusk!</entitydescription.energydrink>
+<entityname.proteinbar>Protein Bar</entityname.proteinbar>
+<entitydescription.proteinbar>May contain traces of galena.</entitydescription.proteinbar>
+
+<mapentitycategory.medical>Medical</mapentitycategory.medical>
+<mapentitycategory.weapon>Weapon</mapentitycategory.weapon>
+<mapentitycategory.diving>Diving</mapentitycategory.diving>
+<mapentitycategory.fuel>Fuel</mapentitycategory.fuel>
+
+<connection.setdistancebasedforce>set_distancebasedforce</connection.setdistancebasedforce>
+<connection.setforcefluctuation>set_forcefluctuation</connection.setforcefluctuation>
+<connection.setforcefluctuationstrength>set_forcefluctuationstrength</connection.setforcefluctuationstrength>
+<connection.setforcefluctuationfrequency>set_forcefluctuationfrequency</connection.setforcefluctuationfrequency>
+<connection.setforcefluctuationinterval>set_forcefluctuationinterval</connection.setforcefluctuationinterval>
+
+</infotexts>

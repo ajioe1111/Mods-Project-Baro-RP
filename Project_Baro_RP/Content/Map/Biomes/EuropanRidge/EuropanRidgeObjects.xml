@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<levelobjects>
+  <!-- a series of background chunks that spawn along walls -->
+  <BackgroundChunks identifier="europanridgebackgroundchunks" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="0" minsize="0.5" maxsize="0.8" randomrotation="-180,180" commonness="0" depthrange="500,2500" alignment="TopLeft, BottomRight" clusteringamount="5" clusteringgroup="0.5" alignwithsurface="False" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000000" randomoffset="100,100">
+    <overridecommonness leveltype="ridgebasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/BackgroundChunks.png" sourcerect="0,0,1366,2048" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/BackgroundChunks.png" sourcerect="1366,0,1366,2048" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/BackgroundChunks.png" sourcerect="2730,0,1366,2048" origin="0.5,0.5" />
+  </BackgroundChunks>
+  <EdgeChunks identifier="europanridgeedgechunks" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="650" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="30,40" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="0,0,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="768,0,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="1536,0,512,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="0,512,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="768,512,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="1536,512,512,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="0,1024,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="768,1024,768,512" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/WallEdgeChunks.png" sourcerect="1536,1024,512,512" origin="0.5,0.8" />
+    <ChildObject names="tanglebush1" mincount="2" maxcount="2" />
+    <ChildObject names="tanglebush2" mincount="2" maxcount="2" />
+  </EdgeChunks>
+  <!-- Plants -->
+  <greenreef identifier="greenreef" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="300" minsize="0.5" maxsize="0.8" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="5,10" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="20000">
+    <overridecommonness leveltype="ridgebasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="0,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="512,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1024,0,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1536,0,512,512" origin="0.5,1.0" />
+  </greenreef>
+  <miscreef identifier="miscreef" spawnpos="MainPathWall,SidePathWall" minsurfacewidth="300" minsize="0.5" maxsize="0.8" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="5,10" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="0,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="512,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1024,512,512,512" origin="0.5,1.0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1536,512,512,512" origin="0.5,1.0" />
+  </miscreef>
+  <!-- Plant's Moving parts -->
+  <impsclaw1 identifier="impsclaw1" spawnpos="Wall" minsurfacewidth="300" minsize="0.3" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="5,18" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="3.5999997" swingfrequency="0.2" scaleoscillation="0.1,0.3" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="0,1536,512,512" origin="0.5,1.0" />
+    <ChildObject names="impsclaw2" mincount="2" maxcount="2" />
+  </impsclaw1>
+  <impsclaw2 identifier="impsclaw2" spawnpos="Wall" minsurfacewidth="300" minsize="0.3" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="10,20" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="3.5999997" swingfrequency="0.1" scaleoscillation="0.2,0.4" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="512,1536,512,512" origin="0.5,1.0" subdivisions="5,5" />
+  </impsclaw2>
+  <tangledbush1 identifier="tanglebush1" spawnpos="Wall" minsurfacewidth="300" minsize="0.5" maxsize="0.8" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="1,4" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="7.1999993" swingfrequency="0.10000002" scaleoscillation="0.1,0.2" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1024,1536,512,512" origin="0.5,1.0" />
+  </tangledbush1>
+  <tangledbush2 identifier="tanglebush2" spawnpos="Wall" minsurfacewidth="300" minsize="0.5" maxsize="0.58" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="1,4" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="7.1999993" swingfrequency="0.3" scaleoscillation="0.4,0.5" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="ridgebasic" commonness="0" />
+    <Sprite texture="Content/Map/Biomes/EuropanRidge/LevelObjects.png" sourcerect="1536,1536,512,512" origin="0.5,1.0" />
+  </tangledbush2>'
+  
+</levelobjects>

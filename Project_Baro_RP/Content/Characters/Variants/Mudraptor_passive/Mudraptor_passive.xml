@@ -1,0 +1,5 @@
+<Charactervariant inherit="Mudraptor" speciesname="Mudraptor_passive" group="human" speciestranslationoverride="Mudraptor" texture="Content/Characters/Mudraptor/Mudraptor.png">
+  <health vitality="60" usehealthwindow="False"/>
+  <ai combatstrength="110" sight="0" hearing="0" attackwhenprovoked="false"/>
+  <inventory slots="Any, Any"/>
+</Charactervariant>

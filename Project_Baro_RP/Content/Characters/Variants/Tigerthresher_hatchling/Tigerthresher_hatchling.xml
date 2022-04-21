@@ -1,0 +1,8 @@
+<Charactervariant inherit="Tigerthresher" speciesname="Tigerthresher_hatchling" speciestranslationoverride="Tigerthresher" texture="Content/Characters/Variants/Tigerthresher_hatchling/Tigerthresherhatchling.png" eatingspeed="10">
+  <health vitality="75"/>
+  <ragdoll scalemultiplier="0.5"/>
+  <attack damagemultiplier="0.5" rangemultiplier="0.5" impactmultiplier="0.5"/>
+  <animations folder="Content/Characters/Variants/Tigerthresher_hatchling/Animations/" />
+  <ai combatstrength="120"/>
+  <inventory/>
+</Charactervariant>

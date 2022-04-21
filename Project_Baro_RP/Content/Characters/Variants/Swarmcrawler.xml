@@ -1,0 +1,11 @@
+<!--Almost everything in the character definition can be changed using the same names for the blocks.-->
+<Charactervariant inherit="Crawler" speciesname="Swarmcrawler" speciestranslationoverride="Crawler"> <!--can override the entire texture like so: texture="Content/Characters/Variants/Customcrawler.png"-->
+  <health vitality="85"/>
+  <ai fleehealththreshold="0">
+    <!--Overriding targets can be done like this:
+    <target tag="human" state="Follow" priority="1000" />
+    -->
+  </ai>
+  <ragdoll scalemultiplier="1.15"/>
+  <attack damagemultiplier="1.15" rangemultiplier="1.15"/>
+</Charactervariant>

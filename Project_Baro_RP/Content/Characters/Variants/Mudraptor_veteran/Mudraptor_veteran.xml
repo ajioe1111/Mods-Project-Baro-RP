@@ -1,0 +1,9 @@
+<Charactervariant inherit="Mudraptor" speciesname="Mudraptor_veteran" speciestranslationoverride="Mudraptor" texture="Content/Characters/Variants/Mudraptor_veteran/Mudraptor_veteran.png" eatingspeed="15">
+  <health vitality="300" usehealthwindow="False" />
+  <ragdoll scalemultiplier="1.375" impacttolerance="60" />
+  <attack damagemultiplier="2" rangemultiplier="1.375" impactmultiplier="2" />
+  <animations folder="Content/Characters/Variants/Mudraptor_veteran/Animations/"/>
+  <ai combatstrength="490" sight="1.5" hearing="1.5">
+    <target tag="tigerthresher" state="Aggressive" priority="100" reactdistance="2000" />
+  </ai>
+</Charactervariant>

@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items itemtype="wrecked">
+  <Item name="" identifier="reactor1wrecked" nameidentifier="reactor1" tags="reactor" type="Reactor" category="Wrecked">
+    <!--<trigger />-->
+    <Sprite texture="WreckedItems.png" sourcerect="3,625,321,192" depth="0.8" origin="0.5,0.5" />
+    <ItemContainer capacity="6" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.25" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+    <!--<aitarget sightrange="500" soundrange="7500"/>
+    <Reactor canbeselected="true" firedelay="20" meltdowndelay="120" maxpoweroutput="10000" fuelconsumptionrate="0.2" vulnerabletoemp="false" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.65,0.38" minsize="900,400" maxsize="2688,1166" anchor="Center" style="ItemUI"/>
+      <GraphLine texture="Content/Items/Reactor/graphLine.png"/>
+      <FissionRateMeter texture="Content/Items/MachineInterface.png" sourcerect="0,335,252,177" origin="0.5,0.65"/>
+      <TurbineOutputMeter texture="Content/Items/MachineInterface.png" sourcerect="252,335,252,177" origin="0.5,0.65"/>
+      <MeterPointer texture="Content/Items/MachineInterface.png" sourcerect="367,22,14,118" origin="0.5,0.93"/>
+      <SectorSprite texture="Content/Items/MachineInterface.png" sourcerect="329,160,90,172" origin="0.98,0.5"/>
+      <TempMeterFrame texture="Content/Items/MachineInterface.png" sourcerect="188,212,27,95" origin="0.0,0.0"/>
+      <TempMeterBar texture="Content/Items/MachineInterface.png" sourcerect="191,194,21,8" origin="0.5,0.0"/>
+      <TempRangeIndicator texture="Content/Items/MachineInterface.png" sourcerect="176,308,51,10" origin="0.5,0.5"/>
+      <RequiredSkill identifier="electrical" level="50"/>
+      <sound file="Content/Items/Reactor/Reactor.ogg" type="OnActive" range="2000.0" volumeproperty="FissionRate" volume="0.02" loop="true"/>
+      <StatusEffect type="OnBroken" target="This" FissionRate="0.0" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="8000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="8000" />
+        <Explosion range="800" structuredamage="200" force="5.0" camerashake="200" 
+                   flashrange="10000" flashduration="5.0" 
+                   screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
+          <Affliction identifier="burn" strength="200" />
+          <Affliction identifier="internaldamage" strength="50" />
+          <Affliction identifier="radiationsickness" strength="50" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+    </Reactor>
+    <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false">
+      <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
+      <IsActive targetitemcomponent="Reactor" temperature="gt 2" />
+      <sprite texture="Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,0,186,192" origin="0.45,0.5" alpha="1.0" />
+    </LightComponent>
+    <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="0" IsOn="false" castshadows="false" allowingameediting="false" blinkfrequency="1">
+      <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
+      <IsActive targetitemcomponent="Reactor" temperaturecritical="eq true" />
+      <sprite texture="Content/Items/Reactor/reactor.png" depth="0.025" sourcerect="326,192,186,192" origin="0.45,0.5" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredSkill identifier="electrical" level="80" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <output name="power_out" displayname="connection.powerout"/>
+      <output name="temperature_out" displayname="connection.temperatureout"/>
+      <input name="shutdown" displayname="connection.shutdown"/>
+      <output name="meltdown_warning" displayname="connection.meltdownwarning">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="smoke" particlespersecond="8" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="200"/>
+          <ParticleEmitter particle="swirlysmoke" particlespersecond="3" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10"/>
+          <sound file="Content/Items/Reactor/ReactorOverheatAlarm.ogg" type="OnUse" range="10000.0" loop="true" volume="1.0" />
+        </StatusEffect>
+      </output>
+    </ConnectionPanel>
+    <ItemContainer capacity="4" canbeselected="true" hudpos="0.5,0.15" slotsperrow="2" uilabel="FuelRods">
+      <Containable items="fuelrod">
+        <StatusEffect type="OnContaining" target="This" AvailableFuel="80.0" disabledeltatime="true" />
+      </Containable>
+      <Containable items="fulguriumfuelrod">
+        <StatusEffect type="OnContaining" target="This" AvailableFuel="150.0" disabledeltatime="true" />
+      </Containable>
+      <Containable items="thoriumfuelrod">
+        <StatusEffect type="OnContaining" target="This" AvailableFuel="100.0" disabledeltatime="true" />
+      </Containable>
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="720" MinDeteriorationCondition="10" minsabotagecondition="10" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+      <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="15.0" />
+      <ParticleEmitter particle="spark" particleamount="5" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+    </Repairable>-->
+    <Upgrade gameversion="0.1500.7.0" noninteractable="false"/>
+  </Item>
+  <Item name="" identifier="railgunwrecked" nameidentifier="railgun" description="" Tags="turret" category="Wrecked" interactthroughwalls="true" interactdistance="10" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="railgunammosource">
+    <Sprite texture="TurretsWrecked.png" depth="0.01" sourcerect="512,0,256,256" canflipy="false" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="126, 89" rotationlimits="180,360" powerconsumption="20000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="100" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/Railgun1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/Railgun2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/Railgun3.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <RailSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.52, 0.59" sourcerect="512,256,164,256" depth="0.011" />
+      <BarrelSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" origin="0.5, 0.85" sourcerect="768,0,125,336" depth="0.012" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2048" IsOn="true" drawbehindsubs="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" description="" identifier="periscopewrecked" nameidentifier="periscope" tags="periscope" category="Wrecked" type="Controller" disableitemusagewhenselected="true" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
+    <Sprite texture="WreckedItems.png" depth="0.1" sourcerect="193,818,134,203" origin="0.5,0.5" />
+    <Controller UserPos="-35.0, -50.0" direction="Right" canbeselected="true" msg="ItemMsgInteractSelect">
+      <limbposition limb="Head" position="-10,-135" />
+      <limbposition limb="Torso" position="-10,-200" />
+      <limbposition limb="LeftHand" position="67,-170" />
+      <limbposition limb="RightHand" position="67,-170" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="position_out" displayname="connection.turretaimingout" fallbackdisplayname="inputtype.aim" />
+      <output name="trigger_out" displayname="connection.turrettriggerout" fallbackdisplayname="inputtype.shoot" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="railgunloaderwrecked" nameidentifier="railgunloader" tags="railgunequipment,railgunammosource" category="Wrecked" linkable="true" allowedlinks="railgun" scale="0.5" noninteractable="True">
+    <Sprite texture="TurretsWrecked.png" depth="0.8" sourcerect="0,512,298,276" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="5" slotsperrow="6" itempos="53,-140" iteminterval="48,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="railgunammo" />
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="20" mindeteriorationdelay="5" maxdeteriorationdelay="15" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="15.0" />
+      <ParticleEmitter particle="spark" particleamount="5" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+    </Repairable>
+  </Item>
+  <Item name="" identifier="railgunloadersingleverticalwrecked" nameidentifier="railgunloadersinglevertical" tags="railgunequipment,railgunammosource" category="Wrecked" linkable="true" allowedlinks="railgun" scale="0.5" noninteractable="True">
+    <Sprite texture="TurretsWrecked.png" depth="0.8" sourcerect="0,788,84,236" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="43,-130" iteminterval="0,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+    <Containable items="railgunammo" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="railgunloadersinglehorizontalwrecked" nameidentifier="railgunloadersinglehorizontal" tags="railgunequipment,railgunammosource" category="Wrecked" linkable="true" allowedlinks="railgun" scale="0.5" noninteractable="True">
+    <Sprite texture="TurretsWrecked.png" depth="0.8" sourcerect="86,790,241,86" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="130,-43" iteminterval="0,0" itemrotation="180" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+    <Containable items="railgunammo" />
+    </ItemContainer>
+  </Item>
+  <Item name="" description="" identifier="coilgunwrecked" nameidentifier="coilgun" Tags="turret,ignoresubmarines" category="Wrecked" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
+    <Sprite texture="TurretsWrecked.png" depth="0.01" sourcerect="0,0,256,256" canflipy="false" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="128,88" rotationlimits="180,360" powerconsumption="1000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.25" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <sound file="Content/Items/Weapons/Coilgun1.ogg" range="10000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Coilgun2.ogg" range="10000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Coilgun3.ogg" range="10000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Coilgun4.ogg" range="10000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Coilgun5.ogg" range="10000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Coilgun6.ogg" range="10000" type="OnUse" />
+      <RailSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.011" sourcerect="381,0,120,287" origin="0.64, 0.7" />
+      <BarrelSprite texture="Content/Items/Shipwrecks/TurretsWrecked.png" depth="0.012" sourcerect="256,0,125,333" origin="0.6, 0.8" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="coilgunloaderwrecked" nameidentifier="coilgunloader" tags="coilgunequipment" category="Wrecked" linkable="true" allowedlinks="coilgun" scale="0.5" noninteractable="True">
+    <Sprite texture="TurretsWrecked.png" depth="0.8" sourcerect="363,514,149,368" origin="0.5,0.5" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="15.0" />
+      <ParticleEmitter particle="spark" particleamount="5" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="6" itempos="74,-281" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="coilgunammo" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="coilgunammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="oxygeneratorwrecked" nameidentifier="oxygenerator" tags="oxygengenerator" category="Wrecked" linkable="true" allowedlinks="vent" noninteractable="True">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="0,0,205,193" origin="0.5,0.5" />
+    <!--<OxygenGenerator powerconsumption="1000.0" minvoltage="0.5" canbeselected="true" msg="ItemMsgInteractSelect">
+      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="1500" loop="false" />
+      <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>    
+      <StatusEffect type="OnFire" target="This" Condition="-0.5"/>
+      <StatusEffect type="OnActive" targettype="Contained" targets="oxygentank" Condition="2.0"/>
+      <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
+        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
+        <Explosion range="50" stun="0" force="3.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false"/>
+      </StatusEffect>
+    </OxygenGenerator>
+  
+    <trigger/>
+
+    <ItemContainer capacity="5" canbeselected="true" hideitems="false" itempos="28,-125" iteminterval="22,0" msg="ItemMsgOxygenRefill">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="oxygentank"/>
+    </ItemContainer>
+    
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="750" mindeteriorationcondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI"/>
+      <RequiredSkill identifier="mechanical" level="30"/>
+      <RequiredItem items="wrench" type="equipped"/>
+      <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="25.0"/>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="0.0"/>
+    </Repairable>-->
+  </Item>
+  <Item name="" identifier="shuttleoxygeneratorwrecked" nameidentifier="shuttleoxygenerator" tags="oxygengenerator" category="Wrecked" linkable="true" allowedlinks="vent" noninteractable="True">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="205,1,179,122" origin="0.5,0.5" />
+    <!--<OxygenGenerator powerconsumption="1000.0" minvoltage="0.5" canbeselected = "true" msg="ItemMsgInteractSelect">
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="1000" loop="false" />
+      <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" type="OnActive" range="1000.0" volumeproperty="CurrFlow" volume="0.001f" loop="true"/>
+      <StatusEffect type="OnFire" target="This" Condition="-0.5"/>
+      <StatusEffect type="OnActive" targettype="Contained" targets="oxygentank" Condition="2.0"/>
+      <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="8000" selectionmode="All"/>
+        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="8000" />
+        <Explosion range="50" stun="0" force="3.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false"/>
+      </StatusEffect>
+    </OxygenGenerator>
+
+    <trigger/>
+
+    <ItemContainer capacity="5" canbeselected = "true" msg="ItemMsgOxygenRefill">
+      <Containable items="oxygentank"/>
+    </ItemContainer>
+
+    <ConnectionPanel selectkey="Action" canbeselected = "true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredSkill identifier="electrical" level="80" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="750" mindeteriorationcondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI"/>
+      <RequiredSkill identifier="mechanical" level="30"/>
+      <RequiredItem items="wrench" type="equipped"/>
+      <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="25.0"/>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="0.0"/>
+    </Repairable>-->
+  </Item>
+  <Item name="" identifier="ventwrecked" nameidentifier="vent" tags="vent" category="Wrecked" interactdistance="0" linkable="true" allowedlinks="oxygenerator" scale="0.8">
+    <Sprite texture="WreckedItems.png" depth="0.91" sourcerect="226,124,64,64" origin="0.5,0.5" />
+    <!--<Vent>
+      <sound file="Content/Items/OxygenGenerator/Ventilation.ogg" type="OnActive" range="400.0" volumeproperty="OxygenFlow" volume="0.0005f" loop="true"/>
+    </Vent>-->
+  </Item>
+  <Item name="" identifier="ladderwrecked" nameidentifier="ladder" category="Wrecked" tags="ladder" resizevertical="true">
+    <Upgrade gameversion="0.9.700.0" spritedepth="0.51" rectwidth="11" />
+    <Sprite texture="WreckedItems.png" depth="0.51" sourcerect="986,523,11,120" origin="0.5,0.5" />
+    <Ladder canbeselected="true" msg="ItemMsgClimbSelect">
+      <BackgroundSprite texture="Content/Items/Shipwrecks/WreckedItems.png" depth="0.05" sourcerect="973,523,13,120" origin="1,0" />
+    </Ladder>
+    <trigger x="-40" y="20" width="90" />
+  </Item>
+  <Item name="" identifier="fabricatorwrecked" nameidentifier="fabricator" tags="fabricator" category="Wrecked" scale="0.5" noninteractable="True">
+    <Sprite texture="WreckedItems.png" sourcerect="739,0,285,391" depth="0.8" origin="0.5,0.5" />
+    <!--<Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center"/>
+      <AlternativeLayout absoluteoffset="15,0"/>
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+    </Fabricator>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="50" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI"/>
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="Equipped" />
+	    <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="25.0"/>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="0.0"/>
+    </Repairable>
+
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="Input" allowuioverlap="true"/>
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true"/>-->
+  </Item>
+  <Item name="" identifier="medicalfabricatorwrecked" nameidentifier="medicalfabricator" tags="medicalfabricator" category="Wrecked" noninteractable="True">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="2,196,140,168" origin="0.5,0.5" />
+    <!--<Fabricator canbeselected = "true" powerconsumption="100.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center" />
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight2.ogg" range="600" loop="false" />         
+    </Fabricator>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="50" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+      <ParticleEmitter particle="smoke" particlespersecond="1" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0"/>
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="15.0"/>
+      <ParticleEmitter particle="spark" particleamount="5" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0"/>
+    </Repairable>
+
+    <ItemContainer capacity="4" canbeselected="true" hideitems="true" slotsperrow="4" uilabel="Input" allowuioverlap="true"/>
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true"/>-->
+  </Item>
+  <Item name="" identifier="deconstructorwrecked" nameidentifier="deconstructor" tags="deconstructor" category="Wrecked" scale="0.5" noninteractable="True">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="494,1,243,335" origin="0.5,0.5" />
+    <!--<Deconstructor canbeselected = "true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.45" maxsize="460,600" style="ItemUI" anchor="Center"/>
+      <sound file="Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
+    </Deconstructor>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="50" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+      <ParticleEmitter particle="smoke" particlespersecond="1" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0"/>
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="15.0"/>
+      <ParticleEmitter particle="spark" particleamount="5" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0"/>
+    </Repairable>
+
+    <ItemContainer capacity="3" canbeselected="true" hideitems="true" hudpos="0.5, 0.4" slotsperrow="1" uilabel="Input" allowuioverlap="true"/>
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" hudpos="0.5, 0.8" slotsperrow="5" uilabel="Output" allowuioverlap="true"/>-->
+  </Item>
+  <Item name="" identifier="enginewrecked" nameidentifier="engine" tags="engine" category="Wrecked" Scale="0.5" noninteractable="True">
+    <Sprite texture="MiscStructuresWrecked.png" depth="0.8" sourcerect="1039,1329,707,334" canflipx="true" origin="0.5,0.5" />
+    <!--<trigger x="200" y="-50" width="400" height="240" />
+    <aitarget sightrange="500" soundrange="10000"/>
+    <Engine minvoltage="0.5" powerconsumption="2000.0" maxforce="2000" canbeselected="true" propellerpos="-160,-15" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
+      <StatusEffect type="InWater" target="This" condition="-1.0" />
+      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
+      <poweronsound file="Content/Items/PowerOnHeavy1.ogg" range="1000" loop="false" />
+      <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
+        <Affliction identifier="internaldamage" strength="50" />
+        <Affliction identifier="bleeding" strength="100" />
+      </propellerdamage>
+    </Engine>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="set_force" displayname="connection.setforce" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="300" mindeteriorationcondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+      <ParticleEmitter particle="smoke" particlespersecond="1" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="15.0" />
+    </Repairable>-->
+  </Item>
+  <Item name="" identifier="largeenginewrecked" nameidentifier="largeengine" tags="engine" category="Wrecked" Scale="0.8" noninteractable="True">
+    <Sprite texture="MiscStructuresWrecked.png" depth="0.8" sourcerect="467,1672,1024,377" canflipx="true" origin="0.5,0.5" />
+    <!--<trigger x="375" y="-43" width="563" height="312" />
+    <aitarget sightrange="500" soundrange="10000"/>
+    <Engine minvoltage="0.5" powerconsumption="4000.0" maxforce="4000" canbeselected="true" propellerpos="-380,20" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
+      <StatusEffect type="InWater" target="This" condition="-1.0" />
+      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="5000.0" volumeproperty="CurrentVolume" loop="true" />
+      <poweronsound file="Content/Items/PowerOnHeavy1.ogg" range="3000" loop="false" />
+      <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
+        <Affliction identifier="internaldamage" strength="50" />
+        <Affliction identifier="bleeding" strength="100" />
+      </propellerdamage>
+    </Engine>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="set_force" displayname="connection.setforce" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.125" mindeteriorationdelay="120" maxdeteriorationdelay="300" mindeteriorationcondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="20" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+      <ParticleEmitter particle="smoke" particlespersecond="1" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="80.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="0.0" />
+    </Repairable>-->
+  </Item>
+  <Item name="" identifier="shuttleenginewrecked" nameidentifier="shuttleengine" tags="engine" category="Wrecked" Scale="0.5" noninteractable="True">
+    <Sprite texture="MiscStructuresWrecked.png" depth="0.8" sourcerect="1514,1855,422,192" canflipx="true" origin="0.5,0.5" />
+    <!--<trigger x="180" y="-30" width="200" height="146" />
+    <aitarget sightrange="500" soundrange="10000"/>
+    <Engine minvoltage="0.5" powerconsumption="500.0" maxforce="300" canbeselected="true" propellerpos="-80,0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.2,0.18" minsize="400,180" anchor="Center" style="ItemUI" />
+      <sound file="Content/Items/Engine/Engine.ogg" type="OnActive" range="3000.0" volumeproperty="CurrentVolume" loop="true" />
+      <propellerdamage damagerange="150" targetforce="500" severlimbsprobability="1.0">
+        <Affliction identifier="internaldamage" strength="25" />
+        <Affliction identifier="bleeding" strength="50" />
+      </propellerdamage>
+    </Engine>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Sound file="Content/Items/Weapons/ElectricalDischarger.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="set_force" displayname="connection.setforce" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>-->
+  </Item>
+  <Item name="" identifier="doorwrecked" nameidentifier="door" tags="door" scale="0.5" health="40" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite name="doorwrecked.background" texture="WreckedItems2.png" sourcerect="766,212,49,416" depth="0.51" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems2.png" sourcerect="817,212,44,417" depth="0.89" origin="0.5,0.5" />
+    <Door canbeselected="true" canbepicked="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="0.7,1">
+      <RequiredItem items="crowbar" type="Equipped" />
+      <Sprite name="doorwrecked.door" texture="WreckedItems2.png" sourcerect="912,1,42,416" depth="0.05" origin="0.5,0" />
+      <WeldedSprite name="doorwrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="doorwrecked.broken" texture="WreckedItems2.png" sourcerect="902,421,121,416" depth="0.051" origin="0.5,0" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <AiTarget sightrange="3000.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="windoweddoorwrecked" nameidentifier="windoweddoor" tags="door" scale="0.5" health="40" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite name="windoweddoorwrecked.background" texture="WreckedItems2.png" sourcerect="765,212,49,416" depth="0.51" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems2.png" sourcerect="816,212,46,417" depth="0.89" origin="0.5,0.5" />
+    <Door window="0,0,50,227" canbepicked="true" canbeselected="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="0.7,1">
+      <RequiredItem items="crowbar" type="Equipped" />
+      <Sprite name="windoweddoorwrecked.door" texture="WreckedItems2.png" sourcerect="861,1,50,416" depth="0.05" origin="0.5,0" />
+      <WeldedSprite name="windoweddoorwrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="windoweddoorwrecked.broken" texture="WreckedItems2.png" sourcerect="903,421,120,416" depth="0.051" origin="0.5,0" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <AiTarget sightrange="3000.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="hatchwrecked" nameidentifier="hatch" allowedlinks="gap, hull" tags="door" scale="0.5" health="40" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite name="hatchwrecked.background" texture="WreckedItems2.png" sourcerect="210,791,256,98" depth="0.7" origin="0.5,0.5" />
+    <Door canbeselected="true" canbepicked="true" horizontal="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="1,0.8">
+      <RequiredItem items="crowbar" type="Equipped" />
+      <Sprite name="hatchwrecked.door" texture="WreckedItems2.png" sourcerect="751,859,256,38" depth="0.05" origin="0,0.5" />
+      <WeldedSprite name="hatchwrecked.welded" texture="WreckedItems2.png" sourcerect="209,893,227,75" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="hatchwrecked.broken" texture="WreckedItems2.png" sourcerect="751,903,256,114" depth="0.051" origin="0,0.5" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <AiTarget sightrange="1500.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="doorwbuttonswrecked" nameidentifier="doorwbuttons" tags="door" scale="0.5" health="40" requirebodyinsidetrigger="false" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite name="doorwbuttonswrecked.background" texture="WreckedItems2.png" sourcerect="765,212,49,416" depth="0.51" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems.png" sourcerect="335,566,170,416" depth="0.89" origin="0.5,0.5" />
+    <Door canbeselected="true" canbepicked="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="0.7,1" hasintegratedbuttons="true">
+      <RequiredItem items="crowbar" type="Equipped" optional="true" />
+      <Requireditem items="idcard" type="Picked" optional="true" msg="itemmsgunauthorizedaccess" />
+      <Sprite name="doorwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="912,1,42,416" depth="0.05" origin="0.5,0" />
+      <WeldedSprite name="doorwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="doorwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="902,421,121,416" depth="0.051" origin="0.5,0" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <trigger x="-60" y="-140" width="170" height="85" />
+    <AiTarget sightrange="3000.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="windoweddoorwbuttonswrecked" nameidentifier="windoweddoorwbuttons" tags="door" scale="0.5" health="40" requirebodyinsidetrigger="false" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite name="windoweddoorwbuttonswrecked.background" texture="WreckedItems2.png" sourcerect="765,212,49,416" depth="0.51" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems.png" sourcerect="335,566,170,416" depth="0.89" origin="0.5,0.5" />
+    <Door window="0,0,50,227" canbepicked="true" canbeselected="true" pickkey="Action" msg="ItemMsgForceOpenCrowbar" PickingTime="10.0" shadowscale="0.7,1" hasintegratedbuttons="true">
+      <RequiredItem items="crowbar" type="Equipped" optional="true" />
+      <Requireditem items="idcard" type="Picked" optional="true" msg="itemmsgunauthorizedaccess" />
+      <Sprite name="windoweddoorwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="861,1,50,416" depth="0.05" origin="0.5,0" />
+      <WeldedSprite name="windoweddoorwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="957,1,65,377" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="windoweddoorwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="903,421,120,416" depth="0.051" origin="0.5,0" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <trigger x="-60" y="-140" width="170" height="85" />
+    <AiTarget sightrange="3000.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="hatchwbuttonswrecked" nameidentifier="hatchwbuttons" allowedlinks="gap, hull" tags="door" scale="0.5" health="40" requirebodyinsidetrigger="false" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Upgrade gameversion="0.9.7.0" spritedepth="0.7" />
+    <Sprite name="hatchwbuttonswrecked.background" texture="WreckedItems2.png" sourcerect="210,791,256,98" depth="0.7" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems2.png" sourcerect="478,829,256,193" depth="0.89" origin="0.5,0.5" />
+    <Door canbeselected="true" canbepicked="true" horizontal="true" pickkey="Action" msg="ItemMsgOpen" PickingTime="10.0" shadowscale="1,0.8" hasintegratedbuttons="true">
+      <RequiredItem items="crowbar" type="Equipped" optional="true" />
+      <Requireditem items="idcard" type="Picked" optional="true" msg="itemmsgunauthorizedaccess" />
+      <Sprite name="hatchwbuttonswrecked.door" texture="WreckedItems2.png" sourcerect="751,859,256,38" depth="0.05" origin="0,0.5" />
+      <WeldedSprite name="hatchwbuttonswrecked.welded" texture="WreckedItems2.png" sourcerect="209,893,227,75" depth="0.0" origin="0.5,0.5" />
+      <BrokenSprite name="hatchwbuttonswrecked.broken" texture="WreckedItems2.png" sourcerect="751,903,256,114" depth="0.051" origin="0,0.5" scale="true" />
+      <sound file="Content/Items/Door/Door1.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door2.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door3.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Door/Door4.ogg" type="OnUse" range="500.0" />
+      <sound file="Content/Items/Tools/Crowbar.ogg" type="OnPicked" range="4000.0" />
+      <sound file="Content/Items/Door/Duct1.ogg" type="OnFailure" selectionmode="Random" range="300" />
+      <sound file="Content/Items/Door/Duct2.ogg" type="OnFailure" range="300" />
+      <sound file="Content/Items/Door/DoorBreak1.ogg" type="OnBroken" selectionmode="Random" range="3000" />
+      <sound file="Content/Items/Door/DoorBreak2.ogg" type="OnBroken" range="3000" />
+    </Door>
+    <trigger x="170" y="51" width="70" height="200" />
+    <AiTarget sightrange="1500.0" static="True" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="dockingportwrecked" nameidentifier="dockingport" tags="dock" linkable="true" indestructible="false" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite texture="WreckedItems2.png" sourcerect="721,1,113,209" depth="0.94" origin="0.5,0.5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="power" displayname="connection.power" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+      <output name="proximity_sensor" displayname="connection.dockingproximitysensor" fallbackdisplayname="label.readytodock" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="dockinghatchwrecked" nameidentifier="dockinghatch" tags="dock" linkable="true" indestructible="false" category="Wrecked" damagedbyrepairtools="true" damagedbymonsters="true" damagedbyexplosions="true" explosiondamagemultiplier="0.1">
+    <Sprite texture="WreckedItems2.png" sourcerect="571,379,128,112" depth="0.94" origin="0.5,0.5" />
+    <!--<Repairable selectkey="Action" header="mechanicalrepairsheader" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem items="wrench" type="equipped" />
+    </Repairable>-->
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+      <input name="power" displayname="connection.power" />
+      <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+      <output name="proximity_sensor" displayname="connection.dockingproximitysensor" fallbackdisplayname="label.readytodock" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="suppliescabinetwrecked" nameidentifier="suppliescabinet" tags="container,suppliescontainer,wrecksupplycab" pickdistance="150" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.84" sourcerect="675,515,120,132" origin="0.5,0.5" />
+    <ItemContainer capacity="6" slotsperrow="3" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.25" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="mediumsteelcabinetwrecked" nameidentifier="mediumsteelcabinet" tags="locker,container" pickdistance="150" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems2.png" depth="0.84" sourcerect="545,2,175,374" origin="0.5,0.5" />
+    <ItemContainer capacity="15" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.3" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="mediumwindowedsteelcabinetwrecked" nameidentifier="mediumwindowedsteelcabinet" tags="locker,container,divinggearcontainer" pickdistance="150" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems2.png" depth="0.84" sourcerect="375,0,168,377" origin="0.5,0.5" />
+    <ItemContainer capacity="15" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.3" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="steelcabinetwrecked" nameidentifier="steelcabinet" tags="locker,container" pickdistance="150" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems2.png" depth="0.84" sourcerect="-2,1,364,373" origin="0.5,0.5" />
+    <ItemContainer capacity="30" slotsperrow="6" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.45" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="securesteelcabinetwrecked" nameidentifier="securesteelcabinet" tags="container,securecontainer" pickdistance="150" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.84" sourcerect="710,864,105,160" origin="0.5,0.5" />
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.45" anchor="Center" style="ItemUI" />
+      <RequiredItem items="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
+      <Containable items="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="railgunshellrackwrecked" nameidentifier="railgunshellrack" tags="container,railgunammocontainer" pickdistance="120" scale="0.6" category="Wrecked">
+    <Sprite texture="Content/Items/Shipwrecks/WreckedItems.png" depth="0.84" sourcerect="5,847,182,176" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="3" slotsperrow="3" itempos="40,-65" iteminterval="50,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="railgunshell,nuclearshell,railgunammo" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="coilgunammoshelfwrecked" nameidentifier="coilgunammoshelf" tags="container,coilgunammocontainer" pickdistance="150" waterproof="true" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems2.png" depth="0.84" sourcerect="3,379,140,306" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer capacity="3" canbeselected="true" hideitems="false" itempos="70,-52" iteminterval="0,-96" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="coilgunammobox,coilgunammo" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="medcabinetwrecked" nameidentifier="medcabinet" tags="container,medcontainer,wreckmedcab" pickdistance="150" waterproof="true" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.84" sourcerect="748,686,104,173" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer capacity="30" slotsperrow="6" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.5" anchor="Center" slotsperrow="6" style="ItemUI" />
+      <Containable items="smallitem,chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="toxcabinetwrecked" nameidentifier="toxcabinet" tags="container,toxcontainer" pickdistance="150" waterproof="true" scale="0.4" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.84" sourcerect="514,514,157,185" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer capacity="20" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.45" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="divingsuitlockerwrecked" nameidentifier="divingsuitlocker" tags="container,divingsuitcontainer,divingsuitcontainerwindow" pickdistance="50" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems2.png" depth="0.84" sourcerect="102,686,99,254" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="0,0" iteminterval="0,0" canbeselected="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="divingsuit" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="oxygentankshelf2wrecked" nameidentifier="oxygentankshelf" tags="container,oxygentankcontainer" pickdistance="50" scale="0.5" category="Wrecked">
+    <Sprite name="Diving Suit Locker Small" texture="Content/Items/Shipwrecks/WreckedItems2.png" sourcerect="0,941,99,83" depth="0.84" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="3" maxstacksize="1" slotsperrow="3" itempos="27,-42" iteminterval="22.5,0" itemrotation="0" canbeselected="true" containedspritedepth="0.83" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.2,0.3" anchor="Center" style="ItemUI" />
+      <Containable items="oxygensource,weldingfuel" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="extinguisherbracketwrecked" nameidentifier="extinguisherbracket" tags="extinguisherholder" pickdistance="75" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.84" sourcerect="795,516,36,102" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="20,-60" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="extinguisher" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="weaponholderwrecked" nameidentifier="weaponholder" tags="weaponholder" scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems.png" depth="0.85" sourcerect="622,785,88,88" canflipx="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="WreckedItems.png" depth="0.5" sourcerect="622,702,124,33" canflipx="false" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="1" itempos="46,-47" iteminterval="0,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="weapon" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="navterminalwrecked" nameidentifier="navterminal" category="Wrecked">
+      <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="273,195,188,194" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="shuttlenavterminalwrecked" nameidentifier="shuttlenavterminal" category="Wrecked" scale="0.5">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="3,388,284,237" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="statusmonitorwrecked" nameidentifier="statusmonitor" category="Wrecked">
+    <Sprite texture="WreckedItems.png" sourcerect="152,195,113,192" depth="0.8" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="sonartransducerwrecked" nameidentifier="sonartransducer" category="Wrecked" Scale="0.75">
+    <Sprite texture="WreckedItems.png" sourcerect="470,342,133,130" depth="0.8" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="junctionboxwrecked" nameidentifier="junctionbox" tags="junctionbox" scale="0.75" category="Wrecked">
+    <Sprite texture="WreckedItems.png" sourcerect="387,1,73,121" depth="0.8" canflipx="false" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="batterywrecked" nameidentifier="battery" Scale="0.5" category="Wrecked">
+    <Sprite texture="WreckedItems.png" sourcerect="618,341,118,159" depth="0.8" origin="0.5,0.5" />
+    <ItemContainer capacity="3" maxstacksize="1" canbeselected="true" hideitems="true" hudpos="0.5,0.6" uilabel="ChargingDock">
+      <GuiFrame relativesize="0.25,0.15" anchor="Center" relativeoffset="0,0.2" style="ItemUI" />
+      <Containable items="loadable" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="shuttlebatterywrecked" nameidentifier="shuttlebattery" category="Wrecked" Scale="0.5">
+    <Upgrade gameversion="0.9.5.0" scale="0.5" indicatorposition="21,12" indicatorsize="54,35" />
+    <Sprite texture="WreckedItems.png" sourcerect="295,438,120,125" depth="0.8" origin="0.5,0.5" />
+    <ItemContainer capacity="3" maxstacksize="1" canbeselected="true" hideitems="true" hudpos="0.5,0.6" uilabel="ChargingDock">
+      <GuiFrame relativesize="0.25,0.15" anchor="Center" relativeoffset="0,0.2" style="ItemUI" />
+      <Containable items="loadable" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="supercapacitorwrecked" nameidentifier="supercapacitor" category="Wrecked" Scale="0.5">
+    <Sprite texture="WreckedItems.png" depth="0.8" sourcerect="864,701,154,160" origin="0.5,0.5" />
+  </Item>
+  
+  <Item name="" identifier="chargingdockwrecked" nameidentifier="chargingdock" category="Wrecked" scale="0.5">
+    <Sprite texture="WreckedItems.png" sourcerect="295,395,118,32" depth="0.8" origin="0.5,0.5" />
+    <ItemContainer capacity="4" maxstacksize="1" canbeselected="true" hideitems="false" itempos="24,10" iteminterval="23,0" itemrotation="-90" uilabel="ChargingDock" containedspritedepth="0.81">
+      <GuiFrame relativesize="0.25,0.15" anchor="Center" style="ItemUI" />
+      <Containable items="loadable" />
+    </ItemContainer>
+  </Item>
+  
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentm01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="146,378,85,124" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,528,80,112" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentm02wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="234,377,74,126" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="560,528,80,112" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentm03wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="311,377,68,124" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="640,528,64,112" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentm04wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="383,376,85,126" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="704,528,80,112" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentl01wrecked" category="Wrecked" Tags="largeitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="204,687,346,90" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,816,240,64" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightfluorescentl02wrecked" category="Wrecked" Tags="largeitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="145,626,367,59" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/light_fluorescent_L2.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,896,288,48" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lighthalogenmm01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="147,504,76,124" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="480,672,80,128" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lighthalogenmm02wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="224,523,124,77" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="560,672,128,80" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lighthalogenmm03wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="346,502,103,123" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="688,672,112,128" alpha="1.0" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lighthalogenm04wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="449,510,124,101" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="800,672,128,96" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" nameidentifier="lamp" identifier="lightleds01wrecked" category="Wrecked" Tags="smallitem,light" scale="0.5">
+    <Sprite texture="WreckedItems2.png" sourcerect="468,378,99,99" depth="0.8" origin="0.5,0.5" />
+    <LightComponent lightcolor="1.0,1.0,1.0,0.5" range="800.0" powerconsumption="5">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="842,794,59,59" alpha="1.0" origin="0.5,0.5" />
+    </LightComponent>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power" displayname="connection.power" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="bunkwrecked" nameidentifier="bunk" width="173" height="129" category="Wrecked">
+    <sprite texture="Content/Items/Shipwrecks/BackgroundStructuresWrecked.png" sourcerect="497,692,173,129" depth="0.88" origin="0.5,0.5" />
+    <Controller UserPos="0,-150" direction="Right" hidehud="false" canbeselected="true" drawuserbehind="true">
+      <limbposition limb="Head" position="-13,-85" />
+      <limbposition limb="Torso" position="42,-70" />
+      <limbposition limb="Waist" position="112,-80" />
+      <limbposition limb="RightFoot" position="222,-80" />
+      <limbposition limb="LeftFoot" position="222,-80" />
+      <limbposition limb="RightHand" position="112,-80" allowusinglimb="false" />
+      <limbposition limb="LeftHand" position="112,-80" allowusinglimb="false" />
+      <StatusEffect type="OnActive" target="Character">
+        <reduceaffliction type="damage" strength="0.05" />
+        <reduceaffliction identifier="bloodloss" strength="0.05" />
+        <reduceaffliction identifier="bleeding" strength="0.05" />
+        <reduceaffliction identifier="nausea" strength="0.05" />
+        <reduceaffliction identifier="opiatewithdrawal" strength="0.05" />
+        <reduceaffliction identifier="opiateaddiction" strength="0.05" />
+        <reduceaffliction identifier="drunk" strength="0.05" />
+      </StatusEffect>
+    </Controller>
+  </Item>
+</Items>

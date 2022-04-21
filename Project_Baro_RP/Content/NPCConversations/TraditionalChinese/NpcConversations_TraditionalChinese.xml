@@ -1,0 +1,1020 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="vanillaconversations" Language="Traditional Chinese" nowhitespace="True">
+
+<!-- Personality traits -->
+<PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
+<PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
+<PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
+<PersonalityTrait name="Tough" alloweddialogtags="tough,none" commonness="1" />
+<PersonalityTrait name="Joker" alloweddialogtags="joker,none" commonness="0.5" />
+<PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="0.5" />
+<PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="0.5" />
+<PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="0.5" />
+
+<!-- Generic conversation -->
+<Conversation line="好吧夥計們，讓我們帶她出去兜兜風~" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="好啊好啊" speaker="1">
+		<Conversation line="收到，長官！" speaker="2"/>
+		<Conversation line="好嘞，走著~" speaker="2" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="人們乘船下海" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="人們要在大海裡謀生" speaker="0">
+		<Conversation line="人們見識過上帝的作為，與深海的奇妙" speaker="0">
+			<Conversation line="我們出發吧！祝各位好運，船員們！" speaker="0"/>
+			<Conversation line="就算上帝在這兒也無濟於事" speaker="1" speakertags="joker,tough,professional"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="前路漫漫！全力以赴！" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="收到，長官！" speaker="1"/>
+	<Conversation line="好啊好啊" speaker="1"/>
+	<Conversation line="祝大家好運！" speaker="1" allowedjobs="watchman"/>
+</Conversation>
+
+<Conversation line="乘客們，歡迎登艇——為保安全，請記得不要把手伸出“車窗”" speaker="0" flags="Initial" allowedjobs="captain" speakertags="joker">
+	<Conversation line="收到，長官！" speaker="1"/>
+	<Conversation line="好啊好啊" speaker="1"/>
+</Conversation>
+
+<Conversation line="準備好船員們，我們還有很長的路要走！" speaker="0" flags="Initial" allowedjobs="captain" speakertags="brokenenglish">
+	<Conversation line="收到，長官！" speaker="1"/>
+	<Conversation line="好啊好啊" speaker="1"/>
+	<Conversation line="願小丑聖母保佑我們。" speaker="1" speakertags="crazy"/>
+	<Conversation line="祝大家好運！" speaker="1" allowedjobs="watchman"/>
+</Conversation>
+
+<Conversation line="我是艦長！為任務做好準備吧，小夥子們！" speaker="0" flags="Initial" allowedjobs="captain" speakertags="brokenenglish">
+	<Conversation line="收到，長官！" speaker="1"/>
+	<Conversation line="好啊好啊" speaker="1">
+		<Conversation line="收到，長官！" speaker="2"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="讓我們看看這次冰洋要用什麼來招待我們！" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="我猜是恐怖的怪物，絕望的死亡與永恆的黑暗。" speaker="1" speakertags="joker,fearful">
+		<Conversation line="閉嘴。我們對你的譏諷不感興趣。" speaker="0" speakertags="professional"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="都準備好了嗎？最好快點，我們沒有回頭路了。" speaker="0" flags="Initial" allowedjobs="captain">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="收到，長官！" speaker="1">
+		<Conversation line="來吧，開始吧！" speaker="2"/>
+		<Conversation line="誰怕誰啊，時刻準備著！" speaker="2" speakertags="brokenenglish"/>
+		<Conversation line="哇哦！我們都離死不遠了！" speaker="2" speakertags="crazy"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我很冷。" speaker="0" maxintensity="0.4"/>
+
+<Conversation line="我有點不祥的預感…" speaker="0" speakertags="fearful" maxintensity="0.4">
+	<Conversation line="我認識的一位元老船長也這樣說過…" speaker="1" speakertags="professional,tough">
+		<Conversation line="暴雨不終朝" speaker="1">
+			<Conversation line="心靜自然涼" speaker="1">
+				<Conversation line="狗屎、狗屎、狗屎！" speaker="0" speakertags="rude,fearful"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="我確信大家都一樣。" speaker="1"/>
+	<Conversation line="你在放屁嗎？" speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="我聽到船體在吱吱作響…" speaker="0" speakertags="fearful" maxintensity="0.4">
+	<Conversation line="我也聽到了，這哪兒的聲兒？" speaker="1" speakertags="brokenenglish"/>
+	<Conversation line="" speaker="1" speakertags="joker"/>
+</Conversation>
+
+<Conversation line="真想趕快回家喝光一瓶卡德摩斯。" speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="專心工作，不然我可以把那瓶酒放到你的棺材裡。" speaker="1" speakertags="professional,tough,rude">
+		<Conversation line="哈哈！埋在棺材裡！上次是什麼時候來著？" speaker="2" speakertags="laid-back,joker"/>
+	</Conversation>
+	<Conversation line="現在不是想家的時候，前路漫漫。" speaker="1" speakertags="professional,tough"/>
+	<Conversation line="卡德摩斯一股魚尿味兒，我喜歡更烈的酒。" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="早在地球海軍時代，就有這樣的說法…" speaker="0" allowedjobs="captain" speakertags="professional,tough" maxintensity="0.3">
+	<Conversation line="做事只有兩種方法：正確行事，或再做一次。" speaker="0">
+		<Conversation line="在這兒可行不通，木衛二上沒有第二次機會。" speaker="0">
+			<Conversation line="所以，大家做好手上的工作吧。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我是大力水手卜派！" speaker="0" allowedjobs="medicaldoctor" speakertags="laid-back,joker" maxintensity="0.2">
+	<Conversation line="我力大無比，我愛吃菠菜！" speaker="0">
+		<Conversation line="醫生，你又偷喝醫用酒精了？" speaker="1">
+			<Conversation line="好吧，以後不會了。" speaker="0"/>
+			<Conversation line="抱歉，我不該試圖緩解緊張的氣氛。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="不許在我的船上唱歌。" speaker="1" allowedjobs="captain" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="好懷念太陽" speaker="0" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="聽說陽光會致癌，沒有它可能還會好些。" speaker="1">
+		<Conversation line="木星一樣會致癌，我覺得太陽比木星好得多。" speaker="0">
+			<Conversation line="省省吧" speaker="2" speakertags="professional,tough"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="省省吧" speaker="1" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="畫皮寄生蟲讓我毛骨悚然" speaker="0" speakertags="fearful" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="我也是，如果我受到了感染，請給我一個痛快的死法。" speaker="1">
+		<Conversation line="我大概會給你來一針皮蟲淨。" speaker="2" allowedjobs="medicaldoctor"/>
+		<Conversation line="我可以給你來一針皮蟲淨的，但你想來個痛快的也行。" speaker="2" allowedjobs="medicaldoctor" speakertags="rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你們聽說工會嗎？" speaker="0" maxintensity="0.2">
+	<Conversation line="一場交易，為了改善日益增長的壟斷了誠信的壟斷者的誠信的壟斷者的誠信。" speaker="0" flags="Psychosis">
+		<Conversation line="商討安全標準，退休，退休，退休，還有工人們。一場交易，為了改善工人們。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="那是共產主義者的說辭。木衛二聯盟是我們唯一需要的組織。" speaker="1" allowedjobs="captain" speakertags="professional,tough,rude"/>
+	<Conversation line="聽說過，怎麼了？" speaker="1">
+		<Conversation line="我想我們應該建立一個工會。" speaker="0">
+			<Conversation line="我們應該有更好的安全標準，適當的工資，以及退休福利…" speaker="0">
+				<Conversation line="你覺得你能活到退休？" speaker="1">
+					<Conversation line="我當然希望如此。" speaker="0"/>
+					<Conversation line="有道理。" speaker="0"/>
+				</Conversation>
+				<Conversation line="安全標準？工會能趕走摩螺克嗎？還是在你想堵住船體漏洞時握緊你的手？" speaker="1" speakertags="rude,tough">
+					<Conversation line="我不是那個意思。" speaker="0"/>
+					<Conversation line="我想你說的有道理。" speaker="0"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你見過人體暴露在深海高壓下會發生什麼嗎？" speaker="0" speakertags="fearful" maxintensity="0.2">
+	<Conversation line="你很快就能見到了。" speaker="0" flags="Psychosis">
+		<Conversation line="是的，我在跟你說話。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="可以想像到。" speaker="1">
+		<Conversation line="那副場面依然深深刻在我的腦海中。" speaker="0">
+			<Conversation line="壓路機碾壓過的一袋肉和骨頭，我只能如此描述。" speaker="0"/>
+			<Conversation line="木衛二給予的愛的擁抱。" speaker="2" speakertags="crazy"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="對她再快點，再深點…" speaker="0" flags="Casual" speakertags="joker,laid-back" maxintensity="0.3">
+	<Conversation line="深入魚兒沉睡的地方！" speaker="0">
+		<Conversation line="該死的深度與壓力…" speaker="0">
+			<Conversation line="像長尾鯊一樣拿下她！" speaker="0">
+				<Conversation line="不要在我的船上唱歌。" speaker="1" allowedjobs="captain" speakertags="professional,tough">
+					<Conversation line="" speaker="0"/>
+					<Conversation line="好吧好吧，我不會再嘗試讓大家放鬆了。" speaker="0"/>
+				</Conversation>
+				<Conversation line="我知道這是首地球歌曲，但它很合適，不是嗎？" speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我們到站了嗎？" speaker="0" speakertags="joker" maxintensity="0.2">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="閉嘴" speaker="1" speakertags="rude"/>
+	<Conversation line="仍然不好笑" speaker="1"/>
+	<Conversation line="這不好笑" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="你們還記得地球嗎？" speaker="0" maxintensity="0.2">
+	<Conversation line="地球，地球，地球。很遺憾，你們永遠都看不到它。" speaker="0" flags="Psychosis"/>
+	<Conversation line="我是老了，但還沒那麼老。" speaker="1"/>
+	<Conversation line="我的祖父是一位地球人。" speaker="1">
+		<Conversation line="我喜歡聽他講的故事，儘管我知道其中大半都是虛構的。" speaker="1">
+			<Conversation line="你能想像嗎，只要走出你的房間，就能看到無垠的藍天！" speaker="1">
+				<Conversation line="聽起來很不可思議。" speaker="0">
+					<Conversation line="往天上看也不用擔心被木星的輻射烤焦…" speaker="2"/>
+				</Conversation>
+			</Conversation>
+			<Conversation line="我真的想看看鳥兒。" speaker="1">
+				<Conversation line="以及狗，和大象。" speaker="0"/>
+				<Conversation line="還有恐龍！" speaker="2" speakertags="brokenenglish"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你有沒有想過，建造遺跡的人後來怎麼樣了？" speaker="0" maxintensity="0.2">
+	<Conversation line="最後的噩夢藏匿在最深不可測的避難所中，距離無法估量，噠，噠，噠！" speaker="0" flags="Psychosis"/>
+	<Conversation line="誰沒想過？" speaker="1"/>
+	<Conversation line="還是把這個問題留給科學家們吧。" speaker="1">
+		<Conversation line="這裡還有更重要的事需要擔心。" speaker="1"/>
+	</Conversation>
+	<Conversation line="只有深淵知道。" speaker="1" speakertags="crazy"/>
+	<Conversation line="我琢磨了一下，這事兒沒人能講明白。" speaker="2" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="你見過那些保護遺跡的東西嗎？" speaker="0" maxintensity="0.2">
+	<Conversation line="見過，但我寧願自己能忘了它。" speaker="1" speakertags="fearful"/>
+	<Conversation line="研究所裡有一個。" speaker="1">
+		<Conversation line="他們說那不是有機體——比起動物來說更接近于機器人。" speaker="1">
+			<Conversation line="至少有一點是確定的：他們不會流血。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="這年頭，香煙都成了奢侈品。" speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="跟我說說。" speaker="1"/>
+	<Conversation line="當然，水培農場成本高昂。" speaker="1">
+		<Conversation line="比起煙草來說，有更多有意義的作物需要生產。" speaker="1"/>
+		<Conversation line="水培是什麼玩意兒？" speaker="2" speakertags="brokenenglish">
+			<Conversation line="從水裡長出東西來，和這裡的其他東西一樣。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你聽到了嗎？" speaker="0" maxintensity="0.4">
+	<Conversation line="聽到什麼？" speaker="1">
+		<Conversation line="好像有什麼東西在抓撓船殼。" speaker="0">
+			<Conversation line="應該只是你的想像。" speaker="0"/>
+		</Conversation>
+		<Conversation line="外面傳來一陣深沉的低吟聲。" speaker="0">
+			<Conversation line="那是捕蟹人。我跟你說過的。" speaker="1" speakertags="crazy"/>
+			<Conversation line="應該只是船殼摩擦。放輕鬆。" speaker="1"/>
+			<Conversation line="你又在放屁了？" speaker="1" speakertags="joker"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="前幾天我讀了一本老水手指南。" speaker="0" maxintensity="0.2">
+	<Conversation line="那些詰屈聱牙的古老術語讓我難以理解。" speaker="0">
+		<Conversation line="比如說，“星”舷（右舷）是什麼鬼？" speaker="0">
+			<Conversation line="你和我猜的一樣。" speaker="1"/>
+			<Conversation line="也許向上，對著星星？" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你有沒有覺得，月亮在針對我們？" speaker="0" maxintensity="0.3">
+	<Conversation line="你也在針對我們。" speaker="0" flags="Psychosis">
+		<Conversation line="沒錯，我在和你說話。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="嗯，那裡肯定不宜居。" speaker="1">
+		<Conversation line="考慮當前狀況，我認為的確如此。" speaker="2">
+			<Conversation line="你知道我的意思。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="人無法阻止潮起潮落,卻可以學會乘風破浪。" speaker="1"/>
+	<Conversation line="至少有一點——我們不屬於這裡。" speaker="1">
+		<Conversation line="" speaker="0" flags="Casual"/>
+		<Conversation line="無論我們做什麼，事情總會出錯。" speaker="0">
+			<Conversation line="夠了，那聽起來像是邪教徒的狗屁。" speaker="2" speakertags="professional"/>
+		</Conversation>
+		<Conversation line="夠了，那聽起來像是邪教徒的狗屁。" speaker="2" speakertags="professional"/>
+	</Conversation>
+	<Conversation line="夠了。" speaker="1" speakertags="professional,tough"/>
+</Conversation>
+
+<Conversation line="略遜于耀陽，略遜于耀陽…" speaker="0" speakertags="laid-back,crazy" maxintensity="0.2">
+	<Conversation line="如木星一般，獨一無二…" speaker="0">
+		<Conversation line="" speaker="0" flags="Casual"/>
+		<Conversation line="如果你非要唱歌，麻煩關閉耳麥。" speaker="1" speakertags="professional"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="糟糕透頂！" speaker="0" speakertags="fearful">
+	<Conversation line="我想回家！" speaker="0"/>
+</Conversation>
+
+<Conversation line="行動起來！" speaker="0" speakertags="tough" maxintensity="0.2"/>
+
+<Conversation line="平靜的浪潮無法鍛煉出老練的水手。" speaker="0" speakertags="tough">
+	<Conversation line="洶湧的冰洋到時可以送水手們去死！" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="我們應該帶一台咖啡機上來的。" speaker="0" speakertags="laid-back" maxintensity="0.2">
+	<Conversation line="你以為我不知道你在暗示什麼嗎？" speaker="1" flags="PsychosisSelf">
+		<Conversation line="咖啡？啊，沒錯…" speaker="1" flags="PsychosisSelf">
+			<Conversation line="要不了多久，一切都會結束的。" speaker="1" flags="PsychosisSelf"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="同意。" speaker="1"/>
+	<Conversation line="我不喝咖啡。" speaker="1"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="前幾天我看到一隻藻鬃爬行者，真是可怕的生物。" speaker="0" speakertags="joker,crazy" maxintensity="0.2"/>
+
+<Conversation line="授人以魚，一日果腹。" speaker="0" speakertags="joker" maxintensity="0.4">
+	<Conversation line="授魚以人，血口噬食。" speaker="0" flags="Psychosis">
+		<Conversation line="拿人喂魚。" speaker="0" flags="Psychosis">
+			<Conversation line="喂魚。" speaker="0" flags="Psychosis">
+				<Conversation line="喂魚。" speaker="0" flags="Psychosis">
+					<Conversation line="喂魚。" speaker="0" flags="Psychosis">
+						<Conversation line="不！" speaker="1" flags="PsychosisSelf"/>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="授人以漁，只會令人亡命魚口。" speaker="0" speakertags="joker">
+		<Conversation line="胡言亂語。" speaker="1">
+			<Conversation line="正是如此。" speaker="0"/>
+		</Conversation>
+		<Conversation line="別開玩笑。" speaker="0" speakertags="professional,rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="這幾天我想到一個絕妙的賺錢點子。" speaker="0" speakertags="joker,laid-back" maxintensity="0.2">
+	<Conversation line="可是我們沒幾天好活了。" speaker="0" flags="Psychosis">
+		<Conversation line="這一切毫無意義。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+	<Conversation line="聽我把話說完，我們可以賺一大筆錢。" speaker="0">
+		<Conversation line="你說我們能不能把氧氣罐造大一點？" speaker="0">
+			<Conversation line="一個可以頂上一兩個小時？" speaker="0">
+				<Conversation line="我不是這方面的專家，但我覺得理論上沒什麼問題。" speaker="0">
+					<Conversation line="嘿，還是先幹好手上的活兒吧。" speaker="1" speakertags="professional"/>
+					<Conversation line="我不確定…一定有什麼技術難關，不然早有人這麼做了。" speaker="1"/>
+					<Conversation line="這主意有點兒意思。" speaker="1" speakertags="brokenenglish">
+						<Conversation line="嘿，還是先幹好手上的活兒吧。" speaker="2" speakertags="professional"/>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+		<Conversation line="防水接線盒。" speaker="0">
+			<Conversation line="天才創意，對吧？" speaker="0">
+				<Conversation line="嘿，還是先幹好手上的活兒吧。" speaker="1" speakertags="professional"/>
+				<Conversation line="一定有什麼技術性問題，哪個接線盒上沒有通氣孔？" speaker="1">
+					<Conversation line="要不然他們早就把接線盒做成防水的了。" speaker="1"/>
+				</Conversation>
+				<Conversation line="有點兒意思。" speaker="1" speakertags="brokenenglish">
+					<Conversation line="嘿，還是先幹好手上的活兒吧。" speaker="2" speakertags="professional"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="這裡真安靜。" speaker="0" maxintensity="0.3">
+	<Conversation line="啊啊啊啊啊啊啊啊啊啊！" speaker="0" flags="Psychosis">
+		<Conversation line="啊啊啊啊啊啊啊啊啊啊！" speaker="0" flags="Psychosis">
+			<Conversation line="啊啊啊啊啊啊啊啊啊啊！" speaker="0" flags="Psychosis"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="我的耳機還正常嗎？" speaker="0">
+		<Conversation line="能用。儘量少發言。" speaker="1" speakertags="professional"/>
+		<Conversation line="通話品質良好。" speaker="1"/>
+		<Conversation line="沒什麼毛病！" speaker="1" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="無線電檢查。" speaker="0" speakertags="professional" maxintensity="0.3">
+	<Conversation line="無線電檢查。" speaker="1" flags="PsychosisSelf">
+		<Conversation line="檢查無線電。" speaker="1" flags="PsychosisSelf">
+			<Conversation line="無線電波。輻射。放射線。" speaker="1" flags="PsychosisSelf">
+				<Conversation line="無線電！" speaker="1" flags="PsychosisSelf">
+					<Conversation line="無線電。" speaker="1" flags="PsychosisSelf"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="響亮清晰。" speaker="1" speakertags="professional"/>
+	<Conversation line="明確可辨。" speaker="1" speakertags="professional"/>
+	<Conversation line="一切正常！" speaker="1"/>
+	<Conversation line="沒什麼毛病！" speaker="1" speakertags="brokenenglish"/>
+</Conversation>
+
+<Conversation line="你能聽到蟹爪人的歌聲嗎？" speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="" speaker="0"/>
+	<Conversation line="不能。" speaker="1"/>
+	<Conversation line="我最後再說一次，蟹爪人並不存在。" speaker="1"/>
+</Conversation>
+
+<Conversation line="向內進發。" speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="下潛？不，向內進發。" speaker="0" speakertags="crazy" maxintensity="0.2">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="你早晚會惹出大亂子。" speaker="1" speakertags="rude"/>
+		<Conversation line="這什麼意思啊？" speaker="1" speakertags="brokenenglish"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="上帝的視線能穿透冰殼嗎？" speaker="0" speakertags="crazy" maxintensity="0.2">
+	<Conversation line="或說那是木星的注視？" speaker="0" speakertags="crazy">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="這不可能。" speaker="1"/>
+	</Conversation>
+	<Conversation line="也許是深淵在凝視我們。" speaker="0" speakertags="crazy">
+		<Conversation line="邪教有一點是對的——在那深處有什麼存在。" speaker="0" speakertags="crazy">
+			<Conversation line="" speaker="0"/>
+			<Conversation line="拜託。" speaker="1"/>
+			<Conversation line="也許吧。" speaker="1">
+				<Conversation line="我們還有更重要的事情要考慮。" speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="有些時候我覺得我們就像牽線木偶。" speaker="0" speakertags="crazy" maxintensity="0.3">
+	<Conversation line="跳著滑稽的舞蹈，生死操於人手。" speaker="0">
+		<Conversation line="" speaker="1"/>
+		<Conversation line="請別在我的船上跳舞，也別那麼輕易死掉。" speaker="1" allowedjobs="captain"/>
+		<Conversation line="這有什麼好笑的？" speaker="1" speakertags="professional"/>
+		<Conversation line="唉…" speaker="1"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="這將是一段艱難的旅程。" speaker="0" minintensity="0.3" maxintensity="0.5"/>
+
+<Conversation line="氣氛愈發緊張。" speaker="0" minintensity="0.3" maxintensity="0.6"/>
+
+<Conversation line="我們能做到的。" speaker="0" minintensity="0.3"/>
+
+<Conversation line="總算是生效了！" speaker="0" speakertags="tough" minintensity="0.3"/>
+
+<Conversation line="恢復運轉了！" speaker="0" speakertags="crazy" minintensity="0.3" maxintensity="0.6"/>
+
+<Conversation line="啊哦。" speaker="0" minintensity="0.5"/>
+
+<Conversation line="別灰心！" speaker="0" speakertags="tough" minintensity="0.5"/>
+
+<Conversation line="潮漲潮落，聚散離合。" speaker="0" minintensity="0.5"/>
+
+<Conversation line="完蛋了！" speaker="0" speakertags="brokenenglish" minintensity="0.5"/>
+
+<Conversation line="要完！" speaker="0" speakertags="brokenenglish" minintensity="0.5"/>
+
+<Conversation line="他們說，歡迎加入！他們說，開始新冒險！" speaker="0" speakertags="joker" minintensity="0.5"/>
+
+<Conversation line="事後我要喝一杯！" speaker="0" speakertags="joker,laid-back" minintensity="0.5"/>
+
+<Conversation line="好了船員們，讓我見識下你們的本事！" speaker="0" allowedjobs="captain" speakertags="professional,tough,laid-back" minintensity="0.5"/>
+
+<Conversation line="我們還沒有脫離險境！" speaker="0" allowedjobs="captain" minintensity="0.5"/>
+
+<Conversation line="我不想死！" speaker="0" speakertags="fearful" minintensity="0.6"/>
+
+<Conversation line="我本該去當一名植物學家！" speaker="0" speakertags="joker" minintensity="0.6"/>
+
+<Conversation line="大家堅持住！我們能做到的！" speaker="0" speakertags="tough" minintensity="0.6">
+	<Conversation line="你確定？" speaker="1" speakertags="fearful"/>
+</Conversation>
+
+<Conversation line="我受夠了！" speaker="0" speakertags="rude" minintensity="0.6"/>
+
+<Conversation line="如果我失敗了，告訴我媽媽我愛她！" speaker="0" speakertags="fearful" minintensity="0.6">
+	<Conversation line="閉上你的臭嘴！" speaker="1" speakertags="rude"/>
+	<Conversation line="省省吧，你會成功的。" speaker="1" speakertags="professional"/>
+</Conversation>
+
+<Conversation line="事成之後，我就辭職！" speaker="0" speakertags="joker,laid-back" minintensity="0.6"/>
+
+<Conversation line="生命流逝，祂的渴求得到了滿足。" speaker="0" speakertags="crazy" minintensity="0.7"/>
+
+<Conversation line="這次我們真的搞砸了。" speaker="0" speakertags="rude" minintensity="0.8"/>
+
+<Conversation line="哦天啊。" speaker="0" minintensity="0.8"/>
+
+<Conversation line="哦朋友。" speaker="0" speakertags="joker" minintensity="0.8"/>
+
+<Conversation line="和你們一起工作是我的榮幸。" speaker="0" speakertags="professional" minintensity="0.8"/>
+
+<Conversation line="每次下潛到這個深度時，我都會覺得有些不安。" speaker="0" flags="SubmarineDeep">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="沒事的，我們還能更“深入”一點。" speaker="1" speakertags="tough"/>
+</Conversation>
+
+<Conversation line="這樣的下潛深度也忒滲人了。" speaker="0" flags="SubmarineDeep" speakertags="brokenenglish">
+	<Conversation line="" speaker="0" flags="Casual"/>
+	<Conversation line="誠如斯言。" speaker="1" speakertags="joker"/>
+	<Conversation line="沒事的，我們還能更“深入”一點。" speaker="1" speakertags="tough"/>
+</Conversation>
+
+<Conversation line="你能聽到船體正在呻吟嗎？這個深度真的安全嗎？" speaker="0" flags="SubmarineDeep" speakertags="fearful">
+	<Conversation line="怕死就別來。" speaker="1" speakertags="tough,rude"/>
+	<Conversation line="沒事的，我們還能更“深入”一點。" speaker="1" speakertags="tough"/>
+	<Conversation line="應該沒問題。不過還是讓機修工準備好焊接工具。" speaker="1"/>
+</Conversation>
+
+<!-- Afflictions -->
+<Conversation line="我有點頭暈。" speaker="0" flags="Bloodloss"/>
+
+<Conversation line="我感覺不太妙。" speaker="0" flags="Bloodloss"/>
+
+<Conversation line="我想我有些缺血。" speaker="0" flags="Bloodloss"/>
+
+<Conversation line="嗝兒——" speaker="0" flags="DrunkMedium"/>
+
+<Conversation line="我本不想說出口，但你們是最棒的！" speaker="0" flags="DrunkMedium">
+	<Conversation line="沒有比你們更好的船員了！" speaker="0" flags="DrunkMedium">
+		<Conversation line="你喝多了？" speaker="1" flags="DrunkMedium">
+			<Conversation line="冷靜點兒夥計，別犯傻。" speaker="2" flags="DrunkMedium"/>
+			<Conversation line="沒，我只喝了一口。" speaker="0" flags="DrunkMedium"/>
+			<Conversation line="什麼？我只是想傾吐一下對你們的感激之情！" speaker="0" flags="DrunkMedium"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="呵呵.." speaker="0" flags="DrunkMedium"/>
+
+<Conversation line="你聽我說…我們會成功的。" speaker="0" flags="DrunkMedium" minintensity="0.5"/>
+
+<Conversation line="我想我得躺一會兒…" speaker="0" flags="DrunkHigh">
+	<Conversation line="臭醉鬼，好狗不擋道。" speaker="1" speakertags="professional,tough,rude"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="怎麼應付那些醉水手，怎麼應付那些醉水手…" speaker="0" flags="DrunkHigh">
+	<Conversation line="早上好啊！" speaker="0" flags="DrunkHigh">
+		<Conversation line="你現在無法履行職責。等你醒酒了，我們需要好好談談。" speaker="1" allowedjobs="captain" speakertags="professional,tough,rude">
+			<Conversation line="不，我能行！" speaker="0" flags="DrunkHigh"/>
+		</Conversation>
+		<Conversation line="人人有個好心情！" speaker="1" speakertags="joker"/>
+		<Conversation line="臭醉鬼，好狗不擋道。" speaker="1" speakertags="professional,tough,rude"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="為什麼大家都在搖來搖去的？" speaker="0" flags="DrunkHigh">
+	<Conversation line="只有你再搖。" speaker="1"/>
+	<Conversation line="振作點！" speaker="1"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="我感覺不太好…" speaker="0" flags="OpiateWithdrawalLow"/>
+
+<Conversation line="我有點噁心…" speaker="0" flags="OpiateWithdrawalLow"/>
+
+<Conversation line="我的腿疼死了，能給我開些嗎啡嗎？" speaker="0" flags="OpiateWithdrawalMedium">
+	<Conversation line="你的腿沒問題。你最好不要再接觸嗎啡了。" speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="你的腿沒問題，毒狗。" speaker="1" speakertags="rude"/>
+</Conversation>
+
+<Conversation line="我不能這麼做。" speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="我想我要吐了。" speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="我不該在這兒的。我想回家。" speaker="0" flags="OpiateWithdrawalMedium"/>
+
+<Conversation line="我要死了！救救我！" speaker="0" flags="OpiateWithdrawalHigh">
+	<Conversation line="我想我可以給你打一針鹽酸納洛酮。" speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="少來了。" speaker="1" speakertags="rude"/>
+	<Conversation line="" speaker="0"/>
+</Conversation>
+
+<Conversation line="我們得談談房間裡的大象。" speaker="0" flags="Psychosis">
+	<Conversation line="你們知道我在說什麼。" speaker="0">
+		<Conversation line="再這樣下去，有人會被殺死的。" speaker="0">
+			<Conversation line="除非我們先下手。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我們得離開這兒。" speaker="0" flags="PsychosisSelf">
+	<Conversation line="現在就走。" speaker="0" flags="PsychosisSelf"/>
+</Conversation>
+
+<Conversation line="當一個無所畏懼的人被我們狠狠鞭笞時，他會為自身境遇感到困惑不已。" speaker="0" flags="Psychosis">
+	<Conversation line="仔細聽，這不是什麼隱喻。" speaker="0" flags="Psychosis">
+		<Conversation line="錯的是我們。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="現實。總有一天，我們的意志會扭轉現實。" speaker="0" flags="Psychosis">
+	<Conversation line="那時知識將不再安全。" speaker="0" flags="Psychosis">
+		<Conversation line="生活在自己的世界裡，或者無能地逃避。" speaker="0" flags="Psychosis"/>
+		<Conversation line="深海中游走的知識會打開地獄之門，讓我們重生。" speaker="0" flags="Psychosis"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="砰！讓我們看看。" speaker="0" flags="Psychosis">
+	<Conversation line="我們的魚下來了，乘著船。" speaker="0" flags="Psychosis">
+		<Conversation line="一點也不！魚說時間到了，所以它們來了。" speaker="0" flags="Psychosis">
+			<Conversation line="一點也不！我一點也不喜歡。不。" speaker="0" flags="Psychosis"/>
+			<Conversation line="不應該是這樣的！魚說，那不應該是這樣的！" speaker="0" flags="Psychosis">
+				<Conversation line="但那不對，你說對嗎？" speaker="1" flags="Psychosis"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="快他媽給我嗎啡！" speaker="0" flags="OpiateWithdrawalHigh">
+	<Conversation line="你不能再攝入嗎啡了。我們得給你注射一點鹽酸納洛酮。" speaker="1" allowedjobs="medicaldoctor"/>
+	<Conversation line="在你找不到的地方，蠢貨。" speaker="1" speakertags="rude"/>
+	<Conversation line="發生什麼了？你受傷了？" speaker="1">
+		<Conversation line="我感覺我他媽要死了，再不給我來點嗎啡的話，我就要死了。" speaker="0"/>
+		<Conversation line="我的肌肉在抽搐，我的心臟在爆炸！我受不了了！" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我被槍擊了！拿些繃帶來！" speaker="0" flags="GunshotWound"/>
+
+<Conversation line="救命，我中彈了！" speaker="0" flags="GunshotWound"/>
+
+<!-- Outpost Watchmen -->
+<Conversation line="你好，航海家！" speaker="0" flags="EnterEndOutpost" allowedjobs="watchman">
+	<Conversation line="前哨站的其他部分正在建設中，請在幾個月後再來檢查！" speaker="0">
+		<Conversation line="不過，我可以為你提供一些補給和船員。來看看補給清單和勞務名單吧。" speaker="0">
+			<Conversation line="當你準備好後，我可以給你標出附近地點的導航座標。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="很高興能見到新朋友！來這一帶的人不多。" speaker="0" flags="EnterEndOutpost" allowedjobs="watchman">
+	<Conversation line="前哨站的其他部分正在建設中，請在幾個月後再來檢查！" speaker="0">
+		<Conversation line="如果你需要一些補給和船員。可以來找我。" speaker="0">
+			<Conversation line="當你準備好後，我可以為你提供附近地點的導航座標。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="要離開了嗎？" speaker="0" flags="EnterStartOutpost" allowedjobs="watchman">
+	<Conversation line="如果你需要一些補給和船員，亦或是想回到另一個地點，可以來找我。" speaker="0"/>
+</Conversation>
+
+<Conversation line="好吧，想要來點什麼？" speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="你需要什麼？" speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="好吧，先處理這件事。我還有很多事要做。" speaker="0" flags="WatchmanInteract" allowedjobs="watchman"/>
+
+<Conversation line="抱歉，我想你的上司談談。你們潛艇的實際領導者是哪位？" speaker="0" flags="WatchmanInteractNotAllowed" allowedjobs="watchman"/>
+
+<Conversation line="在你的潛艇停靠好或駛近前哨站之前，你不能進入前哨站。" speaker="0" flags="WatchmanInteractNoLeavingSub" allowedjobs="watchman"/>
+
+<Conversation line="你想把潛艇留在這兒嗎？請將它駛近前哨站。" speaker="0" flags="WatchmanInteractNoLeavingSub" allowedjobs="watchman"/>
+
+<!-- New additions -->
+<Conversation line="我可以把我所有煩惱放到誘餌裡嗎？" speaker="0"/>
+
+<Conversation line="你是否曾經感到...平坦？" speaker="0"/>
+
+<Conversation line="是 丘腦還是 球腦？" speaker="0">
+	<Conversation line="希望每次只見到一個。" speaker="1"/>
+	<Conversation line="呃，我再也不想吃臘腸了。" speaker="1"/>
+	<Conversation line="一艘會吐變形蟲的毀壞潛艇向我開炮的時候，我不會問它想如何被稱呼。" speaker="1"/>
+</Conversation>
+
+<Conversation line="昨晚我的艙外有一隻爬蟲在窗戶上抓撓。" speaker="0" flags="OutpostNPC">
+	<Conversation line="你應該告訴安保的。他們不應該讓它們靠得那麼近。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="我艙室的一個通風管昨天漏水了。" speaker="0" flags="OutpostNPC">
+	<Conversation line="你修好了嗎？" speaker="1" flags="OutpostNPC">
+		<Conversation line="沒有，我太老了，身體僵硬，沒法爬到下面去。" speaker="0">
+			<Conversation line="我不知道是我的關節炎還是什麼原因，但我想我也不能爬了。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="該死的，為什麼這裡總是那麼冷？我們就不能把暖氣開大一點嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="你當鈾是樹上長出來的？" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="再多穿件外套，別抱怨了。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="你的船員被魚蛇吃了嗎？想找新員工？走過路過不要錯過！" speaker="0" flags="OutpostNPC,CampaignNPC.Crew"/>
+
+<Conversation line="要新船員嗎？有經驗的，可消耗的--無論你想要什麼，我都能滿足你的要求！" speaker="0" flags="OutpostNPC,CampaignNPC.Crew"/>
+
+<Conversation line="請稍等。你的死亡對我們很重要，摩螺克很快就會來找你。" speaker="0" flags="OutpostNPC,CampaignNPC.Crew">
+	<Conversation line="什麼？" speaker="1">
+		<Conversation line="啊，對不起，我是說 請排隊等待。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="試過炒魚雜嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我做助理的時候，那是我唯一能買得起的菜。希望我再也不用碰那玩意了。" speaker="1" flags="OutpostNPC">
+		<Conversation line="我還有點喜歡它呢。雖然偶爾的腳趾甲和眼睛有點噁心。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你聽說過上週末的迅猛龍比賽嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我不想談它。" speaker="1" flags="OutpostNPC">
+		<Conversation line="我從高利貸借了錢，賭那只該死的迅猛龍，結果它被吃掉了，現在他們一直說不付錢就要弄死我，每天晚上到我家門口按喇叭。" speaker="1"/>
+	</Conversation>
+	<Conversation line="是啊! 不是每天都能看到迅猛龍被吃掉的比賽!" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="說實話我不是很喜歡運動，更不喜歡迅猛龍比賽。我知道，它們是迅猛龍，但我認為那是在虐待動物。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="你聽說過他們在地表進行的輻射研究嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我在《歐羅巴人》上讀到過。殘酷的時代。" speaker="1" flags="OutpostNPC">
+		<Conversation line="我聽說他們中的一些人說，如果情況變得更糟，我們可能不得不放棄靠近地表的前哨站，開始向更深處移動。" speaker="0"/>
+		<Conversation line="說實話我並不覺得有什麼問題。如果向深處移動以躲避輻射又如何？" speaker="0">
+			<Conversation line="反正我也沒打算去地表旅行。" speaker="0">
+				<Conversation line="我想你是對的。我們不知道為什麼輻射水準在上升，也不知道什麼時候會停止，這仍然讓我感到不安。" speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="我不關心那些科學玩意。我們在這裡的麻煩已經夠多了。" speaker="1" flags="OutpostNPC">
+		<Conversation line="如果他們所說的關於輻射滲透到冰層深處的說法是真的，那我們可能很快就會有更多的麻煩需要擔心了。" speaker="0">
+			<Conversation line="呃。不關我的事。這年頭沒什麼人能活到得癌症。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我希望有一天能重返地表。" speaker="0" flags="OutpostNPC">
+	<Conversation line="幾年前，我上去給一個觀察站做了一些維護。" speaker="1" flags="OutpostNPC">
+		<Conversation line="真的太宏偉了。你無法想像天空有多大。" speaker="1">
+			<Conversation line="聽起來很神奇。真可惜，現在去那裡太難了。除非你的信用點花不完。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="我不得不承認我是很想去看木星，但輻射和癌症之類的東西我就不太喜歡了。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="得了吧。你應該放寬眼界!" speaker="1">
+		<Conversation line="問問你自己。你見過這個 地表 嗎？你見過 冰層 的弧度嗎？有沒有想過，為什麼他們不希望我們上 冰原 ？" speaker="1">
+			<Conversation line="我認識去過地表的人。" speaker="0">
+				<Conversation line="我還認識和小丑聖母一起吃過燒烤的人呢--你想說什麼？" speaker="1">
+					<Conversation line="懶得跟你說。" speaker="0"/>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我最近感覺不舒服。今天早上我在刷牙時暈倒了，而且我臉頰上的這種奇怪的皮疹也越來越嚴重。" speaker="0" flags="OutpostNPC">
+	<Conversation line="你不看《歐羅巴人》的嗎？和那個 問醫生 部分的其中一段聽起來非常相似。" speaker="1" flags="OutpostNPC">
+		<Conversation line="呃，我不太看它。而且那個醫生就是個笑話--聽她的不如直接找個牆撞死。" speaker="0"/>
+	</Conversation>
+	<Conversation line="你知道你剛剛描述的是太空皰疹吧？" speaker="1" flags="OutpostNPC">
+		<Conversation line="我知道，我知道。我只是希望它是普通的皰疹或更容易治療的東西。" speaker="0">
+			<Conversation line="你可能不相信因果報應，但我個人認為 日行一善，醫生遠離 是有一定道理的。說句不好聽的，你這人確實不行。" speaker="1">
+				<Conversation line="省省你的狗屁理論吧。" speaker="0"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="摩螺克是下蛋還是生崽？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我不知道。我聽人說過摩螺克蛹，這和雞蛋一樣嗎？" speaker="1" flags="OutpostNPC">
+		<Conversation line="不知道。不過它的吉祥物至少看起來不像雞蛋。" speaker="0"/>
+	</Conversation>
+	<Conversation line="我從來沒有聽說過有人談論過摩螺克蛋，但我也不是異種生物學家就是了。" speaker="1"/>
+</Conversation>
+
+<Conversation line="哦，你好！今天感覺如何？" speaker="0" flags="OutpostNPC">
+	<Conversation line="老樣子，老樣子。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="漫無目的地遊蕩......我還又從樓梯上摔下來了。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="人們像沒有水的植物一樣乾枯...而那些希望的火花在他們身上慢慢燃盡，他們何時將會死去？" speaker="1">
+		<Conversation line="什麼？" speaker="0"/>
+	</Conversation>
+	<Conversation line="現在是白天嗎？他們全天把燈調暗，我已經分不清楚。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="嗨，馬克！" speaker="1">
+		<Conversation line="誰是馬克？" speaker="0"/>
+	</Conversation>
+	<Conversation line="別煩我。" speaker="1"/>
+	<Conversation line="很好，謝謝，你呢？" speaker="1">
+		<Conversation line="很好，很好。" speaker="0">
+			<Conversation line="" speaker="0"/>
+			<Conversation line="不錯，不錯。" speaker="1"/>
+			<Conversation line="跟你聊天真是成果豐碩。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你聽說了嗎？畫皮教派襲擊了首都的法院！" speaker="0" flags="OutpostNPC">
+	<Conversation line="我告訴過你他們會釋放雅科夫的！" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="哪個前哨是首都來著？" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="你最後一次吃東西是什麼時候？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我都不記得了。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="兩天前的晚上，我試了一下桃莉絲阿姨的食譜，有了那次經歷後我真的不想再吃了。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="吃得太多，你就穿不進潛水服了。" speaker="1" flags="OutpostNPC">
+		<Conversation line="吃太多，你就可以被當作深水炸彈。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你對這裡的前哨設計有什麼看法？" speaker="0" flags="OutpostNPC">
+	<Conversation line="嗯，不是什麼摩螺克骨頭雕成的曠世傑作。但起碼比潛水艇要漂亮。" speaker="1" flags="OutpostNPC">
+		<Conversation line="" speaker="0"/>
+		<Conversation line="摩螺克有骨頭嗎？" speaker="1">
+			<Conversation line="這只是一種表達方式。" speaker="0"/>
+		</Conversation>
+	</Conversation>
+	<Conversation line="不知道唉，我覺得我以前見過。" speaker="1"/>
+	<Conversation line="沒關係，我只是希望他們增加更多的顏色。" speaker="1"/>
+	<Conversation line="它不會動不代表就不是鐵罐頭了。" speaker="1"/>
+	<Conversation line="反正只要能讓我邁開步子走一走，怎麼樣都行。" speaker="1"/>
+</Conversation>
+
+<Conversation line="是我的錯覺還是這裡的水聲真的很響？" speaker="0" flags="OutpostNPC">
+	<Conversation line="你確定你不是幻聽嗎？" speaker="1"/>
+</Conversation>
+
+<Conversation line="那天晚上的迅猛龍比賽真是太精彩了!" speaker="0" flags="OutpostNPC">
+	<Conversation line="我一直覺得迅猛龍比賽太殘酷了。" speaker="1" flags="OutpostNPC">
+		<Conversation line="好吧，我賭的那只迅猛龍的騎手被吃掉了，所以我也同意。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你認為我們應該在這裡養一些植物嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="呃，我們才剛消滅那些寄生植物。現在你又想搞這個？" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="你和植物是不是過不去？我看你是工作太閑了。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="" speaker="1"/>
+</Conversation>
+
+<Conversation line="這個地方一直都很冷很潮濕。我討厭這裡。" speaker="0" flags="OutpostNPC">
+	<Conversation line="我們應該向網站管理抱怨一下這裡的條件。" speaker="1" flags="OutpostNPC">
+		<Conversation line="我敢打賭，如果我們這樣做，會被送到更糟糕的地方。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我之前做了一個最奇怪的夢，我是一個神什麼的......" speaker="0" flags="OutpostNPC">
+	<Conversation line="乘員艙需要清潔，大神。快去吧。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="反應堆最近一直表現得很奇怪。" speaker="0" flags="OutpostNPC">
+	<Conversation line="記錄下來，我想最終會有人來檢查的，希望是在我們被輻射死之前。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="最近這些小丑是怎麼回事？" speaker="0" flags="OutpostNPC">
+	<Conversation line="好像這裡的情況還不夠糟糕似的。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="木星升空遊行很快就要舉行了！我聽說這將是一場精彩的表演。" speaker="0" flags="OutpostNPC">
+	<Conversation line="我聽說這次會很好玩。炸虎尾魚蛇實在太好吃了！" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="...然後我對醫生說：那不是觸手！" speaker="0" flags="OutpostNPC">
+	<Conversation line="哈哈!" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="呃，你真噁心!" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="設計這個地方的人根本不知道他們在做什麼。" speaker="0" flags="OutpostNPC">
+	<Conversation line="對吧？根本不適合輪椅通行。" speaker="1" flags="OutpostNPC"/>
+	<Conversation line="對吧？感覺就像有人隨意地把一堆房間模組焊接在一起，然後就提交了。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="你看到上周來的那個潛艇了嗎？" speaker="0" flags="OutpostNPC">
+	<Conversation line="勝利者號？她被撕成了碎片。為她修補的工程師在船體上的一個傷口裡發現了一隻還活著的迅猛龍。" speaker="1" flags="OutpostNPC">
+		<Conversation line="是啊。我看到他們搬出了四具屍體。估計是被怪物鑽了進去大開殺戒。" speaker="0">
+			<Conversation line="最糟糕的是船長的冷漠...他只是雇了幾個新的人，然後馬上就回去了，好像什麼都沒發生過一樣。" speaker="1">
+				<Conversation line="我有種感覺，可能以後都見不著那些人了。" speaker="1"/>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+	<Conversation line="補償者？那是我見過的形狀最奇怪的潛艇。" speaker="1" flags="OutpostNPC"/>
+</Conversation>
+
+<Conversation line="這裡的自動售貨機有最好的食物。那些海藻蛋白餅太好吃了!" speaker="0" flags="OutpostNPC">
+	<Conversation line="它們的味道和任何其他自動售貨機裡的海藻蛋白餅一樣，像泥巴。" speaker="1" flags="OutpostNPC">
+		<Conversation line="你懂個屁美食。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="如果這裡發生火災，那真是太可惜了。很多人可能會受重傷。" speaker="0" flags="OutpostNPC">
+	<Conversation line="你在說什麼？" speaker="1" flags="OutpostNPC">
+		<Conversation line="我真的很冷，我總得需要暖和一下。" speaker="0">
+			<Conversation line="振作點，至少別把我活活燒死。" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我認為所有的摩螺克都很友好，只想擁抱可愛的潛艇。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="我歡迎章魚霸主來統治我們。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="今天的水真是渾濁。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="今天的天氣真好。沒有海流，水很清澈... 我一會兒可能會去採摘罌粟。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="你有沒有想過，是誰首先想到用螺絲刀當刀子用的？" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="我得做什麼才能調離這裡？" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="網站的生活很枯燥，但總比在潛水艇裡強。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="不知道食堂的自動售貨機今天會供應什麼。" speaker="0" flags="OutpostNPC"/>
+
+<Conversation line="是油炸魚蛇的味道？" speaker="0" flags="OutpostNPC">
+	<Conversation line="可能是有人又讓電網超載了。" speaker="1"/>
+	<Conversation line="" speaker="1"/>
+</Conversation>
+
+<Conversation line="如果你能買得起自己的太空梭，你會買哪個型號？" speaker="0" flags="OutpostNPC">
+	<Conversation line="我一直認為布尼普是一種自然選擇。只有最好的水手才會回來。" speaker="1"/>
+</Conversation>
+
+<Conversation line="我們以前的船長有時會逼我們執行他所謂的 神風俯衝。" speaker="0" flags="OutpostNPC">
+	<Conversation line="“如果你足夠勇敢，一切算壓艙物”，他說。" speaker="0">
+		<Conversation line="他已經不在人世了。這傢伙勇敢的送了自己的命。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="你好啊朋友！ 我們這裡的訪客可不多。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="哦，我們又有訪客了。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你們好！" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你好啊！你看起來像是經歷了一次艱難的旅行。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你好! 歡迎來到我們簡陋的住所。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你們這些人看起來需要休息一下。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="我以前沒有見過你們啊。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你們的潛水艇真漂亮!" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="我希望你們不打算在這裡待很久。這下面的問題已經夠多了。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="你們好。我希望你們不要造成任何麻煩。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="我會盯著你的。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="別惹麻煩。" speaker="0" flags="EnterOutpost,OutpostNPC"/>
+
+<Conversation line="嘿，你！給我滾出去！" speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="這裡不歡迎你們這些人。" speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="你真有膽量，又在這裡露臉。" speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="你不應該來這裡... ..." speaker="0" flags="EnterOutpost,LowReputation,OutpostNPC"/>
+
+<Conversation line="總是很高興看到你們！" speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="啊，是你！歡迎！" speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="你好！很高興在這裡見到你。" speaker="0" flags="EnterOutpost,HighReputation,OutpostNPC"/>
+
+<Conversation line="拜託，讓我走吧！" speaker="0" flags="Hostage"/>
+
+<Conversation line="我再也受不了了！" speaker="0" flags="Hostage"/>
+
+<Conversation line="我需要離開這裡... 求求你！" speaker="0" flags="Hostage"/>
+
+<Conversation line="我們做個交易吧--讓我走，我不會告訴任何人你們在這裡做了什麼！" speaker="0" flags="Hostage"/>
+
+<Conversation line="我不可能活著離開這裡了，是嗎？" speaker="0" flags="Hostage"/>
+
+<Conversation line="你停錯了前哨站，夥計... ..." speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="你的那艘潛艇看起來非常好... ... 我們要了！" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="啊，新鮮的肉！" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="這個地方現在屬於我們了，我們不會對闖入者客氣的... ..." speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="闖入者！" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="你應該離得遠遠的！" speaker="0" flags="EnterOutpost,Bandit"/>
+
+<Conversation line="我想我聽到了什麼。" speaker="0" flags="Bandit">
+	<Conversation line="可能只是風聲。" speaker="1" flags="Bandit">
+		<Conversation line="什麼是風？" speaker="0"/>
+		<Conversation line="哈哈，非常有趣。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="是不是有船停靠了？" speaker="0" flags="Bandit">
+	<Conversation line="如果有潛艇停靠，我想我會注意到的。" speaker="1" flags="Bandit">
+		<Conversation line="確實，潛艇停靠聲音那麼大。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="這裡太冷了。" speaker="0" flags="Bandit">
+	<Conversation line="閉嘴吧，省點力氣。" speaker="1" flags="Bandit"/>
+</Conversation>
+
+<Conversation line="如果聯盟決定來拜訪我們，我們就完蛋了。" speaker="0" flags="Bandit">
+	<Conversation line="他們不可能把我們都殺了。" speaker="1" flags="Bandit">
+		<Conversation line="你知道他們會對我們這樣的前哨站做什麼嗎？" speaker="0"/>
+		<Conversation line="你可能是對的。" speaker="0"/>
+		<Conversation line="我聽說過他們把整個前哨基地炸掉，只是為了殺雞儆猴。" speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="有時我在想，聯盟要花多長時間才能奪回這個地方..." speaker="0" flags="Bandit">
+	<Conversation line="他們不會的。只要那個來自深淵的東西還在這些地方大肆破壞，他們就不會來這裡。" speaker="1" flags="Bandit">
+		<Conversation line="我知道，但是當那個怪物消失後呢？" speaker="0"/>
+	</Conversation>
+	<Conversation line="我說讓他們來啊。我們有足夠的槍支來阻止那些混蛋。" speaker="1" flags="Bandit"/>
+</Conversation>
+
+<Conversation line="我快餓死了。" speaker="0" flags="Bandit">
+	<Conversation line="我們都是。" speaker="1" flags="Bandit">
+		<Conversation line="你知道嗎，我開始覺得把那些屍體裝進袋子裡是個好主意，別把它們扔出氣閘... ..." speaker="0">
+			<Conversation line="這真是太糟糕了。我不想再聽了。" speaker="1"/>
+			<Conversation line="誰不是呢，但我真的希望我們不必走這條路... ..." speaker="1"/>
+			<Conversation line="" speaker="1"/>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation line="我可以感覺到輻射刺痛了我的皮膚。" speaker="0" flags="InRadiation"/>
+
+<Conversation line="這個地區的木星輻射對我們來說太強了。" speaker="0" flags="InRadiation"/>
+
+<Conversation line="我的嘴裡有銅的味道，我的頭疼得厲害。" speaker="0" flags="InRadiation">
+	<Conversation line="如果我們不繼續前進，輻射就會殺死我們。" speaker="1">
+		<Conversation line="我希望這還不算太晚..." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+<Conversation line="當我閉上眼睛時能看到白色的閃光!" speaker="0" flags="InRadiation">
+	<Conversation line="我也是。這是輻射在影響我們的眼睛。" speaker="1">
+		<Conversation line="這聽起來不太妙。" speaker="0"/>
+		<Conversation line="不可能吧，你別嚇唬我..." speaker="0"/>
+	</Conversation>
+</Conversation>
+
+</Conversations>

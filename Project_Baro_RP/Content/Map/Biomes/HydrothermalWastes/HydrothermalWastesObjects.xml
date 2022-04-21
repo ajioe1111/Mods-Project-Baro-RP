@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<levelobjects>
+  <!-- a series of background chunks that spawn along walls -->
+  <BackgroundChunks identifier="hydrothermalwastesbackgroundchunks" spawnpos="Wall, RuinWall" minsurfacewidth="0" minsize="0.5" maxsize="1.5" randomrotation="-180,180" commonness="0" depthrange="1000,2000" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="False" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000000" randomoffset="100,100">
+    <overridecommonness leveltype="wastesbasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/BackgroundChunks.png" sourcerect="0,0,683,1024" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/BackgroundChunks.png" sourcerect="683,0,683,1024" origin="0.5,0.5" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/BackgroundChunks.png" sourcerect="1365,0,683,1024" origin="0.5,0.5" />
+  </BackgroundChunks>
+  <EdgeChunks identifier="hydrothermalwastesedgechunks" spawnpos="Wall, RuinWall" minsurfacewidth="900" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="wastesbasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="0,0,823,420" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="828,0,388,420" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="1218,64,826,1364" origin="0.5,0.6"  />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="0,420,1016,515" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="16,935,758,1113" origin="0.6,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="790,1451,452,597" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/WallEdgeChunks.png" sourcerect="1246,1435,798,609" origin="0.5,0.7" />
+  </EdgeChunks>
+  <!-- Plants -->
+  <devilspikes identifier="devilspikes" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="1" swingfrequency="2" scaleoscillation="0.1,0.1" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="wastesbasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="2530,63,735,536" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="3275,63,811,536" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="1972,610,799,662" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="2781,610,654,673" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="3445,610,641,682" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="2019,1282,651,702" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="2680,1315,695,669" origin="0.5,0.8" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="3385,1317,701,667" origin="0.5,0.8" />
+  </devilspikes>
+  <growths identifier="growths" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="wastesbasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="1328,11,396,567" origin="0.5,0.9" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="1734,11,481,589" origin="0.5,0.9" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="2225,43,295,558" origin="0.5,0.9" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="9,1401,449,637" origin="0.5,0.9" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="468,1310,521,728" origin="0.5,0.9" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="999,1290,474,748" origin="0.5,0.9" />
+  </growths>
+  <blisteredhearts identifier="blisteredheart" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000">
+    <overridecommonness leveltype="wastesbasic" commonness="100" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="10,10,576,545" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="596,10,586,563" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="10,565,668,493" origin="0.5,0.7" />
+    <Sprite texture="Content/Map/Biomes/HydrothermalWastes/LevelObjects.png" sourcerect="688,583,534,465" origin="0.5,0.7" />
+  </blisteredhearts>
+</levelobjects>

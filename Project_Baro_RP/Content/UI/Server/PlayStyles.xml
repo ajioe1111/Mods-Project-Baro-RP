@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PlayStyles>
+  <PlayStyleBanner identifier="Serious" texture="Content/UI/Server/ServerAtlas1.png" sourcerect="0,0,852,340" color="#20686c"/>
+  <PlayStyleBanner identifier="Casual" texture="Content/UI/Server/ServerAtlas1.png" sourcerect="0,342,852,340" color="#1f661c"/>
+  <PlayStyleBanner identifier="Roleplay" texture="Content/UI/Server/ServerAtlas1.png" sourcerect="0,683,852,340" color="#8b1b45" />
+  <PlayStyleBanner identifier="Rampage" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="0,342,852,340" color="#8a3622"/>
+  <PlayStyleBanner identifier="SomethingDifferent" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="0,0,852,340" color="#6d2460"/>
+
+  <PlayStyleIcon identifier="friendlyfire.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="0,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="friendlyfire.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="512,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="modded.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="128,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="modded.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="640,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="karma.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="256,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="karma.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="768,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="traitors.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="384,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="traitors.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="896,686,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="247.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="0,814,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="247.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="512,814,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="voip.true" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="128,814,128,128" color="#ffffff"/>
+  <PlayStyleIcon identifier="voip.false" texture="Content/UI/Server/ServerAtlas2.png" sourcerect="128,814,128,128" color="#ffffff"/>
+</PlayStyles>

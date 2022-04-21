@@ -1,0 +1,6 @@
+<Charactervariant inherit="Moloch" speciesname="Moloch_m" speciestranslationoverride="Moloch" usebosshealthbar="true">
+  <health vitality="1500"/>
+  <ragdoll scalemultiplier="1.15"/>
+  <attack damagemultiplier="1.15" rangemultiplier="1.15" impactmultiplier="1.15"/>
+  <ai sight="0.1" hearing="1.5"/>
+</Charactervariant>
