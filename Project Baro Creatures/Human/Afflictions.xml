@@ -63,7 +63,7 @@
       maxscreenblur="0.5">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"/>
     </Effect>
-    <icon texture="Mods/Project Baro Creatures/Human/HungerIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Human/HungerIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
   <Affliction
     name="Жажда"
@@ -118,7 +118,7 @@
       maxscreenblur="0.5">
       <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"/>
     </Effect>
-    <icon texture="Mods/Project Baro Creatures/Human/ThirstIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Human/ThirstIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
   </Affliction>
   <Affliction name="Слепота" identifier="blinded" description="Глаза слезятся, становится трудно видеть" type="resistance" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" maxstrength="30">
     <Effect minstrength="0" maxstrength="5" strengthchange="-1.0" minradialdistort="0.0" maxradialdistort="10.0" minscreendistort="0.0" maxscreendistort="1.0" minscreenblur="0" maxscreenblur="10.0">
@@ -127,24 +127,24 @@
     <Effect minstrength="5" maxstrength="30" strengthchange="-1.0" minradialdistort="10.0" maxradialdistort="30.0" minscreendistort="1.0" maxscreendistort="3.0" minscreenblur="10.0" maxscreenblur="50.0">
       <StatusEffect target="Character" ObstructVision="true" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
     </Effect>
-    <icon name="blinded" texture="Mods/Project Baro Creatures/Human/BlindedIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon name="blinded" texture="%ModDir%/Human/BlindedIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>  
   <Affliction name="Сердцебиение" identifier="heartbeat" description="Вы слышите своё же сердцебиение." type="resistance" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" showinhealthscannerthreshold="10000" maxstrength="50">
    <Effect minstrength="0" maxstrength="100" strengthchange="-1.0">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
 	  <Conditional IsLocalPlayer="True" />
-      <sound file="Mods/Project Baro Creatures/Human/heartbeat.ogg" volume="1.5"/>
+      <sound file="%ModDir%/Human/heartbeat.ogg" volume="1.5"/>
       </StatusEffect>
     </Effect>
-    <icon name="heartbeat" texture="Mods/Project Baro Creatures/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon name="heartbeat" texture="%ModDir%/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
   <Affliction name="Сердцебиение(Постоянное)" identifier="heartbeateternal" description="Вы слышите своё же сердцебиение." type="resistance" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" showinhealthscannerthreshold="10000" maxstrength="100">
    <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
 	  <Conditional IsLocalPlayer="True" />
-      <sound file="Mods/Project Baro Creatures/Human/heartbeat.ogg" volume="1.5"/>
+      <sound file="%ModDir%/Human/heartbeat.ogg" volume="1.5"/>
       </StatusEffect>
     </Effect>
-    <icon name="heartbeat" texture="Mods/Project Baro Creatures/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon name="heartbeat" texture="%ModDir%/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction> 
 </Afflictions>

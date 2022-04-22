@@ -193,67 +193,67 @@
   <LargeFont file="Content/Fonts/NotoSans/NotoSans-ExtraBold.ttf" size="22"/>
   -->
   <TitleText color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="255,255,255,255">
-    <Sprite texture="Mods/Project Baro Other items/Content/UI/titleText.png" sourcerect="0,520,1024,328" tile="false" maintainaspectratio="true">
-      <override language="Traditional Chinese" texture="Mods/Project Baro Other items/Content/UI/titleText.png" sourcerect="0,176,1024,343" />
-      <override language="Simplified Chinese" texture="Mods/Project Baro Other items/Content/UI/titleText.png" sourcerect="0,176,1024,343" />
+    <Sprite texture="%ModDir%/Content/UI/titleText.png" sourcerect="0,520,1024,328" tile="false" maintainaspectratio="true">
+      <override language="Traditional Chinese" texture="%ModDir%/Content/UI/titleText.png" sourcerect="0,176,1024,343" />
+      <override language="Simplified Chinese" texture="%ModDir%/Content/UI/titleText.png" sourcerect="0,176,1024,343" />
     </Sprite>
   </TitleText>
   <project-baro-music_cover_dm color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_dm" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_dm" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_dm>
   <project-baro-music_cover_deadmansbones color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_deadmansbones" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="512,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_deadmansbones" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_deadmansbones>
   <project-baro-music_cover_schritte color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_schritte" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1024,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_schritte" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_schritte>
   <project-baro-music_cover_kino_gruppakrovi color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_kino_gruppakrovi" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1536,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_kino_gruppakrovi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_kino_gruppakrovi>
   <project-baro-music_cover_kino_zvezda color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_kino_zvezda" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_kino_zvezda" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_kino_zvezda>
   <project-baro-music_cover_kino_peremen color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_kino_peremen" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="512,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_kino_peremen" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_kino_peremen>
   <project-baro-music_cover_kino_noch color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_kino_noch" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1024,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_kino_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_kino_noch>
   <project-baro-music_cover_kino_poslednii_geroi color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_kino_poslednii_geroi" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1536,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_kino_poslednii_geroi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_kino_poslednii_geroi>
   <project-baro-music_cover_original_1 color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_original_1" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_original_1" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_original_1>
   <project-baro-music_cover_original_2 color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_original_2" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="512,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_original_2" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_original_2>
   <project-baro-music_cover_mike_oldfield_nuclear color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_mike_oldfield_nuclear" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1024,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_mike_oldfield_nuclear" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_mike_oldfield_nuclear>
   <project-baro-music_cover_grs_rukava color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_grs_rukava" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1536,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_grs_rukava" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_grs_rukava>
   <project-baro-music_cover_hata_belaya_noch color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_hata_belaya_noch" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_hata_belaya_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_hata_belaya_noch>
   <project-baro-music_cover_animatsiya color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_animatsiya" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="512,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_animatsiya" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_animatsiya>
   <project-baro-music_cover_mysterioussong color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_mysterioussong" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1024,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_mysterioussong" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_mysterioussong>
   <project-baro-music_cover_sinkingships color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_sinkingships" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1536,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_sinkingships" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_sinkingships>
   <project-baro-music_cover_eyedress color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_eyedress" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_eyedress" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_eyedress>
   <project-baro-music_cover_clown color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_clown" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="512,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_clown" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_clown>
   <project-baro-music_cover_space color="255,255,255,255" textcolor="0,0,0,255">
-    <Sprite name="project-baro-music_cover_space" texture="Mods/Project Baro Other items/Music/covers.png" size="0.0, 0.0" sourcerect="1024,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+    <Sprite name="project-baro-music_cover_space" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
   </project-baro-music_cover_space>
   <InnerGlow color="255,255,255,204" hovercolor="255,255,255,204" selectedcolor="255,255,255,204">
     <Sprite texture="Content/UI/InnerGlow.png" sourcerect="0,0,512,384" slice="128,128,384,256" />
@@ -319,7 +319,7 @@
     <GUITextBlock textcolor="16,34,33,255" padding="10.0, 0.0, 10.0, 0.0" font="subheading" />
   </GUIButtonFreeScale>
   <MainMenuGUITextBlock textcolor="0,0,0,255" color="255,255,255,255" padding="10,10,10,10">
-    <Sprite name="MainMenuGUITextBlock" texture="Mods/Project Baro Other items/Content/UI/InventoryUIAtlas.png" sourcerect="10,775,476,37" tile="false" origin="0.5,0.5" compress="false" />
+    <Sprite name="MainMenuGUITextBlock" texture="%ModDir%/Content/UI/InventoryUIAtlas.png" sourcerect="10,775,476,37" tile="false" origin="0.5,0.5" compress="false" />
   </MainMenuGUITextBlock>
   <MainMenuGUIFrame color="255,255,255,255">
     <Sprite name="MainMenuGUIFrame" texture="Content/UI/InventoryUIAtlas.png" sourcerect="10,812,476,199" tile="false" origin="0.5,0.5" />
@@ -344,7 +344,7 @@
     <Sprite name="MainMenuOptionIcon" texture="Content/UI/InventoryUIAtlas.png" sourcerect="582,524,159,174" tile="false" maintainaspectratio="true" origin="0.5,0.5" />
   </MainMenuOptionIcon>
   <MainMenuVignette color="255,255,255,255">
-    <Sprite name="MainMenuVignette" texture="Mods/Project Baro Other items/Content/UI/MainMenuVignette.png" sourcerect="0,0,2048,1152" origin="0.5,0.5" />
+    <Sprite name="MainMenuVignette" texture="%ModDir%/Content/UI/MainMenuVignette.png" sourcerect="0,0,2048,1152" origin="0.5,0.5" />
   </MainMenuVignette>
   <GUIButtonLarge color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="125,125,125,255" pressedcolor="230,230,230,255">
     <Sprite name="GUIButtonLarge.None" texture="Content/UI/UIAtlasGeneral.png" state="None" sourcerect="6,216,164,45" slice="11,221,165,256" origin="0.5,0.5" />
@@ -1109,25 +1109,25 @@
     <Sprite name="CommandButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="123,285,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </CommandButton>
   <CommandStartNode color="180,196,137,250">
-    <Sprite name="CommandStartNode" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="896,0,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandStartNode" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="896,0,128,128" maintainaspectratio="true" tile="false" />
   </CommandStartNode>
   <CommandShortcutNode color="230,114,114,255">
-    <Sprite name="CommandShortcutNode" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="640,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandShortcutNode" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="640,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandShortcutNode>
   <CommandExpandNode color="255,255,255,255">
-    <Sprite name="CommandExpandNode" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="256,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandExpandNode" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="256,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandExpandNode>
   <CommandNodeContainer color="255,255,255,255">
-    <Sprite name="CommandNodeContainer" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandNodeContainer" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
   </CommandNodeContainer>
   <CommandHotkeyContainer color="180,196,137,250">
-    <Sprite name="CommandHotkeyContainer" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="257,513,28,28" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandHotkeyContainer" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="257,513,28,28" maintainaspectratio="true" tile="false" />
   </CommandHotkeyContainer>
   <CommandBackground color="255,255,255,255">
     <Sprite name="CommandBackground" texture="Content/UI/CommandUIBackground.png" sourcerect="0,0,766,664" maintainaspectratio="true" tile="false" />
   </CommandBackground>
   <CommandIdleNode color="255,255,255,255">
-    <Sprite name="CommandIdleNode" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="384,512,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CommandIdleNode" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,512,128,128" maintainaspectratio="true" tile="false" />
   </CommandIdleNode>
   <!-- Command UI ends -->
   <MouseButtonIconLeft color="240,228,201,255">
@@ -1159,16 +1159,16 @@
     <Sprite name="CrewListToggleButton_Pressed" texture="Content/UI/InventoryUIAtlas.png" state="Pressed" tile="false" sourcerect="8,285,111,66" maintainaspectratio="true" origin="0.5,0.5" />
   </CrewListToggleButton>
   <CrewListBackground color="255,255,255,255">
-    <Sprite name="CrewListBackground_None" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="0,728,320,40" />
-    <Sprite name="CrewListBackground_Selected" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="Selected" tile="false" sourcerect="0,782,320,40" />
-    <Sprite name="CrewListBackground_Hover" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="Hover" tile="false" sourcerect="0,837,320,40" />
-    <Sprite name="CrewListBackground_HoverSelected" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="HoverSelected" tile="false" sourcerect="0,837,320,40" />
-    <Sprite name="CrewListBackground_Pressed" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="Pressed" tile="false" sourcerect="0,892,320,40" />
+    <Sprite name="CrewListBackground_None" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="0,728,320,40" />
+    <Sprite name="CrewListBackground_Selected" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="Selected" tile="false" sourcerect="0,782,320,40" />
+    <Sprite name="CrewListBackground_Hover" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="Hover" tile="false" sourcerect="0,837,320,40" />
+    <Sprite name="CrewListBackground_HoverSelected" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="HoverSelected" tile="false" sourcerect="0,837,320,40" />
+    <Sprite name="CrewListBackground_Pressed" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="Pressed" tile="false" sourcerect="0,892,320,40" />
   </CrewListBackground>
   <CrewListCommandButton color="255,255,255,255">
-    <Sprite name="CrewListCommandButton_None" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="384,640,40,40" maintainaspectratio="true" />
-    <Sprite name="CrewListCommandButton_Hover" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="Hover" tile="false" sourcerect="427,640,40,40" maintainaspectratio="true" />
-    <Sprite name="CrewListCommandButton_Pressed" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" state="Pressed" tile="false" sourcerect="470,640,40,40" maintainaspectratio="true" />
+    <Sprite name="CrewListCommandButton_None" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="None" tile="false" sourcerect="384,640,40,40" maintainaspectratio="true" />
+    <Sprite name="CrewListCommandButton_Hover" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="Hover" tile="false" sourcerect="427,640,40,40" maintainaspectratio="true" />
+    <Sprite name="CrewListCommandButton_Pressed" texture="%ModDir%/Content/UI/CommandUIAtlas.png" state="Pressed" tile="false" sourcerect="470,640,40,40" maintainaspectratio="true" />
   </CrewListCommandButton>
   <!-- Tab Menu -->
   <SpectateIcon>
@@ -1467,13 +1467,13 @@
     <Sprite name="ExpandButton.Hover" texture="Content/UI/InventoryUIAtlas.png" sourcerect="845,190,40,40" tile="false" maintainaspectratio="true" origin="0.5,0.5" state="Hover" />
   </ExpandButton>
   <IdleObjectiveIcon color="255,255,255,255">
-    <Sprite name="IdleObjectiveIcon" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="384,512,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="IdleObjectiveIcon" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,512,128,128" maintainaspectratio="true" tile="false" />
   </IdleObjectiveIcon>
   <FindSafetyObjectiveIcon color="255,255,255,255">
-    <Sprite name="FindSafetyObjectiveIcon" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="512,768,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="FindSafetyObjectiveIcon" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,768,128,128" maintainaspectratio="true" tile="false" />
   </FindSafetyObjectiveIcon>
   <CombatObjectiveIcon color="255,255,255,255">
-    <Sprite name="CombatObjectiveIcon" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="512,896,128,128" maintainaspectratio="true" tile="false" />
+    <Sprite name="CombatObjectiveIcon" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="512,896,128,128" maintainaspectratio="true" tile="false" />
   </CombatObjectiveIcon>
   <SlideDownArrow color="220,220,220,220" pressedcolor="125,125,125,125" hovercolor="255,255,255,255" selectedcolor="220,220,220,220" disabledcolor="125,125,125,125">
     <Sprite name="SlideDownArrow" texture="Content/UI/UIAtlasGeneral.png" tile="false" maintainaspectratio="true" sourcerect="276,566,27,30" origin="0.5,0.5" />
@@ -1524,7 +1524,7 @@
     <Sprite name="EndocrineReminderIcon" texture="Content/UI/UIAtlasGeneral.png" tile="false" sourcerect="928,582,57,57" origin="0.5,0.5" maintainaspectratio="true" />
   </EndocrineReminderIcon>
 
-  <IconOverflowIndicator name="IconOverflowIndicator" texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
+  <IconOverflowIndicator name="IconOverflowIndicator" texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="384,384,128,128" maintainaspectratio="true" tile="false" />
     <StatusMonitorButton.HullStatus color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" disabledcolor="125,125,125,255" pressedcolor="230,230,230,255">
     <Sprite name="StatusMonitorButton.HullStatus.None" texture="Content/UI/StatusMonitorUI.png" state="None" sourcerect="3,3,102,48" maintainaspectratio="true" tile="false" origin="0.5,0.5" />
     <Sprite name="StatusMonitorButton.HullStatus.Hover" texture="Content/UI/StatusMonitorUI.png" state="Hover" sourcerect="3,61,102,48" maintainaspectratio="true" tile="false" origin="0.5,0.5" />

@@ -17,14 +17,14 @@
       <RequiredItem identifier="iron" />
     </Fabricate>
 
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,263,180,152" origin="0.49008498,0.51502144" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,-34,304,244" depth="0.55" origin="0.43092105,0.5696721" />
+    <InventoryIcon texture="%ModDir%/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,263,180,152" origin="0.49008498,0.51502144" />
+    <Sprite texture="%ModDir%/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="-8,-34,304,244" depth="0.55" origin="0.43092105,0.5696721" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-11,-7" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="14,6" spread="16" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftshot.ogg" type="OnUse" range="4000" />
+      <Sound file="%ModDir%/Weapon/Makeshift pistol/makeshiftshot.ogg" type="OnUse" range="4000" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="true" underwaterbubble="false" camerashake="12.0" />
@@ -49,8 +49,8 @@
       <RequiredItem identifier="iron" mincondition="0.25" usecondition="true" />
       <RequiredItem identifier="phosphorus" mincondition="0.25" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="180,318,108,84" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="273,314,165,129" depth="0.55" origin="0.43030304,0.58914727" />
+    <InventoryIcon texture="%ModDir%/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="180,318,108,84" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Makeshift pistol/makeshiftpistol.png" sourcerect="273,314,165,129" depth="0.55" origin="0.43030304,0.58914727" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -69,13 +69,13 @@
   </Item>
 
   <Item name="EMP round" identifier="empround" category="Equipment" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,4,5" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,4,5" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <sound file="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMPgunhit.ogg" range="1000.0" />
+        <sound file="%ModDir%/Weapon/EMPgun/EMPgunhit.ogg" range="1000.0" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="Character">
         <Conditional speciesgroup="robot" />
@@ -91,8 +91,8 @@
   </Item>
 
   <Item name="Магазин ЭМИ-винтовки" identifier="empmagazine" scale="0.20" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,empammo" impactsoundtag="impact_metal_heavy" maxstacksize="2">
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="370,0,83,125" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" depth="0.54" sourcerect="370,0,83,125" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" sourcerect="370,0,83,125" />
+    <Sprite texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" depth="0.54" sourcerect="370,0,83,125" origin="0.5,0.5" />
     <Body width="20" height="20" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="empround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="empround" />
@@ -105,15 +105,15 @@
   </Item>
 
   <Item name="Экспериментальная ЭМИ-винтовка" identifier="empgun" category="Equipment" description="Экспериментальный образец ЭМИ-винтовки. Заряда хватит на 4 выстрела." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun, loadable" Scale="0.30" impactsoundtag="impact_metal_heavy">
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" />
+    <Sprite texture="%ModDir%/Weapon/EMPgun/EMP_weapon.png" sourcerect="0,0,324,91" depth="0.55" />
     <Body width="72" height="20" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="40,1" handle1="-6,-5" handle2="102,-5" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="1.0" barrelpos="40,2" spread="4" unskilledspread="7" combatPriority="0" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <sound file="Mods/Project Baro Armor and weapons/Weapon/EMPgun/EMPgunshot.ogg" type="OnUse" target="This" range="1500.0" />
+      <sound file="%ModDir%/Weapon/EMPgun/EMPgunshot.ogg" type="OnUse" target="This" range="1500.0" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
       </StatusEffect>
@@ -153,8 +153,8 @@
       <RequiredItem identifier="iron" />
     </Fabricate>
 
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="128,256,64,64" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="448,352,272,80" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="128,256,64,64" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="448,352,272,80" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.83" />
     <Body width="160" height="32" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="30,-10" handle1="-2,-9" handle2="80,-8" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -163,7 +163,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/DBshotgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Weapon/Handmade_weapons/DBshotgun.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -205,8 +205,8 @@
       <RequiredItem identifier="aluminium" mincondition="0.15" usecondition="true" />
     </Fabricate>
 
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" depth="0.56" sourcerect="274,482,44,28" origin="0.5,0.5" />
-    <BrokenSprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="48,48,32,32" depth="0.50" maxcondition="95" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/Weapons_handmade.png" depth="0.56" sourcerect="274,482,44,28" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="48,48,32,32" depth="0.50" maxcondition="95" />
     <Body width="40" height="16" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="-90" aimable="false" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="12">
@@ -238,8 +238,8 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="aluminium" mincondition="0.50" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIconAtlas.png" sourcerect="835,385,64,64" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/weapons_new.png" sourcerect="183,203,66,16" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/InventoryIconAtlas.png" sourcerect="835,385,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/weapons_new.png" sourcerect="183,203,66,16" depth="0.55" origin="0.5,0.5" />
     <Body width="65" height="15" density="50" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-5,-5" holdangle="30" reload="0.75" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="12">
@@ -271,8 +271,8 @@
       <RequiredItem identifier="iron" />
     </Fabricate>
 
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="0,1248,128,64" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="0,1248,128,64" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-13,-11" msg="ItemMsgPickUpSelect" />
@@ -282,7 +282,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMrevolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Weapon/Handmade_weapons/HMrevolver.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -321,15 +321,15 @@
       <RequiredItem identifier="plastic" />
     </Fabricate>
 
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/MosinNagant.png" sourcerect="0,0,333,52" depth="0.55" origin="0.5,0.5" />
     <Body width="330" height="45" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="60,0" handle1="-65,5" handle2="40,15" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="60,0" spread="3" unskilledspread="12" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMrifle.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapon/Handmade_weapons/HMrifle.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -358,8 +358,8 @@
       <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
       <RequiredItem identifier="aluminium" mincondition="0.15" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/762FMJdark.png" sourcerect="0,0,482,88" depth="0.55" origin="0.5,0.5" />
     <Body width="24" height="12" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -396,8 +396,8 @@
       <RequiredItem identifier="batterycell" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="640,384,64,64" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="864,320,32,64" depth="0.55" origin="0.6,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Handmade_weapons/InventoryIcons.png" sourcerect="640,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Handmade_weapons/Weapons_handmade.png" sourcerect="864,320,32,64" depth="0.55" origin="0.6,0.5" />
     <Body radius="20" height="10" density="10" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -419,7 +419,7 @@
     <RepairTool>
       <StatusEffect type="OnUse" target="This" stackable="false" delay="0.1">
         <Conditional DisplaySideBySideWhenLinked="ne true" />
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Handmade_weapons/HMpipebomb.ogg" type="OnUse" range="300" />
+        <Sound file="%ModDir%/Weapon/Handmade_weapons/HMpipebomb.ogg" type="OnUse" range="300" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" DisplaySideBySideWhenLinked="true" />
       <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="true" disabledeltatime="true" />

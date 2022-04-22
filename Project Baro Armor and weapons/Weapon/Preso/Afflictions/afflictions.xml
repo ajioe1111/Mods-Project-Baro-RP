@@ -89,6 +89,6 @@
     <Affliction identifier="oxygenlow" amount="20" setvalue="true"/>
       </StatusEffect>
     </Effect>
-    <icon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/Afflictions/presolatex.png" sourcerect="0,0,128,128" color="106,106,106,255" origin="0,0"/>
+    <icon texture="%ModDir%/Weapon/Preso/Afflictions/presolatex.png" sourcerect="0,0,128,128" color="106,106,106,255" origin="0,0"/>
   </Affliction>
  </Afflictions>

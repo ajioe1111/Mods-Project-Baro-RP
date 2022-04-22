@@ -9,8 +9,8 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Форма наёмника Black Gate" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="283,656,143,106" origin="0.5,0.5" />
-    <Sprite name="Форма наёмника Black Gate" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="690,788,220,96" depth="0.6" origin="0.48533672,0.4793691" />
+    <InventoryIcon name="Форма наёмника Black Gate" texture="%ModDir%/InventoryIcons.png" sourcerect="283,656,143,106" origin="0.5,0.5" />
+    <Sprite name="Форма наёмника Black Gate" texture="%ModDir%/MiscJobGear.png" sourcerect="690,788,220,96" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Uniform Torso" texture="blackgate_clothing.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -46,11 +46,11 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="460,490,114,169" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="460,490,114,169" origin="0.5,0.5" />
     <Sprite texture="armor_blackgate.png" sourcerect="0,32,128,192" depth="0.6" origin="0.451929,0.49907818" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Blackgate Armor" texture="Mods/Project Baro Armor and weapons/Armor/Black_gate/armor_blackgate.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.4482844,0.50393766" scale="0.38" />
+      <sprite name="Blackgate Armor" texture="%ModDir%/Armor/Black_gate/armor_blackgate.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.4482844,0.50393766" scale="0.38" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.35" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -73,11 +73,11 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="323,1,110,96" origin="0.50010884,0.4995133" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/Black_gate/blackgate_helmet.png" sourcerect="47,94,107,88" depth="0.6" origin="0.44169724,0.5883361" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="323,1,110,96" origin="0.50010884,0.4995133" />
+    <Sprite texture="%ModDir%/Armor/Black_gate/blackgate_helmet.png" sourcerect="47,94,107,88" depth="0.6" origin="0.44169724,0.5883361" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="Mods/Project Baro Armor and weapons/Armor/Black_gate/blackgate_helmet.png" limb="Head" inherittexturescale="false" sourcerect="47,94,107,88" origin="0.4441788,0.5853188" scale="0.37" />
+      <sprite texture="%ModDir%/Armor/Black_gate/blackgate_helmet.png" limb="Head" inherittexturescale="false" sourcerect="47,94,107,88" origin="0.4441788,0.5853188" scale="0.37" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -92,7 +92,7 @@
           <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
         </TickBox>
       </CustomInterface>
-      <sprite name="blackgate_hemlet" texture="Mods/Project Baro Armor and weapons/Armor/Black_gate/blackgate_helmet.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="47,94,107,88" origin="0.44914186,0.58230144">
+      <sprite name="blackgate_hemlet" texture="%ModDir%/Armor/Black_gate/blackgate_helmet.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="47,94,107,88" origin="0.44914186,0.58230144">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />

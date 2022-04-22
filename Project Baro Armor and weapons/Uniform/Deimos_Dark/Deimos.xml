@@ -49,8 +49,8 @@
     </Wearable>
   </Item>
   <Item name="Деймос Дарк (Одежда: СБ)" identifier="pj_Deimos_uniformclothesssb" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Удобная одежда с вырезом для протеза" scale="0.5" impactsoundtag="impact_soft">
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="0,653,143,106" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="458,807,207,79" depth="0.6" origin="0.48533672,0.4793691" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="0,653,143,106" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/MiscJobGear.png" sourcerect="458,807,207,79" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
       <sprite name="Deimos_uniform Torso" texture="Deimos_ssb.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Items>
    <Item name="Холодильник" identifier="fridge" tags="container,cookcab,fridge" linkable="true" pickdistance="150" waterproof="true">
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/refrigerator.png" depth="0.84" sourcerect="0,0,100,200" canflipx="false" />
+      <Sprite texture="%ModDir%/Food/Items/refrigerator.png" depth="0.84" sourcerect="0,0,100,200" canflipx="false" />
       <ItemContainer capacity="30" slotsperrow="6" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
          <GuiFrame relativesize="0.25,0.45" anchor="Center" slotsperrow="6" style="ItemUI" />
          <Containable items="smallitem,chem,food,snack" />
       </ItemContainer>
    </Item>
    <Item name="Левосторонний ящик" identifier="cupboardl" tags="container,cookcab,cupboard" linkable="true" pickdistance="150" waterproof="true">
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/cupboardl.png" depth="0.84" sourcerect="0,0,64,64" canflipx="false" />
+      <Sprite texture="%ModDir%/Food/Items/cupboardl.png" depth="0.84" sourcerect="0,0,64,64" canflipx="false" />
       <ItemContainer capacity="10" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
          <GuiFrame relativesize="0.25,0.45" anchor="Center" slotsperrow="5" style="ItemUI" />
          <Containable items="smallitem,chem,food,snack" />
       </ItemContainer>
    </Item>
    <Item name="Правосторонний ящик" identifier="cupboardr" tags="container,cookcab,cupboard" linkable="true" pickdistance="150" waterproof="true">
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/cupboardr.png" depth="0.84" sourcerect="0,0,64,64" canflipx="false" />
+      <Sprite texture="%ModDir%/Food/Items/cupboardr.png" depth="0.84" sourcerect="0,0,64,64" canflipx="false" />
       <ItemContainer capacity="10" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
          <GuiFrame relativesize="0.25,0.45" anchor="Center" slotsperrow="5" style="ItemUI" />
          <Containable items="smallitem,chem,food,snack" />
       </ItemContainer>
    </Item>
    <Item name="Кладовая" identifier="pantry" tags="container,cookcab,pantry" linkable="true" pickdistance="150" waterproof="true">
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/pantry.png" depth="0.84" sourcerect="0,0,71,181" canflipx="false" />
+      <Sprite texture="%ModDir%/Food/Items/pantry.png" depth="0.84" sourcerect="0,0,71,181" canflipx="false" />
       <ItemContainer capacity="30" slotsperrow="6" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
          <GuiFrame relativesize="0.25,0.45" anchor="Center" slotsperrow="6" style="ItemUI" />
          <Containable items="smallitem,chem,food,snack" />
       </ItemContainer>
    </Item>
    <Item name="Плита" identifier="kitchen" tags="kitchen" category="Machine" linkable="true" allowedlinks="fabricator,medicalfabricator,deconstructor,locker,container,cookcab" description="" scale="0.4">
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/kitchen.png" sourcerect="0,0,285,260" depth="0.8" />
+      <Sprite texture="%ModDir%/Food/Items/kitchen.png" sourcerect="0,0,285,260" depth="0.8" />
       <Fabricator canbeselected="true" minvoltage="0.0" powerconsumption="0.0" msg="ItemMsgInteractSelect">
          <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
          <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" loop="true" />
@@ -77,8 +77,8 @@
       <Deconstruct time="10">
          <Item identifier="iron" />
       </Deconstruct>
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
@@ -95,8 +95,8 @@
    	  <Fabricate suitablefabricators="fabricator" requiredtime="20">
          <RequiredItem identifier="carbon" />
       </Fabricate>
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods.png" sourcerect="64,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods.png" sourcerect="64,0,64,64" depth="0.6" origin="0.5,0.5" />
       <Body width="50" height="58" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -113,8 +113,8 @@
       </Fabricate>
       <SuitableTreatment identifier="thirst" suitability="100" />
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="27,24,92,78" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="27,24,92,78" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="27,24,92,78" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="27,24,92,78" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
@@ -135,8 +135,8 @@
 		 <RequiredItem identifier="potassium" />
       </Fabricate>
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="600,36,86,55" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="600,36,86,55" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="600,36,86,55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="600,36,86,55" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -155,8 +155,8 @@
 	     <RequiredItem identifier="elastinplant" /> 
       </Fabricate>
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="883,538,91,49" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="883,538,91,49" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="883,538,91,49" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="883,538,91,49" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -171,8 +171,8 @@
    </Item>
    <Item name="Варёные яйца" identifier="bowl4" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Чашка с варёными яйцами - распространённым пищевым продуктом. В силу доступности в настоящее время самыми распространёнными в употреблении являются яйца подводных тварей." useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="29,789,86,48" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="29,789,86,48" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="29,789,86,48" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="29,789,86,48" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -192,8 +192,8 @@
 	     <RequiredItem identifier="alienblood" mincondition="0.0" usecondition="false" />
       </Fabricate> 
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="601,786,84,52" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="601,786,84,52" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="601,786,84,52" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="601,786,84,52" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
@@ -212,8 +212,8 @@
 	     <RequiredItem identifier="alienblood" mincondition="0.0" usecondition="false" />
       </Fabricate> 
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="599,914,89,47" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="599,914,89,47" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="599,914,89,47" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="599,914,89,47" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -233,8 +233,8 @@
       </Fabricate> 
       <SuitableTreatment identifier="hunger" suitability="100" />
       <SuitableTreatment identifier="thirst" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="752,397,67,80" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="752,397,67,80" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="752,397,67,80" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="752,397,67,80" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -255,8 +255,8 @@
 	     <RequiredItem identifier="pomegrenadeextract" mincondition="0.0" usecondition="false" />
       </Fabricate>  
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="25,540,93,48" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="25,540,93,48" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="25,540,93,48" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="25,540,93,48" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
@@ -275,8 +275,8 @@
 	     <RequiredItem identifier="potassium" mincondition="0.0" usecondition="false" />
       </Fabricate> 
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="887,285,83,55" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="887,285,83,55" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="887,285,83,55" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="887,285,83,55" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -296,8 +296,8 @@
 	     <RequiredItem identifier="alienblood" mincondition="0.0" usecondition="false" />
       </Fabricate>  
       <SuitableTreatment identifier="hunger" suitability="100" />
-      <InventoryIcon texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="456,48,88,27" origin="0.5,0.5" />
-      <Sprite texture="Mods/Project Baro Other items/Food/Items/foods_new.png" sourcerect="456,48,88,27" depth="0.6" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir%/Food/Items/foods_new.png" sourcerect="456,48,88,27" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Food/Items/foods_new.png" sourcerect="456,48,88,27" depth="0.6" origin="0.5,0.5" />
       <Body width="48" height="56" density="20" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
          <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
@@ -326,7 +326,7 @@
 			<StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true">
 				<Affliction identifier="durationincrease" amount="20" />
-				<sound file="Mods/Project Baro Other items/Food/Items/Eat.ogg" type="OnUse" range="500" selectionmode="All" />
+				<sound file="%ModDir%/Food/Items/Eat.ogg" type="OnUse" range="500" selectionmode="All" />
 			</StatusEffect>
 
 			<!-- Remove the item when fully used -->

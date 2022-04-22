@@ -6,7 +6,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="helm" level="40,50" primary="true" />
@@ -94,7 +94,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,727,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="electrical" level="40,50" primary="true" />
@@ -166,7 +166,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="mechanical" level="40,50" primary="true" />
@@ -246,7 +246,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="weapons" level="40,50" primary="true" />
@@ -353,7 +353,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="medical" level="40,50" primary="true" />
@@ -420,7 +420,7 @@
         <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
-        <sprite texture="Mods/Project Baro Other items/Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5" />
+        <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5" />
       </JobiconSmall>
       <Skills>
         <Skill identifier="weapons" level="20,30" />

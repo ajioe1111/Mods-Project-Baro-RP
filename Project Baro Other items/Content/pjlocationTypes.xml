@@ -153,7 +153,7 @@
 
     <Symbol texture="Content/Map/MapAtlas.png" sourcerect="640,512,128,128" color="128,206,175,255"/>
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105"/>
-    <Portrait texture="Mods/Project Baro Other items/Content/pjMenu.png" premultiplyalpha="false"/>
+    <Portrait texture="%ModDir%/Content/pjMenu.png" premultiplyalpha="false"/>
     
     <Hireable identifier="securityofficer" commonness="10"/>
     <Hireable identifier="captain" commonness="3"/>

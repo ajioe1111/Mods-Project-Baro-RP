@@ -10,13 +10,13 @@
       <Item identifier="flashpowder" copycondition="true" />
       <Item identifier="replicatinglatex" copycondition="true" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/grenades.png" sourcerect="163,24,85,164" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Preso/grenades.png" sourcerect="163,24,85,164" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Preso/grenades.png" sourcerect="163,24,85,164" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Preso/grenades.png" sourcerect="163,24,85,164" depth="0.55" origin="0.5,0.5" />
     <Body radius="20" height="10" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnBroken" target="This">
-        <sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latexgrenadebang.ogg" type="OnUse" range="5000" selectionmode="All" />
+        <sound file="%ModDir%/Weapon/Preso/Sounds/latexgrenadebang.ogg" type="OnUse" range="5000" selectionmode="All" />
         <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
         <Explosion range="400.0" structuredamage="1" ballastfloradamage="10" itemdamage="50" force="2" severlimbsprobability="0.5" decal="explosion" decalsize="2.4" colormultiplier="0,0,0,255">
           <Affliction identifier="bleeding" strength="10" />
@@ -47,21 +47,21 @@
       <Item identifier="plastic" copycondition="true" mincondition="0.1" />
       <Item identifier="flashpowder" copycondition="true" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="287,9,33,69" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="287,9,33,69" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="287,9,33,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="287,9,33,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="30" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="10">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/Syringelatex.ogg" range="500" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/Syringelatex.ogg" range="500" />
         <Affliction identifier="nausea" amount="10" />
         <Affliction identifier="burn" amount="8" />
         <Affliction identifier="organdamage" amount="6" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="8">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1200" />
         <Affliction identifier="nausea" amount="5" />
         <Affliction identifier="burn" amount="4" />
         <Affliction identifier="organdamage" amount="3" />
@@ -72,7 +72,7 @@
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="25.0" sticktocharacters="true" launchrotation="-90">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latexfail.ogg" range="1000" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/latexfail.ogg" range="1000" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" duration="10">
         <Affliction identifier="nausea" amount="10" />
@@ -94,15 +94,15 @@
       <Item identifier="plastic" copycondition="true" mincondition="0.1" />
       <Item identifier="flashpowder" copycondition="true" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="322,9,32,69" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="322,9,32,69" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="322,9,32,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="322,9,32,69" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnFailure" target="This" Condition="-50.0" disabledeltatime="true" />
       <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
       <RequiredSkill identifier="medical" level="30" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="15">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/Syringelatex.ogg" range="500" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/Syringelatex.ogg" range="500" />
         <ReduceAffliction type="nausea" amount="5" />
         <ReduceAffliction type="burn" amount="8" />
         <ReduceAffliction identifier="radiationsickness" amount="6" />
@@ -112,7 +112,7 @@
       <ReduceAffliction identifier="presolatexinfection" amount="20" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="10">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1200" />
         <Affliction identifier="nausea" amount="8" />
         <ReduceAffliction type="burn" amount="8" />
         <ReduceAffliction identifier="radiationsickness" amount="4" />
@@ -126,7 +126,7 @@
     </MeleeWeapon>
     <Projectile characterusable="false" launchimpulse="25.0" sticktocharacters="true" launchrotation="-90">
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1000" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/Syringelatexfail.ogg" range="1000" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnImpact" target="Character" duration="10">
         <ReduceAffliction type="nausea" amount="5" />
@@ -145,20 +145,20 @@
     <Deconstruct time="10">
       <RequiredItem identifier="carbon" copycondition="true" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="267,166,51,66" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="267,166,51,66" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="267,166,51,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="267,166,51,66" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="2.0" msg="ItemMsgPickUpSelect">
       <RequiredSkill identifier="medical" level="55" />
       <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="10.0">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latex.ogg" type="OnUse" range="100" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/latex.ogg" type="OnUse" range="100" />
         <Affliction identifier="nausea" amount="3" />
         <Affliction identifier="presolatexinfection" amount="2.5" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="5.0">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latexfail.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/latexfail.ogg" type="OnUse" range="1500" />
         <Affliction identifier="nausea" amount="3" />
         <Affliction identifier="presolatexinfection" amount="1" />
       </StatusEffect>
@@ -175,21 +175,21 @@
     <Deconstruct time="10">
       <Item identifier="incendium" mincondition="0.1" outcondition="0.5" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="268,100,51,66" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Weapon/Preso/medical.png" sourcerect="268,100,51,66" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="268,100,51,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapon/Preso/medical.png" sourcerect="268,100,51,66" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="2.0" msg="ItemMsgPickUpSelect">
       <RequiredSkill identifier="medical" level="55" />
       <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true" />
       <StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
       <StatusEffect tags="medical" type="OnUse" target="Character" duration="20.0">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latex.ogg" type="OnUse" range="100" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/latex.ogg" type="OnUse" range="100" />
         <Affliction identifier="nausea" amount="3" />
         <Affliction identifier="burn" amount="3" />
         <Affliction identifier="organdamage" amount="1" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="Character" duration="10.0">
-        <Sound file="Mods/Project Baro Armor and weapons/Weapon/Preso/Sounds/latexfail.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/Weapon/Preso/Sounds/latexfail.ogg" type="OnUse" range="1500" />
         <Affliction identifier="nausea" amount="1.2" />
         <Affliction identifier="burn" amount="1.75" />
         <Affliction identifier="organdamage" amount="0.5" />

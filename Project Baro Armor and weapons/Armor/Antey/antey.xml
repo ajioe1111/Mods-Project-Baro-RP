@@ -9,8 +9,8 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Костюм Медика Антей" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="139,655,134,102" origin="0.5,0.5" />
-    <Sprite name="Костюм Медика Антей" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="248,800,212,86" depth="0.6" origin="0.48533672,0.4793691" />
+    <InventoryIcon name="Костюм Медика Антей" texture="%ModDir%/InventoryIcons.png" sourcerect="139,655,134,102" origin="0.5,0.5" />
+    <Sprite name="Костюм Медика Антей" texture="%ModDir%/MiscJobGear.png" sourcerect="248,800,212,86" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Uniform Torso" texture="antey_clothing.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="174,15,83,141" origin="0.5,0.5" />
@@ -46,11 +46,11 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="4,327,100,162" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="4,327,100,162" origin="0.5,0.5" />
     <Sprite texture="armor_antey.png" sourcerect="0,32,128,192" depth="0.6" origin="0.451929,0.49907818" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Antey Armor" texture="Mods/Project Baro Armor and weapons/Armor/Antey/armor_antey.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.4482844,0.50393766" scale="0.38" />
+      <sprite name="Antey Armor" texture="%ModDir%/Armor/Antey/armor_antey.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.4482844,0.50393766" scale="0.38" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -81,11 +81,11 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="640,11,102,95" origin="0.50010884,0.4995133" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/Antey/Antey_helmet.png" sourcerect="47,94,108,98" depth="0.6" origin="0.44169724,0.5883361" hidewearablesoftype="Hair" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="640,11,102,95" origin="0.50010884,0.4995133" />
+    <Sprite texture="%ModDir%/Armor/Antey/Antey_helmet.png" sourcerect="47,94,108,98" depth="0.6" origin="0.44169724,0.5883361" hidewearablesoftype="Hair" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="Mods/Project Baro Armor and weapons/Armor/Antey/Antey_helmet.png" limb="Head" inherittexturescale="false" sourcerect="47,94,108,98" origin="0.4441788,0.5853188" scale="0.37" hidewearablesoftype="Hair" />
+      <sprite texture="%ModDir%/Armor/Antey/Antey_helmet.png" limb="Head" inherittexturescale="false" sourcerect="47,94,108,98" origin="0.4441788,0.5853188" scale="0.37" hidewearablesoftype="Hair" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.60" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -104,7 +104,7 @@
           <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
         </TickBox>
       </CustomInterface>
-      <sprite name="Antey_hemlet" texture="Mods/Project Baro Armor and weapons/Armor/Antey/Antey_helmet.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" sourcerect="45,8,83,46" origin="0.44914186,0.58230144" hidewearablesoftype="Hair">
+      <sprite name="Antey_hemlet" texture="%ModDir%/Armor/Antey/Antey_helmet.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" sourcerect="45,8,83,46" origin="0.44914186,0.58230144" hidewearablesoftype="Hair">
         <LightComponent range="320.0" lightcolor="142,1,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />

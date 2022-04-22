@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Armor and weapons" path="Mods/Project Baro Armor and weapons/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257658" installtime="1649338684">
-  <Item file="Mods/Project Baro Armor and weapons/Weapon/gun.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Officer/officer.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Frozen/frozen.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Captain/captain.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Special_Commander/specaarmor.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Special_Solder/specSarmor.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Uniform/Deimos_Dark/Deimos.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Black_gate/blackgate.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Weapon/Preso/items.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/PMC/jobgear.xml" />
-  <Afflictions file="Mods/Project Baro Armor and weapons/Weapon/Preso/Afflictions/afflictions.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Weapon/Thalassophobia/explosives.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/metis.xml" />
-  <Sounds file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/sounds.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Uniform/Adrian_rey/Adrian_rey.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Uniform/Nikita_Babaev/Babaev.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Antey/antey.xml" />
-  <Item file="Mods/Project Baro Armor and weapons/Armor/Liquidator/liquidator.xml" />
+<contentpackage name="Project Baro Armor and weapons" path="%ModDir%/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257658" installtime="1649338684">
+  <Item file="%ModDir%/Weapon/gun.xml" />
+  <Item file="%ModDir%/Armor/Officer/officer.xml" />
+  <Item file="%ModDir%/Armor/Frozen/frozen.xml" />
+  <Item file="%ModDir%/Armor/Captain/captain.xml" />
+  <Item file="%ModDir%/Armor/Special_Commander/specaarmor.xml" />
+  <Item file="%ModDir%/Armor/Special_Solder/specSarmor.xml" />
+  <Item file="%ModDir%/Uniform/Deimos_Dark/Deimos.xml" />
+  <Item file="%ModDir%/Armor/Black_gate/blackgate.xml" />
+  <Item file="%ModDir%/Weapon/Preso/items.xml" />
+  <Item file="%ModDir%/Armor/PMC/jobgear.xml" />
+  <Afflictions file="%ModDir%/Weapon/Preso/Afflictions/afflictions.xml" />
+  <Item file="%ModDir%/Weapon/Thalassophobia/explosives.xml" />
+  <Item file="%ModDir%/Armor/Metis_Group/metis.xml" />
+  <Sounds file="%ModDir%/Armor/Metis_Group/Sounds/sounds.xml" />
+  <Item file="%ModDir%/Uniform/Adrian_rey/Adrian_rey.xml" />
+  <Item file="%ModDir%/Uniform/Nikita_Babaev/Babaev.xml" />
+  <Item file="%ModDir%/Armor/Antey/antey.xml" />
+  <Item file="%ModDir%/Armor/Liquidator/liquidator.xml" />
 </contentpackage>
