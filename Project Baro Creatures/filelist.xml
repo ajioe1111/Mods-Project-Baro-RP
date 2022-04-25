@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Creatures" path="%ModDir%/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637253759" installtime="1647805576">
+<contentpackage name="Project Baro Creatures" modversion="1.0.3" corepackage="False" steamworkshopid="2637253759" gameversion="0.17.12.0">
   <Character file="%ModDir%/Human/Human.xml" />
   <Afflictions file="%ModDir%/Human/Afflictions.xml" />
   <Character file="%ModDir%/IceWhale/IceWhale.xml" />

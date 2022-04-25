@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" path="%ModDir%/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257422" installtime="1649338696">
+<contentpackage name="Project Baro Other items" modversion="1.0.2" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.12.0">
   <UIStyle file="%ModDir%/Content/UI/pj_style.xml" />
   <Sounds file="%ModDir%/Content/pjsounds.xml" />
   <LocationTypes file="%ModDir%/Content/pjlocationTypes.xml" />
-  <None file="%ModDir%/Content/pjMenu.png" />
-  <None file="%ModDir%/Content/Menu Music.ogg" />
-  <None file="%ModDir%/Content/UI/MainMenuVignette.png" />
-  <None file="%ModDir%/Content/UI/InventoryUIAtlas.png" />
-  <None file="%ModDir%/Content/UI/LoadingScreenOverlay.png" />
-  <None file="%ModDir%/Content/UI/titleText.png" />
+  <Other file="%ModDir%/Content/pjMenu.png" />
+  <Other file="%ModDir%/Content/Menu Music.ogg" />
+  <Other file="%ModDir%/Content/UI/MainMenuVignette.png" />
+  <Other file="%ModDir%/Content/UI/InventoryUIAtlas.png" />
+  <Other file="%ModDir%/Content/UI/LoadingScreenOverlay.png" />
+  <Other file="%ModDir%/Content/UI/titleText.png" />
   <Jobs file="%ModDir%/Jobs/Jobs.xml" />
-  <None file="%ModDir%/Food/Items/cupboardl.png" />
-  <None file="%ModDir%/Food/Items/cupboardr.png" />
-  <None file="%ModDir%/Food/Items/Eat.ogg" />
-  <None file="%ModDir%/Food/Items/foods.png" />
-  <None file="%ModDir%/Food/Items/foods_new.png" />
-  <None file="%ModDir%/Food/Items/foods_new.psd" />
-  <None file="%ModDir%/Food/Items/InventoryIconAtlasFood.png" />
+  <Other file="%ModDir%/Food/Items/cupboardl.png" />
+  <Other file="%ModDir%/Food/Items/cupboardr.png" />
+  <Other file="%ModDir%/Food/Items/Eat.ogg" />
+  <Other file="%ModDir%/Food/Items/foods.png" />
+  <Other file="%ModDir%/Food/Items/foods_new.png" />
+  <Other file="%ModDir%/Food/Items/foods_new.psd" />
+  <Other file="%ModDir%/Food/Items/InventoryIconAtlasFood.png" />
   <Item file="%ModDir%/Food/Items/Items.xml" />
-  <None file="%ModDir%/Food/Items/kitchen.png" />
-  <None file="%ModDir%/Food/Items/pantry.png" />
-  <None file="%ModDir%/Food/Items/refrigerator.png" />
+  <Other file="%ModDir%/Food/Items/kitchen.png" />
+  <Other file="%ModDir%/Food/Items/pantry.png" />
+  <Other file="%ModDir%/Food/Items/refrigerator.png" />
   <Item file="%ModDir%/Emitters/Affliction_Emitters.xml" />
   <Item file="%ModDir%/Artifact/items.xml" />
   <Afflictions file="%ModDir%/Afflictions/Afflictions.xml" />
   <Item file="%ModDir%/Item/items.xml" />
   <Item file="%ModDir%/Item/chess/chess.xml" />
   <Afflictions file="%ModDir%/Item/chess/cs_Afflictions.xml" />
-  <None file="%ModDir%/Item/chess/chessset_atlas.png" />
+  <Other file="%ModDir%/Item/chess/chessset_atlas.png" />
   <ItemAssembly file="%ModDir%/Item/chess/ChessSet.xml" />
   <Particles file="%ModDir%/Afflictions/ParticlePrefabs.xml" />
   <Item file="%ModDir%/Item/Thalassophobia/handcuffs/handcuffs.xml" />
@@ -36,6 +36,5 @@
   <Item file="%ModDir%/Music/project-baro-music.xml" />
   <Item file="%ModDir%/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml" />
   <Item file="%ModDir%/Item/alarms/alarms.xml" />
-  <None file="%ModDir%/Lua/Autorun/run.lua" />
- <!--<Structure file="%ModDir%/Item/Decals/Decals.xml" /> --> 
+  <Other file="%ModDir%/Lua/Autorun/run.lua" />
 </contentpackage>

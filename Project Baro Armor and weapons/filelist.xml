@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Armor and weapons" path="%ModDir%/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2637257658" installtime="1649338684">
+<contentpackage name="Project Baro Armor and weapons" modversion="1.0.2" corepackage="False" steamworkshopid="2637257658" gameversion="0.17.12.0">
   <Item file="%ModDir%/Weapon/gun.xml" />
   <Item file="%ModDir%/Armor/Officer/officer.xml" />
   <Item file="%ModDir%/Armor/Frozen/frozen.xml" />
