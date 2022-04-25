@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <sounds>
-  <footstep_armor_gear file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/FootstepGear1.ogg" volume="0.55" range="480"/>
-  <footstep_armor_gear file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/FootstepGear2.ogg" volume="0.55" range="480"/>
-  <footstep_armor_gear file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/FootstepGear3.ogg" volume="0.55" range="480"/>
-  <footstep_armor_gear file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/FootstepGear4.ogg" volume="0.55" range="480"/>
-  <footstep_armor_gear file="Mods/Project Baro Armor and weapons/Armor/Metis_Group/Sounds/FootstepGear5.ogg" volume="0.55" range="480"/>
+  <footstep_armor_gear file="%ModDir%/Armor/Metis_Group/Sounds/FootstepGear1.ogg" volume="0.55" range="480"/>
+  <footstep_armor_gear file="%ModDir%/Armor/Metis_Group/Sounds/FootstepGear2.ogg" volume="0.55" range="480"/>
+  <footstep_armor_gear file="%ModDir%/Armor/Metis_Group/Sounds/FootstepGear3.ogg" volume="0.55" range="480"/>
+  <footstep_armor_gear file="%ModDir%/Armor/Metis_Group/Sounds/FootstepGear4.ogg" volume="0.55" range="480"/>
+  <footstep_armor_gear file="%ModDir%/Armor/Metis_Group/Sounds/FootstepGear5.ogg" volume="0.55" range="480"/>
 </sounds>
-

@@ -1,0 +1,3 @@
+Все sourceerect взяты с HumanEnemyA.png
+Просто наложите в фотошопе HumanEnemyA на Decals.png и дорисовайте всё что надо не выходя за границы
+-k

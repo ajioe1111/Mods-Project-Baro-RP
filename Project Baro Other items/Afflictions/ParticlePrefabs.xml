@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <prefabs>
   <zap startsizemin="0.6,0.6" startsizemax="1.3,1.3" startrotationmin="0" startrotationmax="360" startcolor="255,255,255,200" endcolor="255,255,255,200" lifetime="0.1" growtime="0" velocitychange="0,0" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="30" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" sizechangemin="0,0" sizechangemax="0,0" drawtarget="Both" blendstate="Additive" animduration="1.5" loopanim="False" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
-    <sprite texture="Mods/Project Baro Other items/Afflictions/geneparticles.png" sourcerect="185,143,381,394" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Afflictions/geneparticles.png" sourcerect="185,143,381,394" origin="0.5,0.5" />
   </zap>
 <!-- ДЛЯ ТОГО ЧТОБЫ НЕ ДЕЛАТЬ 2 ПАРТИКЛПРЕФАБ ДЛЯ MALBORASEK ПОСТАВЛЮ ЭФФЕКТ СЮДА-->
   <cigsmoke lifetime="3" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0.2" velocitychangewater="0,0.2" collisionradius="1" collideswithwalls="False" deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="0.01,0.01" startsizemax="0.2,0.2" sizechangemin="0.01,0.01" sizechangemax="0.1,0.1" growtime="0.1" startcolor="0.5,0.5,0.5,0.5" startalpha="1" colorchange="-0.1,-0.1,-0.1,-0.2" drawtarget="air" blendstate="AlphaBlend" animduration="3" loopanim="True">
-    <animatedsprite texture="Mods/Project Baro Other items\Item\malborasek\Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
+    <animatedsprite texture="%ModDir%/Item/malborasek/Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
   </cigsmoke>
   </prefabs>

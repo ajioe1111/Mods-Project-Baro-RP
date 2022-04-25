@@ -1,124 +1,44 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
-  <Affliction
-    name="Голод"
-    identifier="hunger"
-	description="Потребность в еде"
-    type="hunger"
-	causeofdeathdescription="Голодание"
-	selfcauseofdeathdescription="Вы погибли от голода."
-    limbspecific="false"
-    indicatorlimb="Torso"
-    showiconthreshold="0"
-    karmachangeonapplied="0"
-    maxstrength="400">
+  <Affliction name="Голод" identifier="hunger" description="Потребность в еде" type="hunger" causeofdeathdescription="Голодание" selfcauseofdeathdescription="Вы погибли от голода." limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" karmachangeonapplied="0" maxstrength="400">
     <!-- Slow the player down -->
-    <Effect minstrength="0" maxstrength="275"
-      strengthchange="0.03">
+    <Effect minstrength="0" maxstrength="275" strengthchange="0.03"></Effect>
+    <Effect minstrength="275" maxstrength="320" dialogflag="Недоедание" strengthchange="0.02" minscreendistort="0.0" maxscreendistort="0.1" minscreenblur="0.0" maxscreenblur="0.1">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.8" />
     </Effect>
-    <Effect minstrength="275" maxstrength="320"
-	  dialogflag="Недоедание"
-      strengthchange="0.02"
-      minscreendistort="0.0"
-      maxscreendistort="0.1"
-      minscreenblur="0.0"
-      maxscreenblur="0.1">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.8"/>
+    <Effect minstrength="320" maxstrength="350" dialogflag="Недоедание" strengthchange="0.02" minscreendistort="0.1" maxscreendistort="0.2" minscreenblur="0.1" maxscreenblur="0.2">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.7" />
     </Effect>
-    <Effect minstrength="320" maxstrength="350"
-	  dialogflag="Недоедание"
-      strengthchange="0.02"
-      minscreendistort="0.1"
-      maxscreendistort="0.2"
-      minscreenblur="0.1"
-      maxscreenblur="0.2">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.7"/>
+    <Effect minstrength="350" maxstrength="370" dialogflag="Голодание" strengthchange="0.02" minscreendistort="0.2" maxscreendistort="0.3" minscreenblur="0.2" maxscreenblur="0.3">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.6" />
     </Effect>
-    <Effect minstrength="350" maxstrength="370"
-	  dialogflag="Голодание"
-      strengthchange="0.02"
-      minscreendistort="0.2"
-      maxscreendistort="0.3"
-      minscreenblur="0.2"
-      maxscreenblur="0.3">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.6"/>
+    <Effect minstrength="370" maxstrength="390" dialogflag="Голодание" strengthchange="0.02" minscreendistort="0.3" maxscreendistort="0.4" minscreenblur="0.3" maxscreenblur="0.4">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5" />
     </Effect>
-    <Effect minstrength="370" maxstrength="390"
-	  dialogflag="Голодание"
-      strengthchange="0.02"
-      minscreendistort="0.3"
-      maxscreendistort="0.4"
-      minscreenblur="0.3"
-      maxscreenblur="0.4">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"/>
+    <Effect minstrength="390" maxstrength="400" multiplybymaxvitality="true" dialogflag="Истощение" minvitalitydecrease="0" maxvitalitydecrease="1" strengthchange="0.02" minscreendistort="0.4" maxscreendistort="0.5" minscreenblur="0.4" maxscreenblur="0.5">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5" />
     </Effect>
-    <Effect minstrength="390" maxstrength="400" multiplybymaxvitality="true"
-	  dialogflag="Истощение"
-	  minvitalitydecrease="0"
-	  maxvitalitydecrease="1"
-      strengthchange="0.02"
-      minscreendistort="0.4"
-      maxscreendistort="0.5"
-      minscreenblur="0.4"
-      maxscreenblur="0.5">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"/>
-    </Effect>
-    <icon texture="Mods/Project Baro Creatures/Human/HungerIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Human/HungerIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0" />
   </Affliction>
-  <Affliction
-    name="Жажда"
-    identifier="thirst"
-	description="Потребность в воде"
-    type="thirst"
-	causeofdeathdescription="Погиб от обезвоживания."
-	selfcauseofdeathdescription="Вы погибли от обезвоживания."
-    limbspecific="false"
-    indicatorlimb="Head"
-    showiconthreshold="0"
-    karmachangeonapplied="0"
-    maxstrength="400">
+  <Affliction name="Жажда" identifier="thirst" description="Потребность в воде" type="thirst" causeofdeathdescription="Погиб от обезвоживания." selfcauseofdeathdescription="Вы погибли от обезвоживания." limbspecific="false" indicatorlimb="Head" showiconthreshold="0" karmachangeonapplied="0" maxstrength="400">
     <!-- Slow the player down -->
-    <Effect minstrength="0" maxstrength="270"
-      strengthchange="0.04">
+    <Effect minstrength="0" maxstrength="270" strengthchange="0.04"></Effect>
+    <Effect minstrength="270" maxstrength="320" dialogflag="Слабое обезвоживание" strengthchange="0.03" minscreenblur="0.0" maxscreenblur="0.1">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.9" />
     </Effect>
-    <Effect minstrength="270" maxstrength="320"
-	  dialogflag="Слабое обезвоживание"
-      strengthchange="0.03"
-      minscreenblur="0.0"
-      maxscreenblur="0.1">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.9"/>
+    <Effect minstrength="320" maxstrength="350" dialogflag="Слабое обезвоживание" strengthchange="0.03" minscreenblur="0.1" maxscreenblur="0.2">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.8" />
     </Effect>
-    <Effect minstrength="320" maxstrength="350"
-	  dialogflag="Слабое обезвоживание"
-      strengthchange="0.03"
-      minscreenblur="0.1"
-      maxscreenblur="0.2">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.8"/>
+    <Effect minstrength="350" maxstrength="370" dialogflag="Среднее обезвоживание" strengthchange="0.03" minscreenblur="0.2" maxscreenblur="0.3">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.7" />
     </Effect>
-    <Effect minstrength="350" maxstrength="370"
-	  dialogflag="Среднее обезвоживание"
-      strengthchange="0.03"
-      minscreenblur="0.2"
-      maxscreenblur="0.3">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.7"/>
+    <Effect minstrength="370" maxstrength="390" dialogflag="Среднее обезвоживание" strengthchange="0.03" minscreenblur="0.3" maxscreenblur="0.4">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.6" />
     </Effect>
-    <Effect minstrength="370" maxstrength="390"
-	  dialogflag="Среднее обезвоживание"
-      strengthchange="0.03"
-      minscreenblur="0.3"
-      maxscreenblur="0.4">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.6"/>
+    <Effect minstrength="390" maxstrength="400" multiplybymaxvitality="true" dialogflag="Сильное обезвоживание" minvitalitydecrease="0" maxvitalitydecrease="1" strengthchange="0.03" minscreenblur="0.4" maxscreenblur="0.5">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5" />
     </Effect>
-    <Effect minstrength="390" maxstrength="400" multiplybymaxvitality="true"
-	  dialogflag="Сильное обезвоживание"
-	  minvitalitydecrease="0"
-	  maxvitalitydecrease="1"
-      strengthchange="0.03"
-      minscreenblur="0.4"
-      maxscreenblur="0.5">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"/>
-    </Effect>
-    <icon texture="Mods/Project Baro Creatures/Human/ThirstIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0"/>
+    <icon texture="%ModDir%/Human/ThirstIcon.png" sourcerect="0,0,128,128" color="0,255,0,255" origin="0,0" />
   </Affliction>
   <Affliction name="Слепота" identifier="blinded" description="Глаза слезятся, становится трудно видеть" type="resistance" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" maxstrength="30">
     <Effect minstrength="0" maxstrength="5" strengthchange="-1.0" minradialdistort="0.0" maxradialdistort="10.0" minscreendistort="0.0" maxscreendistort="1.0" minscreenblur="0" maxscreenblur="10.0">
@@ -127,97 +47,33 @@
     <Effect minstrength="5" maxstrength="30" strengthchange="-1.0" minradialdistort="10.0" maxradialdistort="30.0" minscreendistort="1.0" maxscreendistort="3.0" minscreenblur="10.0" maxscreenblur="50.0">
       <StatusEffect target="Character" ObstructVision="true" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
     </Effect>
-    <icon name="blinded" texture="Mods/Project Baro Creatures/Human/BlindedIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
-  </Affliction>  
+    <icon name="blinded" texture="%ModDir%/Human/BlindedIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>
   <Affliction name="Сердцебиение" identifier="heartbeat" description="Вы слышите своё же сердцебиение." type="resistance" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" showinhealthscannerthreshold="10000" maxstrength="50">
-   <Effect minstrength="0" maxstrength="100" strengthchange="-1.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1.0">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
-	  <Conditional IsLocalPlayer="True" />
-      <sound file="Mods/Project Baro Creatures/Human/heartbeat.ogg" volume="1.5"/>
+        <Conditional IsLocalPlayer="True" />
+        <sound file="%ModDir%/Human/heartbeat.ogg" volume="1.9" />
       </StatusEffect>
     </Effect>
-    <icon name="heartbeat" texture="Mods/Project Baro Creatures/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon name="heartbeat" texture="%ModDir%/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
   <Affliction name="Сердцебиение(Постоянное)" identifier="heartbeateternal" description="Вы слышите своё же сердцебиение." type="resistance" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" showinhealthscannerthreshold="10000" maxstrength="100">
-   <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
       <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
-	  <Conditional IsLocalPlayer="True" />
-      <sound file="Mods/Project Baro Creatures/Human/heartbeat.ogg" volume="1.5"/>
+        <Conditional IsLocalPlayer="True" />
+        <sound file="%ModDir%/Human/heartbeat.ogg" volume="1.5" />
       </StatusEffect>
     </Effect>
-    <icon name="heartbeat" texture="Mods/Project Baro Creatures/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
-  </Affliction> 
-	<Affliction
-    name="Никотиновая зависимость"
-    identifier="nicotineaddiction"
-    description="Потребность в курении табачных изделий."
-    type="poison"
-    limbspecific="false"
-    indicatorlimb="Head"
-    showiconthreshold="20"
-    maxstrength="100"
-    karmachangeonapplied="-0.1"
-    healcostmultiplier="2.85">
-    <Effect minstrength="0" maxstrength="20" strengthchange="-0.05"/>
-
-    <Effect minstrength="20" maxstrength="40" strengthchange="-0.05">
-      <StatusEffect target="Character">
-        <Affliction identifier="nicotinewithdrawal" strength="0.1"/>
-      </StatusEffect>
-    </Effect>
-
-    <Effect minstrength="40" maxstrength="80" strengthchange="-0.1">
-      <StatusEffect target="Character">
-        <Affliction identifier="nicotinewithdrawal" strength="0.25"/>
-      </StatusEffect>
-    </Effect>
-
-    <Effect minstrength="80" maxstrength="100" strengthchange="-0.1"
-      minvitalitydecrease="0"
-      maxvitalitydecrease="20">
-      <StatusEffect target="Character">
-        <Affliction identifier="nicotinewithdrawal" strength="0.5"/>
-      </StatusEffect>
-    </Effect>
-
-    <icon texture="Mods/Project Baro Other items\Item\malborasek\Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon name="heartbeat" texture="%ModDir%/Human/HeartbeatIcon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
-  <Affliction
-    name="Никтотиновая ломка"
-    identifier="nicotinewithdrawal"
-    description="Волнение и тремор."
-    type="poison"
-    causeofdeathdescription="Смерть от никотиновой ломки"
-    selfcauseofdeathdescription="Вы умерли от никотиновой ломки."
-    limbspecific="false"
-    indicatorlimb="Head"
-    showiconthreshold="20"
-    maxstrength="100"
-    healcostmultiplier="1.75">
-    <!-- Slow down the character and slightly decrease vitality -->
-    <Effect minstrength="20" maxstrength="40"
-      minvitalitydecrease="0"
-      maxvitalitydecrease="20"
-      strengthchange="-0.05"
-      minchromaticaberration="0.0"
-      maxchromaticaberration="1.0"
-      dialogflag="nicotinewithdrawalLow"
-      minfacetint="255,255,255,0"
-      maxfacetint="255,255,255,50">
+  <Affliction name="Перелом" identifier="broken_bone" description="Перелом кости." type="broken" limbspecific="true" indicatorlimb="" activationthreshold="0" showiconthreshold="0" minstrength="10" maxstrength="100">
+    <Effect minstrength="10" maxstrength="20" minvitalitydecrease="3" maxvitalitydecrease="5">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" ></StatusEffect>
     </Effect>
-
-    <!-- Decrease vitality more. The strength of the affliction drops faster, meaning that 
-    the character needs a stronger opiate addiction for the withdrawal symptoms to stay at this level -->
-    <Effect minstrength="40" maxstrength="100"
-      minvitalitydecrease="20"
-      maxvitalitydecrease="50"
-      strengthchange="-0.1"
-      minchromaticaberration="1.0"
-      maxchromaticaberration="5.0"
-      dialogflag="nicotinewithdrawalMedium"
-      minfacetint="255,255,255,50"
-      maxfacetint="255,255,255,100">
+    <Effect minstrength="20" maxstrength="100" minvitalitydecrease="5" maxvitalitydecrease="12" strengthchange="-1.0">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"></StatusEffect>
     </Effect>
-	    <icon texture="Mods/Project Baro Other items\Item\malborasek\Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+    <icon texture="%ModDir%/Human/Broken Bone.png" color=" 195,136,60,255" origin=" 0,0" />
   </Affliction>
 </Afflictions>

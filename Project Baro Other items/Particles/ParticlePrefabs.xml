@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <prefabs>
   <pj_dust startsizemin="3,3" startsizemax="3,3" sizechangemin="-4,-4" sizechangemax="-4,-4" startrotationmin="0" startrotationmax="360" angularvelocitymin="90" angularvelocitymax="90" startcolor="255,255,255,10" endcolor="150,150,150,255" growtime="0" lifetime="0.7" drawtarget="Air" velocitychange="0,0" startdelaymin="0" startdelaymax="0" rotatetodirection="False" drag="0" waterdrag="0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0" restitution="0" blendstate="AlphaBlend" animduration="1" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False">
-    <sprite texture="Mods/Project Baro Other items/Particles/cultparticles.png" sourcerect="661,42,140,137" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Particles/cultparticles.png" sourcerect="661,42,140,137" origin="0.5,0.5" />
   </pj_dust>
 </prefabs>

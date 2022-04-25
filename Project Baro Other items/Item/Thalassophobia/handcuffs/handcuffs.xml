@@ -35,7 +35,7 @@
           <GuiFrame relativesize="0.3,0.1" anchor="BottomCenter" absoluteoffset="0,0" style="ItemUI" />
           <Tickbox text="Struggle (Disables Movement)">
             <StatusEffect type="OnUse" target="This" condition="-0.015" IsOn="true">
-              <Sound file="Mods/Project Baro Other items/Item/Thalassophobia/handcuffs/cuffsbreakout.ogg" range="800" loop="true" />
+              <Sound file="%ModDir%/Item/Thalassophobia/handcuffs/cuffsbreakout.ogg" range="800" loop="true" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="true" isshootable="true" />
             <StatusEffect type="OnSecondaryUse" target="This" condition="100" setvalue="true" IsOn="false" isshootable="false" />
@@ -43,7 +43,7 @@
         </CustomInterface>
         <StatusEffect type="OnBroken" target="This">
           <SpawnItem identifier="handcuffs" spawnposition="This" />
-          <Sound file="Mods/Project Baro Other items/Item/Thalassophobia/handcuffs/cuffbreak.ogg" range="1200" />
+          <Sound file="%ModDir%/Item/Thalassophobia/handcuffs/cuffbreak.ogg" range="1200" />
           <Remove />
         </StatusEffect>
       </Wearable>
