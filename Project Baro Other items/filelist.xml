@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< Updated upstream
 <contentpackage name="Project Baro Other items" modversion="1.0.2" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.12.0">
+=======
+<contentpackage name="Project Baro Other items" modversion="1.0.3" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.12.0">
+>>>>>>> Stashed changes
   <UIStyle file="%ModDir%/Content/UI/pj_style.xml" />
   <Sounds file="%ModDir%/Content/pjsounds.xml" />
   <LocationTypes file="%ModDir%/Content/pjlocationTypes.xml" />
