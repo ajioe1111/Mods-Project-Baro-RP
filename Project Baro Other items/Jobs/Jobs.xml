@@ -417,7 +417,7 @@
   <Override>
     <Job identifier="assistant" minkarma="0" allowalways="true" vitalitymodifier="0" pricemultiplier="0.8" idlebehavior="Active">
       <Jobicon>
-        <sprite texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5" />
+        <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5" />
       </Jobicon>
       <JobiconSmall>
         <sprite texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5" />
