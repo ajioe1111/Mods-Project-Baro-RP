@@ -113,4 +113,24 @@
     <Effect minstrength="480" maxstrength="500" minvitalitydecrease="20" maxvitalitydecrease="40" strengthchange="0.1" minchromaticaberration="1.0" maxchromaticaberration="5.0" dialogflag="nicotinewithdrawalMedium" minfacetint="255,255,255,50" maxfacetint="255,255,255,100"></Effect>
     <icon texture="%ModDir%/Item/malborasek/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
   </Affliction>
+  <Affliction name="Клеймо" identifier="brand" description="" type="poison" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="10000" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="1">
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction identifier="internaldamage" strength="0.007" />
+        <ReduceAffliction identifier="blunttrauma" strength="0.007" />
+        <ReduceAffliction identifier="lacerations" strength="0.007" />
+        <ReduceAffliction identifier="bitewounds" strength="0.007" />
+        <ReduceAffliction identifier="gunshotwound" strength="0.007" />
+        <ReduceAffliction identifier="organdamage" strength="0.007" />
+        <ReduceAffliction identifier="explosiondamage" strength="0.007" />
+        <ReduceAffliction identifier="bleeding" strength="0.01" />
+        <ReduceAffliction identifier="burn" strength="0.007" />
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional health="lt -2" />
+        <ReduceAffliction identifier="oxygenlow" strength="0.01" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="695,895,129,128" color="0,255,0,255" origin="0,0" />
+  </Affliction>
 </Afflictions>
