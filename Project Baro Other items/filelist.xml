@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< Updated upstream
-<contentpackage name="Project Baro Other items" modversion="1.0.2" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.12.0">
-=======
-<contentpackage name="Project Baro Other items" modversion="1.0.3" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.12.0">
->>>>>>> Stashed changes
+<contentpackage name="Project Baro Other items" modversion="1.0.4" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.15.0">
   <UIStyle file="%ModDir%/Content/UI/pj_style.xml" />
   <Sounds file="%ModDir%/Content/pjsounds.xml" />
   <LocationTypes file="%ModDir%/Content/pjlocationTypes.xml" />
@@ -41,4 +37,5 @@
   <Item file="%ModDir%/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml" />
   <Item file="%ModDir%/Item/alarms/alarms.xml" />
   <Other file="%ModDir%/Lua/Autorun/run.lua" />
+  <Sounds file="%ModDir%/Sounds/sounds.xml" />
 </contentpackage>

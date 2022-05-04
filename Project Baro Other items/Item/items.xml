@@ -213,12 +213,9 @@
     <Deconstruct time="10">
       <Item identifier="aluminium" outcondition="0.1" />
     </Deconstruct>
-<<<<<<< Updated upstream
-=======
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
       <RequiredItem identifier="organicfiber" />
     </Fabricate>
->>>>>>> Stashed changes
     <Sprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,1,17,2" depth="0.55" />
     <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,4,17,2" depth="0.55" maxcondition="99" />
     <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,7,17,2" depth="0.55" maxcondition="40" />
@@ -228,17 +225,6 @@
     <RepairTool>
       <ParticleEmitter particle="cigsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
       <LightComponent LightColor="1.0,0.5,0.5,0.2" Flicker="0.4" range="50" IsOn="false">
-<<<<<<< Updated upstream
-    <StatusEffect type="OnUse" target="This" Condition="-4.0">
-      <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
-    </StatusEffect>
-    <StatusEffect tags="medical" type="OnUse" target="Character">
-     <Affliction identifier="psychosisresistance" amount="10" />
-     <Affliction identifier="nicotineaddiction" amount="10" />
-	 <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
-     <ReduceAffliction identifier="psychosis" amount="1.5" />
-    </StatusEffect>
-=======
         <StatusEffect type="OnUse" target="This" Condition="-4.0">
           <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
         </StatusEffect>
@@ -247,7 +233,6 @@
           <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
           <ReduceAffliction identifier="psychosis" amount="1.5" />
         </StatusEffect>
->>>>>>> Stashed changes
         <StatusEffect type="InWater" target="This" IsOn="false" />
         <StatusEffect type="OnFire" target="This" Condition="-20" IsOn="true" />
         <StatusEffect type="OnFire" target="This">
@@ -258,55 +243,6 @@
     </RepairTool>
     <Holdable slots="RightHand,LeftHand,Any" controlpose="true" aimpos="30,18" handle1="0,0" handle2="0,0" />
   </Item>
-<<<<<<< Updated upstream
-  <Item
-    name="Пачка сигарет"
-	identifier="cigpack"
-    category="Misc"
-    Tags="cntnr,smallitem"
-    description="">
-    <Sprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="39,1,10,20" depth="0.55"/>
-	<BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true"/>
-    <Body width="6" height="16" density="9.8"/>
-	<Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="2" aimpos="35,-10">
-	  <StatusEffect type="OnFire" target="This" Condition="-10"/>
-	  <StatusEffect type="OnFire" target="This">
-		<Remove/>
-	  </StatusEffect>
-	</Throwable>
-	<ItemContainer capacity="12" canbeselected="true" hideitems="true" keepopenwhenequipped="true">
-      <Containable items="cigarette"/>
-    </ItemContainer>
-</Item>
-<override>
-  <Item name="" identifier="captainspipe" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true" requireaimtouse="true">
-    <PreferredContainer primary="crewcab" spawnprobability="0.01"/>
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer secondary="locker"/>
-    <Price baseprice="50" >
-      <Price locationtype="outpost" multiplier="1" />
-      <Price locationtype="city" multiplier="1" />
-      <Price locationtype="research" multiplier="1" />
-      <Price locationtype="military" multiplier="1" />
-      <Price locationtype="mine" multiplier="1" />
-    </Price>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
-    <Body width="58" height="20" />
-    <Holdable slots="Any,RightHand" aimable="false" aimpos="28,10" handle1="10,-5" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnUse" target="This">
-        <ParticleEmitter particle="swirlysmoke" particlespersecond="1" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10"/>
-        <RequiredItem items="pipetobacco" type="Contained" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Contained" Condition="-4.0" disabledeltatime="false">
-        <RequiredItem items="pipetobacco" type="Contained" />
-      </StatusEffect>
-      <StatusEffect tags="medical" type="OnUse" target="Character">
-        <Affliction identifier="psychosisresistance" amount="10" />
-	    <Affliction identifier="nicotineaddiction" amount="10" />
-	    <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
-        <RequiredItem items="pipetobacco" type="Contained" />
-=======
   <Item name="Пачка сигарет" identifier="cigpack" category="Misc" Tags="cntnr,smallitem" description="">
     <Sprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="39,1,10,20" depth="0.55" />
     <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true" />
@@ -315,99 +251,11 @@
       <StatusEffect type="OnFire" target="This" Condition="-10" />
       <StatusEffect type="OnFire" target="This">
         <Remove />
->>>>>>> Stashed changes
       </StatusEffect>
     </Throwable>
     <ItemContainer capacity="12" canbeselected="true" hideitems="true" keepopenwhenequipped="true">
       <Containable items="cigarette" />
     </ItemContainer>
-<<<<<<< Updated upstream
-  </Item>
-</override>
-<override>
- <Item name="" identifier="cigar" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="true">
-    <PreferredContainer primary="crewcab"/>
-    <PreferredContainer secondary="locker" />
-    <Price baseprice="150" soldeverywhere="false" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
-      <RequiredItem identifier="pipetobacco" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="174,234,42,50" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,60,50,12" depth="0.55" origin="0.5,0.5" />
-    <Body width="45" height="10" />
-    <Holdable slots="Any,RightHand" aimable="false" aimpos="30,14" handle1="0,-10" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnUse" target="This" Condition="-4.0">
-        <ParticleEmitter particle="swirlysmoke" particlespersecond="2" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
-      </StatusEffect>
-      <StatusEffect tags="medical" type="OnUse" target="Character">
-        <Affliction identifier="psychosisresistance" amount="10" />
-	    <Affliction identifier="nicotineaddiction" amount="10" />
-	    <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
-        <ReduceAffliction identifier="psychosis" amount="1.5" />
-        <ReduceAffliction identifier="reaperstax" amount="1" />
-        <ReduceAffliction identifier="hallucinating" amount="5" />
-        <ReduceAffliction identifier="watchersgaze" amount="5" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-</override>
-<Override>
-  <Plastiseal name="" identifier="antibleeding2" category="Medical" Tags="smallitem,medical" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <PreferredContainer primary="medcab" minamount="4" maxamount="6" />
-    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.4" />
-    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="4" spawnprobability="0.25" />
-    <PreferredContainer secondary="locker"/>
-    <Price baseprice="100">
-      <Price storeidentifier="merchantmedical" minavailable="12" />
-    </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="2">
-      <RequiredSkill identifier="medical" level="16" />
-      <RequiredItem identifier="antibleeding1" />
-      <RequiredItem identifier="elastin" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="organicfiber" mincondition="0.1" outcondition="0.25" />
-      <Item identifier="elastin" mincondition="0.1" outcondition="0.5" />
-    </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="340,33,26,42" depth="0.6" origin="0.5,0.5" />
-    <Body width="25" height="40" density="20" />
-    <SuitableTreatment type="bleeding" suitability="50" />
-    <SuitableTreatment type="burn" suitability="50" /> 
-    <SuitableTreatment type="broken_bone" suitability="90" />
-    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
-      <RequiredSkill identifier="medical" level="22" />
-      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-      <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="5.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
-        <ReduceAffliction type="bleeding" amount="10" />
-        <ReduceAffliction type="burn" amount="10" />
-      </StatusEffect>
-      <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="3.5">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
-        <ReduceAffliction type="broken_bone" amount="1" />
-      </StatusEffect>
-      <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="5.0">
-        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
-        <ReduceAffliction type="bleeding" amount="7.5" />
-        <ReduceAffliction type="burn" amount="7.5" />
-      </StatusEffect>
-      <!-- Remove the item when fully used -->
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </MeleeWeapon>
-  </Plastiseal>
-</Override>
-=======
     <Fabricate suitablefabricators="fabricator" requiredtime="7">
       <RequiredItem identifier="plastic" />
     </Fabricate>
@@ -530,5 +378,4 @@
       </MeleeWeapon>
     </Plastiseal>
   </Override>
->>>>>>> Stashed changes
 </Items>

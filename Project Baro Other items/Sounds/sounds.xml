@@ -1,0 +1,4 @@
+<sounds> 
+  <footstep_exo file="%ModDir%/Sounds/exo_footstep_2.ogg" range="800"/>
+  <footstep_exo file="%ModDir%/Sounds/exo_footstep_3.ogg" range="800"/>
+</sounds>
