@@ -41,4 +41,5 @@
   <Item file="%ModDir%/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml" />
   <Item file="%ModDir%/Item/alarms/alarms.xml" />
   <Other file="%ModDir%/Lua/Autorun/run.lua" />
+  <None file="%ModDir%/Content/UI/MainIconsAtlas.png" />
 </contentpackage>
