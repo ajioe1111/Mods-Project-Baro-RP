@@ -198,63 +198,51 @@
         <override language="Simplified Chinese" texture="%ModDir%/Content/UI/titleText.png" sourcerect="0,176,1024,343" />
       </Sprite>
     </TitleText>
-    <project-baro-music_cover_dm color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_dm" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_dm>
-    <project-baro-music_cover_deadmansbones color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_deadmansbones" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_deadmansbones>
-    <project-baro-music_cover_schritte color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_schritte" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_schritte>
-    <project-baro-music_cover_kino_gruppakrovi color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_kino_gruppakrovi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_kino_gruppakrovi>
-    <project-baro-music_cover_kino_zvezda color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_kino_zvezda" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_kino_zvezda>
-    <project-baro-music_cover_kino_peremen color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_kino_peremen" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_kino_peremen>
-    <project-baro-music_cover_kino_noch color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_kino_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_kino_noch>
-    <project-baro-music_cover_kino_poslednii_geroi color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_kino_poslednii_geroi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_kino_poslednii_geroi>
-    <project-baro-music_cover_original_1 color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_original_1" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_original_1>
-    <project-baro-music_cover_original_2 color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_original_2" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_original_2>
-    <project-baro-music_cover_mike_oldfield_nuclear color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_mike_oldfield_nuclear" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_mike_oldfield_nuclear>
-    <project-baro-music_cover_grs_rukava color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_grs_rukava" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_grs_rukava>
-    <project-baro-music_cover_hata_belaya_noch color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_hata_belaya_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_hata_belaya_noch>
-    <project-baro-music_cover_animatsiya color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_animatsiya" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_animatsiya>
-    <project-baro-music_cover_mysterioussong color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_mysterioussong" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_mysterioussong>
-    <project-baro-music_cover_sinkingships color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_sinkingships" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1536,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_sinkingships>
-    <project-baro-music_cover_eyedress color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_eyedress" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_eyedress>
-    <project-baro-music_cover_clown color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_clown" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_clown>
-    <project-baro-music_cover_space color="255,255,255,255" textcolor="0,0,0,255">
-      <Sprite name="project-baro-music_cover_space" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
-    </project-baro-music_cover_space>
+  <project-baro-music_cover_deadmansbones color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_deadmansbones" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_deadmansbones>
+  <project-baro-music_cover_hata_belaya_noch color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_hata_belaya_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_hata_belaya_noch>
+  <project-baro-music_cover_kino_gruppakrovi color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_gruppakrovi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,0,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_gruppakrovi>
+  <project-baro-music_cover_kino_noch color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_noch" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_noch>
+  <project-baro-music_cover_kino_peremen color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_peremen" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_peremen>
+  <project-baro-music_cover_kino_poslednii_geroi color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_poslednii_geroi" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,328,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_poslednii_geroi>
+  <project-baro-music_cover_kino_zvezda color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_kino_zvezda" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_kino_zvezda>
+  <project-baro-music_cover_mysterioussong color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_mysterioussong" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_mysterioussong>
+  <project-baro-music_cover_sinkingships color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_sinkingships" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,656,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_sinkingships>
+  <project-baro-music_cover_original_2 color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_original_2" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_original_2>
+  <project-baro-music_cover_animatsiya color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_animatsiya" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_animatsiya>
+  <project-baro-music_cover_space color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_space" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,984,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_space>
+  <project-baro-music_cover_letitrain color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_letitrain" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="0,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_letitrain>
+  <project-baro-music_cover_timetomoveon color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_timetomoveon" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="512,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_timetomoveon>
+  <project-baro-music_cover_acrosstheskyline color="255,255,255,255" textcolor="0,0,0,255">
+    <Sprite name="project-baro-music_cover_acrosstheskyline" texture="%ModDir%/Music/covers.png" size="0.0, 0.0" sourcerect="1024,1312,512,328" origin="0.5,0.5" compress="false" tile="false"/>
+  </project-baro-music_cover_acrosstheskyline>
     <InnerGlow color="255,255,255,204" hovercolor="255,255,255,204" selectedcolor="255,255,255,204">
       <Sprite texture="Content/UI/InnerGlow.png" sourcerect="0,0,512,384" slice="128,128,384,256"/>
     </InnerGlow>

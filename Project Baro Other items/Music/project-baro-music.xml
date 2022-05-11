@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="Кассетный Магнитофон" cargocontaineridentifier="metalcrate" identifier="project-baro-music-boombox" category="Equipment" Tags="mediumitem,boombox,sunken-tapes-player" scale="0.5" description="" price="850" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -57,8 +57,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Коричневый)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-brown" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="350" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
     <Price baseprice="300" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -111,8 +111,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Серебро)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-silver" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -165,8 +165,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Черный)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-black" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -219,8 +219,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Синий)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-blue" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
+    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -275,68 +275,20 @@
   <!-- Cassette Tapes -->
 
   
-  <Item name="Кассета: Menace Ruine - Dark Mother" identifier="project-baro-music-cassette-dm" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+  <Item name="Кассета: DeadMansBonesBand - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете муражки по вашей коже..." scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="0"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,0,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,0,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_dm" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-dm" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-dm" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Dead Man's Bones - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0"/>
-    <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,0,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,0,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -377,18 +329,20 @@
   </Item>
 
   
-  <Item name="Кассета: Inka - Schritte" identifier="project-baro-music-cassette-schritte" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="500" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+  <Item name="Кассета: Черниковская Хата - Белая Ночь" identifier="project-baro-music-cassette-hata_belaya_noch" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,0,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,0,33,21" depth="0.6" origin="0.5,0.5" />
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,0,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,0,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -396,7 +350,7 @@
       </StatusEffect>
     </Throwable>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_schritte" />
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_hata_belaya_noch" />
     </CustomInterface>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
       <StatusEffect type="OnNotContained" targettype="Contained">
@@ -409,12 +363,12 @@
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="boombox" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-schritte" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-hata_belaya_noch" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="walkman" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-schritte" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-hata_belaya_noch" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained">
         <Use />
@@ -429,18 +383,20 @@
   </Item>
 
   
-  <Item name="Кассета: Группа КИНО - Группа Крови" identifier="project-baro-music-cassette-kino_gruppakrovi" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: Группа КИНО - Группа крови" identifier="project-baro-music-cassette-kino_gruppakrovi" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="192,0,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="99,0,33,21" depth="0.6" origin="0.5,0.5" />
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,0,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,0,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -481,16 +437,18 @@
   </Item>
 
   
-  <Item name="Кассета: Группа КИНО - Звезда" identifier="project-baro-music-cassette-kino_zvezda" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: Группа КИНО - Спокойная ночь" identifier="project-baro-music-cassette-kino_noch" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,41,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
@@ -500,7 +458,7 @@
       </StatusEffect>
     </Throwable>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_kino_zvezda" />
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_kino_noch" />
     </CustomInterface>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
       <StatusEffect type="OnNotContained" targettype="Contained">
@@ -513,12 +471,12 @@
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="boombox" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-kino_zvezda" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-kino_noch" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="walkman" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-kino_zvezda" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-kino_noch" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained">
         <Use />
@@ -534,15 +492,17 @@
 
   
   <Item name="Кассета: Группа КИНО - Хочу перемен" identifier="project-baro-music-cassette-kino_peremen" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,41,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
@@ -585,70 +545,20 @@
   </Item>
 
   
-  <Item name="Кассета: Группа КИНО - Спокойная ночь" identifier="project-baro-music-cassette-kino_noch" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: Группа КИНО - Последний Герой" identifier="project-baro-music-cassette-kino_poslednii_geroi" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,41,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,21,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_kino_noch" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-kino_noch" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-kino_noch" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: КИНО - Последний Герой" identifier="project-baro-music-cassette-kino_poslednii_geroi" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="192,41,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="99,21,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -689,16 +599,18 @@
   </Item>
 
   
-  <Item name="Кассета: Форум - Белая ночь" identifier="project-baro-music-cassette-original_1" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: Группа КИНО - Звезда" identifier="project-baro-music-cassette-kino_zvezda" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,82,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,42,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
@@ -708,7 +620,7 @@
       </StatusEffect>
     </Throwable>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_original_1" />
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_kino_zvezda" />
     </CustomInterface>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
       <StatusEffect type="OnNotContained" targettype="Contained">
@@ -721,12 +633,12 @@
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="boombox" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-original_1" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-kino_zvezda" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnContained" targettype="This" comparison="And">
         <Conditional hastag="walkman" targetcontainer="true" />
         <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-original_1" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-kino_zvezda" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained">
         <Use />
@@ -741,18 +653,128 @@
   </Item>
 
   
-  <Item name="Кассета: Addaraya - Gurza Dreaming" identifier="project-baro-music-cassette-original_2" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: Unknown - Like the Wind" identifier="project-baro-music-cassette-mysterioussong" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Когда появилась эта касста или кто её создал - сплошная мистика." scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,82,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,42,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_mysterioussong" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-mysterioussong" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-mysterioussong" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Sinking Ships - Strangers" identifier="project-baro-music-cassette-sinkingships" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,82,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,42,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_sinkingships" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-sinkingships" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-sinkingships" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Addaraya - Gurza Dreaming" identifier="project-baro-music-cassette-original_2" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Когда-то это кассету использвали бойцы Альфы." scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,123,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,63,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -793,172 +815,18 @@
   </Item>
 
   
-  <Item name="Кассета: Mike Oldfield - Nuclear" identifier="project-baro-music-cassette-mike_oldfield_nuclear" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: АнимациЯ – Журавли" identifier="project-baro-music-cassette-animatsiya" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,82,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,42,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_mike_oldfield_nuclear" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-mike_oldfield_nuclear" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-mike_oldfield_nuclear" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: ГСН - А я повыше закатаю рукава" identifier="project-baro-music-cassette-grs_rukava" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="192,82,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="99,42,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_grs_rukava" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-grs_rukava" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-grs_rukava" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Черниговская Хата - Белая Ночь" identifier="project-baro-music-cassette-hata_belaya_noch" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,123,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,63,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_hata_belaya_noch" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-hata_belaya_noch" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-hata_belaya_noch" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: АнимациЯ - Журавли" identifier="project-baro-music-cassette-animatsiya" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,123,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,63,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
@@ -1001,226 +869,20 @@
   </Item>
 
   
-  <Item name="Кассета: Unknown - Like The Wind" identifier="project-baro-music-cassette-mysterioussong" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
+  <Item name="Кассета: SolusLunes – Endless Space" identifier="project-baro-music-cassette-space" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
     <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
     </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,123,64,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,63,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_mysterioussong" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-mysterioussong" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-mysterioussong" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Sinking Ships - Strangers" identifier="project-baro-music-cassette-sinkingships" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="192,123,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="99,63,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_sinkingships" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-sinkingships" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-sinkingships" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Eyedress - Jealous" identifier="project-baro-music-cassette-eyedress" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,164,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,84,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_eyedress" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-eyedress" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-eyedress" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Clownman Redial" identifier="project-baro-music-cassette-clown" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,164,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,84,33,21" depth="0.6" origin="0.5,0.5" />
-    <Body width="33" height="21" />
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
-      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
-        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
-      </StatusEffect>
-    </Throwable>
-    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
-      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_clown" />
-    </CustomInterface>
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
-      <StatusEffect type="OnNotContained" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This">
-        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
-        <Use />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="boombox" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-clown" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" targettype="This" comparison="And">
-        <Conditional hastag="walkman" targetcontainer="true" />
-        <Conditional IsOn="true" targetcontainer="true" />
-        <SpawnItem identifiers="project-baro-music-song-walkman-clown" spawnposition="ThisInventory" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="Contained">
-        <Use />
-      </StatusEffect>
-      <Containable items="song" />
-    </ItemContainer>
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-
-  
-  <Item name="Кассета: Space Station 13 - Endless Space" identifier="project-baro-music-cassette-space" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.001"/>
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.001"/>
-    <Price baseprice="450" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1" sold="False"/>
-      <Price locationtype="city" multiplier="1" sold="False"/>
-      <Price locationtype="research" multiplier="1" sold="False"/>
-      <Price locationtype="military" multiplier="1" sold="False"/>
-      <Price locationtype="mine" multiplier="1" sold="False"/>
-    </Price>
-    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,164,64,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,84,33,21" depth="0.6" origin="0.5,0.5" />
     <Body width="33" height="21" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
       <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
@@ -1261,52 +923,173 @@
   </Item>
 
   
+  <Item name="Кассета: Crash Island - Let It Rain" identifier="project-baro-music-cassette-letitrain" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="0,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="0,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_letitrain" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-letitrain" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-letitrain" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Crash Island - Time to Move On" identifier="project-baro-music-cassette-timetomoveon" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="64,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="33,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_timetomoveon" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-timetomoveon" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-timetomoveon" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
+  <Item name="Кассета: Crash Island - Across the Skyline" identifier="project-baro-music-cassette-acrosstheskyline" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" scale="0.5" isshootable="true" impacttolerance="1.4" >
+    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.0005"/>
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.0005"/>
+    <Price baseprice="450" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="0" sold="false"/>
+      <Price locationtype="city" multiplier="0" sold="false"/>
+      <Price locationtype="research" multiplier="0" sold="false"/>
+      <Price locationtype="military" multiplier="0" sold="false"/>
+      <Price locationtype="mine" multiplier="0" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Music/icons.png" sourcerect="128,164,64,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Music/sprites.png" sourcerect="66,84,33,21" depth="0.6" origin="0.5,0.5" />
+    <Body width="33" height="21" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="5,-65" holdangle="0" handle1="0,1" throwforce="4.0" aimpos="35,-10" msg="Aim to throw">
+      <StatusEffect type="OnImpact" target="This" Condition="-5.0" disabledeltatime="true">
+        <sound file="%ModDir%/Music/sound_effects/cassette_drop.ogg" range="500" volume="1.0" />
+      </StatusEffect>
+    </Throwable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true" msg="Equip to inspect">
+      <GuiFrame relativesize="0.26666666666666666,0.3037037037037037" anchor="CenterRight" pivot="CenterRight" style="project-baro-music_cover_acrosstheskyline" />
+    </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <StatusEffect type="OnNotContained" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This">
+        <Conditional hastag="!eq sunken-tapes-player" targetcontainer="true" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="boombox" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-acrosstheskyline" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" targettype="This" comparison="And">
+        <Conditional hastag="walkman" targetcontainer="true" />
+        <Conditional IsOn="true" targetcontainer="true" />
+        <SpawnItem identifiers="project-baro-music-song-walkman-acrosstheskyline" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="Contained">
+        <Use />
+      </StatusEffect>
+      <Containable items="song" />
+    </ItemContainer>
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  
 
   <!-- SONGS -->
 
   
-  <Item name="Song: Menace Ruine - Dark Mother" identifier="project-baro-music-song-dm" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/dm.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="Always" target="NearbyCharacters" range="1000">
-        <Affliction identifier="psychosis" strength= "0.4496" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Menace Ruine - Dark Mother" identifier="project-baro-music-song-walkman-dm" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/dm-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="Always" target="NearbyCharacters" range="200">
-        <Affliction identifier="psychosis" strength= "0.2248" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Dead Man's Bones - In The Room Where You Sleep" identifier="project-baro-music-song-deadmansbones" Tags="song" category="Misc">
+  <Item name="Song: DeadMansBonesBand - In The Room Where You Sleep" identifier="project-baro-music-song-deadmansbones" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1315,7 +1098,7 @@
         <sound file="%ModDir%/Music/music/deadmansbones.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="Always" target="NearbyCharacters" range="1000">
-        <Affliction identifier="psychosis" strength= "0.4035" />
+        <Affliction identifier="psychosis" strength= "1.3445" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1326,7 +1109,7 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Dead Man's Bones - In The Room Where You Sleep" identifier="project-baro-music-song-walkman-deadmansbones" Tags="song" category="Misc">
+  <Item name="Song (Walkman): DeadMansBonesBand - In The Room Where You Sleep" identifier="project-baro-music-song-walkman-deadmansbones" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1335,7 +1118,7 @@
         <sound file="%ModDir%/Music/music/deadmansbones-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="Always" target="NearbyCharacters" range="200">
-        <Affliction identifier="psychosis" strength= "0.2018" />
+        <Affliction identifier="psychosis" strength= "0.6722" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1347,13 +1130,13 @@
   </Item>
 
   
-  <Item name="Song: Inka - Schritte" identifier="project-baro-music-song-schritte" Tags="song" category="Misc">
+  <Item name="Song: Черниковская Хата - Белая Ночь" identifier="project-baro-music-song-hata_belaya_noch" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/schritte.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/hata_belaya_noch.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1364,13 +1147,13 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Inka - Schritte" identifier="project-baro-music-song-walkman-schritte" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Черниковская Хата - Белая Ночь" identifier="project-baro-music-song-walkman-hata_belaya_noch" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/schritte-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/hata_belaya_noch-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1382,7 +1165,7 @@
   </Item>
 
   
-  <Item name="Song: Группа КИНО - Группа Крови" identifier="project-baro-music-song-kino_gruppakrovi" Tags="song" category="Misc">
+  <Item name="Song: Группа КИНО - Группа крови" identifier="project-baro-music-song-kino_gruppakrovi" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1399,83 +1182,13 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Группа КИНО - Группа Крови" identifier="project-baro-music-song-walkman-kino_gruppakrovi" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Группа КИНО - Группа крови" identifier="project-baro-music-song-walkman-kino_gruppakrovi" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
         <sound file="%ModDir%/Music/music/kino_gruppakrovi-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Группа КИНО - Звезда" identifier="project-baro-music-song-kino_zvezda" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/kino_zvezda.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Группа КИНО - Звезда" identifier="project-baro-music-song-walkman-kino_zvezda" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/kino_zvezda-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Группа КИНО - Хочу перемен" identifier="project-baro-music-song-kino_peremen" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/kino_peremen.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Группа КИНО - Хочу перемен" identifier="project-baro-music-song-walkman-kino_peremen" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/kino_peremen-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1522,7 +1235,42 @@
   </Item>
 
   
-  <Item name="Song: КИНО - Последний Герой" identifier="project-baro-music-song-kino_poslednii_geroi" Tags="song" category="Misc">
+  <Item name="Song: Группа КИНО - Хочу перемен" identifier="project-baro-music-song-kino_peremen" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/kino_peremen.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Группа КИНО - Хочу перемен" identifier="project-baro-music-song-walkman-kino_peremen" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/kino_peremen-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Группа КИНО - Последний Герой" identifier="project-baro-music-song-kino_poslednii_geroi" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1539,7 +1287,7 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): КИНО - Последний Герой" identifier="project-baro-music-song-walkman-kino_poslednii_geroi" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Группа КИНО - Последний Герой" identifier="project-baro-music-song-walkman-kino_poslednii_geroi" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1557,13 +1305,13 @@
   </Item>
 
   
-  <Item name="Song: Форум - Белая ночь" identifier="project-baro-music-song-original_1" Tags="song" category="Misc">
+  <Item name="Song: Группа КИНО - Звезда" identifier="project-baro-music-song-kino_zvezda" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/original_1.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/kino_zvezda.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1574,48 +1322,13 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Форум - Белая ночь" identifier="project-baro-music-song-walkman-original_1" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Группа КИНО - Звезда" identifier="project-baro-music-song-walkman-kino_zvezda" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/original_1-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Addaraya - Gurza Dreaming" identifier="project-baro-music-song-original_2" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/original_2.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Addaraya - Gurza Dreaming" identifier="project-baro-music-song-walkman-original_2" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/original_2-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/kino_zvezda-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1627,147 +1340,7 @@
   </Item>
 
   
-  <Item name="Song: Mike Oldfield - Nuclear" identifier="project-baro-music-song-mike_oldfield_nuclear" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/mike_oldfield_nuclear.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Mike Oldfield - Nuclear" identifier="project-baro-music-song-walkman-mike_oldfield_nuclear" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/mike_oldfield_nuclear-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: ГСН - А я повыше закатаю рукава" identifier="project-baro-music-song-grs_rukava" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/grs_rukava.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): ГСН - А я повыше закатаю рукава" identifier="project-baro-music-song-walkman-grs_rukava" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/grs_rukava-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Черниговская Хата - Белая Ночь" identifier="project-baro-music-song-hata_belaya_noch" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/hata_belaya_noch.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Черниговская Хата - Белая Ночь" identifier="project-baro-music-song-walkman-hata_belaya_noch" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/hata_belaya_noch-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: АнимациЯ - Журавли" identifier="project-baro-music-song-animatsiya" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/animatsiya.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): АнимациЯ - Журавли" identifier="project-baro-music-song-walkman-animatsiya" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/animatsiya-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Unknown - Like The Wind" identifier="project-baro-music-song-mysterioussong" Tags="song" category="Misc">
+  <Item name="Song: Unknown - Like the Wind" identifier="project-baro-music-song-mysterioussong" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1784,7 +1357,7 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Unknown - Like The Wind" identifier="project-baro-music-song-walkman-mysterioussong" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Unknown - Like the Wind" identifier="project-baro-music-song-walkman-mysterioussong" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1837,13 +1410,13 @@
   </Item>
 
   
-  <Item name="Song: Eyedress - Jealous" identifier="project-baro-music-song-eyedress" Tags="song" category="Misc">
+  <Item name="Song: Addaraya - Gurza Dreaming" identifier="project-baro-music-song-original_2" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/eyedress.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/original_2.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1854,48 +1427,13 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Eyedress - Jealous" identifier="project-baro-music-song-walkman-eyedress" Tags="song" category="Misc">
+  <Item name="Song (Walkman): Addaraya - Gurza Dreaming" identifier="project-baro-music-song-walkman-original_2" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/eyedress-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  
-  <Item name="Song: Clownman Redial" identifier="project-baro-music-song-clown" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/clown.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" targettype="This">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnUse" targettype="This">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-  </Item>
-
-  <Item name="Song (Walkman): Clownman Redial" identifier="project-baro-music-song-walkman-clown" Tags="song" category="Misc">
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <Body width="48" height="48" />
-    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
-    <ItemComponent>
-      <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Music/music/clown-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+        <sound file="%ModDir%/Music/music/original_2-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1907,7 +1445,42 @@
   </Item>
 
   
-  <Item name="Song: Space Station 13 - Endless Space" identifier="project-baro-music-song-space" Tags="song" category="Misc">
+  <Item name="Song: АнимациЯ – Журавли" identifier="project-baro-music-song-animatsiya" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/animatsiya.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): АнимациЯ – Журавли" identifier="project-baro-music-song-walkman-animatsiya" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/animatsiya-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: SolusLunes – Endless Space" identifier="project-baro-music-song-space" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
@@ -1924,13 +1497,118 @@
     </ItemComponent>
   </Item>
 
-  <Item name="Song (Walkman): Space Station 13 - Endless Space" identifier="project-baro-music-song-walkman-space" Tags="song" category="Misc">
+  <Item name="Song (Walkman): SolusLunes – Endless Space" identifier="project-baro-music-song-walkman-space" Tags="song" category="Misc">
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <Body width="48" height="48" />
     <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This">
         <sound file="%ModDir%/Music/music/space-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Crash Island - Let It Rain" identifier="project-baro-music-song-letitrain" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/letitrain.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Crash Island - Let It Rain" identifier="project-baro-music-song-walkman-letitrain" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/letitrain-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Crash Island - Time to Move On" identifier="project-baro-music-song-timetomoveon" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/timetomoveon.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Crash Island - Time to Move On" identifier="project-baro-music-song-walkman-timetomoveon" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/timetomoveon-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  
+  <Item name="Song: Crash Island - Across the Skyline" identifier="project-baro-music-song-acrosstheskyline" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/acrosstheskyline.ogg" type="OnUse" range="1000" loop="true" volume="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" targettype="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Song (Walkman): Crash Island - Across the Skyline" identifier="project-baro-music-song-walkman-acrosstheskyline" Tags="song" category="Misc">
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <Body width="48" height="48" />
+    <InventoryIcon texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,160,4,4" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This">
+        <sound file="%ModDir%/Music/music/acrosstheskyline-walkman.ogg" type="OnUse" range="200" loop="true" volume="1.0" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" targettype="This">
         <Remove />
@@ -1958,10 +1636,10 @@
     </Fabricate>
     <Price baseprice="75" >
       <Price locationtype="outpost" multiplier="1" sold="false"/>
-      <Price locationtype="city" multiplier="0.9" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.25" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false"/>
+      <Price locationtype="research" multiplier="1.25" sold="false"/>
+      <Price locationtype="military" multiplier="1.25" sold="false"/>
+      <Price locationtype="mine" multiplier="1.25" sold="false"/>
     </Price>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6" />
     <Sprite texture="Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" />
