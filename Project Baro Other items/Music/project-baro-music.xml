@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="Кассетный Магнитофон" cargocontaineridentifier="metalcrate" identifier="project-baro-music-boombox" category="Equipment" Tags="mediumitem,boombox,sunken-tapes-player" scale="0.5" description="" price="850" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet"/>
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -57,8 +57,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Коричневый)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-brown" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="350" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet"/>
     <Price baseprice="300" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -111,8 +111,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Серебро)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-silver" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -165,8 +165,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Черный)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-black" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -219,8 +219,8 @@
   </Item>
 
   <Item name="Кассетный Проигрыватель (Синий)" cargocontaineridentifier="metalcrate" identifier="project-baro-music-walkman-blue" category="Equipment" Tags="smallitem,walkman,sunken-tapes-player" scale="0.5" description="" price="450" impactsoundtag="impact_metal_light" isshootable="true" HideConditionBar="true">
-    <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
-    <PreferredContainer primary="outpostcrewcabinet" spawnprobability="0.1"/>
+    <PreferredContainer primary="abandonedcrewcab"/>
+    <PreferredContainer primary="outpostcrewcabinet"/>
     <Price baseprice="450" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false"/>
       <Price locationtype="city" multiplier="0.7" sold="false"/>
@@ -275,7 +275,7 @@
   <!-- Cassette Tapes -->
 
   
-  <Item name="Кассета: DeadMansBonesBand - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете муражки по вашей коже..." scale="0.5" isshootable="true" impacttolerance="1.4" >
+  <Item name="Кассета: DeadMansBonesBand - In The Room Where You Sleep" identifier="project-baro-music-cassette-deadmansbones" category="Equipment" maxstacksize="8" Tags="smallitem,cassette" cargocontaineridentifier="metalcrate" description="Вы чувствуете дрожь по своей спине..." scale="0.5" isshootable="true" impacttolerance="1.4" >
     <PreferredContainer primary="abandonedcrewcab"/>
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="0"/>
     <Price baseprice="450" soldeverywhere="false">
