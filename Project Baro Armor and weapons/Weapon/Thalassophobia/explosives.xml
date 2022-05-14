@@ -50,8 +50,7 @@
     <Body radius="45" height="50" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnWearing" target="Character,This" stackable="false" delay="0" >
-        <Conditional IsDead="true" />
-				<Sound file="Mods/Project Baro Other items/Item/Thalassophobia/singularity/SingularityCollapse.ogg" range="3000" />
+        <Conditional IsDead="true" sound="SingularityCollapse"/>
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character,This" stackable="false" delay="2.6" >
         <Conditional IsDead="true" />
