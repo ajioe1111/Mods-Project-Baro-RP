@@ -5,7 +5,7 @@
     <Body width="20" height="32" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" canbecombined="false" msg="ItemMsgPickUpSelect" />
     <Throwable slots="Any,RightHand,LeftHand" aimpos="35,-10" throwforce="2.5" characterusable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer capacity="54" slotsperrow="6" canbeselected="true" hideitems="true"> 
+    <ItemContainer capacity="54" slotsperrow="6" canbeselected="true" hideitems="true">
       <Containable items="card" />
     </ItemContainer>
   </Item>
