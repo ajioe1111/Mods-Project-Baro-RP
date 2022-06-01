@@ -1,6 +1,8 @@
-local ownerni_id={"76561198396183529","76561198264892315","76561198838696053"}
+local ownerni_id={"76561198396183529","76561198264892315"}
+local ownerof_id={"76561198838696053"}
+local itemprefabnameof={"Аллан: Мех"}
 local ownernim_id={"76561198131945341"}
-local itemprefabname={"Адриан: Очки","Бабаев: Шлем Фригг","Аллан: Мех"}
+local itemprefabname={"Адриан: Очки","Бабаев: Шлем Фригг"}
 local itemprefabnamem={"Деймос Дарк (Одежда: СБ)","Деймос Дарк (Одежда: Врач)","Деймос Дарк (Одежда: Инженер)"}
 --[[
     ownerni_id - это стим Id, владельца именного предмета  {Андриа Рей,Никита Бабаев,Аллан}
@@ -27,7 +29,6 @@ Hook.Add("roundStart","Nominalitems",function()
             end
         end
         end
-        
         for j=1,#PlayerCharacter do
             for i=1,#ownernim_id do
                 if tostring(PlayerCharacter[j].SteamID) == ownernim_id[i] then
@@ -54,6 +55,17 @@ Hook.Add("roundStart","Nominalitems",function()
                         end)
                        
                     end
+                end
+            end
+        end
+        for j=1,#PlayerCharacter do
+            for i=1,#ownerof_id do
+                if tostring(PlayerCharacter[j].SteamID) == ownernim_id[i] then
+                    local prefab = ItemPrefab.GetItemPrefab(itemprefabnameof[i])
+                    local firstPlayerCharacter = Client.ClientList[j].Character
+                    Entity.Spawner.AddItemToSpawnQueue(prefab, firstPlayerCharacter.WorldPosition, nil, nil, function(item)
+                        print(item.Name .. " Has been spawned.")
+                    end)
                 end
             end
         end
