@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 <Override>
-<!-- НАЧАЛО ОРУЖИЯ ИЗ EK -->
-<Item name="" identifier="ek_handgun" aliases="handgun" focusonselected="true" offsetonselected="800"
+ <!-- НАЧАЛО ОРУЖИЯ ИЗ EK -->
+ <Item name="" identifier="ek_handgun" aliases="handgun" focusonselected="true" offsetonselected="800"
      
     category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="smallitem,weapon,gun,ek_ammotag_9mm,gunsmith" Scale="0.30" impactsoundtag="impact_metal_light">
 	
@@ -30,9 +30,9 @@
 	  <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,0,112,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,0,112,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,0,112,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,0,112,64" depth="0.83" />
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="20,5" aimpos="80,10" handle1="-9,-11" -->
@@ -41,7 +41,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -80,9 +80,9 @@
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
 
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,0,112,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,0,112,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,0,112,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,0,112,64" depth="0.83" />
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="20,5" aimpos="80,10" handle1="-9,-11" -->
@@ -91,7 +91,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -141,9 +141,9 @@
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
 
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,64,112,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,64,112,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,64,112,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,64,112,64" depth="0.83" />
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="20,5" aimpos="80,10" handle1="-9,-11" -->
@@ -152,7 +152,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_handgun.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -178,7 +178,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.5" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.5" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -201,11 +201,11 @@
       <Item identifier="ek_handgun" />
       <Item identifier="ek_suppressor" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="weapons_ek.png" sourcerect="448,0,240,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="448,0,240,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,0,240,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,0,240,64" depth="0.83" />
     <!-- Todo: Wait for mirroring to work
-	<DecorativeSprite name="suppressor Sprite" texture="weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
+	<DecorativeSprite name="suppressor Sprite" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,5" aimpos="80,10" handle1="-9,-11" -->
@@ -214,7 +214,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -255,11 +255,11 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="112,0,240,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="112,0,240,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="112,0,240,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="112,0,240,64" depth="0.83" />
     <!-- Todo: Wait for mirroring to work
-	<DecorativeSprite name="suppressor Sprite" texture="weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
+	<DecorativeSprite name="suppressor Sprite" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,5" aimpos="80,10" handle1="-9,-11" -->
@@ -268,7 +268,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -319,11 +319,11 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="112,64,240,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="112,64,240,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="112,64,240,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="112,64,240,64" depth="0.83" />
     <!-- Todo: Wait for mirroring to work
-	<DecorativeSprite name="suppressor Sprite" texture="weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
+	<DecorativeSprite name="suppressor Sprite" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" depth="0.53" sourcerect="128,384,80,16" origin="0.5,0.5" offset="80,25" /> -->
     <Body width="90" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-30,-12" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,5" aimpos="80,10" handle1="-9,-11" -->
@@ -332,7 +332,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_supressed_handgun.ogg" type="OnUse" range="800" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -358,7 +358,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.5" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.5" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -398,9 +398,9 @@
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="656,1040,128,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="656,1040,128,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="656,1040,128,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="656,1040,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="25,7" aimpos="63,0" handle1="-14,-11" -->
@@ -409,7 +409,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:EK Armory%/Items/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
       </StatusEffect>
@@ -445,9 +445,9 @@
       <Item identifier="ek_laserpistol" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="25,7" aimpos="63,0" handle1="-14,-11" -->
@@ -456,7 +456,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
       </StatusEffect>
@@ -504,9 +504,9 @@
       <Item identifier="ek_laserpistol" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="25,7" aimpos="63,0" handle1="-14,-11" -->
@@ -515,7 +515,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
       </StatusEffect>
@@ -538,7 +538,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="0.0, 0.501" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="0.0, 0.501" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -579,9 +579,9 @@
       <RequiredItem identifier="fulguriumbatterycell" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="464,704,176,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="464,704,176,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="464,704,176,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="464,704,176,80" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
@@ -590,7 +590,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -625,9 +625,9 @@
       <Item identifier="ek_gausspistol" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="800,480,176,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="96,128,176,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,480,176,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="96,128,176,80" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
@@ -636,7 +636,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -683,9 +683,9 @@
       <Item identifier="ek_gausspistol" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="976,480,176,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="272,128,176,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="976,480,176,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="272,128,176,80" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
@@ -694,7 +694,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gausspistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -717,7 +717,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.007, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.007, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -753,9 +753,9 @@
 	  <RequiredItem identifier="steel" />
       <RequiredItem identifier="carbon" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,1248,128,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1248,128,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-35,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="30,5" aimpos="80,10" handle1="-13,-11" -->
@@ -764,7 +764,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -829,9 +829,9 @@
       <Item identifier="ek_revolver" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,1024,128,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,1024,128,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="576,320,64,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-32,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="30,5" aimpos="80,10" handle1="-13,-11" -->
@@ -840,7 +840,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -915,9 +915,9 @@
       <Item identifier="ek_revolver" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="128,1024,128,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="256,1024,128,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="128,1024,128,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,1024,128,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-32,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="30,5" aimpos="80,10" handle1="-13,-11" -->
@@ -926,7 +926,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -976,7 +976,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.002, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.002, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -999,9 +999,9 @@
       <Item identifier="ek_revolver" />
       <Item identifier="ek_suppressor" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="256,1024,256,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="256,1024,256,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,1024,256,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,1024,256,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-35,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="50,5" aimpos="80,10" handle1="-13,-11" -->
@@ -1010,7 +1010,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1075,9 +1075,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_lightattachment"/>
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="512,1024,256,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="512,1024,256,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,1024,256,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,1024,256,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-35,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="50,5" aimpos="80,10" handle1="-13,-11" -->
@@ -1086,7 +1086,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1162,9 +1162,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment"/>
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="768,1024,256,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="768,1024,256,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,320,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,1024,256,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,1024,256,64" depth="0.83" />
     <Body width="128" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-35,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="50,5" aimpos="80,10" handle1="-13,-11" -->
@@ -1173,7 +1173,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_revolver.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1223,7 +1223,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.002, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.002, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1264,9 +1264,9 @@
 	  <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="304,576,128,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="304,576,128,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="304,576,128,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="304,576,128,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1275,7 +1275,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1309,9 +1309,9 @@
       <Item identifier="ek_mini_smg" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,208,128,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,208,128,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,208,128,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,208,128,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1320,7 +1320,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1355,7 +1355,7 @@
       <QualityStat stattype="AttackMultiplier" value="0.1"/>
     </Quality>
   </Item>
-<Item name="" identifier="ek_mini_smg_laser" aliases="mini smg laser" 
+ <Item name="" identifier="ek_mini_smg_laser" aliases="mini smg laser" 
     category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_10mm,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <Fabricate suitablefabricators="fabricator" requiredtime="1.5">
       <RequiredItem identifier="ek_mini_smg"/>
@@ -1365,9 +1365,9 @@
       <Item identifier="ek_mini_smg" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1376,7 +1376,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1398,7 +1398,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1421,9 +1421,9 @@
       <Item identifier="ek_mini_smg" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="128,208,128,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="34,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1432,7 +1432,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamepistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_microsmg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1454,7 +1454,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1477,9 +1477,9 @@
       <Item identifier="ek_mini_smg" />
       <Item identifier="ek_suppressor" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapons_ek.png" sourcerect="528,576,256,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="448,64,352,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="528,576,256,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,64,352,96" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="44,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1488,7 +1488,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1524,9 +1524,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="256,208,256,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="256,208,256,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,208,256,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,208,256,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="44,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1535,7 +1535,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1582,9 +1582,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="44,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1593,7 +1593,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_microsmg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1615,7 +1615,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1660,9 +1660,9 @@
 	  <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,64,256,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,64,256,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,64,256,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,64,256,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -1671,7 +1671,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesmg" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksmg" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1711,9 +1711,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="320,192,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="512,208,256,80" depth="0.83" />
     <Body width="128" height="56" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="55,-5" handle1="-34,-16" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="44,6" holdpos="45,-10" aimpos="55,-10" handle1="-28,-16" handle2="20,0" holdangle="-40" -->
@@ -1722,7 +1722,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_smg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_smg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1744,7 +1744,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.001, 0.495" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1768,9 +1768,9 @@
       <Item identifier="ek_smg" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,288,256,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,288,256,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,288,256,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,288,256,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -1779,7 +1779,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesmg" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksmg" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1829,9 +1829,9 @@
       <Item identifier="ek_smg" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,384,256,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,384,256,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,384,256,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,384,256,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -1840,7 +1840,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesmg" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksmg" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_marine_smg.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1866,7 +1866,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.010, 0.475" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.010, 0.475" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -1890,9 +1890,9 @@
       <Item identifier="ek_smg" />
       <Item identifier="ek_suppressor" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="weapons_ek.png" sourcerect="448,64,352,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="448,64,352,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,64,352,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,64,352,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -1901,7 +1901,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -1942,9 +1942,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="256,288,352,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="256,288,352,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,288,352,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,288,352,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -1953,7 +1953,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2005,9 +2005,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="256,384,352,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="256,384,352,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,384,352,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="256,384,352,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="45,3" handle1="5,-22" handle2="110,-16" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="52,4" holdpos="45,-10" aimpos="40,10" handle1="18,-21" handle2="102,-17" holdangle="-40" -->
@@ -2016,7 +2016,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_marine_smg.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2042,7 +2042,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.010, 0.475" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.010, 0.475" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -2081,9 +2081,9 @@
 	  <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="128,256,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,256,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,352,272,80" depth="0.83" />
     <Body width="160" height="32" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="45,-5" handle1="-35,-8" handle2="80,0" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="56,16" holdpos="45,-10" aimpos="30,-10" handle1="-2,-9" handle2="80,-8" holdangle="-40" -->
@@ -2092,7 +2092,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_shotgun_short.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_shotgun_short.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -2112,7 +2112,7 @@
       <QualityStat stattype="AttackMultiplier" value="0.1"/>
     </Quality>
   </Item>
-   <Item name="" identifier="ek_shotgun" aliases="shotgun, tactical_shotgun, ek_shotgun" 
+  <Item name="" identifier="ek_shotgun" aliases="shotgun, tactical_shotgun, ek_shotgun" 
      
     category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_shotgunshell,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <!--<Price locationtype="Military" buyprice="500" />-->
@@ -2139,8 +2139,8 @@
 	  <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,480,272,96" depth="0.55" />
+   <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,480,272,96" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,480,272,96" depth="0.83" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-5" handle1="-25,-18" handle2="100,-6" holdangle="-40" msg="ItemMsgPickUpSelect"/>
@@ -2150,7 +2150,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
+       <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -2180,9 +2180,9 @@
       <Item identifier="ek_shotgun" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="448,0,272,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="448,0,272,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="448,0,272,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="448,0,272,96" depth="0.83" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-5" handle1="-25,-18" handle2="100,-6" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="56,8" holdpos="45,-10" aimpos="30,5" handle1="-2,-18" handle2="100,-16" holdangle="-40" -->
@@ -2191,7 +2191,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -2234,9 +2234,9 @@
       <Item identifier="ek_shotgun" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="448,96,272,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="448,96,272,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,256,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="448,96,272,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="448,96,272,96" depth="0.83" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-5" handle1="-25,-18" handle2="100,-6" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="56,8" holdpos="45,-10" aimpos="30,5" handle1="-2,-18" handle2="100,-16" holdangle="-40" -->
@@ -2245,7 +2245,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_shotgun.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -2263,7 +2263,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.018, 0.485" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.018, 0.485" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -2304,9 +2304,9 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,1024,336,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,1024,336,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1024,336,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1024,336,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
@@ -2315,7 +2315,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamerifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2356,9 +2356,9 @@
       <Item identifier="ek_battlerifle" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
@@ -2367,7 +2367,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamerifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2417,9 +2417,9 @@
       <Item identifier="ek_battlerifle" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="768,144,336,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,144,336,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="768,32,336,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
@@ -2428,7 +2428,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamerifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_battlerifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2454,7 +2454,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="0.003, 0.477" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="0.003, 0.477" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -2476,9 +2476,9 @@
       <Item identifier="ek_battlerifle" />
       <Item identifier="ek_suppressor" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="weapons_ek.png" sourcerect="0,1136,432,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1136,432,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
@@ -2487,7 +2487,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flash="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2528,9 +2528,9 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="720,256,432,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="720,256,432,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
@@ -2539,7 +2539,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flash="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2591,16 +2591,16 @@
       <Item identifier="ek_suppressor" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="720,368,432,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="512,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="720,368,432,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,1136,432,112" depth="0.83" />
     <Body width="330" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="58,5" handle1="-47.5,-25" handle2="42.5,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="68,5" holdpos="60,-10" aimpos="58,10" handle1="-48,-21" handle2="38,-8" holdangle="-40" -->
     <RangedWeapon barrelpos="215,12" spread="2" unskilledspread="14" reload="0.11" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_suppressed_battlerifle.ogg" type="OnUse" range="3000" />
       <ParticleEmitter particle="ekmuzzleflamesuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaksuppressed" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
@@ -2628,7 +2628,7 @@
     </ItemContainer>
 
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="0.003, 0.477" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="0.003, 0.477" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -2669,9 +2669,9 @@
 	  <RequiredItem identifier="fulgurium" mincondition="0.5" usecondition="true" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="512,1136,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="512,1136,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="512,1136,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="512,1136,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="50,5" handle1="-30,-25" handle2="105,-15" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2680,7 +2680,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2715,9 +2715,9 @@
       <Item identifier="ek_laserrifle" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="640,928,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="640,928,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="640,928,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="640,928,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="50,5" handle1="-30,-25" handle2="105,-15" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2726,7 +2726,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2773,9 +2773,9 @@
       <Item identifier="ek_laserrifle" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="640,832,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="640,832,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="640,832,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="640,832,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="50,5" handle1="-30,-25" handle2="105,-15" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2784,7 +2784,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserrifle.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2806,7 +2806,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.013, 0.504" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.013, 0.504" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -2847,9 +2847,9 @@
 	  <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="fulguriumbatterycell" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,800,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="448,800,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,800,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="448,800,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="50,5" handle1="-30,-22" handle2="100,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2858,7 +2858,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2892,9 +2892,9 @@
       <Item identifier="ek_gaussrifle" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,785,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,785,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,785,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="0,785,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="50,5" handle1="-30,-22" handle2="100,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2903,7 +2903,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2949,9 +2949,9 @@
       <Item identifier="ek_gaussrifle" />
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="320,785,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="320,785,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,64,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="320,785,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="320,785,320,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="50,5" handle1="-30,-22" handle2="100,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="48,2" holdpos="45,-10" aimpos="50,10" handle1="-18,-21" handle2="102,-19" holdangle="-40" -->
@@ -2960,7 +2960,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakgausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_gaussrifle.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -2982,7 +2982,7 @@
     </ItemContainer>
 	
     <LightComponent LightColor="0.7,0.0,0.0,0.5" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true" >
-      <LightTexture texture="Mods/EK Armory/Lights/laser_light.png" origin="-0.013, 0.509" size="1.0,0.3" />
+      <LightTexture texture="%ModDir:EK Armory%/Lights/laser_light.png" origin="-0.013, 0.509" size="1.0,0.3" />
     </LightComponent>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
@@ -3024,9 +3024,9 @@
 	  <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,128,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,896,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,896,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,128,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,896,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,896,320,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-5" aimpos="50,-10" handle1="-30,-15" handle2="80,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="64,7" holdpos="45,-10" aimpos="45,-10" handle1="-10,-21" handle2="102,-14" holdangle="-40" -->
@@ -3035,7 +3035,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamerifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakrifle" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_drum_lmg.ogg" type="OnUse" range="4500" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_drum_lmg.ogg" type="OnUse" range="4500" />
       <StatusEffect type="OnUse">
         <Explosion range="180.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -3069,9 +3069,9 @@
       <Item identifier="ek_drumlmg" />
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="448,128,64,64" />
-    <Sprite texture="weapon_attachments_ek.png" sourcerect="288,672,320,96" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="288,672,320,96" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="448,128,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="288,672,320,96" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="288,672,320,96" depth="0.83" />
     <Body width="240" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-5" aimpos="50,-10" handle1="-30,-15" handle2="80,-5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="64,7" holdpos="45,-10" aimpos="45,-10" handle1="-10,-21" handle2="102,-14" holdangle="-40" -->
@@ -3080,7 +3080,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamerifle" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakrifle" particleamount="1" velocitymin="0" velocitymax="0" /> 
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/ek_drum_lmg.ogg" type="OnUse" range="4500" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_drum_lmg.ogg" type="OnUse" range="4500" />
       <StatusEffect type="OnUse">
         <Explosion range="180.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
@@ -3144,9 +3144,9 @@
 	  <RequiredItem identifier="plastic" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="384,0,64,64" />
-    <Sprite texture="Mods/Project Baro Other items/Sound Overhaul/Weapons/weapons_ek.png" sourcerect="0,704,288,128" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,704,288,128" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="384,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,704,288,128" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,704,288,128" depth="0.83" />
     <Body width="304" height="96" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,5" aimpos="20,5" handle1="6,-20" handle2="100,-28" holdangle="-40" msg="ItemMsgPickUpSelect"/>
     <!-- barrelpos="100,22" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" -->
@@ -3155,7 +3155,40 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelauncher" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklauncher" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/EK Armory/Items/Weapons/ek_rocket.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_rocket.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="180.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+      </StatusEffect>
+      <RequiredItems identifier="ek_rocketammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" canbeselected="false" hideitems="true">
+      <Containable identifiers="ek_rocketammo" />
+      <ContainedStateIndicator texture="%ModDir:EK Armory%/UI/ek_containerindicators.png" sourcerect="0,32,128,32" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="ek_rocketlauncher_sonarscope" aliases="marine rpg sonar,rocketlauncher sonar,rocket launcher sonar,ek rocketlauncher sonar,ek rocket launcher sonar,rpg sonar,ek rpg sonar" 
+    category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_rocket" Scale="0.38" impactsoundtag="impact_metal_heavy">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1.5">
+      <RequiredItem identifier="ek_rocketlauncher"/>
+      <RequiredItem identifier="ek_sonarattachment" />
+    </Fabricate>
+    <Deconstruct time="1">
+      <Item identifier="ek_rocketlauncher" />
+      <Item identifier="ek_sonarattachment" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="384,0,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="320,880,288,128" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="320,880,288,128" depth="0.83" />
+    <Body width="304" height="96" density="40" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,5" aimpos="20,5" handle1="6,-20" handle2="100,-28" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+    <!-- barrelpos="100,22" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" -->
+	<RangedWeapon barrelpos="135,28" spread="1" unskilledspread="15" reload="1.5" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="ekmuzzleflamelauncher" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="ekmuzzlebreaklauncher" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_rocket.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="180.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
@@ -3166,6 +3199,44 @@
       <Containable identifiers="ek_rocketammo" />
       <ContainedStateIndicator texture="Mods/EK Armory/UI/ek_containerindicators.png" sourcerect="0,32,128,32" />
     </ItemContainer>
+
+	<AiTarget />
+    <!--<Sonar range="4000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1">
+      <StatusEffect type="OnUse">
+	    <sound file="Content/Items/Command/SonarPing.ogg" range="1000.0" />
+      </StatusEffect>
+      <GuiFrame relativesize="0.2,0.333" anchor="BottomLeft" relativeoffset="0,0.05"/>
+      <PingCircle texture="Mods/EK Armory/UI/Sonarscope/pingcircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="Mods/EK Armory/UI/Sonarscope/directionalpingcircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="Mods/EK Armory/UI/Sonarscope/sonaroverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="Mods/EK Armory/UI/Sonarscope/sonarbackground.png" origin="0.5,0.5" />
+      <Blip texture="Mods/EK Armory/UI/Sonarscope/sonarblip.png" origin="0.5,0.5" />
+      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+    </Sonar>-->
+    <Sonar range="6000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="false" allowuioverlap="true">
+      <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
+      <GuiFrame relativesize="0.35,0.35" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+      <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+    </Sonar>
   </Item>
   <Item name="" identifier="ek_dartgun" aliases="dart_gun, dartgun"
     
@@ -3195,16 +3266,16 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="256,256,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,576,288,112" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,576,288,112" depth="0.83" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="256,256,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,576,288,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="0,576,288,112" depth="0.83" />
     <Body width="275" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="45,0" handle1="-50,-20" handle2="50,5" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="90,9" holdpos="45,-10" aimpos="40,10" handle1="-30,-15" handle2="50,-5" holdangle="-40" -->
     <RangedWeapon barrelpos="144,16" spread="4" unskilledspread="8" reload="1.25" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/dartgun.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_dartgun.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse" target="This">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="3.0" />
       </StatusEffect>
@@ -3243,7 +3314,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -3288,7 +3359,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-	  <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
+	  <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
 	  <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -3352,7 +3423,7 @@
     <RangedWeapon barrelpos="29,11" spread="0" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Revolver.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Revolver.wav" type="OnUse" range="3000" selectionmode="Random" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
@@ -3397,7 +3468,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
       <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
-      <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/GrenadeLauncher.ogg" type="OnUse" selectionmode="Random"/>
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/GrenadeLauncher.ogg" type="OnUse" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
       </StatusEffect>
@@ -3438,14 +3509,14 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Shotgun_Pump.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Pump.wav" type="OnUse" range="3000" selectionmode="Random" />
    
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!-- Cocking sound, delayed by 1.0 seconds. -->
       <StatusEffect type="OnUse" delay="1.0">
-        <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/ShotgunReload.ogg" type="OnUse" range="3000" selectionmode="Random"   />
+        <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/ShotgunReload.ogg" type="OnUse" range="3000" selectionmode="Random"   />
       </StatusEffect>
       <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
@@ -3485,7 +3556,7 @@
     <RangedWeapon reload="1.45" barrelpos="20,6" spread="0" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Handcannon.wav" type="OnUse" range="3000" selectionmode="Random" />  
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Handcannon.wav" type="OnUse" range="3000" selectionmode="Random" />  
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,7.0" colormultiplier="255,200,115,200" />
       <StatusEffect type="OnUse">
         <Explosion range="300.0" force="50" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
@@ -3532,8 +3603,8 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto1.wav" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto2.wav" type="OnUse" range="3000"/>
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto1.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto2.wav" type="OnUse" range="3000"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -3578,7 +3649,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Mods/Project Baro Other items/Sound Overhaul/Weapons/vanilla/Assault rifle.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Assault rifle.wav" type="OnUse" range="3000" selectionmode="Random" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -3629,7 +3700,7 @@
         <Affliction identifier="progressivestun" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="This">
-        <Sound file="Content/Project Baro Other items/Sound Overhaul/Weapons/vanilla/TaserHit.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/TaserHit.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -3642,7 +3713,7 @@
   </Item>
   <!-- КОНЕЦ ВАНИЛЬНОГО ПАКА -->
   <!--НАЧАЛО ОСТАЛЬНОГО -->
-<Item name="" identifier="guitar" category="Misc" Tags="bigitem" scale="0.5" description="" price="300" isshootable="true">
+ <Item name="" identifier="guitar" category="Misc" Tags="bigitem" scale="0.5" description="" price="300" isshootable="true">
     <Upgrade gameversion="0.9.2.0" scale="0.5"/>
     <PreferredContainer primary="crewcab" spawnprobability="0.01"/>
     <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1"/>
@@ -3659,10 +3730,10 @@
     <Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-2,0" handle2="10,50" swingamount="10,20" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="!equals clown" />
-		<sound file="Mods/guitar_rework/Guitar_1_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="Mods/guitar_rework/Guitar_2_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-		<sound file="Mods/guitar_rework/Guitar_3_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-		<sound file="Mods/guitar_rework/Guitar_4_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_1_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+        <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_2_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_3_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_4_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="clown" />
@@ -3670,5 +3741,5 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  </Override>
+</Override>
 </Items>
