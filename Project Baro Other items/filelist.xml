@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" modversion="1.0.4" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.15.0">
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Project Baro Other items" modversion="1.0.9" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.16.0"
   <UIStyle file="%ModDir%/Content/UI/pj_style.xml" />
   <Sounds file="%ModDir%/Content/pjsounds.xml" />
   <LocationTypes file="%ModDir%/Content/pjlocationTypes.xml" />
@@ -37,5 +37,11 @@
   <Item file="%ModDir%/Item/Thalassophobia/phoenix_injector/phoenix_injector.xml" />
   <Item file="%ModDir%/Item/alarms/alarms.xml" />
   <Other file="%ModDir%/Lua/Autorun/run.lua" />
+  <Other file="%ModDir%/Lua/Nominal_items.lua" />
+  <Other file="%ModDir%/Lua/suicide.lua" />
+  <Other file="%ModDir%/Lua/chatlog.lua" />
+  <Other file="%ModDir%/Lua/Afflictionsstarts.lua" />
+  <Other file="%ModDir%/Lua/webhook.lua" /> 
   <Sounds file="%ModDir%/Sounds/sounds.xml" />
+  <Sounds file="%ModDir%/Overhaul/Atmosphere/sounds.xml" />
 </contentpackage>
