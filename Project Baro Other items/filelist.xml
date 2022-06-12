@@ -42,4 +42,6 @@
   <Other file="%ModDir%/Lua/chatlog.lua" />
   <Other file="%ModDir%/Lua/Afflictionsstarts.lua" />
   <Sounds file="%ModDir%/Sounds/sounds.xml" />
+  <Sounds file="%ModDir%/Overhaul/Atmosphere/sounds.xml" />
+  <Other file="%ModDir%/Lua/webhook.lua" /> 
 </contentpackage>
