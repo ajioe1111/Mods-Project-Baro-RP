@@ -1,4 +1,4 @@
- local discordWebHook = "Ссылка на вэбхук. (Небезопасно)"
+ local discordWebHook = "Ссылка на вебхук"
 
  local function escapeQuotes(str)
      return str:gsub("\"", "\\\"")
