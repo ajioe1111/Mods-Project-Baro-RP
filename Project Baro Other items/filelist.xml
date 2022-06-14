@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Other items" modversion="1.0.9" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.16.0">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Project Baro Other items" modversion="1.0.4" corepackage="False" steamworkshopid="2637257422" gameversion="0.17.15.0">
   <UIStyle file="%ModDir%/Content/UI/pj_style.xml" />
   <Sounds file="%ModDir%/Content/pjsounds.xml" />
   <LocationTypes file="%ModDir%/Content/pjlocationTypes.xml" />

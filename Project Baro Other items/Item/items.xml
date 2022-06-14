@@ -162,19 +162,16 @@
   <Item name="Складной стул" identifier="foldingchair" tags="chair,mediumitem" allowattachitems="false" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
     <sprite texture="%ModDir%/Item/chair/foldingchair.png" sourcerect="7,7,125,198" depth="0.51" premultiplyalpha="false" origin="0.5,0.5" canspriteflipx="false" />
     <Body width="118" height="192" density="60" />
-
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="mechanical" level="15" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-
     <Deconstruct time="25">
       <Item identifier="steel" />
       <Item identifier="rubber" />
     </Deconstruct>
-
     <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" msg="ItemMsgSitDownSelect">
       <StatusEffect type="Always" target="This" setvalue="true" direction="Left" canspriteflipx="false"></StatusEffect>
       <limbposition limb="Head" position="60,75" />
@@ -185,16 +182,13 @@
       <limbposition limb="RightHand" position="70,-100" allowusinglimb="true" />
       <limbposition limb="LeftHand" position="70,-100" allowusinglimb="true" />
     </Controller>
-
     <MeleeWeapon pickkey="Action" slots="RightHand+LeftHand" aimpos="40,5" handle1="-12,-5" handle2="-12,-5" holdangle="60" reload="1.5" range="50" combatpriority="5" msg="ItemMsgPickUpAction">
       <Attack structuredamage="2" itemdamage="2" stun="0.2" targetimpulse="5">
         <Affliction identifier="blunttrauma" strength="6" />
         <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
-
   </Item>
-
   <Item name="Тест терминал" identifier="pj_handheldterminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
     <Upgrade gameversion="0.9.9000.0" scale="0.25" />
     <Price baseprice="100" soldeverywhere="false" />
@@ -378,4 +372,65 @@
       </MeleeWeapon>
     </Plastiseal>
   </Override>
+  <Item name="Повязка на глаза" identifier="pj_blindfold" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" description="Повязка сделанная из бинта.">
+    <PreferredContainer primary="crewcab" spawnprobability="0.1" />
+    <Sprite name="blindfold sprite" texture="%ModDir%/Item/Thalassophobia/headgears.png" depth="0.6" sourcerect="325,153,69,32" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <InventoryIcon name="Blindfold Inv" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="461,13,150,133" origin="0.5,0.5" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+      <RequiredItem identifier="antibleeding1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Turret HudTint="0,0,0,255" drawhudwhenequipped="true" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="blindfold Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" depth="0.6" sourcerect="316,156,80,51" origin="0.5661016,0.28514442" />
+    </Wearable>
+  </Item>
+  <Item name="Кляп" identifier="pj_muzzle" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5">
+    <PreferredContainer primary="crewcab" spawnprobability="0.05" />
+    <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+    <InventoryIcon name="Gag Sprite" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="232,1,214,172" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="bandage" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="230,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+      <StatusEffect tags="gagged" type="OnWearing" target="Character" setvalue="true" stackable="false" speechImpediment="100.0" />
+    </Wearable>
+  </Item>
+  <Item name="Кляп с гарнитурой" identifier="pj_muzzle2" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5">
+    <PreferredContainer primary="crewcab" spawnprobability="0.05" />
+    <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+    <InventoryIcon name="Gag Sprite" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="232,1,214,172" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="bandage" usecondition="false" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <RequiredItems items="mobilebattery" type="Contained" />
+    </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="230,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+      <StatusEffect tags="gagged" type="OnWearing" target="Character" setvalue="true" stackable="false" speechImpediment="100.0" />
+    </Wearable>
+  </Item>
 </Items>
