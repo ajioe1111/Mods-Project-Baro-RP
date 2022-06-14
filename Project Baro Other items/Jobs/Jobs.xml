@@ -280,22 +280,17 @@
         </PreviewSprites>
       </ItemSet>
       <ItemSet>
-        <Item identifier="securityuniform2" equip="true" outfit="true" />
+        <Item identifier="pj_ssb_uniform" equip="true" outfit="true" />
         <Item identifier="idcard" equip="true" showpreview="false" />
-        <Item identifier="stungun">
-          <Item identifier="stungundart" />
-          <Item identifier="stungundart" />
+        <Item identifier="ek_handgun">
+          <Item identifier="ek_handgun_riot_mag" />
         </Item>
-        <Item identifier="stunbaton">
-          <Item identifier="batterycell" showpreview="false" />
-        </Item>
-        <Item identifier="batterycell" showpreview="false" />
+        <Item identifier="ek_tonfa" />
         <Item identifier="divingknife" equip="false" />
-        <Item identifier="stungundart" />
-        <Item identifier="handcuffs" />
-        <Item identifier="antibleeding1" />
-        <Item identifier="bodyarmor" equip="true" />
-        <Item identifier="ballistichelmet3" equip="true" />
+        <Item identifier="ek_handcuff_container">
+          <Item identifier="handcuffs" showpreview="false" />
+        </Item>
+        <Item identifier="ek_handgun_riot_mag" />
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
         </Item>
