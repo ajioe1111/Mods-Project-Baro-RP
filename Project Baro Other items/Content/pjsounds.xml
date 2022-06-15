@@ -228,20 +228,22 @@
     <hull file="Content/Sounds/Hull/Hull6.ogg" />
     <hull file="Content/Sounds/Hull/HullLong1.ogg" />
     <hull file="Content/Sounds/Hull/HullLong2.ogg" />
-    <guisound file="Content/Sounds/UI/UImsg.ogg" guisoundtype="UIMessage" />
-    <guisound file="Content/Sounds/UI/ChatMsg.ogg" guisoundtype="ChatMessage" />
-    <guisound file="Content/Sounds/UI/RadioMsg.ogg" guisoundtype="RadioMessage" />
-    <guisound file="Content/Sounds/UI/DeadMsg.ogg" guisoundtype="DeadMessage" />
-    <guisound file="Content/Sounds/UI/Click.ogg" guisoundtype="Click" />
-    <guisound file="Content/Sounds/UI/PopupMenu.ogg" guisoundtype="PopupMenu" />
-    <guisound file="Content/Sounds/UI/QuantityDecrease.ogg" guisoundtype="DecreaseQuantity" />
-    <guisound file="Content/Sounds/UI/QuantityIncrease.ogg" guisoundtype="IncreaseQuantity" />
-    <guisound file="Content/Sounds/UI/HireRepairClick.ogg" guisoundtype="HireRepairClick" />
-    <guisound file="Content/Sounds/UI/UIswitch1.ogg" guisoundtype="UISwitch" />
-    <guisound file="Content/Sounds/UI/UIswitch2.ogg" guisoundtype="UISwitch" />
-    <guisound file="Content/Sounds/UI/UIswitch3.ogg" guisoundtype="UISwitch" />
-    <guisound file="Content/Sounds/PickItem.ogg" guisoundtype="PickItem" />
-    <guisound file="Content/Sounds/PickItemFail.ogg" guisoundtype="PickItemFail" />
-    <guisound file="Content/Sounds/DropItem.ogg" guisoundtype="DropItem" />
+    <guisound file="Content/Sounds/UI/UImsg.ogg"              guisoundtype="UIMessage"/>
+    <guisound file="Content/Sounds/UI/ChatMsg.ogg"            guisoundtype="ChatMessage"/>
+    <guisound file="Content/Sounds/UI/RadioMsg.ogg"           guisoundtype="RadioMessage"/>
+    <guisound file="Content/Sounds/UI/DeadMsg.ogg"            guisoundtype="DeadMessage"/>
+    <guisound file="Content/Sounds/UI/UI_labelSelect.ogg"     guisoundtype="Select"/>
+    <guisound file="Content/Sounds/UI/PopupMenu.ogg"          guisoundtype="PopupMenu"/>
+    <guisound file="Content/Sounds/UI/UI_labelCountMinus.ogg" guisoundtype="Decrease"/>
+    <guisound file="Content/Sounds/UI/UI_labelCountPlus.ogg"  guisoundtype="Increase"/>
+    <guisound file="Content/Sounds/UI/UIswitch1.ogg"          guisoundtype="UISwitch"/>
+    <guisound file="Content/Sounds/UI/UIswitch2.ogg"          guisoundtype="UISwitch"/>
+    <guisound file="Content/Sounds/UI/UIswitch3.ogg"          guisoundtype="UISwitch"/>
+    <guisound file="Content/Sounds/PickItem.ogg"              guisoundtype="PickItem"/>
+    <guisound file="Content/Sounds/PickItemFail.ogg"          guisoundtype="PickItemFail"/>
+    <guisound file="Content/Sounds/DropItem.ogg"              guisoundtype="DropItem"/>
+    <guisound file="Content/Sounds/UI/UI_labelCheckBox.ogg"   guisoundtype="TickBox"/>
+    <guisound file="Content/Sounds/UI/UI_labelMarkka.ogg"     guisoundtype="ConfirmTransaction"/>
+    <guisound file="Content/Sounds/UI/UI_labelCart.ogg"       guisoundtype="Cart"/>
   </sounds>
 </Override>
