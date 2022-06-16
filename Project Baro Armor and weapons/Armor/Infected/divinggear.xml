@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Зараженный костюм" identifier="pj_Infected_divingsuit" category="Diving" tags="diving,deepdiving,divingsuit" scale="0.5" fireproof="true" description="This suit seems to have been infected by some kind of ballast flora that produces oxygen as a byproduct to being fed blood. The entire suit is covered inside and out. It seems safe for humans to wear. Pressure Resistance(10000)" impactsoundtag="impact_metal_heavy">
+  <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.001" />
+
+  <Deconstruct time="30">
+    <Item identifier="titaniumaluminiumalloy" />
+    <Item identifier="alienblood" />
+    <Item identifier="rubber" />
+  </Deconstruct>
+  <InventoryIcon texture="%ModDir%/Armor/Infected/InfectedInventoryIconAtlas2.png" sourcerect="0,256,128,128" origin="0.5,0.5" />
+  <!--
+  <Sprite name="Diving Suit" texture="DivingSuit_Item.png" sourcerect="157,0,90,307" depth="0.55" origin="0.4888889,0.5439739" />
+  -->
+  <Sprite name="Diving Suit Item" texture="%ModDir%/Armor/Infected/InfectedDivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+  <ContainedSprite name="Diving Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Armor/Infected/InfectedDivingSuit_Item.png" sourcerect="181,0,75,193" depth="0.55" origin="0.5,0.5" />
+  <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Armor/Infected/Infectedcontainers.png" sourcerect="724,373,77,209" depth="0.55" origin="-0.12,-0.13" />
+  <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Armor/Infected/InfectedDivingSuit_Item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+  <Body radius="45" width="34" density="15" />
+  <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect">
+    <sprite name="Diving Suit Helmet Wearable" texture="%ModDir%/Armor/Infected/Infectedheadgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.70" hidelimb="true" hideotherwearables="true" sourcerect="5,4,94,96" origin="0.5,0.5"></sprite>
+    <sprite name="Regular Diving Suit Torso" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Hand" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Hand" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Lower Arm" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Lower Arm" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Upper Arm" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Upper Arm" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Waist" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Thigh" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Thigh" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Leg" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Leg" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Left Shoe" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="Regular Diving Suit Right Shoe" texture="%ModDir%/Armor/Infected/reg_InfectedDivingSuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+    <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100" UseHullOxygen="false" />
+    <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="100000.0" SpeedMultiplier="0.6" LowPassMultiplier="0.1" setvalue="true" disabledeltatime="true">
+      <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="1" />
+      <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="1" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="0.06" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="alienblood,antibloodloss2" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="0.6" setvalue="true" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="alienblood,antibloodloss2" type="Contained" />
+    </StatusEffect>
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,explosiondamage,stun" damagemultiplier="0.38" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.78" probabilitymultiplier="1" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.6" probabilitymultiplier="1" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.42" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.54" damagesound="LimbArmor" deflectprojectiles="true" />
+  </Wearable>
+  <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+    <Containable items="alienblood,antibloodloss2" />
+    <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+      <RequiredItem items="alienblood,antibloodloss2" type="Contained" matchonempty="true" />
+      <Conditional condition="lt 5.0" />
+      <Sound file="%ModDir%/Armor/Infected/heartbeat1.ogg" range="400" />
+    </StatusEffect>
+  </ItemContainer>
+  <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use">
+    <Upgrade gameversion="0.1401.0.0" msg="ItemMsgPickUpUse" />
+  </Holdable>
+</Item>

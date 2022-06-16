@@ -1,0 +1,99 @@
+﻿<Item name="Аллан: Мех" identifier="pj_allan" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="Мех компании Infinity. Внешне почти как новый. Модель неизвестна." allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <InventoryIcon texture="%ModDir%/Uniform/Allan/SYSP.png" sourcerect="0,0,256,256" />
+  <Sprite name="Diving Suit Item" texture="%ModDir%/Uniform/Allan/SYSP.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" scale="0.2"/>
+  <Body radius="45" width="34" density="15" />
+  <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
+    <sprite texture="%ModDir%/Uniform/Allan/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55" scale="1.1">
+      <LightComponent range="450" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
+        <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
+          <Conditional IsDead="false" />
+        </StatusEffect>
+        <LightTexture texture="%ModDir%/Uniform/Allan/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </sprite>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="25,600" style="ItemUI" />
+      <TickBox text="Система освещения" IsOn="true">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
+    <StatusHUD drawhudwhenequipped="true" range="450" thermalgoggles="true" showdeadcharacters="false"  />
+    <sprite texture="%ModDir%/Uniform/Allan/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
+    <sprite texture="%ModDir%/Uniform/Allan/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" /> 
+    <sprite texture="%ModDir%/Uniform/Allan/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" /> 
+    <sprite texture="%ModDir%/Uniform/Allan/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160"/>
+    <sprite name="UPARMR" texture="%ModDir%/Uniform/Allan/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+    <sprite name="UPARML" texture="%ModDir%/Uniform/Allan/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+    <sprite texture="%ModDir%/Uniform/Allan/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+    <sprite texture="%ModDir%/Uniform/Allan/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.2868421,0.3658537" sourcerect="0,0,150,300" />
+    <sprite texture="%ModDir%/Uniform/Allan/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
+    <sprite texture="%ModDir%/Uniform/Allan/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,260,160" />
+    <sprite texture="%ModDir%/Uniform/Allan/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
+    <sprite texture="%ModDir%/Uniform/Allan/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4,0.5310345" sourcerect="0,0,180,140" />
+    <sprite texture="%ModDir%/Uniform/Allan/FOOT.png" limb="RightFoot" sound="footstep_exo" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+    <sprite texture="%ModDir%/Uniform/Allan/FOOT.png" limb="LeftFoot" sound="footstep_exo" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+    <StatusEffect type="OnWearing" target="Character" OxygenAvailable="50000.0" UseHullOxygen="true">
+      <StatValue stattype="FlowResistance" value="0.8" />
+      <StatValue stattype="SwimmingSpeed" value="2.5" />
+      <StatValue stattype="WalkingSpeed" value="0.4" />
+      <ReduceAffliction identifier="hunger" amount="100" />
+      <ReduceAffliction identifier="thirst" amount="100" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true">
+      <Conditional InWater="true" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="50000.0" Condition="0.1" comparison="Or" targetslot="0">
+      <Conditional IsDead="false" />
+      <RequiredItem identifier="oxygentank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="50000.0" Oxygen="20.0" Condition="-0.37" targetslot="0">
+      <Conditional IsDead="false" />
+      <RequiredItem identifier="weldingfueltank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="50000.0" Oxygen="20.0" Condition="-0.37" targetslot="0">
+      <RequiredItem identifier="incendiumfueltank" type="Contained" />
+      <Affliction identifier="burn" amount="0.1" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="50000.0" Condition="0.1" comparison="Or" targetslot="0">
+      <Conditional IsDead="false" />
+      <RequiredItem identifier="oxygeniteshard" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="50000.0" Condition="0.05" comparison="Or" targetslot="0">
+      <Conditional IsDead="false" />
+      <RequiredItem identifier="oxygenitetank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="100000000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+    </StatusEffect>
+    <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
+      <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+      <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+    </StatusEffect>
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="morbusinepoisoning,cyanidepoisoning,sufforinpoisoning,deliriuminepoisoning" damagemultiplier="0.0" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="hallucinating" damagemultiplier="0.4" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0" probabilitymultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="organdamage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0" probabilitymultiplier="0" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.1" damagesound="LimbArmor" />
+    <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0" probabilitymultiplier="0" damagesound="LimbArmor" />
+    <SkillModifier skillidentifier="mechanical" skillvalue="100" />
+    <SkillModifier skillidentifier="electrical" skillvalue="100" />
+    <SkillModifier skillidentifier="weapons" skillvalue="100" />
+  </Wearable>
+  <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+    <Containable items="none" />
+    <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
+    <SubContainer capacity="1" maxstacksize="1">
+      <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" />
+    </SubContainer>
+  </ItemContainer>
+  <aitarget maxsightrange="2000" />
+</Item>
