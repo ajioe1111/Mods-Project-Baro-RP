@@ -119,8 +119,8 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="320,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" depth="0.6" sourcerect="224,640,416,112" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:EK Utilities%/Items/Tools/ekutility_tools.png" sourcerect="320,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Utilities%/Items/Tools/ekutility_tools.png" depth="0.6" sourcerect="224,640,416,112" origin="0.5,0.5" />
     <Body width="360" height="50" density="50" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-20" handle1="-30,-3" handle2="15,3" holdangle="45" reload="2.5" range="100" combatPriority="28" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="25" severlimbsprobability="0.1" structuredamage="15" itemdamage="20">
@@ -3221,19 +3221,19 @@
       <Item identifier="plastic" />
     </Deconstruct>
     <!--<InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,384,64,64" />-->
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" sourcerect="0,40,128,176" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" sourcerect="0,40,128,176" depth="0.6" origin="0.5,0.5" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Marine Combat Armor Torso" texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Marine Combat Armor Right Arm" texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Marine Combat Armor Left Arm" texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Marine Combat Armor Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Marine Combat Armor Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_marine_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Marine Combat Armor Waist" texture="%ModDir%/Items/Jobgear/armor_marine_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Marine Combat Armor Right Thigh" texture="%ModDir%/Items/Jobgear/armor_marine_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Marine Combat Armor Left Thigh" texture="%ModDir%/Items/Jobgear/armor_marine_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Marine Combat Armor Right Leg" texture="%ModDir%/Items/Jobgear/armor_marine_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Marine Combat Armor Left Leg" texture="%ModDir%/Items/Jobgear/armor_marine_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Marine Combat Armor Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Marine Combat Armor Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Marine Combat Armor Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Marine Combat Armor Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Marine Combat Armor Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Marine Combat Armor Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Marine Combat Armor Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Marine Combat Armor Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Marine Combat Armor Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Marine Combat Armor Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
       <!--
 	  <sprite name="Marine Combat Armor Right Shoe" texture="Mods/EK Armory/Items/Jobgear/armor_marine_rig_legs.png" limb="RightFoot" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" 
 	  sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
@@ -3466,7 +3466,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
     <!--<InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,512,64,64" />-->
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" sourcerect="0,40,128,160" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" sourcerect="0,40,128,160" depth="0.6" origin="0.5,0.5" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Mercenary Combat Armor Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
@@ -3616,8 +3616,8 @@
       <RequiredItem identifier="silicon" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="288,576,64,64" />
-    <Sprite texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="352,416,352,144" depth="0.55" origin="0.5,0.45" />
+    <InventoryIcon texture="%ModDir:EK Utilities%/Items/Tools/ekutility_tools.png" sourcerect="288,576,64,64" />
+    <Sprite texture="%ModDir:EK Utilities%/Items/Tools/ekutility_tools.png" sourcerect="352,416,352,144" depth="0.55" origin="0.5,0.45" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,5" aimpos="35,15" handle1="-10,-35" handle2="90,-35" holdangle="-45" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="60" structurefixamount="-0.12" range="700" barrelpos="53,0" combatpriority="27" RepairMultiple="true" RepairThroughHoles="true" TargetForce="20" levelwallfixamount="-10.0">
@@ -4630,8 +4630,8 @@
     <Deconstruct time="10">
       <Item identifier="revolver" />
     </Deconstruct>
-    <InventoryIcon texture="Revolerbw.png" sourcerect="0,0,80,48" origin="0.5,0.5" />
-    <Sprite texture="Revolerbw.png" sourcerect="0,0,80,48" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:BWeapons%/TS/Revolerbw.png" sourcerect="0,0,80,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:BWeapons%/TS/Revolerbw.png" sourcerect="0,0,80,48" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" description="Old-fashioned weapon,can be dual wielded.Use 14.5mm round." />
 
@@ -5631,7 +5631,7 @@
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYS3.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYS3.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6022,7 +6022,7 @@
       <Item identifier="handheldsonar" />
       <Item identifier="fpgacircuit" />
     </Deconstruct>
-    <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYS.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/X01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6217,7 +6217,7 @@
       <Item identifier="fpgacircuit" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYS.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/BA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/X01L.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/BA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6400,7 +6400,7 @@
       <Item identifier="armored_hardsuit_bw" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYS.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/X01V.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6591,7 +6591,7 @@
       <Item identifier="bwpower" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYSA.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYSA.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/ST.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/ST2.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/ST.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6781,7 +6781,7 @@
       <Item identifier="pio_bw2" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/PI.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/PIC.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/PI.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -6992,7 +6992,7 @@
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/PIC2.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -7207,7 +7207,7 @@
 
 
 
-    <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/MA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/MA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -7563,7 +7563,7 @@
 
 
 
-    <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/MA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/MA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
