@@ -9,25 +9,18 @@
     <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
   <Affliction name="Холод" identifier="cold" description="Вам холодно." type="poison" targets="human,crawler" limbspecific="false" indicatorlimb="Torso" maxstrength="100" transferbuffs="true" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
-    <Effect minstrength="20" maxstrength="35" strengthchange="10" minscreendistort="0.0" maxscreendistort="0.2" dialogflag="Холодно" minvitalitydecrease="0" maxvitalitydecrease="5" minscreenblur="0.0" maxscreenblur="0.2">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.5"></StatusEffect>
+    <Effect minstrength="0" maxstrength="20" minscreendistort="0.0" maxscreendistort="0.2" dialogflag="Холодно" minvitalitydecrease="0" maxvitalitydecrease="10" strengthchange="-1" minscreenblur="0.0" maxscreenblur="0.2">
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.8" />
     </Effect>
-    <Effect minstrength="20" maxstrength="40" strengthchange="11" minscreendistort="0.1" maxscreendistort="0.3" dialogflag="Холодно" minvitalitydecrease="5" maxvitalitydecrease="10" minscreenblur="0.1" maxscreenblur="0.3">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.4"></StatusEffect>
+    <Effect minstrength="20" maxstrength="50" minscreendistort="0.2" maxscreendistort="0.4" dialogflag="Очень холодно" minvitalitydecrease="10" maxvitalitydecrease="30" strengthchange="-1" minscreenblur="0.2" maxscreenblur="0.4">
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.5" />
     </Effect>
-    <Effect minstrength="40" maxstrength="60" strengthchange="1" minscreendistort="0.2" maxscreendistort="0.4" dialogflag="Очень холодно" minvitalitydecrease="10" maxvitalitydecrease="30" minscreenblur="0.2" maxscreenblur="0.4">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.3"></StatusEffect>
+    <Effect minstrength="50" maxstrength="70" minscreendistort="0.4" maxscreendistort="0.8" dialogflag="Смертельно холодно" minvitalitydecrease="30" maxvitalitydecrease="40" strengthchange="-1" minscreenblur="0.4" maxscreenblur="0.9"> 
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.3" />
     </Effect>
-    <Effect minstrength="60" maxstrength="80" strengthchange="1" minscreendistort="0.4" maxscreendistort="0.6" dialogflag="Очень холодно" minvitalitydecrease="30" maxvitalitydecrease="60" minscreenblur="0.4" maxscreenblur="0.6">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.2"></StatusEffect>
-    </Effect>
-    <Effect minstrength="80" maxstrength="99" strengthchange="1" minscreendistort="0.6" maxscreendistort="0.8" dialogflag="Смертельно холодно" minvitalitydecrease="60" maxvitalitydecrease="80" minscreenblur="0.6" maxscreenblur="0.8">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.1"></StatusEffect>
-    </Effect>
-    <Effect minstrength="99" maxstrength="100" strengthchange="1" minscreendistort="0.8" maxscreendistort="1.0" dialogflag="Заледенел" minvitalitydecrease="100" maxvitalitydecrease="100" minscreenblur="0.8" maxscreenblur="1.0">
-      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.0">
-        <Affliction identifier="stun" amount="100" setvalue="true" />
-        <Affliction identifier="oxygenlow" amount="60" setvalue="true" />
+    <Effect minstrength="70" maxstrength="100" minscreendistort="0.8" maxscreendistort="1.0" dialogflag="Заледенел" minvitalitydecrease="40" maxvitalitydecrease="90" strengthchange="-1" minscreenblur="0.8" maxscreenblur="1.0">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.1">
+        <Affliction identifier="oxygenlow" amount="30" setvalue="true" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="142,893,135,131" color="10,193,114,255" origin="0,0.001241642" />
