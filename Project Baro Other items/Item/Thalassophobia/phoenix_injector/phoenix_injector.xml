@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Инжектор Феникса" identifier="pj_secondchance" category="Material" cargocontaineridentifier="metalcrate" description="" Tags="smallitem,schematic" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Sprite name="epinephrine" texture="%ModDir%/Item/Thalassophobia/phoenix_injector/science.png" sourcerect="253,8,88,39" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="epinicon" texture="%ModDir%/Item/Thalassophobia/phoenix_injector/science.png" sourcerect="334,55,47,51" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="55" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <LightComponent range="1" castshadows="false" lightcolor="200,255,120,100" IsOn="true" powerconsumption="0" blinkFrequency="0" allowingameediting="false">
+      <Sprite name="epin light" texture="%ModDir%/Item/Thalassophobia/phoenix_injector/science.png" sourcerect="253,50,79,39" depth="0.6" origin="0.5,0.5" />
+      <!-- immediate treatment, prevents things like bleeding out -->
+      <StatusEffect type="OnContained" target="This, Parent, Character" Comaprison="And" disabledeltatime="true" isshootable="false">
+        <Conditional health="lt -6" />
+        <ReduceAffliction identifier="bleeding" strength="100" />
+        <sound file="%ModDir%/Item/Thalassophobia/phoenix_injector/VitalSigns1.ogg" range="20.0" loop="false" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This, Parent, Character" Comaprison="Or" disabledeltatime="true" delay="5" checkconditionalalways="true" stackable="false">
+        <Conditional health="lt -2" />
+        <Affliction identifier="pj_chance" strength="400" />
+        <Affliction identifier="haste" strength="100" />
+        <ReduceAffliction identifier="bloodloss" strength="100" />
+        <ReduceAffliction identifier="bleeding" strength="500" />
+        <ReduceAffliction identifier="oxygenlow" strength="100" />
+        <ReduceAffliction identifier="gunshotwound" strength="40" />
+        <sound file="%ModDir%/Item/Thalassophobia/phoenix_injector/VitalSigns2.ogg" range="20.0" loop="false" />
+        <RemoveItem />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+</Items>

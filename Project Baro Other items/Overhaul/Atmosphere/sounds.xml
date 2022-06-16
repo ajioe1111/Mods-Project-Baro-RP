@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <sounds>
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt1.ogg" damagerange="0.0,30.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt2.ogg" damagerange="10.0,50.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt3.ogg" damagerange="25.0,70.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt4.ogg" damagerange="25.0,70.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt5.ogg" damagerange="40.0,80.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt6.ogg" damagerange="40.0,100.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureBlunt7.ogg" damagerange="60.0,1000.0" damagesoundtype="StructureBlunt" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall1.ogg" damagerange="0.0,20.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall2.ogg" damagerange="10.0,30.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall3.ogg" damagerange="25.0,50.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall4.ogg" damagerange="25.0,50.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall6.ogg" damagerange="40.0,100.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/DAMAGE_alienRuinsWall5.ogg" damagerange="50.0,1000.0" damagesoundtype="StructureAlien" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureCrunch1.ogg" damagerange="0.0,40.0" damagesoundtype="StructureSlash" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureCrunch2.ogg" damagerange="5.0,70.0" damagesoundtype="StructureSlash" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureCrunch3.ogg" damagerange="5.0,70.0" damagesoundtype="StructureSlash" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureCrunch4.ogg" damagerange="25.0,100.0" damagesoundtype="StructureSlash" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/StructureCrunch5.ogg" damagerange="25.0,100.0" damagesoundtype="StructureSlash" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/Creak1.ogg" damagesoundtype="Pressure" ignoremuffling="true" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/Creak2.ogg" damagesoundtype="Pressure" ignoremuffling="true" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/Creak3.ogg" damagesoundtype="Pressure" ignoremuffling="true" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/Creak4.ogg" damagesoundtype="Pressure" ignoremuffling="true" />
+    <damagesound file="%ModDir%/Overhaul/Atmosphere/Damage/Creak5.ogg" damagesoundtype="Pressure" ignoremuffling="true" />
+    <waterambiencein file="%ModDir%/Overhaul/Atmosphere/Water/WaterAmbienceIn.ogg" />
+    <waterambienceout file="%ModDir%/Overhaul/Atmosphere/Water/WaterAmbienceOut.ogg" volume="0.6" />
+    <waterambiencemoving file="%ModDir%/Overhaul/Atmosphere/Water/WaterAmbienceMoving.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient1.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient2.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient3.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient4.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient5.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient6.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient7.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient8.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient9.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient10.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/Ambient11.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/DistantPod1.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/DistantPod2.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/DistantPod3.ogg" />
+    <ambient file="%ModDir%/Overhaul/Atmosphere/Ambient/GlacialMovement.ogg" />
+    <icebreak file="%ModDir%/Overhaul/Atmosphere/Damage/IceCreak1.ogg" range="10000" />
+    <icebreak file="%ModDir%/Overhaul/Atmosphere/Damage/IceCreak2.ogg" range="10000" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull1.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull2.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull3.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull4.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull5.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/Hull6.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/HullLong1.ogg" />
+    <hull file="%ModDir%/Overhaul/Atmosphere/Hull/HullLong2.ogg" />
+  </sounds>
+</Override>

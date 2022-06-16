@@ -12,7 +12,7 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="546,7,110,96" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="552,8,86,95" origin="0.5369259,0.5346285" />
     <Sprite texture="helmets.png" sourcerect="47,78,98,104" depth="0.6" origin="0.5,0.5" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">

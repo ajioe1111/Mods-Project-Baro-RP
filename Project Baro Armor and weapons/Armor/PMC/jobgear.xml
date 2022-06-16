@@ -25,14 +25,14 @@
       <Item identifier="ballistichelmet" />
       <Item identifier="ballisticfiber" />
     </Deconstruct>
-    <Sprite name="solder Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" sourcerect="235,112,103,92" depth="0.6" origin="0.5,0.5" />
+    <Sprite name="solder Helmet" texture="%ModDir%/Armor/PMC/headgears.png" sourcerect="235,112,103,92" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-      <sprite name="solder Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.63" hidewearablesoftype="hair" sourcerect="235,112,103,92" origin="0.5,0.6" />
+      <sprite name="solder Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.63" hidewearablesoftype="hair" sourcerect="235,112,103,92" origin="0.5,0.6" />
     </Wearable>
   </Item>
 
@@ -50,10 +50,10 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="392,414,120,98" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="392,414,120,98" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="392,414,120,98" origin="0.5,0.51" />
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="392,414,120,98" origin="0.5,0.51" />
       <SkillModifier skillidentifier="weapons" skillvalue="2" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.21" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -81,10 +81,10 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,0,120,98" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,0,120,98" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,0,120,98" origin="0.5,0.51" />
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,0,120,98" origin="0.5,0.51" />
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -111,10 +111,10 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <Sprite name="sp Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,106,115,104" origin="0.5,0.5" />
+    <Sprite name="sp Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,106,115,104" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-        <sprite name="sp Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,106,115,104" origin="0.5,0.51" >
+        <sprite name="sp Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,106,115,104" origin="0.5,0.51" >
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
@@ -214,10 +214,10 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,98,120,92" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,98,120,92" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,98,120,92" origin="0.5,0.51">
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,98,120,92" origin="0.5,0.51">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
@@ -321,8 +321,8 @@
       <Item identifier="securityuniform" />
       <Item identifier="ballisticfiber" />
     </Deconstruct>
-    <InventoryIcon name="solder Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="376,3,126,88" origin="0.5,0.5" />
-    <Sprite name="solder Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,187,119,58" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="solder Armour Icon" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="376,3,126,88" origin="0.5,0.5" />
+    <Sprite name="solder Armour" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="0,187,119,58" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
@@ -359,8 +359,8 @@
       <Item identifier="titanium" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="248,0,128,91" origin="0.5,0.5" />
-    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,62,119,62" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="PMC Armour Icon" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="248,0,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="0,62,119,62" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
@@ -404,8 +404,8 @@
       <Item identifier="steel" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="120,0,128,91" origin="0.5,0.5" />
-    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="PMC Armour Icon" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="120,0,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="weapons" skillvalue="7" />
@@ -451,8 +451,8 @@
       <Item identifier="steel" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <InventoryIcon name="sp Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="248,92,128,91" origin="0.5,0.5" />
-    <Sprite name="sp Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,124,119,62" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="sp Armour Icon" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="248,92,128,91" origin="0.5,0.5" />
+    <Sprite name="sp Armour" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="0,124,119,62" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="weapons" skillvalue="7" />
@@ -505,8 +505,8 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon name="PMC Armour Icon" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="120,91,128,91" origin="0.5,0.5" />
-    <Sprite name="PMC Armour" texture="Mods/Project Baro Armor and weapons/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="PMC Armour Icon" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="120,91,128,91" origin="0.5,0.5" />
+    <Sprite name="PMC Armour" texture="%ModDir%/Armor/PMC/MiscJobGear.png" sourcerect="0,0,119,62" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="weapons" skillvalue="7" />
@@ -554,15 +554,15 @@
       <Item identifier="bodyarmor" />
       <Item identifier="ballisticfiber" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" origin="0.5,0.5" />
-    <Sprite name="solder Vest Item" texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" depth="0.6" />
+    <InventoryIcon texture="%ModDir%/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" origin="0.5,0.5" />
+    <Sprite name="solder Vest Item" texture="%ModDir%/Armor/PMC/solder_bodyarmour.png" sourcerect="7,32,113,193" depth="0.6" />
     <Body radius="45" height="50" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictiontypes="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
-      <sprite name="solder Vest Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/solder_bodyarmour.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" sourcerect="7,32,113,193" />
+      <sprite name="solder Vest Wearable" texture="%ModDir%/Armor/PMC/solder_bodyarmour.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.65" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" sourcerect="7,32,113,193" />
     </Wearable>
   </Item>
   <Item name="ЧВК (Особый боевой шлем с системой звукового усиления) 2" identifier="PMChelmet4" aliases="PMChelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.4" impactsoundtag="impact_metal_heavy">
@@ -578,10 +578,10 @@
       <Item identifier="plastic" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,397,120,115" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="0,397,120,115" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,397,120,115" origin="0.5,0.55" />
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="0,397,120,115" origin="0.5,0.55" />
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -608,10 +608,10 @@
       <Item identifier="plastic" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,0,115,105" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,0,115,105" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,0,115,105" origin="0.5,0.51">
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,0,115,105" origin="0.5,0.51">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
@@ -706,10 +706,10 @@
       <Item identifier="plastic" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="235,0,123,102" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="235,0,123,102" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="235,0,123,102" origin="0.5,0.51">
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="235,0,123,102" origin="0.5,0.51">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
@@ -804,10 +804,10 @@
       <Item identifier="plastic" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="359,0,128,115" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="359,0,128,115" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="359,0,128,115" origin="0.5,0.51">
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="359,0,128,115" origin="0.5,0.51">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />
@@ -903,10 +903,10 @@
       <Item identifier="plastic" />
       <Item identifier="carbon" />
     </Deconstruct>
-    <Sprite name="PMC Helmet" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,402,120,110" origin="0.5,0.5" />
+    <Sprite name="PMC Helmet" texture="%ModDir%/Armor/PMC/headgears.png" depth="0.6" sourcerect="120,402,120,110" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="PMC Helmet Wearable" texture="Mods/Project Baro Armor and weapons/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,402,120,110" origin="0.5,0.55">
+      <sprite name="PMC Helmet Wearable" texture="%ModDir%/Armor/PMC/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="true" hideotherwearables="true" sourcerect="120,402,120,110" origin="0.5,0.55">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />

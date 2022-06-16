@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction name="Тепло" identifier="heat" description="Вам тепло." type="resistance" isbuff="true" limbspecific="false" maxstrength="150">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-2" resistancefor="cold" minresistance="0" maxresistance="3.0" />
+    <Effect minstrength="20" maxstrength="40" strengthchange="-6" resistancefor="cold" minresistance="1" maxresistance="5.0" />
+    <Effect minstrength="40" maxstrength="60" strengthchange="-8" resistancefor="cold" minresistance="5" maxresistance="7.0" />
+    <Effect minstrength="60" maxstrength="80" strengthchange="-10" resistancefor="cold" minresistance="10" maxresistance="40.0" />
+    <Effect minstrength="80" maxstrength="100" strengthchange="-13" resistancefor="cold" minresistance="15" maxresistance="100.0" />
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="0,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Холод" identifier="cold" description="Вам холодно." type="poison" targets="human,crawler" limbspecific="false" indicatorlimb="Torso" maxstrength="100" transferbuffs="true" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+    <Effect minstrength="0" maxstrength="20" minscreendistort="0.0" maxscreendistort="0.2" dialogflag="Холодно" minvitalitydecrease="0" maxvitalitydecrease="10" strengthchange="-1" minscreenblur="0.0" maxscreenblur="0.2">
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.8" />
+    </Effect>
+    <Effect minstrength="20" maxstrength="50" minscreendistort="0.2" maxscreendistort="0.4" dialogflag="Очень холодно" minvitalitydecrease="10" maxvitalitydecrease="30" strengthchange="-1" minscreenblur="0.2" maxscreenblur="0.4">
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.5" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="70" minscreendistort="0.4" maxscreendistort="0.8" dialogflag="Смертельно холодно" minvitalitydecrease="30" maxvitalitydecrease="40" strengthchange="-1" minscreenblur="0.4" maxscreenblur="0.9"> 
+      <StatusEffect setvalue="true" target="Character" SpeedMultiplier="0.3" />
+    </Effect>
+    <Effect minstrength="70" maxstrength="100" minscreendistort="0.8" maxscreendistort="1.0" dialogflag="Заледенел" minvitalitydecrease="40" maxvitalitydecrease="90" strengthchange="-1" minscreenblur="0.8" maxscreenblur="1.0">
+      <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.1">
+        <Affliction identifier="oxygenlow" amount="30" setvalue="true" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="142,893,135,131" color="10,193,114,255" origin="0,0.001241642" />
+  </Affliction>
+  <Affliction name="Протез" identifier="protez" description="Вместо руки у вас протез." type="resistance" isbuff="true" limbspecific="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-80" minspeedmultiplier="1.0" maxspeedmultiplier="1.15" minfacetint="255,0,0,0" maxfacetint="255,0,0,150">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.35" />
+      <StatValue stattype="SwimmingSpeed" minvalue="0" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="0" maxstrength="100" strengthchange="-80" resistancefor="burn" minresistance="1" maxresistance="3" />
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="284,892,133,132" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Телепортация" identifier="empteleport" description="Происходит телепортация. ЭМИ при этом может разрушить электронные приборы вблизи, но и лучше не лезть при этом в воду." type="poison" causeofdeathdescription="Killed by explosive genetic disorder." selfcauseofdeathdescription="Your explosive genetic disorder has killed you." limbspecific="false" maxstrength="1" damageoverlayalpha="1" iconcolors="255,0,140,255;255,0,140,255">
+    <PeriodicEffect mininterval="8" maxinterval="15">
+      <StatusEffect target="Character" stackable="false" disabledeltatime="false">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="1000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/Emp.ogg" range="1000" />
+        <ParticleEmitter particle="zap" particleamount="2" scalemin="1" scalemax="2" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" colormultiplier="200,255,255,190" />
+        <Explosion range="400" force="2" smoke="false" sparks="false" empstrength="100" flames="false" applyfireeffects="false" screencolor="200,255,255,220" screencolorrange="400" screencolorduration="2.0"></Explosion>
+      </StatusEffect>
+      <StatusEffect target="Character" stackable="false">
+        <Conditional InWater="eq true" />
+        <Explosion range="600" force="0.1" smoke="false" sparks="false" empstrength="100" flames="false" applyfireeffects="false">
+          <Affliction identifier="burn" amount="4" />
+        </Explosion>
+      </StatusEffect>
+    </PeriodicEffect>
+    <Effect minstrength="0" maxstrength="100">
+      <StatusEffect target="Character" stackable="false" duration="1.0" disabledeltatime="false">
+        <ParticleEmitter particle="zap" copyentityangle="false" anglemin="0" anglemax="360" particleamount="1" particlespersecond="2" velocitymin="40" velocitymax="75" scalemin="0.2" scalemax="0.5" colormultiplier="200,255,255,100" />
+        <sound file="%ModDir%/Afflictions/WeldSpark.ogg" range="700" loop="true" />
+      </StatusEffect>
+    </Effect>
+    <icon name="empteleport" texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="429,894,130,130" color="60,107,195,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Spaghettified" identifier="pj_blackholedeath" description="The patient has been exposed to tear gas." type="resistance" causeofdeathdescription="Spaghettified in Black Hole" selfcauseofdeathdescription="You have been spaghettified by a black hole." limbspecific="false" indicatorlimb="Head" showiconthreshold="20" maxstrength="20">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-2.0" minvitalitydecrease="500" maxvitalitydecrease="501">
+      <StatusEffect target="Character">
+        <RemoveCharacter />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="560,894,128,128" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Второй шанс" identifier="pj_chance" description="Extra borrowed time granted by your phoenix injector. It won't last forever: find medicine ASAP!" type="resistance" isbuff="true" limbspecific="false" maxstrength="600">
+    <Effect minstrength="0" maxstrength="400" strengthchange="-4" resistancefor="damage" minresistance="0" maxresistance="0.8" />
+    <icon texture="%ModDir%/Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Фригг" identifier="frigg" description="Вы сильны как не когда!" type="resistance" isbuff="true" limbspecific="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" resistancefor="huskinfection" minresistance="0" maxresistance="0.75" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" resistancefor="psychosis" minresistance="0" maxresistance="0.75" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-5" resistancefor="paralysis" minresistance="1" maxresistance="3" />
+    <icon texture="%ModDir%/Content/UI/CommandUIAtlas.png" sourcerect="768,896,128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Никотиновая зависимость" identifier="nicotineaddiction" description="Потребность в курении табачных изделий." type="poison" limbspecific="false" indicatorlimb="Head" showiconthreshold="20" maxstrength="100" karmachangeonapplied="-0.1" healcostmultiplier="2.85">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-0.05" />
+    <Effect minstrength="20" maxstrength="40" strengthchange="-0.05">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="0.2" />
+        <Affliction identifier="psychosisresistance" strength="0.3" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="40" maxstrength="80" strengthchange="-0.1">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="0.5" />
+        <Affliction identifier="psychosisresistance" strength="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="80" maxstrength="100" strengthchange="-0.1" minvitalitydecrease="10" maxvitalitydecrease="10">
+      <StatusEffect target="Character">
+        <Affliction identifier="nicotinewithdrawal" strength="1" />
+        <Affliction identifier="psychosisresistance" strength="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Item/malborasek/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Никотиновая ломка" identifier="nicotinewithdrawal" description="Волнение и тремор." type="poison" causeofdeathdescription="Смерть от никотиновой ломки" selfcauseofdeathdescription="Вы умерли от никотиновой ломки." limbspecific="false" indicatorlimb="Head" showiconthreshold="20" maxstrength="500" healcostmultiplier="1.75">
+    <Effect minstrength="20" maxstrength="400" minvitalitydecrease="0" maxvitalitydecrease="5" strengthchange="0.6" minchromaticaberration="0.0" maxchromaticaberration="1.0" dialogflag="nicotinewithdrawalLow" minfacetint="255,255,255,0" maxfacetint="255,255,255,50"></Effect>
+    <Effect minstrength="400" maxstrength="480" minvitalitydecrease="5" maxvitalitydecrease="20" strengthchange="0.3" minchromaticaberration="1.0" maxchromaticaberration="5.0" dialogflag="nicotinewithdrawalMedium" minfacetint="255,255,255,50" maxfacetint="255,255,255,100"></Effect>
+    <Effect minstrength="480" maxstrength="500" minvitalitydecrease="20" maxvitalitydecrease="40" strengthchange="0.1" minchromaticaberration="1.0" maxchromaticaberration="5.0" dialogflag="nicotinewithdrawalMedium" minfacetint="255,255,255,50" maxfacetint="255,255,255,100"></Effect>
+    <icon texture="%ModDir%/Item/malborasek/Smokeicon.png" sourcerect="0,0,128,126" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Клеймо" identifier="brand" description="" type="poison" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="10000" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="1">
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction identifier="internaldamage" strength="0.007" />
+        <ReduceAffliction identifier="blunttrauma" strength="0.007" />
+        <ReduceAffliction identifier="lacerations" strength="0.007" />
+        <ReduceAffliction identifier="bitewounds" strength="0.007" />
+        <ReduceAffliction identifier="gunshotwound" strength="0.007" />
+        <ReduceAffliction identifier="organdamage" strength="0.007" />
+        <ReduceAffliction identifier="explosiondamage" strength="0.007" />
+        <ReduceAffliction identifier="bleeding" strength="0.01" />
+        <ReduceAffliction identifier="burn" strength="0.007" />
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional health="lt -2" />
+        <ReduceAffliction identifier="oxygenlow" strength="0.01" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas.png" sourcerect="695,895,129,128" color="0,255,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Немота" identifier="pj_silenced" description="" type="resistance" causeofdeathdescription="Описание в случае смерти от немоты?" selfcauseofdeathdescription="Вы умерли от немоты? я не знаю как вы это сделали." limbspecific="false" maxstrength="100" karmachangeonapplied="-0.5" damageoverlayalpha="1">
+    <Effect minstrength="0" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-0.7">
+      <StatusEffect tags="silenced" target="Character" speechImpediment="100.0" />
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/MainIconsAtlas2.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

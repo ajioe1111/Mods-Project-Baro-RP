@@ -9,8 +9,8 @@
       <Price locationtype="mine" multiplier="1" minavailable="1" />
     </Price>
     <Deconstruct time="10" />
-    <InventoryIcon name="Морозная форма вэк" texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="138,655,136,105" origin="0.5,0.5" />
-    <Sprite name="frozen_uniform" texture="Mods/Project Baro Armor and weapons/MiscJobGear.png" sourcerect="249,805,207,79" depth="0.6" origin="0.48533672,0.4793691" />
+    <InventoryIcon name="Морозная форма вэк" texture="%ModDir%/InventoryIcons.png" sourcerect="138,655,136,105" origin="0.5,0.5" />
+    <Sprite name="frozen_uniform" texture="%ModDir%/MiscJobGear.png" sourcerect="249,805,207,79" depth="0.6" origin="0.48533672,0.4793691" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Uniform Torso" texture="frozen_uniform.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="174,4,84,156" origin="0.5,0.5" />
@@ -49,11 +49,11 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="211,491,116,166" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="211,491,116,166" origin="0.5,0.5" />
     <Sprite texture="frozen_armor.png" sourcerect="60,37,113,172" depth="0.6" origin="0.5,0.5" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="frozen armor" texture="Mods/Project Baro Armor and weapons/Armor/Frozen/frozen_armor.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="59,36,114,173" origin="0.53,0.6" scale="0.38" />
+      <sprite name="frozen armor" texture="%ModDir%/Armor/Frozen/frozen_armor.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="59,36,114,173" origin="0.53,0.6" scale="0.38" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
@@ -79,11 +79,11 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Project Baro Armor and weapons/InventoryIcons.png" sourcerect="103,1,110,96" origin="0.5,0.5" />
-    <Sprite texture="Mods/Project Baro Armor and weapons/Armor/Frozen/helmets.png" sourcerect="46,91,99,91" depth="0.6" origin="0.510778,0.5174304" />
+    <InventoryIcon texture="%ModDir%/InventoryIcons.png" sourcerect="103,1,110,96" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Armor/Frozen/helmets.png" sourcerect="46,91,99,91" depth="0.6" origin="0.510778,0.5174304" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="Mods/Project Baro Armor and weapons/Armor/Frozen/helmets.png" limb="Head" inherittexturescale="false" sourcerect="46,91,99,91" origin="0.5134911,0.51463425" scale="0.37" />
+      <sprite texture="%ModDir%/Armor/Frozen/helmets.png" limb="Head" inherittexturescale="false" sourcerect="46,91,99,91" origin="0.5134911,0.51463425" scale="0.37" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="cold" damagemultiplier="0.75" />
@@ -102,7 +102,7 @@
           <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
         </TickBox>
       </CustomInterface>
-      <sprite name="ssb_hemlet_mask" texture="Mods/Project Baro Armor and weapons/Armor/Officer/helmets.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="50,24,96,50" origin="0.6183839,0.38158828">
+      <sprite name="ssb_hemlet_mask" texture="%ModDir%/Armor/Officer/helmets.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidewearablesoftype="hair" sourcerect="50,24,96,50" origin="0.6183839,0.38158828">
         <LightComponent range="320.0" lightcolor="190,224,255,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
             <Conditional IsDead="false" />

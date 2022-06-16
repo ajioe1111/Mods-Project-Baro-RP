@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <footstep_exo file="%ModDir%/Sounds/exo_footstep_2.ogg" range="800" />
+  <footstep_exo file="%ModDir%/Sounds/exo_footstep_3.ogg" range="800" />
+  <SingularityCollapse file="%ModDir%/Item/Thalassophobia/singularity/SingularityCollapse.ogg" range="3000" />
+</sounds>

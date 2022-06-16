@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="teargascloud" identifier="pj_teargascloud" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" hideinmenus="true" pickdistance="0" noninteractable="true">
+    <sprite name="sporeem" texture="%ModDir%/Item/Thalassophobia/gas_clouds/headgears.png" sourcerect="0,0,1,1" origin="0.4,0.3" />
+    <Body width="40" radius="30" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,255,150,0" range="1" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="true">
+      <StatusEffect type="Always" target="This">
+        <ParticleEmitter particle="pj_shroomsmoke" burstamount="2" particlespersecond="4" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" scalemin="1.4" scalemax="1.4" colormultiplier="255,230,200,255" />
+        <sound file="%ModDir%/Item/Thalassophobia/gas_clouds/GasCloud.ogg" range="500.0" loop="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.5" stackable="false">
+        <Explosion range="110" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="0" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="0" flashduration="0">
+          <Affliction identifier="blinded" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="7" stackable="false">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <Item name="freezecloud" identifier="pj_freezecloud" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" hideinmenus="true" pickdistance="0" noninteractable="true">
+    <sprite name="sporeem" texture="%ModDir%/Item/Thalassophobia/gas_clouds/headgears.png" sourcerect="0,0,1,1" origin="0.4,0.3" />
+    <Body width="40" radius="30" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,255,150,0" range="1" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="true">
+      <StatusEffect type="Always" target="This">
+        <ParticleEmitter particle="pj_shroomsmoke" burstamount="2" particlespersecond="4" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" scalemin="1.4" scalemax="1.4" colormultiplier="230,230,255,255" />
+        <sound file="%ModDir%/Item/Thalassophobia/gas_clouds/GasCloud.ogg" range="500.0" loop="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.5" stackable="false">
+        <Explosion range="130" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="0" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="0" flashduration="0">
+          <Affliction identifier="cold" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="6" stackable="false">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+</Items>

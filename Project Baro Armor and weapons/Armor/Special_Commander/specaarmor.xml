@@ -50,7 +50,7 @@
       <sprite name="speca Armor Left Shoe" texture="specaarmor.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="speca Armor Right Shoe" texture="specaarmor.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="12000.0" LowPassMultiplier="0.2" SpeedMultiplier="0.9" comparison="and" setvalue="true" disabledeltatime="true">
-	    <Sound file="Mods/Project Baro Armor and weapons/Armor/Special_Commander/BreathSuitLoop.ogg" range="300" volume="0.2" />
+	    <Sound file="%ModDir%/Armor/Special_Commander/BreathSuitLoop.ogg" range="300" volume="0.2" />
       </StatusEffect>
       <!-- Refill oxygen when the suit is contained. -->
       <StatusEffect type="OnContained" target="Contained" Condition="1.0">

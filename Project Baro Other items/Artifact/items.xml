@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Cold" identifier="coldartifact" category="Alien" Tags="alienartifact" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Vent>
+      <StatusEffect target="NearbyCharacters" type="Always" range="5000">
+        <Affliction identifier="cold" amount="0.45" />
+      </StatusEffect>
+    </Vent>
+    <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" depth="0.6" sourcerect="630,0,82,108" origin="0.5,0.5" />
+    <Body width="70" height="70" density="20" />
+    <Holdable slot="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,10" msg="ItemMsgPickUpSelect" />
+  </Item>
+</Items>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Тест терминал" identifier="pj_handheldterminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
+  <Upgrade gameversion="0.9.9000.0" scale="0.25" />
+  <Price baseprice="100" soldeverywhere="false" />
+  <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="323,193,60,61" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="149,371,69,93" depth="0.55" origin="0.5,0.5" />
+  <Body width="60" height="90" density="8" />
+  <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+  <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" drawhudwhenequipped="true">
+    <GuiFrame relativesize="0.35,0.35" anchor="Center" style="ItemUI" />
+    <WifiComponent range="150000.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <!--<RequiredItems items="mobilebattery" type="Contained" />-->
+    </WifiComponent>
+  </Terminal>
+</Item>

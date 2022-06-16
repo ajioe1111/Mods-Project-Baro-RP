@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Инопланетный ключ" identifier="pj_alien_key" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" description="Непонятно какую дверь он должен открывать..." Scale="0.35" impactsoundtag="impact_metal_light">
+    <Deconstruct time="120"></Deconstruct>
+    <InventoryIcon texture="%ModDir%/Item/alien_key/alien_key.png" sourcerect="512,0,64,64" />
+    <Sprite texture="ModDir%/Item/alien_key/alien_key.png" depth="0.55" sourcerect="512,64,48,128" origin="0.5,0.63" />
+    <Body width="40" height="100" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="Рация дальней связи" identifier="longrangeradio" scale="0.5" category="Equipment" tags="mediumitem,headset,mobilecontainer" description="Соеденяется с сетью ретранстяторов и позволяет передавать сообщения на большие дистанции" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="280" minleveldifficulty="25">
+      <Price locationtype="outpost" multiplier="1" minavailable="3" />
+      <Price locationtype="city" multiplier="0.9" minavailable="10" />
+      <Price locationtype="research" multiplier="1" minavailable="4" />
+      <Price locationtype="military" multiplier="1" minavailable="6" />
+      <Price locationtype="mine" multiplier="1" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Item/longradio/radio.png" sourcerect="320,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Item/longradio/radio.png" depth="0.6" sourcerect="448,0,128,112" origin="0.5,0.5" />
+    <Body width="112" height="100" density="12" />
+    <Deconstruct time="10">
+      <Item identifier="headset" />
+      <Item identifier="aluminium" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="batterycell" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="headset" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="batterycell" />
+    </Fabricate>
+    <WifiComponent range="999999.9" channel="0" LinkToChat="true" MinChatMessageInterval="0.0"></WifiComponent>
+    <ItemContainer capacity="6">
+      <Containable items="smallitem,explosive,tool,ore" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Head" slots="Any,Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Headset Wearable" texture="longradio/radio.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inherittexturescale="true" hideotherwearables="false" sourcerect="512,112,64,80" origin="0.5,0.6" />
+      <sprite name="Backpack Wearable" texture="longradio/radio.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="true" hideotherwearables="false" sourcerect="575,0,88,258" origin="1.0000002,0.7156861" />
+    </Wearable>
+  </Item>
+  <Item name="Карманный обогреватель" identifier="pj_portable_heater" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" description="Небольшой обогреватель. При ношении обогревает носителя." Scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab,supplycab" />
+    <Deconstruct time="15">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Item/portable_heater/portable_heater.png" sourcerect="512,0,64,64" />
+    <Sprite texture="%ModDir%/Item/portable_heater/portable_heater.png" depth="0.55" sourcerect="512,64,48,128" origin="0.5,0.63" />
+    <Body width="40" height="100" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <AiTarget soundrange="5000" sonarlabel="entityname.sonarbeacon" />
+    <LightComponent LightColor="0.4,1.0,0.3,0.7" range="20" powerconsumption="10" Flicker="0.35" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.20">
+        <RequiredItem items="batterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.25">
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.10">
+        <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1.5">
+        <Explosion range="25.0" structuredamage="0" itemdamage="0" force="0.005" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" playtinnitus="false" applyfireeffects="false">
+          <Affliction identifier="heat" amount="10" />
+        </Explosion>
+      </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.12,0.08" anchor="BottomRight" absoluteoffset="25,360" style="ItemUI" />
+      <TickBox text="Включить обогреватель" IsOn="true">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Override>
+    <Item name="" identifier="doctorsuniform1" aliases="doctorsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+      <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.01" />
+      <Price baseprice="1000">
+        <Price locationtype="outpost" multiplier="1" minavailable="1" />
+        <Price locationtype="city" multiplier="0.9" minavailable="1" />
+        <Price locationtype="research" multiplier="1" minavailable="1" />
+        <Price locationtype="military" multiplier="1" minavailable="1" />
+        <Price locationtype="mine" multiplier="1" minavailable="1" />
+      </Price>
+      <Deconstruct time="10" />
+      <Fabricate suitablefabricators="vending1" requiredtime="1"></Fabricate>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="electrical" level="20" />
+        <RequiredSkill identifier="medical" level="100" />
+        <RequiredItem identifier="titaniumaluminiumalloy" />
+        <RequiredItem identifier="rubber" />
+      </Fabricate>
+      <InventoryIcon name="doctfatigvet Icon" texture="OutfitIconsAV.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
+      <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="504,84,123,60" depth="0.6" origin="0.5,0.5" />
+      <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+      <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+        <sprite name="Medic Uniform 1 Torso" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Hand" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Hand" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Lower Arm" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Lower Arm" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Upper Arm" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Upper Arm" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Waist" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Thigh" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Thigh" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Leg" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Leg" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Right Shoe" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Medic Uniform 1 Left Shoe" texture="%ModDir%/Item/medics/medic_1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.65" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.65" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0" />
+      </Wearable>
+      <ItemContainer capacity="6">
+        <Containable items="chem,medical" excludeditems="toolbox,toolbelt" />
+      </ItemContainer>
+    </Item>
+  </Override>
+  <Override>
+    <Item name="" identifier="healthscanner" scale="0.5" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab" minamount="1" maxamount="1" spawnprobability="0.5" />
+      <Price baseprice="150" soldeverywhere="false">
+        <Price locationtype="outpost" multiplier="1.3" sold="false" />
+        <Price locationtype="city" multiplier="1.2" minavailable="1" />
+        <Price locationtype="research" multiplier="1" minavailable="8" />
+        <Price locationtype="military" multiplier="1.25" minavailable="1" />
+        <Price locationtype="mine" multiplier="1" sold="false" />
+      </Price>
+      <Deconstruct time="20">
+        <Item identifier="fpgacircuit" />
+        <Item identifier="plastic" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="mechanical" level="30" />
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="fpgacircuit" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Item/medics/headgears.png" sourcerect="48,142,78,60" origin="0.5,0.5" />
+      <Sprite name="Health Scanner" texture="%ModDir%/Item/medics/headgears.png" sourcerect="47,152,79,44" depth="0.6" origin="0.49808788,0.5862722" />
+      <Body width="70" height="24" density="30" />
+      <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+        <sprite name="Health Scanner Wearable" texture="%ModDir%/Item/medics/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="49,154,76,40" origin="0.47885594,0.6267625" />
+      </Wearable>
+      <StatusHUD drawhudwhenequipped="true" />
+    </Item>
+  </Override>
+  <Item name="Складной стул" identifier="foldingchair" tags="chair,mediumitem" allowattachitems="false" texturescale="1.0,1.0" scale="0.5" category="Decorative" canflipy="false">
+    <sprite texture="%ModDir%/Item/chair/foldingchair.png" sourcerect="7,7,125,198" depth="0.51" premultiplyalpha="false" origin="0.5,0.5" canspriteflipx="false" />
+    <Body width="118" height="192" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="mechanical" level="15" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <Deconstruct time="25">
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <Controller UserPos="10,30" direction="Right" hidehud="false" canbeselected="true" msg="ItemMsgSitDownSelect">
+      <StatusEffect type="Always" target="This" setvalue="true" direction="Left" canspriteflipx="false"></StatusEffect>
+      <limbposition limb="Head" position="60,75" />
+      <limbposition limb="Torso" position="60,0" />
+      <limbposition limb="Waist" position="60,-70" />
+      <limbposition limb="RightFoot" position="130,-150" />
+      <limbposition limb="LeftFoot" position="130,-150" />
+      <limbposition limb="RightHand" position="70,-100" allowusinglimb="true" />
+      <limbposition limb="LeftHand" position="70,-100" allowusinglimb="true" />
+    </Controller>
+    <MeleeWeapon pickkey="Action" slots="RightHand+LeftHand" aimpos="40,5" handle1="-12,-5" handle2="-12,-5" holdangle="60" reload="1.5" range="50" combatpriority="5" msg="ItemMsgPickUpAction">
+      <Attack structuredamage="2" itemdamage="2" stun="0.2" targetimpulse="5">
+        <Affliction identifier="blunttrauma" strength="6" />
+        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Тест терминал" identifier="pj_handheldterminal" category="Electrical" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.9.9000.0" scale="0.25" />
+    <Price baseprice="100" soldeverywhere="false" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="323,193,60,61" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="149,371,69,93" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="90" density="8" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.35,0.35" anchor="Center" style="ItemUI" />
+      <WifiComponent range="150000.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <!--<RequiredItems items="mobilebattery" type="Contained" />-->
+      </WifiComponent>
+    </Terminal>
+  </Item>
+  <Item name="Сигарета" aliases="Cig,Ciggy" identifier="cigarette" category="Misc" Tags="smallitem" description="Сигарета марки 'Мальборасек Курна'" cargocontaineridentifier="cigpack">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" outcondition="0.1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,1,17,2" depth="0.55" />
+    <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,4,17,2" depth="0.55" maxcondition="99" />
+    <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,7,17,2" depth="0.55" maxcondition="40" />
+    <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,10,17,2" depth="0.55" maxcondition="0" />
+    <InventoryIcon texture="%ModDir%/Item/malborasek/Other.png" sourcerect="1,1,17,2" depth="0.55" />
+    <Body width="14" height="1" density="9.9" />
+    <RepairTool>
+      <ParticleEmitter particle="cigsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+      <LightComponent LightColor="1.0,0.5,0.5,0.2" Flicker="0.4" range="50" IsOn="false">
+        <StatusEffect type="OnUse" target="This" Condition="-4.0">
+          <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnUse" target="Character">
+          <Affliction identifier="nicotineaddiction" amount="10" />
+          <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
+          <ReduceAffliction identifier="psychosis" amount="1.5" />
+        </StatusEffect>
+        <StatusEffect type="InWater" target="This" IsOn="false" />
+        <StatusEffect type="OnFire" target="This" Condition="-20" IsOn="true" />
+        <StatusEffect type="OnFire" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" IsOn="false" />
+      </LightComponent>
+    </RepairTool>
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" aimpos="30,18" handle1="0,0" handle2="0,0" />
+  </Item>
+  <Item name="Пачка сигарет" identifier="cigpack" category="Misc" Tags="cntnr,smallitem" description="">
+    <Sprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="39,1,10,20" depth="0.55" />
+    <BrokenSprite texture="%ModDir%/Item/malborasek/Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true" />
+    <Body width="6" height="16" density="9.8" />
+    <Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="2" aimpos="35,-10">
+      <StatusEffect type="OnFire" target="This" Condition="-10" />
+      <StatusEffect type="OnFire" target="This">
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+    <ItemContainer capacity="12" canbeselected="true" hideitems="true" keepopenwhenequipped="true">
+      <Containable items="cigarette" />
+    </ItemContainer>
+    <Fabricate suitablefabricators="fabricator" requiredtime="7">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+  </Item>
+  <override>
+    <Item name="" identifier="captainspipe" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true" requireaimtouse="true">
+      <PreferredContainer primary="crewcab" spawnprobability="0.01" />
+      <PreferredContainer primary="abandonedcrewcab" spawnprobability="0.1" />
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="50">
+        <Price locationtype="outpost" multiplier="1" />
+        <Price locationtype="city" multiplier="1" />
+        <Price locationtype="research" multiplier="1" />
+        <Price locationtype="military" multiplier="1" />
+        <Price locationtype="mine" multiplier="1" />
+      </Price>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/InventoryIconAtlas.png" sourcerect="511,957,64,64" origin="0.5,0.5" />
+      <Body width="58" height="20" />
+      <Holdable slots="Any,RightHand" aimable="false" aimpos="28,10" handle1="10,-5" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnUse" target="This">
+          <ParticleEmitter particle="swirlysmoke" particlespersecond="1" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+          <RequiredItem items="pipetobacco" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" Condition="-4.0" disabledeltatime="false">
+          <RequiredItem items="pipetobacco" type="Contained" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnUse" target="Character">
+          <Affliction identifier="psychosisresistance" amount="10" />
+          <Affliction identifier="nicotineaddiction" amount="10" />
+          <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
+          <RequiredItem items="pipetobacco" type="Contained" />
+        </StatusEffect>
+      </Holdable>
+      <ItemContainer hideitems="true" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="74,-281" iteminterval="0,0" itemrotation="0" canbeselected="false" containedspritedepth="0.79">
+        <Containable items="pipetobacco" />
+      </ItemContainer>
+    </Item>
+  </override>
+  <override>
+    <Item name="" identifier="cigar" category="Misc" Tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" isshootable="true" requireaimtouse="true">
+      <PreferredContainer primary="crewcab" />
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="150" soldeverywhere="false" />
+      <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+        <RequiredItem identifier="pipetobacco" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="174,234,42,50" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,60,50,12" depth="0.55" origin="0.5,0.5" />
+      <Body width="45" height="10" />
+      <Holdable slots="Any,RightHand" aimable="false" aimpos="30,14" handle1="0,-10" swingamount="0,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnUse" target="This" Condition="-4.0">
+          <ParticleEmitter particle="swirlysmoke" particlespersecond="2" scalemin="1" scalemax="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="10" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnUse" target="Character">
+          <Affliction identifier="psychosisresistance" amount="10" />
+          <Affliction identifier="nicotineaddiction" amount="10" />
+          <ReduceAffliction identifier="nicotinewithdrawal" amount="5" />
+          <ReduceAffliction identifier="psychosis" amount="1.5" />
+          <ReduceAffliction identifier="reaperstax" amount="1" />
+          <ReduceAffliction identifier="hallucinating" amount="5" />
+          <ReduceAffliction identifier="watchersgaze" amount="5" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+    </Item>
+  </override>
+  <Override>
+    <Plastiseal name="" identifier="antibleeding2" category="Medical" Tags="smallitem,medical" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <PreferredContainer primary="medcab" minamount="4" maxamount="6" />
+      <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.4" />
+      <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="4" spawnprobability="0.25" />
+      <PreferredContainer secondary="locker" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantmedical" minavailable="12" />
+      </Price>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="2">
+        <RequiredSkill identifier="medical" level="16" />
+        <RequiredItem identifier="antibleeding1" />
+        <RequiredItem identifier="elastin" />
+      </Fabricate>
+      <Deconstruct time="20">
+        <Item identifier="organicfiber" mincondition="0.1" outcondition="0.25" />
+        <Item identifier="elastin" mincondition="0.1" outcondition="0.5" />
+      </Deconstruct>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="340,33,26,42" depth="0.6" origin="0.5,0.5" />
+      <Body width="25" height="40" density="20" />
+      <SuitableTreatment type="bleeding" suitability="50" />
+      <SuitableTreatment type="burn" suitability="50" />
+      <SuitableTreatment type="broken_bone" suitability="90" />
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+        <RequiredSkill identifier="medical" level="22" />
+        <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="5.0">
+          <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+          <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+          <ReduceAffliction type="bleeding" amount="10" />
+          <ReduceAffliction type="burn" amount="10" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="3.5">
+          <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+          <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+          <ReduceAffliction type="broken_bone" amount="1" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="5.0">
+          <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+          <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+          <ReduceAffliction type="bleeding" amount="7.5" />
+          <ReduceAffliction type="burn" amount="7.5" />
+        </StatusEffect>
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+    </Plastiseal>
+  </Override>
+  <Item name="Повязка на глаза" identifier="pj_blindfold" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" description="Повязка сделанная из бинта.">
+    <PreferredContainer primary="crewcab" spawnprobability="0.1" />
+    <Sprite name="blindfold sprite" texture="%ModDir%/Item/Thalassophobia/headgears.png" depth="0.6" sourcerect="325,153,69,32" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <InventoryIcon name="Blindfold Inv" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="461,13,150,133" origin="0.5,0.5" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+      <RequiredItem identifier="antibleeding1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Turret HudTint="0,0,0,255" drawhudwhenequipped="true" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="blindfold Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" depth="0.6" sourcerect="316,156,80,51" origin="0.5661016,0.28514442" />
+    </Wearable>
+  </Item>
+  <Item name="Кляп" identifier="pj_muzzle" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5">
+    <PreferredContainer primary="crewcab" spawnprobability="0.05" />
+    <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+    <InventoryIcon name="Gag Sprite" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="232,1,214,172" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="bandage" usecondition="false" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="230,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+      <StatusEffect tags="gagged" type="OnWearing" target="Character" setvalue="true" stackable="false" speechImpediment="100.0" />
+    </Wearable>
+  </Item>
+  <Item name="Кляп с гарнитурой" identifier="pj_muzzle2" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5">
+    <PreferredContainer primary="crewcab" spawnprobability="0.05" />
+    <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="226,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+    <InventoryIcon name="Gag Sprite" texture="%ModDir%/Item/Thalassophobia/bombcollar.png" depth="0.6" sourcerect="232,1,214,172" origin="0.5123859,0.53692484" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="bandage" usecondition="false" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <RequiredItems items="mobilebattery" type="Contained" />
+    </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" autoequipwhenfull="false">
+      <sprite name="Muzzle Wearable" texture="%ModDir%/Item/Thalassophobia/headgears.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="230,326,69,68" origin="0.4,0.3" hidewearablesoftype="moustache,beard" />
+      <StatusEffect tags="gagged" type="OnWearing" target="Character" setvalue="true" stackable="false" speechImpediment="100.0" />
+    </Wearable>
+  </Item>
+</Items>

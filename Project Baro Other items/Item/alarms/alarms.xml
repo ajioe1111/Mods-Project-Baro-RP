@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Alarm 01" identifier="alarm01" description="BATTLESTAR GALACTICA: Action Stations alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm01.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Alarm 02" identifier="alarm02" description="FREESOUND.ORG: 'Klaxon.wav' (creator: TerraKing7428)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm02.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Alarm 03" identifier="alarm03" description="FREESOUND.ORG: 'Buzzer Alarm 1.wav' (creator: NoahBangs)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm03.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Alarm 04" identifier="alarm04" description="FREESOUND.ORG: 'alarm 003.wav' (creator: cydon)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm04.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Alarm 05" identifier="alarm05" description="YOUTUBE: Military Submarine Alarm Sound Effect (uploaded by SoundEffectsFactory)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm05.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Alarm 06" identifier="alarm06" description="SUBNAUTICA: Cyclops submarine alarm (old)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm06.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 07" identifier="alarm07" description="DAY OF INFAMY: Bunker door alarm (Dog Red)" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm07.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 08" identifier="alarm08" description="ALIEN: Nostromo self-destruct alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm08.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 09" identifier="alarm09" description="BLACK MESA: Rocket engine alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm09.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 10" identifier="alarm10" description="BLACK MESA: Industrial alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm10.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 11" identifier="alarm11" description="BLACK MESA: Emergency alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm11.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 12" identifier="alarm12" description="BLACK MESA: Generator / containment alarm" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm12.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 13" identifier="alarm13" description="HALF-LIFE 2: 'combine_bank_alarm_loop4.wav'" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm13.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 14" identifier="alarm14" description="HALF-LIFE 2: 'combine_bank_alarm_loop1.wav'" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm14.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="alarm 15" identifier="alarm15" description="HALF-LIFE 2: 'alarm_citizen_loop1.wav'" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="187" />
+    <Price locationtype="City" buyprice="135" />
+    <Price locationtype="Outpost" buyprice="150" />
+    <Price locationtype="Military" buyprice="150" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" range="75">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/alarm15.ogg" type="OnActive" range="1500.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="BuzzerMarkII" identifier="BuzzerMarkII" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06" />
+    <Price locationtype="Research" buyprice="2" />
+    <Price locationtype="City" buyprice="2" />
+    <Price locationtype="Outpost" buyprice="2" />
+    <Price locationtype="Military" buyprice="2" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="75,64,42,63" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="5.0" range="20">
+      <Sprite texture="%ModDir%/Item/alarms/signal.png" sourcerect="2,191,42,63" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Item/alarms/Sounds/BuzzerMarkII.ogg" type="OnActive" range="2000.0" loop="true" volume="0.7" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+</Items>
