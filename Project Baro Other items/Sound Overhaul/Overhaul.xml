@@ -37,8 +37,8 @@
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Items/Weapons/melee_ek.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Items/Weapons/melee_ek.png" sourcerect="0,272,224,64" depth="0.55" origin="0.5,0.75" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/Weapons/melee_ek.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/melee_ek.png" sourcerect="0,272,224,64" depth="0.55" origin="0.5,0.75" />
     <Body width="224" height="28" density="20" />
     <MeleeWeapon slots="RightHand,Any" controlpose="true" holdpos="35,-40" aimpos="45,10" handle1="-22,-3" holdangle="40" reload="0.8" range="50" combatPriority="30" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="3" severlimbsprobability="0" itemdamage="0">
@@ -68,7 +68,7 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <Sprite texture="%ModDir%/Items/Weapons/melee_ek.png" sourcerect="320,128,128,32" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/melee_ek.png" sourcerect="320,128,128,32" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="32" density="40" />
     <Holdable slots="Any,RightHand" controlpose="true" holdpos="30,40" aimpos="45,-15" handle1="22,-6" holdangle="-120" aimangle="-80" msg="ItemMsgPickUpSelect" canBeCombined="true">
       <StatusEffect type="OnActive" target="This">
@@ -78,7 +78,7 @@
     <RangedWeapon barrelpos="10,5" spread="1" unskilledspread="20" reload="0.65" combatPriority="25" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="%ModDir%/Items/Weapons/ek_throwingknife.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:EK Armory%/Items/Weapons/ek_throwingknife.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
         <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -119,8 +119,8 @@
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Items/Tools/ekutility_tools.png" sourcerect="320,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Items/Tools/ekutility_tools.png" depth="0.6" sourcerect="224,640,416,112" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="320,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" depth="0.6" sourcerect="224,640,416,112" origin="0.5,0.5" />
     <Body width="360" height="50" density="50" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-20" handle1="-30,-3" handle2="15,3" holdangle="45" reload="2.5" range="100" combatPriority="28" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="25" severlimbsprobability="0.1" structuredamage="15" itemdamage="20">
@@ -3269,22 +3269,22 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="0,384,64,64" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,384,64,64" />
     <Sprite texture="ek_armor_clothes.png" sourcerect="0,0,208,96" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="60" density="30" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Marine Combat Undershirt Torso" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Marine Combat Undershirt Right Arm" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Marine Combat Undershirt Left Arm" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Marine Combat Undershirt Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Marine Combat Undershirt Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Marine Combat Undershirt Waist" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Marine Combat Undershirt Right Thigh" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Marine Combat Undershirt Left Thigh" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Marine Combat Undershirt Right Leg" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Marine Combat Undershirt Left Leg" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Marine Combat Undershirt Right Shoe" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
-      <sprite name="Marine Combat Undershirt Left Shoe" texture="%ModDir%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Marine Combat Undershirt Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Marine Combat Undershirt Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Marine Combat Undershirt Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Marine Combat Undershirt Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Marine Combat Undershirt Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Marine Combat Undershirt Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Marine Combat Undershirt Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Marine Combat Undershirt Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Marine Combat Undershirt Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Marine Combat Undershirt Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Marine Combat Undershirt Right Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Marine Combat Undershirt Left Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_marine_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.88" />
       <!--<damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.65" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />-->
@@ -3309,11 +3309,11 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="128,384,64,64" />
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" sourcerect="0,0,80,80" depth="0.6" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="128,384,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" sourcerect="0,0,80,80" depth="0.6" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="0,0,84,84" origin="0.55,0.5" scale="0.37" />
+      <sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="0,0,84,84" origin="0.55,0.5" scale="0.37" />
       <!-- <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" /> -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
@@ -3339,19 +3339,19 @@
       <Item identifier="plastic" />
     </Deconstruct>
     <!--<InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="64,384,64,64" />-->
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" sourcerect="0,40,128,160" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" sourcerect="0,40,128,160" depth="0.6" origin="0.5,0.5" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Renegade Combat Armor Torso" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Renegade Combat Armor Right Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Renegade Combat Armor Left Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Renegade Combat Armor Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Renegade Combat Armor Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Renegade Combat Armor Waist" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Renegade Combat Armor Right Thigh" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Renegade Combat Armor Left Thigh" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Renegade Combat Armor Right Leg" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Renegade Combat Armor Left Leg" texture="%ModDir%/Items/Jobgear/armor_renegade_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Renegade Combat Armor Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Renegade Combat Armor Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Renegade Combat Armor Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Renegade Combat Armor Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Renegade Combat Armor Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Renegade Combat Armor Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Renegade Combat Armor Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Renegade Combat Armor Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Renegade Combat Armor Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Renegade Combat Armor Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
       <!--
 	  <sprite name="Renegade Combat Armor Right Shoe" texture="Mods/EK Armory/Items/Jobgear/armor_renegade_rig_legs.png" limb="RightFoot" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" 
 	  sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
@@ -3387,22 +3387,22 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="64,384,64,64" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="64,384,64,64" />
     <Sprite texture="ek_armor_clothes.png" sourcerect="0,96,208,96" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="60" density="30" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Renegade Combat Undershirt Torso" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Renegade Combat Undershirt Right Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="RightArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Renegade Combat Undershirt Left Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Renegade Combat Undershirt Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Renegade Combat Undershirt Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Renegade Combat Undershirt Waist" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Renegade Combat Undershirt Right Thigh" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Renegade Combat Undershirt Left Thigh" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Renegade Combat Undershirt Right Leg" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Renegade Combat Undershirt Left Leg" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Renegade Combat Undershirt Right Shoe" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
-      <sprite name="Renegade Combat Undershirt Left Shoe" texture="%ModDir%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Renegade Combat Undershirt Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Renegade Combat Undershirt Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="RightArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Renegade Combat Undershirt Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Renegade Combat Undershirt Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Renegade Combat Undershirt Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Renegade Combat Undershirt Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Renegade Combat Undershirt Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Renegade Combat Undershirt Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Renegade Combat Undershirt Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Renegade Combat Undershirt Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Renegade Combat Undershirt Right Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Renegade Combat Undershirt Left Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_renegade_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.88" />
       <!--<damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.65" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />-->
@@ -3434,11 +3434,11 @@
       <RequiredItem identifier="ballisticfiber" />
       <RequiredItem identifier="aluminium" />
     </Fabricate>-->
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="64,448,64,64" />
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" sourcerect="96,0,80,80" depth="0.6" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="64,448,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" sourcerect="96,0,80,80" depth="0.6" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="96,0,84,84" origin="0.52,0.51" scale="0.37" />
+      <sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="96,0,84,84" origin="0.52,0.51" scale="0.37" />
       <!-- <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" /> -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.6" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
@@ -3469,16 +3469,16 @@
     <Sprite texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" sourcerect="0,40,128,160" depth="0.6" origin="0.5,0.5" />
     <Body radius="45" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Mercenary Combat Armor Torso" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Mercenary Combat Armor Right Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Mercenary Combat Armor Left Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Mercenary Combat Armor Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Mercenary Combat Armor Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
-      <sprite name="Mercenary Combat Armor Waist" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Mercenary Combat Armor Right Thigh" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Mercenary Combat Armor Left Thigh" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Mercenary Combat Armor Right Leg" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Mercenary Combat Armor Left Leg" texture="%ModDir%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Mercenary Combat Armor Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="Torso" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Mercenary Combat Armor Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="RightArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Mercenary Combat Armor Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="LeftArm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Mercenary Combat Armor Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Mercenary Combat Armor Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,128" origin="0.5,0.4" scale="0.4" />
+      <sprite name="Mercenary Combat Armor Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="Waist" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Mercenary Combat Armor Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="RightThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Mercenary Combat Armor Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="LeftThigh" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Mercenary Combat Armor Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Mercenary Combat Armor Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_rig_legs.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
       <!--
 	  <sprite name="Mercenary Combat Armor Right Shoe" texture="Mods/EK Armory/Items/Jobgear/armor_mercenary_rig_legs.png" limb="RightFoot" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" 
 	  sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
@@ -3509,24 +3509,24 @@
       <Item identifier="ballisticfiber" />
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="0,512,64,64" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="0,512,64,64" />
     <Sprite texture="ek_armor_clothes.png" sourcerect="208,0,208,96" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="60" density="30" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Mercenary Combat Undershirt Torso" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Right Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Left Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Right Lower Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,64" origin="0.5,0.8" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Left Lower Arm" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,64" origin="0.5,0.8" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Right Hand" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightHand" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Left Hand" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftHand" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,192,64,64" origin="0.5,0.5" scale="0.4" />
-      <sprite name="Mercenary Combat Undershirt Waist" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
-      <sprite name="Mercenary Combat Undershirt Right Thigh" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Mercenary Combat Undershirt Left Thigh" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
-      <sprite name="Mercenary Combat Undershirt Right Leg" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Mercenary Combat Undershirt Left Leg" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
-      <sprite name="Mercenary Combat Undershirt Right Shoe" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
-      <sprite name="Mercenary Combat Undershirt Left Shoe" texture="%ModDir%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Mercenary Combat Undershirt Torso" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="Torso" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,32,128,192" origin="0.5,0.54" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Right Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,0,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Left Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="128,128,64,128" origin="0.5,0.45" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Right Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,0,64,64" origin="0.5,0.8" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Left Lower Arm" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftForearm" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,128,64,64" origin="0.5,0.8" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Right Hand" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="RightHand" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,64,64,64" origin="0.5,0.5" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Left Hand" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_torso.png" limb="LeftHand" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="192,192,64,64" origin="0.5,0.5" scale="0.4" />
+      <sprite name="Mercenary Combat Undershirt Waist" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="Waist" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,104,90" origin="0.6,0.2" scale="0.5" />
+      <sprite name="Mercenary Combat Undershirt Right Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Mercenary Combat Undershirt Left Thigh" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,0,72,144" origin="0.5,0.5" scale="0.42" />
+      <sprite name="Mercenary Combat Undershirt Right Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="104,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Mercenary Combat Undershirt Left Leg" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="184,144,72,112" origin="0.5,0.5" scale="0.45" />
+      <sprite name="Mercenary Combat Undershirt Right Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="RightFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
+      <sprite name="Mercenary Combat Undershirt Left Shoe" texture="%ModDir:EK Armory%/Items/Jobgear/armor_mercenary_uniform_legs.png" limb="LeftFoot" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="0,80,104,112" origin="0.35,0.47" scale="0.35" rotation="90" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.88" />
       <!--<damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.65" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />-->
@@ -3577,11 +3577,11 @@
       <RequiredItem identifier="ballisticfiber" />
       <RequiredItem identifier="aluminium" />
     </Fabricate>-->
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="64,512,64,64" />
-    <Sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" sourcerect="96,192,80,80" depth="0.6" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="64,512,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" sourcerect="96,192,80,80" depth="0.6" />
     <Body radius="20" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
-      <sprite texture="%ModDir%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="96,192,84,84" origin="0.55,0.5" scale="0.37" />
+      <sprite texture="%ModDir:EK Armory%/Items/Jobgear/armor_helmets.png" limb="Head" inherittexturescale="false" sourcerect="96,192,84,84" origin="0.55,0.5" scale="0.37" />
       <!-- <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.4" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" /> -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" damagemultiplier="0.6" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" />
@@ -3616,8 +3616,8 @@
       <RequiredItem identifier="silicon" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Items/Tools/ekutility_tools.png" sourcerect="288,576,64,64" />
-    <Sprite texture="%ModDir%/Items/Tools/ekutility_tools.png" sourcerect="352,416,352,144" depth="0.55" origin="0.5,0.45" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="288,576,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Tools/ekutility_tools.png" sourcerect="352,416,352,144" depth="0.55" origin="0.5,0.45" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,5" aimpos="35,15" handle1="-10,-35" handle2="90,-35" holdangle="-45" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="60" structurefixamount="-0.12" range="700" barrelpos="53,0" combatpriority="27" RepairMultiple="true" RepairThroughHoles="true" TargetForce="20" levelwallfixamount="-10.0">
@@ -3795,8 +3795,8 @@
     </Projectile>
   </Item>
     <Item name="" identifier="ek_drumlmg_round" category="Misc" interactthroughwalls="true" tags="smallitem, round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="384,384,64,64" />
-    <Sprite texture="%ModDir%/Items/Weapons/weapons_ek.png" sourcerect="336,688,48,16" depth="0.55" />
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="384,384,64,64" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="336,688,48,16" depth="0.55" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -4303,7 +4303,7 @@
   <!--НАЧАЛО КОРАБЕЛЬНЫХ ОРУДИЙ-->
   
   <Item name="" description="" identifier="coilgun" Tags="turret" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
-      <Sprite texture="Turrets.png" depth="0.01" sourcerect="768,0,256,256" canflipy="false" />
+      <Sprite texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="768,0,256,256" canflipy="false" />
       <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
       <SwappableItem price="5000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
         <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
@@ -4348,7 +4348,7 @@
       </ConnectionPanel>
     </Item>
 	    <Item name="" identifier="railgun" description="" Tags="turret" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="railgunammosource">
-      <Sprite texture="Turrets.png" depth="0.01" sourcerect="0,0,512,512" canflipy="false" />
+      <Sprite texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="0,0,512,512" canflipy="false" />
       <MinimapIcon name="Command_Weapons_Railgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="640,0,128,128" />
       <SwappableItem price="5000" replacementonuninstall="turrethardpoint" origin="256,438" swapidentifier="basicturret">
         <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="0,0,256,389" />
@@ -4392,7 +4392,7 @@
       <Upgrade gameversion="0.10.0.0" scale="*0.5" barrelpos="256,178" />
     </Item>
 	<Item name="" description="" identifier="pulselaser" Tags="turret" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="pulselaserequipment">
-      <Sprite texture="Loaders.png" depth="0.01" sourcerect="0,0,256,256" canflipy="false" />
+      <Sprite texture="Content/Items/Weapons/Loaders.png" depth="0.01" sourcerect="0,0,256,256" canflipy="false" />
       <MinimapIcon name="Command_Weapons_Pulselaser" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,768,128,128" />
       <SwappableItem price="7500" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
         <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="768,0,256,389" />
@@ -5833,7 +5833,7 @@
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
 
-    <InventoryIcon texture="SYS2.png" sourcerect="0,0,256,256" />
+    <InventoryIcon texture="%ModDir:BWeapons%/BA/SYS2.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir:BWeapons%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:BWeapons%/BA/A01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:BWeapons%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -7730,13 +7730,13 @@
     <Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-2,0" handle2="10,50" swingamount="10,20" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="!equals clown" />
-		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_1_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_2_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_3_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-		<sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_4_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-		<sound file="Content/Items/Misc/Guitar1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar2.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="Content/Items/Misc/Guitar3.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		     <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_1_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+         <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_2_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		     <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_3_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		     <sound file="%ModDir%/Sound Overhaul/Other/Guitar/Guitar_4_r.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+		     <sound file="Content/Items/Misc/Guitar1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+         <sound file="Content/Items/Misc/Guitar2.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+         <sound file="Content/Items/Misc/Guitar3.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character">
         <Conditional HasStatusTag="clown" />
@@ -7761,8 +7761,8 @@
     <Body width="58" height="20" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="25,15" handle1="-10,0" handle2="0,0" swingamount="20,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-			<sound file="%ModDir%/Sound Overhaul/Other/Harmonica/Harmonica01.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-        <sound file="%ModDir%/Sound Overhaul/Other/Harmonica/Harmonica02.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+			<sound file="%ModDir%/Sound Overhaul/Other/Harmonica/Harmonica03.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+      <sound file="%ModDir%/Sound Overhaul/Other/Harmonica/Harmonica04.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
       <sound file="Content/Items/Misc/Harmonica1.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
       <sound file="Content/Items/Misc/Harmonica2.ogg" type="OnUse" range="600" loop="true" />
       <StatusEffect tags="playingharmonica" type="OnUse" target="Character" duration="0.1" stackable="false" />
@@ -7785,10 +7785,10 @@
     <Sprite texture="Misc.png" sourcerect="164,5,92,110" depth="0.55" origin="0.5,0.5" />
     <Body width="92" height="110" density="12" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="50,-20" handle1="-20,0" handle2="-10,0" swingamount="50,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
-      <sound file="Content/Items/Misc/AccordionLoop.ogg" type="OnUse" range="600" loop="true" />
-	  <sound file="%ModDir%/Sound Overhaul/Other/Accordion/Accordion01.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+     <sound file="Content/Items/Misc/AccordionLoop.ogg" type="OnUse" range="600" loop="true" />
+	   <sound file="%ModDir%/Sound Overhaul/Other/Accordion/Accordion01.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
 	   <sound file="%ModDir%/Sound Overhaul/Other/Accordion/Accordion02.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
-	    <sound file="%ModDir%/Sound Overhaul/Other/Accordion/Accordion03.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
+	   <sound file="%ModDir%/Sound Overhaul/Other/Accordion/Accordion03.ogg" type="OnUse" selectionmode="CharacterSpecific" range="600" loop="true" />
     </Holdable>
   </Item>
   
