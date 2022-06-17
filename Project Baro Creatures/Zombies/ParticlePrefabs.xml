@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Particles>
+  <fn_snow2 lifetime="4" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="False" drag="0.5" waterdrag="0" velocitychange="0,0.5" velocitychangewater="0,0.5" collisionradius="10" usecollision="True" deleteoncollision="False" friction="0" restitution="0" startsizemin="1,1" startsizemax="1.5,1.5" sizechangemin="0.1,0.1" sizechangemax="0.1,0.1" growtime="0.1" startcolor="255,255,255,45" endcolor="80,100,40,50" drawtarget="Air" blendstate="AlphaBlend" animduration="4" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <animatedsprite texture="Content/Particles/Smoke.png" sourcerect="0,0,4096,4096" columns="8" rows="8" origin="0.5,0.5" />
+  </fn_snow2>
+  <fn_telegraph startsizemin="1,1" startsizemax="1.5,1.5" sizechangemin="-0.5,-0.5" sizechangemax="-0.5,-0.5" startrotationmin="355" startrotationmax="365" angularvelocitymin="0" angularvelocitymax="0" startcolor="255,255,255,255" endcolor="0,0,0,0" growtime="0" lifetime="2" drawtarget="Both" velocitychange="0,0" startdelaymin="0.5" startdelaymax="0.5" rotatetodirection="False" drag="5" waterdrag="0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" blendstate="AlphaBlend" animduration="1" loopanim="False" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="%ModDir%/Zombies/Textures/Telegraph/flash.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </fn_telegraph>
+  <fn_hmpoints startsizemin="1,1" startsizemax="1.5,1.5" sizechangemin="-0.5,-0.5" sizechangemax="-0.5,-0.5" startrotationmin="355" startrotationmax="365" angularvelocitymin="0" angularvelocitymax="0" startcolor="255,255,255,255" endcolor="0,0,0,0" growtime="0.0" lifetime="4" drawtarget="Both" velocitychange="0,0" startdelaymin="0.5" startdelaymax="0.5" rotatetodirection="True" drag="5" waterdrag="0" velocitychangewater="0,0" collisionradius="1" usecollision="False" deleteoncollision="False" friction="0.5" restitution="0.5" blendstate="AlphaBlend" animduration="1" loopanim="False" drawontop="True" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <sprite texture="%ModDir%/Zombies/Textures/Miami/hotlinetext.png" sourcerect="0,0,256,96" origin="0.5,0.5" />
+  </fn_hmpoints>
+  <bloodspurtsplash startsizemin="0.5,0.5" startsizemax="1,1" startrotationmin="0" startrotationmax="360" startcolor="255,22,22,255" endcolor="255,45,45,255" lifetime="1.5" growtime="0.8" velocitychange="0,-5" startdelaymin="0" startdelaymax="0.2" angularvelocitymin="0" angularvelocitymax="0" rotatetodirection="True" drag="0" waterdrag="0" velocitychangewater="0,-0.1" collisionradius="30" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.5" sizechangemin="1,1" sizechangemax="1,1" drawtarget="Air" blendstate="AlphaBlend" animduration="1.5" loopanim="True" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="0">
+    <animatedsprite texture="Content/Particles/Spatter1.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.2,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter2.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.5,0.5" />
+    <animatedsprite texture="Content/Particles/Spatter3.png" sourcerect="0,0,1024,1024" columns="4" rows="8" origin="0.3,0.5" />
+  </bloodspurtsplash>
+  <blooddropfeeding lifetime="3" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0" startrotationmax="360" rotatetodirection="True" drag="0" waterdrag="0.3" velocitychange="0,-9.8" velocitychangewater="0,-5" collisionradius="10" usecollision="True" deleteoncollision="True" friction="0.5" restitution="0.2" startsizemin="0.4,0.2" startsizemax="1,0.3" sizechangemin="0,0" sizechangemax="0,0" growtime="0.5" startcolor="255,0,0,255" endcolor="200,0,0,0" drawtarget="Air" blendstate="AlphaBlend" animduration="1" loopanim="True" startdelaymin="0" startdelaymax="0" drawontop="False" lifetimemin="0" middlecolor="255,255,255,255" usemiddlecolor="False" priority="5">
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="0,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="32,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="64,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="96,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="128,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="160,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="192,96,32,32" origin="0.9,0.9" />
+    <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="224,96,32,32" origin="0.9,0.9" />
+  </blooddropfeeding>
+</Particles>

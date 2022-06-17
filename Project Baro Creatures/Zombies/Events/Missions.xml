@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Missions>
+  <CargoMission name="Biohazard" identifier="fn_cargonecrosis" tags="cargo,cargoresearch" type="Cargo" description="A representative of a corporation known as PHALANX has approached your crew with a reward of [reward] credits for delivering a container of a nondescript viral sample to [location2]. They won't tell you much about it, and they seem sort of shady.." difficulty="1" commonness="33" reward="3000" achievementidentifier="cargomission" successmessage="Sample received by PHALANX. Mission success.">
+    <Items>
+      <Item identifier="chemicalcrate" reward="250" maxcount="12">
+        <Item identifier="fn_necrosissample" amount="3" />
+      </Item>
+    </Items>
+    <Reputation identifier="location" amount="16" />
+    <Reputation identifier="coalition" amount="-8" />
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="512,256,256,256" color="243,146,55" />
+    <LocationType from="Research" to="City" />
+    <LocationType from="Research" to="Outpost" />
+    <LocationType from="Research" to="Military" />
+    <LocationType from="Research" to="Research" />
+    <LocationType from="Research" to="Mine" />
+  </CargoMission>
+  <!--
+  <BeaconMission name="Activate Beacon" identifier="fn_witchhunt" tags="beacon,beaconnoreward" type="Beacon" description="The beacon station between [location1] and [location2] is down. Passing crews report screaming, crying, and singing emanating from the location, and are hesitant to go in. A shady corporation calling itself PHALANX has offered you a very generous reward if you get it back online..." difficulty="5" commonness="0" reward="10000" sideobjective="true">
+    <monster character="zomboidsprinterclown" min="1" max="1" />
+    <monster character="zomboidsprinternatural" min="1" max="3" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,256,256,256" color="243,146,55" />
+    <Reputation identifier="coalition" amount="7" />
+    <Reputation identifier="location" amount="17" />
+    <message header="Beacon reactivated" text="The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward. Be careful not to make too much noise..." />
+  </BeaconMission>-->
+  <OutpostDestroyMission name="Outpost Recovery" identifier="fn_zombieoutpostrescue" tags="abandonedoutpost" type="OutpostRescue" description="[location1] has fallen victim to an outbreak of an unidentified rabies-like infection. Rescue any remaining survivors and ensure they do not get infected. A corporation calling itself PHALANX has advised any crews taking on this mission to execute any crewmembers with bite wounds and shoot their corpse in the head." reward="15000" difficulty="5" commonness="20" allowretry="true" hostageskilledmessage="survivorsdied" unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="location" amount="10" />
+    <Reputation identifier="coalition" amount="5" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="zomboidfastshamblernatural" moduleflags="crewmodule" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="researchmodule" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="engineeringmodule" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="securitymodule" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="seccrewmodule" />
+      <Character identifier="zomboidfastshamblernatural" moduleflags="seccrewmodule" multiplayeronly="true" />
+      <Character identifier="zomboidsprinternatural" spawnpointtags="banditleader" multiplayeronly="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true" />
+      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true" />
+    </Characters>
+  </OutpostDestroyMission>
+  <OutpostNestMission name="Outpost Recovery" identifier="fn_zombieoutpost" description="[location1] had fallen victim to an outbreak of an unidentified rabies-like infection several years ago. Many crews initially tried to reclaim it, but gave up after severe losses. They should be weak enough to take out now. A corporation calling itself PHALANX has advised any crews taking on this mission to execute any crewmembers with bite wounds and shoot their corpse in the head." textidentifier="abandonedoutpostmonsters" tags="abandonedoutpost" type="OutpostDestroy" reward="10000" difficulty="4" commonness="10" allowretry="true" sonarlabel="nest" targetenemies="zombieshamblernatural" unhideentitysubcategories="abandonedmonster">
+    <Reputation identifier="location" amount="10" />
+    <Reputation identifier="coalition" amount="5" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,256,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="zombieshamblernatural" min="3" max="8" />
+      <Character identifier="zombieshamblernatural" min="1" max="5" />
+      <Character identifier="zombieshamblernatural" min="2" max="4" multiplayeronly="true" />
+    </Characters>
+    <Items>
+      <Item identifier="fn_draggingemitter" spawnpointtags="nest">
+        <StatusEffectOnApproach target="This" Scale="1.0" setvalue="true" />
+      </Item>
+    </Items>
+  </OutpostNestMission>
+  <EscortMission name="Outbreak transport" identifier="fn_escort" tags="escortterrorists, escort" type="Escort" description="Some survivors from a nearby viral outbreak need to reach [location2] for screening and treatment. It is unclear how many are infected, so make sure to screen any for unusual behavior. Get rid of any infected you come across." difficulty="4" commonness="20" reward="3500" achievementidentifier="escortmission" successmessage="The suspected late-stage infected have been cleared out, the rest will be screened at the outpost." baseescortedcharacters="1" scalingescortedcharacters="0.65" terroristchance="0.65">
+    <message header="Survivor died" text="" />
+    <message header="Infected cleared" text="" />
+    <Characters>
+      <Item from="escortnpcs1" identifier="commoner" />
+    </Characters>
+    <TerroristItems>
+      <Item identifier="fn_knoxinfector" equip="false" mindifficulty="5" />
+      <Item identifier="divingknife" equip="true" mindifficulty="20" />
+    </TerroristItems>
+    <Reputation identifier="location" amount="20" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55" />
+    <LocationType from="City" to="Research" />
+    <LocationType from="Outpost" to="Research" />
+    <LocationType from="Military" to="Research" />
+    <LocationType from="Research" to="Research" />
+    <LocationType from="Mine" to="Research" />
+  </EscortMission>
+</Missions>

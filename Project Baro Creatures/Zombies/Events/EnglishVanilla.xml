@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!-- Events -->
+  <!--Infected stowaway-->
+  <EventText.fn_stowaway1.c1>Hmm. This box wasn't here before.</EventText.fn_stowaway1.c1>
+  <EventText.fn_stowaway1.o1>Investigate.</EventText.fn_stowaway1.o1>
+  <EventText.fn_stowaway1.o1.c1>It is a rather large version of a standard Europan supply crate, almost identical to the ones you receive your supplies in apart from its size. It seems quite worse for wear.. You bend down and try to open it. However, as you start lifting the lid, something prevents it from opening. A faint whimper can be heard from within.. It sounds human.</EventText.fn_stowaway1.o1.c1>
+  <EventText.fn_stowaway1.o1.o1>“Hello?”</EventText.fn_stowaway1.o1.o1>
+  <EventText.fn_stowaway1.o1.o1.c1>"S-Stay back!"</EventText.fn_stowaway1.o1.o1.c1>
+  <EventText.fn_stowaway1.o1.o1.o1>"What's going on?".</EventText.fn_stowaway1.o1.o1.o1>
+  <EventText.fn_stowaway1.o1.o1.o1.c1>"Wait, you're actually human? You gotta help me man, the lid's stuck and those things were clawing at this box for hours! One of them bit me! I need help! Tear that damn lid off! I need to get out of here and get a medic! Please!"</EventText.fn_stowaway1.o1.o1.o1.c1>
+  <EventText.fn_stowaway1.o1.o1.o1.o1>Forcefully remove the lid.</EventText.fn_stowaway1.o1.o1.o1.o1>
+  <EventText.fn_stowaway1.o1.o1.o1.o1.c1>You successfully wrestle the lid off. It appears to have been latched shut by a now-broken electronic lock. The person inside rises from the crate without using their arms, merely pulling themselves up with their legs. They look at you, before twitching, shaking, and crying uncontrollably. The person's jaw hinges open, revealing bloodied teeth and a disturbing display of hunger. The person lunges towards you and tries to grab you, jaw ready to clamp down!</EventText.fn_stowaway1.o1.o1.o1.o1.c1>
+  <!--Outbreak-->
+  <eventtext.fn_outbreak.c1>A civilian hastily approaches you, shaking and twitching, before saying to you, "Do you know a doctor? I got bitten by some husk-lookin' dude about 3 hours ago but he didn't get any tentacles into me. Oh, fuck.. I feel sick." The civilian twitches violently before seizing up and falling limp, their jaw now unhinged, their eyes dead and lifeless..</eventtext.fn_outbreak.c1>
+  <eventtext.fn_outbreak.o1>Oh, shit!</eventtext.fn_outbreak.o1>
+  <!-- Mission descriptions -->
+  <eventtext.missionevent_fn_escort.c1>“We have several civilians to transport to a nearby research station. The lot of 'em were involved in some viral outbreak and we don't know who's infected. See if you can root out and terminate the infected subjects, just make sure you don't lose any of the non-infected.”</eventtext.missionevent_fn_escort.c1>
+  <missionname.fn_escort>Outbreak transport</missionname.fn_escort>
+  <missiondescription.fn_escort>Some survivors from a nearby viral outbreak need to reach [location2] for screening and treatment. It is unclear how many are infected, so make sure to screen any for unusual behavior. Get rid of any infected you come across. You will be paid a reward of [reward] when you arrive. This reward will only be paid if the uninfected survive.</missiondescription.fn_escort>
+  <missionsuccess.fn_escort>The suspected late-stage infected have been cleared out, the rest will be screened at the outpost.</missionsuccess.fn_escort>
+  <missionfailure.fn_escort>The late-stage infected were not uncovered, or one of the uninfected did not survive.</missionfailure.fn_escort>
+  <missionheader0.fn_escort>Survivor died</missionheader0.fn_escort>
+  <missionmessage0.fn_escort>Too many of the survivors have perished. The mission is a failure.</missionmessage0.fn_escort>
+  <missionheader1.fn_escort>Infected cleared</missionheader1.fn_escort>
+  <missionmessage1.fn_escort>Looks like that was the last of the infected. Clear the turned ones and navigate the submarine to [location2] to claim your reward.</missionmessage1.fn_escort>
+  <missionname.fn_cargonecrosis>Biohazard</missionname.fn_cargonecrosis>
+  <missiondescription.fn_cargonecrosis>A representative of a corporation known as PHALANX has approached your crew with a reward of [reward] credits for delivering a container of a nondescript viral sample to [location2]. They won't tell you much about it, and they seem sort of shady...</missiondescription.fn_cargonecrosis>
+  <missionsuccess.fn_cargonecrosis>Samples received by PHALANX. The funds will be wired to your crew's bank account immediately.</missionsuccess.fn_cargonecrosis>
+  <missionname.fn_witchhunt>Activate beacon</missionname.fn_witchhunt>
+  <missiondescription.fn_witchhunt>The beacon station between [location1] and [location2] is down. Passing crews report screaming, crying, and singing emanating from the location, and are hesitant to go in. A shady corporation calling itself PHALANX has offered you a very generous reward if you get it back online....</missiondescription.fn_witchhunt>
+  <missionmessage0.fn_witchhunt>The beacon station is back online. Make sure it stays transmitting, and navigate the submarine to [location2] to claim your reward. Be careful not to make too much noise...</missionmessage0.fn_witchhunt>
+  <missionsuccess.fn_witchhunt>Beacon reactivated.</missionsuccess.fn_witchhunt>
+  <missionname.fn_zombieoutpost>Outpost cleanup</missionname.fn_zombieoutpost>
+  <missiondescription.fn_zombieoutpost>[location1] had fallen victim to an outbreak of an unidentified rabies-like infection several years ago. Many crews initially tried to reclaim it, but gave up after severe losses. They should be weak enough to take out now. A corporation calling itself PHALANX has advised any crews taking on this mission to execute any crewmembers with new bite wounds and shoot their corpse in the head.</missiondescription.fn_zombieoutpost>
+  <missionsuccess.fn_zombieoutpost>The horde inside the outpost has been successfully cleaned out.</missionsuccess.fn_zombieoutpost>
+  <missionfailure.fn_zombieoutpost>The outpost remains infested.</missionfailure.fn_zombieoutpost>
+  <missionheader0.fn_zombieoutpost>Horde cleared</missionheader0.fn_zombieoutpost>
+  <missionmessage0.fn_zombieoutpost>The horde inside the outpost has been successfully cleaned out. Undock from the outpost to complete the mission.</missionmessage0.fn_zombieoutpost>
+  <missionname.fn_zombieoutpostrescue>Outpost rescue</missionname.fn_zombieoutpostrescue>
+  <missiondescription.fn_zombieoutpostrescue>[location1] has recently fallen victim to an outbreak of an unidentified rabies-like infection. Some vital members of a corporation calling itself PHALANX are stationed here and may have important information about this infection. Extract them and ensure they do not get infected. PHALANX has advised any crews taking on this mission to execute any crewmembers with new bite wounds and shoot their corpse in the head.</missiondescription.fn_zombieoutpostrescue>
+  <missionsuccess.fn_zombieoutpostrescue>The survivors were rescued successfully.</missionsuccess.fn_zombieoutpostrescue>
+  <missionfailure.fn_zombieoutpostrescue>Rescuing the survivors failed.</missionfailure.fn_zombieoutpostrescue>
+  <missionheader0.fn_zombieoutpostrescue>Survivors rescued</missionheader0.fn_zombieoutpostrescue>
+  <missionmessage0.fn_zombieoutpostrescue>The survivors are now all safely on board the sub. Undock from the outpost to complete the mission.</missionmessage0.fn_zombieoutpostrescue>
+  <survivorsdied>The mission has failed; one of the vital survivors has died.</survivorsdied>
+</infotexts>

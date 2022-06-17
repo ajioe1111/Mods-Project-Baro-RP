@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="Necrohumancrawler" displayname="Zombie Crawler" caninteract="True" husk="True" humanoid="True" hasinfo="True" usehuskappendage="False" needsair="True" genders="true" canspeak="True" blooddecal="blood" group="husk" needswater="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0" usebosshealthbar="False" bleedparticlemultiplier="1" caneat="True" usepathfinding="True" hideinthermalgoggles="False" distantsonarrange="0" disabledistance="25000" soundinterval="10" skincolors="(#fce1c6, 100); (#f3c696, 100); (#f3c696, 100); (#aa7744, 100); (#f4be98, 100); (#d69a70, 100); (#ab7046, 100); (#774929, 100); (#c8a583, 100); (#a57c53, 100); (#7a5026, 100); (#4a3219, 100); (#957966, 100); (#714d34, 100); (#532d12, 100); (#26190e, 100)" haircolors="(#ded7cc, 100); (#d2a36f, 100); (#c77d52, 100); (#ac4934, 100); (#d8ba85, 100); (#cd975a, 100); (#a15837, 100); (#6a3b37, 100); (#bba981, 100); (#8b7e6c, 100); (#594349, 100); (#473637, 100); (#7b8478, 100); (#494e55, 100); (#3a3a3c, 100); (#343030, 100)" facialhaircolors="(#ded7cc, 100); (#d2a36f, 100); (#c77d52, 100); (#ac4934, 100); (#d8ba85, 100); (#cd975a, 100); (#a15837, 100); (#6a3b37, 100); (#bba981, 100); (#8b7e6c, 100); (#594349, 100); (#473637, 100); (#7b8478, 100); (#494e55, 100); (#3a3a3c, 100); (#343030, 100)">
+  <ragdolls path="%ModDir%/Zombies/Characters/Necrohumancrawler/Ragdolls/NecrohumancrawlerDefaultRagdoll.xml" />
+  <animations folder="default" />
+  <huskappendage affliction="fn_crawler" path="%ModDir%/Zombies/Characters/Ragehuman/Rageappendage.xml" />
+  <huskappendage affliction="zombiereanimationshamblerfix" path="%ModDir%/Zombies/Characters/Zombieshambler/Decayappendage.xml" />
+  <bloodemitter particle="blood" particleamount="5" anglemin="0" anglemax="0" scalemin="0.15" scalemax="0.35" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="blackgib" particleamount="10" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="blackgib" particleamount="10" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health usehealthwindow="True" vitality="72" crushdepth="-Infinity" doesbleed="True" bleedingreduction="20" burnreduction="0.1" constanthealthregeneration="0.45" healthregenerationwheneating="0" stunimmunity="False" applyafflictioncolors="False">
+    <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748" />
+    <MedUIExtra texture="Content/UI/Health/MedUIExtra.png" columns="4" rows="4" sourcerect="0,0,1024,1024" />
+    <Limb name="Head">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,0,126,374" highlightarea="41,0,45,54" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="2.0" />
+    </Limb>
+    <Limb name="Torso">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,0,126,374" highlightarea="29,56,70,134" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,515,126,374" />
+    </Limb>
+    <Limb name="LeftArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,0,126,374" highlightarea="1,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,0,126,374" highlightarea="100,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,0,126,374" highlightarea="3,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,0,126,374" highlightarea="68,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+  </health>
+  <name firstname="Content/Characters/Human/firstnames_[GENDER].txt" lastname="Content/Characters/Human/lastnames.txt" />
+  <ai combatstrength="80" sight="1.5" hearing="6" aggressiveboarding="False" attackwhenprovoked="True" aggressiongreed="5" aggressionhurt="150" infiltrate="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="False" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="False" avoidabyss="True" stayinabyss="True" startaggression="100" maxaggression="100" aggressioncumulation="0" canopendoors="True" walltargetingmethod="Target" keepdoorsclosed="False" patrolflooded="False" patroldry="False">
+    <target tag="provocative" state="Attack" priority="100" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="weapon" state="Attack" priority="100" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="human" state="Attack" priority="500" reactdistance="0" ignoreincapacitated="False" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="sonar" state="Attack" priority="30" reactdistance="0" ignoreinside="True" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="room" state="Attack" priority="10" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="turret" state="Attack" priority="1" ignoreinside="True" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="fn_necrotic" state="Attack" priority="250" reactdistance="0" ignoreincapacitated="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="fn_turning" state="Idle" priority="0" ignoreinside="True" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="True" threshold="1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" thresholdmin="-1" thresholdmax="-1" offset="0,0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    <target tag="zombie" state="Idle" priority="0" ignoreinside="True" ignoreoutside="True" ignoreifnotinsamesub="True" ignoreincapacitated="True" threshold="-1" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" thresholdmin="-1" thresholdmax="-1" offset="0,0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+  </ai>
+  <inventory slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" accessiblewhenalive="True" commonness="1" />
+  <StatusEffect target="Character" type="OnSpawn" targetlimb="LeftLeg" checkconditionalalways="true" stackable="false" comparison="And">
+    <Affliction identifier="gunshotwound" strength="35" />
+    <Affliction identifier="bleedingnonstop" strength="7" probability="1" />
+  </StatusEffect>
+  <StatusEffect target="Character" type="OnSpawn" targetlimb="RightLeg" checkconditionalalways="true" stackable="false" comparison="And">
+    <Affliction identifier="gunshotwound" strength="35" />
+    <Affliction identifier="bleedingnonstop" strength="7" probability="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" allowedafflictions="stun" stackable="True" comparison="And" target="This">
+    <Conditional fn_shamblergrabactive="gt 0" />
+    <Affliction identifier="stun" amount="1000" />
+    <ReduceAffliction identifier="fn_shamblergrabactive" amount="1000" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" comparison="And" target="This" setvalue="True" SpeedMultiplier="0">
+    <Conditional IsDead="False" />
+    <Conditional fn_shamblergrabactive="gt 0" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" comparison="And" stackable="False">
+    <Conditional fn_shamblergrabactive="gt 0" />
+    <Conditional fn_shamblergrabcease="gt 0" />
+    <Explosion range="120.0" structuredamage="0" itemdamage="0" stun="0" force="0.1" camerashake="0" underwaterbubble="False" flames="false" sparks="false" smoke="false" severlimbsprobability="0.0" flash="false" shockwave="false">
+      <Affliction identifier="fn_shamblergrabcease" strength="100" />
+    </Explosion>
+    <ReduceAffliction identifier="fn_shamblergrabactive" amount="1000" />
+    <ReduceAffliction identifier="fn_shamblergrab1" amount="1000" />
+    <ReduceAffliction identifier="fn_shamblergrab" amount="1000" />
+  </StatusEffect>
+  <!--SOUNDS-->
+  <!--MALE-->
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-01.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-02.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-03.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-04.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-05.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-06.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-07.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-08.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-09.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-idle-10.ogg" state="Idle" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain01.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain02.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain03.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain04.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain05.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain06.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain07.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain08.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain09.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain10.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain11.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain12.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain13.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain14.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain15.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain16.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain17.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pain18.ogg" state="Damage" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-01.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-02.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-03.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-04.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-05.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-06.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-07.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-08.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-09.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-10.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-11.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-12.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-pursuit-13.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-01.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-02.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-03.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-04.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-05.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-06.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-07.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-08.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-09.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-10.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-11.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-12.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-13.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-14.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-alert-15.ogg" state="Attack" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-01.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-02.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-03.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-04.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-05.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-06.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-07.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-08.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-09.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-10.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-11.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-12.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-13.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-14.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-15.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-16.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-17.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-18.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-19.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_runner_male/zomb_runner_male1-death-20.ogg" state="Die" range="1000" volume="1" gender="Male" />
+  <!--FEMALE-->
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle01.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle02.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle03.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle04.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle05.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle06.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle07.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle08.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle09.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle10.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_idle11.ogg" state="Idle" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted01.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted02.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted03.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted04.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted05.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted06.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted07.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted08.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted09.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted10.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_sighted11.ogg" state="Attack" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain01.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain02.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain03.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain04.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain05.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain06.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain07.ogg" state="Damage" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain01.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain02.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain03.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain04.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain05.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain06.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_female/femzom_pain07.ogg" state="Die" range="1000" volume="1" gender="Female" />
+  <!--SOUNDS END-->
+  <Heads>
+    <Head id="1" sheetindex="0,0" gender="male" />
+    <Head id="2" sheetindex="1,0" gender="male" />
+    <Head id="3" sheetindex="2,0" gender="male" />
+    <Head id="4" sheetindex="3,0" gender="male" />
+    <Head id="5" sheetindex="0,1" gender="male" />
+    <Head id="6" sheetindex="1,1" gender="male" />
+    <Head id="7" sheetindex="2,1" gender="male" />
+    <Head id="8" sheetindex="3,1" gender="male" />
+    <Head id="9" sheetindex="0,2" gender="male" />
+    <Head id="10" sheetindex="1,2" gender="male" />
+    <Head id="11" sheetindex="2,2" gender="male" />
+    <Head id="12" sheetindex="3,2" gender="male" />
+    <Head id="13" sheetindex="0,3" gender="male" />
+    <Head id="14" sheetindex="1,3" gender="male" />
+    <Head id="15" sheetindex="2,3" gender="male" />
+    <Head id="16" sheetindex="3,3" gender="male" />
+    <Head id="1" sheetindex="0,0" gender="female" />
+    <Head id="2" sheetindex="1,0" gender="female" />
+    <Head id="3" sheetindex="2,0" gender="female" />
+    <Head id="4" sheetindex="3,0" gender="female" />
+    <Head id="5" sheetindex="0,1" gender="female" />
+    <Head id="6" sheetindex="1,1" gender="female" />
+    <Head id="7" sheetindex="2,1" gender="female" />
+    <Head id="8" sheetindex="3,1" gender="female" />
+    <Head id="9" sheetindex="0,2" gender="female" />
+    <Head id="10" sheetindex="1,2" gender="female" />
+    <Head id="11" sheetindex="2,2" gender="female" />
+    <Head id="12" sheetindex="3,2" gender="female" />
+    <Head id="13" sheetindex="0,3" gender="female" />
+    <Head id="14" sheetindex="1,3" gender="female" />
+    <Head id="15" sheetindex="2,3" gender="female" />
+    <Head id="16" sheetindex="3,3" gender="female" />
+  </Heads>
+  <HeadAttachments>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 1" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="0,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 2" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="1,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 3" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="2,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 4" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="3,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 5" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="0,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 6" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="1,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 7" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="2,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 8" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="3,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 9" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="0,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 10" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="1,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 11" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="2,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 12" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="3,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 13" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="0,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 14" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="1,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 15" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="2,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="male">
+      <sprite name="Hair 16" texture="Content/Characters/Human/Human_male_hair.png" sheetindex="3,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 1" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="0,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 2" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="1,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 3" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="2,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 4" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="3,0" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 5" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="0,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 6" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="1,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 7" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="2,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 8" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="3,1" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 9" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="0,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 10" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="1,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 11" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="2,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 12" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="3,2" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 13" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="0,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 14" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="1,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 15" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="2,3" />
+    </Wearable>
+    <Wearable type="Hair" gender="female">
+      <sprite name="Hair 16" texture="Content/Characters/Human/Human_female_hair.png" sheetindex="3,3" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 1" texture="Content/Characters/Human/Human_beards.png" sheetindex="0,0" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 2" texture="Content/Characters/Human/Human_beards.png" sheetindex="1,0" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 3" texture="Content/Characters/Human/Human_beards.png" sheetindex="2,0" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 4" texture="Content/Characters/Human/Human_beards.png" sheetindex="3,0" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 5" texture="Content/Characters/Human/Human_beards.png" sheetindex="0,1" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 6" texture="Content/Characters/Human/Human_beards.png" sheetindex="1,1" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 7" texture="Content/Characters/Human/Human_beards.png" sheetindex="2,1" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 8" texture="Content/Characters/Human/Human_beards.png" sheetindex="3,1" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 9" texture="Content/Characters/Human/Human_beards.png" sheetindex="0,2" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 10" texture="Content/Characters/Human/Human_beards.png" sheetindex="1,2" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 11" texture="Content/Characters/Human/Human_beards.png" sheetindex="2,2" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 12" texture="Content/Characters/Human/Human_beards.png" sheetindex="3,2" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 13" texture="Content/Characters/Human/Human_beards.png" sheetindex="0,3" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 14" texture="Content/Characters/Human/Human_beards.png" sheetindex="1,3" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 15" texture="Content/Characters/Human/Human_beards.png" sheetindex="2,3" />
+    </Wearable>
+    <Wearable type="Beard" gender="male">
+      <sprite name="Beard 16" texture="Content/Characters/Human/Human_beards.png" sheetindex="3,3" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 1" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="0,0" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 2" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="1,0" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 3" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="2,0" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 4" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,0" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.02">
+      <sprite name="FaceAttachment 5" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="0,1" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.02">
+      <sprite name="FaceAttachment 6" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="1,1" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.02">
+      <sprite name="FaceAttachment 7" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="2,1" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.02">
+      <sprite name="FaceAttachment 8" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,1" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.05">
+      <sprite name="FaceAttachment 9" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="0,2" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 10" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="1,2" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.03">
+      <sprite name="FaceAttachment 11" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="2,2" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.02">
+      <sprite name="FaceAttachment 12" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,2" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 13" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="0,3" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 14" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="1,3" />
+    </Wearable>
+    <Wearable type="FaceAttachment" commonness="0.01">
+      <sprite name="FaceAttachment 15" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="2,3" />
+    </Wearable>
+    <!--
+    <Wearable type="FaceAttachment" commonness="1.0">
+      <sprite name="FaceAttachment 16" texture="Content/Characters/Human/Human_head_accessories.png" sheetindex="3,3"/>
+    </Wearable>
+    -->
+    <Wearable type="Husk">
+      <sprite name="Husk" texture="Content/Characters/Human/Human_husk.png" hidewearablesoftype="Beard" sheetindex="0,0" />
+    </Wearable>
+    <Wearable type="Herpes">
+      <sprite name="Herpes" texture="Content/Characters/Human/Human_karma.png" sheetindex="0,0" />
+    </Wearable>
+  </HeadAttachments>
+</Character>

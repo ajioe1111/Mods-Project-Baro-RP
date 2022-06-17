@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb id="15" name="PullPos" type="None" height="0" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="True" spriteorientation="NaN" inheritlimbdepth="None" steerforce="0" radius="10" density="10" ignorecollisions="True" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <deformablesprite texture="Content/Characters/Humanhusk/Husk_Injector.png" sourcerect="0,0,2,2" origin="0.5,0.7" depth="0" ignoretint="False" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="0" structuresoundtype="StructureBlunt" context="Any" targettype="Character" targetlimbtype="Torso" hitdetectiontype="Distance" afterattack="Pursue" afterattackdelay="0" reverse="False" retreat="False" fullspeedafterattack="False" range="2500" damagerange="2500" duration="0.1" cooldown="20" secondarycooldown="0.01" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="15" penetration="0" levelwalldamage="0" submarineimpactmultiplier="1" blink="False">
+      <conditional drag="lte 0" />
+      <conditional fn_pursuercooldown4="eq 0" targetself="true" />
+      <StatusEffect type="OnFailure" target="UseTarget">
+        <SpawnItem identifier="fn_pursuergrab" spawnposition="This" count="1" aimspread="1" rotationtype="Target" rotation="0" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/cannon.ogg" range="750" volume="0.25" />
+        <Affliction identifier="fn_pursuercooldown5" amount="200" />
+        <Affliction identifier="fn_pursuercooldown4" strength="15" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" delay="15">
+        <HideLimb duration="20" />
+        <Affliction identifier="fn_pursuercooldown5" amount="200" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <joint name="Head to Huskappendage" limb1="5" limb2="15" limb1anchor="2.8,-5" limb2anchor="-1.5,0" upperlimit="0" lowerlimit="-10" canbesevered="False" limitenabled="True" weldjoint="True" />
+</huskappendage>

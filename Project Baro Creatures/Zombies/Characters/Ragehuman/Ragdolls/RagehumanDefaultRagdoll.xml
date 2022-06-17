@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Ragdoll type="Human" texture="Content/Characters/Human/Human_[GENDER].png" canentersubmarine="True" canwalk="True" spritesheetorientation="180" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="140" impacttolerance="7.5" draggable="True" mainlimb="Torso" color="210,235,235,255">
+  <collider radius="30" width="0" name="Main Collider" height="110" />
+  <collider radius="30" width="0" name="Secondary Collider" height="80" />
+  <limb id="0" name="Torso (0)" type="Torso" height="70" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="30" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="160,0,112,192" origin="0.5,0.5" depth="0.06" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="1" name="Head (1)" type="Head" height="0" width="0" notes="" scale="0.5" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="45" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="Content/Characters/Human/Human_[GENDER]_heads.png" sourcerect="0,0,128,128" depth="0.05" origin="0.5,0.5" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_heads_mask.png" />
+    <huskmask texture="Content/Characters/Human/Human_husk_mask.png" />
+    <damagemodifier damagemultiplier="2" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="1" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <StatusEffect type="OnDamaged" target="This">
+      <RequiredAffliction identifier="gunshotwound" minstrength="15" />
+      <Affliction identifier="fn_shamblerheadshotbrain" amount="1000" probability="0.15" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" target="This">
+      <ParticleEmitter particle="blood" particlespersecond="25" scalemin="1.0" scalemax="1.25" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      <RequiredAffliction identifier="gunshotwound" minstrength="20" />
+      <Affliction identifier="fn_shamblerheadshotexplode" amount="1000" probability="0.05" />
+    </StatusEffect>
+    <StatusEffect type="OnActive" target="This" setvalue="True" duration="1" checkconditionalalways="True" hidden="True">
+      <Conditional fn_shamblerheadshotexplode="gt 0" />
+      <HideLimb duration="1" />
+    </StatusEffect>
+    <StatusEffect type="OnDamaged" comparison="And" target="This">
+      <RequiredAffliction identifier="gunshotwound" minstrength="8" />
+      <Conditional fn_shamblerreanimation="gt 0" />
+      <ReduceAffliction identifier="fn_shamblerreanimation" amount="1000" />
+      <Affliction identifier="fn_shamblerheadshotbrain" amount="1000" probability="1" />
+      <Affliction identifier="fn_canreanimate" amount="5" probability="1" />
+      <Affliction identifier="fn_nofakedeath" amount="1000" probability="1" />
+    </StatusEffect>
+    <attack range="15" damagerange="15" duration="0.1" targetforce="0" structuresoundtype="StructureBlunt" force="0" applyforceonlimbs="0" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforcesonlyonce="False" targetimpulse="0.1" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0.2" afterattack="IdleUntilCanAttack" cooldown="37" secondarycooldown="0.75" cooldownrandomfactor="0" targetlimbtype="None" afterattackdelay="0.1" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="True" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False" penetration="0">
+      <Affliction identifier="fn_shamblergrab" amount="1000" probability="1" />
+      <Affliction identifier="fn_shamblergrab1" amount="1000" probability="1" />
+      <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      <Conditional fn_shamblergrab="eq 0" />
+      <Conditional lockhands="false" targetself="True" />
+      <StatusEffect type="OnFailure" target="This">
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <Sound file="%ModDir%/Zombies/Sounds/NMRiH/terror3.ogg" volume="0.45" range="500" />
+    </attack>
+  </limb>
+  <limb id="2" name="RightArm (2)" type="RightArm" height="50" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="15" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="3" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="272,0,64,96" origin="0.5,0.5" depth="0.02" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <attack range="20" damagerange="20" duration="0.25" targetforce="0" structuresoundtype="StructureBlunt" force="5" applyforceonlimbs="1" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforcesonlyonce="False" targetimpulse="0.1" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0.1" afterattack="IdleUntilCanAttack" cooldown="0.75" secondarycooldown="0.75" cooldownrandomfactor="0.0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="True" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False" penetration="0">
+      <Affliction identifier="blunttrauma" strength="12" />
+      <Affliction identifier="bleeding" strength="6" probability="0.2" />
+      <Affliction identifier="fn_shambler" amount="1" probability="0.03" />
+      <Affliction identifier="recentlybitten" amount="15" probability="0.35" />
+      <Affliction identifier="recentlybitten" amount="35" probability="0.25" />
+      <Affliction identifier="fn_zombiekilltracker" amount="500" />
+      <Conditional fn_shamblergrab="gt 0" />
+      <Conditional hideface="true" targetself="true" />
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <limb id="3" name="RightHand (3)" type="RightHand" height="20" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="13" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="3" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="272,160,64,48" origin="0.44,0.4" depth="0.015" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <attack range="20" damagerange="20" duration="0.25" targetforce="0" structuresoundtype="StructureBlunt" force="5" applyforceonlimbs="1" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforcesonlyonce="False" targetimpulse="0.1" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0.1" afterattack="IdleUntilCanAttack" cooldown="0.75" secondarycooldown="0.75" cooldownrandomfactor="0.0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="True" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False" penetration="0">
+      <Affliction identifier="blunttrauma" strength="12" />
+      <Affliction identifier="bleeding" strength="6" probability="0.2" />
+      <Affliction identifier="fn_shambler" amount="1" probability="0.03" />
+      <Affliction identifier="recentlybitten" amount="15" probability="0.35" />
+      <Affliction identifier="recentlybitten" amount="35" probability="0.25" />
+      <Affliction identifier="fn_zombiekilltracker" amount="500" />
+      <Conditional fn_shamblergrab="gt 0" />
+      <Conditional hideface="true" targetself="true" />
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <limb id="4" name="LeftArm (4)" type="LeftArm" height="50" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="15" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="2" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="336,0,64,96" origin="0.5,0.5" depth="0.14" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <attack range="20" damagerange="20" duration="0.25" targetforce="0" structuresoundtype="StructureBlunt" force="5" applyforceonlimbs="1" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforcesonlyonce="False" targetimpulse="0.1" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0.1" afterattack="IdleUntilCanAttack" cooldown="0.75" secondarycooldown="0.75" cooldownrandomfactor="0.0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="True" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False" penetration="0">
+      <Affliction identifier="bitewounds" strength="9" />
+      <Affliction identifier="bleeding" strength="6" />
+      <Affliction identifier="bleedingnonstop" strength="3" />
+      <Affliction identifier="fn_shambler" amount="1" probability="0.06" />
+      <Affliction identifier="recentlybitten" amount="50" probability="0.66" />
+      <Affliction identifier="fn_zombiekilltracker" amount="500" />
+      <Conditional fn_shamblergrab="gt 0" />
+      <Conditional hideface="false" targetself="true" />
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <limb id="5" name="LeftHand (5)" type="LeftHand" height="20" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="13" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="2" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="336,160,64,48" origin="0.44,0.4" depth="0.16" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <attack range="20" damagerange="20" duration="0.25" targetforce="0" structuresoundtype="StructureBlunt" force="5" applyforceonlimbs="1" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="True" applyforcesonlyonce="False" targetimpulse="0.1" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0.1" afterattack="IdleUntilCanAttack" cooldown="0.75" secondarycooldown="0.75" cooldownrandomfactor="0.0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="True" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False" penetration="0">
+      <Affliction identifier="blunttrauma" strength="12" />
+      <Affliction identifier="bleeding" strength="6" probability="0.2" />
+      <Affliction identifier="fn_shambler" amount="1" probability="0.03" />
+      <Affliction identifier="recentlybitten" amount="15" probability="0.35" />
+      <Affliction identifier="recentlybitten" amount="35" probability="0.25" />
+      <Affliction identifier="fn_zombiekilltracker" amount="500" />
+      <Conditional fn_shamblergrab="gt 0" />
+      <Conditional hideface="true" targetself="true" />
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <SpawnItem identifier="fn_zombiebite" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Limb">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="5" scalemin="0.15" scalemax="0.2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="2" scalemin="0.05" scalemax="0.15" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="Character">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrab" amount="500" probability="1" />
+        <Affliction identifier="fn_shamblergrab1" amount="500" probability="1" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Conditional lockhands="false" targetself="true" />
+        <Affliction identifier="fn_shamblergrabactive" amount="1000" />
+      </StatusEffect>
+    </attack>
+  </limb>
+  <limb id="6" name="LeftThigh (6)" type="LeftThigh" height="65" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="20" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="4" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="80,0,80,128" origin="0.5,0.5" depth="0.13" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="7" name="LeftLeg (7)" type="LeftLeg" height="50" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="15" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="4" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="80,128,80,128" origin="0.5,0.5" depth="0.131" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="8" name="LeftFoot (8)" type="LeftFoot" height="0" width="32" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="90" steerforce="0" radius="12" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="-2.8043144,-11.4667225" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="4" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="336,208,64,48" origin="0.48,0.55" depth="0.132" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <sound tag="fn_footstep_zombiecrawl" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="9" name="RightThigh (9)" type="RightThigh" height="65" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="20" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="5" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="0,0,80,128" origin="0.5,0.5" depth="0.12" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="10" name="RightLeg (10)" type="RightLeg" height="50" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="15" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="5" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="0,128,80,128" origin="0.5,0.5" depth="0.121" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="11" name="RightFoot (11)" type="RightFoot" height="0" width="32" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="90" steerforce="0" radius="12" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="-7.0750213,-11.173927" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="5" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="272,208,64,48" origin="0.48,0.55" depth="0.122" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <sound tag="fn_footstep_zombiecrawl" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="12" name="Waist (12)" type="Waist" height="0" width="0" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" radius="25" density="10" ignorecollisions="False" angulardamping="1000" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="1" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="160,192,112,64" origin="0.5,0.5" depth="0.121" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="13" radius="13" width="0" height="35" name="LeftForearm (13)" type="LeftForearm" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="180" steerforce="0" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="2" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="336,96,64,64" origin="0.5,0.5" depth="0.15" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="14" radius="13" width="0" height="35" name="RightForearm (14)" type="RightForearm" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="0" density="10" ignorecollisions="False" angulardamping="50" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="3" friction="0.3" restitution="0.05" inheritlimbdepth="None" onlyblinkinwater="False">
+    <sprite texture="" sourcerect="272,96,64,64" origin="0.5,0.5" depth="0.01" color="210,235,235,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="False" />
+    <tintmask texture="Content/Characters/Human/Human_[GENDER]_mask.png" />
+    <damagemodifier damagemultiplier="0.5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="gunshotwound,lacerations,blunttrauma" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="0.75" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="bleeding,bitewounds" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+    <damagemodifier damagemultiplier="5" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="explosiondamage" damagesound="" afflictiontypes="" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="15" width="55" height="30" name="Jaw" type="None" notes="" scale="0.75" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" inheritlimbdepth="None" steerforce="0" radius="0" density="10" ignorecollisions="True" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="%ModDir%/Zombies/Textures/Huskmutanthunterhead.png" sourcerect="59,182,42,43" origin="0.5,0.5" depth="0.051" ignoretint="False" color="125,150,150,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <joint limb1="0" limb2="1" limb1anchor="-10.253771,67.140594" limb2anchor="-10.745748,-12.599744" name="Joint 0 - 1" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="30" lowerlimit="-20" stiffness="0.5" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="0" limb2="12" limb1anchor="-0.6422227,-53.382404" limb2anchor="0.10620385,-0.07190597" name="Joint 0 - 12" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="18" lowerlimit="-43" stiffness="1000" scale="1" weldjoint="True" clockwiserotation="False" />
+  <joint limb1="12" limb2="6" limb1anchor="-1.8,-6.7" limb2anchor="-2.4,37.57086" name="Joint 12 - 6" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="45" lowerlimit="-12" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="10" limb2="11" limb1anchor="0.5,-41.187973" limb2anchor="-10.862407,6.005065" name="Joint 10 - 11" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="30" lowerlimit="-70" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="12" limb2="9" limb1anchor="-1.8046935,-6.683343" limb2anchor="-2.423022,37.601402" name="Joint 12 - 9" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="45" lowerlimit="-12" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="7" limb2="8" limb1anchor="0.5,-41.2" limb2anchor="-10.937978,6" name="Joint 7 - 8" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="30" lowerlimit="-70" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="0" limb2="4" limb1anchor="-10.37207,43.280663" limb2anchor="0.6,28.573063" name="Joint 0 - 4" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="False" upperlimit="0" lowerlimit="0" stiffness="0.5" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="4" limb2="13" limb1anchor="-1.4478967,-28.244104" limb2anchor="-1.2,23.5" name="Joint 4 - 13" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="170" lowerlimit="5" stiffness="0.2" scale="1" weldjoint="False" clockwiserotation="True" />
+  <joint limb1="13" limb2="5" limb1anchor="-0.8,-29" limb2anchor="-0.5,7.8" name="Joint 13 - 5" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="10" lowerlimit="-30.000021" stiffness="0.5" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="0" limb2="2" limb1anchor="-10.39392,43.006573" limb2anchor="0.6395478,28.56819" name="Joint 0 - 2" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="False" upperlimit="0" lowerlimit="0" stiffness="0.5" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="2" limb2="14" limb1anchor="1.2209377,-28.202503" limb2anchor="1.7877463,20.79795" name="Joint 2 - 14" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="170" lowerlimit="5" stiffness="0.2" scale="1" weldjoint="False" clockwiserotation="True" />
+  <joint limb1="14" limb2="3" limb1anchor="-0.8303146,-28.958904" limb2anchor="-0.51387256,7.8291073" name="Joint 14 - 3" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="10" lowerlimit="-30.000021" stiffness="0.5" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="9" limb2="10" limb1anchor="-2.1145673,-39.204475" limb2anchor="-0.6147495,41.310158" name="Joint 9 - 10" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="-5" lowerlimit="-145" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="True" />
+  <joint limb1="6" limb2="7" limb1anchor="-2.1,-39.2" limb2anchor="-0.6,41.3" name="Joint 6 - 7" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="-5" lowerlimit="-145" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="True" />
+  <joint limb1="15" limb2="1" limb1anchor="-6.2016153,4.081946" limb2anchor="-1.5407215,-8.78727" name="Joint 15 - 1" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="-21.000017" lowerlimit="6.9999876" stiffness="0.25" scale="1" weldjoint="True" clockwiserotation="False" />
+</Ragdoll>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff1.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff2.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff3.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff4.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff5.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff6.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff7.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff8.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff9.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff10.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff11.ogg" range="400" />
+  <fn_footstep_zombie file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_scuff12.ogg" range="400" />
+  <fn_footstep_zombiecrawl file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/foot_slide1.ogg" range="400" />
+  <fn_footstep_zombiecrawl file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/foot_slide2.ogg" range="400" />
+  <fn_footstep_zombiecrawl file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/foot_slide3.ogg" range="400" />
+</sounds>

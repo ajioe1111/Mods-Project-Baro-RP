@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventPrefabs>
+    <!--"Outbreak"
+    TODO:
+    -spawn correct npc-->
+    <ScriptedEvent identifier="fn_outbreak" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="outpostnpcs1" npcidentifier="commoner" targettag="infectednpc" spawnlocation="Outpost" />
+      <!--<NPCFollowAction npctag="infectednpc" targettag="triggerer_player" follow="true" />-->
+      <TriggerAction target1tag="infectednpc" target2tag="player" applytotarget2="triggerer_player" radius="250" waitforinteraction="false" />
+      <AfflictionAction targettag="infectednpc" affliction="fn_knoxinfection" strength="50" />
+      <AfflictionAction targettag="infectednpc" affliction="organdamage" strength="95" />
+      <AfflictionAction targettag="infectednpc" affliction="sufforinpoisoning" strength="70" />
+      <ConversationAction targettag="triggerer_player" text="EventText.fn_outbreak.c1" eventsprite="ambush">
+        <Option text="EventText.fn_outbreak.o1" />
+      </ConversationAction>
+    </ScriptedEvent>
+    <!--Stowaway-->
+    <ScriptedEvent identifier="fn_stowaway1" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction itemidentifier="metalcrate_event" targettag="stowawaytoolbox" submarinetype="player" ignorebyai="true" />
+      <Label name="stowawayreturn" />
+      <TriggerAction target1tag="stowawaytoolbox" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true" />
+      <ConversationAction text="EventText.fn_stowaway1.c1" dialogtype="Regular" eventsprite="fn_stowaway1A" targettag="triggerer_player">
+        <Option text="EventText.fn_stowaway1.o1">
+          <ConversationAction text="EventText.fn_stowaway1.o1.c1" dialogtype="Regular" targettag="triggerer_player" eventsprite="fn_stowaway1A">
+            <Option text="EventText.fn_stowaway1.o1.o1">
+              <ConversationAction text="EventText.fn_stowaway1.o1.o1.c1" dialogtype="Regular" targettag="triggerer_player">
+                <Option text="EventText.fn_stowaway1.o1.o1.o1">
+                  <ConversationAction text="EventText.fn_stowaway1.o1.o1.o1.c1" dialogtype="Regular" targettag="triggerer_player">
+                    <Option text="EventText.fn_stowaway1.o1.o1.o1.o1">
+                      <RNGAction chance="0.66">
+                        <Success>
+                          <ConversationAction text="EventText.fn_stowaway1.o1.o1.o1.o1.c1" dialogtype="Regular" targettag="triggerer_player" eventsprite="fn_stowaway1B" />
+                          <SpawnAction speciesname="zomboidfastshamblernatural" spawnpointtag="triggerer_player" />
+                        </Success>
+                        <Failure>
+                          <ConversationAction text="EventText.fn_stowaway1.o1.o1.o1.o1.c2" dialogtype="Regular" targettag="triggerer_player" eventsprite="fn_stowaway1B" />
+                        </Failure>
+                      </RNGAction>
+                    </Option>
+                    <Option text="EventText.generic.walkaway" endconversation="true">
+                      <!--Return-->
+                      <GoTo name="stowawayreturn" />
+                    </Option>
+                  </ConversationAction>
+                </Option>
+                <Option text="EventText.generic.walkaway" endconversation="true">
+                  <!--Return-->
+                  <GoTo name="stowawayreturn" />
+                </Option>
+              </ConversationAction>
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="EventText.generic.walkaway" endconversation="true">
+          <!--Return-->
+          <GoTo name="stowawayreturn" />
+        </Option>
+      </ConversationAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+  <!--TRANSIT EVENTS-->
+  <EventSet identifier="fn_transitevents" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" campaign="true" additive="true">
+    <ScriptedEvent identifier="fn_stowaway1" commonness="100" probability="0.1" triggercooldown="false" />
+  </EventSet>
+</Randomevents>
