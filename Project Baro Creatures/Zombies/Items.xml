@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+ 
+  <!--Disabled until textures are redone-->
+  <!--Autonomous alarm which will activate when a blowout is imminent.-->
+  <Item name="Blowout Alarm" identifier="fn_blowoutalarm" description="An alarm that should be placed alongside Europan Surface Radiation. It will sound off whenever a blowout is imminent." category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" pickdistance="0" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="75,133,42,57" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="2.6" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="301,963,42,57" origin="0.5,0.5" alpha="1.0" />
+      <Sound file="%ModDir%/Zombies/Sounds/blowout/Call of Pripyat/blowout_siren.ogg" type="OnActive" range="10000.0" loop="True" volume="0.5" />
+      <!--60 seconds after ambient phase begins, begin alarm sounds
+        This will cause it to begin playing right in time for impact.-->
+      <StatusEffect type="Always" target="This" delay="60" setvalue="True" checkconditionalalways="True" IsActive="True" stackable="false">
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--When the blowout siren sound ends, set condition to zero and deactivate the alarm.-->
+      <StatusEffect type="Always" target="This" delay="53" comparison="And" checkconditionalalways="True" setvalue="True" condition="0" IsActive="False" stackable="false">
+        <Conditional IsActive="True" />
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <!--Spent waaay too long on this shit, I hope you like it-->
+  <Item name="Europan Surface Radiation" identifier="fn_surfaceradiation" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" scale="0.5" description="When placed at the top of a map, this simulates Europan Surface Radiation, alongside periodic blowout sequences which have the potential to zombify people if they die during one. Avoiding a blowout sequence is simple: get inside." pickdistance="0" noninteractable="true">
+    <sprite name="rad" texture="Content/Items/Jobgear/headgears.png" sourcerect="0,0,1,1" origin="0.4,0.3" />
+    <Body width="40" radius="30" density="15" bodytype="Kinematic" />
+    <LightComponent lightcolor="255,255,150,0" range="1" powerconsumption="0" allowingameediting="false" castshadows="false" IsOn="true">
+      <!--Every 0.5 seconds, produce a massive-ranged explosion with barely any force that gives a small amount of an affliction
+    This affliction checks for thalassophobia radiation suits or pressure protection, and if neither are present radiation sickness is applied
+    Explosions have weakened effects past doors and walls, allowing indoor areas to be safe from radiation.-->
+      <StatusEffect type="Always" target="This" delay="0.5" stackable="false">
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="0" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="0" flashduration="0">
+          <Affliction identifier="fn_radcheck" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <!--BLOWOUT STUFF START-->
+      <!--Reduce condition of all active emitters and blowout alarms to 50 every 15 minutes 
+      Other statuseffects check for this condition value
+      Only run if condition is greater than 50-->
+      <StatusEffect type="Always" target="NearbyItems, This" targetidentifiers="fn_blowoutalarm, fn_surfaceradiation" range="10000" delay="120" setvalue="true" condition="50" stackable="false">
+        <Conditional condition="gt 50" />
+      </StatusEffect>
+      <!--2 minutes after condition is reduced and blowout ambience announces imminent doom, reduce condition to 2
+      Other statuseffects check for this condition value-->
+      <StatusEffect type="Always" target="This" delay="120" setvalue="true" condition="2" stackable="false">
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--30 seconds after a blowout sequence ends, set condition to 1 and play spooky ambience as the menacing sounds slowly fall silent-->
+      <StatusEffect type="Always" target="This" delay="30" setvalue="true" condition="1" stackable="false">
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <!--Reset emitter to full condition, next blowout in 15 minutes-->
+      <StatusEffect type="Always" target="This" delay="70" setvalue="true" condition="100" stackable="false">
+        <Conditional condition="eq 1" />
+      </StatusEffect>
+      <!--Ambient sounds to announce imminent danger when condition is 50-->
+      <StatusEffect type="Always" target="This" delay="17" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient1.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient2.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient3.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient4.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient5.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--Spookier sounds that happen less frequently when condition is 50-->
+      <StatusEffect type="Always" target="This" delay="27" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/announce1.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/announce2.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--Sound that plays just before a blowout impacts-->
+      <StatusEffect type="Always" target="This" delay="113" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/prehit.ogg" range="10000" volume="10" dontmuffle="True" />
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--Sound that plays when a blowout sequence ends-->
+      <StatusEffect type="Always" target="This" delay="4" setvalue="true" condition="1" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/posthit.ogg" range="10000" volume="10" dontmuffle="True" />
+        <Conditional condition="eq 4" />
+      </StatusEffect>
+      <!--Impact sound-->
+      <StatusEffect type="Always" target="This" delay="0.5" setvalue="true" condition="0" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/start.ogg" range="10000" volume="10" dontmuffle="True" />
+        <Conditional condition="eq 2" />
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="143" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="10000" flashduration="1">
+          <Affliction identifier="stun" strength="0.1" />
+        </Explosion>
+      </StatusEffect>
+      <!--Apply affliction to everyone within 1000 meters or so, for the spooky visual effects-->
+      <StatusEffect type="Always" target="NearbyCharacters, This" range="10000" disabledeltatime="true" stackable="false">
+        <Affliction identifier="fn_blowoutimpact" amount="1000" />
+        <Conditional condition="eq 2" />
+      </StatusEffect>
+      <!--Buildup sound that increases in intensity after a blowout hits-->
+      <StatusEffect type="Always" target="This" delay="2" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/buildup.ogg" range="10000" volume="10" dontmuffle="True" />
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <!--Applies stun and affliction to all people within ~1000 meters
+      As long as the person is not outside, they will not gain the vitality check affliction and survive scot-free-->
+      <StatusEffect type="Always" target="NearbyCharacters, This" range="10000" delay="2.5">
+        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="fn_blowoutsurvive" amount="10000" />
+        <ReduceAffliction identifier="fn_blowout" amount="10000" />
+        <Conditional condition="eq 4" />
+      </StatusEffect>
+      <!--Applies an affliction after condition is 50, which slowly applies visual effects to give the idea that something bad is about to happen.-->
+      <StatusEffect type="Always" target="NearbyCharacters, This" range="10000">
+        <Affliction identifier="fn_blowout" amount="1.1" />
+        <Conditional condition="eq 50" />
+      </StatusEffect>
+      <!--Psi-wave sound which sets condition to 4-->
+      <StatusEffect type="Always" target="This" delay="17" setvalue="true" condition="4" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/end.ogg" range="10000" volume="10" dontmuffle="True" />
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <!--Anyone outside gets severe burns, if these burns land them in crit they will die on the spot and eventually get back up-->
+      <StatusEffect type="Always" target="This" delay="2.5" duration="3" stackable="false">
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="125" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="10000" flashduration="1.5">
+          <Affliction identifier="fn_blowoutcheck" strength="5" />
+        </Explosion>
+        <Conditional condition="eq 4" />
+      </StatusEffect>
+      <!--Visual effects that sync up with lightning sounds-->
+      <StatusEffect type="Always" target="NearbyCharacters, This" delay="6" disabledeltatime="true" range="10000" stackable="false">
+        <Affliction identifier="fn_blowoutlightning" amount="50" />
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters, This" delay="7" disabledeltatime="true" range="10000" stackable="false">
+        <Affliction identifier="fn_blowoutlightning" amount="50" />
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters, This" delay="9" disabledeltatime="true" range="10000" stackable="false">
+        <Affliction identifier="fn_blowoutlightning" amount="50" />
+        <Conditional condition="eq 0" />
+      </StatusEffect>
+      <!--Lightning sounds that sync up with visual effects-->
+      <StatusEffect type="Always" target="This" delay="6" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit1.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit2.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit3.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 0" />
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="3" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="10000" flashduration="0.5">
+          <Affliction identifier="stun" strength="0.1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="9" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit1.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit2.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit3.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 0" />
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="3" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="10000" flashduration="0.5">
+          <Affliction identifier="stun" strength="0.1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="7" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit1.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit2.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/hit3.ogg" range="10000" volume="10" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 0" />
+        <Explosion range="10000" force="0.1" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="3" underwaterbubble="true" structuredamage="0" itemdamage="0" flashrange="10000" flashduration="0.5">
+          <Affliction identifier="stun" strength="0.1" />
+        </Explosion>
+      </StatusEffect>
+      <!--Ambient sound effects which play after a blowout ends-->
+      <StatusEffect type="Always" target="This" delay="13" stackable="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient1.ogg" range="10000" volume="0.5" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient2.ogg" range="10000" volume="0.5" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient3.ogg" range="10000" volume="0.5" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient4.ogg" range="10000" volume="0.5" dontmuffle="True" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Blowout/ambient5.ogg" range="10000" volume="0.5" dontmuffle="True" selectionmode="Random" />
+        <Conditional condition="eq 1" />
+      </StatusEffect>
+      <!--Emitter will eventually reset its condition and a new blowout happens 15 minutes later.-->
+    </LightComponent>
+  </Item>
+  <Item name="headexplode" identifier="fn_headexplode" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <!-- Play multiple sounds, randomly chosen each time apart from the final skull crunching sound. -->
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_01.ogg" range="5000" volume="0.25" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_02.ogg" range="5000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_03.ogg" range="5000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_04.ogg" range="5000" volume="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/WoodBat-1.ogg" range="5000" volume="0.5" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/WoodBat-2.ogg" range="5000" volume="0.5" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/WoodBat-3.ogg" range="5000" volume="0.5" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/WoodBat-4.ogg" range="5000" volume="0.5" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/WoodBat-5.ogg" range="5000" volume="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/BodyHit-4.ogg" range="5000" volume="0.25" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/BodyHit-5.ogg" range="5000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/BodyHit-6.ogg" range="5000" volume="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/HammerSkullPenetrate.ogg" range="10000" volume="2" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <!--Knox Infection Sounds Start-->
+  <Item name="knoxheadexplodemale" identifier="fn_headexplodeknoxmale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_01.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_02.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_03.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_04.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_05.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_06.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_07.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_swing_08.ogg" range="1000" volume="1" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_01.ogg" range="1000" volume="0.25" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_02.ogg" range="1000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_03.ogg" range="1000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_04.ogg" range="1000" volume="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxheadexplodefemale" identifier="fn_headexplodeknoxfemale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_01.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_02.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_03.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_04.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_05.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_06.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_07.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Swing_08.ogg" range="1000" volume="1" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.25" scalemax="0.5" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_01.ogg" range="1000" volume="0.25" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_02.ogg" range="1000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_03.ogg" range="1000" volume="0.25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Gore/bone_break_neck_snap_crack_04.ogg" range="1000" volume="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxreanimatemale" identifier="fn_reanimateknoxmale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_01.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_02.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_03.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_04.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_05.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_A_reanimate_06.ogg" range="750" volume="1" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxreanimatefemale" identifier="fn_reanimateknoxfemale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_01.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_02.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_03.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_04.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_05.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_06.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_07.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/Zombie_Female_C_Reanimate_08.ogg" range="750" volume="1" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxbite" identifier="fn_knoxbite" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="bloodsplash" particlespersecond="25" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <ParticleEmitter particle="blackblood" particlespersecond="5" scalemin="0.5" scalemax="1.0" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_01.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_02.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_03.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_04.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_05.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_06.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_07.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_male_vocal_B_bite_gore_08.ogg" range="1000" volume="0.65" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxlaceration" identifier="fn_knoxlacer" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_01.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_02.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_03.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_04.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_05.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_06.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_07.ogg" range="1000" volume="0.65" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/Zombies/ogg/zombie_scratch_gore_short_08.ogg" range="1000" volume="0.65" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxscreammale" identifier="fn_knoxscreammale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/meta_scream_male.ogg" range="10000" volume="1.85" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxscreamfemale" identifier="fn_knoxscreamfemale" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/Project Zomboid/meta_scream_female.ogg" range="10000" volume="1.85" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <!--Knox Infection Sounds End-->
+  <Item name="zobiebite" identifier="fn_zombiebite" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_bite1.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_bite2.ogg" range="1000" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/NMRiH/Zombies/nmr_zomb_shared/zombie_bite3.ogg" range="1000" volume="1" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <!--Telegraph stuff-->
+  <Item name="zobietelegraph" identifier="fn_telegraph" tags="" sonarsize="0" scale="0.01" drawontop="True" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" bodytype="Kinematic" />
+    <Sprite texture="%ModDir%/Zombies/Textures/Telegraph/flash.png" sourcerect="0,0,128,128" depth="0.05" origin="0.5,1" />
+    <LightComponent lightcolor="255,255,255,255" castshadows="false" allowingameediting="false" range="0" ison="True">
+      <StatusEffect type="Always" target="This" checkconditionalalways="True" Scale="1.35">
+        <Conditional Scale="lt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" setvalue="True" delay="1" condition="-1" />
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+  </Item>
+  <!--The most common treatment for functional necrosis
+  Only borrowed time, unfortunately.-->
+  <Item name="Phalanx Pills" identifier="phalanxpills" category="Material" maxstacksize="6" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="A suppressant capable of halting the negative effects of Functional Necrosis. However, this is only borrowed time, as it will eventually wear off. Lasts for 2 minutes, ineffective against other diseases." useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="3" maxamount="5" spawnprobability="1" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Price baseprice="250">
+      <Price locationtype="outpost" multiplier="1" minavailable="3" />
+      <Price locationtype="city" multiplier="0.9" minavailable="3" />
+      <Price locationtype="research" multiplier="0.9" minavailable="5" />
+      <Price locationtype="military" multiplier="1.1" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.1" minavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" amount="3">
+      <RequiredSkill identifier="medical" level="25" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="stabilozine" />
+      <RequiredItem identifier="stabilozine" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="120" amount="2">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="stabilozine" />
+      <RequiredItem identifier="stabilozine" />
+      <RequiredItem identifier="stabilozine" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="antibiotics" copycondition="true" mincondition="0.1" />
+      <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <!--Bots will use it as a treatment, will show up as treatment in the health menu-->
+    <SuitableTreatment identifier="fn_functionalnecrosis" suitability="80" />
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/phalanxpillsinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/phalanxpills.png" sourcerect="0,0,256,256" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <!--Reduce condition immediately and play pill sounds, but only do so if borrowed time is not already present-->
+      <StatusEffect type="OnUse" target="Character, This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/pills_swallow1.ogg" range="500" />
+        <Conditional functionalnecrosisresistance="eq 0" targetself="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="50" stackable="False" delay="1" disabledeltatime="true">
+        <Affliction identifier="functionalnecrosisresistancetrackercarrystart" amount="7" />
+        <Affliction identifier="functionalnecrosisresistancetrackercarrystart2" amount="14" />
+      </StatusEffect>
+      <!--After pill sound finishes playing, effects begin and necrosis is suppressed
+      Only give effects if borrowed time is not present and infection is between stage 2 and stage 4.-->
+      <StatusEffect tags="medical,calyxanide" type="OnUse" delay="2" target="Character" comparison="And" disabledeltatime="true" setvalue="true">
+        <Conditional fn_functionalnecrosis="gt 5.0" />
+        <Conditional functionalnecrosisresistance="eq 0" />
+        <Affliction identifier="functionalnecrosisresistance" amount="9999" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This" delay="2">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Antizin Injector" identifier="antizininjector" category="Equipment" scale="0.5" Tags="smallitem,medical" spritecolor="1.0,1.0,1.0,1.0" useinhealthinterface="true" description="An injector unit only able to load Antizin or similarly-packaged compounds.">
+    <Price baseprice="1500" soldeverywhere="false">
+      <Price locationtype="research" multiplier="1.25" sold="true" />
+      <Price locationtype="mine" multiplier="2.3" sold="true" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/Antizin.png" sourcerect="386,76,224,224" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/Antizin.png" origin="0.5,0.5" sourcerect="0,0,55,55" depth="0.6" />
+    <Body width="25" height="5" density="20" />
+    <MeleeWeapon slots="Any,RightHand" aimpos="15,-35" handle1="-5,0" holdangle="270" reload="0.9">
+      <!--Antizin effects-->
+      <StatusEffect comparison="And" type="OnUse" target="Character" disabledeltatime="true">
+        <RequiredItem identifier="antizin" type="Contained" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="fn_antizin" amount="900" />
+      </StatusEffect>
+      <StatusEffect comparison="And" type="OnUse" duration="30" target="Character" disabledeltatime="true">
+        <RequiredItem identifier="antizin" type="Contained" />
+        <Conditional fn_functionalnecrosis="eq 0" />
+        <Conditional fn_shambler="eq 0" />
+        <Conditional fn_knoxinfection="eq 0" />
+        <Affliction identifier="organdamage" amount="0.025" />
+      </StatusEffect>
+      <!--Logic-->
+      <StatusEffect type="OnUse" target="Contained" delay="0.01" Condition="-50.0" disabledeltatime="true">
+        <RequiredItem identifier="antizin" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable identifier="antizin" />
+    </ItemContainer>
+  </Item>
+  <!--A treatment for functional necrosis and other diseases
+  Only borrowed time, unfortunately. Lasts significantly longer than Phalanx Pills.-->
+  <Item name="Antizin" identifier="antizin" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="A chemical compound which suppresses most infections, prolonging the user's life. Has to be loaded into a compatible auto-injector to function. Lasts for 15 minutes. DO NOT USE IF UNINFECTED!" useinhealthinterface="false" scale="0.65" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="2" spawnprobability="0.95" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Price baseprice="3500">
+      <Price locationtype="outpost" multiplier="2.1" minavailable="1" />
+      <Price locationtype="city" multiplier="3.1" minavailable="1" />
+      <Price locationtype="research" multiplier="0.75" minavailable="2" />
+      <Price locationtype="military" multiplier="1.8" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.1" minavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="60" amount="1">
+      <RequiredSkill identifier="medical" level="25" />
+      <RequiredItem identifier="phalanxpills" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="calyxanide" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="stabilozine" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="fulgurium" copycondition="true" mincondition="0.1" />
+      <Item identifier="calyxanide" copycondition="true" mincondition="0.1" />
+      <Item identifier="physicorium" copycondition="true" mincondition="0.1" />
+      <Item identifier="phalanxpills" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/Antizin.png" sourcerect="123,61,252,252" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/Antizin.png" sourcerect="0,288,26,42" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Throwable characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10"></Throwable>
+  </Item>
+  <!--The de facto cure for functional necrosis. Unfortunately does not give immunity. Also in very short supply due to the immense manufacturing costs.-->
+  <Item name="Gene Therapy" identifier="genetherapy" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="A CRISPr solution useful in the treatment of almost every infection. Causes severe oxygen deprivation upon use, and cures infections. Small chance of genetic mutation. Use wisely, as this is an exceedingly rare find." useinhealthinterface="true" scale="0.15" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab" minamount="1" maxamount="3" spawnprobability="0.01" />
+    <Price baseprice="8500">
+      <Price locationtype="outpost" multiplier="1.4" minavailable="1" />
+      <Price locationtype="city" multiplier="1.4" minavailable="1" />
+      <Price locationtype="research" multiplier="0.45" minavailable="2" />
+      <Price locationtype="military" multiplier="1.4" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.4" minavailable="1" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="antizin" copycondition="true" mincondition="0.1" />
+      <Item identifier="deusizine" copycondition="true" mincondition="0.1" />
+      <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
+      <Item identifier="liquidoxygenite" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <SuitableTreatment identifier="fn_functionalnecrosis" suitability="150" />
+    <SuitableTreatment identifier="fn_knoxinfection" suitability="150" />
+    <SuitableTreatment identifier="huskinfection" suitability="150" />
+    <SuitableTreatment identifier="fn_shambler" suitability="150" />
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/genetherapyinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/genetherapy.png" sourcerect="105,5,46,248" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="false" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <!--Sound effect that plays after the effects of gene therapy kick in.-->
+      <StatusEffect type="OnUse" target="This" delay="1.2" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/surv_player_heal.ogg" volume="0.5" range="500" />
+      </StatusEffect>
+      <!--Sounds timed just right to sound as though someone is removing the cap, injecting the syringe, and letting go-->
+      <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_cap_remove_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_inject_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.8" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_click_01.ogg" range="500" />
+      </StatusEffect>
+      <!--Slightly heal most afflictions, and greatly heal poisoning.
+      Cure functional necrosis, give the negative side effects, and give a lot of stun.-->
+      <StatusEffect tags="medical" type="OnUse" target="Character" comparison="And" delay="1.1" disabledeltatime="True">
+        <ReduceAffliction identifier="damage" amount="15" />
+        <ReduceAffliction identifier="bleeding" amount="15" />
+        <ReduceAffliction identifier="bloodloss" amount="15" />
+        <ReduceAffliction identifier="morbusinepoisoning" amount="50" />
+        <ReduceAffliction identifier="sufforinpoisoning" amount="50" />
+        <ReduceAffliction identifier="cyanidepoisoning" amount="50" />
+        <Affliction identifier="oxygenlow" amount="65" />
+        <Affliction identifier="stabilizersickness" amount="1000" probability="0.66" />
+        <Affliction identifier="progressivestun" amount="300" />
+      </StatusEffect>
+      <!--Gene stuff ends here-->
+      <StatusEffect tags="medical" type="OnUse" target="Character" comparison="And" delay="1.1" disabledeltatime="False">
+        <Conditional fn_knoxinfection="lt 450" />
+        <ReduceAffliction identifier="fn_functionalnecrosis" amount="1000" />
+        <ReduceAffliction identifier="fn_shambler" amount="1000" />
+        <ReduceAffliction identifier="alieninfection" amount="400" />
+        <ReduceAffliction identifier="incurablefunctionalnecrosis" amount="1000" />
+        <ReduceAffliction identifier="fn_knoxinfection" amount="1000" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character" comparison="And" disabledeltatime="True">
+        <ReduceAffliction identifier="geneticmaterialdebuff" amount="1000" />
+        <ReduceAffliction identifier="geneticmaterialbuff" amount="1000" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This" delay="1.2">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <!--Might be OP
+Kickstarts regeneration and undoes oxygen loss.
+After effects wear off, a damaging 'crash' side effect occurs.
+Crashing causes organ damage and nausea, as well as a stun.-->
+  <Item name="Atropine Auto-Injector" identifier="fn_atropine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="A solution of epinephrine, atropine, and saline, capable of bringing someone out of a critical state in a pinch. Reduces blood loss, cures oxygen loss, and kickstarts regeneration. Effective in purging toxins from the bloodstream if used twice on the same patient. Has 2 uses remaining." useinhealthinterface="true" scale="0.15" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="1" maxamount="4" spawnprobability="1" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Price baseprice="250">
+      <Price locationtype="outpost" multiplier="1" minavailable="3" />
+      <Price locationtype="city" multiplier="0.9" minavailable="3" />
+      <Price locationtype="research" multiplier="0.9" minavailable="5" />
+      <Price locationtype="military" multiplier="1.1" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.1" minavailable="3" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="adrenaline" copycondition="true" mincondition="0.1" />
+      <Item identifier="antibloodloss1" copycondition="true" mincondition="0.1" />
+      <Item identifier="stabilozine" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <SuitableTreatment identifier="damage" suitability="40" />
+    <SuitableTreatment identifier="bloodloss" suitability="40" />
+    <SuitableTreatment identifier="nausea" suitability="40" />
+    <SuitableTreatment identifier="oxygenlow" suitability="500" />
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/atropineinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/genetherapy.png" sourcerect="105,5,46,248" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <!--Sounds timed just right to sound as though someone is removing the cap, injecting the syringe, and letting go-->
+      <StatusEffect type="OnUse" target="This" condition="-50" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_cap_remove_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_inject_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.8" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_click_01.ogg" range="500" />
+      </StatusEffect>
+      <!--Gives enough of the adrenaline rush affliction to max out the affliction after 1.1 seconds to match up with the above sounds. 
+      Reduces blood loss and low oxygen by large amounts, at the cost of severe organ damage later.-->
+      <StatusEffect tags="medical" type="OnUse" target="Character" delay="1.1" duration="15" comparison="And" disabledeltatime="true">
+        <Affliction identifier="fn_adrenaline" amount="2" />
+        <ReduceAffliction identifier="oxygenlow" amount="5" />
+        <ReduceAffliction identifier="bloodloss" amount="5" />
+      </StatusEffect>
+      <!--Overdose effect, if adrenaline rush is already present give organ damage, buffs, and purge poisons from the bloodstream-->
+      <StatusEffect tags="medical" type="OnUse" target="Character" setvalue="True" duration="15" comparison="And" delay="1.1" disabledeltatime="true">
+        <Conditional fn_adrenaline="gt 5" />
+        <Affliction identifier="organdamage" amount="0.075" />
+        <Affliction identifier="paralysisresistance" amount="0.5" />
+        <Affliction identifier="huskinfectionresistance" amount="0.5" />
+        <Affliction identifier="strengthen" amount="0.15" />
+        <ReduceAffliction identifier="oxygenlow" amount="5" />
+        <ReduceAffliction identifier="poison" amount="5" />
+        <ReduceAffliction identifier="bloodloss" amount="5" />
+      </StatusEffect>
+      <!--Checks for functional necrosis, if it is present then store a variable with OriginalOutpost-->
+      <StatusEffect type="OnUse" target="Character, This" setvalue="false" OriginalOutpost="infected" stackable="false" delay="0.7" disabledeltatime="true">
+        <Conditional fn_functionalnecrosis="gt 0" />
+      </StatusEffect>
+      <!--Give functional necrosis to next person injected if it finds the variable set by the above statuseffect-->
+      <StatusEffect type="OnUse" target="Character, This" delay="0.7">
+        <Conditional OriginalOutpost="infected" />
+        <Affliction identifier="fn_functionalnecrosis" amount="0.5" />
+      </StatusEffect>
+      <!--Checks for functional necrosis, if it is present then store a variable with OriginalOutpost-->
+      <StatusEffect type="OnUse" target="Character, This" setvalue="false" OriginalOutpost="infectedshambler" stackable="false" delay="0.7" disabledeltatime="true">
+        <Conditional fn_shambler="gt 0" />
+      </StatusEffect>
+      <!--Give functional necrosis to next person injected if it finds the variable set by the above statuseffect-->
+      <StatusEffect type="OnUse" target="Character, This" delay="0.7">
+        <Conditional OriginalOutpost="infectedshambler" />
+        <Affliction identifier="fn_shambler" amount="0.1" />
+      </StatusEffect>
+      <!--Change description to show that there is one use remaining-->
+      <StatusEffect type="OnUse" target="This" setvalue="True" description="A solution of epinephrine, atropine, and saline, capable of bringing someone out of a critical state in a pinch. Reduces blood loss, cures oxygen loss, and kickstarts regeneration. Effective in purging toxins from the bloodstream if used twice on the same patient. Has 1 use remaining." comparison="And" />
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This" delay="1.2">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Creutzfeldt Necrophorum Sample" identifier="fn_necrosissample" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,poison" description="An engineered virus causing unexplained bleeding, nausea, facial disfiguration, and eventual detachment of the temporal, parietal, and frontal lobes. Patients past this state are incurable and very hostile." useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="toxinscab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Deconstruct time="20">
+      <Item identifier="deliriumine" copycondition="true" mincondition="0.1" />
+      <Item identifier="huskeggs" copycondition="true" mincondition="0.1" />
+      <Item identifier="hallucinogenicbufotoxin" copycondition="true" mincondition="0.1" />
+      <Item identifier="morbusine" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/necrosissampleinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/genetherapy.png" sourcerect="105,5,46,248" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_cap_remove_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_inject_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.8" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_click_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="Character" delay="1.1" comparison="And">
+        <Affliction identifier="fn_functionalnecrosis" amount="0.1" />
+      </StatusEffect>
+      <!-- Remove the item when used -->
+      <StatusEffect type="OnBroken" target="This" delay="1.15">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Streptococcus Lyssavirus Sample" identifier="fn_shamblersample" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,poison" description="An engineered virus causing unexplained bleeding, nausea, facial disfiguration, and eventual detachment of the temporal, parietal, and frontal lobes. Patients past this state are incurable and very hostile." useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="toxinscab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Deconstruct time="20">
+      <Item identifier="deliriumine" copycondition="true" mincondition="0.1" />
+      <Item identifier="huskeggs" copycondition="true" mincondition="0.1" />
+      <Item identifier="hallucinogenicbufotoxin" copycondition="true" mincondition="0.1" />
+      <Item identifier="sufforin" copycondition="true" mincondition="0.1" />
+      <Item identifier="antibiotics" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/necrosissampleinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/genetherapy.png" sourcerect="105,5,46,248" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_cap_remove_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_inject_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.8" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_click_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="Character" delay="1.1" comparison="And">
+        <Affliction identifier="fn_shambler" amount="0.1" />
+      </StatusEffect>
+      <!-- Remove the item when used -->
+      <StatusEffect type="OnBroken" target="This" delay="1.15">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Knox Infection Sample" identifier="fn_knoxsample" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,poison" description="An incurable virus causing nausea, anxiety, paranoia, psychosis, vomiting, and eventual death. Patients who die while under the effects of this infection will reanimate and attempt to bite the uninfected. Anyone who gets bitten is considered lost. Lacerations after a fight with a zombie are to be watched closely." useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="toxinscab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.25" />
+    <Deconstruct time="20">
+      <Item identifier="deliriumine" copycondition="true" mincondition="0.1" />
+      <Item identifier="huskeggs" copycondition="true" mincondition="0.1" />
+      <Item identifier="hallucinogenicbufotoxin" copycondition="true" mincondition="0.1" />
+      <Item identifier="sufforin" copycondition="true" mincondition="0.1" />
+      <Item identifier="antibiotics" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/necrosissampleinventory.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/genetherapy.png" sourcerect="105,5,46,248" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_cap_remove_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_inject_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="0.8" disabledeltatime="true">
+        <Sound file="%ModDir%/Zombies/Sounds/NMRiH/genetherapy_click_01.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="Character" delay="1.1" comparison="And">
+        <Affliction identifier="fn_knoxinfection" amount="0.1" />
+      </StatusEffect>
+      <!-- Remove the item when used -->
+      <StatusEffect type="OnBroken" target="This" delay="1.15">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <!--A reference
+  Can save you from critical condition once
+  Gives a magnum with accompanying music and screen effects-->
+  <Item name="Hero's Beret" identifier="fn_billhat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="The hat of a war veteran who made the ultimate sacrifice while fighting the restless horde. Appears to be imbued with the power of multiple universes, allowing the user to continue fighting when all hope seems lost." scale="0.4">
+    <PreferredContainer primary="wreckcrewcab" minamount="0" maxamount="1" spawnprobability="0.025" />
+    <Sprite name="Bill's Hat" texture="%ModDir%/Zombies/Textures/headgear.png" depth="0.6" sourcerect="116,133,71,40" origin="0.5,0.5" />
+    <InventoryIcon name="Bill's Hat" texture="%ModDir%/Zombies/Textures/billhatinventoryicon.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <StatusEffect target="Character, This" setvalue="False" condition="-100" stackable="False" delay="7" type="OnWearing" comparison="And" disabledeltatime="True">
+        <Affliction identifier="combatstimulant" amount="600" />
+        <Affliction identifier="fn_hatrevive" amount="1000" />
+        <Conditional condition="gt 0" targetself="True" />
+        <Conditional health="lte 0" />
+      </StatusEffect>
+      <sprite name="Bill's Hat" scale="0.35" texture="%ModDir%/Zombies/Textures/headgear.png" limb="Head" inheritlimbdepth="true" inherittexturescale="false" hidelimb="false" sourcerect="116,133,70,49" origin="0.6,1" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <!--Do you like hurting other people?-->
+  <Item name="Richard" identifier="fn_jacketmask" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Do you like hurting other people? If you fall into critical condition while wearing this, you can live out all of your brutal fantasies, but beware, for its lethal power can be turned against you." scale="0.4">
+    <PreferredContainer primary="wreckcrewcab" minamount="0" maxamount="1" spawnprobability="0.025" />
+    <Sprite name="Richard" texture="%ModDir%/Zombies/Textures/headgear.png" depth="0.6" sourcerect="99,241,98,133" origin="0.5,0.5" />
+    <InventoryIcon name="Richard" texture="%ModDir%/Zombies/Textures/richard.png" sourcerect="0,0,364,449" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <StatusEffect target="Character, This" setvalue="False" condition="-100" stackable="False" delay="7" type="OnWearing" comparison="And" disabledeltatime="True">
+        <Affliction identifier="combatstimulant" amount="600" />
+        <Affliction identifier="fn_hatrevive" amount="1000" />
+        <Conditional condition="gt 0" targetself="True" />
+        <Conditional health="lte 0" />
+      </StatusEffect>
+      <sprite name="Richard" scale="0.3" texture="%ModDir%/Zombies/Textures/headgear.png" limb="Head" inheritlimbdepth="true" hidewearablesoftype="hair,moustache,beard" inherittexturescale="false" hidelimb="true" sourcerect="99,241,98,133" origin="0.45,0.6" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="Carpenter's Delight" identifier="fn_carpentersdelight" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" Scale="0.35" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="239,160,74,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="26,158,128,58" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="15" density="50" />
+    <MeleeWeapon slots="RightHand" aimpos="40,5" handle1="-8,0" holdangle="60" reload="0.18" range="50" combatpriority="8" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="1" itemdamage="2" targetimpulse="5">
+        <Affliction identifier="blunttrauma" strength="8" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnUse" target="Character" targetlimb="Head" disabledeltatime="false" delay="0.05" setvalue="false">
+        <Explosion range="3.0" smoke="False" flames="False" structuredamage="0" itemdamage="0" force="2.0" severlimbsprobability="0.2" decal="blood" decalsize="1.45" shockwave="false" underwaterbubble="false" />
+        <ParticleEmitter particle="bloodsplash" particleamount="9" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1.3" scalemax="1.9" colormultiplier="255,0,0,255" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" targetlimb="Head" disabledeltatime="true" delay="0.04" setvalue="false">
+        <Affliction identifier="blunttrauma" strength="800" />
+        <Conditional isdead="False" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/hmblunt.ogg" selectionmode="All" range="800" volume="0.45" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/hmhit.ogg" selectionmode="All" range="800" volume="0.65" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/hmneck.ogg" selectionmode="All" range="800" volume="0.45" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" delay="0.04" targetlimb="Head" disabledeltatime="true" setvalue="false">
+        <Conditional isdead="False" />
+        <ParticleEmitter particle="fn_hmpoints" particleamount="1" velocitymin="0" velocitymax="1" scalemin="0.4" scalemax="0.4" colormultiplier="255,255,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character,This" delay="1" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Conditional fn_berethammercarpenter="eq 0" />
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemComponent>
+      <StatusEffect type="Always" lifetime="0.1" stackable="False" delay="0.07" target="Character" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Affliction identifier="fn_berethammercarpenter" amount="0.1" />
+      </StatusEffect>
+    </ItemComponent>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Cloaker's Baton" identifier="fn_cloakerbaton" category="Equipment" Tags="mediumitem" cargocontaineridentifier="metalcrate" Scale="0.45" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="270,29,83,68" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="26,33,204,62" depth="0.55" origin="0.5,0.5" />
+    <Body width="120" height="20" density="50" />
+    <MeleeWeapon slots="RightHand" controlpose="true" aimpos="45,10" handle1="-40,-10" holdangle="55" reload="0.75" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" targetimpulse="10">
+        <Affliction identifier="blunttrauma" strength="4.5" />
+        <Affliction identifier="stun" strength="2.3" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+      <StatusEffect type="OnUse" target="Character" delay="2" disabledeltatime="true" setvalue="false">
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/didn't forget about me.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/i'm gonna beat the.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/missed me.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/not so tough now.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/the safeword.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/this might sting a little.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Cloaker Quotes/work smarter.ogg" range="800" selectionmode="Random" />
+        <Conditional fn_beretbatontrack2="eq 0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="false" setvalue="false">
+        <Affliction identifier="fn_beretbatontrack2" amount="9999" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character,This" delay="1" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Conditional fn_beretbaton="eq 0" />
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemComponent>
+      <StatusEffect type="Always" lifetime="0.1" stackable="False" delay="0.07" target="Character" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Affliction identifier="fn_beretbaton" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" duration="1.5" SpeedMultiplier="0.35" stackable="False" disabledeltatime="false" setvalue="true"></StatusEffect>
+    </ItemComponent>
+    <aitarget sightrange="1000" soundrange="500" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Bloodied Hockey Mask" identifier="fn_jasonmask" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="You haven't checked a calender lately but you're sure it's Friday the Thirteenth on 𝘴𝘰𝘮𝘦 planet. If you fall into critical condition, a temporary pact with an entity is formed, allowing you to exact vengeance upon those who have wronged you. Your sins weigh you down, however, causing you to move much slower." scale="0.4">
+    <PreferredContainer primary="wreckcrewcab" minamount="0" maxamount="1" spawnprobability="0.025" />
+    <Sprite name="Mask" texture="%ModDir%/Zombies/Textures/headgear.png" depth="0.6" sourcerect="104,389,96,117" origin="0.5,0.5" />
+    <InventoryIcon name="Mask" texture="%ModDir%/Zombies/Textures/jason.png" sourcerect="0,0,255,227" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <StatusEffect target="Character, This" setvalue="False" condition="-100" stackable="False" delay="7" type="OnWearing" comparison="And" disabledeltatime="True">
+        <Affliction identifier="combatstimulant" amount="600" />
+        <Affliction identifier="fn_hatrevive" amount="1000" />
+        <Conditional condition="gt 0" targetself="True" />
+        <Conditional health="lte 0" />
+      </StatusEffect>
+      <sprite name="Mask" scale="0.24" texture="%ModDir%/Zombies/Textures/headgear.png" limb="Head" inheritlimbdepth="true" hidewearablesoftype="moustache,beard" inherittexturescale="false" hidelimb="false" sourcerect="104,389,96,117" origin="0.45,0.55" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <Containable items="chem,medical" />
+    </ItemContainer>
+  </Item>
+  <Item name="Rusty Machete" identifier="fn_machete" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <InventoryIcon texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="232,258,73,76" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Zombies/Textures/beretweapons.png" sourcerect="3,287,168,19" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="15" density="50" />
+    <MeleeWeapon slots="RightHand" aimpos="35,5" handle1="-26,-2" holdangle="60" reload="3.0" range="50" combatpriority="80" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="18" itemdamage="2" severlimbsprobability="5.0" targetimpulse="7">
+        <Affliction identifier="lacerations" strength="12.5" />
+      </Attack>
+      <StatusEffect type="OnUse" target="Character" targetlimb="LeftLeg" disabledeltatime="true" setvalue="false">
+        <Affliction identifier="lacerations" amount="35" />
+        <Affliction identifier="bleeding" amount="25" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Machete/machete_impact_flesh1.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Machete/machete_impact_flesh2.ogg" range="800" selectionmode="Random" />
+        <Explosion range="7.0" smoke="False" flames="False" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="5.0" decal="blood" decalsize="1.85" shockwave="false" underwaterbubble="false" />
+        <ParticleEmitter particle="bloodsplash" particleamount="9" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1.3" scalemax="1.9" colormultiplier="255,0,0,255" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" targetlimb="Torso" disabledeltatime="true" setvalue="false">
+        <Affliction identifier="lacerations" amount="25" />
+        <Affliction identifier="bleeding" amount="12.5" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Machete/machete_impact_flesh1.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Weapons/Machete/machete_impact_flesh2.ogg" range="800" selectionmode="Random" />
+        <Explosion range="7.0" smoke="False" flames="False" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="5.0" decal="blood" decalsize="1.85" shockwave="false" underwaterbubble="false" />
+        <ParticleEmitter particle="bloodsplash" particleamount="9" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="1.3" scalemax="1.9" colormultiplier="255,0,0,255" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="3.4" duration="1.0" disabledeltatime="false" setvalue="true"></StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character,This" delay="1" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Conditional fn_berethammer="eq 0" />
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemComponent>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" duration="3.0" disabledeltatime="false" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" lifetime="0.1" stackable="False" delay="0.07" target="Character" checkconditionalalways="True" disabledeltatime="true" comparison="or">
+        <Affliction identifier="fn_berethammer" amount="0.1" />
+      </StatusEffect>
+    </ItemComponent>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--CAMPAIGN STUFF STARTS HERE-->
+  <Item name="draggingemitter" identifier="fn_draggingemitter" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" delay="5">
+        <Explosion range="1500" force="0.01" flash="false" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="0" underwaterbubble="false" structuredamage="0" itemdamage="0" flashrange="0" flashduration="0">
+          <Affliction identifier="fn_draggingplayer" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This"></StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="knoxinfector" identifier="fn_knoxinfector" Scale="1" tags="" sonarsize="0" hideinmenus="true" impacttolerance="0.001" health="0.1">
+    <Body radius="100" density="10" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="Container, This" condition="-1">
+        <Affliction identifier="fn_knoxinfection" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.05">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="fn_pursuergrab" identifier="fn_pursuergrab" tags="fn_pursuergrab" health="25" hideinmenus="true" category="" sonarsize="0" scale="1" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbyrepairtools="true" damagedbymeleeweapons="true">
+    <InventoryIcon texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="20" height="15" density="10" />
+    <Rope targetpullforce="5" projectilepullforce="0" maxlength="5000" snaponcollision="false" spritewidth="5" tile="true">
+      <Sprite texture="%ModDir%/Zombies/Textures/chain.png" sourcerect="776,73,94,11" depth="0.57" origin="0.5,0.5" />
+      <EndSprite texture="%ModDir%/Zombies/Textures/chain.png" sourcerect="915,62,52,21" scale="0.15" depth="0.56" origin="0,0.95" />
+      <!-- Automatically snap after 20 seconds -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="20" />
+      <!-- Remove 1 second after snapping -->
+      <StatusEffect type="Always" target="This" delay="0.25" checkconditionalalways="true">
+        <Conditional Snapped="true" />
+        <Remove />
+      </StatusEffect>
+      <!-- Snap after 2 seconds if not stuck to anything -->
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="2" checkconditionalalways="true">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" checkconditionalalways="true">
+        <Conditional targetpullforce="eq 150" />
+        <!--
+        <sound file="Mods/Zombies/Sounds/winch2.ogg" range="750" volume="1" loop="False" />-->
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="1.5" setvalue="true" targetpullforce="150" projectilepullforce="150">
+        <sound file="%ModDir%/Zombies/Sounds/winch2.ogg" range="750" volume="1" loop="False" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delay="3" setvalue="true" targetpullforce="75" projectilepullforce="75">
+        <sound file="%ModDir%/Zombies/Sounds/chain1.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain2.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain3.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain4.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain5.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain6.ogg" range="750" volume="1.5" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain7.ogg" range="750" volume="1.5" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnDeath" target="This" Snapped="true" />
+    </Rope>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" stickpermanently="true" maxtargetstohit="1">
+      <Attack structuredamage="10" severlimbsprobability="0.5">
+        <Affliction identifier="organdamage" amount="12" />
+        <Affliction identifier="stun" amount="2" />
+        <sound file="%ModDir%/Zombies/Sounds/chain1.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain2.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain3.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain4.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain5.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain6.ogg" range="750" volume="1" selectionmode="Random" />
+        <sound file="%ModDir%/Zombies/Sounds/chain7.ogg" range="750" volume="1" selectionmode="Random" />
+      </Attack>
+      <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" setvalue="true" comparison="And">
+        <Conditional IsStuckToTarget="true" />
+        <Affliction identifier="drag" strength="5" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" comparison="And">
+        <Affliction identifier="oxygenlow" strength="8" />
+        <Affliction identifier="fn_strangled" amount="50" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="UseTarget,This" OxygenAvailable="-100.0" Oxygen="-7.0">
+        <Affliction identifier="fn_strangled" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" condition="-25" comparison="And">
+        <Conditional IsStuckToTarget="true" />
+        <Conditional Health="lt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targetlimb="Head" target="UseTarget,This" delay="0.5" stackable="False" setvalue="True" Snapped="True" checkconditionalalways="true" comparison="And">
+        <Conditional IsStuckToTarget="true" />
+        <Conditional Snapped="False" />
+        <Conditional Health="lte 3" />
+        <Conditional Health="gt -2" />
+        <Affliction identifier="recentlybittenpzbite" amount="15" />
+        <Affliction identifier="organdamage" amount="12" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Strangulated" identifier="fn_neckgrab" nonplayerteaminteractable="True" pickdistance="75" scale="0.6" description="You're being strangled to death. Nobody can hear your screams.">
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="0,0,1,1" depth="0.6" origin="0.5,0.5" />
+    <Body width="10" height="10" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="20,5" holdangle="25" handle1="1,1" handle2="1,1" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.15" setvalue="true" />
+      <StatusEffect type="OnWearing" target="Character" lockhands="true" SpeechImpediment="1000" setvalue="true" comparison="And" />
+      <StatusEffect type="OnNotContained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect tags="fn_strangled" type="Always" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect type="Always" target="Character,This" disabledeltatime="true" comparison="or">
+        <Conditional fn_strangled="eq 0" />
+        <Conditional health="lt 5" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Strangler" identifier="fn_neckgrabber" nonplayerteaminteractable="True" pickdistance="75" scale="0.6" description="You're being strangled to death. Nobody can hear your screams.">
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="0,0,1,1" depth="0.6" origin="0.5,0.5" />
+    <Body width="10" height="10" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="20,5" holdangle="25" handle1="1,1" handle2="1,1" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.15" setvalue="true" />
+      <StatusEffect type="OnWearing" target="Character" lockhands="true" setvalue="true" comparison="And" />
+      <StatusEffect type="OnNotContained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect tags="fn_strangler" type="Always" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect type="Always" target="Character,This" disabledeltatime="true" comparison="or">
+        <Conditional fn_strangler="eq 0" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

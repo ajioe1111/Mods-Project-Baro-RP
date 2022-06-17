@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb name="Huskappendage 1" id="13" height="10" width="15" ignorecollisions="True" flip="True">
+    <sprite texture="Content/Characters/Humanhusk/Husk_Injector.png" sourcerect="25,86,20,15" depth="0.11" color="0,0,0,0" origin="0.5,0.5" />
+    <attack range="70" damagerange="70" duration="0.75" targetforce="13" structuresoundtype="StructureBlunt" force="12" applyforceonlimbs="2, 3" torque="0" context="Any" targettype="Any" hitdetectiontype="Distance" structuredamage="5" itemdamage="12" stun="0.4" onlyhumans="False" applyforcesonlyonce="False" targetimpulse="13" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" afterattack="PursueIfCanAttack" cooldown="5" secondarycooldown="3" cooldownrandomfactor="0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="False" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False">
+      <Affliction identifier="lacerations" strength="12" probability="1" />
+      <Affliction identifier="bleeding" strength="7" probability="0.7" />
+      <Affliction identifier="recentlybitten" strength="25" probability="1" />
+    </attack>
+  </limb>
+  <limb name="Huskappendage 2" id="14" height="10" width="15" ignorecollisions="True" flip="True">
+    <sprite texture="Content/Characters/Humanhusk/Husk_Injector.png" sourcerect="25,86,20,15" depth="0.11" color="0,0,0,0" origin="0.5,0.5" />
+    <attack range="70" damagerange="70" duration="0.75" targetforce="13" structuresoundtype="StructureBlunt" force="12" applyforceonlimbs="4, 5" torque="0" context="Any" targettype="Any" hitdetectiontype="Distance" structuredamage="5" itemdamage="12" stun="0.4" onlyhumans="False" applyforcesonlyonce="False" targetimpulse="13" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" afterattack="PursueIfCanAttack" cooldown="5" secondarycooldown="3" cooldownrandomfactor="0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="False" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False">
+      <Affliction identifier="lacerations" strength="12" probability="1" />
+      <Affliction identifier="bleeding" strength="7" probability="0.7" />
+      <Affliction identifier="recentlybitten" strength="25" probability="1" />
+    </attack>
+  </limb>
+  <limb name="Huskappendage 3" id="15" height="10" width="15" ignorecollisions="True" flip="True">
+    <sprite texture="Content/Characters/Humanhusk/Husk_Injector.png" sourcerect="25,86,20,15" depth="0.11" color="0,0,0,0" origin="0.5,0.5" />
+    <attack range="70" damagerange="70" duration="0.75" targetforce="13" structuresoundtype="StructureBlunt" force="12" applyforceonlimbs="0, 1" torque="0" context="Any" targettype="Any" hitdetectiontype="Distance" structuredamage="5" itemdamage="25" stun="3" onlyhumans="False" applyforcesonlyonce="False" targetimpulse="13" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" afterattack="PursueIfCanAttack" cooldown="13" secondarycooldown="4" cooldownrandomfactor="0" targetlimbtype="None" afterattackdelay="0" reverse="False" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" fullspeedafterattack="False" levelwalldamage="0" ranged="False" avoidfriendlyfire="False" requiredangle="20" submarineimpactmultiplier="1" blink="False">
+      <Affliction identifier="bitewounds" strength="24" probability="1" />
+      <Affliction identifier="bleeding" strength="14" probability="1" />
+      <Affliction identifier="recentlybitten" strength="75" probability="1" />
+    </attack>
+  </limb>
+  <!-- Head to husk appendage -->
+  <joint name="Head to Huskappendage" limb1="0" limb2="13" limb1anchor="2.8,-5" limb2anchor="-1.5,0" upperlimit="0" lowerlimit="-10" canbesevered="False" limitenabled="True" />
+  <joint name="Head to Huskappendage" limb1="0" limb2="14" limb1anchor="2.8,-5" limb2anchor="-1.5,0" upperlimit="0" lowerlimit="-10" canbesevered="False" limitenabled="True" />
+  <joint name="Head to Huskappendage" limb1="0" limb2="15" limb1anchor="2.8,-5" limb2anchor="-1.5,0" upperlimit="0" lowerlimit="-10" canbesevered="False" limitenabled="True" />
+</huskappendage>

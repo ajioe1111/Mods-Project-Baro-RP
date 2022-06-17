@@ -1,9 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Creatures" modversion="1.0.3" corepackage="False" steamworkshopid="2637253759" gameversion="0.17.12.0">
+<contentpackage name="Project Baro Creatures" modversion="1.0.8" corepackage="False" steamworkshopid="2637253759" gameversion="0.17.15.0">
   <Character file="%ModDir%/Human/Human.xml" />
   <Afflictions file="%ModDir%/Human/Afflictions.xml" />
   <Character file="%ModDir%/IceWhale/IceWhale.xml" />
   <Character file="%ModDir%/X/X.xml" />
   <Character file="%ModDir%/Alien_guard/alien guard.xml" />
   <Character file="%ModDir%/Mudraptor_bobik/Mudraptor_weasel_PJ_1.xml" />
+  <Text file="%ModDir%/Zombies/Events/EnglishVanilla.xml" />
+  <Sounds file="%ModDir%/Zombies/Sounds/sounds.xml" />
+  <Afflictions file="%ModDir%/Zombies/Textures/madness/afflictionsmadness.xml" />
+  <Afflictions file="%ModDir%/Zombies/afflictions.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Ragehuman/Ragehuman.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Necrohuman/Necrohuman.xml" />
+  <Other file="%ModDir%/Zombies/Afflictionicons.png" />
+  <Particles file="%ModDir%/Zombies/ParticlePrefabs.xml" />
+  <Decals file="%ModDir%/Zombies/Textures/DecalPrefabs.xml" />
+  <Item file="%ModDir%/Zombies/Items.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zombieshambler/Zombieshambler.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Necrohumancrawler/Necrohumancrawler.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zomboidfastshambler/Zomboidfastshambler.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zomboidfastshamblercorpse/Zomboidfastshamblercorpse.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zomboidfastshamblernatural/Zomboidfastshamblernatural.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zombieshamblernatural/Zombieshamblernatural.xml" />
+  <RandomEvents file="%ModDir%/Zombies/zombieevents.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Zomboidsprinternatural/Zomboidsprinternatural.xml" />
+  <Missions file="%ModDir%/Zombies/Events/Missions.xml" />
+  <RandomEvents file="%ModDir%/Zombies/Events/OutpostEvents.xml" />
+  <Character file="%ModDir%/Zombies/Characters/Ragehumanreal/Ragehumanreal.xml" />
 </contentpackage>

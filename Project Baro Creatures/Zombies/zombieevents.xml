@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                               Difficulty level 1                          -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <EventSet minleveldifficulty="24" maxleveldifficulty="100" chooserandom="false" allowatstart="true" additive="true">
+    <!-- populate the caves -->
+    <EventSet chooserandom="true" allowatstart="true" percave="true" triggereventcooldown="false">
+      <MonsterEvent characterfile="Zombieshamblernatural" minamount="2" maxamount="3" spawntype="cave" />
+      <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="7" spawntype="cave" />
+    </EventSet>
+    <!-- populate the ruins -->
+    <EventSet chooserandom="true" allowatstart="true" perruin="true" triggereventcooldown="false">
+      <MonsterEvent characterfile="Zombieshamblernatural" minamount="1" maxamount="3" spawntype="ruin" probability="0.5" spawnpointtag="husk" />
+      <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="4" spawntype="ruin" probability="0.5" spawnpointtag="husk" />
+    </EventSet>
+    <!-- Populate the wrecks. -->
+    <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true" triggereventcooldown="false">
+      <EventSet identifier="wreck" chooserandom="true" allowatstart="true" perwreck="true" triggereventcooldown="false">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="9" spawntype="wreck" probability="0.3" />
+        <MonsterEvent characterfile="Zombieshamblernatural" minamount="2" maxamount="8" spawntype="wreck" probability="0.3" />
+      </EventSet>
+      <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true" triggereventcooldown="false">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="3" spawntype="wreck" probability="0.2" />
+      </EventSet>
+      <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true" triggereventcooldown="false">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="3" spawntype="wreck" probability="0.2" />
+      </EventSet>
+    </EventSet>
+    <!-- Timed events -->
+    <!-- Trigger at 300 seconds -->
+    <EventSet chooserandom="true" mindistancetraveled="1.0" minmissiontime="300" minintensity="0.0" maxintensity="1.0" allowatstart="false">
+      <EventSet chooserandom="true" commonness="60">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="4" spawntype="sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="30">
+        <MonsterEvent characterfile="Zombieshamblernatural" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+      </EventSet>
+    </EventSet>
+    <!-- Trigger at 1000 seconds -->
+    <EventSet chooserandom="true" mindistancetraveled="1.0" minmissiontime="1000" minintensity="0.0" maxintensity="1.0" allowatstart="false">
+      <EventSet chooserandom="true" commonness="40">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="5" spawntype="sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="30">
+        <MonsterEvent characterfile="Zombieshamblernatural" minamount="1" maxamount="3" spawntype="mainpath,sidepath" />
+      </EventSet>
+    </EventSet>
+    <!-- Trigger at 1500 seconds -->
+    <EventSet chooserandom="true" mindistancetraveled="1.0" minmissiontime="1500" minintensity="0.0" maxintensity="1.0" allowatstart="false">
+      <EventSet chooserandom="true" commonness="40">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="4" spawntype="mainpath,sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="30">
+        <MonsterEvent characterfile="Zombieshamblernatural" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="10">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="6" spawntype="mainpath,sidepath" />
+      </EventSet>
+    </EventSet>
+    <!-- Trigger at 2500 seconds -->
+    <EventSet chooserandom="true" mindistancetraveled="1.0" minmissiontime="2500" minintensity="0.0" maxintensity="1.0" allowatstart="false">
+      <EventSet chooserandom="true" commonness="40">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="6" spawntype="mainpath,sidepath" />
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="5" spawntype="mainpath,sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="30">
+        <MonsterEvent characterfile="Zombieshamblernatural" minamount="1" maxamount="3" spawntype="mainpath,sidepath" />
+      </EventSet>
+      <EventSet chooserandom="false" commonness="10">
+        <MonsterEvent characterfile="Zomboidfastshamblernatural" minamount="1" maxamount="9" spawntype="mainpath,sidepath" />
+      </EventSet>
+    </EventSet>
+  </EventSet>
+</Randomevents>

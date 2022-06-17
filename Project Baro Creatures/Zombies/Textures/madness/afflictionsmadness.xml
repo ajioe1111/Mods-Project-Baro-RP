@@ -1,0 +1,1285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <!--Kills person instantly but causes the right death description.-->
+  <Affliction name="Braindead" identifier="fn_ragekillreal" description="The patient is completely unresponsive. Any recovery is unlikely." type="braindeath" causeofdeathdescription="Succumbed to the R.A.G.E. Pathogen" selfcauseofdeathdescription="You have succumbed to the R.A.G.E. Pathogen." limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" activationthreshold="5" maxstrength="100">
+    <Effect minstrength="5" maxstrength="45" multiplybymaxvitality="true" minvitalitydecrease="1000" maxvitalitydecrease="1000" strengthchange="5.0" dialogflag="Bloodloss" />
+    <Effect minstrength="45" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="1000" maxvitalitydecrease="1000" strengthchange="5.0" dialogflag="Bloodloss" minscreenblur="0.0" maxscreenblur="6.0" minchromaticaberration="0.0" maxchromaticaberration="2.0" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,768,128,128" color="139,60,42,255" origin="0,0" />
+  </Affliction>
+  <AfflictionHusk name="(Error-Causing) RAGE" identifier="rageafflictionfixer" description="The patient is bleeding from their eyes and convulsing violently on the floor." type="alieninfection" targets="Ragehumanreal" huskedspeciesname="necrohuman" causeofdeathdescription="Succumbed to functional necrosis." selfcauseofdeathdescription="You have succumbed to functional necrosis." limbspecific="false" indicatorlimb="Head" activationthreshold="0" showiconthreshold="1" karmachangeonapplied="-1" maxstrength="100" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="1" maxstrength="49" minvitalitydecrease="0" maxvitalitydecrease="0" minscreendistort="5.0" maxscreendistort="25.0" strengthchange="65.0" minchromaticaberration="5.0" maxchromaticaberration="25.0" minradialdistort="5.0" maxradialdistort="25.0">
+      <StatusEffect target="Character" setvalue="true" tags="FN_Headsevered" duration="0.5" checkconditionalalways="true" comparison="and" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="98" minvitalitydecrease="0" maxvitalitydecrease="0" minscreendistort="25.0" maxscreendistort="25.0" strengthchange="65.0" minchromaticaberration="25.0" maxchromaticaberration="25.0" minradialdistort="25.0" maxradialdistort="25.0">
+      <StatusEffect target="Character" setvalue="true" tags="FN_Headsevered" duration="0.5" />
+      <StatusEffect target="Character" delay="2" checkconditionalalways="true" stackable="false" comparison="and">
+        <Affliction identifier="nausea" strength="25" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" minscreendistort="25.0" maxscreendistort="250.0" strengthchange="65.0" minchromaticaberration="25.0" maxchromaticaberration="250.0" minradialdistort="25.0" maxradialdistort="250.0">
+      <StatusEffect target="Character" setvalue="true" tags="FN_Headsevered" duration="0.5" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional lockhands="false" />
+        <Affliction identifier="internaldamage" strength="2.5" />
+        <Affliction identifier="stun" strength="15" />
+        <Affliction identifier="organdamage" strength="2.5" />
+        <Affliction identifier="bleeding" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="R.A.G.E." identifier="fn_functionalnecrosisrage" description="Something is not quite right." type="alieninfection" targets="human,necrohuman,zomboidfastshambler,ragehuman,zombieshambler,zomboidfastshamblernatural,zombieshamblernatural,humanhusk,legacyhumanhusk" huskedspeciesname="Ragehumanreal" causeofdeathdescription="Succumbed to the R.A.G.E. Pathogen" selfcauseofdeathdescription="You have succumbed to the R.A.G.E. Pathogen." limbspecific="false" indicatorlimb="Head" needsair="true" dormantthreshold="98" activethreshold="1000" transformationthreshold="95" transformthresholdondeath="95" transferbuffs="true" transitionthreshold="99" sendmessages="false" causespeechimpediment="false" CauseSpeechImpediment="False" canspeak="True" activationthreshold="0" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="15" karmachangeonapplied="-50" maxstrength="102" iconcolors="60,10,10,0;90,2,5,125;125,0,0,255">
+    <Effect minstrength="0" maxstrength="15" minvitalitydecrease="0" maxvitalitydecrease="0" minscreendistort="0.0" maxscreendistort="0.0" screeneffectfluctuationfrequency="0.0" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0" strengthchange="0.5" minchromaticaberration="0.0" maxchromaticaberration="0.0" minradialdistort="0.0" maxradialdistort="0.0">
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional isdead="false" />
+        <ReduceAffliction identifier="huskinfection" strength="5" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="True" checkconditionalalways="True">
+        <Conditional huskinfectionresistance="gt 0" />
+        <Affliction identifier="bloodloss" amount="15" />
+        <ReduceAffliction identifier="fn_functionalnecrosisrage" amount="16" />
+        <ReduceAffliction identifier="huskinfectionresistance" amount="5000" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="15" maxstrength="35" screeneffectfluctuationfrequency="15.3" minscreenblur="0.0" maxscreenblur="0.5" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.85" strengthchange="3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional isdead="false" />
+        <ReduceAffliction identifier="huskinfection" strength="5" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="0.2" />
+      </StatusEffect>
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+    </Effect>
+    <Effect minstrength="35" maxstrength="75" screeneffectfluctuationfrequency="15.3" minscreenblur="0.5" maxscreenblur="2.5" minscreendistort="0.0" maxscreendistort="1.5" minchromaticaberration="0.5" maxchromaticaberration="1.5" minafflictionoverlayalphamultiplier="0.85" maxafflictionoverlayalphamultiplier="2.5" strengthchange="2" minspeedmultiplier="0.8" maxspeedmultiplier="0.7">
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+      <StatusEffect target="Character" stackable="False" comparison="and" delay="2.75" duration="1.75">
+        <Affliction identifier="fn_madeffects1" amount="1.25" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional isdead="false" />
+        <ReduceAffliction identifier="huskinfection" strength="5" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="75" maxstrength="90" minchromaticaberration="1.5" maxchromaticaberration="25" minscreenblur="2.5" maxscreenblur="25.5" screeneffectfluctuationfrequency="15.3" minafflictionoverlayalphamultiplier="2.5" maxafflictionoverlayalphamultiplier="5.5" strengthchange="1.5" minspeedmultiplier="0.8" maxspeedmultiplier="0.3">
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+      <StatusEffect target="Character" stackable="False" comparison="and" delay="2.75" duration="1.75">
+        <Affliction identifier="fn_madeffects2" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="3" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="90" maxstrength="99" minafflictionoverlayalphamultiplier="5.5" maxafflictionoverlayalphamultiplier="5.5" strengthchange="2" screeneffectfluctuationfrequency="15.3" minchromaticaberration="1.5" maxchromaticaberration="0.5" minscreenblur="25.5" maxscreenblur="1.2" minscreendistort="1.5" maxscreendistort="0.5" minspeedmultiplier="0.3" maxspeedmultiplier="0.0">
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="5" />
+      </StatusEffect>
+      <StatusEffect target="Character" stackable="False" comparison="and" delay="2.75" duration="1.75">
+        <Affliction identifier="fn_madeffects1" amount="1.25" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="102" minafflictionoverlayalphamultiplier="5.5" maxafflictionoverlayalphamultiplier="12.5" strengthchange="1" screeneffectfluctuationfrequency="10.3" minscreenblur="1.2" maxscreenblur="25.5" minscreendistort="0.5" maxscreendistort="1.5" minchromaticaberration="0.5" maxchromaticaberration="1.5" minspeedmultiplier="0.0" maxspeedmultiplier="0.0">
+      <StatusEffect target="Character" stackable="False" comparison="and" delay="2.75" duration="1.75">
+        <Affliction identifier="fn_madeffects3" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="fn_tunesmanagerrage" amount="1000" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="7" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional fn_madnessfinalvignette="eq 0" />
+        <Affliction identifier="fn_madnessfinalvignette" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="5">
+        <Affliction identifier="fn_ragekillreal" amount="1000" />
+      </StatusEffect>
+    </Effect>
+    <!--Every 70 to 100 seconds, if infection is not suppressed and is above 15, play echoing voice sounds-->
+    <PeriodicEffect mininterval="70" maxinterval="100">
+      <StatusEffect target="Character" duration="60" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gt 15" />
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/brainscorcher.ogg" volume="0.5" dontmuffle="True" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <!--Rapid hallucinations at 25 infection.-->
+    <PeriodicEffect mininterval="1" maxinterval="3">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 30" />
+        <Conditional fn_functionalnecrosisrage="lt 122" />
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm3.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/cough1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crashwoosh1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crow1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crowd1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crying.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/flight1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/growl1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunfire2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunshots1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/heartmonitor1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/radio2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/radiochatter1.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <!--Even more violent and rapid hallucinations at 50 infection.-->
+    <PeriodicEffect mininterval="0" maxinterval="1">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 50" />
+        <Conditional fn_functionalnecrosisrage="lt 122" />
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/alarm3.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/cough1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crashwoosh1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crashwoosh1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crow1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crowd1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crowd1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/crying.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/growl1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/growl1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/growl1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunfire2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunfire2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunfire2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunshots1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunshots1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/gunshots1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/heartmonitor1.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/radio2.ogg" />
+        <Sound file="%ModDir%/Zombies/Sounds/Infection/radiochatter1.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <!-- schizo mode - violence  -->
+    <PeriodicEffect mininterval="0" maxinterval="3">
+      <StatusEffect target="Character" delay="1.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence1" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2452" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence2" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2356" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence3" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2354" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence4" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.854" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence5" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.542" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence6" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.231" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence7" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence8" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.75" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence9" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence10" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.04" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence11" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence12" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.3" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence13" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="1.0" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence14" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.9" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence15" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.6" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence16" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence17" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence18" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.4" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence19" strength="15" probability="0.25" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="0" maxinterval="3">
+      <StatusEffect target="Character" delay="1.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence1" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2452" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence2" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2356" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence3" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2354" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence4" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.854" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence5" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.542" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence6" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.231" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence7" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence8" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.75" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence9" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence10" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.04" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence11" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence12" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.3" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence13" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="1.0" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence14" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.9" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence15" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.6" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence16" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence17" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence18" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.4" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence19" strength="45" probability="0.25" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="0" maxinterval="3">
+      <StatusEffect target="Character" delay="1.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence1" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2452" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence2" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2356" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence3" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2354" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence4" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.854" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence5" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.542" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence6" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.231" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence7" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence8" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.75" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence9" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence10" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.04" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence11" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence12" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.3" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence13" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="1.0" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence14" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.9" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence15" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.6" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence16" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence17" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence18" strength="45" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.4" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madviolence19" strength="45" probability="0.25" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="0" maxinterval="2">
+      <StatusEffect target="Character" delay="1.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear1" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2452" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear2" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2356" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear3" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2354" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear4" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.854" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear5" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.542" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear6" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.231" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear7" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear8" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.75" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear9" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear10" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.04" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear11" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear12" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.3" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear13" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="1.0" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear14" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.9" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear15" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.6" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear16" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear17" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear18" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.4" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear19" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.432" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear20" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.856" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear21" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.5423" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madfear22" strength="65" probability="0.25" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="0" maxinterval="2">
+      <StatusEffect target="Character" delay="1.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse1" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2452" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse2" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2356" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse3" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2354" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse4" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.854" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse5" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.542" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse6" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.231" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse7" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse8" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.75" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse9" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.2" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse10" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.04" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse11" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse12" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.3" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse13" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="1.0" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse14" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.9" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse15" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.6" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse16" strength="65" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madremorse17" strength="65" probability="0.25" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="6" maxinterval="12">
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror2" strength="65" probability="0.36" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror3" strength="65" probability="0.36" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror4" strength="65" probability="0.36" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror5" strength="65" probability="0.36" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror6" strength="65" probability="0.45" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.25" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+        <Affliction identifier="fn_madhorror7" strength="65" probability="0.36" />
+      </StatusEffect>
+      <StatusEffect target="Character" delay="0.1" comparison="and">
+        <Conditional isdead="false" />
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/Horror4.ogg" volume="1.75" loop="False" selectionmode="Random" dontmuffle="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/Horror5.ogg" volume="1.75" loop="False" selectionmode="Random" dontmuffle="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/Horror6.ogg" volume="1.75" loop="False" selectionmode="Random" dontmuffle="True" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/Horror13.ogg" volume="1.75" loop="False" selectionmode="Random" dontmuffle="True" />
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Conditional fn_functionalnecrosisrage="lt 93" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="0,0,128,128" color="125,0,0,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/MadnessOverlayVignette.png" sourcerect="0,0,1024,640" color="255,255,255,255" origin="0,0" />
+  </AfflictionHusk>
+  <!--Handles all music in this singular portion of the mod-->
+  <Affliction name="Rage Tunes Manager" identifier="fn_tunesmanagerrage" description="Manages the tunes. This affliction will play different music and ambient tracks depending on certain conditions." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="5" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="5" strengthchange="0">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/madness1.ogg" volume="0.65" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 5" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/whispers.ogg" volume="0.25" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 15" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/whispers.ogg" volume="1.25" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 35" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/screams3.ogg" volume="2.25" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 40" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/screams2.ogg" volume="2.15" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 45" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/hallucinations/screams1.ogg" volume="2.0" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 35" />
+        <Conditional fn_functionalnecrosisrage="lt 65" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/madness2.ogg" volume="0.85" loop="True" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gte 65" />
+        <Conditional fn_functionalnecrosisrage="lt 70" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/madness3.ogg" loop="False" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional fn_functionalnecrosisrage="gt 70" />
+        <Sound file="%ModDir%/Zombies/Sounds/madness/madness3.ogg" loop="True" volume="0.15" dontmuffle="True" />
+        <Conditional IsLocalPlayer="True" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_fresheat" identifier="fn_fresheat" description="Not starving." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="120" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="120" strengthchange="-1"></Effect>
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <!--Hallucinations-->
+  <Affliction name="fn_madnessfinalvignette" identifier="fn_madnessfinalvignette" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="4" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="4" strengthchange="1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.9"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/MadnessOverlayVignetteFinal.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <!--Cool visual effects-->
+  <Affliction name="fn_madeffects1" identifier="fn_madeffects1" description="You are very likely screwed." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.85" minradialdistort="0.0" maxradialdistort="0.15"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,384,128,128" color="193,162,122,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madeffects2" identifier="fn_madeffects2" description="You are very likely screwed." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.85" minradialdistort="0.0" maxradialdistort="0.5" minscreendistort="0.0" maxscreendistort="0.5" minchromaticaberration="0.0" maxchromaticaberration="0.85"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,384,128,128" color="193,162,122,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madeffects3" identifier="fn_madeffects3" description="You are very likely screwed." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="1" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.85" minradialdistort="0.0" maxradialdistort="1.0" minscreendistort="0.0" maxscreendistort="1.0" minchromaticaberration="0.0" maxchromaticaberration="12.5"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,384,128,128" color="193,162,122,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence1" identifier="fn_madviolence1" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L01.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence2" identifier="fn_madviolence2" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L02.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence3" identifier="fn_madviolence3" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L03.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence4" identifier="fn_madviolence4" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L04.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence5" identifier="fn_madviolence5" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L05.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence6" identifier="fn_madviolence6" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L06.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence7" identifier="fn_madviolence7" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L07.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence8" identifier="fn_madviolence8" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L08.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence9" identifier="fn_madviolence9" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L09.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence10" identifier="fn_madviolence10" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L10.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence11" identifier="fn_madviolence11" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L11.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence12" identifier="fn_madviolence12" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L12.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence13" identifier="fn_madviolence13" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L13.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence14" identifier="fn_madviolence14" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L14.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence15" identifier="fn_madviolence15" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L15.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence16" identifier="fn_madviolence16" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L16.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence17" identifier="fn_madviolence17" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L17.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence18" identifier="fn_madviolence18" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L18.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madviolence19" identifier="fn_madviolence19" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/violence/L19.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <!--Remorse-->
+  <Affliction name="fn_madremorse1" identifier="fn_madremorse1" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L01.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse2" identifier="fn_madremorse2" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L02.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse3" identifier="fn_madremorse3" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L03.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse4" identifier="fn_madremorse4" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L04.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse5" identifier="fn_madremorse5" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L05.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse6" identifier="fn_madremorse6" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L06.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse7" identifier="fn_madremorse7" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L07.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse8" identifier="fn_madremorse8" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L08.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse9" identifier="fn_madremorse9" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L09.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse10" identifier="fn_madremorse10" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L10.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse11" identifier="fn_madremorse11" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L11.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse12" identifier="fn_madremorse12" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L12.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse13" identifier="fn_madremorse13" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L13.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse14" identifier="fn_madremorse14" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L14.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse15" identifier="fn_madremorse15" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L15.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse16" identifier="fn_madremorse16" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L16.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madremorse17" identifier="fn_madremorse17" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/remorse/L17.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <!--Fear-->
+  <Affliction name="fn_madfear1" identifier="fn_madfear1" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L01.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear2" identifier="fn_madfear2" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L02.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear3" identifier="fn_madfear3" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L03.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear4" identifier="fn_madfear4" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L04.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear5" identifier="fn_madfear5" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L05.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear6" identifier="fn_madfear6" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L06.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear7" identifier="fn_madfear7" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L07.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear8" identifier="fn_madfear8" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L08.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear9" identifier="fn_madfear9" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L09.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear10" identifier="fn_madfear10" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L10.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear11" identifier="fn_madfear11" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L11.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear12" identifier="fn_madfear12" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L12.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear13" identifier="fn_madfear13" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L13.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear14" identifier="fn_madfear14" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L14.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear15" identifier="fn_madfear15" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L15.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear16" identifier="fn_madfear16" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L16.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear17" identifier="fn_madfear17" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L17.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear18" identifier="fn_madfear18" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L18.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear19" identifier="fn_madfear19" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L19.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear20" identifier="fn_madfear20" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L20.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear21" identifier="fn_madfear21" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L21.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madfear22" identifier="fn_madfear22" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0.65" maxafflictionoverlayalphamultiplier="0.65"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/fear/L22.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror6" identifier="fn_madhorror6" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/pic6.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror2" identifier="fn_madhorror2" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/bones.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror3" identifier="fn_madhorror3" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/bones2.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror4" identifier="fn_madhorror4" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/violencia.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror5" identifier="fn_madhorror5" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/eye.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="fn_madhorror7" identifier="fn_madhorror7" description="Watch out.." type="resistance" isbuff="false" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" maxstrength="3" iconcolors="60,10,10,255;90,2,5,255;125,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <Effect minstrength="1" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="1.0" maxafflictionoverlayalphamultiplier="1.0"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Zombies/Textures/madness/hallucination/teeth.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+    <icon texture="%ModDir%/Zombies/Afflictionicons.png" sourcerect="128,0,128,128" color="125,0,0,255" origin="0,0" />
+  </Affliction>
+</Afflictions>
