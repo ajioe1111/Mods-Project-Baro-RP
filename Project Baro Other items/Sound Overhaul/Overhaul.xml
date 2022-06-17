@@ -539,7 +539,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreaklaserpistol" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%ModDir:EK Armory%/Items/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_laserpistol.ogg" type="OnUse" range="3000" />
      <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
       </StatusEffect>
@@ -576,7 +576,7 @@
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
+    <Sprite texture="%ModDir%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
@@ -635,7 +635,7 @@
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
+    <Sprite texture="%ModDir%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
@@ -707,7 +707,7 @@
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
-    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.40" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.35" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -753,7 +753,7 @@
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
-    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.40" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.35" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -811,7 +811,7 @@
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,-2" handle1="0,-11" msg="ItemMsgPickUpSelect"/>
 	<!-- barrelpos="35,7" aimpos="45,-5" handle1="10,-11" -->
-    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.40" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="85,16" spread="4" unskilledspread="18" reload="0.35" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamegausspistol" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -3698,7 +3698,7 @@
       <Attack structuredamage="0" targetforce="0">
         <Affliction identifier="burn" strength="5" />
         <!--<Affliction identifier="stun" amount="10" />-->
-        <Affliction identifier="progressivestun" amount="5" />
+        <Affliction identifier="progressivestun" amount="6" />
         <!-- Chance to stun more quickly -->
         <Affliction identifier="progressivestun" amount="10" probability="0.5" />
       </Attack>
@@ -3886,7 +3886,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/smg.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -3995,7 +3995,7 @@
     <RangedWeapon barrelpos="29,11" spread="0" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Revolver.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Revolver.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
@@ -4081,7 +4081,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Pump.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Pump.ogg" type="OnUse" range="3000" selectionmode="Random" />
    
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
@@ -4128,7 +4128,7 @@
     <RangedWeapon reload="1.45" barrelpos="20,6" spread="0" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Handcannon.wav" type="OnUse" range="3000" selectionmode="Random" />  
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" />  
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,7.0" colormultiplier="255,200,115,200" />
       <StatusEffect type="OnUse">
         <Explosion range="300.0" force="50" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
@@ -4175,8 +4175,8 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto1.wav" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto2.wav" type="OnUse" range="3000"/>
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Shotgun_Semiauto2.ogg" type="OnUse" range="3000"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -4221,7 +4221,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Assault rifle.wav" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/vanilla/Assault rifle.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
