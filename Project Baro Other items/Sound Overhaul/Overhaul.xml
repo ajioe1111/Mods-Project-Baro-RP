@@ -576,7 +576,7 @@
       <Item identifier="ek_lightattachment" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="%ModDir%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="928,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
@@ -635,7 +635,7 @@
       <Item identifier="ek_laserattachment" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="576,0,64,64" />
-    <Sprite texture="%ModDir%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="800,576,128,96" depth="0.83" />
     <Body width="176" height="64" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"/>
@@ -3086,10 +3086,9 @@
       <ContainedStateIndicator texture="%ModDir:EK Armory%/UI/ek_containerindicators.png" sourcerect="0,32,128,32" />
     </ItemContainer>
   </Item>
-  <Item name="" identifier="ek_rocketlauncher_sonarscope" aliases="marine rpg sonar,rocketlauncher sonar,rocket launcher sonar,ek rocketlauncher sonar,ek rocket launcher sonar,rpg sonar,ek rpg sonar" 
-    category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_rocket" Scale="0.38" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="ek_rocketlauncher_sonarscope" aliases="marine rpg sonar,rocketlauncher sonar,rocket launcher sonar,ek rocketlauncher sonar,ek rocket launcher sonar,rpg sonar,ek rpg sonar" category="Equipment,Weapon" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_rocket" Scale="0.38" impactsoundtag="impact_metal_heavy">
     <Fabricate suitablefabricators="fabricator" requiredtime="1.5">
-      <RequiredItem identifier="ek_rocketlauncher"/>
+      <RequiredItem identifier="ek_rocketlauncher" />
       <RequiredItem identifier="ek_sonarattachment" />
     </Fabricate>
     <Deconstruct time="1">
@@ -3097,12 +3096,12 @@
       <Item identifier="ek_sonarattachment" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="384,0,64,64" />
-    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapons_ek.png" sourcerect="320,880,288,128" depth="0.55" />
+    <Sprite texture="%ModDir:EK Armory%/Items/Weapons/weapon_attachments_ek.png" sourcerect="320,880,288,128" depth="0.55" />
     <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="320,880,288,128" depth="0.83" />
     <Body width="304" height="96" density="40" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,5" aimpos="20,5" handle1="6,-20" handle2="100,-28" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="25,5" aimpos="20,5" handle1="6,-20" handle2="100,-28" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!-- barrelpos="100,22" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" -->
-	<RangedWeapon barrelpos="135,28" spread="1" unskilledspread="15" reload="1.5" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="135,28" spread="1" unskilledspread="15" reload="1.5" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="ekmuzzleflamelauncher" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -3116,20 +3115,19 @@
     </RangedWeapon>
     <ItemContainer autofill="False" capacity="1" maxstacksize="1" canbeselected="false" hideitems="true">
       <Containable identifiers="ek_rocketammo" />
-      <ContainedStateIndicator texture="Mods/EK Armory/UI/ek_containerindicators.png" sourcerect="0,32,128,32" />
+      <ContainedStateIndicator texture="%ModDir:EK Armory%/UI/ek_containerindicators.png" sourcerect="0,32,128,32" />
     </ItemContainer>
-
-	<AiTarget />
+    <AiTarget />
     <!--<Sonar range="4000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1">
       <StatusEffect type="OnUse">
 	    <sound file="Content/Items/Command/SonarPing.ogg" range="1000.0" />
       </StatusEffect>
       <GuiFrame relativesize="0.2,0.333" anchor="BottomLeft" relativeoffset="0,0.05"/>
-      <PingCircle texture="Mods/EK Armory/UI/Sonarscope/pingcircle.png" origin="0.5,0.5" />
-      <DirectionalPingCircle texture="Mods/EK Armory/UI/Sonarscope/directionalpingcircle.png" origin="0.0,0.5" />
-      <ScreenOverlay texture="Mods/EK Armory/UI/Sonarscope/sonaroverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Mods/EK Armory/UI/Sonarscope/sonarbackground.png" origin="0.5,0.5" />
-      <Blip texture="Mods/EK Armory/UI/Sonarscope/sonarblip.png" origin="0.5,0.5" />
+      <PingCircle texture="%ModDir%/UI/Sonarscope/pingcircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="%ModDir%/UI/Sonarscope/directionalpingcircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="%ModDir%/UI/Sonarscope/sonaroverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/UI/Sonarscope/sonarbackground.png" origin="0.5,0.5" />
+      <Blip texture="%ModDir%/UI/Sonarscope/sonarblip.png" origin="0.5,0.5" />
       <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
       <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
       <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
@@ -3138,7 +3136,7 @@
     </Sonar>-->
     <Sonar range="6000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="false" allowuioverlap="true">
       <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
-      <GuiFrame relativesize="0.35,0.35" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
+      <GuiFrame relativesize="0.35,0.35" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
       <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
       <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
       <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
@@ -3148,13 +3146,13 @@
       <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
       <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
       <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
-      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
-      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
-      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
-      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
-      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
-      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
-      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5" />
+      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5" />
+      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5" />
+      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5" />
+      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5" />
+      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
+      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
     </Sonar>
   </Item>
   <Item name="" identifier="ek_dartgun" aliases="dart_gun, dartgun"
@@ -3205,6 +3203,46 @@
       <Containable identifiers="ek_dart" />
       <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,152,120,32" />
     </ItemContainer>
+  </Item>
+  <Item name="" identifier="ek_dartgun_flashlight" aliases="dart gun taclight,dartgun taclight,ek_dartgun_flashlugh" category="Equipment,Weapon" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_dart" Scale="0.32" impactsoundtag="impact_metal_light">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1.5">
+      <RequiredItem identifier="ek_dartgun" />
+      <RequiredItem tag="ekcompatibility_taclight" />
+    </Fabricate>
+    <Deconstruct time="1">
+      <Item identifier="ek_dartgun" />
+      <Item identifier="ek_lightattachment" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir:EK Armory%/Items/InventoryIcons.png" sourcerect="256,256,64,64" />
+    <Sprite texture="weapon_attachments_ek.png" sourcerect="0,672,288,112" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="weapon_attachments_ek.png" sourcerect="0,672,288,112" depth="0.83" />
+    <Body width="275" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="45,0" handle1="-50,-20" handle2="50,5" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <!-- barrelpos="90,9" holdpos="45,-10" aimpos="40,10" handle1="-30,-15" handle2="50,-5" holdangle="-40" -->
+    <RangedWeapon barrelpos="144,16" spread="4" unskilledspread="8" reload="1.25" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_dartgun.ogg" type="OnUse" range="800" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="3.0" />
+      </StatusEffect>
+      <RequiredItems identifiers="ek_dart" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="45" />
+    </RangedWeapon>
+    <ItemContainer autofill="False" itempos="27,10" iteminterval="0,-4" capacity="4" maxstacksize="1" hideitems="true">
+      <Containable identifiers="ek_dart" />
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,29,120,35" />
+    </ItemContainer>
+    <LightComponent LightColor="0.5,0.5,0.5,1.0" Flicker="0.02" range="450" powerconsumption="0" IsOn="false" canbeselected="true">
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.020, 0.497" size="1.0,1.0" />
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+      <TickBox text="Flashlight">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
   </Item>
   <Item name="" identifier="ek_marine_armor" category="Equipment" tags="smallitem" fireproof="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_soft">
     <Price baseprice="350" soldeverywhere="false">
@@ -3630,7 +3668,7 @@
         <Conditional condition="gt 0" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/Items/Tools/laserbore_reloadstart.ogg" type="OnUse" range="500.0" loop="false" />
+        <sound file="%ModDir:EK Utilities%/Items/Tools/laserbore_reloadstart.ogg" type="OnUse" range="500.0" loop="false" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4" stackable="false" />
       <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" Condition="-3" />
@@ -3670,14 +3708,14 @@
       <ParticleEmitterHitItem identifiers="ore" particle="eklaserboreflare" particlespersecond="20" copyentityangle="false" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="4" anglemin="-50" anglemax="50" velocitymin="10" velocitymax="250" scalemin="1.5" scalemax="2.5" />
       <ParticleEmitterHitCharacter particle="eklaserboreflare" particlespersecond="20" copyentityangle="false" />
-      <sound file="%ModDir%/Items/Tools/laserbore_fire.ogg" type="OnUse" range="800.0" loop="false" selectionmode="All" />
-      <sound file="%ModDir%/Items/Tools/laserbore_loop.ogg" type="OnUse" range="800.0" loop="true" selectionmode="All" />
+      <sound file="%ModDir:EK Utilities%/Items/Tools/laserbore_fire.ogg" type="OnUse" range="800.0" loop="false" selectionmode="All" />
+      <sound file="%ModDir:EK Utilities%/Items/Tools/laserbore_loop.ogg" type="OnUse" range="800.0" loop="true" selectionmode="All" />
       <Fixable identifier="structure" />
       <LightComponent LightColor="1.0,0.2,0.1,0.6" range="350" Flicker="0.3">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
       <LightComponent LightColor="1.0,1.0,1.0,0.7" range="650" Flicker="0.3">
-        <LightTexture texture="%ModDir%/Lights/laserbore_beam.png" origin="-0.001, 0.5" size="1.0,0.5" />
+        <LightTexture texture="%ModDir:EK Utilities%/Lights/laserbore_beam.png" origin="-0.001, 0.5" size="1.0,0.5" />
       </LightComponent>
     </RepairTool>
     <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="false" itempos="48,-45" itemrotation="90" containedspritedepth="0.56">
@@ -3703,7 +3741,7 @@
         <Affliction identifier="progressivestun" amount="10" probability="0.5" />
       </Attack>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <sound file="%ModDir%/Items/Weapons/ek_tazer_hit.ogg" range="1000" />
+        <sound file="%ModDir:Project Baro Other items%/Sound Overhaul/Weapons/ek_tazer_hit.ogg" range="1000" />
         <Explosion range="140.0" force="0" shockwave="false" smoke="false" flames="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.5">
@@ -7695,6 +7733,103 @@
 		<aitarget maxsightrange="4000" />
 	
 	</Item>
+	<Item name="" identifier="shellshieldbw" category="Equipment" tags="smallitem,clothing,gunsmith" impactsoundtag="impact_metal_light" 
+    description="" scale="0.5" allowasextracargo="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Price baseprice="2000" soldeverywhere="false" canbespecial="false">
+      <Price locationtype="outpost" sold="false"/>
+      <Price locationtype="city" sold="false"/>
+      <Price locationtype="research" sold="false"/>
+      <Price locationtype="military" sold="false"/>
+      <Price locationtype="mine" sold="false"/>
+    </Price>
+
+    <Deconstruct time="10">
+      <Item identifier="shellshield" />
+      <Item identifier="mudraptorshell" />
+      <Item identifier="physicorium" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+
+
+
+  
+    <InventoryIcon texture="Mods/BWeapons/TS/tatical.png" sourcerect="0,0,164,228" />
+    <Sprite texture="Mods/BWeapons/TS/tatical.png" sourcerect="0,0,164,228" depth="0.6" />
+    <Body radius="40" height="60" density="40" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+
+    
+
+
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.4" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0" probabilitymultiplier="0" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,radiation,exposure,glowing" damagemultiplier="0.0" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+     
+
+     <sprite name="shellshield" texture="Mods/BWeapons/TS/tatical.png" sourcerect="0,0,164,228" limb="Torso" depthlimb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.65,0.6">
+        
+
+       <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+          <Upgrade gameversion="0.1300.0.3" allowingameediting="false" />
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.45" size="1.0,1.0" />
+         </LightComponent>
+      </sprite>
+
+      <sprite texture="Mods/BWeapons/TS/LEG.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" 
+	   inherittexturescale="true" origin="0.55,0.05" sourcerect="0,0,180,140"/>
+      <sprite texture="Mods/BWeapons/TS/LEG.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" 
+	  inherittexturescale="true" origin="0.55,0.05" sourcerect="0,0,180,140"/>
+      <sprite texture="Mods/BWeapons/TS/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" 
+	  inherittexturescale="true" origin="0.3,0.5" sourcerect="0,0,220,140"/>
+      <sprite texture="Mods/BWeapons/TS/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" 
+	  inherittexturescale="true" origin="0.3,0.5" sourcerect="0,0,220,140"/>
+      <sprite texture="Mods/BWeapons/TS/LEG2.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" 
+	  inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,180,140"/>
+      <sprite texture="Mods/BWeapons/TS/LEG2.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" 
+	  inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,180,140"/>
+
+      <sprite texture="Mods/BWeapons/TS/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" 
+	  inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160"/> <!--0.4576271,0.484375-->
+      <sprite texture="Mods/BWeapons/TS/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" 
+	  inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160"/>
+
+
+
+
+
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" PressureProtection="20000.0"  LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <Affliction identifier="PCIA" strength="10" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.2" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.6" setvalue="true" disabledeltatime="true" />
+
+      <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" >
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygen_cell_bw" />
+      </SubContainer>
+     
+    </ItemContainer>
+
+    </Wearable>
+      <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+
+   </Item>
 	<!--Конец BWeapons-->
 	  
   
@@ -7757,7 +7892,7 @@
     </Price>
     <Upgrade gameversion="0.9.2.0" scale="0.5"/>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,256,64,64" origin="0.5,0.5" />
-    <Sprite texture="Misc.png" sourcerect="102,16,58,21" depth="0.6" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Misc/Misc.png" sourcerect="102,16,58,21" depth="0.6" origin="0.5,0.5" />
     <Body width="58" height="20" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="25,15" handle1="-10,0" handle2="0,0" swingamount="20,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
@@ -7782,7 +7917,7 @@
     <RangedWeapon reload="1" />
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,956,64,64" origin="0.5,0.5" />
-    <Sprite texture="Misc.png" sourcerect="164,5,92,110" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Misc/Misc.png" sourcerect="164,5,92,110" depth="0.55" origin="0.5,0.5" />
     <Body width="92" height="110" density="12" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="50,-20" handle1="-20,0" handle2="-10,0" swingamount="50,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
      <sound file="Content/Items/Misc/AccordionLoop.ogg" type="OnUse" range="600" loop="true" />
