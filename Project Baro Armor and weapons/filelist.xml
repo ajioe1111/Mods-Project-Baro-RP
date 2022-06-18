@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Project Baro Armor and weapons" modversion="1.0.4" corepackage="False" steamworkshopid="2637257658" gameversion="0.17.16.0">
+<contentpackage name="Project Baro Armor and weapons" modversion="1.0.5" corepackage="False" steamworkshopid="2637257658" gameversion="0.18.11.0">
   <Item file="%ModDir%/Weapon/gun.xml" />
   <Item file="%ModDir%/Armor/Officer/officer.xml" />
   <Item file="%ModDir%/Armor/Frozen/frozen.xml" />
@@ -20,4 +20,5 @@
   <Item file="%ModDir%/Armor/Antey/antey.xml" />
   <Item file="%ModDir%/Armor/Liquidator/liquidator.xml" />
   <Item file="%ModDir%/Armor/Infected/divinggear.xml" />
+  <Item file="%ModDir%/Armor/Welding Hemlet/weldinghelmet1.xml" />
 </contentpackage>
