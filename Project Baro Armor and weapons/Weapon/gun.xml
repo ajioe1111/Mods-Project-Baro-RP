@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="Самодельный пистолет" identifier="makeshiftpistol" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,trash" Scale="0.13" impactsoundtag="impact_metal_light" description="Самодельный пистолет, сделан на вид хорошо, и по идеи... должен работать... наверное...">
+  <Item name="Самодельный пистолет" identifier="makeshiftpistol" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,trash" Scale="0.13" impactsoundtag="impact_metal_light" description="Самодельный пистолет, сделан на вид хорошо, и по идеи... сможет произвести выстрел... наверное... Вмещает 1 патрон">
     <PreferredContainer primary="weaponholder" spawnprobability="0.01" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.01" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
@@ -10,8 +10,8 @@
       <Item identifier="iron" />
     </Deconstruct>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="12" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="iron" />
@@ -131,7 +131,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.20" />
   </Item>
 
-  <Item name="Самодельная двустволка" identifier="Hm_double_shotgun" aliases="double barrel shotgun, double_barrel_shotgun, shorty, ek_double_shotgun" description="Кустарный дробовик, сделанный из обрезков трубы, простейшего ударного механизма и прочего хлама. Открыв патронник, вы увидели 2 ржавых 'Ствола' рассточеных до предела... кажется туда можно запихнуть любые патроны." category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_shotgunshell,shotgun" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="Самодельный двуствольный дробовик" identifier="Hm_double_shotgun" aliases="double barrel shotgun, double_barrel_shotgun, shorty, ek_double_shotgun" description="Кустарный дробовик, сделанный из обрезков трубы, простейшего ударного механизма и прочего хлама. Открыв патронник, вы увидели 2 ржавых 'Ствола' рассточеных до предела... кажется туда можно запихнуть любые патроны." category="Equipment" cargocontaineridentifier="ek_weapons_case" tags="mediumitem,weapon,gun,ek_ammotag_shotgunshell,shotgun" Scale="0.35" impactsoundtag="impact_metal_light">
     <Price baseprice="350" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" minavailable="1" />
@@ -145,8 +145,8 @@
       <Item identifier="steel" />
     </Deconstruct>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="25" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="90">
+      <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
@@ -167,7 +167,7 @@
       <StatusEffect type="OnUse">
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
-      <RequiredItems identifier="ek_shotgun_shells,shotgunshell,shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems identifier="ek_shotgun_shells,shotgunshell,shotgunammo,762mosinammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />
     </RangedWeapon>
 
@@ -234,7 +234,7 @@
     <Deconstruct time="10">
       <Item identifier="aluminium" outcondition="0.25" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="aluminium" mincondition="0.50" usecondition="true" />
     </Fabricate>
@@ -264,8 +264,8 @@
       <Item identifier="iron" />
     </Deconstruct>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="20" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="aluminium" />
       <RequiredItem identifier="iron" />
@@ -312,8 +312,8 @@
       <Item identifier="iron" />
     </Deconstruct>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="20" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="120">
+      <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="iron" />
