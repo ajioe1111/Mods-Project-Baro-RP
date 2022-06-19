@@ -441,11 +441,7 @@
     <!-- the character will hold the item 50 pixels in front of him, with his hands at the handle1 and handle2 positions -->
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="60,0" handle1="-62,-16" handle2="-10,-6" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="10.0" structurefixamount="2.0" range="150" barrelpos="35,10" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="-0.425" targetforce="10">
-      <!-- the item must contain a welding fuel tank for it to work -->
-      <RequiredItems items="weldingtoolfuel" type="Contained" msg="ItemMsgWeldingFuelRequired" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
-      <!-- when using, the contained welding fuel tank will detoriate (= lose fuel) -->
-      <StatusEffect type="OnUse" targettype="Contained" targets="weldingfueltank" Condition="-0" />
       <!-- welding a door, it will get stuck after a while -->
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock" Stuck="5.0" Condition="3.0" />
       <!-- do burn damage to characters -->
@@ -456,30 +452,12 @@
       <!-- the tool can fix structures, i.e. walls and windows -->
       <Fixable identifier="structure" />
     </RepairTool>
-    <!-- one welding fuel or oxygen tank can be contained inside the welding tool -->
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="8,-35" containedspritedepth="0.56" containedstateindicatorstyle="tank">
-      <Containable items="weldingtoolfuel" />
-    </ItemContainer>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Upgrade gameversion="0.14.0.0">
-      <RepairTool>
-        <RequiredItems items="weldingtoolfuel" type="Contained" msg="ItemMsgWeldingFuelRequired" />
-      </RepairTool>
     </Upgrade>
     <Upgrade gameversion="0.15.4.0">
       <ItemContainer itempos="8,-35"/>
     </Upgrade>      
-  </Item>
-  <Item name="Невидимый топливный баллон сварки" identifier="pj_weldingfueltank" category="Equipment,Fuel" maxstacksize="8" Tags="smallitem,weldingtoolfuel,weldingfuel" scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="1,1,1,1" depth="0.55" />
-    <Body width="20" height="65" density="9.7" />
-    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
-    </Holdable>
-    <Quality>
-      <QualityStat stattype="Condition" value="0.1"/>
-    </Quality>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="Невидимый плазменный резак" identifier="pj_plasmacutter" category="Equipment" Tags="smallitem,cuttingequipment,tool,mountableweapon" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,0,64,64" origin="0.5,0.5" />
@@ -487,8 +465,6 @@
     <Body radius="40" width="60" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="60,0" handle1="-60,-21" handle2="-21,-20" msg="ItemMsgPickUpSelect" />
     <RepairTool firedamage="10.0" structurefixamount="-0.125" range="150" barrelpos="55,10" combatpriority="10" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="10">
-      <RequiredItems items="oxygensource" type="Contained" msg="ItemMsgOxygenTankRequired" />
-      <StatusEffect type="OnUse" targettype="Contained" targets="oxygentank" Condition="-0" />
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-20.0" Condition="-3.0" />
       <StatusEffect type="OnUse" targettype="UseTarget" Condition="-3.0" />
       <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.005">        
@@ -497,30 +473,13 @@
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <Fixable identifier="structure" />
     </RepairTool>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="0,-39" containedspritedepth="0.56" containedstateindicatorstyle="tank">
-      <Containable items="oxygensource" />
-    </ItemContainer>
     <Quality>
       <QualityStat stattype="RepairToolStructureDamageMultiplier" value="0.1"/>
       <QualityStat stattype="RepairToolDeattachTimeMultiplier" value="0.1"/>
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Upgrade gameversion="0.14.0.0">
-      <RepairTool>
-        <RequiredItems identifier="oxygensource,weldingtoolfuel" type="Contained" msg="ItemMsgOxygenTankRequired" />
-      </RepairTool>
     </Upgrade>
-  </Item>
-  <Item name="Невидимый баллон плазменного резака" identifier="pj_oxygentank" category="Diving,Equipment" maxstacksize="8" Tags="smallitem,oxygensource,refillableoxygensource" scale="0.5" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="1,1,1,1" depth="0.55" origin="0.5,0.5" />
-    <Body width="22" height="64" density="9.7" />
-    <Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
-    </Holdable>
-    <Quality>
-      <QualityStat stattype="Condition" value="0.1"/>
-    </Quality>
   </Item>
   <Item name="Невидимая Отвёртка" identifier="pj_screwdriver" variantof="screwdriver" category="Equipment" Tags="smallitem,simpletool,tool,electricalrepairtool" Scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,0,64,64" origin="0.5,0.5" />
