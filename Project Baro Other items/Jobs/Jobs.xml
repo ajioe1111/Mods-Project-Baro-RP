@@ -30,6 +30,7 @@
           <Item identifier="revolverround" />
           <Item identifier="revolverround" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="captainspipe" equip="false" />
         <PreviewSprites dims="120,109">
           <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -51,6 +52,7 @@
           <Item identifier="revolverround" />
           <Item identifier="revolverround" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="steroids" />
         <PreviewSprites dims="120,109">
           <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -67,6 +69,7 @@
         <Item identifier="stunbaton">
           <Item identifier="batterycell" showpreview="false" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="harmonica" equip="false" />
         <PreviewSprites dims="120,109">
           <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
@@ -110,6 +113,7 @@
           <Item identifier="screwdriver" />
           <Item identifier="fuelrod" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="orangejumpsuit1" equip="true" outfit="true" />
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
@@ -131,6 +135,7 @@
         </Item>
         <Item identifier="screwdriver" />
         <Item identifier="wrench" />
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="orangejumpsuit2" equip="true" outfit="true" />
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
@@ -187,6 +192,7 @@
           </Item>
           <Item identifier="screwdriver" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="baseballcap" equip="true" />
         <Item identifier="bluejumpsuit1" equip="true" outfit="true" />
         <Item identifier="headset" equip="true" showpreview="false">
@@ -205,6 +211,7 @@
           <Item identifier="weldingtool">
             <Item identifier="weldingfueltank" showpreview="false" />
           </Item>
+          <Item identifier="radiocodes" equip="false" showpreview="false" />
           <Item identifier="plastic" />
           <Item identifier="steel" />
           <Item identifier="aluminium" />
@@ -266,6 +273,7 @@
         <Item identifier="antibleeding1" />
         <Item identifier="handcuffs" />
         <Item identifier="stunbaton">
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
           <Item identifier="batterycell" showpreview="false" />
         </Item>
         <Item identifier="batterycell" showpreview="false" />
@@ -290,6 +298,7 @@
         <Item identifier="ek_handcuff_container">
           <Item identifier="handcuffs" showpreview="false" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="ek_handgun_riot_mag" />
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
@@ -315,6 +324,7 @@
         </Item>
         <Item identifier="batterycell" showpreview="false" />
         <Item identifier="handcuffs" />
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="wrench" />
         <Item identifier="antibleeding1" />
         <Item identifier="bodyarmor" equip="true" />
@@ -366,6 +376,7 @@
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="syringegun" />
         <Item identifier="antibleeding1" />
         <Item identifier="antibiotics" />
@@ -386,6 +397,7 @@
         <Item identifier="headset" equip="true" showpreview="false">
           <Item identifier="batterycell" showpreview="false" />
         </Item>
+        <Item identifier="radiocodes" equip="false" showpreview="false" />
         <Item identifier="syringegun" />
         <Item identifier="antibleeding1" />
         <Item identifier="antidama1" />

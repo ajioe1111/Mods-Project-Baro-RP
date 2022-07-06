@@ -537,4 +537,17 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="Радио-коды" identifier="radiocodes" category="Misc" Tags="smallitem,logic" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.16.0.0" scale="0.25" />
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Content/UI/radiocodes_icon.png" sourcerect="0,0,52,64" />
+    <Sprite texture="%ModDir%/Content/UI/radiocodes_icon.png" sourcerect="0,0,52,64" depth="0.55" origin="0.5,0.5" scale="10.5" />
+    <Body width="52" height="64" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.3,0.559" anchor="Center" style="radiocodes_style" />
+    </CustomInterface>
+  </Item>
 </Items>
