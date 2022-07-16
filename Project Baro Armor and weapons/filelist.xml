@@ -21,4 +21,5 @@
   <Item file="%ModDir%/Armor/Liquidator/liquidator.xml" />
   <Item file="%ModDir%/Armor/Infected/divinggear.xml" />
   <Item file="%ModDir%/Armor/Welding Hemlet/weldinghelmet1.xml" />
+  <Item file="%ModDir%/Armor/Hazmat_Suit/hazmat.xml" />
 </contentpackage>

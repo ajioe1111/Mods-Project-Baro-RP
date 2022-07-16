@@ -45,4 +45,5 @@
   <Sounds file="%ModDir%/Overhaul/Atmosphere/sounds.xml" />
   <Other file="%ModDir%/Lua/webhook.lua" /> 
   <Item file="%ModDir%/Item/Thalassophobia/gas_clouds/gas_clouds.xml" />
+  <Item file="%ModDir%/Sound Overhaul/Overhaul.xml" />
 </contentpackage>

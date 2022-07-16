@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Hazmat Suit" identifier="pj_hazmat1" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon name="Hazmat 1 Icon" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" sourcerect="8,350,64,64" origin="0.5,0.5" />
+    <Sprite name="Hazmat 1" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" sourcerect="232,323,125,94" depth="0.55" origin="0.5,0.5" />
+    <Body width="125" height="94" density="18" friction="0.8" restitution="0.01" />
+    <Price baseprice="1200">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="1" maxavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1" minavailable="1" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="0.85" minavailable="1" maxavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" minavailable="1" maxavailable="1" />
+    </Price>
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Hazmat 1 Head" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="Head" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5,0.5" sourcerect="185,4,1,1" />
+      <sprite name="Hazmat 1 Torso" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="Torso" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.535,0.55" sourcerect="185,4,145,278" />
+      <sprite name="Hazmat 1 Left Upper Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftArm" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.4,0.48" sourcerect="11,2,51,73" />
+      <sprite name="Hazmat 1 Right Upper Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightArm" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.4,0.48" sourcerect="12,0,55,79" />
+      <sprite name="Hazmat 1 Left Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftForeArm" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.4,0.48" sourcerect="12,215,50,72" />
+      <sprite name="Hazmat 1 Right Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightForeArm" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.4,0.48" sourcerect="17,81,51,71" />
+      <sprite name="Hazmat 1 Left Lower Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftHand" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.50527763,0.50859255" sourcerect="22,287,42,51" />
+      <sprite name="Hazmat 1 Right Lower Arm" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightHand" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5008234,0.49972168" sourcerect="30,151,40,53" />
+      <sprite name="Hazmat 1 Waist" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="Waist" hidelimb="true" inheritlimbdepth="true" scale="0.4" inheritorigin="true" sourcerect="99,360,89,65" />
+      <sprite name="Hazmat 1 Right Thigh" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightThigh" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5,0.5" sourcerect="77,3,90,128" />
+      <sprite name="Hazmat 1 Left Thigh" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftThigh" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5,0.5" sourcerect="77,3,90,128" />
+      <sprite name="Hazmat 1 Right Leg" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightLeg" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5,0.55" sourcerect="85,140,69,96" />
+      <sprite name="Hazmat 1 Left Leg" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftLeg" hidelimb="true" inheritlimbdepth="true" scale="0.4" origin="0.5,0.55" sourcerect="85,140,69,96" />
+      <sprite name="Hazmat 1 Right Shoe" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="RightFoot" hidelimb="true" inheritlimbdepth="true" scale="0.44" origin="0.5,0.62" sourcerect="353,237,84,66" />
+      <sprite name="Hazmat 1 Left Shoe" texture="%ModDir%/Armor/Hazmat_Suit/hazmat.png" hideotherwearables="true" limb="LeftFoot" hidelimb="true" inheritlimbdepth="true" scale="0.44" origin="0.5,0.62" sourcerect="353,237,84,66" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.67" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.6" HideFace="true" ObstructVision="true" setvalue="true" disabledeltatime="true" />
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.1" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+  </Item>
+</Items>

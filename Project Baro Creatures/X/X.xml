@@ -1,4 +1,4 @@
-﻿<Character speciesname="X" group="human" humanoid="True" needsair="False" blooddecal="blackblood" visibility="0" noise="0" caninteract="True" displayname="ошибка распознования" hasinfo="False" husk="False" usehuskappendage="False" needswater="False" canspeak="True" bleedparticleair="blackblood" bleedparticlewater="blackblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="True" sonardisruption="0" usebosshealthbar="False" bleedparticlemultiplier="1" caneat="True" usepathfinding="True" hideinthermalgoggles="True" distantsonarrange="0" disabledistance="25000" soundinterval="10">
+<Character speciesname="X" group="human" humanoid="True" needsair="False" blooddecal="blackblood" visibility="0" noise="0" caninteract="True" displayname="ошибка распознования" hasinfo="False" husk="False" usehuskappendage="False" needswater="False" canspeak="True" bleedparticleair="blackblood" bleedparticlewater="blackblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="True" sonardisruption="0" usebosshealthbar="False" bleedparticlemultiplier="1" caneat="True" usepathfinding="True" hideinthermalgoggles="True" distantsonarrange="0" disabledistance="25000" soundinterval="10">
   <ragdolls folder="default" />
   <animations folder="default" />
   <bloodemitter particle="blackblood" particleamount="0" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
@@ -38,6 +38,14 @@
       <VitalityMultiplier type="damage" multiplier="0.5" />
     </Limb>
   </health>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1">
+    <Item identifier="idcard" equip="true"/>
+    <Item identifier="pj_weldingtool"/>
+    <Item identifier="pj_plasmacutter"/>
+    <Item identifier="pj_wrench"/>
+    <Item identifier="pj_screwdriver"/>
+    <Item identifier="pj_crowbar"/>
+  </inventory>
   <ai combatstrength="0" sight="1" hearing="0" aggressiveboarding="True" attackwhenprovoked="True" aggressiongreed="5" aggressionhurt="150" canopendoors="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="True" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="False" avoidabyss="True" stayinabyss="True" startaggression="0" maxaggression="100" aggressioncumulation="0" keepdoorsclosed="False" patrolflooded="False" patroldry="False" walltargetingmethod="Target">
     <target tag="decoy" state="Attack" priority="0" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
     <target tag="provocative" state="Attack" priority="0" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
@@ -51,5 +59,4 @@
     <target tag="room" state="Attack" priority="0" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
     <target tag="turret" state="Attack" priority="0" ignoreinside="True" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
   </ai>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1" />
 </Character>
